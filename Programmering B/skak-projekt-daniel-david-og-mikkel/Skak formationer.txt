@@ -1,0 +1,12 @@
+Bonde:
+Kan kun rykke frem, angriber diagonalt, ved modsat ende, transformed til anden brik (fx: Droning)		Point: 1
+Hest:
+Rykker og angriber to frem og en til siden							Point: 3
+Løber:
+Kan rykke og angribe diagonalt (vektor: 1 1), kan kun bevæge sig på en farve				Point: 3
+Tårn:
+Kan rykke og angribe vandret (y=x)								Point: 5
+Droning:
+Kan rykke og angribe i alle diagonale og vandrette linjer (vektor: 1 1, 1 -1, -1 -1, -1 1) og (y=x)			Point: 9
+Konge:
+Kan rykke og angribe i alle diagonale og vandrette linjer (vektor: 1 1, 1 -1, -1 -1, -1 1) og (y=x) MEN KUN 1	Point: Kan ikke værdig sættes
