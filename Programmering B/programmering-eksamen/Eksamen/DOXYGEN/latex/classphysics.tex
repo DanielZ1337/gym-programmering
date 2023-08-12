@@ -1,0 +1,180 @@
+\hypertarget{classphysics}{}\doxysection{physics Class Reference}
+\label{classphysics}\index{physics@{physics}}
+
+
+{\ttfamily \#include $<$physics.\+h$>$}
+
+
+
+Collaboration diagram for physics\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classphysics__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structphysics_1_1line}{line}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classphysics_acb52a0272e19c4b8b377e0fb6751f33d}{physics}} ()
+\item 
+virtual \mbox{\hyperlink{classphysics_a98039b57314d7ad6fb02161b5aab7e67}{$\sim$physics}} ()
+\item 
+void \mbox{\hyperlink{classphysics_a82ec1907566667a91e6cedc22fd27547}{movement}} (int x, int y)
+\item 
+bool \mbox{\hyperlink{classphysics_af975dfedfcd177ab13651c9d5db341de}{check\+Hit}} (\mbox{\hyperlink{classbullet}{bullet}} $\ast$gun\+Shot, std\+::vector$<$ \mbox{\hyperlink{classplayer}{player}} $\ast$ $>$ \&\mbox{\hyperlink{main_8cpp_a32e0b3c2322d7d20e5cdf257eb8b8c76}{enemies}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classphysics_a15fa7db55d513c0e37298b2244d88dd7}{moveX}}
+\item 
+int \mbox{\hyperlink{classphysics_a2be7bd597b732ab0486537efb7edc88d}{moveY}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classphysics_a48caaa851f5f967a3b2780ce9dbf5d16}{make\+Line}} (\mbox{\hyperlink{classbullet}{bullet}} $\ast$gun\+Shot, \mbox{\hyperlink{structphysics_1_1line}{line}} \&new\+Line)
+\item 
+double \mbox{\hyperlink{classphysics_a3c5a174483044d7fd680e789c07260b8}{dist\+From\+Centrum}} (int hitboxX, int hitboxY, int radius, double bulletA, double bulletB)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file physics.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classphysics_acb52a0272e19c4b8b377e0fb6751f33d}\label{classphysics_acb52a0272e19c4b8b377e0fb6751f33d}} 
+\index{physics@{physics}!physics@{physics}}
+\index{physics@{physics}!physics@{physics}}
+\doxysubsubsection{\texorpdfstring{physics()}{physics()}}
+{\footnotesize\ttfamily physics\+::physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file physics.\+cpp.
+
+\mbox{\Hypertarget{classphysics_a98039b57314d7ad6fb02161b5aab7e67}\label{classphysics_a98039b57314d7ad6fb02161b5aab7e67}} 
+\index{physics@{physics}!````~physics@{$\sim$physics}}
+\index{````~physics@{$\sim$physics}!physics@{physics}}
+\doxysubsubsection{\texorpdfstring{$\sim$physics()}{~physics()}}
+{\footnotesize\ttfamily physics\+::$\sim$physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 8 of file physics.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classphysics_af975dfedfcd177ab13651c9d5db341de}\label{classphysics_af975dfedfcd177ab13651c9d5db341de}} 
+\index{physics@{physics}!checkHit@{checkHit}}
+\index{checkHit@{checkHit}!physics@{physics}}
+\doxysubsubsection{\texorpdfstring{checkHit()}{checkHit()}}
+{\footnotesize\ttfamily bool physics\+::check\+Hit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbullet}{bullet}} $\ast$}]{gun\+Shot,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classplayer}{player}} $\ast$ $>$ \&}]{enemies }\end{DoxyParamCaption})}
+
+
+
+Definition at line 33 of file physics.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classphysics_af975dfedfcd177ab13651c9d5db341de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classphysics_af975dfedfcd177ab13651c9d5db341de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classphysics_a3c5a174483044d7fd680e789c07260b8}\label{classphysics_a3c5a174483044d7fd680e789c07260b8}} 
+\index{physics@{physics}!distFromCentrum@{distFromCentrum}}
+\index{distFromCentrum@{distFromCentrum}!physics@{physics}}
+\doxysubsubsection{\texorpdfstring{distFromCentrum()}{distFromCentrum()}}
+{\footnotesize\ttfamily double physics\+::dist\+From\+Centrum (\begin{DoxyParamCaption}\item[{int}]{hitboxX,  }\item[{int}]{hitboxY,  }\item[{int}]{radius,  }\item[{double}]{bulletA,  }\item[{double}]{bulletB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 19 of file physics.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classphysics_a3c5a174483044d7fd680e789c07260b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classphysics_a48caaa851f5f967a3b2780ce9dbf5d16}\label{classphysics_a48caaa851f5f967a3b2780ce9dbf5d16}} 
+\index{physics@{physics}!makeLine@{makeLine}}
+\index{makeLine@{makeLine}!physics@{physics}}
+\doxysubsubsection{\texorpdfstring{makeLine()}{makeLine()}}
+{\footnotesize\ttfamily void physics\+::make\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbullet}{bullet}} $\ast$}]{gun\+Shot,  }\item[{\mbox{\hyperlink{structphysics_1_1line}{line}} \&}]{new\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file physics.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classphysics_a48caaa851f5f967a3b2780ce9dbf5d16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classphysics_a82ec1907566667a91e6cedc22fd27547}\label{classphysics_a82ec1907566667a91e6cedc22fd27547}} 
+\index{physics@{physics}!movement@{movement}}
+\index{movement@{movement}!physics@{physics}}
+\doxysubsubsection{\texorpdfstring{movement()}{movement()}}
+{\footnotesize\ttfamily void physics\+::movement (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 13 of file physics.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classphysics_a15fa7db55d513c0e37298b2244d88dd7}\label{classphysics_a15fa7db55d513c0e37298b2244d88dd7}} 
+\index{physics@{physics}!moveX@{moveX}}
+\index{moveX@{moveX}!physics@{physics}}
+\doxysubsubsection{\texorpdfstring{moveX}{moveX}}
+{\footnotesize\ttfamily int physics\+::moveX}
+
+
+
+Definition at line 14 of file physics.\+h.
+
+\mbox{\Hypertarget{classphysics_a2be7bd597b732ab0486537efb7edc88d}\label{classphysics_a2be7bd597b732ab0486537efb7edc88d}} 
+\index{physics@{physics}!moveY@{moveY}}
+\index{moveY@{moveY}!physics@{physics}}
+\doxysubsubsection{\texorpdfstring{moveY}{moveY}}
+{\footnotesize\ttfamily int physics\+::moveY = 0}
+
+
+
+Definition at line 14 of file physics.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/danielz/\+One\+Drive -\/ E\+F\+I\+F/\+Eksamensprojekt programmering B -\/ Daniel \& Korre/eksamensprojekt-\/daniel-\/korre/\+Eksamen/include/\mbox{\hyperlink{physics_8h}{physics.\+h}}\item 
+C\+:/\+Users/danielz/\+One\+Drive -\/ E\+F\+I\+F/\+Eksamensprojekt programmering B -\/ Daniel \& Korre/eksamensprojekt-\/daniel-\/korre/\+Eksamen/src/\mbox{\hyperlink{physics_8cpp}{physics.\+cpp}}\end{DoxyCompactItemize}

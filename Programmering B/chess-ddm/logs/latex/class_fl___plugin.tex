@@ -1,0 +1,77 @@
+\hypertarget{class_fl___plugin}{}\doxysection{Fl\+\_\+\+Plugin Class Reference}
+\label{class_fl___plugin}\index{Fl\_Plugin@{Fl\_Plugin}}
+
+
+\mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}} allows link-\/time and run-\/time integration of binary modules.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Plugin.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_fl___plugin__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___plugin_a968b52aedafd49c59efe074a45dbfdd5}{Fl\+\_\+\+Plugin}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$klass, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$name)
+\item 
+virtual \mbox{\hyperlink{class_fl___plugin_a119263806636ded8dbdffd9d87eeba61}{$\sim$\+Fl\+\_\+\+Plugin}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}} allows link-\/time and run-\/time integration of binary modules. 
+
+\mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}} and \mbox{\hyperlink{class_fl___plugin___manager}{Fl\+\_\+\+Plugin\+\_\+\+Manager}} provide a small and simple solution for linking C++ classes at run-\/time, or optionally linking modules at compile time without the need to change the main application.
+
+\mbox{\hyperlink{class_fl___plugin___manager}{Fl\+\_\+\+Plugin\+\_\+\+Manager}} uses static initialisation to create the plugin interface early during startup. Plugins are stored in a temporary database, organized in classes.
+
+Plugins should derive a new class from \mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}} as a base\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{class }My\_Plugin : \textcolor{keyword}{public} \mbox{\hyperlink{class_fl___plugin}{Fl\_Plugin}} \{}
+\DoxyCodeLine{\textcolor{keyword}{public}:}
+\DoxyCodeLine{  My\_Plugin() : \mbox{\hyperlink{class_fl___plugin}{Fl\_Plugin}}(\textcolor{stringliteral}{"effects"}, \textcolor{stringliteral}{"blur"}) \{ \}}
+\DoxyCodeLine{  \textcolor{keywordtype}{void} do\_something(...);}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{My\_Plugin blur\_plugin();}
+\end{DoxyCode}
+
+
+Plugins can be put into modules and either linked before distribution, or loaded from dynamically linkable files. An \mbox{\hyperlink{class_fl___plugin___manager}{Fl\+\_\+\+Plugin\+\_\+\+Manager}} is used to list and access all currently loaded plugins. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___plugin___manager}{Fl\_Plugin\_Manager}} mgr(\textcolor{stringliteral}{"effects"});}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}, n = mgr.plugins();}
+\DoxyCodeLine{\textcolor{keywordflow}{for} (\mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}=0; \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}<n; \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}++) \{}
+\DoxyCodeLine{  My\_Plugin *pin = (My\_Plugin*)mgr.plugin(\mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}});}
+\DoxyCodeLine{  pin-\/>do\_something();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___plugin_a968b52aedafd49c59efe074a45dbfdd5}\label{class_fl___plugin_a968b52aedafd49c59efe074a45dbfdd5}} 
+\index{Fl\_Plugin@{Fl\_Plugin}!Fl\_Plugin@{Fl\_Plugin}}
+\index{Fl\_Plugin@{Fl\_Plugin}!Fl\_Plugin@{Fl\_Plugin}}
+\doxysubsubsection{\texorpdfstring{Fl\_Plugin()}{Fl\_Plugin()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Plugin\+::\+Fl\+\_\+\+Plugin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{klass,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___plugin_a119263806636ded8dbdffd9d87eeba61}\label{class_fl___plugin_a119263806636ded8dbdffd9d87eeba61}} 
+\index{Fl\_Plugin@{Fl\_Plugin}!````~Fl\_Plugin@{$\sim$Fl\_Plugin}}
+\index{````~Fl\_Plugin@{$\sim$Fl\_Plugin}!Fl\_Plugin@{Fl\_Plugin}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Plugin()}{~Fl\_Plugin()}}
+{\footnotesize\ttfamily virtual Fl\+\_\+\+Plugin\+::$\sim$\+Fl\+\_\+\+Plugin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___plugin_8_h}{Fl\+\_\+\+Plugin.\+H}}\end{DoxyCompactItemize}

@@ -1,0 +1,153 @@
+\hypertarget{class_fl___copy___surface}{}\doxysection{Fl\+\_\+\+Copy\+\_\+\+Surface Class Reference}
+\label{class_fl___copy___surface}\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Copy\+\_\+\+Surface.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Copy\+\_\+\+Surface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_fl___copy___surface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Copy\+\_\+\+Surface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_fl___copy___surface__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___copy___surface_a845ed6c1e0f9bc1c35f27c2050a4ad2d}{class\+\_\+name}} ()
+\item 
+\mbox{\hyperlink{class_fl___copy___surface_a2602c3cff40d219bd9f944bb8adb6f14}{Fl\+\_\+\+Copy\+\_\+\+Surface}} (int \mbox{\hyperlink{class_fl___copy___surface_a9a3fb1fb760ac33dff62c8fb044a2935}{w}}, int \mbox{\hyperlink{class_fl___copy___surface_a1ceefacaef73a8388fba84fe1d27ce64}{h}})
+\item 
+\mbox{\hyperlink{class_fl___copy___surface_aceb4aa0b216f9d54ed5d42be6df779e6}{$\sim$\+Fl\+\_\+\+Copy\+\_\+\+Surface}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___copy___surface_a303a6d9cd0f8df6d7e24589e6c88e54c}{set\+\_\+current}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___copy___surface_a41846b9b963343d618376c80e6aa32dc}{draw}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$widget, int delta\+\_\+x=0, int delta\+\_\+y=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___copy___surface_a475d326f4a67894cf4f95e4f2da6c9ce}{draw\+\_\+decorated\+\_\+window}} (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$win, int delta\+\_\+x=0, int delta\+\_\+y=0)
+\item 
+int \mbox{\hyperlink{class_fl___copy___surface_a9a3fb1fb760ac33dff62c8fb044a2935}{w}} ()
+\item 
+int \mbox{\hyperlink{class_fl___copy___surface_a1ceefacaef73a8388fba84fe1d27ce64}{h}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___copy___surface_a2ca5cf17d0f2551413f3eb4fc136bb6d}{class\+\_\+id}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Supports copying of graphical data to the clipboard.
+
+~\newline
+ After creation of an \mbox{\hyperlink{class_fl___copy___surface}{Fl\+\_\+\+Copy\+\_\+\+Surface}} object, call \mbox{\hyperlink{class_fl___copy___surface_a303a6d9cd0f8df6d7e24589e6c88e54c}{set\+\_\+current()}} on it, and all subsequent graphics requests will be recorded in the clipboard. It\textquotesingle{}s possible to draw widgets (using \mbox{\hyperlink{class_fl___copy___surface_a41846b9b963343d618376c80e6aa32dc}{Fl\+\_\+\+Copy\+\_\+\+Surface\+::draw()}} ) or to use any of the \mbox{\hyperlink{group__fl__drawings}{Drawing functions}} or the \mbox{\hyperlink{group__fl__attributes}{Color \& Font functions}}. Finally, delete the \mbox{\hyperlink{class_fl___copy___surface}{Fl\+\_\+\+Copy\+\_\+\+Surface}} object to load the clipboard with the graphical data. ~\newline
+ Fl\+\_\+\+G\+L\+\_\+\+Window \textquotesingle{}s can be copied to the clipboard as well. ~\newline
+ Usage example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *g = ...; \textcolor{comment}{// a widget you want to copy to the clipboard}}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___copy___surface}{Fl\_Copy\_Surface}} *copy\_surf = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___copy___surface_a2602c3cff40d219bd9f944bb8adb6f14}{Fl\_Copy\_Surface}}(g-\/>\mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}(), g-\/>\mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}()); \textcolor{comment}{// create an Fl\_Copy\_Surface object}}
+\DoxyCodeLine{copy\_surf-\/>\mbox{\hyperlink{class_fl___copy___surface_a303a6d9cd0f8df6d7e24589e6c88e54c}{set\_current}}(); \textcolor{comment}{// direct graphics requests to the clipboard}}
+\DoxyCodeLine{\mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\_color}}(\mbox{\hyperlink{_enumerations_8_h_ac1600c6c32be996f90f133cdc4135292}{FL\_WHITE}}); \mbox{\hyperlink{group__fl__drawings_ga2986a868e9cc8d9141acde94c0fe8ab0}{fl\_rectf}}(0, 0, g-\/>\mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}(), g-\/>\mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}()); \textcolor{comment}{// draw a white background}}
+\DoxyCodeLine{copy\_surf-\/>\mbox{\hyperlink{class_fl___copy___surface_a41846b9b963343d618376c80e6aa32dc}{draw}}(g); \textcolor{comment}{// draw the g widget in the clipboard}}
+\DoxyCodeLine{\textcolor{keyword}{delete} copy\_surf; \textcolor{comment}{// after this, the clipboard is loaded}}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___display___device_a888806f46c16a0c6cc7297fe553f535c}{Fl\_Display\_Device::display\_device}}()-\/>\mbox{\hyperlink{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}{set\_current}}();  \textcolor{comment}{// direct graphics requests back to the display}}
+\end{DoxyCode}
+ Platform details\+: \begin{DoxyItemize}
+\item M\+S\+Windows\+: Transparent R\+GB images copy without transparency. The graphical data are copied to the clipboard as an \textquotesingle{}enhanced metafile\textquotesingle{}. \item Mac OS\+: The graphical data are copied to the clipboard (a.\+k.\+a. pasteboard) in two \textquotesingle{}flavors\textquotesingle{}\+: 1) in vectorial form as P\+DF data; 2) in bitmap form as a T\+I\+FF image. Applications to which the clipboard content is pasted can use the flavor that suits them best. \item X11\+: the graphical data are copied to the clipboard as an image in B\+MP format. \end{DoxyItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___copy___surface_a2602c3cff40d219bd9f944bb8adb6f14}\label{class_fl___copy___surface_a2602c3cff40d219bd9f944bb8adb6f14}} 
+\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}!Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}!Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+\doxysubsubsection{\texorpdfstring{Fl\_Copy\_Surface()}{Fl\_Copy\_Surface()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Copy\+\_\+\+Surface\+::\+Fl\+\_\+\+Copy\+\_\+\+Surface (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___copy___surface_aceb4aa0b216f9d54ed5d42be6df779e6}\label{class_fl___copy___surface_aceb4aa0b216f9d54ed5d42be6df779e6}} 
+\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}!````~Fl\_Copy\_Surface@{$\sim$Fl\_Copy\_Surface}}
+\index{````~Fl\_Copy\_Surface@{$\sim$Fl\_Copy\_Surface}!Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Copy\_Surface()}{~Fl\_Copy\_Surface()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Copy\+\_\+\+Surface\+::$\sim$\+Fl\+\_\+\+Copy\+\_\+\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___copy___surface_a845ed6c1e0f9bc1c35f27c2050a4ad2d}\label{class_fl___copy___surface_a845ed6c1e0f9bc1c35f27c2050a4ad2d}} 
+\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}!class\_name@{class\_name}}
+\index{class\_name@{class\_name}!Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+\doxysubsubsection{\texorpdfstring{class\_name()}{class\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Copy\+\_\+\+Surface\+::class\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the class of this object. Use of the \mbox{\hyperlink{class_fl___copy___surface_a845ed6c1e0f9bc1c35f27c2050a4ad2d}{class\+\_\+name()}} function is discouraged because it will be removed from future F\+L\+TK versions.
+
+The class of an instance of an \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}} subclass can be checked with code such as\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( instance-\/>class\_name() == \mbox{\hyperlink{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}{Fl\_Printer::class\_id}} ) \{ ... \}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___device_af9ffc95e2a6b873027ff796c1e76bc82}{Fl\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___copy___surface_a41846b9b963343d618376c80e6aa32dc}\label{class_fl___copy___surface_a41846b9b963343d618376c80e6aa32dc}} 
+\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}!draw@{draw}}
+\index{draw@{draw}!Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Copy\+\_\+\+Surface\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{widget,  }\item[{int}]{delta\+\_\+x = {\ttfamily 0},  }\item[{int}]{delta\+\_\+y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___copy___surface_a475d326f4a67894cf4f95e4f2da6c9ce}\label{class_fl___copy___surface_a475d326f4a67894cf4f95e4f2da6c9ce}} 
+\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}!draw\_decorated\_window@{draw\_decorated\_window}}
+\index{draw\_decorated\_window@{draw\_decorated\_window}!Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+\doxysubsubsection{\texorpdfstring{draw\_decorated\_window()}{draw\_decorated\_window()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Copy\+\_\+\+Surface\+::draw\+\_\+decorated\+\_\+window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$}]{win,  }\item[{int}]{delta\+\_\+x = {\ttfamily 0},  }\item[{int}]{delta\+\_\+y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___copy___surface_a1ceefacaef73a8388fba84fe1d27ce64}\label{class_fl___copy___surface_a1ceefacaef73a8388fba84fe1d27ce64}} 
+\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}!h@{h}}
+\index{h@{h}!Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+\doxysubsubsection{\texorpdfstring{h()}{h()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Copy\+\_\+\+Surface\+::h (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel height of the copy surface \mbox{\Hypertarget{class_fl___copy___surface_a303a6d9cd0f8df6d7e24589e6c88e54c}\label{class_fl___copy___surface_a303a6d9cd0f8df6d7e24589e6c88e54c}} 
+\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}!set\_current@{set\_current}}
+\index{set\_current@{set\_current}!Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+\doxysubsubsection{\texorpdfstring{set\_current()}{set\_current()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Copy\+\_\+\+Surface\+::set\+\_\+current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}{Fl\+\_\+\+Surface\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___copy___surface_a9a3fb1fb760ac33dff62c8fb044a2935}\label{class_fl___copy___surface_a9a3fb1fb760ac33dff62c8fb044a2935}} 
+\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}!w@{w}}
+\index{w@{w}!Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+\doxysubsubsection{\texorpdfstring{w()}{w()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Copy\+\_\+\+Surface\+::w (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the pixel width of the copy surface 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___copy___surface_a2ca5cf17d0f2551413f3eb4fc136bb6d}\label{class_fl___copy___surface_a2ca5cf17d0f2551413f3eb4fc136bb6d}} 
+\index{Fl\_Copy\_Surface@{Fl\_Copy\_Surface}!class\_id@{class\_id}}
+\index{class\_id@{class\_id}!Fl\_Copy\_Surface@{Fl\_Copy\_Surface}}
+\doxysubsubsection{\texorpdfstring{class\_id}{class\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Copy\+\_\+\+Surface\+::class\+\_\+id\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___copy___surface_8_h}{Fl\+\_\+\+Copy\+\_\+\+Surface.\+H}}\end{DoxyCompactItemize}

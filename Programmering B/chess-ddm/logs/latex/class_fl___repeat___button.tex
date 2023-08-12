@@ -1,0 +1,101 @@
+\hypertarget{class_fl___repeat___button}{}\doxysection{Fl\+\_\+\+Repeat\+\_\+\+Button Class Reference}
+\label{class_fl___repeat___button}\index{Fl\_Repeat\_Button@{Fl\_Repeat\_Button}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Repeat\+\_\+\+Button.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Repeat\+\_\+\+Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_fl___repeat___button__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Repeat\+\_\+\+Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{class_fl___repeat___button__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___repeat___button_a2033de45cb1eb13e1cdc4910609febdf}{handle}} (int)
+\item 
+\mbox{\hyperlink{class_fl___repeat___button_a56f06f0ffe48ae0f04b7c8b1e4dc2a79}{Fl\+\_\+\+Repeat\+\_\+\+Button}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___repeat___button_a1cbf878b683452098e407e1ed62af5ee}{deactivate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_fl___repeat___button}{Fl\+\_\+\+Repeat\+\_\+\+Button}} is a subclass of \mbox{\hyperlink{class_fl___button}{Fl\+\_\+\+Button}} that generates a callback when it is pressed and then repeatedly generates callbacks as long as it is held down. The speed of the repeat is fixed and depends on the implementation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___repeat___button_a56f06f0ffe48ae0f04b7c8b1e4dc2a79}\label{class_fl___repeat___button_a56f06f0ffe48ae0f04b7c8b1e4dc2a79}} 
+\index{Fl\_Repeat\_Button@{Fl\_Repeat\_Button}!Fl\_Repeat\_Button@{Fl\_Repeat\_Button}}
+\index{Fl\_Repeat\_Button@{Fl\_Repeat\_Button}!Fl\_Repeat\_Button@{Fl\_Repeat\_Button}}
+\doxysubsubsection{\texorpdfstring{Fl\_Repeat\_Button()}{Fl\_Repeat\_Button()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Repeat\+\_\+\+Button\+::\+Fl\+\_\+\+Repeat\+\_\+\+Button (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{class_fl___repeat___button}{Fl\+\_\+\+Repeat\+\_\+\+Button}} widget using the given position, size, and label string. The default boxtype is F\+L\+\_\+\+U\+P\+\_\+\+B\+OX. Deletes the button. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___repeat___button_a1cbf878b683452098e407e1ed62af5ee}\label{class_fl___repeat___button_a1cbf878b683452098e407e1ed62af5ee}} 
+\index{Fl\_Repeat\_Button@{Fl\_Repeat\_Button}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!Fl\_Repeat\_Button@{Fl\_Repeat\_Button}}
+\doxysubsubsection{\texorpdfstring{deactivate()}{deactivate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Repeat\+\_\+\+Button\+::deactivate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___repeat___button_a1cbf878b683452098e407e1ed62af5ee_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___repeat___button_a2033de45cb1eb13e1cdc4910609febdf}\label{class_fl___repeat___button_a2033de45cb1eb13e1cdc4910609febdf}} 
+\index{Fl\_Repeat\_Button@{Fl\_Repeat\_Button}!handle@{handle}}
+\index{handle@{handle}!Fl\_Repeat\_Button@{Fl\_Repeat\_Button}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Repeat\+\_\+\+Button\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___repeat___button_a2033de45cb1eb13e1cdc4910609febdf}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___button_a85a9bcd4943f577e6eb68f054ae3c80c}{Fl\+\_\+\+Button}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___repeat___button_8_h}{Fl\+\_\+\+Repeat\+\_\+\+Button.\+H}}\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{class_fl___display___device}{}\doxysection{Fl\+\_\+\+Display\+\_\+\+Device Class Reference}
+\label{class_fl___display___device}\index{Fl\_Display\_Device@{Fl\_Display\_Device}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Device.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Display\+\_\+\+Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_fl___display___device__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Display\+\_\+\+Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_fl___display___device__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___display___device_a1e1955edf0171ced7e9fe4028d82237b}{class\+\_\+name}} ()
+\item 
+\mbox{\hyperlink{class_fl___display___device_a38b5050335e22f6a05d1aaf848f5d3d7}{Fl\+\_\+\+Display\+\_\+\+Device}} (\mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}} $\ast$graphics\+\_\+driver)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_fl___display___device}{Fl\+\_\+\+Display\+\_\+\+Device}} $\ast$ \mbox{\hyperlink{class_fl___display___device_a888806f46c16a0c6cc7297fe553f535c}{display\+\_\+device}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___display___device_a3adf15463d69d9a2654c3ebf43a2c252}{class\+\_\+id}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A display to which the computer can draw. When the program begins running, an \mbox{\hyperlink{class_fl___display___device}{Fl\+\_\+\+Display\+\_\+\+Device}} instance has been created and made the current drawing surface. There is no need to create any other object of this class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___display___device_a38b5050335e22f6a05d1aaf848f5d3d7}\label{class_fl___display___device_a38b5050335e22f6a05d1aaf848f5d3d7}} 
+\index{Fl\_Display\_Device@{Fl\_Display\_Device}!Fl\_Display\_Device@{Fl\_Display\_Device}}
+\index{Fl\_Display\_Device@{Fl\_Display\_Device}!Fl\_Display\_Device@{Fl\_Display\_Device}}
+\doxysubsubsection{\texorpdfstring{Fl\_Display\_Device()}{Fl\_Display\_Device()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Display\+\_\+\+Device\+::\+Fl\+\_\+\+Display\+\_\+\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}} $\ast$}]{graphics\+\_\+driver }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___display___device_a1e1955edf0171ced7e9fe4028d82237b}\label{class_fl___display___device_a1e1955edf0171ced7e9fe4028d82237b}} 
+\index{Fl\_Display\_Device@{Fl\_Display\_Device}!class\_name@{class\_name}}
+\index{class\_name@{class\_name}!Fl\_Display\_Device@{Fl\_Display\_Device}}
+\doxysubsubsection{\texorpdfstring{class\_name()}{class\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Display\+\_\+\+Device\+::class\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the class of this object. Use of the \mbox{\hyperlink{class_fl___display___device_a1e1955edf0171ced7e9fe4028d82237b}{class\+\_\+name()}} function is discouraged because it will be removed from future F\+L\+TK versions.
+
+The class of an instance of an \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}} subclass can be checked with code such as\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( instance-\/>class\_name() == \mbox{\hyperlink{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}{Fl\_Printer::class\_id}} ) \{ ... \}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___surface___device_a1162e0cf051b2c95dd88091ef3b833df}{Fl\+\_\+\+Surface\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___display___device_a888806f46c16a0c6cc7297fe553f535c}\label{class_fl___display___device_a888806f46c16a0c6cc7297fe553f535c}} 
+\index{Fl\_Display\_Device@{Fl\_Display\_Device}!display\_device@{display\_device}}
+\index{display\_device@{display\_device}!Fl\_Display\_Device@{Fl\_Display\_Device}}
+\doxysubsubsection{\texorpdfstring{display\_device()}{display\_device()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fl___display___device}{Fl\+\_\+\+Display\+\_\+\+Device}}$\ast$ Fl\+\_\+\+Display\+\_\+\+Device\+::display\+\_\+device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___display___device_a3adf15463d69d9a2654c3ebf43a2c252}\label{class_fl___display___device_a3adf15463d69d9a2654c3ebf43a2c252}} 
+\index{Fl\_Display\_Device@{Fl\_Display\_Device}!class\_id@{class\_id}}
+\index{class\_id@{class\_id}!Fl\_Display\_Device@{Fl\_Display\_Device}}
+\doxysubsubsection{\texorpdfstring{class\_id}{class\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Display\+\_\+\+Device\+::class\+\_\+id\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___device_8_h}{Fl\+\_\+\+Device.\+H}}\end{DoxyCompactItemize}

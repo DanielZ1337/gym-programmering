@@ -1,0 +1,10 @@
+<map id="sf::View" name="sf::View">
+<area shape="rect" id="node1" title="2D camera that defines what region is shown on screen" alt="" coords="309,667,419,891"/>
+<area shape="rect" id="node2" href="$classsf_1_1_rect.html" title=" " alt="" coords="44,351,159,589"/>
+<area shape="rect" id="node3" title=" " alt="" coords="234,86,281,163"/>
+<area shape="rect" id="node5" href="$classsf_1_1_transform.html" title="Define a 3x3 transform matrix." alt="" coords="301,358,427,582"/>
+<area shape="rect" id="node6" href="$classsf_1_1_vector2.html" title=" " alt="" coords="531,395,664,545"/>
+<area shape="rect" id="node4" href="$classsf_1_1_rect.html" title="Utility class for manipulating 2D axis aligned rectangles." alt="" coords="5,5,104,244"/>
+<area shape="rect" id="node7" href="$classsf_1_1_vector2.html" title="Utility template class for manipulating 2&#45;dimensional vectors." alt="" coords="539,49,655,200"/>
+<area shape="rect" id="node8" title=" " alt="" coords="689,431,735,509"/>
+</map>

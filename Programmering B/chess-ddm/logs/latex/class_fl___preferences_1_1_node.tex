@@ -1,0 +1,272 @@
+\hypertarget{class_fl___preferences_1_1_node}{}\doxysection{Fl\+\_\+\+Preferences\+::Node Class Reference}
+\label{class_fl___preferences_1_1_node}\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Preferences.\+H$>$}
+
+
+
+Collaboration diagram for Fl\+\_\+\+Preferences\+::Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{class_fl___preferences_1_1_node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___preferences_1_1_node_a4bd495797480b4b2a51b06c6a099180f}{Node}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___preferences_1_1_node_aeddfd06d97d3255caf14e18486ebbe7a}{path}})
+\item 
+\mbox{\hyperlink{class_fl___preferences_1_1_node_a0557171ca45226526cae0ce859c3b1e8}{$\sim$\+Node}} ()
+\item 
+int \mbox{\hyperlink{class_fl___preferences_1_1_node_af5f39ba9550d35b1e8c5df722262328f}{write}} (F\+I\+LE $\ast$f)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___preferences_1_1_node_a23b1fd536f8517975ff619f7baee818d}{name}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___preferences_1_1_node_aeddfd06d97d3255caf14e18486ebbe7a}{path}} ()
+\item 
+\mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{class_fl___preferences_1_1_node_ab1e2de23cfefa25a6204c893dfda57fa}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___preferences_1_1_node_aeddfd06d97d3255caf14e18486ebbe7a}{path}})
+\item 
+\mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{class_fl___preferences_1_1_node_a16fe59994f172bd753618d2b00234aa0}{search}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___preferences_1_1_node_aeddfd06d97d3255caf14e18486ebbe7a}{path}}, int offset=0)
+\item 
+\mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{class_fl___preferences_1_1_node_a9e3c50f797eedd87dcc7b788a478fd53}{child\+Node}} (int ix)
+\item 
+\mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{class_fl___preferences_1_1_node_afed49b93f0771220376765fb3c96b03e}{add\+Child}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___preferences_1_1_node_aeddfd06d97d3255caf14e18486ebbe7a}{path}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___preferences_1_1_node_ac7dada4e7b034b1cb6e7cfd1f6f60878}{set\+Parent}} (\mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}} $\ast$\mbox{\hyperlink{class_fl___preferences_1_1_node_a08bc0e20e4f876fa25a8051064ff5bf5}{parent}})
+\item 
+\mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{class_fl___preferences_1_1_node_a08bc0e20e4f876fa25a8051064ff5bf5}{parent}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___preferences_1_1_node_a1345bc3ff43585668c00bf1d2179bdd7}{set\+Root}} (\mbox{\hyperlink{class_fl___preferences_1_1_root_node}{Root\+Node}} $\ast$r)
+\item 
+\mbox{\hyperlink{class_fl___preferences_1_1_root_node}{Root\+Node}} $\ast$ \mbox{\hyperlink{class_fl___preferences_1_1_node_adc7364d2b4737a25e1f1f6ac6bbf1e87}{find\+Root}} ()
+\item 
+char \mbox{\hyperlink{class_fl___preferences_1_1_node_af0f0e47c2b07b93ca0faa41316f532a2}{remove}} ()
+\item 
+char \mbox{\hyperlink{class_fl___preferences_1_1_node_a22dbd200353e960acf3d85c30732f54b}{dirty}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___preferences_1_1_node_a9437b0d4afd5a7c2cfcb4b6b5c9fe8ed}{delete\+All\+Children}} ()
+\item 
+int \mbox{\hyperlink{class_fl___preferences_1_1_node_a67903443bbf1d129357b9358a07aa716}{n\+Children}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___preferences_1_1_node_a270c218b3f66f82ea58c1b977bce7404}{child}} (int ix)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___preferences_1_1_node_a23294f352e96a879851ad682b24e61a3}{set}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___preferences_1_1_node_a23b1fd536f8517975ff619f7baee818d}{name}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$value)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___preferences_1_1_node_a0b22480446e3be8b01bf18ea565e535f}{set}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$line)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___preferences_1_1_node_a428d3512207f4455b5116248d1b2f6e6}{add}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$line)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___preferences_1_1_node_af19e68a9d65c080754b2cae6c2dc73e8}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___preferences_1_1_node_a23b1fd536f8517975ff619f7baee818d}{name}})
+\item 
+int \mbox{\hyperlink{class_fl___preferences_1_1_node_a37b1824545019d748cf00672861cc1dc}{get\+Entry}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___preferences_1_1_node_a23b1fd536f8517975ff619f7baee818d}{name}})
+\item 
+char \mbox{\hyperlink{class_fl___preferences_1_1_node_ab0861a05aaa48747d14a4bb1fef783a3}{delete\+Entry}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___preferences_1_1_node_a23b1fd536f8517975ff619f7baee818d}{name}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___preferences_1_1_node_a18271035c50557e0517d24e361237305}{delete\+All\+Entries}} ()
+\item 
+int \mbox{\hyperlink{class_fl___preferences_1_1_node_a29a407b0ae9ca2db5800a231aae9dfa9}{n\+Entry}} ()
+\item 
+\mbox{\hyperlink{struct_fl___preferences_1_1_entry}{Entry}} \& \mbox{\hyperlink{class_fl___preferences_1_1_node_aad35b6611ba29a67e81b3d6970f0e62b}{entry}} (int \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_fl___preferences_1_1_node_a371362bccb1f85fd4ef334fbbeb2c044}{last\+Entry\+Set}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a4bd495797480b4b2a51b06c6a099180f}\label{class_fl___preferences_1_1_node_a4bd495797480b4b2a51b06c6a099180f}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!Node@{Node}}
+\index{Node@{Node}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Preferences\+::\+Node\+::\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a0557171ca45226526cae0ce859c3b1e8}\label{class_fl___preferences_1_1_node_a0557171ca45226526cae0ce859c3b1e8}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!````~Node@{$\sim$Node}}
+\index{````~Node@{$\sim$Node}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{$\sim$Node()}{~Node()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Preferences\+::\+Node\+::$\sim$\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a428d3512207f4455b5116248d1b2f6e6}\label{class_fl___preferences_1_1_node_a428d3512207f4455b5116248d1b2f6e6}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!add@{add}}
+\index{add@{add}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Preferences\+::\+Node\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{line }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_afed49b93f0771220376765fb3c96b03e}\label{class_fl___preferences_1_1_node_afed49b93f0771220376765fb3c96b03e}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!addChild@{addChild}}
+\index{addChild@{addChild}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{addChild()}{addChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}}$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::add\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a270c218b3f66f82ea58c1b977bce7404}\label{class_fl___preferences_1_1_node_a270c218b3f66f82ea58c1b977bce7404}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!child@{child}}
+\index{child@{child}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{child()}{child()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::child (\begin{DoxyParamCaption}\item[{int}]{ix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a9e3c50f797eedd87dcc7b788a478fd53}\label{class_fl___preferences_1_1_node_a9e3c50f797eedd87dcc7b788a478fd53}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!childNode@{childNode}}
+\index{childNode@{childNode}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{childNode()}{childNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}}$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::child\+Node (\begin{DoxyParamCaption}\item[{int}]{ix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a9437b0d4afd5a7c2cfcb4b6b5c9fe8ed}\label{class_fl___preferences_1_1_node_a9437b0d4afd5a7c2cfcb4b6b5c9fe8ed}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!deleteAllChildren@{deleteAllChildren}}
+\index{deleteAllChildren@{deleteAllChildren}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{deleteAllChildren()}{deleteAllChildren()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Preferences\+::\+Node\+::delete\+All\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a18271035c50557e0517d24e361237305}\label{class_fl___preferences_1_1_node_a18271035c50557e0517d24e361237305}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!deleteAllEntries@{deleteAllEntries}}
+\index{deleteAllEntries@{deleteAllEntries}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{deleteAllEntries()}{deleteAllEntries()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Preferences\+::\+Node\+::delete\+All\+Entries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_ab0861a05aaa48747d14a4bb1fef783a3}\label{class_fl___preferences_1_1_node_ab0861a05aaa48747d14a4bb1fef783a3}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!deleteEntry@{deleteEntry}}
+\index{deleteEntry@{deleteEntry}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{deleteEntry()}{deleteEntry()}}
+{\footnotesize\ttfamily char Fl\+\_\+\+Preferences\+::\+Node\+::delete\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a22dbd200353e960acf3d85c30732f54b}\label{class_fl___preferences_1_1_node_a22dbd200353e960acf3d85c30732f54b}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!dirty@{dirty}}
+\index{dirty@{dirty}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{dirty()}{dirty()}}
+{\footnotesize\ttfamily char Fl\+\_\+\+Preferences\+::\+Node\+::dirty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_aad35b6611ba29a67e81b3d6970f0e62b}\label{class_fl___preferences_1_1_node_aad35b6611ba29a67e81b3d6970f0e62b}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!entry@{entry}}
+\index{entry@{entry}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{entry()}{entry()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_fl___preferences_1_1_entry}{Entry}}\& Fl\+\_\+\+Preferences\+::\+Node\+::entry (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_ab1e2de23cfefa25a6204c893dfda57fa}\label{class_fl___preferences_1_1_node_ab1e2de23cfefa25a6204c893dfda57fa}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!find@{find}}
+\index{find@{find}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}}$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_adc7364d2b4737a25e1f1f6ac6bbf1e87}\label{class_fl___preferences_1_1_node_adc7364d2b4737a25e1f1f6ac6bbf1e87}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!findRoot@{findRoot}}
+\index{findRoot@{findRoot}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{findRoot()}{findRoot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___preferences_1_1_root_node}{Root\+Node}}$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::find\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_af19e68a9d65c080754b2cae6c2dc73e8}\label{class_fl___preferences_1_1_node_af19e68a9d65c080754b2cae6c2dc73e8}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!get@{get}}
+\index{get@{get}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a37b1824545019d748cf00672861cc1dc}\label{class_fl___preferences_1_1_node_a37b1824545019d748cf00672861cc1dc}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!getEntry@{getEntry}}
+\index{getEntry@{getEntry}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{getEntry()}{getEntry()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Preferences\+::\+Node\+::get\+Entry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a23b1fd536f8517975ff619f7baee818d}\label{class_fl___preferences_1_1_node_a23b1fd536f8517975ff619f7baee818d}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!name@{name}}
+\index{name@{name}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a67903443bbf1d129357b9358a07aa716}\label{class_fl___preferences_1_1_node_a67903443bbf1d129357b9358a07aa716}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!nChildren@{nChildren}}
+\index{nChildren@{nChildren}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{nChildren()}{nChildren()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Preferences\+::\+Node\+::n\+Children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a29a407b0ae9ca2db5800a231aae9dfa9}\label{class_fl___preferences_1_1_node_a29a407b0ae9ca2db5800a231aae9dfa9}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!nEntry@{nEntry}}
+\index{nEntry@{nEntry}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{nEntry()}{nEntry()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Preferences\+::\+Node\+::n\+Entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a08bc0e20e4f876fa25a8051064ff5bf5}\label{class_fl___preferences_1_1_node_a08bc0e20e4f876fa25a8051064ff5bf5}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!parent@{parent}}
+\index{parent@{parent}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}}$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_aeddfd06d97d3255caf14e18486ebbe7a}\label{class_fl___preferences_1_1_node_aeddfd06d97d3255caf14e18486ebbe7a}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!path@{path}}
+\index{path@{path}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_af0f0e47c2b07b93ca0faa41316f532a2}\label{class_fl___preferences_1_1_node_af0f0e47c2b07b93ca0faa41316f532a2}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!remove@{remove}}
+\index{remove@{remove}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily char Fl\+\_\+\+Preferences\+::\+Node\+::remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a16fe59994f172bd753618d2b00234aa0}\label{class_fl___preferences_1_1_node_a16fe59994f172bd753618d2b00234aa0}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!search@{search}}
+\index{search@{search}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}}$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{path,  }\item[{int}]{offset = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a0b22480446e3be8b01bf18ea565e535f}\label{class_fl___preferences_1_1_node_a0b22480446e3be8b01bf18ea565e535f}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!set@{set}}
+\index{set@{set}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Preferences\+::\+Node\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{line }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a23294f352e96a879851ad682b24e61a3}\label{class_fl___preferences_1_1_node_a23294f352e96a879851ad682b24e61a3}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!set@{set}}
+\index{set@{set}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Preferences\+::\+Node\+::set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_ac7dada4e7b034b1cb6e7cfd1f6f60878}\label{class_fl___preferences_1_1_node_ac7dada4e7b034b1cb6e7cfd1f6f60878}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!setParent@{setParent}}
+\index{setParent@{setParent}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Preferences\+::\+Node\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a1345bc3ff43585668c00bf1d2179bdd7}\label{class_fl___preferences_1_1_node_a1345bc3ff43585668c00bf1d2179bdd7}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!setRoot@{setRoot}}
+\index{setRoot@{setRoot}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{setRoot()}{setRoot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Preferences\+::\+Node\+::set\+Root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___preferences_1_1_root_node}{Root\+Node}} $\ast$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_af5f39ba9550d35b1e8c5df722262328f}\label{class_fl___preferences_1_1_node_af5f39ba9550d35b1e8c5df722262328f}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!write@{write}}
+\index{write@{write}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Preferences\+::\+Node\+::write (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a371362bccb1f85fd4ef334fbbeb2c044}\label{class_fl___preferences_1_1_node_a371362bccb1f85fd4ef334fbbeb2c044}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!lastEntrySet@{lastEntrySet}}
+\index{lastEntrySet@{lastEntrySet}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{lastEntrySet}{lastEntrySet}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Preferences\+::\+Node\+::last\+Entry\+Set\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_ae68c59c4adf5b1035cd0562d25283ad4}\label{class_fl___preferences_1_1_node_ae68c59c4adf5b1035cd0562d25283ad4}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!parent\_@{parent\_}}
+\index{parent\_@{parent\_}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{parent\_}{parent\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___preferences_1_1_node}{Node}}$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::parent\+\_\+}
+
+\mbox{\Hypertarget{class_fl___preferences_1_1_node_a5bd978df9ef9e44b9ed4bd288b633048}\label{class_fl___preferences_1_1_node_a5bd978df9ef9e44b9ed4bd288b633048}} 
+\index{Fl\_Preferences::Node@{Fl\_Preferences::Node}!root\_@{root\_}}
+\index{root\_@{root\_}!Fl\_Preferences::Node@{Fl\_Preferences::Node}}
+\doxysubsubsection{\texorpdfstring{root\_}{root\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___preferences_1_1_root_node}{Root\+Node}}$\ast$ Fl\+\_\+\+Preferences\+::\+Node\+::root\+\_\+}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___preferences_8_h}{Fl\+\_\+\+Preferences.\+H}}\end{DoxyCompactItemize}

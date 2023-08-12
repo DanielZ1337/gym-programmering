@@ -1,0 +1,6 @@
+<map id="GUI" name="GUI">
+<area shape="rect" id="node1" title=" " alt="" coords="121,711,193,817"/>
+<area shape="rect" id="node2" href="$classsf_1_1_render_window.html" title="Window that can serve as a target for 2D drawing." alt="" coords="89,468,226,663"/>
+<area shape="rect" id="node3" href="$classsf_1_1_window.html" title="Window that serves as a target for OpenGL rendering." alt="" coords="5,42,141,383"/>
+<area shape="rect" id="node4" href="$classsf_1_1_render_target.html" title="Base class for all render targets (window, texture, ...)" alt="" coords="166,5,317,420"/>
+</map>

@@ -1,0 +1,66 @@
+\hypertarget{class_fl___output}{}\doxysection{Fl\+\_\+\+Output Class Reference}
+\label{class_fl___output}\index{Fl\_Output@{Fl\_Output}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Output.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Output\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_fl___output__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Output\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___output__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___output_a3ef1e59599a463fc26eb28304cc1b879}{Fl\+\_\+\+Output}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This widget displays a piece of text.
+
+When you set the \mbox{\hyperlink{class_fl___input___aaccaca04083dc6d2f1c1a4fa273d9048}{value()}} , \mbox{\hyperlink{class_fl___output}{Fl\+\_\+\+Output}} does a strcpy() to its own storage, which is useful for program-\/generated values. The user may select portions of the text using the mouse and paste the contents into other fields or programs.
+
+
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=8cm]{text.png}
+\doxyfigcaption{Fl\+\_\+\+Output}
+\end{DoxyImage}
+
+
+There is a single subclass, \mbox{\hyperlink{class_fl___multiline___output}{Fl\+\_\+\+Multiline\+\_\+\+Output}}, which allows you to display multiple lines of text. \mbox{\hyperlink{class_fl___multiline___output}{Fl\+\_\+\+Multiline\+\_\+\+Output}} does not provide scroll bars. If a more complete text editing widget is needed, use \mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} instead.
+
+The text may contain any characters except \textbackslash{}0, and will correctly display anything, using $^\wedge$X notation for unprintable control characters and \textbackslash{}nnn notation for unprintable characters with the high bit set. It assumes the font can draw any characters in the I\+S\+O-\/\+Latin1 character set. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___output_a3ef1e59599a463fc26eb28304cc1b879}\label{class_fl___output_a3ef1e59599a463fc26eb28304cc1b879}} 
+\index{Fl\_Output@{Fl\_Output}!Fl\_Output@{Fl\_Output}}
+\index{Fl\_Output@{Fl\_Output}!Fl\_Output@{Fl\_Output}}
+\doxysubsubsection{\texorpdfstring{Fl\_Output()}{Fl\_Output()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Output\+::\+Fl\+\_\+\+Output (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{class_fl___output}{Fl\+\_\+\+Output}} widget using the given position, size, and label string. The default boxtype is F\+L\+\_\+\+D\+O\+W\+N\+\_\+\+B\+OX.
+
+Inherited destructor destroys the widget and any value associated with it. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___output_8_h}{Fl\+\_\+\+Output.\+H}}\end{DoxyCompactItemize}

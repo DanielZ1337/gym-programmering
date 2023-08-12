@@ -1,0 +1,11 @@
+<map id="sf::UdpSocket" name="sf::UdpSocket">
+<area shape="rect" id="node1" title="Specialized socket using the UDP protocol." alt="" coords="313,432,427,612"/>
+<area shape="rect" id="node2" href="$classsf_1_1_socket.html" title="Base class for all the socket types." alt="" coords="216,189,327,369"/>
+<area shape="rect" id="node3" href="$classsf_1_1_non_copyable.html" title="Utility class that makes any derived class non&#45;copyable." alt="" coords="5,5,132,127"/>
+<area shape="rect" id="node4" title=" " alt="" coords="156,27,195,105"/>
+<area shape="rect" id="node5" title=" " alt="" coords="246,27,297,105"/>
+<area shape="rect" id="node6" title=" " alt="" coords="331,27,377,105"/>
+<area shape="rect" id="node7" title=" " alt="" coords="406,241,537,318"/>
+<area shape="rect" id="node8" title=" " alt="" coords="448,27,495,105"/>
+<area shape="rect" id="node9" title="STL class." alt="" coords="519,27,632,105"/>
+</map>

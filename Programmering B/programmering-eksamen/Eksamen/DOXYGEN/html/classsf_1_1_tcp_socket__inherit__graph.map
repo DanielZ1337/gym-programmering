@@ -1,0 +1,5 @@
+<map id="sf::TcpSocket" name="sf::TcpSocket">
+<area shape="rect" id="node1" title="Specialized socket using the TCP protocol." alt="" coords="5,432,159,656"/>
+<area shape="rect" id="node2" href="$classsf_1_1_socket.html" title="Base class for all the socket types." alt="" coords="27,175,137,384"/>
+<area shape="rect" id="node3" href="$classsf_1_1_non_copyable.html" title="Utility class that makes any derived class non&#45;copyable." alt="" coords="19,5,145,127"/>
+</map>

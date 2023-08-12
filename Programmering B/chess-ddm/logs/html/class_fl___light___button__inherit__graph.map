@@ -1,0 +1,9 @@
+<map id="Fl_Light_Button" name="Fl_Light_Button">
+<area shape="rect" id="node1" title=" " alt="" coords="173,155,286,181"/>
+<area shape="rect" id="node4" href="$class_fl___check___button.html" title=" " alt="" coords="5,229,128,256"/>
+<area shape="rect" id="node5" href="$class_fl___radio___light___button.html" title=" " alt="" coords="153,229,306,256"/>
+<area shape="rect" id="node6" href="$class_fl___round___button.html" title=" " alt="" coords="331,229,453,256"/>
+<area shape="rect" id="node2" href="$class_fl___button.html" title="Buttons generate callbacks when they are clicked by the user." alt="" coords="190,80,269,107"/>
+<area shape="rect" id="node3" href="$class_fl___widget.html" title=" " alt="" coords="189,5,270,32"/>
+<area shape="rect" id="node7" href="$class_fl___radio___round___button.html" title=" " alt="" coords="311,304,473,331"/>
+</map>

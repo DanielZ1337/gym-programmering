@@ -1,0 +1,52 @@
+\hypertarget{class_fl___end}{}\doxysection{Fl\+\_\+\+End Class Reference}
+\label{class_fl___end}\index{Fl\_End@{Fl\_End}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Group.\+H$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___end_a7a00a0780fbe4fcfad64266dd73da0bb}{Fl\+\_\+\+End}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a dummy class that allows you to end a \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} in a constructor list of a class\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ \textcolor{keyword}{class }MyClass \{}
+\DoxyCodeLine{ \mbox{\hyperlink{class_fl___group}{Fl\_Group}} group;}
+\DoxyCodeLine{ \mbox{\hyperlink{class_fl___button}{Fl\_Button}} button\_in\_group;}
+\DoxyCodeLine{ \mbox{\hyperlink{class_fl___end}{Fl\_End}} end;}
+\DoxyCodeLine{ \mbox{\hyperlink{class_fl___button}{Fl\_Button}} button\_outside\_group;}
+\DoxyCodeLine{ MyClass();}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{MyClass::MyClass() :}
+\DoxyCodeLine{ group(10,10,100,100),}
+\DoxyCodeLine{ button\_in\_group(20,20,60,30),}
+\DoxyCodeLine{ end(),}
+\DoxyCodeLine{ button\_outside\_group(10,120,60,30)}
+\DoxyCodeLine{\{\} }
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___end_a7a00a0780fbe4fcfad64266dd73da0bb}\label{class_fl___end_a7a00a0780fbe4fcfad64266dd73da0bb}} 
+\index{Fl\_End@{Fl\_End}!Fl\_End@{Fl\_End}}
+\index{Fl\_End@{Fl\_End}!Fl\_End@{Fl\_End}}
+\doxysubsubsection{\texorpdfstring{Fl\_End()}{Fl\_End()}}
+{\footnotesize\ttfamily Fl\+\_\+\+End\+::\+Fl\+\_\+\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+All it does is calling \mbox{\hyperlink{class_fl___group_abfc73a2ad1014a5a19fbfb412bb6d0a4}{Fl\+\_\+\+Group\+::current()}}-\/$>$end() Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_fl___end_a7a00a0780fbe4fcfad64266dd73da0bb_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___group_8_h}{Fl\+\_\+\+Group.\+H}}\end{DoxyCompactItemize}

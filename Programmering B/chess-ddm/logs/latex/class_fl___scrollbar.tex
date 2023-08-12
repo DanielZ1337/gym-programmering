@@ -1,0 +1,219 @@
+\hypertarget{class_fl___scrollbar}{}\doxysection{Fl\+\_\+\+Scrollbar Class Reference}
+\label{class_fl___scrollbar}\index{Fl\_Scrollbar@{Fl\_Scrollbar}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Scrollbar.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Scrollbar\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_fl___scrollbar__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Scrollbar\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_fl___scrollbar__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___scrollbar_a43dd0f339c85b7e05335ede4dbc12854}{Fl\+\_\+\+Scrollbar}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$L=0)
+\item 
+\mbox{\hyperlink{class_fl___scrollbar_ad3449692a322aa3ed31014bfea826197}{$\sim$\+Fl\+\_\+\+Scrollbar}} ()
+\item 
+int \mbox{\hyperlink{class_fl___scrollbar_a869ac061674929041849eb7e8506f0cb}{handle}} (int)
+\item 
+int \mbox{\hyperlink{class_fl___scrollbar_a1d35a3b6cf6d4a1ddfec35e78d61aa01}{value}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___scrollbar_a4ef34edd2af67f4d5a1ca9ec164af832}{value}} (int p)
+\item 
+int \mbox{\hyperlink{class_fl___scrollbar_a33366defaaeb1fde41271dd54f8ae512}{value}} (int pos, int window\+Size, int first, int total)
+\item 
+int \mbox{\hyperlink{class_fl___scrollbar_aa4f49eb730e79f8ed2a00fd6d03ba6c0}{linesize}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___scrollbar_afe1170f4d595fe49bb88f8d446d04ed5}{linesize}} (int \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___scrollbar_ae754616f4c3abc6fa486ff0791645de7}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}} widget displays a slider with arrow buttons at the ends of the scrollbar. Clicking on the arrows move up/left and down/right by \mbox{\hyperlink{class_fl___scrollbar_aa4f49eb730e79f8ed2a00fd6d03ba6c0}{linesize()}}. Scrollbars also accept F\+L\+\_\+\+S\+H\+O\+R\+T\+C\+UT events\+: the arrows move by \mbox{\hyperlink{class_fl___scrollbar_aa4f49eb730e79f8ed2a00fd6d03ba6c0}{linesize()}}, and vertical scrollbars take Page Up/\+Down (they move by the page size minus \mbox{\hyperlink{class_fl___scrollbar_aa4f49eb730e79f8ed2a00fd6d03ba6c0}{linesize()}}) and Home/\+End (they jump to the top or bottom).
+
+Scrollbars have step(1) preset (they always return integers). If desired you can set the \mbox{\hyperlink{class_fl___valuator_a3308133e6e4963e0e22f4fb405bef298}{step()}} to non-\/integer values. You will then have to use casts to get at the floating-\/point versions of \mbox{\hyperlink{class_fl___scrollbar_a1d35a3b6cf6d4a1ddfec35e78d61aa01}{value()}} from \mbox{\hyperlink{class_fl___slider}{Fl\+\_\+\+Slider}}.
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=4cm]{scrollbar.png}
+\doxyfigcaption{Fl\+\_\+\+Scrollbar}
+\end{DoxyImage}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___scrollbar_a43dd0f339c85b7e05335ede4dbc12854}\label{class_fl___scrollbar_a43dd0f339c85b7e05335ede4dbc12854}} 
+\index{Fl\_Scrollbar@{Fl\_Scrollbar}!Fl\_Scrollbar@{Fl\_Scrollbar}}
+\index{Fl\_Scrollbar@{Fl\_Scrollbar}!Fl\_Scrollbar@{Fl\_Scrollbar}}
+\doxysubsubsection{\texorpdfstring{Fl\_Scrollbar()}{Fl\_Scrollbar()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Scrollbar\+::\+Fl\+\_\+\+Scrollbar (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{L = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___scrollbar_ad3449692a322aa3ed31014bfea826197}\label{class_fl___scrollbar_ad3449692a322aa3ed31014bfea826197}} 
+\index{Fl\_Scrollbar@{Fl\_Scrollbar}!````~Fl\_Scrollbar@{$\sim$Fl\_Scrollbar}}
+\index{````~Fl\_Scrollbar@{$\sim$Fl\_Scrollbar}!Fl\_Scrollbar@{Fl\_Scrollbar}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Scrollbar()}{~Fl\_Scrollbar()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Scrollbar\+::$\sim$\+Fl\+\_\+\+Scrollbar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___scrollbar_ae754616f4c3abc6fa486ff0791645de7}\label{class_fl___scrollbar_ae754616f4c3abc6fa486ff0791645de7}} 
+\index{Fl\_Scrollbar@{Fl\_Scrollbar}!draw@{draw}}
+\index{draw@{draw}!Fl\_Scrollbar@{Fl\_Scrollbar}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Scrollbar\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___scrollbar_ae754616f4c3abc6fa486ff0791645de7}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___scrollbar_ae754616f4c3abc6fa486ff0791645de7}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Implements \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___scrollbar_a869ac061674929041849eb7e8506f0cb}\label{class_fl___scrollbar_a869ac061674929041849eb7e8506f0cb}} 
+\index{Fl\_Scrollbar@{Fl\_Scrollbar}!handle@{handle}}
+\index{handle@{handle}!Fl\_Scrollbar@{Fl\_Scrollbar}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Scrollbar\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___scrollbar_a869ac061674929041849eb7e8506f0cb}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___widget_a3521aba25eda761620953dd49d335ea7}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___scrollbar_aa4f49eb730e79f8ed2a00fd6d03ba6c0}\label{class_fl___scrollbar_aa4f49eb730e79f8ed2a00fd6d03ba6c0}} 
+\index{Fl\_Scrollbar@{Fl\_Scrollbar}!linesize@{linesize}}
+\index{linesize@{linesize}!Fl\_Scrollbar@{Fl\_Scrollbar}}
+\doxysubsubsection{\texorpdfstring{linesize()}{linesize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Scrollbar\+::linesize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the size of step, in lines, that the arror keys move. \mbox{\Hypertarget{class_fl___scrollbar_afe1170f4d595fe49bb88f8d446d04ed5}\label{class_fl___scrollbar_afe1170f4d595fe49bb88f8d446d04ed5}} 
+\index{Fl\_Scrollbar@{Fl\_Scrollbar}!linesize@{linesize}}
+\index{linesize@{linesize}!Fl\_Scrollbar@{Fl\_Scrollbar}}
+\doxysubsubsection{\texorpdfstring{linesize()}{linesize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Scrollbar\+::linesize (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This number controls how big the steps are that the arrow keys do. In addition page up/down move by the size last sent to \mbox{\hyperlink{class_fl___scrollbar_a1d35a3b6cf6d4a1ddfec35e78d61aa01}{value()}} minus one \mbox{\hyperlink{class_fl___scrollbar_aa4f49eb730e79f8ed2a00fd6d03ba6c0}{linesize()}}. The default is 16. \mbox{\Hypertarget{class_fl___scrollbar_a1d35a3b6cf6d4a1ddfec35e78d61aa01}\label{class_fl___scrollbar_a1d35a3b6cf6d4a1ddfec35e78d61aa01}} 
+\index{Fl\_Scrollbar@{Fl\_Scrollbar}!value@{value}}
+\index{value@{value}!Fl\_Scrollbar@{Fl\_Scrollbar}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Scrollbar\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the integer value (position) of the slider in the scrollbar. You can get the floating point value with \mbox{\hyperlink{class_fl___valuator_a28f300d9f6e355e75d86e32da23a5d21}{Fl\+\_\+\+Slider\+::value()}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___scrollbar_a4ef34edd2af67f4d5a1ca9ec164af832}{Fl\+\_\+\+Scrollbar\+::value(int p)}} 
+
+\mbox{\hyperlink{class_fl___scrollbar_a33366defaaeb1fde41271dd54f8ae512}{Fl\+\_\+\+Scrollbar\+::value(int pos, int size, int first, int total)}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_fl___scrollbar_a1d35a3b6cf6d4a1ddfec35e78d61aa01_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___scrollbar_a4ef34edd2af67f4d5a1ca9ec164af832}\label{class_fl___scrollbar_a4ef34edd2af67f4d5a1ca9ec164af832}} 
+\index{Fl\_Scrollbar@{Fl\_Scrollbar}!value@{value}}
+\index{value@{value}!Fl\_Scrollbar@{Fl\_Scrollbar}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Scrollbar\+::value (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the value (position) of the slider in the scrollbar.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___scrollbar_a1d35a3b6cf6d4a1ddfec35e78d61aa01}{Fl\+\_\+\+Scrollbar\+::value()}} 
+
+\mbox{\hyperlink{class_fl___scrollbar_a33366defaaeb1fde41271dd54f8ae512}{Fl\+\_\+\+Scrollbar\+::value(int pos, int size, int first, int total)}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_fl___scrollbar_a4ef34edd2af67f4d5a1ca9ec164af832_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___scrollbar_a33366defaaeb1fde41271dd54f8ae512}\label{class_fl___scrollbar_a33366defaaeb1fde41271dd54f8ae512}} 
+\index{Fl\_Scrollbar@{Fl\_Scrollbar}!value@{value}}
+\index{value@{value}!Fl\_Scrollbar@{Fl\_Scrollbar}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Scrollbar\+::value (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{window\+Size,  }\item[{int}]{first,  }\item[{int}]{total }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the position, size and range of the slider in the scrollbar. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pos} & position, first line displayed \\
+\hline
+\mbox{\texttt{ in}}  & {\em window\+Size} & number of lines displayed \\
+\hline
+\mbox{\texttt{ in}}  & {\em first} & number of first line \\
+\hline
+\mbox{\texttt{ in}}  & {\em total} & total number of lines\\
+\hline
+\end{DoxyParams}
+You should call this every time your window changes size, your data changes size, or your scroll position changes (even if in response to a callback from this scrollbar). All necessary calls to \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} are done.
+
+Calls \mbox{\hyperlink{class_fl___slider_a50027bc264cf6ece76d11b39e17dbe54}{Fl\+\_\+\+Slider\+::scrollvalue(int pos, int size, int first, int total)}}. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_fl___scrollbar_a33366defaaeb1fde41271dd54f8ae512_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___scrollbar_8_h}{Fl\+\_\+\+Scrollbar.\+H}}\end{DoxyCompactItemize}

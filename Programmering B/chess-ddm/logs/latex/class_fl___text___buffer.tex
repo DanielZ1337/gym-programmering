@@ -1,0 +1,1200 @@
+\hypertarget{class_fl___text___buffer}{}\doxysection{Fl\+\_\+\+Text\+\_\+\+Buffer Class Reference}
+\label{class_fl___text___buffer}\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+
+
+This class manages Unicode text displayed in one or more \mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} widgets.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Text\+\_\+\+Buffer.\+H$>$}
+
+
+
+Collaboration diagram for Fl\+\_\+\+Text\+\_\+\+Buffer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_fl___text___buffer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___text___buffer_a49a54f11bfb913a049734db9f8f79ef6}{Fl\+\_\+\+Text\+\_\+\+Buffer}} (int requested\+Size=0, int preferred\+Gap\+Size=1024)
+\item 
+\mbox{\hyperlink{class_fl___text___buffer_a6fb364932b62762721951651aea2eee7}{$\sim$\+Fl\+\_\+\+Text\+\_\+\+Buffer}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a19266724e7f2f7f88e0eae8fb3057102}{length}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns the number of bytes in the buffer. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_af91fb6f281cf9c3cbca889703fe1df95}{text}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Get a copy of the entire contents of the text buffer. Memory is allocated to contain the returned string, which the caller must free. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a955cb74bbdc68f299863e8459c49063c}{text}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$text)
+\item 
+char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_aa79633e5b3b1621cc323922354ac1116}{text\+\_\+range}} (int start, int end) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Get a copy of a part of the text buffer. Return a copy of the text between {\ttfamily start} and {\ttfamily end} character positions from text buffer {\ttfamily buf}. Positions start at 0, and the range does not include the character pointed to by {\ttfamily end}. When you are done with the text, free it using the free() function. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_fl___text___buffer_ac137016f8cb54e5a240881014a4c690c}{char\+\_\+at}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+char \mbox{\hyperlink{class_fl___text___buffer_a5c18c7e2dd09f0fad0892411c1ac273a}{byte\+\_\+at}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_a6c1df9ed8edb351d000ab1a933907848}{address}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_a7ce2676822142833a40b7408dc8fb3cc}{address}} (int pos)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a12efb744c604724230d7884aa17d2fda}{insert}} (int pos, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___text___buffer_af91fb6f281cf9c3cbca889703fe1df95}{text}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a09a2ce59b5b88c2eb4bcbcd737825063}{append}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$t)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a711cdd58b3142122f6f0649aa9e610d1}{remove}} (int start, int end)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_ae74852e50eb7320868b2cdc0121bb728}{replace}} (int start, int end, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___text___buffer_af91fb6f281cf9c3cbca889703fe1df95}{text}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_aa933b2a9554599ce16345d2388b82912}{copy}} (\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$from\+Buf, int from\+Start, int from\+End, int to\+Pos)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_adc013b1cf0ca092e3ad074e456937d2e}{undo}} (int $\ast$cp=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_adcd1bfc06f19bb49bb9c38f1e186d648}{can\+Undo}} (char flag=1)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a11241a972d065c3914ce6645216511d2}{insertfile}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int pos, int buflen=128 $\ast$1024)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a62e6f9378d36ceb1e980518b50110102}{appendfile}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int buflen=128 $\ast$1024)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_acf5921d9ec02c0479aa77f6eeecace37}{loadfile}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int buflen=128 $\ast$1024)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a7e8280a4e2c163f378dc7bb02920943e}{outputfile}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int start, int end, int buflen=128 $\ast$1024)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a0c30b2e7d81487b48d27fd3e92b3b0cb}{savefile}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$file, int buflen=128 $\ast$1024)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_aed366345be586384d0dc6fe4e3cea0f8}{tab\+\_\+distance}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_abcd9282a1e00470ebc4d2b2a725a97a5}{tab\+\_\+distance}} (int tab\+Dist)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a2462945eb7e7c0a90775c9fa38aab187}{select}} (int start, int end)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a2a29f4f81620569bc03aa9fc7c652678}{selected}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a21f1df22ad9aaf8ade2975c8d95d1470}{unselect}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_ae7219182793e05b05e2902b7a65910bc}{selection\+\_\+position}} (int $\ast$start, int $\ast$end)
+\item 
+char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_a469bf1f5fbc1a24e009e55199b3831d9}{selection\+\_\+text}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a32403bee1999664989e322aba9296138}{remove\+\_\+selection}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a4c8cd9eab282964593c8fbdc11cb2781}{replace\+\_\+selection}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___text___buffer_af91fb6f281cf9c3cbca889703fe1df95}{text}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_ac8119b5498cc2aa6b9cc491f5c4f195d}{secondary\+\_\+select}} (int start, int end)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a1f908f95fe6359555d65702fdcfccf4d}{secondary\+\_\+selected}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a4b5c16436b4d2878822ac7cf8b8f2403}{secondary\+\_\+unselect}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_af3a8859657436eba651eeecd3aa9a4ba}{secondary\+\_\+selection\+\_\+position}} (int $\ast$start, int $\ast$end)
+\item 
+char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_a3fcababa562b3fbbb46d8a3e0d4c6da9}{secondary\+\_\+selection\+\_\+text}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a09c60d4e393c80899090f00c0d0a1dc6}{remove\+\_\+secondary\+\_\+selection}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_af75cd362cd7b27c1db88b30df7bec924}{replace\+\_\+secondary\+\_\+selection}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___text___buffer_af91fb6f281cf9c3cbca889703fe1df95}{text}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_ab53392af0a3ba98312f230dd40ed5fb9}{highlight}} (int start, int end)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a6c7c4ff0f7f2b8379e53cdaf43e66650}{highlight}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_ad78c9dd21ff3fc04060114ddc1448803}{unhighlight}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a6b458132afd9a331b0254321b2e28b42}{highlight\+\_\+position}} (int $\ast$start, int $\ast$end)
+\item 
+char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_a9744de0d52df14eed90cc046c903bd71}{highlight\+\_\+text}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a6a72d422478508c94baf5b6a7bc46740}{add\+\_\+modify\+\_\+callback}} (\mbox{\hyperlink{_fl___text___buffer_8_h_ae3f9ce6427d687a8714a4c7f2572bd29}{Fl\+\_\+\+Text\+\_\+\+Modify\+\_\+\+Cb}} buf\+Modified\+CB, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a9a479cd4cef940ede8dcc86f16705d85}{remove\+\_\+modify\+\_\+callback}} (\mbox{\hyperlink{_fl___text___buffer_8_h_ae3f9ce6427d687a8714a4c7f2572bd29}{Fl\+\_\+\+Text\+\_\+\+Modify\+\_\+\+Cb}} buf\+Modified\+CB, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a695bd49abdcda997913315736d63e090}{call\+\_\+modify\+\_\+callbacks}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_af983cf4abbcc86b7a3d12900c21f246b}{add\+\_\+predelete\+\_\+callback}} (\mbox{\hyperlink{_fl___text___buffer_8_h_a6332a42d32987dfd522b063701df60b4}{Fl\+\_\+\+Text\+\_\+\+Predelete\+\_\+\+Cb}} buf\+Predel\+CB, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_aaca0c64bc5a0b010da6e608b40d349ff}{remove\+\_\+predelete\+\_\+callback}} (\mbox{\hyperlink{_fl___text___buffer_8_h_a6332a42d32987dfd522b063701df60b4}{Fl\+\_\+\+Text\+\_\+\+Predelete\+\_\+\+Cb}} predel\+CB, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a643de0c99aef747d6c9a01ee0daa7679}{call\+\_\+predelete\+\_\+callbacks}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_a83ddef818dc64b56a005e16670fce8c0}{line\+\_\+text}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_af23db06d9b93f14f4f4cb7223aafff6d}{line\+\_\+start}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_adf468c5b111fe9402a31cc76e8313782}{line\+\_\+end}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a08b8f68076fc5f3ecc348ef5717215a2}{word\+\_\+start}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_ad406bcbac9edebe99b3b3e2cf9611b90}{word\+\_\+end}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a1d19265538551e012bfd528761bd20d4}{count\+\_\+displayed\+\_\+characters}} (int line\+Start\+Pos, int target\+Pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a6fa246873065799765128f0378feced4}{skip\+\_\+displayed\+\_\+characters}} (int line\+Start\+Pos, int n\+Chars)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a5662f3d7b2cd153e6947a61a72950989}{count\+\_\+lines}} (int start\+Pos, int end\+Pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a5f7747ca80f516eefdc464c440b41dd0}{skip\+\_\+lines}} (int start\+Pos, int n\+Lines)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a57de562dffb0187a576d16eadc42ea75}{rewind\+\_\+lines}} (int start\+Pos, int n\+Lines)
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a4204e8113fa00b5a6f453290c3432b2b}{findchar\+\_\+forward}} (int start\+Pos, unsigned search\+Char, int $\ast$found\+Pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a695b45d15b18ee80df6e44cc027fe3f7}{findchar\+\_\+backward}} (int start\+Pos, unsigned int search\+Char, int $\ast$found\+Pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a6cefc34659cfb802831cb4263b9caf35}{search\+\_\+forward}} (int start\+Pos, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$search\+String, int $\ast$found\+Pos, int match\+Case=0) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a33f5490d3af576f0941d7e882a626253}{search\+\_\+backward}} (int start\+Pos, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$search\+String, int $\ast$found\+Pos, int match\+Case=0) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$ \mbox{\hyperlink{class_fl___text___buffer_aead6f5fb9a8695620d925af284a81e2c}{primary\+\_\+selection}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$ \mbox{\hyperlink{class_fl___text___buffer_ae4bd251b42c7bcf47a1e549717569be2}{primary\+\_\+selection}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$ \mbox{\hyperlink{class_fl___text___buffer_afde4ecdfb0cf6c20be056c359cd38e5c}{secondary\+\_\+selection}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$ \mbox{\hyperlink{class_fl___text___buffer_a92d82784c4f1236b6817a3e7b0152522}{highlight\+\_\+selection}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a15b9a32e5a3af2fa1893dddacd13abd8}{prev\+\_\+char}} (int ix) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_ad97b28b3eb9381753b6a0ebaed98383b}{prev\+\_\+char\+\_\+clipped}} (int ix) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a4ee6c0ffe96189a4308e062c6799dc79}{next\+\_\+char}} (int ix) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_aaf4d73bc468b8c9d10d1e7758fee0c16}{next\+\_\+char\+\_\+clipped}} (int ix) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_abcf02b5d38802fb53153d1ab3d727e05}{utf8\+\_\+align}} (int) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a3194e63f030767326476d4e719d69a32}{input\+\_\+file\+\_\+was\+\_\+transcoded}}
+\begin{DoxyCompactList}\small\item\em true if the loaded file has been transcoded to U\+T\+F-\/8. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$ \mbox{\hyperlink{class_fl___text___buffer_abe180b148a9891845040c882b7a12cd3}{transcoding\+\_\+warning\+\_\+action}} )(\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Pointer to a function called after reading a non U\+T\+F-\/8 encoded file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_af334add7771e7928e7e01fa9a521455a}{file\+\_\+encoding\+\_\+warning\+\_\+message}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a80580268a8e7df40fe4644790bca6896}{call\+\_\+modify\+\_\+callbacks}} (int pos, int n\+Deleted, int n\+Inserted, int n\+Restyled, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$deleted\+Text) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a5ead0cc57cc00bebf0390b977337a3b7}{call\+\_\+predelete\+\_\+callbacks}} (int pos, int n\+Deleted) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a4b561203f94b9754687cfc113b67c8c1}{insert\+\_\+}} (int pos, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___text___buffer_af91fb6f281cf9c3cbca889703fe1df95}{text}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a12bfe32020ca2221a98455265b36e096}{remove\+\_\+}} (int start, int end)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a6f436f4fd49b7ddeab5a40d33022a606}{redisplay\+\_\+selection}} (\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$old\+Selection, \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$new\+Selection) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a3b7ec7d6d20d6cbb8715f07213800409}{move\+\_\+gap}} (int pos)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_aedbeefd749ec45fc335abd6f122d71a8}{reallocate\+\_\+with\+\_\+gap}} (int new\+Gap\+Start, int new\+Gap\+Len)
+\item 
+char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_a195b1201775e5172dabac286859245d4}{selection\+\_\+text\+\_\+}} (\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$sel) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_acd7608b306a08ee5f7777821a38c6896}{remove\+\_\+selection\+\_\+}} (\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$sel)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_a049a779203dcf6d8652b62ae2d26a2eb}{replace\+\_\+selection\+\_\+}} (\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$sel, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___text___buffer_af91fb6f281cf9c3cbca889703fe1df95}{text}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___buffer_ae9000100ca83d297dd67541fd905c6d5}{update\+\_\+selections}} (int pos, int n\+Deleted, int n\+Inserted)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} \mbox{\hyperlink{class_fl___text___buffer_aa2c392f5efd9f75762ced592a75b9860}{m\+Primary}}
+\item 
+\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} \mbox{\hyperlink{class_fl___text___buffer_a05ed59fc23a6b565a99bf80623aaa77a}{m\+Secondary}}
+\item 
+\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} \mbox{\hyperlink{class_fl___text___buffer_a6a78d10cc4437d3029e347b9ded8cddb}{m\+Highlight}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_af4d85a8ab1f6d681daf42c834339fdc7}{m\+Length}}
+\item 
+char $\ast$ \mbox{\hyperlink{class_fl___text___buffer_a10ded10101d8f411286d14c8e1f60865}{m\+Buf}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a4bea04adc6132e9ee3cef0f46536a326}{m\+Gap\+Start}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a77204ed3084eaceee8bb67f35e0c9223}{m\+Gap\+End}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_adc81abbabaf8f718aac4b96ffba73e89}{m\+Tab\+Dist}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a415382fd677cc6c9572dabb866b6f27d}{m\+N\+Modify\+Procs}}
+\item 
+\mbox{\hyperlink{_fl___text___buffer_8_h_ae3f9ce6427d687a8714a4c7f2572bd29}{Fl\+\_\+\+Text\+\_\+\+Modify\+\_\+\+Cb}} $\ast$ \mbox{\hyperlink{class_fl___text___buffer_abc7f5a7cbd137b13dc74410831282589}{m\+Modify\+Procs}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$$\ast$ \mbox{\hyperlink{class_fl___text___buffer_a0abe9b31f4a138137ce01af8e011f2df}{m\+Cb\+Args}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_aae73a1f6d1290fe8813d185e2de866e8}{m\+N\+Predelete\+Procs}}
+\item 
+\mbox{\hyperlink{_fl___text___buffer_8_h_a6332a42d32987dfd522b063701df60b4}{Fl\+\_\+\+Text\+\_\+\+Predelete\+\_\+\+Cb}} $\ast$ \mbox{\hyperlink{class_fl___text___buffer_a9acb4950f29d6aa64a29e4ebe46e72f9}{m\+Predelete\+Procs}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$$\ast$ \mbox{\hyperlink{class_fl___text___buffer_a9c8e388b568aa6ff98bb8703272ac01b}{m\+Predelete\+Cb\+Args}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_a50e7d6784656a3d4c2f928e002c75e85}{m\+Cursor\+Pos\+Hint}}
+\item 
+char \mbox{\hyperlink{class_fl___text___buffer_ac514cc66a88582bb6828bc421acf0f09}{m\+Can\+Undo}}
+\item 
+int \mbox{\hyperlink{class_fl___text___buffer_abadec9509dcd31dbb342044ec3c82fc2}{m\+Preferred\+Gap\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class manages Unicode text displayed in one or more \mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} widgets. 
+
+All text in \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} must be encoded in U\+T\+F-\/8. All indices used in the function calls must be aligned to the start of a U\+T\+F-\/8 sequence. All indices and pointers returned will be aligned. All functions that return a single character will return that in an unsiged int in U\+C\+S-\/4 encoding.
+
+The \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} class is used by the \mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} and \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} to manage complex text data and is based upon the excellent N\+Edit text editor engine -\/ see \href{http://www.nedit.org/}{\texttt{ http\+://www.\+nedit.\+org/}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___text___buffer_a49a54f11bfb913a049734db9f8f79ef6}\label{class_fl___text___buffer_a49a54f11bfb913a049734db9f8f79ef6}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{Fl\_Text\_Buffer()}{Fl\_Text\_Buffer()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Text\+\_\+\+Buffer\+::\+Fl\+\_\+\+Text\+\_\+\+Buffer (\begin{DoxyParamCaption}\item[{int}]{requested\+Size = {\ttfamily 0},  }\item[{int}]{preferred\+Gap\+Size = {\ttfamily 1024} }\end{DoxyParamCaption})}
+
+Create an empty text buffer of a pre-\/determined size. 
+\begin{DoxyParams}{Parameters}
+{\em requested\+Size} & use this to avoid unnecessary re-\/allocation if you know exactly how much the buffer will need to hold \\
+\hline
+{\em preferred\+Gap\+Size} & Initial size for the buffer gap (empty space in the buffer where text might be inserted if the user is typing sequential characters) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___buffer_a6fb364932b62762721951651aea2eee7}\label{class_fl___text___buffer_a6fb364932b62762721951651aea2eee7}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!````~Fl\_Text\_Buffer@{$\sim$Fl\_Text\_Buffer}}
+\index{````~Fl\_Text\_Buffer@{$\sim$Fl\_Text\_Buffer}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Text\_Buffer()}{~Fl\_Text\_Buffer()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Text\+\_\+\+Buffer\+::$\sim$\+Fl\+\_\+\+Text\+\_\+\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Frees a text buffer 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___text___buffer_a6a72d422478508c94baf5b6a7bc46740}\label{class_fl___text___buffer_a6a72d422478508c94baf5b6a7bc46740}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!add\_modify\_callback@{add\_modify\_callback}}
+\index{add\_modify\_callback@{add\_modify\_callback}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{add\_modify\_callback()}{add\_modify\_callback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::add\+\_\+modify\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___text___buffer_8_h_ae3f9ce6427d687a8714a4c7f2572bd29}{Fl\+\_\+\+Text\+\_\+\+Modify\+\_\+\+Cb}}}]{buf\+Modified\+CB,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{cb\+Arg }\end{DoxyParamCaption})}
+
+Adds a callback function that is called whenever the text buffer is modified.
+
+The callback function is declared as follows\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{typedef} \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} (*\mbox{\hyperlink{_fl___text___buffer_8_h_ae3f9ce6427d687a8714a4c7f2572bd29}{Fl\_Text\_Modify\_Cb}})(\textcolor{keywordtype}{int} pos, \textcolor{keywordtype}{int} nInserted, \textcolor{keywordtype}{int} nDeleted,}
+\DoxyCodeLine{   \textcolor{keywordtype}{int} nRestyled, \textcolor{keyword}{const} \textcolor{keywordtype}{char}* deletedText,}
+\DoxyCodeLine{   \textcolor{keywordtype}{void}* cbArg);}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_fl___text___buffer_af983cf4abbcc86b7a3d12900c21f246b}\label{class_fl___text___buffer_af983cf4abbcc86b7a3d12900c21f246b}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!add\_predelete\_callback@{add\_predelete\_callback}}
+\index{add\_predelete\_callback@{add\_predelete\_callback}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{add\_predelete\_callback()}{add\_predelete\_callback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::add\+\_\+predelete\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___text___buffer_8_h_a6332a42d32987dfd522b063701df60b4}{Fl\+\_\+\+Text\+\_\+\+Predelete\+\_\+\+Cb}}}]{buf\+Predel\+CB,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{cb\+Arg }\end{DoxyParamCaption})}
+
+Adds a callback routine to be called before text is deleted from the buffer. \mbox{\Hypertarget{class_fl___text___buffer_a7ce2676822142833a40b7408dc8fb3cc}\label{class_fl___text___buffer_a7ce2676822142833a40b7408dc8fb3cc}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!address@{address}}
+\index{address@{address}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::address (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a byte offset in buffer into a memory address. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & byte offset into buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte offset converted to a memory address 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a6c1df9ed8edb351d000ab1a933907848}\label{class_fl___text___buffer_a6c1df9ed8edb351d000ab1a933907848}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!address@{address}}
+\index{address@{address}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::address (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert a byte offset in buffer into a memory address. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & byte offset into buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte offset converted to a memory address 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a09a2ce59b5b88c2eb4bcbcd737825063}\label{class_fl___text___buffer_a09a2ce59b5b88c2eb4bcbcd737825063}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!append@{append}}
+\index{append@{append}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Appends the text string to the end of the buffer. 
+\begin{DoxyParams}{Parameters}
+{\em t} & U\+T\+F-\/8 encoded and nul terminated text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___buffer_a62e6f9378d36ceb1e980518b50110102}\label{class_fl___text___buffer_a62e6f9378d36ceb1e980518b50110102}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!appendfile@{appendfile}}
+\index{appendfile@{appendfile}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{appendfile()}{appendfile()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::appendfile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{buflen = {\ttfamily 128$\ast$1024} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Appends the named file to the end of the buffer. See also \mbox{\hyperlink{class_fl___text___buffer_a11241a972d065c3914ce6645216511d2}{insertfile()}}. \mbox{\Hypertarget{class_fl___text___buffer_a5c18c7e2dd09f0fad0892411c1ac273a}\label{class_fl___text___buffer_a5c18c7e2dd09f0fad0892411c1ac273a}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!byte\_at@{byte\_at}}
+\index{byte\_at@{byte\_at}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{byte\_at()}{byte\_at()}}
+{\footnotesize\ttfamily char Fl\+\_\+\+Text\+\_\+\+Buffer\+::byte\+\_\+at (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+Returns the raw byte at the specified position pos in the buffer. Positions start at 0. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & byte offset into buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unencoded raw byte 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a695bd49abdcda997913315736d63e090}\label{class_fl___text___buffer_a695bd49abdcda997913315736d63e090}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!call\_modify\_callbacks@{call\_modify\_callbacks}}
+\index{call\_modify\_callbacks@{call\_modify\_callbacks}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{call\_modify\_callbacks()}{call\_modify\_callbacks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::call\+\_\+modify\+\_\+callbacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calls all modify callbacks that have been registered using the \mbox{\hyperlink{class_fl___text___buffer_a6a72d422478508c94baf5b6a7bc46740}{add\+\_\+modify\+\_\+callback()}} method. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_fl___text___buffer_a695bd49abdcda997913315736d63e090_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___text___buffer_a80580268a8e7df40fe4644790bca6896}\label{class_fl___text___buffer_a80580268a8e7df40fe4644790bca6896}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!call\_modify\_callbacks@{call\_modify\_callbacks}}
+\index{call\_modify\_callbacks@{call\_modify\_callbacks}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{call\_modify\_callbacks()}{call\_modify\_callbacks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::call\+\_\+modify\+\_\+callbacks (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{n\+Deleted,  }\item[{int}]{n\+Inserted,  }\item[{int}]{n\+Restyled,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{deleted\+Text }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calls the stored modify callback procedure(s) for this buffer to update the changed area(s) on the screen and any other listeners. \mbox{\Hypertarget{class_fl___text___buffer_a643de0c99aef747d6c9a01ee0daa7679}\label{class_fl___text___buffer_a643de0c99aef747d6c9a01ee0daa7679}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!call\_predelete\_callbacks@{call\_predelete\_callbacks}}
+\index{call\_predelete\_callbacks@{call\_predelete\_callbacks}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{call\_predelete\_callbacks()}{call\_predelete\_callbacks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::call\+\_\+predelete\+\_\+callbacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calls the stored pre-\/delete callback procedure(s) for this buffer to update the changed area(s) on the screen and any other listeners. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_fl___text___buffer_a643de0c99aef747d6c9a01ee0daa7679_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___text___buffer_a5ead0cc57cc00bebf0390b977337a3b7}\label{class_fl___text___buffer_a5ead0cc57cc00bebf0390b977337a3b7}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!call\_predelete\_callbacks@{call\_predelete\_callbacks}}
+\index{call\_predelete\_callbacks@{call\_predelete\_callbacks}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{call\_predelete\_callbacks()}{call\_predelete\_callbacks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::call\+\_\+predelete\+\_\+callbacks (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{n\+Deleted }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calls the stored pre-\/delete callback procedure(s) for this buffer to update the changed area(s) on the screen and any other listeners. \mbox{\Hypertarget{class_fl___text___buffer_adcd1bfc06f19bb49bb9c38f1e186d648}\label{class_fl___text___buffer_adcd1bfc06f19bb49bb9c38f1e186d648}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!canUndo@{canUndo}}
+\index{canUndo@{canUndo}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{canUndo()}{canUndo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::can\+Undo (\begin{DoxyParamCaption}\item[{char}]{flag = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Lets the undo system know if we can undo changes \mbox{\Hypertarget{class_fl___text___buffer_ac137016f8cb54e5a240881014a4c690c}\label{class_fl___text___buffer_ac137016f8cb54e5a240881014a4c690c}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!char\_at@{char\_at}}
+\index{char\_at@{char\_at}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{char\_at()}{char\_at()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Text\+\_\+\+Buffer\+::char\+\_\+at (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+Returns the character at the specified position {\ttfamily pos} in the buffer. Positions start at 0. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & byte offset into buffer, {\ttfamily pos} must be at a U\+T\+F-\/8 character boundary \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unicode U\+C\+S-\/4 encoded character 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_aa933b2a9554599ce16345d2388b82912}\label{class_fl___text___buffer_aa933b2a9554599ce16345d2388b82912}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!copy@{copy}}
+\index{copy@{copy}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$}]{from\+Buf,  }\item[{int}]{from\+Start,  }\item[{int}]{from\+End,  }\item[{int}]{to\+Pos }\end{DoxyParamCaption})}
+
+Copies text from another \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} to this one. 
+\begin{DoxyParams}{Parameters}
+{\em from\+Buf} & source text buffer, may be the same as this \\
+\hline
+{\em from\+Start} & byte offset into buffer \\
+\hline
+{\em from\+End} & byte offset into buffer \\
+\hline
+{\em to\+Pos} & destination byte offset into buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___buffer_a1d19265538551e012bfd528761bd20d4}\label{class_fl___text___buffer_a1d19265538551e012bfd528761bd20d4}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!count\_displayed\_characters@{count\_displayed\_characters}}
+\index{count\_displayed\_characters@{count\_displayed\_characters}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{count\_displayed\_characters()}{count\_displayed\_characters()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::count\+\_\+displayed\+\_\+characters (\begin{DoxyParamCaption}\item[{int}]{line\+Start\+Pos,  }\item[{int}]{target\+Pos }\end{DoxyParamCaption}) const}
+
+Count the number of displayed characters between buffer position {\ttfamily line\+Start\+Pos} and {\ttfamily target\+Pos}.
+
+Displayed characters are the characters shown on the screen to represent characters in the buffer, where tabs and control characters are expanded. \mbox{\Hypertarget{class_fl___text___buffer_a5662f3d7b2cd153e6947a61a72950989}\label{class_fl___text___buffer_a5662f3d7b2cd153e6947a61a72950989}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!count\_lines@{count\_lines}}
+\index{count\_lines@{count\_lines}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{count\_lines()}{count\_lines()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::count\+\_\+lines (\begin{DoxyParamCaption}\item[{int}]{start\+Pos,  }\item[{int}]{end\+Pos }\end{DoxyParamCaption}) const}
+
+Counts the number of newlines between {\ttfamily start\+Pos} and {\ttfamily end\+Pos} in buffer. The character at position {\ttfamily end\+Pos} is not counted. \mbox{\Hypertarget{class_fl___text___buffer_a695b45d15b18ee80df6e44cc027fe3f7}\label{class_fl___text___buffer_a695b45d15b18ee80df6e44cc027fe3f7}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!findchar\_backward@{findchar\_backward}}
+\index{findchar\_backward@{findchar\_backward}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{findchar\_backward()}{findchar\_backward()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::findchar\+\_\+backward (\begin{DoxyParamCaption}\item[{int}]{start\+Pos,  }\item[{unsigned int}]{search\+Char,  }\item[{int $\ast$}]{found\+Pos }\end{DoxyParamCaption}) const}
+
+Search backwards in buffer {\ttfamily buf} for character {\ttfamily search\+Char}, starting with the character {\itshape before} {\ttfamily start\+Pos}, returning the result in {\ttfamily found\+Pos}.
+
+Returns 1 if found, 0 if not. The difference between this and \mbox{\hyperlink{class_fl___text___buffer_a33f5490d3af576f0941d7e882a626253}{search\+\_\+backward()}} is that it\textquotesingle{}s optimized for single characters. The overall performance of the text widget is dependent on its ability to count lines quickly, hence searching for a single character\+: newline. 
+\begin{DoxyParams}{Parameters}
+{\em start\+Pos} & byte offset to start position \\
+\hline
+{\em search\+Char} & U\+C\+S-\/4 character that we want to find \\
+\hline
+{\em found\+Pos} & byte offset where the character was found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if found, 0 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a4204e8113fa00b5a6f453290c3432b2b}\label{class_fl___text___buffer_a4204e8113fa00b5a6f453290c3432b2b}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!findchar\_forward@{findchar\_forward}}
+\index{findchar\_forward@{findchar\_forward}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{findchar\_forward()}{findchar\_forward()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::findchar\+\_\+forward (\begin{DoxyParamCaption}\item[{int}]{start\+Pos,  }\item[{unsigned}]{search\+Char,  }\item[{int $\ast$}]{found\+Pos }\end{DoxyParamCaption}) const}
+
+Finds the next occurrence of the specified character. Search forwards in buffer for character {\ttfamily search\+Char}, starting with the character {\ttfamily start\+Pos}, and returning the result in {\ttfamily found\+Pos}. Returns 1 if found, 0 if not. The difference between this and \mbox{\hyperlink{class_fl___text___buffer_a6cefc34659cfb802831cb4263b9caf35}{search\+\_\+forward()}} is that it\textquotesingle{}s optimized for single characters. The overall performance of the text widget is dependent on its ability to count lines quickly, hence searching for a single character\+: newline. 
+\begin{DoxyParams}{Parameters}
+{\em start\+Pos} & byte offset to start position \\
+\hline
+{\em search\+Char} & U\+C\+S-\/4 character that we want to find \\
+\hline
+{\em found\+Pos} & byte offset where the character was found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if found, 0 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a6c7c4ff0f7f2b8379e53cdaf43e66650}\label{class_fl___text___buffer_a6c7c4ff0f7f2b8379e53cdaf43e66650}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!highlight@{highlight}}
+\index{highlight@{highlight}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{highlight()}{highlight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::highlight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the highlighted text.
+
+When you are done with the text, free it using the free() function. \mbox{\Hypertarget{class_fl___text___buffer_ab53392af0a3ba98312f230dd40ed5fb9}\label{class_fl___text___buffer_ab53392af0a3ba98312f230dd40ed5fb9}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!highlight@{highlight}}
+\index{highlight@{highlight}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{highlight()}{highlight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::highlight (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+Highlights the specified text within the buffer. \mbox{\Hypertarget{class_fl___text___buffer_a6b458132afd9a331b0254321b2e28b42}\label{class_fl___text___buffer_a6b458132afd9a331b0254321b2e28b42}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!highlight\_position@{highlight\_position}}
+\index{highlight\_position@{highlight\_position}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{highlight\_position()}{highlight\_position()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::highlight\+\_\+position (\begin{DoxyParamCaption}\item[{int $\ast$}]{start,  }\item[{int $\ast$}]{end }\end{DoxyParamCaption})}
+
+Highlights the specified text between {\ttfamily start} and {\ttfamily end} within the buffer. \mbox{\Hypertarget{class_fl___text___buffer_a92d82784c4f1236b6817a3e7b0152522}\label{class_fl___text___buffer_a92d82784c4f1236b6817a3e7b0152522}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!highlight\_selection@{highlight\_selection}}
+\index{highlight\_selection@{highlight\_selection}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{highlight\_selection()}{highlight\_selection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::highlight\+\_\+selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current highlight selection. \mbox{\Hypertarget{class_fl___text___buffer_a9744de0d52df14eed90cc046c903bd71}\label{class_fl___text___buffer_a9744de0d52df14eed90cc046c903bd71}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!highlight\_text@{highlight\_text}}
+\index{highlight\_text@{highlight\_text}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{highlight\_text()}{highlight\_text()}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::highlight\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the highlighted text.
+
+When you are done with the text, free it using the free() function. \mbox{\Hypertarget{class_fl___text___buffer_a12efb744c604724230d7884aa17d2fda}\label{class_fl___text___buffer_a12efb744c604724230d7884aa17d2fda}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!insert@{insert}}
+\index{insert@{insert}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::insert (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})}
+
+Inserts null-\/terminated string {\ttfamily text} at position {\ttfamily pos}. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & insertion position as byte offset (must be U\+T\+F-\/8 character aligned) \\
+\hline
+{\em text} & U\+T\+F-\/8 encoded and nul terminated text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___buffer_a4b561203f94b9754687cfc113b67c8c1}\label{class_fl___text___buffer_a4b561203f94b9754687cfc113b67c8c1}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!insert\_@{insert\_}}
+\index{insert\_@{insert\_}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{insert\_()}{insert\_()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::insert\+\_\+ (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Internal (non-\/redisplaying) version of \mbox{\hyperlink{class_fl___text___buffer_a12efb744c604724230d7884aa17d2fda}{insert()}}.
+
+Returns the length of text inserted (this is just strlen({\ttfamily text}), however this calculation can be expensive and the length will be required by any caller who will continue on to call redisplay). {\ttfamily pos} must be contiguous with the existing text in the buffer (i.\+e. not past the end). \begin{DoxyReturn}{Returns}
+the number of bytes inserted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a11241a972d065c3914ce6645216511d2}\label{class_fl___text___buffer_a11241a972d065c3914ce6645216511d2}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!insertfile@{insertfile}}
+\index{insertfile@{insertfile}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{insertfile()}{insertfile()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::insertfile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{pos,  }\item[{int}]{buflen = {\ttfamily 128~$\ast$1024} }\end{DoxyParamCaption})}
+
+Inserts a file at the specified position. Returns
+\begin{DoxyItemize}
+\item 0 on success
+\item non-\/zero on error (strerror() contains reason)
+\item 1 indicates open for read failed (no data loaded)
+\item 2 indicates error occurred while reading data (data was partially loaded)
+\end{DoxyItemize}
+
+File can be U\+T\+F-\/8 or C\+P1252 encoded. If the input file is not U\+T\+F-\/8 encoded, the \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} widget will contain data transcoded to U\+T\+F-\/8. By default, the message \mbox{\hyperlink{class_fl___text___buffer_af334add7771e7928e7e01fa9a521455a}{Fl\+\_\+\+Text\+\_\+\+Buffer\+::file\+\_\+encoding\+\_\+warning\+\_\+message}} will warn the user about this. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___text___buffer_a3194e63f030767326476d4e719d69a32}{input\+\_\+file\+\_\+was\+\_\+transcoded}} and \mbox{\hyperlink{class_fl___text___buffer_abe180b148a9891845040c882b7a12cd3}{transcoding\+\_\+warning\+\_\+action}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___text___buffer_a19266724e7f2f7f88e0eae8fb3057102}\label{class_fl___text___buffer_a19266724e7f2f7f88e0eae8fb3057102}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!length@{length}}
+\index{length@{length}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the number of bytes in the buffer. 
+
+\begin{DoxyReturn}{Returns}
+size of text in bytes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_adf468c5b111fe9402a31cc76e8313782}\label{class_fl___text___buffer_adf468c5b111fe9402a31cc76e8313782}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!line\_end@{line\_end}}
+\index{line\_end@{line\_end}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{line\_end()}{line\_end()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::line\+\_\+end (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+Finds and returns the position of the end of the line containing position {\ttfamily pos} (which is either a pointer to the newline character ending the line or a pointer to one character beyond the end of the buffer). 
+\begin{DoxyParams}{Parameters}
+{\em pos} & byte index into buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte offset to line end 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_af23db06d9b93f14f4f4cb7223aafff6d}\label{class_fl___text___buffer_af23db06d9b93f14f4f4cb7223aafff6d}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!line\_start@{line\_start}}
+\index{line\_start@{line\_start}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{line\_start()}{line\_start()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::line\+\_\+start (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+Returns the position of the start of the line containing position {\ttfamily pos}. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & byte index into buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte offset to line start 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a83ddef818dc64b56a005e16670fce8c0}\label{class_fl___text___buffer_a83ddef818dc64b56a005e16670fce8c0}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!line\_text@{line\_text}}
+\index{line\_text@{line\_text}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{line\_text()}{line\_text()}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::line\+\_\+text (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+Returns the text from the entire line containing the specified character position.
+
+When you are done with the text, free it using the free() function. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & byte index into buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+copy of U\+T\+F-\/8 text, must be free\textquotesingle{}d 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_acf5921d9ec02c0479aa77f6eeecace37}\label{class_fl___text___buffer_acf5921d9ec02c0479aa77f6eeecace37}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!loadfile@{loadfile}}
+\index{loadfile@{loadfile}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{loadfile()}{loadfile()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::loadfile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{buflen = {\ttfamily 128$\ast$1024} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Loads a text file into the buffer. See also \mbox{\hyperlink{class_fl___text___buffer_a11241a972d065c3914ce6645216511d2}{insertfile()}}. \mbox{\Hypertarget{class_fl___text___buffer_a3b7ec7d6d20d6cbb8715f07213800409}\label{class_fl___text___buffer_a3b7ec7d6d20d6cbb8715f07213800409}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!move\_gap@{move\_gap}}
+\index{move\_gap@{move\_gap}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{move\_gap()}{move\_gap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::move\+\_\+gap (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Move the gap to start at a new position. \mbox{\Hypertarget{class_fl___text___buffer_a4ee6c0ffe96189a4308e062c6799dc79}\label{class_fl___text___buffer_a4ee6c0ffe96189a4308e062c6799dc79}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!next\_char@{next\_char}}
+\index{next\_char@{next\_char}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{next\_char()}{next\_char()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::next\+\_\+char (\begin{DoxyParamCaption}\item[{int}]{ix }\end{DoxyParamCaption}) const}
+
+Returns the index of the next character. 
+\begin{DoxyParams}{Parameters}
+{\em ix} & index to the current character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___buffer_aaf4d73bc468b8c9d10d1e7758fee0c16}\label{class_fl___text___buffer_aaf4d73bc468b8c9d10d1e7758fee0c16}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!next\_char\_clipped@{next\_char\_clipped}}
+\index{next\_char\_clipped@{next\_char\_clipped}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{next\_char\_clipped()}{next\_char\_clipped()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::next\+\_\+char\+\_\+clipped (\begin{DoxyParamCaption}\item[{int}]{ix }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___buffer_a7e8280a4e2c163f378dc7bb02920943e}\label{class_fl___text___buffer_a7e8280a4e2c163f378dc7bb02920943e}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!outputfile@{outputfile}}
+\index{outputfile@{outputfile}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{outputfile()}{outputfile()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::outputfile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{start,  }\item[{int}]{end,  }\item[{int}]{buflen = {\ttfamily 128~$\ast$1024} }\end{DoxyParamCaption})}
+
+Writes the specified portions of the text buffer to a file. Returns
+\begin{DoxyItemize}
+\item 0 on success
+\item non-\/zero on error (strerror() contains reason)
+\item 1 indicates open for write failed (no data saved)
+\item 2 indicates error occurred while writing data (data was partially saved)
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___text___buffer_a0c30b2e7d81487b48d27fd3e92b3b0cb}{savefile(const char $\ast$file, int buflen)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___text___buffer_a15b9a32e5a3af2fa1893dddacd13abd8}\label{class_fl___text___buffer_a15b9a32e5a3af2fa1893dddacd13abd8}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!prev\_char@{prev\_char}}
+\index{prev\_char@{prev\_char}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{prev\_char()}{prev\_char()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::prev\+\_\+char (\begin{DoxyParamCaption}\item[{int}]{ix }\end{DoxyParamCaption}) const}
+
+Returns the index of the previous character. 
+\begin{DoxyParams}{Parameters}
+{\em ix} & index to the current character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___buffer_ad97b28b3eb9381753b6a0ebaed98383b}\label{class_fl___text___buffer_ad97b28b3eb9381753b6a0ebaed98383b}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!prev\_char\_clipped@{prev\_char\_clipped}}
+\index{prev\_char\_clipped@{prev\_char\_clipped}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{prev\_char\_clipped()}{prev\_char\_clipped()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::prev\+\_\+char\+\_\+clipped (\begin{DoxyParamCaption}\item[{int}]{ix }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___buffer_ae4bd251b42c7bcf47a1e549717569be2}\label{class_fl___text___buffer_ae4bd251b42c7bcf47a1e549717569be2}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!primary\_selection@{primary\_selection}}
+\index{primary\_selection@{primary\_selection}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{primary\_selection()}{primary\_selection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::primary\+\_\+selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the primary selection. \mbox{\Hypertarget{class_fl___text___buffer_aead6f5fb9a8695620d925af284a81e2c}\label{class_fl___text___buffer_aead6f5fb9a8695620d925af284a81e2c}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!primary\_selection@{primary\_selection}}
+\index{primary\_selection@{primary\_selection}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{primary\_selection()}{primary\_selection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::primary\+\_\+selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the primary selection. \mbox{\Hypertarget{class_fl___text___buffer_aedbeefd749ec45fc335abd6f122d71a8}\label{class_fl___text___buffer_aedbeefd749ec45fc335abd6f122d71a8}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!reallocate\_with\_gap@{reallocate\_with\_gap}}
+\index{reallocate\_with\_gap@{reallocate\_with\_gap}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{reallocate\_with\_gap()}{reallocate\_with\_gap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::reallocate\+\_\+with\+\_\+gap (\begin{DoxyParamCaption}\item[{int}]{new\+Gap\+Start,  }\item[{int}]{new\+Gap\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reallocates the text storage in the buffer to have a gap starting at {\ttfamily new\+Gap\+Start} and a gap size of {\ttfamily new\+Gap\+Len}, preserving the buffer\textquotesingle{}s current contents. \mbox{\Hypertarget{class_fl___text___buffer_a6f436f4fd49b7ddeab5a40d33022a606}\label{class_fl___text___buffer_a6f436f4fd49b7ddeab5a40d33022a606}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!redisplay\_selection@{redisplay\_selection}}
+\index{redisplay\_selection@{redisplay\_selection}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{redisplay\_selection()}{redisplay\_selection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::redisplay\+\_\+selection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$}]{old\+Selection,  }\item[{\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$}]{new\+Selection }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calls the stored redisplay procedure(s) for this buffer to update the screen for a change in a selection. \mbox{\Hypertarget{class_fl___text___buffer_a711cdd58b3142122f6f0649aa9e610d1}\label{class_fl___text___buffer_a711cdd58b3142122f6f0649aa9e610d1}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!remove@{remove}}
+\index{remove@{remove}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::remove (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+Deletes a range of characters in the buffer. 
+\begin{DoxyParams}{Parameters}
+{\em start} & byte offset to first character to be removed \\
+\hline
+{\em end} & byte offset to character after last character to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___buffer_a12bfe32020ca2221a98455265b36e096}\label{class_fl___text___buffer_a12bfe32020ca2221a98455265b36e096}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!remove\_@{remove\_}}
+\index{remove\_@{remove\_}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{remove\_()}{remove\_()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::remove\+\_\+ (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Internal (non-\/redisplaying) version of \mbox{\hyperlink{class_fl___text___buffer_a711cdd58b3142122f6f0649aa9e610d1}{remove()}}.
+
+Removes the contents of the buffer between {\ttfamily start} and {\ttfamily end} (and moves the gap to the site of the delete). \mbox{\Hypertarget{class_fl___text___buffer_a9a479cd4cef940ede8dcc86f16705d85}\label{class_fl___text___buffer_a9a479cd4cef940ede8dcc86f16705d85}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!remove\_modify\_callback@{remove\_modify\_callback}}
+\index{remove\_modify\_callback@{remove\_modify\_callback}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{remove\_modify\_callback()}{remove\_modify\_callback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::remove\+\_\+modify\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___text___buffer_8_h_ae3f9ce6427d687a8714a4c7f2572bd29}{Fl\+\_\+\+Text\+\_\+\+Modify\+\_\+\+Cb}}}]{buf\+Modified\+CB,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{cb\+Arg }\end{DoxyParamCaption})}
+
+Removes a modify callback. \mbox{\Hypertarget{class_fl___text___buffer_aaca0c64bc5a0b010da6e608b40d349ff}\label{class_fl___text___buffer_aaca0c64bc5a0b010da6e608b40d349ff}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!remove\_predelete\_callback@{remove\_predelete\_callback}}
+\index{remove\_predelete\_callback@{remove\_predelete\_callback}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{remove\_predelete\_callback()}{remove\_predelete\_callback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::remove\+\_\+predelete\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___text___buffer_8_h_a6332a42d32987dfd522b063701df60b4}{Fl\+\_\+\+Text\+\_\+\+Predelete\+\_\+\+Cb}}}]{predel\+CB,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{cb\+Arg }\end{DoxyParamCaption})}
+
+Removes a callback routine {\ttfamily buf\+Pre\+Delete\+CB} associated with argument {\ttfamily cb\+Arg} to be called before text is deleted from the buffer. \mbox{\Hypertarget{class_fl___text___buffer_a09c60d4e393c80899090f00c0d0a1dc6}\label{class_fl___text___buffer_a09c60d4e393c80899090f00c0d0a1dc6}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!remove\_secondary\_selection@{remove\_secondary\_selection}}
+\index{remove\_secondary\_selection@{remove\_secondary\_selection}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{remove\_secondary\_selection()}{remove\_secondary\_selection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::remove\+\_\+secondary\+\_\+selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes the text from the buffer corresponding to the secondary text selection object. \mbox{\Hypertarget{class_fl___text___buffer_a32403bee1999664989e322aba9296138}\label{class_fl___text___buffer_a32403bee1999664989e322aba9296138}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!remove\_selection@{remove\_selection}}
+\index{remove\_selection@{remove\_selection}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{remove\_selection()}{remove\_selection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::remove\+\_\+selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes the text in the primary selection. \mbox{\Hypertarget{class_fl___text___buffer_acd7608b306a08ee5f7777821a38c6896}\label{class_fl___text___buffer_acd7608b306a08ee5f7777821a38c6896}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!remove\_selection\_@{remove\_selection\_}}
+\index{remove\_selection\_@{remove\_selection\_}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{remove\_selection\_()}{remove\_selection\_()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::remove\+\_\+selection\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$}]{sel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Removes the text from the buffer corresponding to {\ttfamily sel}. \mbox{\Hypertarget{class_fl___text___buffer_ae74852e50eb7320868b2cdc0121bb728}\label{class_fl___text___buffer_ae74852e50eb7320868b2cdc0121bb728}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!replace@{replace}}
+\index{replace@{replace}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::replace (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})}
+
+Deletes the characters between {\ttfamily start} and {\ttfamily end}, and inserts the null-\/terminated string {\ttfamily text} in their place in the buffer. 
+\begin{DoxyParams}{Parameters}
+{\em start} & byte offset to first character to be removed and new insert position \\
+\hline
+{\em end} & byte offset to character after last character to be removed \\
+\hline
+{\em text} & U\+T\+F-\/8 encoded and nul terminated text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___buffer_af75cd362cd7b27c1db88b30df7bec924}\label{class_fl___text___buffer_af75cd362cd7b27c1db88b30df7bec924}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!replace\_secondary\_selection@{replace\_secondary\_selection}}
+\index{replace\_secondary\_selection@{replace\_secondary\_selection}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{replace\_secondary\_selection()}{replace\_secondary\_selection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::replace\+\_\+secondary\+\_\+selection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})}
+
+Replaces the text from the buffer corresponding to the secondary text selection object with the new string {\ttfamily text}. \mbox{\Hypertarget{class_fl___text___buffer_a4c8cd9eab282964593c8fbdc11cb2781}\label{class_fl___text___buffer_a4c8cd9eab282964593c8fbdc11cb2781}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!replace\_selection@{replace\_selection}}
+\index{replace\_selection@{replace\_selection}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{replace\_selection()}{replace\_selection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::replace\+\_\+selection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})}
+
+Replaces the text in the primary selection. \mbox{\Hypertarget{class_fl___text___buffer_a049a779203dcf6d8652b62ae2d26a2eb}\label{class_fl___text___buffer_a049a779203dcf6d8652b62ae2d26a2eb}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!replace\_selection\_@{replace\_selection\_}}
+\index{replace\_selection\_@{replace\_selection\_}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{replace\_selection\_()}{replace\_selection\_()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::replace\+\_\+selection\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$}]{sel,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replaces the {\ttfamily text} in selection {\ttfamily sel}. \mbox{\Hypertarget{class_fl___text___buffer_a57de562dffb0187a576d16eadc42ea75}\label{class_fl___text___buffer_a57de562dffb0187a576d16eadc42ea75}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!rewind\_lines@{rewind\_lines}}
+\index{rewind\_lines@{rewind\_lines}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{rewind\_lines()}{rewind\_lines()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::rewind\+\_\+lines (\begin{DoxyParamCaption}\item[{int}]{start\+Pos,  }\item[{int}]{n\+Lines }\end{DoxyParamCaption})}
+
+Finds and returns the position of the first character of the line {\ttfamily n\+Lines} backwards from {\ttfamily start\+Pos} (not counting the character pointed to by {\ttfamily startpos} if that is a newline) in the buffer. {\ttfamily n\+Lines} == 0 means find the beginning of the line. \mbox{\Hypertarget{class_fl___text___buffer_a0c30b2e7d81487b48d27fd3e92b3b0cb}\label{class_fl___text___buffer_a0c30b2e7d81487b48d27fd3e92b3b0cb}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!savefile@{savefile}}
+\index{savefile@{savefile}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{savefile()}{savefile()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::savefile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{file,  }\item[{int}]{buflen = {\ttfamily 128$\ast$1024} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Saves a text file from the current buffer. Returns
+\begin{DoxyItemize}
+\item 0 on success
+\item non-\/zero on error (strerror() contains reason)
+\item 1 indicates open for write failed (no data saved)
+\item 2 indicates error occurred while writing data (data was partially saved)
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___text___buffer_a7e8280a4e2c163f378dc7bb02920943e}{outputfile(const char $\ast$file, int start, int end, int buflen)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___text___buffer_a33f5490d3af576f0941d7e882a626253}\label{class_fl___text___buffer_a33f5490d3af576f0941d7e882a626253}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!search\_backward@{search\_backward}}
+\index{search\_backward@{search\_backward}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{search\_backward()}{search\_backward()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::search\+\_\+backward (\begin{DoxyParamCaption}\item[{int}]{start\+Pos,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{search\+String,  }\item[{int $\ast$}]{found\+Pos,  }\item[{int}]{match\+Case = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+Search backwards in buffer for string {\ttfamily search\+String}, starting with the character {\itshape at} {\ttfamily start\+Pos}, returning the result in {\ttfamily found\+Pos}.
+
+Returns 1 if found, 0 if not. 
+\begin{DoxyParams}{Parameters}
+{\em start\+Pos} & byte offset to start position \\
+\hline
+{\em search\+String} & U\+T\+F-\/8 string that we want to find \\
+\hline
+{\em found\+Pos} & byte offset where the string was found \\
+\hline
+{\em match\+Case} & if set, match character case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if found, 0 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a6cefc34659cfb802831cb4263b9caf35}\label{class_fl___text___buffer_a6cefc34659cfb802831cb4263b9caf35}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!search\_forward@{search\_forward}}
+\index{search\_forward@{search\_forward}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{search\_forward()}{search\_forward()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::search\+\_\+forward (\begin{DoxyParamCaption}\item[{int}]{start\+Pos,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{search\+String,  }\item[{int $\ast$}]{found\+Pos,  }\item[{int}]{match\+Case = {\ttfamily 0} }\end{DoxyParamCaption}) const}
+
+Search forwards in buffer for string {\ttfamily search\+String}, starting with the character {\ttfamily start\+Pos}, and returning the result in {\ttfamily found\+Pos}.
+
+Returns 1 if found, 0 if not. 
+\begin{DoxyParams}{Parameters}
+{\em start\+Pos} & byte offset to start position \\
+\hline
+{\em search\+String} & U\+T\+F-\/8 string that we want to find \\
+\hline
+{\em found\+Pos} & byte offset where the string was found \\
+\hline
+{\em match\+Case} & if set, match character case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if found, 0 if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_ac8119b5498cc2aa6b9cc491f5c4f195d}\label{class_fl___text___buffer_ac8119b5498cc2aa6b9cc491f5c4f195d}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!secondary\_select@{secondary\_select}}
+\index{secondary\_select@{secondary\_select}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{secondary\_select()}{secondary\_select()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::secondary\+\_\+select (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+Selects a range of characters in the secondary selection. \mbox{\Hypertarget{class_fl___text___buffer_a1f908f95fe6359555d65702fdcfccf4d}\label{class_fl___text___buffer_a1f908f95fe6359555d65702fdcfccf4d}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!secondary\_selected@{secondary\_selected}}
+\index{secondary\_selected@{secondary\_selected}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{secondary\_selected()}{secondary\_selected()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::secondary\+\_\+selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a non-\/zero value if text has been selected in the secondary text selection, 0 otherwise. \mbox{\Hypertarget{class_fl___text___buffer_afde4ecdfb0cf6c20be056c359cd38e5c}\label{class_fl___text___buffer_afde4ecdfb0cf6c20be056c359cd38e5c}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!secondary\_selection@{secondary\_selection}}
+\index{secondary\_selection@{secondary\_selection}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{secondary\_selection()}{secondary\_selection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::secondary\+\_\+selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the secondary selection. \mbox{\Hypertarget{class_fl___text___buffer_af3a8859657436eba651eeecd3aa9a4ba}\label{class_fl___text___buffer_af3a8859657436eba651eeecd3aa9a4ba}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!secondary\_selection\_position@{secondary\_selection\_position}}
+\index{secondary\_selection\_position@{secondary\_selection\_position}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{secondary\_selection\_position()}{secondary\_selection\_position()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::secondary\+\_\+selection\+\_\+position (\begin{DoxyParamCaption}\item[{int $\ast$}]{start,  }\item[{int $\ast$}]{end }\end{DoxyParamCaption})}
+
+Returns the current selection in the secondary text selection object. \mbox{\Hypertarget{class_fl___text___buffer_a3fcababa562b3fbbb46d8a3e0d4c6da9}\label{class_fl___text___buffer_a3fcababa562b3fbbb46d8a3e0d4c6da9}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!secondary\_selection\_text@{secondary\_selection\_text}}
+\index{secondary\_selection\_text@{secondary\_selection\_text}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{secondary\_selection\_text()}{secondary\_selection\_text()}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::secondary\+\_\+selection\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the text in the secondary selection.
+
+When you are done with the text, free it using the free() function. \mbox{\Hypertarget{class_fl___text___buffer_a4b5c16436b4d2878822ac7cf8b8f2403}\label{class_fl___text___buffer_a4b5c16436b4d2878822ac7cf8b8f2403}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!secondary\_unselect@{secondary\_unselect}}
+\index{secondary\_unselect@{secondary\_unselect}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{secondary\_unselect()}{secondary\_unselect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::secondary\+\_\+unselect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clears any selection in the secondary text selection object. \mbox{\Hypertarget{class_fl___text___buffer_a2462945eb7e7c0a90775c9fa38aab187}\label{class_fl___text___buffer_a2462945eb7e7c0a90775c9fa38aab187}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!select@{select}}
+\index{select@{select}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::select (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+Selects a range of characters in the buffer. \mbox{\Hypertarget{class_fl___text___buffer_a2a29f4f81620569bc03aa9fc7c652678}\label{class_fl___text___buffer_a2a29f4f81620569bc03aa9fc7c652678}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!selected@{selected}}
+\index{selected@{selected}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{selected()}{selected()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a non-\/zero value if text has been selected, 0 otherwise. \mbox{\Hypertarget{class_fl___text___buffer_ae7219182793e05b05e2902b7a65910bc}\label{class_fl___text___buffer_ae7219182793e05b05e2902b7a65910bc}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!selection\_position@{selection\_position}}
+\index{selection\_position@{selection\_position}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{selection\_position()}{selection\_position()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::selection\+\_\+position (\begin{DoxyParamCaption}\item[{int $\ast$}]{start,  }\item[{int $\ast$}]{end }\end{DoxyParamCaption})}
+
+Gets the selection position. \mbox{\Hypertarget{class_fl___text___buffer_a469bf1f5fbc1a24e009e55199b3831d9}\label{class_fl___text___buffer_a469bf1f5fbc1a24e009e55199b3831d9}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!selection\_text@{selection\_text}}
+\index{selection\_text@{selection\_text}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{selection\_text()}{selection\_text()}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::selection\+\_\+text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the currently selected text.
+
+When you are done with the text, free it using the free() function. \mbox{\Hypertarget{class_fl___text___buffer_a195b1201775e5172dabac286859245d4}\label{class_fl___text___buffer_a195b1201775e5172dabac286859245d4}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!selection\_text\_@{selection\_text\_}}
+\index{selection\_text\_@{selection\_text\_}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{selection\_text\_()}{selection\_text\_()}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::selection\+\_\+text\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} $\ast$}]{sel }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___buffer_a6fa246873065799765128f0378feced4}\label{class_fl___text___buffer_a6fa246873065799765128f0378feced4}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!skip\_displayed\_characters@{skip\_displayed\_characters}}
+\index{skip\_displayed\_characters@{skip\_displayed\_characters}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{skip\_displayed\_characters()}{skip\_displayed\_characters()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::skip\+\_\+displayed\+\_\+characters (\begin{DoxyParamCaption}\item[{int}]{line\+Start\+Pos,  }\item[{int}]{n\+Chars }\end{DoxyParamCaption})}
+
+Count forward from buffer position {\ttfamily start\+Pos} in displayed characters.
+
+Displayed characters are the characters shown on the screen to represent characters in the buffer, where tabs and control characters are expanded. 
+\begin{DoxyParams}{Parameters}
+{\em line\+Start\+Pos} & byte offset into buffer \\
+\hline
+{\em n\+Chars} & number of bytes that are sent to the display \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte offset in input after all output bytes are sent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a5f7747ca80f516eefdc464c440b41dd0}\label{class_fl___text___buffer_a5f7747ca80f516eefdc464c440b41dd0}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!skip\_lines@{skip\_lines}}
+\index{skip\_lines@{skip\_lines}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{skip\_lines()}{skip\_lines()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::skip\+\_\+lines (\begin{DoxyParamCaption}\item[{int}]{start\+Pos,  }\item[{int}]{n\+Lines }\end{DoxyParamCaption})}
+
+Finds the first character of the line {\ttfamily n\+Lines} forward from {\ttfamily start\+Pos} in the buffer and returns its position. \mbox{\Hypertarget{class_fl___text___buffer_aed366345be586384d0dc6fe4e3cea0f8}\label{class_fl___text___buffer_aed366345be586384d0dc6fe4e3cea0f8}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!tab\_distance@{tab\_distance}}
+\index{tab\_distance@{tab\_distance}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{tab\_distance()}{tab\_distance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::tab\+\_\+distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the tab width.
+
+The tab width is measured in characters. The pixel position is calculated using an average character width. \mbox{\Hypertarget{class_fl___text___buffer_abcd9282a1e00470ebc4d2b2a725a97a5}\label{class_fl___text___buffer_abcd9282a1e00470ebc4d2b2a725a97a5}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!tab\_distance@{tab\_distance}}
+\index{tab\_distance@{tab\_distance}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{tab\_distance()}{tab\_distance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::tab\+\_\+distance (\begin{DoxyParamCaption}\item[{int}]{tab\+Dist }\end{DoxyParamCaption})}
+
+Set the hardware tab distance (width) used by all displays for this buffer, and used in computing offsets for rectangular selection operations. \mbox{\Hypertarget{class_fl___text___buffer_af91fb6f281cf9c3cbca889703fe1df95}\label{class_fl___text___buffer_af91fb6f281cf9c3cbca889703fe1df95}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!text@{text}}
+\index{text@{text}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get a copy of the entire contents of the text buffer. Memory is allocated to contain the returned string, which the caller must free. 
+
+\begin{DoxyReturn}{Returns}
+newly allocated text buffer -\/ must be free\textquotesingle{}d, text is U\+T\+F-\/8 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a955cb74bbdc68f299863e8459c49063c}\label{class_fl___text___buffer_a955cb74bbdc68f299863e8459c49063c}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!text@{text}}
+\index{text@{text}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})}
+
+Replaces the entire contents of the text buffer. 
+\begin{DoxyParams}{Parameters}
+{\em text} & Text must be valid U\+T\+F-\/8. If null, an empty string is substituted. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___buffer_aa79633e5b3b1621cc323922354ac1116}\label{class_fl___text___buffer_aa79633e5b3b1621cc323922354ac1116}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!text\_range@{text\_range}}
+\index{text\_range@{text\_range}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{text\_range()}{text\_range()}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::text\+\_\+range (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption}) const}
+
+
+
+Get a copy of a part of the text buffer. Return a copy of the text between {\ttfamily start} and {\ttfamily end} character positions from text buffer {\ttfamily buf}. Positions start at 0, and the range does not include the character pointed to by {\ttfamily end}. When you are done with the text, free it using the free() function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & byte offset to first character \\
+\hline
+{\em end} & byte offset after last character in range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+newly allocated text buffer -\/ must be free\textquotesingle{}d, text is U\+T\+F-\/8 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_adc013b1cf0ca092e3ad074e456937d2e}\label{class_fl___text___buffer_adc013b1cf0ca092e3ad074e456937d2e}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!undo@{undo}}
+\index{undo@{undo}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{undo()}{undo()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::undo (\begin{DoxyParamCaption}\item[{int $\ast$}]{cp = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Undo text modification according to the undo variables or insert text from the undo buffer \mbox{\Hypertarget{class_fl___text___buffer_ad78c9dd21ff3fc04060114ddc1448803}\label{class_fl___text___buffer_ad78c9dd21ff3fc04060114ddc1448803}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!unhighlight@{unhighlight}}
+\index{unhighlight@{unhighlight}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{unhighlight()}{unhighlight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::unhighlight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unhighlights text in the buffer. \mbox{\Hypertarget{class_fl___text___buffer_a21f1df22ad9aaf8ade2975c8d95d1470}\label{class_fl___text___buffer_a21f1df22ad9aaf8ade2975c8d95d1470}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!unselect@{unselect}}
+\index{unselect@{unselect}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{unselect()}{unselect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::unselect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cancels any previous selection on the primary text selection object. \mbox{\Hypertarget{class_fl___text___buffer_ae9000100ca83d297dd67541fd905c6d5}\label{class_fl___text___buffer_ae9000100ca83d297dd67541fd905c6d5}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!update\_selections@{update\_selections}}
+\index{update\_selections@{update\_selections}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{update\_selections()}{update\_selections()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::update\+\_\+selections (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{n\+Deleted,  }\item[{int}]{n\+Inserted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Updates all of the selections in the buffer for changes in the buffer\textquotesingle{}s text \mbox{\Hypertarget{class_fl___text___buffer_abcf02b5d38802fb53153d1ab3d727e05}\label{class_fl___text___buffer_abcf02b5d38802fb53153d1ab3d727e05}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!utf8\_align@{utf8\_align}}
+\index{utf8\_align@{utf8\_align}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{utf8\_align()}{utf8\_align()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::utf8\+\_\+align (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption}) const}
+
+Align an index into the buffer to the current or previous U\+T\+F-\/8 boundary. \mbox{\Hypertarget{class_fl___text___buffer_ad406bcbac9edebe99b3b3e2cf9611b90}\label{class_fl___text___buffer_ad406bcbac9edebe99b3b3e2cf9611b90}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!word\_end@{word\_end}}
+\index{word\_end@{word\_end}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{word\_end()}{word\_end()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::word\+\_\+end (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+Returns the position corresponding to the end of the word. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & byte index into buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte offset to word end 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___buffer_a08b8f68076fc5f3ecc348ef5717215a2}\label{class_fl___text___buffer_a08b8f68076fc5f3ecc348ef5717215a2}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!word\_start@{word\_start}}
+\index{word\_start@{word\_start}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{word\_start()}{word\_start()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::word\+\_\+start (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+Returns the position corresponding to the start of the word. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & byte index into buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+byte offset to word start 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___text___buffer_af334add7771e7928e7e01fa9a521455a}\label{class_fl___text___buffer_af334add7771e7928e7e01fa9a521455a}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!file\_encoding\_warning\_message@{file\_encoding\_warning\_message}}
+\index{file\_encoding\_warning\_message@{file\_encoding\_warning\_message}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{file\_encoding\_warning\_message}{file\_encoding\_warning\_message}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::file\+\_\+encoding\+\_\+warning\+\_\+message\hspace{0.3cm}{\ttfamily [static]}}
+
+This message may be displayed using the \mbox{\hyperlink{fl__ask_8_h_a44ce8540fd801b6adaaf5e499c2fc66e}{fl\+\_\+alert()}} function when a file which was not U\+T\+F-\/8 encoded is input. \mbox{\Hypertarget{class_fl___text___buffer_a3194e63f030767326476d4e719d69a32}\label{class_fl___text___buffer_a3194e63f030767326476d4e719d69a32}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!input\_file\_was\_transcoded@{input\_file\_was\_transcoded}}
+\index{input\_file\_was\_transcoded@{input\_file\_was\_transcoded}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{input\_file\_was\_transcoded}{input\_file\_was\_transcoded}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::input\+\_\+file\+\_\+was\+\_\+transcoded}
+
+
+
+true if the loaded file has been transcoded to U\+T\+F-\/8. 
+
+\mbox{\Hypertarget{class_fl___text___buffer_a10ded10101d8f411286d14c8e1f60865}\label{class_fl___text___buffer_a10ded10101d8f411286d14c8e1f60865}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mBuf@{mBuf}}
+\index{mBuf@{mBuf}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mBuf}{mBuf}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Buf\hspace{0.3cm}{\ttfamily [protected]}}
+
+allocated memory where the text is stored \mbox{\Hypertarget{class_fl___text___buffer_ac514cc66a88582bb6828bc421acf0f09}\label{class_fl___text___buffer_ac514cc66a88582bb6828bc421acf0f09}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mCanUndo@{mCanUndo}}
+\index{mCanUndo@{mCanUndo}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mCanUndo}{mCanUndo}}
+{\footnotesize\ttfamily char Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Can\+Undo\hspace{0.3cm}{\ttfamily [protected]}}
+
+if this buffer is used for attributes, it must not do any undo calls \mbox{\Hypertarget{class_fl___text___buffer_a0abe9b31f4a138137ce01af8e011f2df}\label{class_fl___text___buffer_a0abe9b31f4a138137ce01af8e011f2df}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mCbArgs@{mCbArgs}}
+\index{mCbArgs@{mCbArgs}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mCbArgs}{mCbArgs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}$\ast$$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Cb\+Args\hspace{0.3cm}{\ttfamily [protected]}}
+
+caller arguments for modify\+Procs above \mbox{\Hypertarget{class_fl___text___buffer_a50e7d6784656a3d4c2f928e002c75e85}\label{class_fl___text___buffer_a50e7d6784656a3d4c2f928e002c75e85}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mCursorPosHint@{mCursorPosHint}}
+\index{mCursorPosHint@{mCursorPosHint}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mCursorPosHint}{mCursorPosHint}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Cursor\+Pos\+Hint\hspace{0.3cm}{\ttfamily [protected]}}
+
+hint for reasonable cursor position after a buffer modification operation \mbox{\Hypertarget{class_fl___text___buffer_a77204ed3084eaceee8bb67f35e0c9223}\label{class_fl___text___buffer_a77204ed3084eaceee8bb67f35e0c9223}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mGapEnd@{mGapEnd}}
+\index{mGapEnd@{mGapEnd}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mGapEnd}{mGapEnd}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Gap\+End\hspace{0.3cm}{\ttfamily [protected]}}
+
+points to the first character after the gap \mbox{\Hypertarget{class_fl___text___buffer_a4bea04adc6132e9ee3cef0f46536a326}\label{class_fl___text___buffer_a4bea04adc6132e9ee3cef0f46536a326}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mGapStart@{mGapStart}}
+\index{mGapStart@{mGapStart}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mGapStart}{mGapStart}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Gap\+Start\hspace{0.3cm}{\ttfamily [protected]}}
+
+points to the first character of the gap \mbox{\Hypertarget{class_fl___text___buffer_a6a78d10cc4437d3029e347b9ded8cddb}\label{class_fl___text___buffer_a6a78d10cc4437d3029e347b9ded8cddb}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mHighlight@{mHighlight}}
+\index{mHighlight@{mHighlight}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mHighlight}{mHighlight}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Highlight\hspace{0.3cm}{\ttfamily [protected]}}
+
+highlighted areas \mbox{\Hypertarget{class_fl___text___buffer_af4d85a8ab1f6d681daf42c834339fdc7}\label{class_fl___text___buffer_af4d85a8ab1f6d681daf42c834339fdc7}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mLength@{mLength}}
+\index{mLength@{mLength}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mLength}{mLength}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Length\hspace{0.3cm}{\ttfamily [protected]}}
+
+length of the text in the buffer (the length of the buffer itself must be calculated\+: gap\+End -\/ gap\+Start + length) \mbox{\Hypertarget{class_fl___text___buffer_abc7f5a7cbd137b13dc74410831282589}\label{class_fl___text___buffer_abc7f5a7cbd137b13dc74410831282589}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mModifyProcs@{mModifyProcs}}
+\index{mModifyProcs@{mModifyProcs}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mModifyProcs}{mModifyProcs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___text___buffer_8_h_ae3f9ce6427d687a8714a4c7f2572bd29}{Fl\+\_\+\+Text\+\_\+\+Modify\+\_\+\+Cb}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Modify\+Procs\hspace{0.3cm}{\ttfamily [protected]}}
+
+procedures to call when buffer is modified to redisplay contents \mbox{\Hypertarget{class_fl___text___buffer_a415382fd677cc6c9572dabb866b6f27d}\label{class_fl___text___buffer_a415382fd677cc6c9572dabb866b6f27d}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mNModifyProcs@{mNModifyProcs}}
+\index{mNModifyProcs@{mNModifyProcs}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mNModifyProcs}{mNModifyProcs}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+N\+Modify\+Procs\hspace{0.3cm}{\ttfamily [protected]}}
+
+number of modify-\/redisplay procs attached \mbox{\Hypertarget{class_fl___text___buffer_aae73a1f6d1290fe8813d185e2de866e8}\label{class_fl___text___buffer_aae73a1f6d1290fe8813d185e2de866e8}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mNPredeleteProcs@{mNPredeleteProcs}}
+\index{mNPredeleteProcs@{mNPredeleteProcs}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mNPredeleteProcs}{mNPredeleteProcs}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+N\+Predelete\+Procs\hspace{0.3cm}{\ttfamily [protected]}}
+
+number of pre-\/delete procs attached \mbox{\Hypertarget{class_fl___text___buffer_a9c8e388b568aa6ff98bb8703272ac01b}\label{class_fl___text___buffer_a9c8e388b568aa6ff98bb8703272ac01b}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mPredeleteCbArgs@{mPredeleteCbArgs}}
+\index{mPredeleteCbArgs@{mPredeleteCbArgs}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mPredeleteCbArgs}{mPredeleteCbArgs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}$\ast$$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Predelete\+Cb\+Args\hspace{0.3cm}{\ttfamily [protected]}}
+
+caller argument for pre-\/delete proc above \mbox{\Hypertarget{class_fl___text___buffer_a9acb4950f29d6aa64a29e4ebe46e72f9}\label{class_fl___text___buffer_a9acb4950f29d6aa64a29e4ebe46e72f9}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mPredeleteProcs@{mPredeleteProcs}}
+\index{mPredeleteProcs@{mPredeleteProcs}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mPredeleteProcs}{mPredeleteProcs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___text___buffer_8_h_a6332a42d32987dfd522b063701df60b4}{Fl\+\_\+\+Text\+\_\+\+Predelete\+\_\+\+Cb}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Predelete\+Procs\hspace{0.3cm}{\ttfamily [protected]}}
+
+procedure to call before text is deleted from the buffer; at most one is supported. \mbox{\Hypertarget{class_fl___text___buffer_abadec9509dcd31dbb342044ec3c82fc2}\label{class_fl___text___buffer_abadec9509dcd31dbb342044ec3c82fc2}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mPreferredGapSize@{mPreferredGapSize}}
+\index{mPreferredGapSize@{mPreferredGapSize}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mPreferredGapSize}{mPreferredGapSize}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Preferred\+Gap\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+the default allocation for the text gap is 1024 bytes and should only be increased if frequent and large changes in buffer size are expected \mbox{\Hypertarget{class_fl___text___buffer_aa2c392f5efd9f75762ced592a75b9860}\label{class_fl___text___buffer_aa2c392f5efd9f75762ced592a75b9860}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mPrimary@{mPrimary}}
+\index{mPrimary@{mPrimary}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mPrimary}{mPrimary}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Primary\hspace{0.3cm}{\ttfamily [protected]}}
+
+highlighted areas \mbox{\Hypertarget{class_fl___text___buffer_a05ed59fc23a6b565a99bf80623aaa77a}\label{class_fl___text___buffer_a05ed59fc23a6b565a99bf80623aaa77a}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mSecondary@{mSecondary}}
+\index{mSecondary@{mSecondary}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mSecondary}{mSecondary}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}} Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Secondary\hspace{0.3cm}{\ttfamily [protected]}}
+
+highlighted areas \mbox{\Hypertarget{class_fl___text___buffer_adc81abbabaf8f718aac4b96ffba73e89}\label{class_fl___text___buffer_adc81abbabaf8f718aac4b96ffba73e89}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!mTabDist@{mTabDist}}
+\index{mTabDist@{mTabDist}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{mTabDist}{mTabDist}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Buffer\+::m\+Tab\+Dist\hspace{0.3cm}{\ttfamily [protected]}}
+
+equiv. number of characters in a tab \mbox{\Hypertarget{class_fl___text___buffer_abe180b148a9891845040c882b7a12cd3}\label{class_fl___text___buffer_abe180b148a9891845040c882b7a12cd3}} 
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!transcoding\_warning\_action@{transcoding\_warning\_action}}
+\index{transcoding\_warning\_action@{transcoding\_warning\_action}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\doxysubsubsection{\texorpdfstring{transcoding\_warning\_action}{transcoding\_warning\_action}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$ Fl\+\_\+\+Text\+\_\+\+Buffer\+::transcoding\+\_\+warning\+\_\+action) (\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$)}
+
+
+
+Pointer to a function called after reading a non U\+T\+F-\/8 encoded file. 
+
+This function is called after reading a file if the file content was transcoded to U\+T\+F-\/8. Its default implementation calls \mbox{\hyperlink{fl__ask_8_h_a44ce8540fd801b6adaaf5e499c2fc66e}{fl\+\_\+alert()}} with the text of \mbox{\hyperlink{class_fl___text___buffer_af334add7771e7928e7e01fa9a521455a}{file\+\_\+encoding\+\_\+warning\+\_\+message}}. No warning message is displayed if this pointer is set to N\+U\+LL. Use \mbox{\hyperlink{class_fl___text___buffer_a3194e63f030767326476d4e719d69a32}{input\+\_\+file\+\_\+was\+\_\+transcoded}} to be informed if file input required transcoding to U\+T\+F-\/8. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___text___buffer_8_h}{Fl\+\_\+\+Text\+\_\+\+Buffer.\+H}}\end{DoxyCompactItemize}

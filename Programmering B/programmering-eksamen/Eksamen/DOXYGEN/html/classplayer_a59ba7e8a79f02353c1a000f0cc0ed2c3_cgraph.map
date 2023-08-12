@@ -1,0 +1,5 @@
+<map id="player::updatePlayer" name="player::updatePlayer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,147,73"/>
+<area shape="rect" id="node2" href="$classsf_1_1_transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object" alt="" coords="195,5,324,47"/>
+<area shape="rect" id="node3" href="$classsf_1_1_transformable.html#a32baf2bf1a74699b03bf8c95030a38ed" title="set the orientation of the object" alt="" coords="195,71,324,112"/>
+</map>

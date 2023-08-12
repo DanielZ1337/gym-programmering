@@ -1,0 +1,182 @@
+\hypertarget{class_fl___choice}{}\doxysection{Fl\+\_\+\+Choice Class Reference}
+\label{class_fl___choice}\index{Fl\_Choice@{Fl\_Choice}}
+
+
+A button that is used to pop up a menu.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Choice.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Choice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___choice__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Choice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___choice__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___choice_ad7b67a4db58f558401b0593e13c6ca34}{handle}} (int)
+\item 
+\mbox{\hyperlink{class_fl___choice_a7fd57948259f7f6c17b26d7151b0afef}{Fl\+\_\+\+Choice}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$L=0)
+\item 
+int \mbox{\hyperlink{class_fl___choice_a9da9b4ce82f756bd006ca5af6aaff048}{value}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___choice_a60dfd6071a025cb93582fdfab1f0f9d7}{value}} (int \mbox{\hyperlink{forms_8_h_a3b90d5a73541ab9402511d87bed076ef}{v}})
+\item 
+int \mbox{\hyperlink{class_fl___choice_a674a3193eed92faa71b20daacf11e141}{value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} $\ast$\mbox{\hyperlink{forms_8_h_a3b90d5a73541ab9402511d87bed076ef}{v}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___choice_a69c4f1a26612986d7c14d4882d2cd19d}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A button that is used to pop up a menu. 
+
+This is a button that, when pushed, pops up a menu (or hierarchy of menus) defined by an array of \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} objects. Motif calls this an Option\+Button.
+
+The only difference between this and a \mbox{\hyperlink{class_fl___menu___button}{Fl\+\_\+\+Menu\+\_\+\+Button}} is that the name of the most recent chosen menu item is displayed inside the box, while the label is displayed outside the box. However, since the use of this is most often to control a single variable rather than do individual callbacks, some of the \mbox{\hyperlink{class_fl___menu___button}{Fl\+\_\+\+Menu\+\_\+\+Button}} methods are redescribed here in those terms.
+
+When the user clicks a menu item, \mbox{\hyperlink{class_fl___choice_a9da9b4ce82f756bd006ca5af6aaff048}{value()}} is set to that item and then\+: \begin{DoxyVerb}- The item's callback is done if one has been set; the
+  Fl_Choice is passed as the Fl_Widget* argument, 
+  along with any userdata configured for the callback.
+
+- If the item does not have a callback, the Fl_Choice widget's
+  callback is done instead, along with any userdata configured
+  for it.  The callback can determine which item was picked using
+  value(), mvalue(), item_pathname(), etc.
+\end{DoxyVerb}
+
+
+All three mouse buttons pop up the menu. The Forms behavior of the first two buttons to increment/decrement the choice is not implemented. This could be added with a subclass, however.
+
+The menu will also pop up in response to shortcuts indicated by putting a \textquotesingle{}\&\textquotesingle{} character in the \mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}}. See \mbox{\hyperlink{class_fl___button_ad0c694762b456cbb3c42927b2129fdd4}{Fl\+\_\+\+Button\+::shortcut(int s)}} for a description of this.
+
+Typing the \mbox{\hyperlink{class_fl___menu___aa8080134808c3785579bde1c4ff57f62}{shortcut()}} of any of the items will do exactly the same as when you pick the item with the mouse. The \textquotesingle{}\&\textquotesingle{} character in item names are only looked at when the menu is popped up, however.
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=4cm]{choice.png}
+\doxyfigcaption{Fl\+\_\+\+Choice}
+\end{DoxyImage}
+ \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000011}{Todo}}]Refactor the doxygen comments for \mbox{\hyperlink{class_fl___choice}{Fl\+\_\+\+Choice}} \mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed()}} documentation.\end{DoxyRefDesc}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily int \mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{Fl\+\_\+\+Widget\+::changed() const}}} This value is true the user picks a different value. {\itshape It is turned off by \mbox{\hyperlink{class_fl___choice_a9da9b4ce82f756bd006ca5af6aaff048}{value()}} and just before doing a callback (the callback can turn it back on if desired).} \item {\ttfamily void \mbox{\hyperlink{class_fl___widget_a825fd3487559e1c283550abdb92304ef}{Fl\+\_\+\+Widget\+::set\+\_\+changed()}}} This method sets the \mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed()}} flag. \item {\ttfamily void \mbox{\hyperlink{class_fl___widget_abd83334100f22d5880cf34a233a35831}{Fl\+\_\+\+Widget\+::clear\+\_\+changed()}}} This method clears the \mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed()}} flag. \item {\ttfamily Fl\+\_\+\+Boxtype \mbox{\hyperlink{class_fl___menu___acfe28156d719278f403fc3bb23502edc}{Fl\+\_\+\+Choice\+::down\+\_\+box() const}}} Gets the current down box, which is used when the menu is popped up. The default down box type is {\ttfamily F\+L\+\_\+\+D\+O\+W\+N\+\_\+\+B\+OX}. \item {\ttfamily void \mbox{\hyperlink{class_fl___menu___a76c3794608213f1bb1d01f677a88d239}{Fl\+\_\+\+Choice\+::down\+\_\+box(\+Fl\+\_\+\+Boxtype b)}}} Sets the current down box type to {\ttfamily b}. \end{DoxyItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___choice_a7fd57948259f7f6c17b26d7151b0afef}\label{class_fl___choice_a7fd57948259f7f6c17b26d7151b0afef}} 
+\index{Fl\_Choice@{Fl\_Choice}!Fl\_Choice@{Fl\_Choice}}
+\index{Fl\_Choice@{Fl\_Choice}!Fl\_Choice@{Fl\_Choice}}
+\doxysubsubsection{\texorpdfstring{Fl\_Choice()}{Fl\_Choice()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Choice\+::\+Fl\+\_\+\+Choice (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{L = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___choice_a69c4f1a26612986d7c14d4882d2cd19d}\label{class_fl___choice_a69c4f1a26612986d7c14d4882d2cd19d}} 
+\index{Fl\_Choice@{Fl\_Choice}!draw@{draw}}
+\index{draw@{draw}!Fl\_Choice@{Fl\_Choice}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Choice\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___choice_a69c4f1a26612986d7c14d4882d2cd19d}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___choice_a69c4f1a26612986d7c14d4882d2cd19d}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Implements \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___choice_ad7b67a4db58f558401b0593e13c6ca34}\label{class_fl___choice_ad7b67a4db58f558401b0593e13c6ca34}} 
+\index{Fl\_Choice@{Fl\_Choice}!handle@{handle}}
+\index{handle@{handle}!Fl\_Choice@{Fl\_Choice}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Choice\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___choice_ad7b67a4db58f558401b0593e13c6ca34}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___widget_a3521aba25eda761620953dd49d335ea7}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___choice_a9da9b4ce82f756bd006ca5af6aaff048}\label{class_fl___choice_a9da9b4ce82f756bd006ca5af6aaff048}} 
+\index{Fl\_Choice@{Fl\_Choice}!value@{value}}
+\index{value@{value}!Fl\_Choice@{Fl\_Choice}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Choice\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the index of the last item chosen by the user. The index is zero initially. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_fl___choice_a9da9b4ce82f756bd006ca5af6aaff048_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___choice_a674a3193eed92faa71b20daacf11e141}\label{class_fl___choice_a674a3193eed92faa71b20daacf11e141}} 
+\index{Fl\_Choice@{Fl\_Choice}!value@{value}}
+\index{value@{value}!Fl\_Choice@{Fl\_Choice}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Choice\+::value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} $\ast$}]{v }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___choice_a60dfd6071a025cb93582fdfab1f0f9d7}\label{class_fl___choice_a60dfd6071a025cb93582fdfab1f0f9d7}} 
+\index{Fl\_Choice@{Fl\_Choice}!value@{value}}
+\index{value@{value}!Fl\_Choice@{Fl\_Choice}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Choice\+::value (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___choice_8_h}{Fl\+\_\+\+Choice.\+H}}\end{DoxyCompactItemize}

@@ -1,0 +1,120 @@
+\hypertarget{class_fl___light___button}{}\doxysection{Fl\+\_\+\+Light\+\_\+\+Button Class Reference}
+\label{class_fl___light___button}\index{Fl\_Light\_Button@{Fl\_Light\_Button}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Light\+\_\+\+Button.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Light\+\_\+\+Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___light___button__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Light\+\_\+\+Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{class_fl___light___button__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{class_fl___light___button_a931c5d5d8cb764350c8fe8d78af6231d}{handle}} (int)
+\item 
+\mbox{\hyperlink{class_fl___light___button_ac8e80088a65bb583680e82eec06d8dd1}{Fl\+\_\+\+Light\+\_\+\+Button}} (int \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x}}, int \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y}}, int \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}, int \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___light___button_a3b27affd4a406d49cff709cbcc8c828e}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This subclass displays the \char`\"{}on\char`\"{} state by turning on a light, rather than drawing pushed in. The shape of the \char`\"{}light\char`\"{} is initially set to F\+L\+\_\+\+D\+O\+W\+N\+\_\+\+B\+OX. The color of the light when on is controlled with \mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\+\_\+color()}}, which defaults to F\+L\+\_\+\+Y\+E\+L\+L\+OW.
+
+Buttons generate callbacks when they are clicked by the user. You control exactly when and how by changing the values for \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{type()}} and \mbox{\hyperlink{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}{when()}}. 
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=4cm]{Fl_Light_Button.png}
+\doxyfigcaption{Fl\+\_\+\+Light\+\_\+\+Button}
+\end{DoxyImage}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___light___button_ac8e80088a65bb583680e82eec06d8dd1}\label{class_fl___light___button_ac8e80088a65bb583680e82eec06d8dd1}} 
+\index{Fl\_Light\_Button@{Fl\_Light\_Button}!Fl\_Light\_Button@{Fl\_Light\_Button}}
+\index{Fl\_Light\_Button@{Fl\_Light\_Button}!Fl\_Light\_Button@{Fl\_Light\_Button}}
+\doxysubsubsection{\texorpdfstring{Fl\_Light\_Button()}{Fl\_Light\_Button()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Light\+\_\+\+Button\+::\+Fl\+\_\+\+Light\+\_\+\+Button (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___light___button_a3b27affd4a406d49cff709cbcc8c828e}\label{class_fl___light___button_a3b27affd4a406d49cff709cbcc8c828e}} 
+\index{Fl\_Light\_Button@{Fl\_Light\_Button}!draw@{draw}}
+\index{draw@{draw}!Fl\_Light\_Button@{Fl\_Light\_Button}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Light\+\_\+\+Button\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___light___button_a3b27affd4a406d49cff709cbcc8c828e}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___light___button_a3b27affd4a406d49cff709cbcc8c828e}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___button_a98687e86bf07a47a8be8325250e2036b}{Fl\+\_\+\+Button}}.
+
+\mbox{\Hypertarget{class_fl___light___button_a931c5d5d8cb764350c8fe8d78af6231d}\label{class_fl___light___button_a931c5d5d8cb764350c8fe8d78af6231d}} 
+\index{Fl\_Light\_Button@{Fl\_Light\_Button}!handle@{handle}}
+\index{handle@{handle}!Fl\_Light\_Button@{Fl\_Light\_Button}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily virtual int Fl\+\_\+\+Light\+\_\+\+Button\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___light___button_a931c5d5d8cb764350c8fe8d78af6231d}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___button_a85a9bcd4943f577e6eb68f054ae3c80c}{Fl\+\_\+\+Button}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___light___button_8_h}{Fl\+\_\+\+Light\+\_\+\+Button.\+H}}\end{DoxyCompactItemize}

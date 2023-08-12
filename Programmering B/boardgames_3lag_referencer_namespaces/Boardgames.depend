@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1582881945 source:c:\users\danielz\documents\boardgames_3lag_referencer_namespaces\main.cpp
+	<vector>
+	<string>
+	<iostream>
+	"data_layer.h"
+	"presentation_layer.h"
+
+1582881869 c:\users\danielz\documents\boardgames_3lag_referencer_namespaces\include\data_layer.h
+	<string>
+	<vector>
+
+1582881869 c:\users\danielz\documents\boardgames_3lag_referencer_namespaces\include\presentation_layer.h
+	<vector>
+	<string>
+
+1582881969 source:c:\users\danielz\documents\boardgames_3lag_referencer_namespaces\src\data_layer.cpp
+	"data_layer.h"
+	<fstream>
+	<algorithm>
+
+1582703030 source:c:\users\danielz\documents\boardgames_3lag_referencer_namespaces\src\logic_layer.cpp
+	"logic_layer.h"
+
+1582703030 c:\users\danielz\documents\boardgames_3lag_referencer_namespaces\include\logic_layer.h
+
+1582882038 source:c:\users\danielz\documents\boardgames_3lag_referencer_namespaces\src\presentation_layer.cpp
+	"presentation_layer.h"
+	<iostream>
+

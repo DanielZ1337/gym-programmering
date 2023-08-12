@@ -1,0 +1,11 @@
+<map id="Fl_Window" name="Fl_Window">
+<area shape="rect" id="node1" title=" " alt="" coords="181,155,267,181"/>
+<area shape="rect" id="node4" href="$class_fl___double___window.html" title=" " alt="" coords="9,229,143,256"/>
+<area shape="rect" id="node6" href="$class_fl___gl___window.html" title=" " alt="" coords="171,229,277,256"/>
+<area shape="rect" id="node8" href="$class_fl___single___window.html" title=" " alt="" coords="303,229,433,256"/>
+<area shape="rect" id="node2" href="$class_fl___group.html" title=" " alt="" coords="187,80,261,107"/>
+<area shape="rect" id="node3" href="$class_fl___widget.html" title=" " alt="" coords="183,5,265,32"/>
+<area shape="rect" id="node5" href="$class_fl___overlay___window.html" title=" " alt="" coords="5,304,141,331"/>
+<area shape="rect" id="node7" href="$class_fl___glut___window.html" title=" " alt="" coords="165,304,283,331"/>
+<area shape="rect" id="node9" href="$class_fl___menu___window.html" title=" " alt="" coords="307,304,432,331"/>
+</map>

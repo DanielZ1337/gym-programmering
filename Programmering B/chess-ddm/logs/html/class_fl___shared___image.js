@@ -1,0 +1,28 @@
+var class_fl___shared___image =
+[
+    [ "Fl_Shared_Image", "class_fl___shared___image.html#abce198105631f02e4deee18e99bee668", null ],
+    [ "Fl_Shared_Image", "class_fl___shared___image.html#addb22c44911a41940c486cc8e24c8fb9", null ],
+    [ "~Fl_Shared_Image", "class_fl___shared___image.html#a6aa7e73dfbeedb8bd938acdc4dbedb17", null ],
+    [ "add", "class_fl___shared___image.html#a14d578defbe9b67d276beab4d21183aa", null ],
+    [ "color_average", "class_fl___shared___image.html#ac6a7539e2caf91f00b1bf728c9c1b7bc", null ],
+    [ "copy", "class_fl___shared___image.html#a1a2682e8f70ecb7ae1fd8815a3a4b9e7", null ],
+    [ "copy", "class_fl___shared___image.html#a4a06b035220edababffdd07fd6ae229e", null ],
+    [ "desaturate", "class_fl___shared___image.html#aa3f0190a62e732211734e48c725ba583", null ],
+    [ "draw", "class_fl___shared___image.html#ad6954b9df5ea1adbabba07a090ce01bc", null ],
+    [ "draw", "class_fl___shared___image.html#aa76e482ab511cb7bc559dba248373d3e", null ],
+    [ "name", "class_fl___shared___image.html#a67bec522a680cd0c469bb458d12b838f", null ],
+    [ "original", "class_fl___shared___image.html#abeb87fede91973b52eb798b8a08f5774", null ],
+    [ "refcount", "class_fl___shared___image.html#af425a9c43f38266b626e27eafdd9768f", null ],
+    [ "release", "class_fl___shared___image.html#a78812e7f8fc51248061c79bf72ae32ec", null ],
+    [ "reload", "class_fl___shared___image.html#a954dbe57648e63bb5f6c9d5aca4ef527", null ],
+    [ "scale", "class_fl___shared___image.html#a1026830f0b7384269a5b8a304a438f52", null ],
+    [ "uncache", "class_fl___shared___image.html#a4d2cbe77925d05b473afd251b0127994", null ],
+    [ "update", "class_fl___shared___image.html#a417ff910025f28d2337e54fac47e4f44", null ],
+    [ "Fl_JPEG_Image", "class_fl___shared___image.html#a6602d329ab8a0e9910031eb79c36ddfa", null ],
+    [ "Fl_PNG_Image", "class_fl___shared___image.html#a7ba57a94fc5ebe647545e4e543109f35", null ],
+    [ "alloc_image_", "class_fl___shared___image.html#a163056147dfd176f932ea3eb90c47654", null ],
+    [ "image_", "class_fl___shared___image.html#ac7543f043f90d2f5869fef9e61ff29e6", null ],
+    [ "name_", "class_fl___shared___image.html#a5a551ae6cef553aef679d26bf5dae782", null ],
+    [ "original_", "class_fl___shared___image.html#ae68c77edaf049009ca0efa34a615e402", null ],
+    [ "refcount_", "class_fl___shared___image.html#a5d1f1245c4b2c84b5aeee072f8626968", null ]
+];

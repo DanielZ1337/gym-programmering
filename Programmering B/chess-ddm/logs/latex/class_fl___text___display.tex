@@ -1,0 +1,1853 @@
+\hypertarget{class_fl___text___display}{}\doxysection{Fl\+\_\+\+Text\+\_\+\+Display Class Reference}
+\label{class_fl___text___display}\index{Fl\_Text\_Display@{Fl\_Text\_Display}}
+
+
+Rich text display widget.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Text\+\_\+\+Display.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Text\+\_\+\+Display\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_fl___text___display__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Text\+\_\+\+Display\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___text___display__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_fl___text___display_1_1_style___table___entry}{Style\+\_\+\+Table\+\_\+\+Entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_fl___text___display_a27dd400a525f9ae397450488e5030c8eaa2a0731bec785c14eeb50bfdee224b6e}{N\+O\+R\+M\+A\+L\+\_\+\+C\+U\+R\+S\+OR}}, 
+\mbox{\hyperlink{class_fl___text___display_a27dd400a525f9ae397450488e5030c8ea620b34373d9910508bcba51710122435}{C\+A\+R\+E\+T\+\_\+\+C\+U\+R\+S\+OR}}, 
+\mbox{\hyperlink{class_fl___text___display_a27dd400a525f9ae397450488e5030c8ea44c221fb4a13dda486e5d94279f7933c}{D\+I\+M\+\_\+\+C\+U\+R\+S\+OR}}, 
+\mbox{\hyperlink{class_fl___text___display_a27dd400a525f9ae397450488e5030c8ea0b298a0a850266321159bf9aff7517f6}{B\+L\+O\+C\+K\+\_\+\+C\+U\+R\+S\+OR}}, 
+\newline
+\mbox{\hyperlink{class_fl___text___display_a27dd400a525f9ae397450488e5030c8eaf91b386f9d018b5dfe3f42c5ae2207f4}{H\+E\+A\+V\+Y\+\_\+\+C\+U\+R\+S\+OR}}, 
+\mbox{\hyperlink{class_fl___text___display_a27dd400a525f9ae397450488e5030c8eaaaeb2657c5fc8b5f51a3c43c2143c744}{S\+I\+M\+P\+L\+E\+\_\+\+C\+U\+R\+S\+OR}}
+ \}
+\item 
+enum \{ \mbox{\hyperlink{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6a284fceb9f1fec39e33278f5c1e68ab77}{C\+U\+R\+S\+O\+R\+\_\+\+P\+OS}}, 
+\mbox{\hyperlink{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6a61f7dd8a1a7e6fa28614888e1f99e10b}{C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+P\+OS}}
+ \}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32a0546266edc0058b9f0270036f2cf0ff0}{D\+R\+A\+G\+\_\+\+N\+O\+NE}} = -\/2, 
+\mbox{\hyperlink{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32af9f8e1057f2b70d08841f29fb75272e6}{D\+R\+A\+G\+\_\+\+S\+T\+A\+R\+T\+\_\+\+D\+ND}} = -\/1, 
+\mbox{\hyperlink{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32ae5a606b69074e17eb85b61c413e5a419}{D\+R\+A\+G\+\_\+\+C\+H\+AR}} = 0, 
+\mbox{\hyperlink{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32a67ccf257857d7c9fea575333dab71946}{D\+R\+A\+G\+\_\+\+W\+O\+RD}} = 1, 
+\newline
+\mbox{\hyperlink{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32afae975f31c0c5e4f8681288fecdcb9be}{D\+R\+A\+G\+\_\+\+L\+I\+NE}} = 2
+ \}
+\item 
+enum \{ \mbox{\hyperlink{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68aa4c885d60a9b96851f7af56befe886a5}{W\+R\+A\+P\+\_\+\+N\+O\+NE}}, 
+\mbox{\hyperlink{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68a2c56d51b13b897f186f6c50f25a77f05}{W\+R\+A\+P\+\_\+\+A\+T\+\_\+\+C\+O\+L\+U\+MN}}, 
+\mbox{\hyperlink{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68acc749e9434872faa99a6b33e352e8605}{W\+R\+A\+P\+\_\+\+A\+T\+\_\+\+P\+I\+X\+EL}}, 
+\mbox{\hyperlink{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68a4d86a239285c1070d6381e678f2a9e59}{W\+R\+A\+P\+\_\+\+A\+T\+\_\+\+B\+O\+U\+N\+DS}}
+ \}
+\item 
+typedef \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$ \mbox{\hyperlink{class_fl___text___display_a6a1d46fcc348160ae5c68bd2fb388492}{Unfinished\+\_\+\+Style\+\_\+\+Cb}}) (int, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___text___display_a42c6300eda2d0eaca52d20f137530197}{Fl\+\_\+\+Text\+\_\+\+Display}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\item 
+\mbox{\hyperlink{class_fl___text___display_aa473b5387fd9f06daea61036b8271b05}{$\sim$\+Fl\+\_\+\+Text\+\_\+\+Display}} ()
+\item 
+virtual int \mbox{\hyperlink{class_fl___text___display_a38b01043100644a6efc04a35aa232b3c}{handle}} (int e)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a0244a43078c78af8f528f933a6719490}{buffer}} (\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$buf)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ae5a312a54d2f4bcbeb91e0ad76717eaa}{buffer}} (\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} \&buf)
+\item 
+\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$ \mbox{\hyperlink{class_fl___text___display_adc7223eb3e5363e4b2ce7617a3011967}{buffer}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a6ec6a8ca047a45805522efbc301c786a}{redisplay\+\_\+range}} (int start, int \mbox{\hyperlink{class_fl___group_a029653337efa0cb2ec52852519293ba8}{end}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_aa6705c216c0626763f3f34d3e318d465}{scroll}} (int top\+Line\+Num, int horiz\+Offset)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a9a813cdf8fd1f142882a4c8b6a9d2bbf}{insert}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$text)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ae612b71447f03a6ad1f46ae8c1cc9f38}{overstrike}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$text)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_aa18e615713b30b870045fc370758b510}{insert\+\_\+position}} (int new\+Pos)
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a8f02f5ee62ab03d8144765ef86d4ad01}{insert\+\_\+position}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a0bf0bfb6bb3ac9d6b4774b8a2b1849ec}{position\+\_\+to\+\_\+xy}} (int pos, int $\ast$\mbox{\hyperlink{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}{x}}, int $\ast$\mbox{\hyperlink{class_fl___text___display_a3ec54952411bf446b977c713f4ec46c7}{y}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a63b60d5fcb0fb09fc906ef9dc3c11e99}{in\+\_\+selection}} (int \mbox{\hyperlink{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}{x}}, int \mbox{\hyperlink{class_fl___text___display_a3ec54952411bf446b977c713f4ec46c7}{y}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_aadc28a301981f02edc3d57913f56b766}{show\+\_\+insert\+\_\+position}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a43532a8c0a8698087cb349b0b3e5f192}{move\+\_\+right}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a41c90322a2be857fb6362c783a9d3450}{move\+\_\+left}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a62d586abbef6563adbf06c40eaa71c7d}{move\+\_\+up}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a1fe1ed3d39556253238235fd0a57d2bd}{move\+\_\+down}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a35933071176822679acdb00c449428d9}{count\+\_\+lines}} (int start, int \mbox{\hyperlink{class_fl___group_a029653337efa0cb2ec52852519293ba8}{end}}, bool start\+\_\+pos\+\_\+is\+\_\+line\+\_\+start) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a3c400abedbed52884e2f7c4ecc236b3d}{line\+\_\+start}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a51ccc5a2a4f52d1b63fbb71f853a2d62}{line\+\_\+end}} (int start\+Pos, bool start\+Pos\+Is\+Line\+Start) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_adf4a0d3ffb4ebdd34954d1781516653c}{skip\+\_\+lines}} (int start\+Pos, int n\+Lines, bool start\+Pos\+Is\+Line\+Start)
+\item 
+int \mbox{\hyperlink{class_fl___text___display_ab979d92ae92c3209cabd187028d61029}{rewind\+\_\+lines}} (int start\+Pos, int n\+Lines)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_abb9d0b39bfcb5724db615f328b3acd7a}{next\+\_\+word}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a83c23e74c58e01e61259a6bbaf632ed3}{previous\+\_\+word}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a2e19af56aacc79cbefe426ca6255099d}{show\+\_\+cursor}} (int \mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}}=1)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a04ba6677e453106781e28f4fc75dcef8}{hide\+\_\+cursor}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a6f4751931de885d4907e659d97acab30}{cursor\+\_\+style}} (int style)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___text___display_a773052f561cd546dfc2d1c8fd5485dae}{cursor\+\_\+color}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a17bfc3af03f82c18c7ebb6ef34ed2139}{cursor\+\_\+color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} n)
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a0006a273fa0a2370e6db2d6aa079fcb6}{scrollbar\+\_\+width}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a3947903141cbc6f4b125e9aef5f5d388}{scrollbar\+\_\+width}} (int W)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} \mbox{\hyperlink{class_fl___text___display_a26f6e0b2a781f023d5a13b9bdd0af486}{scrollbar\+\_\+align}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a4b14388f53b951244edcfab51c2a1e18}{scrollbar\+\_\+align}} (\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} a)
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a593eb42b7c691417311b4cf75821a8f2}{word\+\_\+start}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a6fb0cd917979a537ba8e2142f0f9d7fc}{word\+\_\+end}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ae09d61739b737a32868ffe0295a25dec}{highlight\+\_\+data}} (\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$style\+Buffer, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___text___display_1_1_style___table___entry}{Style\+\_\+\+Table\+\_\+\+Entry}} $\ast$style\+Table, int n\+Styles, char unfinished\+Style, \mbox{\hyperlink{class_fl___text___display_a6a1d46fcc348160ae5c68bd2fb388492}{Unfinished\+\_\+\+Style\+\_\+\+Cb}} unfinished\+Highlight\+CB, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a50c7195b40f1168cdfdfce73a2d177d7}{position\+\_\+style}} (int line\+Start\+Pos, int line\+Len, int line\+Index) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a98f01dd6b8be0522e54bccf0f3587d47}{shortcut}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a3ec453b6dc9cc468619688c5bdf3dc95}{shortcut}} (int \mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{class_fl___text___display_aede1822b26480e2d08c3625b67f7abe3}{textfont}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a8bcd59e82106e198bae05ca073cacdf1}{textfont}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{class_fl___text___display_ad92e726e57de12916b1493ed2370177b}{textsize}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a00f7c0a58a3efd71a8379762dd20c299}{textsize}} (\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___text___display_a8695a84858aa91aef4323f4618cab9b7}{textcolor}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a2572e2a4e5bccd59fb94e46b1329e4cf}{textcolor}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} n)
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a9507d73613f6166a99283cacd7d2b0d7}{wrapped\+\_\+column}} (int row, int column) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_aafdfe5c72839546c6100edf6f35222f8}{wrapped\+\_\+row}} (int row) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ab9378d48b949f8fc7da04c6be4142c54}{wrap\+\_\+mode}} (int wrap, int wrap\+\_\+margin)
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_aa8215d8e63bba5f1550ae57e6969263a}{resize}} (int X, int Y, int W, int H)
+\item 
+double \mbox{\hyperlink{class_fl___text___display_a69139918fadc2ea30d5c16583fc8d0c8}{x\+\_\+to\+\_\+col}} (double \mbox{\hyperlink{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}{x}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+double \mbox{\hyperlink{class_fl___text___display_aa4c277bb4856da69b925ba4e47435c9f}{col\+\_\+to\+\_\+x}} (double col) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ab2d7774bcaf13fb00425c0b3e929522d}{linenumber\+\_\+width}} (int \mbox{\hyperlink{png_8h_ad46179dbe9c68fdcea52b34c3480ec0f}{width}})
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a82dc6b4b49e8e6cc0e41bcaed1bdb4d3}{linenumber\+\_\+width}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_acfdfde4e3a2edbaf662db3441ef1ad4e}{linenumber\+\_\+font}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{class_fl___text___display_aa8c310d79f422d98493c97c8b1b47616}{linenumber\+\_\+font}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ab05046502525913981670a233d07a381}{linenumber\+\_\+size}} (\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{class_fl___text___display_a4aecc6a7cc2e4ce9d36e277513725c8f}{linenumber\+\_\+size}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_aa2215c44fd26defa382c8b13df93b183}{linenumber\+\_\+fgcolor}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___text___display_ab06717a810ba7ae34dd04d016c47be1e}{linenumber\+\_\+fgcolor}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ae3f8bff6fb84f60064b7e4b8ac037787}{linenumber\+\_\+bgcolor}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___text___display_a28ebc88de67aa8aa1e9edb2cec132bfd}{linenumber\+\_\+bgcolor}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a1856a46246f35556ef13b186e1609321}{linenumber\+\_\+align}} (\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} \mbox{\hyperlink{class_fl___text___display_af391c9cc9def92f42ef4c6ded13f8370}{linenumber\+\_\+align}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_abd21dfb0bed631523170a3754575e95c}{linenumber\+\_\+format}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___text___display_a2e1e9e9c522ca29b7d53c6aa8d7ea4ff}{linenumber\+\_\+format}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5da2c8c8ef06539ebdb565b1104e55a2eed}{D\+R\+A\+W\+\_\+\+L\+I\+NE}}, 
+\mbox{\hyperlink{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5daa33a1b6917000324bd0e6710c94ad864}{F\+I\+N\+D\+\_\+\+I\+N\+D\+EX}}, 
+\mbox{\hyperlink{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5da4598c17d3df461cba83867ab414e46e1}{F\+I\+N\+D\+\_\+\+I\+N\+D\+E\+X\+\_\+\+F\+R\+O\+M\+\_\+\+Z\+E\+RO}}, 
+\mbox{\hyperlink{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5da106e0a36bad76105f13a6c3ecce23be7}{G\+E\+T\+\_\+\+W\+I\+D\+TH}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ab0521b987134307c13b73a6e7230de77}{draw}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a8a03d48ca14949b0a1933fbee2c0e347}{draw\+\_\+text}} (int X, int Y, int W, int H)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a63df8b065f442f04eb0653318e048612}{draw\+\_\+range}} (int start, int \mbox{\hyperlink{class_fl___group_a029653337efa0cb2ec52852519293ba8}{end}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a5e5d522b89d167554ad059bc9a39b9b4}{draw\+\_\+cursor}} (int, int)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a707d8b4ce699d2c7950d8adb52aff9ce}{draw\+\_\+string}} (int style, int \mbox{\hyperlink{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}{x}}, int \mbox{\hyperlink{class_fl___text___display_a3ec54952411bf446b977c713f4ec46c7}{y}}, int toX, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$string, int n\+Chars) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ad6288a3a93930c706c154ea065308c9d}{draw\+\_\+vline}} (int vis\+Line\+Num, int left\+Clip, int right\+Clip, int left\+Char\+Index, int right\+Char\+Index)
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a74d290bbc81bab4c98ca537955f3a82f}{find\+\_\+x}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, int len, int style, int \mbox{\hyperlink{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}{x}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a10713a9bb22e486887eeda7f75324389}{handle\+\_\+vline}} (int \mbox{\hyperlink{png_8h_a3eabae3e1e65723a7ec3445646cb7795}{mode}}, int line\+Start, int line\+Len, int left\+Char, int right\+Char, int top\+Clip, int bottom\+Clip, int left\+Clip, int right\+Clip) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_afc77f4bedb15408180b704a91252af80}{draw\+\_\+line\+\_\+numbers}} (bool clear\+All)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_aaa87cfd0f3bf1975c38a38d5873e590a}{clear\+\_\+rect}} (int style, int \mbox{\hyperlink{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}{x}}, int \mbox{\hyperlink{class_fl___text___display_a3ec54952411bf446b977c713f4ec46c7}{y}}, int \mbox{\hyperlink{png_8h_ad46179dbe9c68fdcea52b34c3480ec0f}{width}}, int height) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ac5de2af1a6744d3f7be1fc7c53343f75}{display\+\_\+insert}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a5c79f7dacb4d5e15925a276876661620}{offset\+\_\+line\+\_\+starts}} (int new\+Top\+Line\+Num)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_af2d8e613a81bfea815288b9d77874b4b}{calc\+\_\+line\+\_\+starts}} (int start\+Line, int end\+Line)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_af80c4c92503b0b713e666b9c1a9742f1}{update\+\_\+line\+\_\+starts}} (int pos, int chars\+Inserted, int chars\+Deleted, int lines\+Inserted, int lines\+Deleted, int $\ast$scrolled)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ac1b0ca46ee02ec0c59d1df188fc48f7d}{calc\+\_\+last\+\_\+char}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a83735d562ec7ffbf3d381eefffc88089}{position\+\_\+to\+\_\+line}} (int pos, int $\ast$line\+Num) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+double \mbox{\hyperlink{class_fl___text___display_a033fb1323b0640601240829e845598f9}{string\+\_\+width}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$string, int length, int style) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a261e2e626a6448307fe718c7868b24d9}{update\+\_\+v\+\_\+scrollbar}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a392b252cf45bc123e58c2542578637d7}{update\+\_\+h\+\_\+scrollbar}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a43b69af9661117884c07f4dba703ee73}{measure\+\_\+vline}} (int vis\+Line\+Num) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_af7349426259068b49166da670e1c348f}{longest\+\_\+vline}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a01978ca13b7ce6ad58067263cef1309c}{empty\+\_\+vlines}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a0ee7456ef5ac0baa5819f67173aec83b}{vline\+\_\+length}} (int vis\+Line\+Num) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a3048c33ca31c4ccb39ca6dff352aa47b}{xy\+\_\+to\+\_\+position}} (int \mbox{\hyperlink{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}{x}}, int \mbox{\hyperlink{class_fl___text___display_a3ec54952411bf446b977c713f4ec46c7}{y}}, int Pos\+Type=\mbox{\hyperlink{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6a61f7dd8a1a7e6fa28614888e1f99e10b}{C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+P\+OS}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ac2fd9e9ef877f35a20136b9a2be54553}{xy\+\_\+to\+\_\+rowcol}} (int \mbox{\hyperlink{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}{x}}, int \mbox{\hyperlink{class_fl___text___display_a3ec54952411bf446b977c713f4ec46c7}{y}}, int $\ast$row, int $\ast$column, int Pos\+Type=\mbox{\hyperlink{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6a61f7dd8a1a7e6fa28614888e1f99e10b}{C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+P\+OS}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a5cdad865b3cf584ac4e1f6c023361f40}{maintain\+\_\+absolute\+\_\+top\+\_\+line\+\_\+number}} (int state)
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a9496ca6e33b127a2f66ea1b2a1202151}{get\+\_\+absolute\+\_\+top\+\_\+line\+\_\+number}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a28a7977a99ba473260863c7dcb3a6baa}{absolute\+\_\+top\+\_\+line\+\_\+number}} (int old\+First\+Char)
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a24fc4bf56dcd90af1308ea900fd9c0e8}{maintaining\+\_\+absolute\+\_\+top\+\_\+line\+\_\+number}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a29cca6a03ac20b1af20913c5a0e25fe7}{reset\+\_\+absolute\+\_\+top\+\_\+line\+\_\+number}} ()
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a772ace0180ebf38f2dc7b6402fd62501}{position\+\_\+to\+\_\+linecol}} (int pos, int $\ast$line\+Num, int $\ast$column) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_ac59b0199f494e20eae3fb270bd20b0f9}{scroll\+\_\+}} (int top\+Line\+Num, int horiz\+Offset)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ade1e3e8a41e7b7bb2d2cd0141b494419}{extend\+\_\+range\+\_\+for\+\_\+styles}} (int $\ast$start, int $\ast$\mbox{\hyperlink{class_fl___group_a029653337efa0cb2ec52852519293ba8}{end}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a825d640ec72904f7fe27cae8881a0e5a}{find\+\_\+wrap\+\_\+range}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$deleted\+Text, int pos, int n\+Inserted, int n\+Deleted, int $\ast$mod\+Range\+Start, int $\ast$mod\+Range\+End, int $\ast$lines\+Inserted, int $\ast$lines\+Deleted)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a6ad436a0dfea7f5f69476e570492873d}{measure\+\_\+deleted\+\_\+lines}} (int pos, int n\+Deleted)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a9d2f815f11f77305e8f440c654372133}{wrapped\+\_\+line\+\_\+counter}} (\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$buf, int start\+Pos, int max\+Pos, int max\+Lines, bool start\+Pos\+Is\+Line\+Start, int style\+Buf\+Offset, int $\ast$ret\+Pos, int $\ast$ret\+Lines, int $\ast$ret\+Line\+Start, int $\ast$ret\+Line\+End, bool count\+Last\+Line\+Missing\+New\+Line=true) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ae925f0bbfe42a6dc649a1fac85c13dee}{find\+\_\+line\+\_\+end}} (int pos, bool start\+\_\+pos\+\_\+is\+\_\+line\+\_\+start, int $\ast$line\+End, int $\ast$next\+Line\+Start) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+double \mbox{\hyperlink{class_fl___text___display_aff74d8254e23d1c80f32225b0688bc21}{measure\+\_\+proportional\+\_\+character}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, int col\+Num, int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a5da78184a39741a25a456ba1928c38dc}{wrap\+\_\+uses\+\_\+character}} (int line\+End\+Pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_aece59df159c323aa89f50681e6ea30e0}{scroll\+\_\+timer\+\_\+cb}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_adcb7941fdc0776a69db4c4c26f971f44}{buffer\+\_\+predelete\+\_\+cb}} (int pos, int n\+Deleted, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_aa891cadf63d36f902774b19772daa903}{buffer\+\_\+modified\+\_\+cb}} (int pos, int n\+Inserted, int n\+Deleted, int n\+Restyled, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$deleted\+Text, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_ab65db3eecd2c07c0e0e47f97b846ebf1}{h\+\_\+scrollbar\+\_\+cb}} (\mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}} $\ast$\mbox{\hyperlink{class_fl___text___display_a0ba3a65c1ff72abb19d00ce743c0444d}{w}}, \mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} $\ast$d)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a60b71529f884baae59ff3b5c39ce0882}{v\+\_\+scrollbar\+\_\+cb}} (\mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}} $\ast$\mbox{\hyperlink{class_fl___text___display_a0ba3a65c1ff72abb19d00ce743c0444d}{w}}, \mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} $\ast$d)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a43058a6dfad43ba8d94d0cfd445dbc5d}{damage\+\_\+range1\+\_\+start}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a5eae476ae76dcb942eb89f69979161b6}{damage\+\_\+range1\+\_\+end}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a71a2755ace51641dabca67219fa16a76}{damage\+\_\+range2\+\_\+start}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a652b099379b52eb1b3a0c237d949b600}{damage\+\_\+range2\+\_\+end}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a89656c2be101ee6e26b85a66b5c9a76c}{m\+Cursor\+Pos}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_aaa8d5b25727d9c58fd35f77c75210acd}{m\+Cursor\+On}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a43b33a899825b37c477e9eaac8243e3d}{m\+Cursor\+OldY}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a8154a4a3bdd47f3faa05857e05f5ca23}{m\+Cursor\+To\+Hint}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a4226736abd1bb51cdc9b8268ef4b3ef7}{m\+Cursor\+Style}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a8d795428b38c1979857ab90c4dad8413}{m\+Cursor\+Preferred\+X\+Pos}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a5f1675c671e54d6faadfb10947faf9ef}{m\+N\+Visible\+Lines}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_afa80c2dbf0860784fc15c39f4aa1eab0}{m\+N\+Buffer\+Lines}}
+\item 
+\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$ \mbox{\hyperlink{class_fl___text___display_ae6bf5d1995a36d019b8e8be8a4c7800d}{m\+Buffer}}
+\item 
+\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$ \mbox{\hyperlink{class_fl___text___display_ac49cb705eb353cae3fc58038ffb3da64}{m\+Style\+Buffer}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_af99afe711ef5f691c9daf5e975ba1c2f}{m\+First\+Char}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a41d1af297bd7831e5f0c85d206390b69}{m\+Last\+Char}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_aa430f76a726f576400b471895feee43f}{m\+Continuous\+Wrap}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a3581b09aac53dfece4e9dd170d752dc9}{m\+Wrap\+Margin\+Pix}}
+\item 
+int $\ast$ \mbox{\hyperlink{class_fl___text___display_ad6ddde0486401efe96bf650eaef535b2}{m\+Line\+Starts}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_ad3e3eddb22f3ac494f3702038a17c088}{m\+Top\+Line\+Num}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_adcc65615ed62774c9e116f15d1d04c34}{m\+Abs\+Top\+Line\+Num}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_ad943e7c14ad0517f8aa308e21123fed2}{m\+Need\+Abs\+Top\+Line\+Num}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a15bbc4686a0b8fd73cf3817cd4aa48de}{m\+Horiz\+Offset}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_aee9e956b7676854c3dc129b466c2f293}{m\+Top\+Line\+Num\+Hint}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a2866695f8a1d84f7f3ddd5b6512a8354}{m\+Horiz\+Offset\+Hint}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a4010db1efcce0aa9529f9280234e44ac}{m\+N\+Styles}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___text___display_1_1_style___table___entry}{Style\+\_\+\+Table\+\_\+\+Entry}} $\ast$ \mbox{\hyperlink{class_fl___text___display_a3e3dd2836c99301f1af8b4fc576d1485}{m\+Style\+Table}}
+\item 
+char \mbox{\hyperlink{class_fl___text___display_a0dbfd5704505302485b91c52b0049626}{m\+Unfinished\+Style}}
+\item 
+\mbox{\hyperlink{class_fl___text___display_a6a1d46fcc348160ae5c68bd2fb388492}{Unfinished\+\_\+\+Style\+\_\+\+Cb}} \mbox{\hyperlink{class_fl___text___display_a36dd3aa7f408daf75e07e5f4b484fe4b}{m\+Unfinished\+Highlight\+CB}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$ \mbox{\hyperlink{class_fl___text___display_ab52fe15b28cc5a962158b19ac9762618}{m\+Highlight\+C\+B\+Arg}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a38208c6d3a7b8c76b066a6d06798e1b1}{m\+Maxsize}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a33961c2850e6b78e48c17acc237ee353}{m\+Suppress\+Resync}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a9e20a250574f5c3f0805d75d11d02e73}{m\+N\+Lines\+Deleted}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_af70be6e87e93c287b0c6942d8b7663b0}{m\+Modifying\+Tab\+Distance}}
+\item 
+double \mbox{\hyperlink{class_fl___text___display_a74edfdd68ef924ea07febf83b8b96f69}{m\+Column\+Scale}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___text___display_a932421e6d28f2e4851a5900b836fd106}{m\+Cursor\+\_\+color}}
+\item 
+\mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}} $\ast$ \mbox{\hyperlink{class_fl___text___display_ac27c95e4bd15735d1b2b8ec756dc45b2}{m\+H\+Scroll\+Bar}}
+\item 
+\mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}} $\ast$ \mbox{\hyperlink{class_fl___text___display_affabc12ab701eb4fec27e5e42f39383f}{m\+V\+Scroll\+Bar}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_aa5e1994bcbbd80d20431c890f780f1ed}{scrollbar\+\_\+width\+\_\+}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} \mbox{\hyperlink{class_fl___text___display_aaa1463bc33aed27590759bc06492adbc}{scrollbar\+\_\+align\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_ab8be3a7c43248f6eae8679ff43147bff}{drag\+Pos}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_aa8977cb754adb98c0e8fcb6306e70691}{drag\+Type}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_abecc6188d815dab119e22aa35c99594a}{dragging}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a5d3a5f34c05fcdfb606bc9dc41364318}{display\+\_\+insert\+\_\+position\+\_\+hint}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>int \mbox{\hyperlink{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}{x}}\\
+\>int \mbox{\hyperlink{class_fl___text___display_a3ec54952411bf446b977c713f4ec46c7}{y}}\\
+\>int \mbox{\hyperlink{class_fl___text___display_a0ba3a65c1ff72abb19d00ce743c0444d}{w}}\\
+\>int \mbox{\hyperlink{class_fl___text___display_abbe11349fa20b8dab805508316d6f1ba}{h}}\\
+\} \mbox{\hyperlink{class_fl___text___display_a19324166bedbbef4d0d35cf9cad92329}{text\_area}}\\
+
+\end{tabbing}\item 
+int \mbox{\hyperlink{class_fl___text___display_a9a344596efee3f9bb6c557884c44e075}{shortcut\+\_\+}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{class_fl___text___display_a3d99518d80972df1e61794318e9a3d14}{textfont\+\_\+}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{class_fl___text___display_a74de945f5889cc038d80f9b9899dc8a7}{textsize\+\_\+}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___text___display_a0e0781897bc4b33305f2fb5d50df5895}{textcolor\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_a44bc21a37ff699717732209b4c6ef93b}{m\+Line\+Num\+Left}}
+\item 
+int \mbox{\hyperlink{class_fl___text___display_adb824c3011961eafc184bd887d4e522e}{m\+Line\+Num\+Width}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{class_fl___text___display_a0825310f445747fc7abcc65c76eb3504}{linenumber\+\_\+font\+\_\+}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{class_fl___text___display_a86f166562a525b705dcea0d73692b575}{linenumber\+\_\+size\+\_\+}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___text___display_aa9970e4901ecc3e8312882f8a16d53a5}{linenumber\+\_\+fgcolor\+\_\+}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___text___display_ae6ab1a7e2bdee0730730710c3e5e310f}{linenumber\+\_\+bgcolor\+\_\+}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} \mbox{\hyperlink{class_fl___text___display_a4dcc1890441736b46a7ec2bc8a4da689}{linenumber\+\_\+align\+\_\+}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___text___display_a0aae1671848aa3e10b33e0622cb35d36}{linenumber\+\_\+format\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___display_a1c53f4ccece209c2d25b868862e2585e}{fl\+\_\+text\+\_\+drag\+\_\+me}} (int pos, \mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} $\ast$d)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Rich text display widget. 
+
+This is the F\+L\+TK text display widget. It allows the user to view multiple lines of text and supports highlighting, word wrap, mixes of font faces and colors, line numbers and scrolling. The buffer that is displayed in the widget is managed by the \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} class. A single Text Buffer can be displayed by multiple Text Displays.
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=6cm]{editor.png}
+\doxyfigcaption{Fl\+\_\+\+Text\+\_\+\+Display widget}
+\end{DoxyImage}
+ ~\newline
+~\newline
+  
+\begin{DoxyImage}
+\includegraphics[width=6cm]{editor-linenumbers.png}
+\doxyfigcaption{Fl\+\_\+\+Text\+\_\+\+Display widget with line numbers enabled}
+\end{DoxyImage}
+
+
+{\bfseries{Example}} {\bfseries{Use}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <\mbox{\hyperlink{_fl___text___display_8_h}{FL/FL\_Text\_Display.H}}>}}
+\DoxyCodeLine{..}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{    ..}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___text___buffer}{Fl\_Text\_Buffer}} *buff = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___text___buffer}{Fl\_Text\_Buffer}}();}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___text___display}{Fl\_Text\_Display}} *disp = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___text___display_a42c6300eda2d0eaca52d20f137530197}{Fl\_Text\_Display}}(10, 10, 640, 480);}
+\DoxyCodeLine{    disp-\/>\mbox{\hyperlink{class_fl___text___display_a0244a43078c78af8f528f933a6719490}{buffer}}(buff);                 \textcolor{comment}{// attach text buffer to display widget}}
+\DoxyCodeLine{    buff-\/>\mbox{\hyperlink{class_fl___text___buffer_af91fb6f281cf9c3cbca889703fe1df95}{text}}(\textcolor{stringliteral}{"line one\(\backslash\)nline two"});   \textcolor{comment}{// add some text to buffer}}
+\DoxyCodeLine{..}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+{\bfseries{Features}} 
+
+
+\begin{DoxyItemize}
+\item Word wrap\+: \mbox{\hyperlink{class_fl___text___display_ab9378d48b949f8fc7da04c6be4142c54}{wrap\+\_\+mode()}}, \mbox{\hyperlink{class_fl___text___display_a9507d73613f6166a99283cacd7d2b0d7}{wrapped\+\_\+column()}}, \mbox{\hyperlink{class_fl___text___display_aafdfe5c72839546c6100edf6f35222f8}{wrapped\+\_\+row()}}
+\item Font control\+: \mbox{\hyperlink{class_fl___text___display_aede1822b26480e2d08c3625b67f7abe3}{textfont()}}, \mbox{\hyperlink{class_fl___text___display_ad92e726e57de12916b1493ed2370177b}{textsize()}}, \mbox{\hyperlink{class_fl___text___display_a8695a84858aa91aef4323f4618cab9b7}{textcolor()}}
+\item Font styling\+: \mbox{\hyperlink{class_fl___text___display_ae09d61739b737a32868ffe0295a25dec}{highlight\+\_\+data()}}
+\item Cursor\+: \mbox{\hyperlink{class_fl___text___display_a6f4751931de885d4907e659d97acab30}{cursor\+\_\+style()}}, \mbox{\hyperlink{class_fl___text___display_a2e19af56aacc79cbefe426ca6255099d}{show\+\_\+cursor()}}, \mbox{\hyperlink{class_fl___text___display_a04ba6677e453106781e28f4fc75dcef8}{hide\+\_\+cursor()}}, \mbox{\hyperlink{class_fl___text___display_a773052f561cd546dfc2d1c8fd5485dae}{cursor\+\_\+color()}}
+\item Line numbers\+: \mbox{\hyperlink{class_fl___text___display_ab2d7774bcaf13fb00425c0b3e929522d}{linenumber\+\_\+width()}}, \mbox{\hyperlink{class_fl___text___display_acfdfde4e3a2edbaf662db3441ef1ad4e}{linenumber\+\_\+font()}}, \mbox{\hyperlink{class_fl___text___display_ab05046502525913981670a233d07a381}{linenumber\+\_\+size()}}, \mbox{\hyperlink{class_fl___text___display_aa2215c44fd26defa382c8b13df93b183}{linenumber\+\_\+fgcolor()}}, \mbox{\hyperlink{class_fl___text___display_ae3f8bff6fb84f60064b7e4b8ac037787}{linenumber\+\_\+bgcolor()}}, \mbox{\hyperlink{class_fl___text___display_a1856a46246f35556ef13b186e1609321}{linenumber\+\_\+align()}}, \mbox{\hyperlink{class_fl___text___display_abd21dfb0bed631523170a3754575e95c}{linenumber\+\_\+format()}}
+\end{DoxyItemize}
+
+Note that other features may be available via \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} and \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} classes.
+
+\begin{DoxyNote}{Note}
+Line numbers were added in 1.\+3.\+3. To avoid breaking A\+BI, many of its options are read only. To adjust these features in 1.\+3.\+x, you must build F\+L\+TK with F\+L\+T\+K\+\_\+\+A\+B\+I\+\_\+\+V\+E\+R\+S\+I\+ON set to 10303 or higher. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_fl___text___display_a6a1d46fcc348160ae5c68bd2fb388492}\label{class_fl___text___display_a6a1d46fcc348160ae5c68bd2fb388492}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!Unfinished\_Style\_Cb@{Unfinished\_Style\_Cb}}
+\index{Unfinished\_Style\_Cb@{Unfinished\_Style\_Cb}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{Unfinished\_Style\_Cb}{Unfinished\_Style\_Cb}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::\+Unfinished\+\_\+\+Style\+\_\+\+Cb) (int, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$)}
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fl___text___display_a27dd400a525f9ae397450488e5030c8e}\label{class_fl___text___display_a27dd400a525f9ae397450488e5030c8e}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+text display cursor shapes enumeration \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORMAL\_CURSOR@{NORMAL\_CURSOR}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!NORMAL\_CURSOR@{NORMAL\_CURSOR}}}\mbox{\Hypertarget{class_fl___text___display_a27dd400a525f9ae397450488e5030c8eaa2a0731bec785c14eeb50bfdee224b6e}\label{class_fl___text___display_a27dd400a525f9ae397450488e5030c8eaa2a0731bec785c14eeb50bfdee224b6e}} 
+N\+O\+R\+M\+A\+L\+\_\+\+C\+U\+R\+S\+OR&I-\/beam \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CARET\_CURSOR@{CARET\_CURSOR}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!CARET\_CURSOR@{CARET\_CURSOR}}}\mbox{\Hypertarget{class_fl___text___display_a27dd400a525f9ae397450488e5030c8ea620b34373d9910508bcba51710122435}\label{class_fl___text___display_a27dd400a525f9ae397450488e5030c8ea620b34373d9910508bcba51710122435}} 
+C\+A\+R\+E\+T\+\_\+\+C\+U\+R\+S\+OR&caret under the text \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIM\_CURSOR@{DIM\_CURSOR}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!DIM\_CURSOR@{DIM\_CURSOR}}}\mbox{\Hypertarget{class_fl___text___display_a27dd400a525f9ae397450488e5030c8ea44c221fb4a13dda486e5d94279f7933c}\label{class_fl___text___display_a27dd400a525f9ae397450488e5030c8ea44c221fb4a13dda486e5d94279f7933c}} 
+D\+I\+M\+\_\+\+C\+U\+R\+S\+OR&dim I-\/beam \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLOCK\_CURSOR@{BLOCK\_CURSOR}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!BLOCK\_CURSOR@{BLOCK\_CURSOR}}}\mbox{\Hypertarget{class_fl___text___display_a27dd400a525f9ae397450488e5030c8ea0b298a0a850266321159bf9aff7517f6}\label{class_fl___text___display_a27dd400a525f9ae397450488e5030c8ea0b298a0a850266321159bf9aff7517f6}} 
+B\+L\+O\+C\+K\+\_\+\+C\+U\+R\+S\+OR&unfille box under the current character \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HEAVY\_CURSOR@{HEAVY\_CURSOR}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!HEAVY\_CURSOR@{HEAVY\_CURSOR}}}\mbox{\Hypertarget{class_fl___text___display_a27dd400a525f9ae397450488e5030c8eaf91b386f9d018b5dfe3f42c5ae2207f4}\label{class_fl___text___display_a27dd400a525f9ae397450488e5030c8eaf91b386f9d018b5dfe3f42c5ae2207f4}} 
+H\+E\+A\+V\+Y\+\_\+\+C\+U\+R\+S\+OR&thick I-\/beam \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SIMPLE\_CURSOR@{SIMPLE\_CURSOR}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!SIMPLE\_CURSOR@{SIMPLE\_CURSOR}}}\mbox{\Hypertarget{class_fl___text___display_a27dd400a525f9ae397450488e5030c8eaaaeb2657c5fc8b5f51a3c43c2143c744}\label{class_fl___text___display_a27dd400a525f9ae397450488e5030c8eaaaeb2657c5fc8b5f51a3c43c2143c744}} 
+S\+I\+M\+P\+L\+E\+\_\+\+C\+U\+R\+S\+OR&as cursor as \mbox{\hyperlink{class_fl___input}{Fl\+\_\+\+Input}} cursor \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6}\label{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+the character position is the left edge of a character, whereas the cursor is thought to be between the centers of two consecutive characters. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CURSOR\_POS@{CURSOR\_POS}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!CURSOR\_POS@{CURSOR\_POS}}}\mbox{\Hypertarget{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6a284fceb9f1fec39e33278f5c1e68ab77}\label{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6a284fceb9f1fec39e33278f5c1e68ab77}} 
+C\+U\+R\+S\+O\+R\+\_\+\+P\+OS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHARACTER\_POS@{CHARACTER\_POS}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!CHARACTER\_POS@{CHARACTER\_POS}}}\mbox{\Hypertarget{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6a61f7dd8a1a7e6fa28614888e1f99e10b}\label{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6a61f7dd8a1a7e6fa28614888e1f99e10b}} 
+C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+P\+OS&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32}\label{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+drag types -\/ they match \mbox{\hyperlink{group__fl__events_gafa31b53b34bd43ee107806a3bbc640d1}{Fl\+::event\+\_\+clicks()}} so that single clicking to start a collection selects by character, double clicking selects by word and triple clicking selects by line. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DRAG\_NONE@{DRAG\_NONE}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!DRAG\_NONE@{DRAG\_NONE}}}\mbox{\Hypertarget{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32a0546266edc0058b9f0270036f2cf0ff0}\label{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32a0546266edc0058b9f0270036f2cf0ff0}} 
+D\+R\+A\+G\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DRAG\_START\_DND@{DRAG\_START\_DND}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!DRAG\_START\_DND@{DRAG\_START\_DND}}}\mbox{\Hypertarget{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32af9f8e1057f2b70d08841f29fb75272e6}\label{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32af9f8e1057f2b70d08841f29fb75272e6}} 
+D\+R\+A\+G\+\_\+\+S\+T\+A\+R\+T\+\_\+\+D\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DRAG\_CHAR@{DRAG\_CHAR}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!DRAG\_CHAR@{DRAG\_CHAR}}}\mbox{\Hypertarget{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32ae5a606b69074e17eb85b61c413e5a419}\label{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32ae5a606b69074e17eb85b61c413e5a419}} 
+D\+R\+A\+G\+\_\+\+C\+H\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DRAG\_WORD@{DRAG\_WORD}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!DRAG\_WORD@{DRAG\_WORD}}}\mbox{\Hypertarget{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32a67ccf257857d7c9fea575333dab71946}\label{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32a67ccf257857d7c9fea575333dab71946}} 
+D\+R\+A\+G\+\_\+\+W\+O\+RD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DRAG\_LINE@{DRAG\_LINE}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!DRAG\_LINE@{DRAG\_LINE}}}\mbox{\Hypertarget{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32afae975f31c0c5e4f8681288fecdcb9be}\label{class_fl___text___display_a9bfe2e5350be0232e0115a1003ceaa32afae975f31c0c5e4f8681288fecdcb9be}} 
+D\+R\+A\+G\+\_\+\+L\+I\+NE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68}\label{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+wrap types -\/ used in \mbox{\hyperlink{class_fl___text___display_ab9378d48b949f8fc7da04c6be4142c54}{wrap\+\_\+mode()}} \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRAP\_NONE@{WRAP\_NONE}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!WRAP\_NONE@{WRAP\_NONE}}}\mbox{\Hypertarget{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68aa4c885d60a9b96851f7af56befe886a5}\label{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68aa4c885d60a9b96851f7af56befe886a5}} 
+W\+R\+A\+P\+\_\+\+N\+O\+NE&don\textquotesingle{}t wrap text at all \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRAP\_AT\_COLUMN@{WRAP\_AT\_COLUMN}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!WRAP\_AT\_COLUMN@{WRAP\_AT\_COLUMN}}}\mbox{\Hypertarget{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68a2c56d51b13b897f186f6c50f25a77f05}\label{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68a2c56d51b13b897f186f6c50f25a77f05}} 
+W\+R\+A\+P\+\_\+\+A\+T\+\_\+\+C\+O\+L\+U\+MN&wrap text at the given text column \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRAP\_AT\_PIXEL@{WRAP\_AT\_PIXEL}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!WRAP\_AT\_PIXEL@{WRAP\_AT\_PIXEL}}}\mbox{\Hypertarget{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68acc749e9434872faa99a6b33e352e8605}\label{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68acc749e9434872faa99a6b33e352e8605}} 
+W\+R\+A\+P\+\_\+\+A\+T\+\_\+\+P\+I\+X\+EL&wrap text at a pixel position \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRAP\_AT\_BOUNDS@{WRAP\_AT\_BOUNDS}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!WRAP\_AT\_BOUNDS@{WRAP\_AT\_BOUNDS}}}\mbox{\Hypertarget{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68a4d86a239285c1070d6381e678f2a9e59}\label{class_fl___text___display_acffd2b889f0078e05a3a7b9d5b04cf68a4d86a239285c1070d6381e678f2a9e59}} 
+W\+R\+A\+P\+\_\+\+A\+T\+\_\+\+B\+O\+U\+N\+DS&wrap text so that it fits into the widget width \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5d}\label{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5d}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DRAW\_LINE@{DRAW\_LINE}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!DRAW\_LINE@{DRAW\_LINE}}}\mbox{\Hypertarget{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5da2c8c8ef06539ebdb565b1104e55a2eed}\label{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5da2c8c8ef06539ebdb565b1104e55a2eed}} 
+D\+R\+A\+W\+\_\+\+L\+I\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FIND\_INDEX@{FIND\_INDEX}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!FIND\_INDEX@{FIND\_INDEX}}}\mbox{\Hypertarget{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5daa33a1b6917000324bd0e6710c94ad864}\label{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5daa33a1b6917000324bd0e6710c94ad864}} 
+F\+I\+N\+D\+\_\+\+I\+N\+D\+EX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FIND\_INDEX\_FROM\_ZERO@{FIND\_INDEX\_FROM\_ZERO}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!FIND\_INDEX\_FROM\_ZERO@{FIND\_INDEX\_FROM\_ZERO}}}\mbox{\Hypertarget{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5da4598c17d3df461cba83867ab414e46e1}\label{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5da4598c17d3df461cba83867ab414e46e1}} 
+F\+I\+N\+D\+\_\+\+I\+N\+D\+E\+X\+\_\+\+F\+R\+O\+M\+\_\+\+Z\+E\+RO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GET\_WIDTH@{GET\_WIDTH}!Fl\_Text\_Display@{Fl\_Text\_Display}}\index{Fl\_Text\_Display@{Fl\_Text\_Display}!GET\_WIDTH@{GET\_WIDTH}}}\mbox{\Hypertarget{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5da106e0a36bad76105f13a6c3ecce23be7}\label{class_fl___text___display_a38ec8e3616974e15f43fefc473ecba5da106e0a36bad76105f13a6c3ecce23be7}} 
+G\+E\+T\+\_\+\+W\+I\+D\+TH&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___text___display_a42c6300eda2d0eaca52d20f137530197}\label{class_fl___text___display_a42c6300eda2d0eaca52d20f137530197}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{Fl\_Text\_Display()}{Fl\_Text\_Display()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Text\+\_\+\+Display\+::\+Fl\+\_\+\+Text\+\_\+\+Display (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_aa473b5387fd9f06daea61036b8271b05}\label{class_fl___text___display_aa473b5387fd9f06daea61036b8271b05}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!````~Fl\_Text\_Display@{$\sim$Fl\_Text\_Display}}
+\index{````~Fl\_Text\_Display@{$\sim$Fl\_Text\_Display}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Text\_Display()}{~Fl\_Text\_Display()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Text\+\_\+\+Display\+::$\sim$\+Fl\+\_\+\+Text\+\_\+\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___text___display_a28a7977a99ba473260863c7dcb3a6baa}\label{class_fl___text___display_a28a7977a99ba473260863c7dcb3a6baa}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!absolute\_top\_line\_number@{absolute\_top\_line\_number}}
+\index{absolute\_top\_line\_number@{absolute\_top\_line\_number}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{absolute\_top\_line\_number()}{absolute\_top\_line\_number()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::absolute\+\_\+top\+\_\+line\+\_\+number (\begin{DoxyParamCaption}\item[{int}]{old\+First\+Char }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_adc7223eb3e5363e4b2ce7617a3011967}\label{class_fl___text___display_adc7223eb3e5363e4b2ce7617a3011967}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!buffer@{buffer}}
+\index{buffer@{buffer}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{buffer()}{buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the current text buffer associated with the text widget. Multiple text widgets can be associated with the same text buffer. \begin{DoxyReturn}{Returns}
+current text buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_ae5a312a54d2f4bcbeb91e0ad76717eaa}\label{class_fl___text___display_ae5a312a54d2f4bcbeb91e0ad76717eaa}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!buffer@{buffer}}
+\index{buffer@{buffer}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{buffer()}{buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} \&}]{buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current text buffer associated with the text widget. Multiple text widgets can be associated with the same text buffer. 
+\begin{DoxyParams}{Parameters}
+{\em buf} & new text buffer \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_fl___text___display_ae5a312a54d2f4bcbeb91e0ad76717eaa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___text___display_a0244a43078c78af8f528f933a6719490}\label{class_fl___text___display_a0244a43078c78af8f528f933a6719490}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!buffer@{buffer}}
+\index{buffer@{buffer}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{buffer()}{buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$}]{buf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_aa891cadf63d36f902774b19772daa903}\label{class_fl___text___display_aa891cadf63d36f902774b19772daa903}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!buffer\_modified\_cb@{buffer\_modified\_cb}}
+\index{buffer\_modified\_cb@{buffer\_modified\_cb}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{buffer\_modified\_cb()}{buffer\_modified\_cb()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::buffer\+\_\+modified\+\_\+cb (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{n\+Inserted,  }\item[{int}]{n\+Deleted,  }\item[{int}]{n\+Restyled,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{deleted\+Text,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{cb\+Arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_adcb7941fdc0776a69db4c4c26f971f44}\label{class_fl___text___display_adcb7941fdc0776a69db4c4c26f971f44}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!buffer\_predelete\_cb@{buffer\_predelete\_cb}}
+\index{buffer\_predelete\_cb@{buffer\_predelete\_cb}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{buffer\_predelete\_cb()}{buffer\_predelete\_cb()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::buffer\+\_\+predelete\+\_\+cb (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{n\+Deleted,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{cb\+Arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ac1b0ca46ee02ec0c59d1df188fc48f7d}\label{class_fl___text___display_ac1b0ca46ee02ec0c59d1df188fc48f7d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!calc\_last\_char@{calc\_last\_char}}
+\index{calc\_last\_char@{calc\_last\_char}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{calc\_last\_char()}{calc\_last\_char()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::calc\+\_\+last\+\_\+char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_af2d8e613a81bfea815288b9d77874b4b}\label{class_fl___text___display_af2d8e613a81bfea815288b9d77874b4b}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!calc\_line\_starts@{calc\_line\_starts}}
+\index{calc\_line\_starts@{calc\_line\_starts}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{calc\_line\_starts()}{calc\_line\_starts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::calc\+\_\+line\+\_\+starts (\begin{DoxyParamCaption}\item[{int}]{start\+Line,  }\item[{int}]{end\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aaa87cfd0f3bf1975c38a38d5873e590a}\label{class_fl___text___display_aaa87cfd0f3bf1975c38a38d5873e590a}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!clear\_rect@{clear\_rect}}
+\index{clear\_rect@{clear\_rect}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{clear\_rect()}{clear\_rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::clear\+\_\+rect (\begin{DoxyParamCaption}\item[{int}]{style,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aa4c277bb4856da69b925ba4e47435c9f}\label{class_fl___text___display_aa4c277bb4856da69b925ba4e47435c9f}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!col\_to\_x@{col\_to\_x}}
+\index{col\_to\_x@{col\_to\_x}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{col\_to\_x()}{col\_to\_x()}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Text\+\_\+\+Display\+::col\+\_\+to\+\_\+x (\begin{DoxyParamCaption}\item[{double}]{col }\end{DoxyParamCaption}) const}
+
+Convert a column number into an x pixel position. 
+\begin{DoxyParams}{Parameters}
+{\em col} & an approximate column number based on the main font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+number of pixels from the left margin to the left of an average sized character 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_a35933071176822679acdb00c449428d9}\label{class_fl___text___display_a35933071176822679acdb00c449428d9}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!count\_lines@{count\_lines}}
+\index{count\_lines@{count\_lines}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{count\_lines()}{count\_lines()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::count\+\_\+lines (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end,  }\item[{bool}]{start\+\_\+pos\+\_\+is\+\_\+line\+\_\+start }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_a773052f561cd546dfc2d1c8fd5485dae}\label{class_fl___text___display_a773052f561cd546dfc2d1c8fd5485dae}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!cursor\_color@{cursor\_color}}
+\index{cursor\_color@{cursor\_color}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{cursor\_color()}{cursor\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Text\+\_\+\+Display\+::cursor\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the text cursor color. ~\newline
+ \begin{DoxyReturn}{Returns}
+cursor color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_a17bfc3af03f82c18c7ebb6ef34ed2139}\label{class_fl___text___display_a17bfc3af03f82c18c7ebb6ef34ed2139}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!cursor\_color@{cursor\_color}}
+\index{cursor\_color@{cursor\_color}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{cursor\_color()}{cursor\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::cursor\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the text cursor color. 
+\begin{DoxyParams}{Parameters}
+{\em n} & new cursor color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___display_a6f4751931de885d4907e659d97acab30}\label{class_fl___text___display_a6f4751931de885d4907e659d97acab30}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!cursor\_style@{cursor\_style}}
+\index{cursor\_style@{cursor\_style}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{cursor\_style()}{cursor\_style()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::cursor\+\_\+style (\begin{DoxyParamCaption}\item[{int}]{style }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_ac5de2af1a6744d3f7be1fc7c53343f75}\label{class_fl___text___display_ac5de2af1a6744d3f7be1fc7c53343f75}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!display\_insert@{display\_insert}}
+\index{display\_insert@{display\_insert}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{display\_insert()}{display\_insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::display\+\_\+insert (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ab0521b987134307c13b73a6e7230de77}\label{class_fl___text___display_ab0521b987134307c13b73a6e7230de77}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!draw@{draw}}
+\index{draw@{draw}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___text___display_ab0521b987134307c13b73a6e7230de77}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___text___display_ab0521b987134307c13b73a6e7230de77}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&\mbox{\hyperlink{class_fl___text___display_aa6705c216c0626763f3f34d3e318d465}{scroll}};     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_a96b778e518df02471139179d4c90157c}{Fl\+\_\+\+Group}}.
+
+\mbox{\Hypertarget{class_fl___text___display_a5e5d522b89d167554ad059bc9a39b9b4}\label{class_fl___text___display_a5e5d522b89d167554ad059bc9a39b9b4}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!draw\_cursor@{draw\_cursor}}
+\index{draw\_cursor@{draw\_cursor}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{draw\_cursor()}{draw\_cursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::draw\+\_\+cursor (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_afc77f4bedb15408180b704a91252af80}\label{class_fl___text___display_afc77f4bedb15408180b704a91252af80}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!draw\_line\_numbers@{draw\_line\_numbers}}
+\index{draw\_line\_numbers@{draw\_line\_numbers}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{draw\_line\_numbers()}{draw\_line\_numbers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::draw\+\_\+line\+\_\+numbers (\begin{DoxyParamCaption}\item[{bool}]{clear\+All }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a63df8b065f442f04eb0653318e048612}\label{class_fl___text___display_a63df8b065f442f04eb0653318e048612}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!draw\_range@{draw\_range}}
+\index{draw\_range@{draw\_range}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{draw\_range()}{draw\_range()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::draw\+\_\+range (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a707d8b4ce699d2c7950d8adb52aff9ce}\label{class_fl___text___display_a707d8b4ce699d2c7950d8adb52aff9ce}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!draw\_string@{draw\_string}}
+\index{draw\_string@{draw\_string}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{draw\_string()}{draw\_string()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::draw\+\_\+string (\begin{DoxyParamCaption}\item[{int}]{style,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{toX,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{string,  }\item[{int}]{n\+Chars }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a8a03d48ca14949b0a1933fbee2c0e347}\label{class_fl___text___display_a8a03d48ca14949b0a1933fbee2c0e347}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!draw\_text@{draw\_text}}
+\index{draw\_text@{draw\_text}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{draw\_text()}{draw\_text()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::draw\+\_\+text (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ad6288a3a93930c706c154ea065308c9d}\label{class_fl___text___display_ad6288a3a93930c706c154ea065308c9d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!draw\_vline@{draw\_vline}}
+\index{draw\_vline@{draw\_vline}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{draw\_vline()}{draw\_vline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::draw\+\_\+vline (\begin{DoxyParamCaption}\item[{int}]{vis\+Line\+Num,  }\item[{int}]{left\+Clip,  }\item[{int}]{right\+Clip,  }\item[{int}]{left\+Char\+Index,  }\item[{int}]{right\+Char\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a01978ca13b7ce6ad58067263cef1309c}\label{class_fl___text___display_a01978ca13b7ce6ad58067263cef1309c}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!empty\_vlines@{empty\_vlines}}
+\index{empty\_vlines@{empty\_vlines}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{empty\_vlines()}{empty\_vlines()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::empty\+\_\+vlines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ade1e3e8a41e7b7bb2d2cd0141b494419}\label{class_fl___text___display_ade1e3e8a41e7b7bb2d2cd0141b494419}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!extend\_range\_for\_styles@{extend\_range\_for\_styles}}
+\index{extend\_range\_for\_styles@{extend\_range\_for\_styles}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{extend\_range\_for\_styles()}{extend\_range\_for\_styles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::extend\+\_\+range\+\_\+for\+\_\+styles (\begin{DoxyParamCaption}\item[{int $\ast$}]{start,  }\item[{int $\ast$}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ae925f0bbfe42a6dc649a1fac85c13dee}\label{class_fl___text___display_ae925f0bbfe42a6dc649a1fac85c13dee}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!find\_line\_end@{find\_line\_end}}
+\index{find\_line\_end@{find\_line\_end}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{find\_line\_end()}{find\_line\_end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::find\+\_\+line\+\_\+end (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{bool}]{start\+\_\+pos\+\_\+is\+\_\+line\+\_\+start,  }\item[{int $\ast$}]{line\+End,  }\item[{int $\ast$}]{next\+Line\+Start }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a825d640ec72904f7fe27cae8881a0e5a}\label{class_fl___text___display_a825d640ec72904f7fe27cae8881a0e5a}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!find\_wrap\_range@{find\_wrap\_range}}
+\index{find\_wrap\_range@{find\_wrap\_range}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{find\_wrap\_range()}{find\_wrap\_range()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::find\+\_\+wrap\+\_\+range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{deleted\+Text,  }\item[{int}]{pos,  }\item[{int}]{n\+Inserted,  }\item[{int}]{n\+Deleted,  }\item[{int $\ast$}]{mod\+Range\+Start,  }\item[{int $\ast$}]{mod\+Range\+End,  }\item[{int $\ast$}]{lines\+Inserted,  }\item[{int $\ast$}]{lines\+Deleted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a74d290bbc81bab4c98ca537955f3a82f}\label{class_fl___text___display_a74d290bbc81bab4c98ca537955f3a82f}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!find\_x@{find\_x}}
+\index{find\_x@{find\_x}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{find\_x()}{find\_x()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::find\+\_\+x (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{s,  }\item[{int}]{len,  }\item[{int}]{style,  }\item[{int}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a9496ca6e33b127a2f66ea1b2a1202151}\label{class_fl___text___display_a9496ca6e33b127a2f66ea1b2a1202151}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!get\_absolute\_top\_line\_number@{get\_absolute\_top\_line\_number}}
+\index{get\_absolute\_top\_line\_number@{get\_absolute\_top\_line\_number}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{get\_absolute\_top\_line\_number()}{get\_absolute\_top\_line\_number()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::get\+\_\+absolute\+\_\+top\+\_\+line\+\_\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ab65db3eecd2c07c0e0e47f97b846ebf1}\label{class_fl___text___display_ab65db3eecd2c07c0e0e47f97b846ebf1}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!h\_scrollbar\_cb@{h\_scrollbar\_cb}}
+\index{h\_scrollbar\_cb@{h\_scrollbar\_cb}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{h\_scrollbar\_cb()}{h\_scrollbar\_cb()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::h\+\_\+scrollbar\+\_\+cb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}} $\ast$}]{w,  }\item[{\mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a38b01043100644a6efc04a35aa232b3c}\label{class_fl___text___display_a38b01043100644a6efc04a35aa232b3c}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!handle@{handle}}
+\index{handle@{handle}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily virtual int Fl\+\_\+\+Text\+\_\+\+Display\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___text___display_a38b01043100644a6efc04a35aa232b3c}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_a7503757c2a734442e74717d1971b12ce}{Fl\+\_\+\+Group}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___text___editor_a5f1e480c0d50b17ae97c525b4faea396}{Fl\+\_\+\+Text\+\_\+\+Editor}}.
+
+\mbox{\Hypertarget{class_fl___text___display_a10713a9bb22e486887eeda7f75324389}\label{class_fl___text___display_a10713a9bb22e486887eeda7f75324389}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!handle\_vline@{handle\_vline}}
+\index{handle\_vline@{handle\_vline}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{handle\_vline()}{handle\_vline()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::handle\+\_\+vline (\begin{DoxyParamCaption}\item[{int}]{mode,  }\item[{int}]{line\+Start,  }\item[{int}]{line\+Len,  }\item[{int}]{left\+Char,  }\item[{int}]{right\+Char,  }\item[{int}]{top\+Clip,  }\item[{int}]{bottom\+Clip,  }\item[{int}]{left\+Clip,  }\item[{int}]{right\+Clip }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a04ba6677e453106781e28f4fc75dcef8}\label{class_fl___text___display_a04ba6677e453106781e28f4fc75dcef8}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!hide\_cursor@{hide\_cursor}}
+\index{hide\_cursor@{hide\_cursor}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{hide\_cursor()}{hide\_cursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::hide\+\_\+cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Hides the text cursor. \mbox{\Hypertarget{class_fl___text___display_ae09d61739b737a32868ffe0295a25dec}\label{class_fl___text___display_ae09d61739b737a32868ffe0295a25dec}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!highlight\_data@{highlight\_data}}
+\index{highlight\_data@{highlight\_data}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{highlight\_data()}{highlight\_data()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::highlight\+\_\+data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$}]{style\+Buffer,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___text___display_1_1_style___table___entry}{Style\+\_\+\+Table\+\_\+\+Entry}} $\ast$}]{style\+Table,  }\item[{int}]{n\+Styles,  }\item[{char}]{unfinished\+Style,  }\item[{\mbox{\hyperlink{class_fl___text___display_a6a1d46fcc348160ae5c68bd2fb388492}{Unfinished\+\_\+\+Style\+\_\+\+Cb}}}]{unfinished\+Highlight\+CB,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{cb\+Arg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a63b60d5fcb0fb09fc906ef9dc3c11e99}\label{class_fl___text___display_a63b60d5fcb0fb09fc906ef9dc3c11e99}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!in\_selection@{in\_selection}}
+\index{in\_selection@{in\_selection}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{in\_selection()}{in\_selection()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::in\+\_\+selection (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_a9a813cdf8fd1f142882a4c8b6a9d2bbf}\label{class_fl___text___display_a9a813cdf8fd1f142882a4c8b6a9d2bbf}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!insert@{insert}}
+\index{insert@{insert}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a8f02f5ee62ab03d8144765ef86d4ad01}\label{class_fl___text___display_a8f02f5ee62ab03d8144765ef86d4ad01}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!insert\_position@{insert\_position}}
+\index{insert\_position@{insert\_position}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{insert\_position()}{insert\_position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::insert\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the position of the text insertion cursor for text display. \begin{DoxyReturn}{Returns}
+insert position index into text buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_aa18e615713b30b870045fc370758b510}\label{class_fl___text___display_aa18e615713b30b870045fc370758b510}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!insert\_position@{insert\_position}}
+\index{insert\_position@{insert\_position}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{insert\_position()}{insert\_position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::insert\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{new\+Pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a51ccc5a2a4f52d1b63fbb71f853a2d62}\label{class_fl___text___display_a51ccc5a2a4f52d1b63fbb71f853a2d62}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!line\_end@{line\_end}}
+\index{line\_end@{line\_end}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{line\_end()}{line\_end()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::line\+\_\+end (\begin{DoxyParamCaption}\item[{int}]{start\+Pos,  }\item[{bool}]{start\+Pos\+Is\+Line\+Start }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_a3c400abedbed52884e2f7c4ecc236b3d}\label{class_fl___text___display_a3c400abedbed52884e2f7c4ecc236b3d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!line\_start@{line\_start}}
+\index{line\_start@{line\_start}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{line\_start()}{line\_start()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::line\+\_\+start (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_af391c9cc9def92f42ef4c6ded13f8370}\label{class_fl___text___display_af391c9cc9def92f42ef4c6ded13f8370}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_align@{linenumber\_align}}
+\index{linenumber\_align@{linenumber\_align}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_align()}{linenumber\_align()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+align (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_a1856a46246f35556ef13b186e1609321}\label{class_fl___text___display_a1856a46246f35556ef13b186e1609321}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_align@{linenumber\_align}}
+\index{linenumber\_align@{linenumber\_align}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_align()}{linenumber\_align()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+align (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}}}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a28ebc88de67aa8aa1e9edb2cec132bfd}\label{class_fl___text___display_a28ebc88de67aa8aa1e9edb2cec132bfd}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_bgcolor@{linenumber\_bgcolor}}
+\index{linenumber\_bgcolor@{linenumber\_bgcolor}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_bgcolor()}{linenumber\_bgcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+bgcolor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_ae3f8bff6fb84f60064b7e4b8ac037787}\label{class_fl___text___display_ae3f8bff6fb84f60064b7e4b8ac037787}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_bgcolor@{linenumber\_bgcolor}}
+\index{linenumber\_bgcolor@{linenumber\_bgcolor}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_bgcolor()}{linenumber\_bgcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+bgcolor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_ab06717a810ba7ae34dd04d016c47be1e}\label{class_fl___text___display_ab06717a810ba7ae34dd04d016c47be1e}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_fgcolor@{linenumber\_fgcolor}}
+\index{linenumber\_fgcolor@{linenumber\_fgcolor}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_fgcolor()}{linenumber\_fgcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+fgcolor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_aa2215c44fd26defa382c8b13df93b183}\label{class_fl___text___display_aa2215c44fd26defa382c8b13df93b183}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_fgcolor@{linenumber\_fgcolor}}
+\index{linenumber\_fgcolor@{linenumber\_fgcolor}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_fgcolor()}{linenumber\_fgcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+fgcolor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_aa8c310d79f422d98493c97c8b1b47616}\label{class_fl___text___display_aa8c310d79f422d98493c97c8b1b47616}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_font@{linenumber\_font}}
+\index{linenumber\_font@{linenumber\_font}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_font()}{linenumber\_font()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_acfdfde4e3a2edbaf662db3441ef1ad4e}\label{class_fl___text___display_acfdfde4e3a2edbaf662db3441ef1ad4e}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_font@{linenumber\_font}}
+\index{linenumber\_font@{linenumber\_font}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_font()}{linenumber\_font()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a2e1e9e9c522ca29b7d53c6aa8d7ea4ff}\label{class_fl___text___display_a2e1e9e9c522ca29b7d53c6aa8d7ea4ff}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_format@{linenumber\_format}}
+\index{linenumber\_format@{linenumber\_format}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_format()}{linenumber\_format()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_abd21dfb0bed631523170a3754575e95c}\label{class_fl___text___display_abd21dfb0bed631523170a3754575e95c}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_format@{linenumber\_format}}
+\index{linenumber\_format@{linenumber\_format}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_format()}{linenumber\_format()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+format (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a4aecc6a7cc2e4ce9d36e277513725c8f}\label{class_fl___text___display_a4aecc6a7cc2e4ce9d36e277513725c8f}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_size@{linenumber\_size}}
+\index{linenumber\_size@{linenumber\_size}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_size()}{linenumber\_size()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_ab05046502525913981670a233d07a381}\label{class_fl___text___display_ab05046502525913981670a233d07a381}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_size@{linenumber\_size}}
+\index{linenumber\_size@{linenumber\_size}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_size()}{linenumber\_size()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}}}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a82dc6b4b49e8e6cc0e41bcaed1bdb4d3}\label{class_fl___text___display_a82dc6b4b49e8e6cc0e41bcaed1bdb4d3}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_width@{linenumber\_width}}
+\index{linenumber\_width@{linenumber\_width}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_width()}{linenumber\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_ab2d7774bcaf13fb00425c0b3e929522d}\label{class_fl___text___display_ab2d7774bcaf13fb00425c0b3e929522d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_width@{linenumber\_width}}
+\index{linenumber\_width@{linenumber\_width}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_width()}{linenumber\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_af7349426259068b49166da670e1c348f}\label{class_fl___text___display_af7349426259068b49166da670e1c348f}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!longest\_vline@{longest\_vline}}
+\index{longest\_vline@{longest\_vline}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{longest\_vline()}{longest\_vline()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::longest\+\_\+vline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a5cdad865b3cf584ac4e1f6c023361f40}\label{class_fl___text___display_a5cdad865b3cf584ac4e1f6c023361f40}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!maintain\_absolute\_top\_line\_number@{maintain\_absolute\_top\_line\_number}}
+\index{maintain\_absolute\_top\_line\_number@{maintain\_absolute\_top\_line\_number}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{maintain\_absolute\_top\_line\_number()}{maintain\_absolute\_top\_line\_number()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::maintain\+\_\+absolute\+\_\+top\+\_\+line\+\_\+number (\begin{DoxyParamCaption}\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a24fc4bf56dcd90af1308ea900fd9c0e8}\label{class_fl___text___display_a24fc4bf56dcd90af1308ea900fd9c0e8}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!maintaining\_absolute\_top\_line\_number@{maintaining\_absolute\_top\_line\_number}}
+\index{maintaining\_absolute\_top\_line\_number@{maintaining\_absolute\_top\_line\_number}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{maintaining\_absolute\_top\_line\_number()}{maintaining\_absolute\_top\_line\_number()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::maintaining\+\_\+absolute\+\_\+top\+\_\+line\+\_\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a6ad436a0dfea7f5f69476e570492873d}\label{class_fl___text___display_a6ad436a0dfea7f5f69476e570492873d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!measure\_deleted\_lines@{measure\_deleted\_lines}}
+\index{measure\_deleted\_lines@{measure\_deleted\_lines}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{measure\_deleted\_lines()}{measure\_deleted\_lines()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::measure\+\_\+deleted\+\_\+lines (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{n\+Deleted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aff74d8254e23d1c80f32225b0688bc21}\label{class_fl___text___display_aff74d8254e23d1c80f32225b0688bc21}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!measure\_proportional\_character@{measure\_proportional\_character}}
+\index{measure\_proportional\_character@{measure\_proportional\_character}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{measure\_proportional\_character()}{measure\_proportional\_character()}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Text\+\_\+\+Display\+::measure\+\_\+proportional\+\_\+character (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{s,  }\item[{int}]{col\+Num,  }\item[{int}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a43b69af9661117884c07f4dba703ee73}\label{class_fl___text___display_a43b69af9661117884c07f4dba703ee73}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!measure\_vline@{measure\_vline}}
+\index{measure\_vline@{measure\_vline}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{measure\_vline()}{measure\_vline()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::measure\+\_\+vline (\begin{DoxyParamCaption}\item[{int}]{vis\+Line\+Num }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a1fe1ed3d39556253238235fd0a57d2bd}\label{class_fl___text___display_a1fe1ed3d39556253238235fd0a57d2bd}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!move\_down@{move\_down}}
+\index{move\_down@{move\_down}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{move\_down()}{move\_down()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::move\+\_\+down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a41c90322a2be857fb6362c783a9d3450}\label{class_fl___text___display_a41c90322a2be857fb6362c783a9d3450}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!move\_left@{move\_left}}
+\index{move\_left@{move\_left}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{move\_left()}{move\_left()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::move\+\_\+left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a43532a8c0a8698087cb349b0b3e5f192}\label{class_fl___text___display_a43532a8c0a8698087cb349b0b3e5f192}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!move\_right@{move\_right}}
+\index{move\_right@{move\_right}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{move\_right()}{move\_right()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::move\+\_\+right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a62d586abbef6563adbf06c40eaa71c7d}\label{class_fl___text___display_a62d586abbef6563adbf06c40eaa71c7d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!move\_up@{move\_up}}
+\index{move\_up@{move\_up}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{move\_up()}{move\_up()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::move\+\_\+up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_abb9d0b39bfcb5724db615f328b3acd7a}\label{class_fl___text___display_abb9d0b39bfcb5724db615f328b3acd7a}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!next\_word@{next\_word}}
+\index{next\_word@{next\_word}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{next\_word()}{next\_word()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::next\+\_\+word (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a5c79f7dacb4d5e15925a276876661620}\label{class_fl___text___display_a5c79f7dacb4d5e15925a276876661620}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!offset\_line\_starts@{offset\_line\_starts}}
+\index{offset\_line\_starts@{offset\_line\_starts}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{offset\_line\_starts()}{offset\_line\_starts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::offset\+\_\+line\+\_\+starts (\begin{DoxyParamCaption}\item[{int}]{new\+Top\+Line\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ae612b71447f03a6ad1f46ae8c1cc9f38}\label{class_fl___text___display_ae612b71447f03a6ad1f46ae8c1cc9f38}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!overstrike@{overstrike}}
+\index{overstrike@{overstrike}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{overstrike()}{overstrike()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::overstrike (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a50c7195b40f1168cdfdfce73a2d177d7}\label{class_fl___text___display_a50c7195b40f1168cdfdfce73a2d177d7}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!position\_style@{position\_style}}
+\index{position\_style@{position\_style}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{position\_style()}{position\_style()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::position\+\_\+style (\begin{DoxyParamCaption}\item[{int}]{line\+Start\+Pos,  }\item[{int}]{line\+Len,  }\item[{int}]{line\+Index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_a83735d562ec7ffbf3d381eefffc88089}\label{class_fl___text___display_a83735d562ec7ffbf3d381eefffc88089}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!position\_to\_line@{position\_to\_line}}
+\index{position\_to\_line@{position\_to\_line}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{position\_to\_line()}{position\_to\_line()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::position\+\_\+to\+\_\+line (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int $\ast$}]{line\+Num }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a772ace0180ebf38f2dc7b6402fd62501}\label{class_fl___text___display_a772ace0180ebf38f2dc7b6402fd62501}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!position\_to\_linecol@{position\_to\_linecol}}
+\index{position\_to\_linecol@{position\_to\_linecol}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{position\_to\_linecol()}{position\_to\_linecol()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::position\+\_\+to\+\_\+linecol (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int $\ast$}]{line\+Num,  }\item[{int $\ast$}]{column }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a0bf0bfb6bb3ac9d6b4774b8a2b1849ec}\label{class_fl___text___display_a0bf0bfb6bb3ac9d6b4774b8a2b1849ec}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!position\_to\_xy@{position\_to\_xy}}
+\index{position\_to\_xy@{position\_to\_xy}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{position\_to\_xy()}{position\_to\_xy()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::position\+\_\+to\+\_\+xy (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int $\ast$}]{x,  }\item[{int $\ast$}]{y }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_a83c23e74c58e01e61259a6bbaf632ed3}\label{class_fl___text___display_a83c23e74c58e01e61259a6bbaf632ed3}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!previous\_word@{previous\_word}}
+\index{previous\_word@{previous\_word}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{previous\_word()}{previous\_word()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::previous\+\_\+word (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a6ec6a8ca047a45805522efbc301c786a}\label{class_fl___text___display_a6ec6a8ca047a45805522efbc301c786a}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!redisplay\_range@{redisplay\_range}}
+\index{redisplay\_range@{redisplay\_range}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{redisplay\_range()}{redisplay\_range()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::redisplay\+\_\+range (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a29cca6a03ac20b1af20913c5a0e25fe7}\label{class_fl___text___display_a29cca6a03ac20b1af20913c5a0e25fe7}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!reset\_absolute\_top\_line\_number@{reset\_absolute\_top\_line\_number}}
+\index{reset\_absolute\_top\_line\_number@{reset\_absolute\_top\_line\_number}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{reset\_absolute\_top\_line\_number()}{reset\_absolute\_top\_line\_number()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::reset\+\_\+absolute\+\_\+top\+\_\+line\+\_\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aa8215d8e63bba5f1550ae57e6969263a}\label{class_fl___text___display_aa8215d8e63bba5f1550ae57e6969263a}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!resize@{resize}}
+\index{resize@{resize}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::resize (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Changes the size or position of the widget.
+
+This is a virtual function so that the widget may implement its own handling of resizing. The default version does {\itshape not} call the \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} method, but instead relies on the parent widget to do so because the parent may know a faster way to update the display, such as scrolling from the old position. ~\newline
+
+
+Some window managers under X11 call \mbox{\hyperlink{class_fl___text___display_aa8215d8e63bba5f1550ae57e6969263a}{resize()}} a lot more often than needed. Please verify that the position or size of a widget did actually change before doing any extensive calculations.
+
+position(\+X, Y) is a shortcut for resize(X, Y, \mbox{\hyperlink{class_fl___text___display_a0ba3a65c1ff72abb19d00ce743c0444d}{w()}}, \mbox{\hyperlink{class_fl___text___display_abbe11349fa20b8dab805508316d6f1ba}{h()}}), and size(\+W, H) is a shortcut for resize(\mbox{\hyperlink{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}{x()}}, \mbox{\hyperlink{class_fl___text___display_a3ec54952411bf446b977c713f4ec46c7}{y()}}, W, H).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x,y} & new position relative to the parent window \\
+\hline
+\mbox{\texttt{ in}}  & {\em w,h} & new size \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}{position(int,int)}}, \mbox{\hyperlink{class_fl___widget_ae386844a68c27ea0b64313619551e786}{size(int,int)}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_aaec24e2eec53dcea00d1d1f63d5495d3}{Fl\+\_\+\+Group}}.
+
+\mbox{\Hypertarget{class_fl___text___display_ab979d92ae92c3209cabd187028d61029}\label{class_fl___text___display_ab979d92ae92c3209cabd187028d61029}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!rewind\_lines@{rewind\_lines}}
+\index{rewind\_lines@{rewind\_lines}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{rewind\_lines()}{rewind\_lines()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::rewind\+\_\+lines (\begin{DoxyParamCaption}\item[{int}]{start\+Pos,  }\item[{int}]{n\+Lines }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_aa6705c216c0626763f3f34d3e318d465}\label{class_fl___text___display_aa6705c216c0626763f3f34d3e318d465}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!scroll@{scroll}}
+\index{scroll@{scroll}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{scroll()}{scroll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::scroll (\begin{DoxyParamCaption}\item[{int}]{top\+Line\+Num,  }\item[{int}]{horiz\+Offset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_ac59b0199f494e20eae3fb270bd20b0f9}\label{class_fl___text___display_ac59b0199f494e20eae3fb270bd20b0f9}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!scroll\_@{scroll\_}}
+\index{scroll\_@{scroll\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{scroll\_()}{scroll\_()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::scroll\+\_\+ (\begin{DoxyParamCaption}\item[{int}]{top\+Line\+Num,  }\item[{int}]{horiz\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aece59df159c323aa89f50681e6ea30e0}\label{class_fl___text___display_aece59df159c323aa89f50681e6ea30e0}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!scroll\_timer\_cb@{scroll\_timer\_cb}}
+\index{scroll\_timer\_cb@{scroll\_timer\_cb}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{scroll\_timer\_cb()}{scroll\_timer\_cb()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::scroll\+\_\+timer\+\_\+cb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a26f6e0b2a781f023d5a13b9bdd0af486}\label{class_fl___text___display_a26f6e0b2a781f023d5a13b9bdd0af486}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!scrollbar\_align@{scrollbar\_align}}
+\index{scrollbar\_align@{scrollbar\_align}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{scrollbar\_align()}{scrollbar\_align()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} Fl\+\_\+\+Text\+\_\+\+Display\+::scrollbar\+\_\+align (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the scrollbar alignment type. \begin{DoxyReturn}{Returns}
+scrollbar alignment 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_a4b14388f53b951244edcfab51c2a1e18}\label{class_fl___text___display_a4b14388f53b951244edcfab51c2a1e18}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!scrollbar\_align@{scrollbar\_align}}
+\index{scrollbar\_align@{scrollbar\_align}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{scrollbar\_align()}{scrollbar\_align()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::scrollbar\+\_\+align (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the scrollbar alignment type. 
+\begin{DoxyParams}{Parameters}
+{\em a} & new scrollbar alignment \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___display_a0006a273fa0a2370e6db2d6aa079fcb6}\label{class_fl___text___display_a0006a273fa0a2370e6db2d6aa079fcb6}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!scrollbar\_width@{scrollbar\_width}}
+\index{scrollbar\_width@{scrollbar\_width}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{scrollbar\_width()}{scrollbar\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::scrollbar\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the width/height of the scrollbars. \begin{DoxyReturn}{Returns}
+width of scrollbars 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_a3947903141cbc6f4b125e9aef5f5d388}\label{class_fl___text___display_a3947903141cbc6f4b125e9aef5f5d388}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!scrollbar\_width@{scrollbar\_width}}
+\index{scrollbar\_width@{scrollbar\_width}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{scrollbar\_width()}{scrollbar\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::scrollbar\+\_\+width (\begin{DoxyParamCaption}\item[{int}]{W }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the width/height of the scrollbars. 
+\begin{DoxyParams}{Parameters}
+{\em W} & width of scrollbars \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___display_a98f01dd6b8be0522e54bccf0f3587d47}\label{class_fl___text___display_a98f01dd6b8be0522e54bccf0f3587d47}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!shortcut@{shortcut}}
+\index{shortcut@{shortcut}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{shortcut()}{shortcut()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::shortcut (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000017}{Todo}}]F\+I\+X\+ME \+: get set methods pointing on shortcut\+\_\+ have no effects as shortcut\+\_\+ is unused in this class and derived! \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+the current shortcut key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_a3ec453b6dc9cc468619688c5bdf3dc95}\label{class_fl___text___display_a3ec453b6dc9cc468619688c5bdf3dc95}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!shortcut@{shortcut}}
+\index{shortcut@{shortcut}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{shortcut()}{shortcut()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::shortcut (\begin{DoxyParamCaption}\item[{int}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000018}{Todo}}]F\+I\+X\+ME \+: get set methods pointing on shortcut\+\_\+ have no effects as shortcut\+\_\+ is unused in this class and derived! \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the new shortcut key \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___display_a2e19af56aacc79cbefe426ca6255099d}\label{class_fl___text___display_a2e19af56aacc79cbefe426ca6255099d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!show\_cursor@{show\_cursor}}
+\index{show\_cursor@{show\_cursor}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{show\_cursor()}{show\_cursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::show\+\_\+cursor (\begin{DoxyParamCaption}\item[{int}]{b = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_aadc28a301981f02edc3d57913f56b766}\label{class_fl___text___display_aadc28a301981f02edc3d57913f56b766}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!show\_insert\_position@{show\_insert\_position}}
+\index{show\_insert\_position@{show\_insert\_position}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{show\_insert\_position()}{show\_insert\_position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::show\+\_\+insert\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_adf4a0d3ffb4ebdd34954d1781516653c}\label{class_fl___text___display_adf4a0d3ffb4ebdd34954d1781516653c}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!skip\_lines@{skip\_lines}}
+\index{skip\_lines@{skip\_lines}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{skip\_lines()}{skip\_lines()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::skip\+\_\+lines (\begin{DoxyParamCaption}\item[{int}]{start\+Pos,  }\item[{int}]{n\+Lines,  }\item[{bool}]{start\+Pos\+Is\+Line\+Start }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a033fb1323b0640601240829e845598f9}\label{class_fl___text___display_a033fb1323b0640601240829e845598f9}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!string\_width@{string\_width}}
+\index{string\_width@{string\_width}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{string\_width()}{string\_width()}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Text\+\_\+\+Display\+::string\+\_\+width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{string,  }\item[{int}]{length,  }\item[{int}]{style }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a8695a84858aa91aef4323f4618cab9b7}\label{class_fl___text___display_a8695a84858aa91aef4323f4618cab9b7}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!textcolor@{textcolor}}
+\index{textcolor@{textcolor}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{textcolor()}{textcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Text\+\_\+\+Display\+::textcolor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the default color of text in the widget. \begin{DoxyReturn}{Returns}
+text color unless overridden by a style 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_a2572e2a4e5bccd59fb94e46b1329e4cf}\label{class_fl___text___display_a2572e2a4e5bccd59fb94e46b1329e4cf}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!textcolor@{textcolor}}
+\index{textcolor@{textcolor}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{textcolor()}{textcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::textcolor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the default color of text in the widget. 
+\begin{DoxyParams}{Parameters}
+{\em n} & new text color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___display_aede1822b26480e2d08c3625b67f7abe3}\label{class_fl___text___display_aede1822b26480e2d08c3625b67f7abe3}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!textfont@{textfont}}
+\index{textfont@{textfont}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{textfont()}{textfont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} Fl\+\_\+\+Text\+\_\+\+Display\+::textfont (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the default font used when drawing text in the widget. \begin{DoxyReturn}{Returns}
+current text font face unless overridden by a style 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_a8bcd59e82106e198bae05ca073cacdf1}\label{class_fl___text___display_a8bcd59e82106e198bae05ca073cacdf1}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!textfont@{textfont}}
+\index{textfont@{textfont}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{textfont()}{textfont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::textfont (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the default font used when drawing text in the widget. 
+\begin{DoxyParams}{Parameters}
+{\em s} & default text font face \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___display_ad92e726e57de12916b1493ed2370177b}\label{class_fl___text___display_ad92e726e57de12916b1493ed2370177b}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!textsize@{textsize}}
+\index{textsize@{textsize}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{textsize()}{textsize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} Fl\+\_\+\+Text\+\_\+\+Display\+::textsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the default size of text in the widget. \begin{DoxyReturn}{Returns}
+current text height unless overridden by a style 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_a00f7c0a58a3efd71a8379762dd20c299}\label{class_fl___text___display_a00f7c0a58a3efd71a8379762dd20c299}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!textsize@{textsize}}
+\index{textsize@{textsize}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{textsize()}{textsize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::textsize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}}}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the default size of text in the widget. 
+\begin{DoxyParams}{Parameters}
+{\em s} & new text size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___display_a392b252cf45bc123e58c2542578637d7}\label{class_fl___text___display_a392b252cf45bc123e58c2542578637d7}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!update\_h\_scrollbar@{update\_h\_scrollbar}}
+\index{update\_h\_scrollbar@{update\_h\_scrollbar}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{update\_h\_scrollbar()}{update\_h\_scrollbar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::update\+\_\+h\+\_\+scrollbar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_af80c4c92503b0b713e666b9c1a9742f1}\label{class_fl___text___display_af80c4c92503b0b713e666b9c1a9742f1}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!update\_line\_starts@{update\_line\_starts}}
+\index{update\_line\_starts@{update\_line\_starts}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{update\_line\_starts()}{update\_line\_starts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::update\+\_\+line\+\_\+starts (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{chars\+Inserted,  }\item[{int}]{chars\+Deleted,  }\item[{int}]{lines\+Inserted,  }\item[{int}]{lines\+Deleted,  }\item[{int $\ast$}]{scrolled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a261e2e626a6448307fe718c7868b24d9}\label{class_fl___text___display_a261e2e626a6448307fe718c7868b24d9}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!update\_v\_scrollbar@{update\_v\_scrollbar}}
+\index{update\_v\_scrollbar@{update\_v\_scrollbar}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{update\_v\_scrollbar()}{update\_v\_scrollbar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::update\+\_\+v\+\_\+scrollbar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a60b71529f884baae59ff3b5c39ce0882}\label{class_fl___text___display_a60b71529f884baae59ff3b5c39ce0882}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!v\_scrollbar\_cb@{v\_scrollbar\_cb}}
+\index{v\_scrollbar\_cb@{v\_scrollbar\_cb}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{v\_scrollbar\_cb()}{v\_scrollbar\_cb()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::v\+\_\+scrollbar\+\_\+cb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}} $\ast$}]{w,  }\item[{\mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a0ee7456ef5ac0baa5819f67173aec83b}\label{class_fl___text___display_a0ee7456ef5ac0baa5819f67173aec83b}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!vline\_length@{vline\_length}}
+\index{vline\_length@{vline\_length}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{vline\_length()}{vline\_length()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::vline\+\_\+length (\begin{DoxyParamCaption}\item[{int}]{vis\+Line\+Num }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a6fb0cd917979a537ba8e2142f0f9d7fc}\label{class_fl___text___display_a6fb0cd917979a537ba8e2142f0f9d7fc}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!word\_end@{word\_end}}
+\index{word\_end@{word\_end}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{word\_end()}{word\_end()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::word\+\_\+end (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Moves the insert position to the end of the current word. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & start calculation at this index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of first character after the end of the word 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_a593eb42b7c691417311b4cf75821a8f2}\label{class_fl___text___display_a593eb42b7c691417311b4cf75821a8f2}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!word\_start@{word\_start}}
+\index{word\_start@{word\_start}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{word\_start()}{word\_start()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::word\+\_\+start (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Moves the insert position to the beginning of the current word. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & start calculation at this index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+beginning of the words 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_ab9378d48b949f8fc7da04c6be4142c54}\label{class_fl___text___display_ab9378d48b949f8fc7da04c6be4142c54}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!wrap\_mode@{wrap\_mode}}
+\index{wrap\_mode@{wrap\_mode}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{wrap\_mode()}{wrap\_mode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::wrap\+\_\+mode (\begin{DoxyParamCaption}\item[{int}]{wrap,  }\item[{int}]{wrap\+\_\+margin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___display_a5da78184a39741a25a456ba1928c38dc}\label{class_fl___text___display_a5da78184a39741a25a456ba1928c38dc}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!wrap\_uses\_character@{wrap\_uses\_character}}
+\index{wrap\_uses\_character@{wrap\_uses\_character}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{wrap\_uses\_character()}{wrap\_uses\_character()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::wrap\+\_\+uses\+\_\+character (\begin{DoxyParamCaption}\item[{int}]{line\+End\+Pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a9507d73613f6166a99283cacd7d2b0d7}\label{class_fl___text___display_a9507d73613f6166a99283cacd7d2b0d7}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!wrapped\_column@{wrapped\_column}}
+\index{wrapped\_column@{wrapped\_column}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{wrapped\_column()}{wrapped\_column()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::wrapped\+\_\+column (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_a9d2f815f11f77305e8f440c654372133}\label{class_fl___text___display_a9d2f815f11f77305e8f440c654372133}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!wrapped\_line\_counter@{wrapped\_line\_counter}}
+\index{wrapped\_line\_counter@{wrapped\_line\_counter}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{wrapped\_line\_counter()}{wrapped\_line\_counter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::wrapped\+\_\+line\+\_\+counter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} $\ast$}]{buf,  }\item[{int}]{start\+Pos,  }\item[{int}]{max\+Pos,  }\item[{int}]{max\+Lines,  }\item[{bool}]{start\+Pos\+Is\+Line\+Start,  }\item[{int}]{style\+Buf\+Offset,  }\item[{int $\ast$}]{ret\+Pos,  }\item[{int $\ast$}]{ret\+Lines,  }\item[{int $\ast$}]{ret\+Line\+Start,  }\item[{int $\ast$}]{ret\+Line\+End,  }\item[{bool}]{count\+Last\+Line\+Missing\+New\+Line = {\ttfamily true} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aafdfe5c72839546c6100edf6f35222f8}\label{class_fl___text___display_aafdfe5c72839546c6100edf6f35222f8}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!wrapped\_row@{wrapped\_row}}
+\index{wrapped\_row@{wrapped\_row}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{wrapped\_row()}{wrapped\_row()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::wrapped\+\_\+row (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___display_a69139918fadc2ea30d5c16583fc8d0c8}\label{class_fl___text___display_a69139918fadc2ea30d5c16583fc8d0c8}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!x\_to\_col@{x\_to\_col}}
+\index{x\_to\_col@{x\_to\_col}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{x\_to\_col()}{x\_to\_col()}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Text\+\_\+\+Display\+::x\+\_\+to\+\_\+col (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption}) const}
+
+Convert an x pixel position into a column number. 
+\begin{DoxyParams}{Parameters}
+{\em x} & number of pixels from the left margin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an approximate column number based on the main font 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___display_a3048c33ca31c4ccb39ca6dff352aa47b}\label{class_fl___text___display_a3048c33ca31c4ccb39ca6dff352aa47b}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!xy\_to\_position@{xy\_to\_position}}
+\index{xy\_to\_position@{xy\_to\_position}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{xy\_to\_position()}{xy\_to\_position()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::xy\+\_\+to\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{Pos\+Type = {\ttfamily \mbox{\hyperlink{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6a61f7dd8a1a7e6fa28614888e1f99e10b}{C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+P\+OS}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ac2fd9e9ef877f35a20136b9a2be54553}\label{class_fl___text___display_ac2fd9e9ef877f35a20136b9a2be54553}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!xy\_to\_rowcol@{xy\_to\_rowcol}}
+\index{xy\_to\_rowcol@{xy\_to\_rowcol}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{xy\_to\_rowcol()}{xy\_to\_rowcol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Display\+::xy\+\_\+to\+\_\+rowcol (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int $\ast$}]{row,  }\item[{int $\ast$}]{column,  }\item[{int}]{Pos\+Type = {\ttfamily \mbox{\hyperlink{class_fl___text___display_ae7e5fc9bbdf37e72c9fba0c3dd95e3c6a61f7dd8a1a7e6fa28614888e1f99e10b}{C\+H\+A\+R\+A\+C\+T\+E\+R\+\_\+\+P\+OS}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_fl___text___display_a1c53f4ccece209c2d25b868862e2585e}\label{class_fl___text___display_a1c53f4ccece209c2d25b868862e2585e}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!fl\_text\_drag\_me@{fl\_text\_drag\_me}}
+\index{fl\_text\_drag\_me@{fl\_text\_drag\_me}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{fl\_text\_drag\_me}{fl\_text\_drag\_me}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} fl\+\_\+text\+\_\+drag\+\_\+me (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{\mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___text___display_a5eae476ae76dcb942eb89f69979161b6}\label{class_fl___text___display_a5eae476ae76dcb942eb89f69979161b6}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!damage\_range1\_end@{damage\_range1\_end}}
+\index{damage\_range1\_end@{damage\_range1\_end}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{damage\_range1\_end}{damage\_range1\_end}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::damage\+\_\+range1\+\_\+end\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a43058a6dfad43ba8d94d0cfd445dbc5d}\label{class_fl___text___display_a43058a6dfad43ba8d94d0cfd445dbc5d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!damage\_range1\_start@{damage\_range1\_start}}
+\index{damage\_range1\_start@{damage\_range1\_start}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{damage\_range1\_start}{damage\_range1\_start}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::damage\+\_\+range1\+\_\+start\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a652b099379b52eb1b3a0c237d949b600}\label{class_fl___text___display_a652b099379b52eb1b3a0c237d949b600}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!damage\_range2\_end@{damage\_range2\_end}}
+\index{damage\_range2\_end@{damage\_range2\_end}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{damage\_range2\_end}{damage\_range2\_end}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::damage\+\_\+range2\+\_\+end\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a71a2755ace51641dabca67219fa16a76}\label{class_fl___text___display_a71a2755ace51641dabca67219fa16a76}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!damage\_range2\_start@{damage\_range2\_start}}
+\index{damage\_range2\_start@{damage\_range2\_start}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{damage\_range2\_start}{damage\_range2\_start}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::damage\+\_\+range2\+\_\+start\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a5d3a5f34c05fcdfb606bc9dc41364318}\label{class_fl___text___display_a5d3a5f34c05fcdfb606bc9dc41364318}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!display\_insert\_position\_hint@{display\_insert\_position\_hint}}
+\index{display\_insert\_position\_hint@{display\_insert\_position\_hint}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{display\_insert\_position\_hint}{display\_insert\_position\_hint}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::display\+\_\+insert\+\_\+position\+\_\+hint\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_abecc6188d815dab119e22aa35c99594a}\label{class_fl___text___display_abecc6188d815dab119e22aa35c99594a}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!dragging@{dragging}}
+\index{dragging@{dragging}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{dragging}{dragging}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::dragging\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ab8be3a7c43248f6eae8679ff43147bff}\label{class_fl___text___display_ab8be3a7c43248f6eae8679ff43147bff}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!dragPos@{dragPos}}
+\index{dragPos@{dragPos}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{dragPos}{dragPos}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::drag\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aa8977cb754adb98c0e8fcb6306e70691}\label{class_fl___text___display_aa8977cb754adb98c0e8fcb6306e70691}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!dragType@{dragType}}
+\index{dragType@{dragType}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{dragType}{dragType}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::drag\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_abbe11349fa20b8dab805508316d6f1ba}\label{class_fl___text___display_abbe11349fa20b8dab805508316d6f1ba}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!h@{h}}
+\index{h@{h}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::h}
+
+\mbox{\Hypertarget{class_fl___text___display_a4dcc1890441736b46a7ec2bc8a4da689}\label{class_fl___text___display_a4dcc1890441736b46a7ec2bc8a4da689}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_align\_@{linenumber\_align\_}}
+\index{linenumber\_align\_@{linenumber\_align\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_align\_}{linenumber\_align\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+align\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ae6ab1a7e2bdee0730730710c3e5e310f}\label{class_fl___text___display_ae6ab1a7e2bdee0730730710c3e5e310f}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_bgcolor\_@{linenumber\_bgcolor\_}}
+\index{linenumber\_bgcolor\_@{linenumber\_bgcolor\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_bgcolor\_}{linenumber\_bgcolor\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+bgcolor\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aa9970e4901ecc3e8312882f8a16d53a5}\label{class_fl___text___display_aa9970e4901ecc3e8312882f8a16d53a5}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_fgcolor\_@{linenumber\_fgcolor\_}}
+\index{linenumber\_fgcolor\_@{linenumber\_fgcolor\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_fgcolor\_}{linenumber\_fgcolor\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+fgcolor\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a0825310f445747fc7abcc65c76eb3504}\label{class_fl___text___display_a0825310f445747fc7abcc65c76eb3504}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_font\_@{linenumber\_font\_}}
+\index{linenumber\_font\_@{linenumber\_font\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_font\_}{linenumber\_font\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+font\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a0aae1671848aa3e10b33e0622cb35d36}\label{class_fl___text___display_a0aae1671848aa3e10b33e0622cb35d36}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_format\_@{linenumber\_format\_}}
+\index{linenumber\_format\_@{linenumber\_format\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_format\_}{linenumber\_format\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+format\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a86f166562a525b705dcea0d73692b575}\label{class_fl___text___display_a86f166562a525b705dcea0d73692b575}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!linenumber\_size\_@{linenumber\_size\_}}
+\index{linenumber\_size\_@{linenumber\_size\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{linenumber\_size\_}{linenumber\_size\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} Fl\+\_\+\+Text\+\_\+\+Display\+::linenumber\+\_\+size\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_adcc65615ed62774c9e116f15d1d04c34}\label{class_fl___text___display_adcc65615ed62774c9e116f15d1d04c34}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mAbsTopLineNum@{mAbsTopLineNum}}
+\index{mAbsTopLineNum@{mAbsTopLineNum}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mAbsTopLineNum}{mAbsTopLineNum}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Abs\+Top\+Line\+Num\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ae6bf5d1995a36d019b8e8be8a4c7800d}\label{class_fl___text___display_ae6bf5d1995a36d019b8e8be8a4c7800d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mBuffer@{mBuffer}}
+\index{mBuffer@{mBuffer}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mBuffer}{mBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a74edfdd68ef924ea07febf83b8b96f69}\label{class_fl___text___display_a74edfdd68ef924ea07febf83b8b96f69}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mColumnScale@{mColumnScale}}
+\index{mColumnScale@{mColumnScale}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mColumnScale}{mColumnScale}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Column\+Scale\hspace{0.3cm}{\ttfamily [mutable]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aa430f76a726f576400b471895feee43f}\label{class_fl___text___display_aa430f76a726f576400b471895feee43f}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mContinuousWrap@{mContinuousWrap}}
+\index{mContinuousWrap@{mContinuousWrap}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mContinuousWrap}{mContinuousWrap}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Continuous\+Wrap\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a932421e6d28f2e4851a5900b836fd106}\label{class_fl___text___display_a932421e6d28f2e4851a5900b836fd106}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mCursor\_color@{mCursor\_color}}
+\index{mCursor\_color@{mCursor\_color}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mCursor\_color}{mCursor\_color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Cursor\+\_\+color\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a43b33a899825b37c477e9eaac8243e3d}\label{class_fl___text___display_a43b33a899825b37c477e9eaac8243e3d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mCursorOldY@{mCursorOldY}}
+\index{mCursorOldY@{mCursorOldY}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mCursorOldY}{mCursorOldY}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Cursor\+OldY\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aaa8d5b25727d9c58fd35f77c75210acd}\label{class_fl___text___display_aaa8d5b25727d9c58fd35f77c75210acd}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mCursorOn@{mCursorOn}}
+\index{mCursorOn@{mCursorOn}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mCursorOn}{mCursorOn}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Cursor\+On\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a89656c2be101ee6e26b85a66b5c9a76c}\label{class_fl___text___display_a89656c2be101ee6e26b85a66b5c9a76c}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mCursorPos@{mCursorPos}}
+\index{mCursorPos@{mCursorPos}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mCursorPos}{mCursorPos}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Cursor\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a8d795428b38c1979857ab90c4dad8413}\label{class_fl___text___display_a8d795428b38c1979857ab90c4dad8413}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mCursorPreferredXPos@{mCursorPreferredXPos}}
+\index{mCursorPreferredXPos@{mCursorPreferredXPos}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mCursorPreferredXPos}{mCursorPreferredXPos}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Cursor\+Preferred\+X\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a4226736abd1bb51cdc9b8268ef4b3ef7}\label{class_fl___text___display_a4226736abd1bb51cdc9b8268ef4b3ef7}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mCursorStyle@{mCursorStyle}}
+\index{mCursorStyle@{mCursorStyle}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mCursorStyle}{mCursorStyle}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Cursor\+Style\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a8154a4a3bdd47f3faa05857e05f5ca23}\label{class_fl___text___display_a8154a4a3bdd47f3faa05857e05f5ca23}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mCursorToHint@{mCursorToHint}}
+\index{mCursorToHint@{mCursorToHint}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mCursorToHint}{mCursorToHint}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Cursor\+To\+Hint\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_af99afe711ef5f691c9daf5e975ba1c2f}\label{class_fl___text___display_af99afe711ef5f691c9daf5e975ba1c2f}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mFirstChar@{mFirstChar}}
+\index{mFirstChar@{mFirstChar}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mFirstChar}{mFirstChar}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+First\+Char\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ab52fe15b28cc5a962158b19ac9762618}\label{class_fl___text___display_ab52fe15b28cc5a962158b19ac9762618}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mHighlightCBArg@{mHighlightCBArg}}
+\index{mHighlightCBArg@{mHighlightCBArg}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mHighlightCBArg}{mHighlightCBArg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Highlight\+C\+B\+Arg\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a15bbc4686a0b8fd73cf3817cd4aa48de}\label{class_fl___text___display_a15bbc4686a0b8fd73cf3817cd4aa48de}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mHorizOffset@{mHorizOffset}}
+\index{mHorizOffset@{mHorizOffset}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mHorizOffset}{mHorizOffset}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Horiz\+Offset\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a2866695f8a1d84f7f3ddd5b6512a8354}\label{class_fl___text___display_a2866695f8a1d84f7f3ddd5b6512a8354}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mHorizOffsetHint@{mHorizOffsetHint}}
+\index{mHorizOffsetHint@{mHorizOffsetHint}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mHorizOffsetHint}{mHorizOffsetHint}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Horiz\+Offset\+Hint\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ac27c95e4bd15735d1b2b8ec756dc45b2}\label{class_fl___text___display_ac27c95e4bd15735d1b2b8ec756dc45b2}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mHScrollBar@{mHScrollBar}}
+\index{mHScrollBar@{mHScrollBar}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mHScrollBar}{mHScrollBar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::m\+H\+Scroll\+Bar\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a41d1af297bd7831e5f0c85d206390b69}\label{class_fl___text___display_a41d1af297bd7831e5f0c85d206390b69}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mLastChar@{mLastChar}}
+\index{mLastChar@{mLastChar}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mLastChar}{mLastChar}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Last\+Char\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a44bc21a37ff699717732209b4c6ef93b}\label{class_fl___text___display_a44bc21a37ff699717732209b4c6ef93b}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mLineNumLeft@{mLineNumLeft}}
+\index{mLineNumLeft@{mLineNumLeft}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mLineNumLeft}{mLineNumLeft}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Line\+Num\+Left\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_adb824c3011961eafc184bd887d4e522e}\label{class_fl___text___display_adb824c3011961eafc184bd887d4e522e}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mLineNumWidth@{mLineNumWidth}}
+\index{mLineNumWidth@{mLineNumWidth}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mLineNumWidth}{mLineNumWidth}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Line\+Num\+Width\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ad6ddde0486401efe96bf650eaef535b2}\label{class_fl___text___display_ad6ddde0486401efe96bf650eaef535b2}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mLineStarts@{mLineStarts}}
+\index{mLineStarts@{mLineStarts}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mLineStarts}{mLineStarts}}
+{\footnotesize\ttfamily int$\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Line\+Starts\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a38208c6d3a7b8c76b066a6d06798e1b1}\label{class_fl___text___display_a38208c6d3a7b8c76b066a6d06798e1b1}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mMaxsize@{mMaxsize}}
+\index{mMaxsize@{mMaxsize}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mMaxsize}{mMaxsize}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Maxsize\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_af70be6e87e93c287b0c6942d8b7663b0}\label{class_fl___text___display_af70be6e87e93c287b0c6942d8b7663b0}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mModifyingTabDistance@{mModifyingTabDistance}}
+\index{mModifyingTabDistance@{mModifyingTabDistance}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mModifyingTabDistance}{mModifyingTabDistance}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Modifying\+Tab\+Distance\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_afa80c2dbf0860784fc15c39f4aa1eab0}\label{class_fl___text___display_afa80c2dbf0860784fc15c39f4aa1eab0}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mNBufferLines@{mNBufferLines}}
+\index{mNBufferLines@{mNBufferLines}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mNBufferLines}{mNBufferLines}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+N\+Buffer\+Lines\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ad943e7c14ad0517f8aa308e21123fed2}\label{class_fl___text___display_ad943e7c14ad0517f8aa308e21123fed2}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mNeedAbsTopLineNum@{mNeedAbsTopLineNum}}
+\index{mNeedAbsTopLineNum@{mNeedAbsTopLineNum}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mNeedAbsTopLineNum}{mNeedAbsTopLineNum}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Need\+Abs\+Top\+Line\+Num\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a9e20a250574f5c3f0805d75d11d02e73}\label{class_fl___text___display_a9e20a250574f5c3f0805d75d11d02e73}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mNLinesDeleted@{mNLinesDeleted}}
+\index{mNLinesDeleted@{mNLinesDeleted}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mNLinesDeleted}{mNLinesDeleted}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+N\+Lines\+Deleted\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a4010db1efcce0aa9529f9280234e44ac}\label{class_fl___text___display_a4010db1efcce0aa9529f9280234e44ac}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mNStyles@{mNStyles}}
+\index{mNStyles@{mNStyles}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mNStyles}{mNStyles}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+N\+Styles\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a5f1675c671e54d6faadfb10947faf9ef}\label{class_fl___text___display_a5f1675c671e54d6faadfb10947faf9ef}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mNVisibleLines@{mNVisibleLines}}
+\index{mNVisibleLines@{mNVisibleLines}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mNVisibleLines}{mNVisibleLines}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+N\+Visible\+Lines\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ac49cb705eb353cae3fc58038ffb3da64}\label{class_fl___text___display_ac49cb705eb353cae3fc58038ffb3da64}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mStyleBuffer@{mStyleBuffer}}
+\index{mStyleBuffer@{mStyleBuffer}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mStyleBuffer}{mStyleBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Style\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a3e3dd2836c99301f1af8b4fc576d1485}\label{class_fl___text___display_a3e3dd2836c99301f1af8b4fc576d1485}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mStyleTable@{mStyleTable}}
+\index{mStyleTable@{mStyleTable}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mStyleTable}{mStyleTable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___text___display_1_1_style___table___entry}{Style\+\_\+\+Table\+\_\+\+Entry}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Style\+Table\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a33961c2850e6b78e48c17acc237ee353}\label{class_fl___text___display_a33961c2850e6b78e48c17acc237ee353}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mSuppressResync@{mSuppressResync}}
+\index{mSuppressResync@{mSuppressResync}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mSuppressResync}{mSuppressResync}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Suppress\+Resync\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_ad3e3eddb22f3ac494f3702038a17c088}\label{class_fl___text___display_ad3e3eddb22f3ac494f3702038a17c088}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mTopLineNum@{mTopLineNum}}
+\index{mTopLineNum@{mTopLineNum}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mTopLineNum}{mTopLineNum}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Top\+Line\+Num\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aee9e956b7676854c3dc129b466c2f293}\label{class_fl___text___display_aee9e956b7676854c3dc129b466c2f293}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mTopLineNumHint@{mTopLineNumHint}}
+\index{mTopLineNumHint@{mTopLineNumHint}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mTopLineNumHint}{mTopLineNumHint}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Top\+Line\+Num\+Hint\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a36dd3aa7f408daf75e07e5f4b484fe4b}\label{class_fl___text___display_a36dd3aa7f408daf75e07e5f4b484fe4b}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mUnfinishedHighlightCB@{mUnfinishedHighlightCB}}
+\index{mUnfinishedHighlightCB@{mUnfinishedHighlightCB}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mUnfinishedHighlightCB}{mUnfinishedHighlightCB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___display_a6a1d46fcc348160ae5c68bd2fb388492}{Unfinished\+\_\+\+Style\+\_\+\+Cb}} Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Unfinished\+Highlight\+CB\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a0dbfd5704505302485b91c52b0049626}\label{class_fl___text___display_a0dbfd5704505302485b91c52b0049626}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mUnfinishedStyle@{mUnfinishedStyle}}
+\index{mUnfinishedStyle@{mUnfinishedStyle}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mUnfinishedStyle}{mUnfinishedStyle}}
+{\footnotesize\ttfamily char Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Unfinished\+Style\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_affabc12ab701eb4fec27e5e42f39383f}\label{class_fl___text___display_affabc12ab701eb4fec27e5e42f39383f}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mVScrollBar@{mVScrollBar}}
+\index{mVScrollBar@{mVScrollBar}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mVScrollBar}{mVScrollBar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Display\+::m\+V\+Scroll\+Bar\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a3581b09aac53dfece4e9dd170d752dc9}\label{class_fl___text___display_a3581b09aac53dfece4e9dd170d752dc9}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!mWrapMarginPix@{mWrapMarginPix}}
+\index{mWrapMarginPix@{mWrapMarginPix}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{mWrapMarginPix}{mWrapMarginPix}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::m\+Wrap\+Margin\+Pix\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aaa1463bc33aed27590759bc06492adbc}\label{class_fl___text___display_aaa1463bc33aed27590759bc06492adbc}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!scrollbar\_align\_@{scrollbar\_align\_}}
+\index{scrollbar\_align\_@{scrollbar\_align\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{scrollbar\_align\_}{scrollbar\_align\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} Fl\+\_\+\+Text\+\_\+\+Display\+::scrollbar\+\_\+align\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_aa5e1994bcbbd80d20431c890f780f1ed}\label{class_fl___text___display_aa5e1994bcbbd80d20431c890f780f1ed}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!scrollbar\_width\_@{scrollbar\_width\_}}
+\index{scrollbar\_width\_@{scrollbar\_width\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{scrollbar\_width\_}{scrollbar\_width\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::scrollbar\+\_\+width\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a9a344596efee3f9bb6c557884c44e075}\label{class_fl___text___display_a9a344596efee3f9bb6c557884c44e075}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!shortcut\_@{shortcut\_}}
+\index{shortcut\_@{shortcut\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{shortcut\_}{shortcut\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::shortcut\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a19324166bedbbef4d0d35cf9cad92329}\label{class_fl___text___display_a19324166bedbbef4d0d35cf9cad92329}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!text\_area@{text\_area}}
+\index{text\_area@{text\_area}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{text\_area}{text\_area}}
+{\footnotesize\ttfamily struct \{ ... \}  Fl\+\_\+\+Text\+\_\+\+Display\+::text\+\_\+area\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a0e0781897bc4b33305f2fb5d50df5895}\label{class_fl___text___display_a0e0781897bc4b33305f2fb5d50df5895}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!textcolor\_@{textcolor\_}}
+\index{textcolor\_@{textcolor\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{textcolor\_}{textcolor\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Text\+\_\+\+Display\+::textcolor\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a3d99518d80972df1e61794318e9a3d14}\label{class_fl___text___display_a3d99518d80972df1e61794318e9a3d14}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!textfont\_@{textfont\_}}
+\index{textfont\_@{textfont\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{textfont\_}{textfont\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} Fl\+\_\+\+Text\+\_\+\+Display\+::textfont\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a74de945f5889cc038d80f9b9899dc8a7}\label{class_fl___text___display_a74de945f5889cc038d80f9b9899dc8a7}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!textsize\_@{textsize\_}}
+\index{textsize\_@{textsize\_}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{textsize\_}{textsize\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} Fl\+\_\+\+Text\+\_\+\+Display\+::textsize\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___display_a0ba3a65c1ff72abb19d00ce743c0444d}\label{class_fl___text___display_a0ba3a65c1ff72abb19d00ce743c0444d}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!w@{w}}
+\index{w@{w}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::w}
+
+\mbox{\Hypertarget{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}\label{class_fl___text___display_a553086d9e30bf6745c02ba228e43db1c}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!x@{x}}
+\index{x@{x}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::x}
+
+\mbox{\Hypertarget{class_fl___text___display_a3ec54952411bf446b977c713f4ec46c7}\label{class_fl___text___display_a3ec54952411bf446b977c713f4ec46c7}} 
+\index{Fl\_Text\_Display@{Fl\_Text\_Display}!y@{y}}
+\index{y@{y}!Fl\_Text\_Display@{Fl\_Text\_Display}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Display\+::y}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___text___display_8_h}{Fl\+\_\+\+Text\+\_\+\+Display.\+H}}\end{DoxyCompactItemize}

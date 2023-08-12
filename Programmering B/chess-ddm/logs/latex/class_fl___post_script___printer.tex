@@ -1,0 +1,115 @@
+\hypertarget{class_fl___post_script___printer}{}\doxysection{Fl\+\_\+\+Post\+Script\+\_\+\+Printer Class Reference}
+\label{class_fl___post_script___printer}\index{Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Printer.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Post\+Script\+\_\+\+Printer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_fl___post_script___printer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Post\+Script\+\_\+\+Printer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_fl___post_script___printer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___post_script___printer_a1f1fbe50c4fd6350aec1cddd42f0bedd}{class\+\_\+name}} ()
+\item 
+int \mbox{\hyperlink{class_fl___post_script___printer_a28eb1f213d8373d8c37b77fe05722c9b}{start\+\_\+job}} (int pages, int $\ast$firstpage=\mbox{\hyperlink{forms_8_h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}, int $\ast$lastpage=\mbox{\hyperlink{forms_8_h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___post_script___printer_a5b4fa3eb62fe1f1c9e1ef1caa455deab}{class\+\_\+id}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___post_script___printer_ab9087751bbaafdb4032938cc52660eb3}{Fl\+\_\+\+Post\+Script\+\_\+\+Printer}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fl___post_script___printer_af7bef43df0f578f754fe0879678f0446}{Fl\+\_\+\+Printer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Print support under Unix/\+Linux.
+
+Class \mbox{\hyperlink{class_fl___post_script___printer}{Fl\+\_\+\+Post\+Script\+\_\+\+Printer}} is implemented only on the Unix/\+Linux platform. It has no public constructor. Use \mbox{\hyperlink{class_fl___printer}{Fl\+\_\+\+Printer}} instead that is cross-\/platform and has the same A\+PI. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___post_script___printer_ab9087751bbaafdb4032938cc52660eb3}\label{class_fl___post_script___printer_ab9087751bbaafdb4032938cc52660eb3}} 
+\index{Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}!Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}}
+\index{Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}!Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}}
+\doxysubsubsection{\texorpdfstring{Fl\_PostScript\_Printer()}{Fl\_PostScript\_Printer()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Post\+Script\+\_\+\+Printer\+::\+Fl\+\_\+\+Post\+Script\+\_\+\+Printer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+The constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___post_script___printer_a1f1fbe50c4fd6350aec1cddd42f0bedd}\label{class_fl___post_script___printer_a1f1fbe50c4fd6350aec1cddd42f0bedd}} 
+\index{Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}!class\_name@{class\_name}}
+\index{class\_name@{class\_name}!Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}}
+\doxysubsubsection{\texorpdfstring{class\_name()}{class\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Post\+Script\+\_\+\+Printer\+::class\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the class of this object. Use of the \mbox{\hyperlink{class_fl___post_script___printer_a1f1fbe50c4fd6350aec1cddd42f0bedd}{class\+\_\+name()}} function is discouraged because it will be removed from future F\+L\+TK versions.
+
+The class of an instance of an \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}} subclass can be checked with code such as\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( instance-\/>class\_name() == \mbox{\hyperlink{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}{Fl\_Printer::class\_id}} ) \{ ... \}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___post_script___file___device_ad2d843215cf1bc1aa929b5c7226f67f6}{Fl\+\_\+\+Post\+Script\+\_\+\+File\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___post_script___printer_a28eb1f213d8373d8c37b77fe05722c9b}\label{class_fl___post_script___printer_a28eb1f213d8373d8c37b77fe05722c9b}} 
+\index{Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}!start\_job@{start\_job}}
+\index{start\_job@{start\_job}!Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}}
+\doxysubsubsection{\texorpdfstring{start\_job()}{start\_job()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Printer\+::start\+\_\+job (\begin{DoxyParamCaption}\item[{int}]{pages,  }\item[{int $\ast$}]{firstpage = {\ttfamily \mbox{\hyperlink{forms_8_h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}},  }\item[{int $\ast$}]{lastpage = {\ttfamily \mbox{\hyperlink{forms_8_h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___post_script___file___device_a2260fda8c04f126265248249a7676ce7}{Fl\+\_\+\+Post\+Script\+\_\+\+File\+\_\+\+Device}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_fl___post_script___printer_af7bef43df0f578f754fe0879678f0446}\label{class_fl___post_script___printer_af7bef43df0f578f754fe0879678f0446}} 
+\index{Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}!Fl\_Printer@{Fl\_Printer}}
+\index{Fl\_Printer@{Fl\_Printer}!Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}}
+\doxysubsubsection{\texorpdfstring{Fl\_Printer}{Fl\_Printer}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_fl___printer}{Fl\+\_\+\+Printer}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___post_script___printer_a5b4fa3eb62fe1f1c9e1ef1caa455deab}\label{class_fl___post_script___printer_a5b4fa3eb62fe1f1c9e1ef1caa455deab}} 
+\index{Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}!class\_id@{class\_id}}
+\index{class\_id@{class\_id}!Fl\_PostScript\_Printer@{Fl\_PostScript\_Printer}}
+\doxysubsubsection{\texorpdfstring{class\_id}{class\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Post\+Script\+\_\+\+Printer\+::class\+\_\+id\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___printer_8_h}{Fl\+\_\+\+Printer.\+H}}\end{DoxyCompactItemize}

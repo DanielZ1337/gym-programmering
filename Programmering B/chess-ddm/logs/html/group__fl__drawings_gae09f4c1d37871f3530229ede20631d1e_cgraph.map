@@ -1,0 +1,7 @@
+<map id="fl_rect" name="fl_rect">
+<area shape="rect" id="node1" title=" " alt="" coords="5,45,63,71"/>
+<area shape="rect" id="node2" href="$group__fl__attributes.html#ga974e9f64959aa83cf6f0a36d3f0105aa" title=" " alt="" coords="111,17,173,43"/>
+<area shape="rect" id="node4" href="$group__fl__drawings.html#ga690c83e11f49fa837b563f4c0bc4fd1b" title=" " alt="" coords="113,71,171,98"/>
+<area shape="rect" id="node3" href="$class_fl___graphics___driver.html#abed59e7ee8211eaad25f913b137ca4db" title="see fl_color(Fl_Color c)." alt="" coords="221,5,352,47"/>
+<area shape="rect" id="node5" href="$class_fl___graphics___driver.html#aa6dd86798bdd0eff233e5e79b952b7a0" title="see fl_rect(int x, int y, int w, int h)." alt="" coords="221,71,352,112"/>
+</map>

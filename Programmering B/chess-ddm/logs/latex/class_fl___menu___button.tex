@@ -1,0 +1,200 @@
+\hypertarget{class_fl___menu___button}{}\doxysection{Fl\+\_\+\+Menu\+\_\+\+Button Class Reference}
+\label{class_fl___menu___button}\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Menu\+\_\+\+Button.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Menu\+\_\+\+Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_fl___menu___button__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Menu\+\_\+\+Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_fl___menu___button__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517e}{popup\+\_\+buttons}} \{ \newline
+\mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea8717baf20b94466d7ecb6036382ea39e}{P\+O\+P\+U\+P1}} = 1, 
+\mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea954d5e926d9961e23b304278ddbbd274}{P\+O\+P\+U\+P2}}, 
+\mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea3af77e10dca49f27569507fbdca11f91}{P\+O\+P\+U\+P12}}, 
+\mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea7285aa289bf2a98a2eaef32a8bfdb7ec}{P\+O\+P\+U\+P3}}, 
+\newline
+\mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517eaea0ff909cb4a279bda1e0383b123d6d4}{P\+O\+P\+U\+P13}}, 
+\mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517eaf6f824d395e1460f0fa42419093cf5a7}{P\+O\+P\+U\+P23}}, 
+\mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea87ef22c65e439b9e2b6e9cfe7f1f379a}{P\+O\+P\+U\+P123}}
+ \}
+\begin{DoxyCompactList}\small\item\em indicate what mouse buttons pop up the menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___menu___button_a7915d96fe4079124c69fd75a0344ebb5}{handle}} (int)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} $\ast$ \mbox{\hyperlink{class_fl___menu___button_a358db83d975556ebc09a1f6bdaeface5}{popup}} ()
+\item 
+\mbox{\hyperlink{class_fl___menu___button_a48c3e8fe3841aef755a4d1b6e513b2b9}{Fl\+\_\+\+Menu\+\_\+\+Button}} (int, int, int, int, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___menu___button_a72adbfd3f59785d8cedaa002d946eab4}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is a button that when pushed pops up a menu (or hierarchy of menus) defined by an array of \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} objects. 
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=5cm]{menu_button.png}
+\doxyfigcaption{menu\+\_\+button}
+\end{DoxyImage}
+ 
+
+Normally any mouse button will pop up a menu and it is lined up below the button as shown in the picture. However an \mbox{\hyperlink{class_fl___menu___button}{Fl\+\_\+\+Menu\+\_\+\+Button}} may also control a pop-\/up menu. This is done by setting the \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{type()}}. If \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{type()}} is zero a normal menu button is produced. If it is nonzero then this is a pop-\/up menu. The bits in \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{type()}} indicate what mouse buttons pop up the menu (see \mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517e}{Fl\+\_\+\+Menu\+\_\+\+Button\+::popup\+\_\+buttons}}). 
+
+The menu will also pop up in response to shortcuts indicated by putting a \textquotesingle{}\&\textquotesingle{} character in the \mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}}. 
+
+Typing the \mbox{\hyperlink{class_fl___menu___aa8080134808c3785579bde1c4ff57f62}{shortcut()}} of any of the menu items will cause callbacks exactly the same as when you pick the item with the mouse. The \textquotesingle{}\&\textquotesingle{} character in menu item names are only looked at when the menu is popped up, however. 
+
+When the user clicks a menu item, \mbox{\hyperlink{class_fl___menu___a760812b12dc473781b132e6a0a7c33e3}{value()}} is set to that item and then\+: \begin{DoxyVerb}- The item's callback is done if one has been set; the
+  Fl_Menu_Button is passed as the Fl_Widget* argument, 
+  along with any userdata configured for the callback.
+
+- If the item does not have a callback, the Fl_Menu_Button's callback
+  is done instead, along with any userdata configured for it.
+  The callback can determine which item was picked using
+  value(), mvalue(), item_pathname(), etc.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517e}\label{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517e}} 
+\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!popup\_buttons@{popup\_buttons}}
+\index{popup\_buttons@{popup\_buttons}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}
+\doxysubsubsection{\texorpdfstring{popup\_buttons}{popup\_buttons}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517e}{Fl\+\_\+\+Menu\+\_\+\+Button\+::popup\+\_\+buttons}}}
+
+
+
+indicate what mouse buttons pop up the menu. 
+
+Values for \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{type()}} used to indicate what mouse buttons pop up the menu. \mbox{\hyperlink{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea7285aa289bf2a98a2eaef32a8bfdb7ec}{Fl\+\_\+\+Menu\+\_\+\+Button\+::\+P\+O\+P\+U\+P3}} is usually what you want. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POPUP1@{POPUP1}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!POPUP1@{POPUP1}}}\mbox{\Hypertarget{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea8717baf20b94466d7ecb6036382ea39e}\label{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea8717baf20b94466d7ecb6036382ea39e}} 
+P\+O\+P\+U\+P1&pops up with the mouse 1st button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POPUP2@{POPUP2}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!POPUP2@{POPUP2}}}\mbox{\Hypertarget{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea954d5e926d9961e23b304278ddbbd274}\label{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea954d5e926d9961e23b304278ddbbd274}} 
+P\+O\+P\+U\+P2&pops up with the mouse 2nd button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POPUP12@{POPUP12}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!POPUP12@{POPUP12}}}\mbox{\Hypertarget{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea3af77e10dca49f27569507fbdca11f91}\label{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea3af77e10dca49f27569507fbdca11f91}} 
+P\+O\+P\+U\+P12&pops up with the mouse 1st or 2nd buttons. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POPUP3@{POPUP3}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!POPUP3@{POPUP3}}}\mbox{\Hypertarget{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea7285aa289bf2a98a2eaef32a8bfdb7ec}\label{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea7285aa289bf2a98a2eaef32a8bfdb7ec}} 
+P\+O\+P\+U\+P3&pops up with the mouse 3rd button. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POPUP13@{POPUP13}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!POPUP13@{POPUP13}}}\mbox{\Hypertarget{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517eaea0ff909cb4a279bda1e0383b123d6d4}\label{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517eaea0ff909cb4a279bda1e0383b123d6d4}} 
+P\+O\+P\+U\+P13&pops up with the mouse 1st or 3rd buttons. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POPUP23@{POPUP23}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!POPUP23@{POPUP23}}}\mbox{\Hypertarget{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517eaf6f824d395e1460f0fa42419093cf5a7}\label{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517eaf6f824d395e1460f0fa42419093cf5a7}} 
+P\+O\+P\+U\+P23&pops up with the mouse 2nd or 3rd buttons. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POPUP123@{POPUP123}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!POPUP123@{POPUP123}}}\mbox{\Hypertarget{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea87ef22c65e439b9e2b6e9cfe7f1f379a}\label{class_fl___menu___button_a2c0d1cab5522c531309169acf0e1517ea87ef22c65e439b9e2b6e9cfe7f1f379a}} 
+P\+O\+P\+U\+P123&pops up with any mouse button. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___menu___button_a48c3e8fe3841aef755a4d1b6e513b2b9}\label{class_fl___menu___button_a48c3e8fe3841aef755a4d1b6e513b2b9}} 
+\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}
+\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}
+\doxysubsubsection{\texorpdfstring{Fl\_Menu\_Button()}{Fl\_Menu\_Button()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Menu\+\_\+\+Button\+::\+Fl\+\_\+\+Menu\+\_\+\+Button (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{ = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___menu___button_a72adbfd3f59785d8cedaa002d946eab4}\label{class_fl___menu___button_a72adbfd3f59785d8cedaa002d946eab4}} 
+\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!draw@{draw}}
+\index{draw@{draw}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Menu\+\_\+\+Button\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___menu___button_a72adbfd3f59785d8cedaa002d946eab4}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___menu___button_a72adbfd3f59785d8cedaa002d946eab4}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Implements \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___menu___button_a7915d96fe4079124c69fd75a0344ebb5}\label{class_fl___menu___button_a7915d96fe4079124c69fd75a0344ebb5}} 
+\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!handle@{handle}}
+\index{handle@{handle}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Menu\+\_\+\+Button\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___menu___button_a7915d96fe4079124c69fd75a0344ebb5}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___widget_a3521aba25eda761620953dd49d335ea7}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___menu___button_a358db83d975556ebc09a1f6bdaeface5}\label{class_fl___menu___button_a358db83d975556ebc09a1f6bdaeface5}} 
+\index{Fl\_Menu\_Button@{Fl\_Menu\_Button}!popup@{popup}}
+\index{popup@{popup}!Fl\_Menu\_Button@{Fl\_Menu\_Button}}
+\doxysubsubsection{\texorpdfstring{popup()}{popup()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}}$\ast$ Fl\+\_\+\+Menu\+\_\+\+Button\+::popup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___menu___button_8_h}{Fl\+\_\+\+Menu\+\_\+\+Button.\+H}}\end{DoxyCompactItemize}

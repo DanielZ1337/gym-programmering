@@ -1,0 +1,5 @@
+<map id="player" name="player">
+<area shape="rect" id="node1" title=" " alt="" coords="17,491,135,700"/>
+<area shape="rect" id="node2" href="$classcharacters.html" title=" " alt="" coords="21,351,131,443"/>
+<area shape="rect" id="node3" href="$classsf_1_1_sprite.html" title="Drawable representation of a texture, with its own transformations, color, etc." alt="" coords="5,5,147,303"/>
+</map>

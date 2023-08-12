@@ -1,0 +1,176 @@
+\hypertarget{class_fl___tree___item___array}{}\doxysection{Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array Class Reference}
+\label{class_fl___tree___item___array}\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+
+
+Manages an array of \mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} pointers.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array.\+H$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___tree___item___array_aa210eac159fff321db68f3103fb5b52a}{Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array}} (int new\+\_\+chunksize=10)
+\item 
+\mbox{\hyperlink{class_fl___tree___item___array_aa5edbcb382cbde85d6b79c7416f86571}{$\sim$\+Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array}} ()
+\item 
+\mbox{\hyperlink{class_fl___tree___item___array_a6020f61f5425d2a4e725f1965a44c0af}{Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___tree___item___array}{Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array}} $\ast$o)
+\item 
+\mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$ \mbox{\hyperlink{class_fl___tree___item___array_a6f70c7be5bc64d145ee6a1d194e81b38}{operator\mbox{[}$\,$\mbox{]}}} (int \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}})
+\begin{DoxyCompactList}\small\item\em Return the item and index {\ttfamily i}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$ \mbox{\hyperlink{class_fl___tree___item___array_a31eeb3d03a3635d83051ccee08dfac7f}{operator\mbox{[}$\,$\mbox{]}}} (int \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Const version of \mbox{\hyperlink{class_fl___tree___item___array_a6f70c7be5bc64d145ee6a1d194e81b38}{operator\mbox{[}$\,$\mbox{]}(int i)}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___tree___item___array_a1b76ee8f1c8e3d07449bfc6c1a16e9c6}{total}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Return the total items in the array, or 0 if empty. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tree___item___array_a2db61ec3dfc486d10f032c02bacf2609}{swap}} (int ax, int bx)
+\begin{DoxyCompactList}\small\item\em Swap the two items at index positions {\ttfamily ax} and {\ttfamily bx}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___tree___item___array_a139c028973310179fea6d983ba7d6036}{move}} (int to, int from)
+\item 
+int \mbox{\hyperlink{class_fl___tree___item___array_a4f33150021d858c9ef92db11978e6bfd}{deparent}} (int pos)
+\item 
+int \mbox{\hyperlink{class_fl___tree___item___array_ae13c703161674bf53503bd06e9dc276d}{reparent}} (\mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$item, \mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$newparent, int pos)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tree___item___array_aff147d625a67219d22a43124b273e1f7}{clear}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tree___item___array_a9fe2b51b0290b5e2ca612b9098ee9c3b}{add}} (\mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$\mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tree___item___array_abed7dd4e4e7f027b8e15bd8cdb8054c5}{insert}} (int pos, \mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$new\+\_\+item)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tree___item___array_a63f31dab83000b8ea543db680288cdfe}{replace}} (int pos, \mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$new\+\_\+item)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tree___item___array_a79e1833f43a462bc74705ab4a5fc4196}{remove}} (int index)
+\item 
+int \mbox{\hyperlink{class_fl___tree___item___array_a220cbb8c6b59b7a2c0e521d0c6113ab0}{remove}} (\mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$item)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages an array of \mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} pointers. 
+
+Because F\+L\+TK 1.\+x.\+x. has mandated that templates and S\+TL not be used, we use this class to dynamically manage the arrays.
+
+None of the methods do range checking on index values; the caller must be sure that index values are within the range 0$<$index$<$\mbox{\hyperlink{class_fl___tree___item___array_a1b76ee8f1c8e3d07449bfc6c1a16e9c6}{total()}} (unless otherwise noted). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___tree___item___array_aa210eac159fff321db68f3103fb5b52a}\label{class_fl___tree___item___array_aa210eac159fff321db68f3103fb5b52a}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{Fl\_Tree\_Item\_Array()}{Fl\_Tree\_Item\_Array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::\+Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+chunksize = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_aa5edbcb382cbde85d6b79c7416f86571}\label{class_fl___tree___item___array_aa5edbcb382cbde85d6b79c7416f86571}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!````~Fl\_Tree\_Item\_Array@{$\sim$Fl\_Tree\_Item\_Array}}
+\index{````~Fl\_Tree\_Item\_Array@{$\sim$Fl\_Tree\_Item\_Array}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Tree\_Item\_Array()}{~Fl\_Tree\_Item\_Array()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::$\sim$\+Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_a6020f61f5425d2a4e725f1965a44c0af}\label{class_fl___tree___item___array_a6020f61f5425d2a4e725f1965a44c0af}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{Fl\_Tree\_Item\_Array()}{Fl\_Tree\_Item\_Array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::\+Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___tree___item___array}{Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array}} $\ast$}]{o }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___tree___item___array_a9fe2b51b0290b5e2ca612b9098ee9c3b}\label{class_fl___tree___item___array_a9fe2b51b0290b5e2ca612b9098ee9c3b}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!add@{add}}
+\index{add@{add}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$}]{val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_aff147d625a67219d22a43124b273e1f7}\label{class_fl___tree___item___array_aff147d625a67219d22a43124b273e1f7}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!clear@{clear}}
+\index{clear@{clear}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_a4f33150021d858c9ef92db11978e6bfd}\label{class_fl___tree___item___array_a4f33150021d858c9ef92db11978e6bfd}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!deparent@{deparent}}
+\index{deparent@{deparent}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{deparent()}{deparent()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::deparent (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_abed7dd4e4e7f027b8e15bd8cdb8054c5}\label{class_fl___tree___item___array_abed7dd4e4e7f027b8e15bd8cdb8054c5}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!insert@{insert}}
+\index{insert@{insert}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::insert (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{\mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$}]{new\+\_\+item }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_a139c028973310179fea6d983ba7d6036}\label{class_fl___tree___item___array_a139c028973310179fea6d983ba7d6036}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!move@{move}}
+\index{move@{move}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::move (\begin{DoxyParamCaption}\item[{int}]{to,  }\item[{int}]{from }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_a6f70c7be5bc64d145ee6a1d194e81b38}\label{class_fl___tree___item___array_a6f70c7be5bc64d145ee6a1d194e81b38}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}}$\ast$ Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the item and index {\ttfamily i}. 
+
+\mbox{\Hypertarget{class_fl___tree___item___array_a31eeb3d03a3635d83051ccee08dfac7f}\label{class_fl___tree___item___array_a31eeb3d03a3635d83051ccee08dfac7f}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}}$\ast$ Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Const version of \mbox{\hyperlink{class_fl___tree___item___array_a6f70c7be5bc64d145ee6a1d194e81b38}{operator\mbox{[}$\,$\mbox{]}(int i)}} 
+
+\mbox{\Hypertarget{class_fl___tree___item___array_a220cbb8c6b59b7a2c0e521d0c6113ab0}\label{class_fl___tree___item___array_a220cbb8c6b59b7a2c0e521d0c6113ab0}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!remove@{remove}}
+\index{remove@{remove}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$}]{item }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_a79e1833f43a462bc74705ab4a5fc4196}\label{class_fl___tree___item___array_a79e1833f43a462bc74705ab4a5fc4196}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!remove@{remove}}
+\index{remove@{remove}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::remove (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_ae13c703161674bf53503bd06e9dc276d}\label{class_fl___tree___item___array_ae13c703161674bf53503bd06e9dc276d}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!reparent@{reparent}}
+\index{reparent@{reparent}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{reparent()}{reparent()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::reparent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$}]{item,  }\item[{\mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$}]{newparent,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_a63f31dab83000b8ea543db680288cdfe}\label{class_fl___tree___item___array_a63f31dab83000b8ea543db680288cdfe}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!replace@{replace}}
+\index{replace@{replace}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::replace (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{\mbox{\hyperlink{class_fl___tree___item}{Fl\+\_\+\+Tree\+\_\+\+Item}} $\ast$}]{new\+\_\+item }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tree___item___array_a2db61ec3dfc486d10f032c02bacf2609}\label{class_fl___tree___item___array_a2db61ec3dfc486d10f032c02bacf2609}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!swap@{swap}}
+\index{swap@{swap}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::swap (\begin{DoxyParamCaption}\item[{int}]{ax,  }\item[{int}]{bx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Swap the two items at index positions {\ttfamily ax} and {\ttfamily bx}. 
+
+\mbox{\Hypertarget{class_fl___tree___item___array_a1b76ee8f1c8e3d07449bfc6c1a16e9c6}\label{class_fl___tree___item___array_a1b76ee8f1c8e3d07449bfc6c1a16e9c6}} 
+\index{Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}!total@{total}}
+\index{total@{total}!Fl\_Tree\_Item\_Array@{Fl\_Tree\_Item\_Array}}
+\doxysubsubsection{\texorpdfstring{total()}{total()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array\+::total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the total items in the array, or 0 if empty. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___tree___item___array_8_h}{Fl\+\_\+\+Tree\+\_\+\+Item\+\_\+\+Array.\+H}}\end{DoxyCompactItemize}

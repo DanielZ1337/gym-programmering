@@ -1,0 +1,13 @@
+<map id="sf::SoundBufferRecorder" name="sf::SoundBufferRecorder">
+<area shape="rect" id="node1" title="Specialized SoundRecorder which stores the captured audio data into a sound buffer." alt="" coords="327,711,499,847"/>
+<area shape="rect" id="node2" href="$classsf_1_1_sound_recorder.html" title="Abstract base class for capturing sound data." alt="" coords="639,307,825,648"/>
+<area shape="rect" id="node3" href="$classsf_1_1_al_resource.html" title="Base class for classes that require an OpenAL context." alt="" coords="166,71,282,163"/>
+<area shape="rect" id="node10" href="$classsf_1_1_sound_buffer.html" title="Storage for audio samples defining a sound." alt="" coords="188,314,335,641"/>
+<area shape="rect" id="node4" href="$classsf_1_1_time.html" title="Represents a time value." alt="" coords="699,49,837,185"/>
+<area shape="rect" id="node5" href="$classsf_1_1_thread.html" title="Utility class to manipulate threads." alt="" coords="1200,5,1296,229"/>
+<area shape="rect" id="node6" title=" " alt="" coords="306,79,345,156"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="957,79,1037,156"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1102,79,1149,156"/>
+<area shape="rect" id="node9" title=" " alt="" coords="369,79,503,156"/>
+<area shape="rect" id="node11" title=" " alt="" coords="5,79,141,156"/>
+</map>

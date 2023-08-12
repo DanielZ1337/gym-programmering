@@ -1,0 +1,142 @@
+\hypertarget{class_fl___pack}{}\doxysection{Fl\+\_\+\+Pack Class Reference}
+\label{class_fl___pack}\index{Fl\_Pack@{Fl\_Pack}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Pack.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Pack\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___pack__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Pack\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___pack__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{class_fl___pack_ae78e492675cdb1e7c8c4163889f165dea6cbdaff0cd6ed47dd5a76f3e4ee2e00b}{V\+E\+R\+T\+I\+C\+AL}} = 0, 
+\mbox{\hyperlink{class_fl___pack_ae78e492675cdb1e7c8c4163889f165dea6abdf21990ade67cabbdf1d34f6b9b31}{H\+O\+R\+I\+Z\+O\+N\+T\+AL}} = 1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___pack_a8af9c1a43acb4657482ca0a509fc4266}{Fl\+\_\+\+Pack}} (int \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x}}, int \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y}}, int \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}, int \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\item 
+int \mbox{\hyperlink{class_fl___pack_ab9d5ae04d8e59003c7a6c97b6344cb09}{spacing}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___pack_a1d9d3c6696cbd3a347192c74b987e146}{spacing}} (int \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}})
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{class_fl___pack_afdea6efb6508c4055aec7ce1bd595401}{horizontal}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___pack_a8820c6b4dba2209ab4b650b3a04cde05}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This widget was designed to add the functionality of compressing and aligning widgets. 
+
+If \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{type()}} is \mbox{\hyperlink{class_fl___pack_ae78e492675cdb1e7c8c4163889f165dea6abdf21990ade67cabbdf1d34f6b9b31}{Fl\+\_\+\+Pack\+::\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}} all the children are resized to the height of the \mbox{\hyperlink{class_fl___pack}{Fl\+\_\+\+Pack}}, and are moved next to each other horizontally. If \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{type()}} is not \mbox{\hyperlink{class_fl___pack_ae78e492675cdb1e7c8c4163889f165dea6abdf21990ade67cabbdf1d34f6b9b31}{Fl\+\_\+\+Pack\+::\+H\+O\+R\+I\+Z\+O\+N\+T\+AL}} then the children are resized to the width and are stacked below each other. Then the \mbox{\hyperlink{class_fl___pack}{Fl\+\_\+\+Pack}} resizes itself to surround the child widgets. 
+
+This widget is needed for the \mbox{\hyperlink{class_fl___tabs}{Fl\+\_\+\+Tabs}}. In addition you may want to put the \mbox{\hyperlink{class_fl___pack}{Fl\+\_\+\+Pack}} inside an \mbox{\hyperlink{class_fl___scroll}{Fl\+\_\+\+Scroll}}.
+
+The resizable for \mbox{\hyperlink{class_fl___pack}{Fl\+\_\+\+Pack}} is set to N\+U\+LL by default.
+
+See also\+: \mbox{\hyperlink{class_fl___group_ab0ed0d1974d7185594687849f386c5f3}{Fl\+\_\+\+Group\+::resizable()}} 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fl___pack_ae78e492675cdb1e7c8c4163889f165de}\label{class_fl___pack_ae78e492675cdb1e7c8c4163889f165de}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VERTICAL@{VERTICAL}!Fl\_Pack@{Fl\_Pack}}\index{Fl\_Pack@{Fl\_Pack}!VERTICAL@{VERTICAL}}}\mbox{\Hypertarget{class_fl___pack_ae78e492675cdb1e7c8c4163889f165dea6cbdaff0cd6ed47dd5a76f3e4ee2e00b}\label{class_fl___pack_ae78e492675cdb1e7c8c4163889f165dea6cbdaff0cd6ed47dd5a76f3e4ee2e00b}} 
+V\+E\+R\+T\+I\+C\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HORIZONTAL@{HORIZONTAL}!Fl\_Pack@{Fl\_Pack}}\index{Fl\_Pack@{Fl\_Pack}!HORIZONTAL@{HORIZONTAL}}}\mbox{\Hypertarget{class_fl___pack_ae78e492675cdb1e7c8c4163889f165dea6abdf21990ade67cabbdf1d34f6b9b31}\label{class_fl___pack_ae78e492675cdb1e7c8c4163889f165dea6abdf21990ade67cabbdf1d34f6b9b31}} 
+H\+O\+R\+I\+Z\+O\+N\+T\+AL&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___pack_a8af9c1a43acb4657482ca0a509fc4266}\label{class_fl___pack_a8af9c1a43acb4657482ca0a509fc4266}} 
+\index{Fl\_Pack@{Fl\_Pack}!Fl\_Pack@{Fl\_Pack}}
+\index{Fl\_Pack@{Fl\_Pack}!Fl\_Pack@{Fl\_Pack}}
+\doxysubsubsection{\texorpdfstring{Fl\_Pack()}{Fl\_Pack()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Pack\+::\+Fl\+\_\+\+Pack (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___pack_a8820c6b4dba2209ab4b650b3a04cde05}\label{class_fl___pack_a8820c6b4dba2209ab4b650b3a04cde05}} 
+\index{Fl\_Pack@{Fl\_Pack}!draw@{draw}}
+\index{draw@{draw}!Fl\_Pack@{Fl\_Pack}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Pack\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___pack_a8820c6b4dba2209ab4b650b3a04cde05}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___pack_a8820c6b4dba2209ab4b650b3a04cde05}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_a96b778e518df02471139179d4c90157c}{Fl\+\_\+\+Group}}.
+
+\mbox{\Hypertarget{class_fl___pack_afdea6efb6508c4055aec7ce1bd595401}\label{class_fl___pack_afdea6efb6508c4055aec7ce1bd595401}} 
+\index{Fl\_Pack@{Fl\_Pack}!horizontal@{horizontal}}
+\index{horizontal@{horizontal}!Fl\_Pack@{Fl\_Pack}}
+\doxysubsubsection{\texorpdfstring{horizontal()}{horizontal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} Fl\+\_\+\+Pack\+::horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Same as \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{Fl\+\_\+\+Group\+::type()}} Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_fl___pack_afdea6efb6508c4055aec7ce1bd595401_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___pack_ab9d5ae04d8e59003c7a6c97b6344cb09}\label{class_fl___pack_ab9d5ae04d8e59003c7a6c97b6344cb09}} 
+\index{Fl\_Pack@{Fl\_Pack}!spacing@{spacing}}
+\index{spacing@{spacing}!Fl\_Pack@{Fl\_Pack}}
+\doxysubsubsection{\texorpdfstring{spacing()}{spacing()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Pack\+::spacing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the number of extra pixels of blank space that are added between the children. \mbox{\Hypertarget{class_fl___pack_a1d9d3c6696cbd3a347192c74b987e146}\label{class_fl___pack_a1d9d3c6696cbd3a347192c74b987e146}} 
+\index{Fl\_Pack@{Fl\_Pack}!spacing@{spacing}}
+\index{spacing@{spacing}!Fl\_Pack@{Fl\_Pack}}
+\doxysubsubsection{\texorpdfstring{spacing()}{spacing()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Pack\+::spacing (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the number of extra pixels of blank space that are added between the children. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___pack_8_h}{Fl\+\_\+\+Pack.\+H}}\end{DoxyCompactItemize}

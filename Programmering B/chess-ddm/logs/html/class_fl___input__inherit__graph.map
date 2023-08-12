@@ -1,0 +1,12 @@
+<map id="Fl_Input" name="Fl_Input">
+<area shape="rect" id="node1" title=" " alt="" coords="257,132,325,159"/>
+<area shape="rect" id="node4" href="$class_fl___file___input.html" title="This widget displays a pathname in a text input field." alt="" coords="387,5,483,32"/>
+<area shape="rect" id="node5" href="$class_fl___float___input.html" title=" " alt="" coords="383,56,487,83"/>
+<area shape="rect" id="node6" href="$class_fl___int___input.html" title=" " alt="" coords="390,107,479,133"/>
+<area shape="rect" id="node7" href="$class_fl___multiline___input.html" title=" " alt="" coords="373,157,496,184"/>
+<area shape="rect" id="node8" href="$class_fl___output.html" title=" " alt="" coords="395,208,474,235"/>
+<area shape="rect" id="node10" href="$class_fl___secret___input.html" title=" " alt="" coords="378,259,491,285"/>
+<area shape="rect" id="node2" href="$class_fl___input__.html" title=" " alt="" coords="135,132,209,159"/>
+<area shape="rect" id="node3" href="$class_fl___widget.html" title=" " alt="" coords="5,132,87,159"/>
+<area shape="rect" id="node9" href="$class_fl___multiline___output.html" title=" " alt="" coords="544,208,679,235"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="fl_draw" name="fl_draw">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,68,39"/>
+<area shape="rect" id="node2" href="$class_fl___graphics___driver.html#acfa36cc72da41025ff33878c26051d4f" title="see fl_draw(const char *str, int n, int x, int y)." alt="" coords="116,5,247,47"/>
+</map>

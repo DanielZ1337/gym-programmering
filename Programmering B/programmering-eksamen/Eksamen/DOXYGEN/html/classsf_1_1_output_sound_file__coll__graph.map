@@ -1,0 +1,5 @@
+<map id="sf::OutputSoundFile" name="sf::OutputSoundFile">
+<area shape="rect" id="node1" title="Provide write access to sound files." alt="" coords="74,189,221,325"/>
+<area shape="rect" id="node2" href="$classsf_1_1_non_copyable.html" title="Utility class that makes any derived class non&#45;copyable." alt="" coords="5,5,132,127"/>
+<area shape="rect" id="node3" href="$classsf_1_1_sound_file_writer.html" title="Abstract base class for sound file encoding." alt="" coords="156,13,299,119"/>
+</map>

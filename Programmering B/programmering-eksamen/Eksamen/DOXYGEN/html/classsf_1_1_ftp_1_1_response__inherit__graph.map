@@ -1,0 +1,5 @@
+<map id="sf::Ftp::Response" name="sf::Ftp::Response">
+<area shape="rect" id="node1" title="Define a FTP response." alt="" coords="129,5,254,141"/>
+<area shape="rect" id="node2" href="$classsf_1_1_ftp_1_1_directory_response.html" title="Specialization of FTP response returning a directory." alt="" coords="5,189,183,281"/>
+<area shape="rect" id="node3" href="$classsf_1_1_ftp_1_1_listing_response.html" title="Specialization of FTP response returning a filename listing." alt="" coords="207,189,370,281"/>
+</map>

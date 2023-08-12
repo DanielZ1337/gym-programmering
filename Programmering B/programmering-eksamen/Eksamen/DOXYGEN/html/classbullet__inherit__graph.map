@@ -1,0 +1,5 @@
+<map id="bullet" name="bullet">
+<area shape="rect" id="node1" title=" " alt="" coords="34,740,137,920"/>
+<area shape="rect" id="node2" href="$classsf_1_1_convex_shape.html" title="Specialized shape representing a convex polygon." alt="" coords="23,556,147,692"/>
+<area shape="rect" id="node3" href="$classsf_1_1_shape.html" title="Base class for textured shapes with outline." alt="" coords="5,5,165,508"/>
+</map>

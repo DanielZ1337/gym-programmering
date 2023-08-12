@@ -1,0 +1,487 @@
+\hypertarget{main_8cpp}{}\doxysection{C\+:/\+Users/danielz/\+One\+Drive -\/ E\+F\+I\+F/\+Eksamensprojekt programmering B -\/ Daniel \& Korre/eksamensprojekt-\/daniel-\/korre/\+Eksamen/src/main.cpp File Reference}
+\label{main_8cpp}\index{C:/Users/danielz/OneDrive -\/ EFIF/Eksamensprojekt programmering B -\/ Daniel \& Korre/eksamensprojekt-\/daniel-\/korre/Eksamen/src/main.cpp@{C:/Users/danielz/OneDrive -\/ EFIF/Eksamensprojekt programmering B -\/ Daniel \& Korre/eksamensprojekt-\/daniel-\/korre/Eksamen/src/main.cpp}}
+{\ttfamily \#include \char`\"{}characters.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}userinput.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}physics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}worldgen.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ammo.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include \char`\"{}sounds.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+UE}}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{main_8cpp_a11751589a3a31c869d23db147abc7de6}{coords}} (\mbox{\hyperlink{main_8cpp_a5006b4967a36f7cacf9a2bad0ea2c7de}{enemy\+Amount}})
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{main_8cpp_add78815575980b6ac870e90d81de3e24}{hit\+Box\+Coords}} (\mbox{\hyperlink{main_8cpp_a5006b4967a36f7cacf9a2bad0ea2c7de}{enemy\+Amount}})
+\item 
+void \mbox{\hyperlink{main_8cpp_a7246cea9c08362c2dccf898c192c113b}{clean\+Mem}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a167cd28b003c51cb0460a6d99573b9f0}{setup\+Sound}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a324ee2f5f9b961e2a82623e336a9ffb3}{rand\+Enemy\+Pos}} (int amount)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a22575cd8208d6e1b299652ced706e64b}{player\+Radius}} = 10
+\item 
+int \mbox{\hyperlink{main_8cpp_a44d43d7a8b9c7014ff51d66a6633e300}{gunshot\+Decay}} = 18
+\item 
+int \mbox{\hyperlink{main_8cpp_a72be647b61e771614eb2206cf5b7511a}{playerX}} = 600
+\item 
+int \mbox{\hyperlink{main_8cpp_a7cb41b2b59751cfe9b4274b81154d452}{playerY}} = 800
+\item 
+int \mbox{\hyperlink{main_8cpp_af140802328ffe8a45749114b1c5a2056}{window\+Height}} = \mbox{\hyperlink{classsf_1_1_video_mode_ac1be160a4342e6eafb2cb0e8c9b18d44}{sf\+::\+Video\+Mode\+::get\+Desktop\+Mode}}().height
+\item 
+int \mbox{\hyperlink{main_8cpp_aa61000540636bfdc4c9f27045ab84ce9}{window\+Width}} = 1080
+\item 
+const float \mbox{\hyperlink{main_8cpp_aa82dd4e1016d1135de9310bf9c3bd4d5}{player\+Size\+Ratio}} = 0.\+30
+\item 
+const float \mbox{\hyperlink{main_8cpp_a3aaa23d18ef593d9e87926cbff20b2b8}{player\+Rotation}} = -\/90
+\item 
+const float \mbox{\hyperlink{main_8cpp_aeaf070a303f1fb8afa2ad8c7862b3f82}{enemy\+Size\+Ratio}} = 0.\+5
+\item 
+const int \mbox{\hyperlink{main_8cpp_afaf7934e01310adcd34a1f6d77dc15f7}{hitbox\+\_\+radius}} = (30 / 0.\+25) $\ast$ \mbox{\hyperlink{main_8cpp_aeaf070a303f1fb8afa2ad8c7862b3f82}{enemy\+Size\+Ratio}}
+\item 
+bool \mbox{\hyperlink{main_8cpp_ab8e7c17eef4f0a47500c057ab1b0a187}{game\+Loop}} = true
+\item 
+int \mbox{\hyperlink{main_8cpp_a5006b4967a36f7cacf9a2bad0ea2c7de}{enemy\+Amount}} = 10
+\item 
+int \mbox{\hyperlink{main_8cpp_a82b83be4818360e5de9b36bd766e4da1}{hit\+Box\+Count}}
+\item 
+int \mbox{\hyperlink{main_8cpp_af7f8f4a4e39e09fdb5e9f02330ecabef}{points}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{main_8cpp_aca7a6a99355aff99edf31a725ad0e541}{x\+\_\+pos}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{main_8cpp_af5183940fc41f873e76bde3f7a5cc3ec}{y\+\_\+pos}}
+\item 
+std\+::string \mbox{\hyperlink{main_8cpp_aff8ea0c14542d3765314c26063d67a11}{player\+Model}} = \char`\"{}Models/player\+\_\+car.\+png\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{main_8cpp_abbd7829d310ecc54279b8c113bcf64fc}{enemy\+Model}} = \char`\"{}Models/Robot\+\_\+enemy/robot\+\_\+enemy0.\+png\char`\"{}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classbullet}{bullet}} $\ast$ $>$ \mbox{\hyperlink{main_8cpp_ab632b46cec93faad927ae4bf503ccbe0}{all\+Bullets}} = \{\}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classplayer}{player}} $\ast$ $>$ \mbox{\hyperlink{main_8cpp_a32e0b3c2322d7d20e5cdf257eb8b8c76}{enemies}} = \{\}
+\item 
+\mbox{\hyperlink{classuser_input}{user\+Input}} $\ast$ \mbox{\hyperlink{main_8cpp_aecff15b8e8be20e8e4c28542298449fe}{input}}
+\item 
+\mbox{\hyperlink{classsounds}{sounds}} \mbox{\hyperlink{main_8cpp_ae0f076120d07cabf9a61cd7c592eac6e}{car\+\_\+engine}}
+\item 
+\mbox{\hyperlink{classsounds}{sounds}} \mbox{\hyperlink{main_8cpp_aa04af7bb254d66eb9e58f056ab2fa9d1}{gunshot}}
+\item 
+\mbox{\hyperlink{classsounds}{sounds}} \mbox{\hyperlink{main_8cpp_ad6619afcec50911461be4447d1af584c}{enemy\+\_\+hit}}
+\item 
+\mbox{\hyperlink{classsounds}{sounds}} \mbox{\hyperlink{main_8cpp_aa779e1971ad0e01db3c89508ee603208}{atmosphere}}
+\item 
+\mbox{\hyperlink{classdata}{data}} \mbox{\hyperlink{main_8cpp_a1c2a405fb50ea26c12f66fbae8127f42}{data\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8cpp_aa8cecfc5c5c054d2875c03e77b7be15d}\label{main_8cpp_aa8cecfc5c5c054d2875c03e77b7be15d}} 
+\index{main.cpp@{main.cpp}!TRUE@{TRUE}}
+\index{TRUE@{TRUE}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{TRUE}{TRUE}}
+{\footnotesize\ttfamily \#define T\+R\+UE~0}
+
+
+
+Definition at line 9 of file main.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a7246cea9c08362c2dccf898c192c113b}\label{main_8cpp_a7246cea9c08362c2dccf898c192c113b}} 
+\index{main.cpp@{main.cpp}!cleanMem@{cleanMem}}
+\index{cleanMem@{cleanMem}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{cleanMem()}{cleanMem()}}
+{\footnotesize\ttfamily void clean\+Mem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 42 of file main.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{main_8cpp_a7246cea9c08362c2dccf898c192c113b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a11751589a3a31c869d23db147abc7de6}\label{main_8cpp_a11751589a3a31c869d23db147abc7de6}} 
+\index{main.cpp@{main.cpp}!coords@{coords}}
+\index{coords@{coords}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{coords()}{coords()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ coords (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8cpp_a5006b4967a36f7cacf9a2bad0ea2c7de}{enemy\+Amount}}}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{main_8cpp_a11751589a3a31c869d23db147abc7de6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_add78815575980b6ac870e90d81de3e24}\label{main_8cpp_add78815575980b6ac870e90d81de3e24}} 
+\index{main.cpp@{main.cpp}!hitBoxCoords@{hitBoxCoords}}
+\index{hitBoxCoords@{hitBoxCoords}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{hitBoxCoords()}{hitBoxCoords()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ hit\+Box\+Coords (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8cpp_a5006b4967a36f7cacf9a2bad0ea2c7de}{enemy\+Amount}}}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_add78815575980b6ac870e90d81de3e24_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 94 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a324ee2f5f9b961e2a82623e336a9ffb3}\label{main_8cpp_a324ee2f5f9b961e2a82623e336a9ffb3}} 
+\index{main.cpp@{main.cpp}!randEnemyPos@{randEnemyPos}}
+\index{randEnemyPos@{randEnemyPos}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{randEnemyPos()}{randEnemyPos()}}
+{\footnotesize\ttfamily void rand\+Enemy\+Pos (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{main_8cpp_a324ee2f5f9b961e2a82623e336a9ffb3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{main_8cpp_a324ee2f5f9b961e2a82623e336a9ffb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a167cd28b003c51cb0460a6d99573b9f0}\label{main_8cpp_a167cd28b003c51cb0460a6d99573b9f0}} 
+\index{main.cpp@{main.cpp}!setupSound@{setupSound}}
+\index{setupSound@{setupSound}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{setupSound()}{setupSound()}}
+{\footnotesize\ttfamily void setup\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file main.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a167cd28b003c51cb0460a6d99573b9f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{main_8cpp_a167cd28b003c51cb0460a6d99573b9f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_ab632b46cec93faad927ae4bf503ccbe0}\label{main_8cpp_ab632b46cec93faad927ae4bf503ccbe0}} 
+\index{main.cpp@{main.cpp}!allBullets@{allBullets}}
+\index{allBullets@{allBullets}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{allBullets}{allBullets}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classbullet}{bullet}}$\ast$$>$ all\+Bullets = \{\}}
+
+
+
+Definition at line 32 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aa779e1971ad0e01db3c89508ee603208}\label{main_8cpp_aa779e1971ad0e01db3c89508ee603208}} 
+\index{main.cpp@{main.cpp}!atmosphere@{atmosphere}}
+\index{atmosphere@{atmosphere}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{atmosphere}{atmosphere}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsounds}{sounds}} atmosphere}
+
+
+
+Definition at line 39 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ae0f076120d07cabf9a61cd7c592eac6e}\label{main_8cpp_ae0f076120d07cabf9a61cd7c592eac6e}} 
+\index{main.cpp@{main.cpp}!car\_engine@{car\_engine}}
+\index{car\_engine@{car\_engine}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{car\_engine}{car\_engine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsounds}{sounds}} car\+\_\+engine}
+
+
+
+Definition at line 36 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a1c2a405fb50ea26c12f66fbae8127f42}\label{main_8cpp_a1c2a405fb50ea26c12f66fbae8127f42}} 
+\index{main.cpp@{main.cpp}!dataObj@{dataObj}}
+\index{dataObj@{dataObj}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{dataObj}{dataObj}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classdata}{data}} data\+Obj}
+
+
+
+Definition at line 40 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a32e0b3c2322d7d20e5cdf257eb8b8c76}\label{main_8cpp_a32e0b3c2322d7d20e5cdf257eb8b8c76}} 
+\index{main.cpp@{main.cpp}!enemies@{enemies}}
+\index{enemies@{enemies}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{enemies}{enemies}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classplayer}{player}}$\ast$$>$ enemies = \{\}}
+
+
+
+Definition at line 33 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ad6619afcec50911461be4447d1af584c}\label{main_8cpp_ad6619afcec50911461be4447d1af584c}} 
+\index{main.cpp@{main.cpp}!enemy\_hit@{enemy\_hit}}
+\index{enemy\_hit@{enemy\_hit}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{enemy\_hit}{enemy\_hit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsounds}{sounds}} enemy\+\_\+hit}
+
+
+
+Definition at line 38 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a5006b4967a36f7cacf9a2bad0ea2c7de}\label{main_8cpp_a5006b4967a36f7cacf9a2bad0ea2c7de}} 
+\index{main.cpp@{main.cpp}!enemyAmount@{enemyAmount}}
+\index{enemyAmount@{enemyAmount}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{enemyAmount}{enemyAmount}}
+{\footnotesize\ttfamily int enemy\+Amount = 10}
+
+
+
+Definition at line 22 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_abbd7829d310ecc54279b8c113bcf64fc}\label{main_8cpp_abbd7829d310ecc54279b8c113bcf64fc}} 
+\index{main.cpp@{main.cpp}!enemyModel@{enemyModel}}
+\index{enemyModel@{enemyModel}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{enemyModel}{enemyModel}}
+{\footnotesize\ttfamily std\+::string enemy\+Model = \char`\"{}Models/Robot\+\_\+enemy/robot\+\_\+enemy0.\+png\char`\"{}}
+
+
+
+Definition at line 29 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aeaf070a303f1fb8afa2ad8c7862b3f82}\label{main_8cpp_aeaf070a303f1fb8afa2ad8c7862b3f82}} 
+\index{main.cpp@{main.cpp}!enemySizeRatio@{enemySizeRatio}}
+\index{enemySizeRatio@{enemySizeRatio}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{enemySizeRatio}{enemySizeRatio}}
+{\footnotesize\ttfamily const float enemy\+Size\+Ratio = 0.\+5}
+
+
+
+Definition at line 19 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ab8e7c17eef4f0a47500c057ab1b0a187}\label{main_8cpp_ab8e7c17eef4f0a47500c057ab1b0a187}} 
+\index{main.cpp@{main.cpp}!gameLoop@{gameLoop}}
+\index{gameLoop@{gameLoop}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{gameLoop}{gameLoop}}
+{\footnotesize\ttfamily bool game\+Loop = true}
+
+
+
+Definition at line 21 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aa04af7bb254d66eb9e58f056ab2fa9d1}\label{main_8cpp_aa04af7bb254d66eb9e58f056ab2fa9d1}} 
+\index{main.cpp@{main.cpp}!gunshot@{gunshot}}
+\index{gunshot@{gunshot}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{gunshot}{gunshot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsounds}{sounds}} gunshot}
+
+
+
+Definition at line 37 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a44d43d7a8b9c7014ff51d66a6633e300}\label{main_8cpp_a44d43d7a8b9c7014ff51d66a6633e300}} 
+\index{main.cpp@{main.cpp}!gunshotDecay@{gunshotDecay}}
+\index{gunshotDecay@{gunshotDecay}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{gunshotDecay}{gunshotDecay}}
+{\footnotesize\ttfamily int gunshot\+Decay = 18}
+
+
+
+Definition at line 12 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_afaf7934e01310adcd34a1f6d77dc15f7}\label{main_8cpp_afaf7934e01310adcd34a1f6d77dc15f7}} 
+\index{main.cpp@{main.cpp}!hitbox\_radius@{hitbox\_radius}}
+\index{hitbox\_radius@{hitbox\_radius}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{hitbox\_radius}{hitbox\_radius}}
+{\footnotesize\ttfamily const int hitbox\+\_\+radius = (30 / 0.\+25) $\ast$ \mbox{\hyperlink{main_8cpp_aeaf070a303f1fb8afa2ad8c7862b3f82}{enemy\+Size\+Ratio}}}
+
+
+
+Definition at line 20 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a82b83be4818360e5de9b36bd766e4da1}\label{main_8cpp_a82b83be4818360e5de9b36bd766e4da1}} 
+\index{main.cpp@{main.cpp}!hitBoxCount@{hitBoxCount}}
+\index{hitBoxCount@{hitBoxCount}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{hitBoxCount}{hitBoxCount}}
+{\footnotesize\ttfamily int hit\+Box\+Count}
+
+
+
+Definition at line 23 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aecff15b8e8be20e8e4c28542298449fe}\label{main_8cpp_aecff15b8e8be20e8e4c28542298449fe}} 
+\index{main.cpp@{main.cpp}!input@{input}}
+\index{input@{input}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classuser_input}{user\+Input}}$\ast$ input}
+
+
+
+Definition at line 35 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aff8ea0c14542d3765314c26063d67a11}\label{main_8cpp_aff8ea0c14542d3765314c26063d67a11}} 
+\index{main.cpp@{main.cpp}!playerModel@{playerModel}}
+\index{playerModel@{playerModel}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{playerModel}{playerModel}}
+{\footnotesize\ttfamily std\+::string player\+Model = \char`\"{}Models/player\+\_\+car.\+png\char`\"{}}
+
+
+
+Definition at line 28 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a22575cd8208d6e1b299652ced706e64b}\label{main_8cpp_a22575cd8208d6e1b299652ced706e64b}} 
+\index{main.cpp@{main.cpp}!playerRadius@{playerRadius}}
+\index{playerRadius@{playerRadius}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{playerRadius}{playerRadius}}
+{\footnotesize\ttfamily int player\+Radius = 10}
+
+
+
+Definition at line 11 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a3aaa23d18ef593d9e87926cbff20b2b8}\label{main_8cpp_a3aaa23d18ef593d9e87926cbff20b2b8}} 
+\index{main.cpp@{main.cpp}!playerRotation@{playerRotation}}
+\index{playerRotation@{playerRotation}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{playerRotation}{playerRotation}}
+{\footnotesize\ttfamily const float player\+Rotation = -\/90}
+
+
+
+Definition at line 18 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aa82dd4e1016d1135de9310bf9c3bd4d5}\label{main_8cpp_aa82dd4e1016d1135de9310bf9c3bd4d5}} 
+\index{main.cpp@{main.cpp}!playerSizeRatio@{playerSizeRatio}}
+\index{playerSizeRatio@{playerSizeRatio}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{playerSizeRatio}{playerSizeRatio}}
+{\footnotesize\ttfamily const float player\+Size\+Ratio = 0.\+30}
+
+
+
+Definition at line 17 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a72be647b61e771614eb2206cf5b7511a}\label{main_8cpp_a72be647b61e771614eb2206cf5b7511a}} 
+\index{main.cpp@{main.cpp}!playerX@{playerX}}
+\index{playerX@{playerX}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{playerX}{playerX}}
+{\footnotesize\ttfamily int playerX = 600}
+
+
+
+Definition at line 13 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_a7cb41b2b59751cfe9b4274b81154d452}\label{main_8cpp_a7cb41b2b59751cfe9b4274b81154d452}} 
+\index{main.cpp@{main.cpp}!playerY@{playerY}}
+\index{playerY@{playerY}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{playerY}{playerY}}
+{\footnotesize\ttfamily int playerY = 800}
+
+
+
+Definition at line 14 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_af7f8f4a4e39e09fdb5e9f02330ecabef}\label{main_8cpp_af7f8f4a4e39e09fdb5e9f02330ecabef}} 
+\index{main.cpp@{main.cpp}!points@{points}}
+\index{points@{points}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily int points}
+
+
+
+Definition at line 24 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_af140802328ffe8a45749114b1c5a2056}\label{main_8cpp_af140802328ffe8a45749114b1c5a2056}} 
+\index{main.cpp@{main.cpp}!windowHeight@{windowHeight}}
+\index{windowHeight@{windowHeight}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{windowHeight}{windowHeight}}
+{\footnotesize\ttfamily int window\+Height = \mbox{\hyperlink{classsf_1_1_video_mode_ac1be160a4342e6eafb2cb0e8c9b18d44}{sf\+::\+Video\+Mode\+::get\+Desktop\+Mode}}().height}
+
+
+
+Definition at line 15 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aa61000540636bfdc4c9f27045ab84ce9}\label{main_8cpp_aa61000540636bfdc4c9f27045ab84ce9}} 
+\index{main.cpp@{main.cpp}!windowWidth@{windowWidth}}
+\index{windowWidth@{windowWidth}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{windowWidth}{windowWidth}}
+{\footnotesize\ttfamily int window\+Width = 1080}
+
+
+
+Definition at line 16 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_aca7a6a99355aff99edf31a725ad0e541}\label{main_8cpp_aca7a6a99355aff99edf31a725ad0e541}} 
+\index{main.cpp@{main.cpp}!x\_pos@{x\_pos}}
+\index{x\_pos@{x\_pos}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{x\_pos}{x\_pos}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ x\+\_\+pos}
+
+
+
+Definition at line 25 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_af5183940fc41f873e76bde3f7a5cc3ec}\label{main_8cpp_af5183940fc41f873e76bde3f7a5cc3ec}} 
+\index{main.cpp@{main.cpp}!y\_pos@{y\_pos}}
+\index{y\_pos@{y\_pos}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{y\_pos}{y\_pos}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ y\+\_\+pos}
+
+
+
+Definition at line 26 of file main.\+cpp.
+

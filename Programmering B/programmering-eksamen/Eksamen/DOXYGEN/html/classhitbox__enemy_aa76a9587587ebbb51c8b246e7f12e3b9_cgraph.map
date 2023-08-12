@@ -1,0 +1,6 @@
+<map id="hitbox_enemy::hitbox_enemy" name="hitbox_enemy::hitbox_enemy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,57,152,98"/>
+<area shape="rect" id="node2" href="$classsf_1_1_shape.html#a5978f41ee349ac3c52942996dcb184f7" title="Set the outline color of the shape." alt="" coords="201,5,375,32"/>
+<area shape="rect" id="node3" href="$classsf_1_1_transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object" alt="" coords="223,57,353,98"/>
+<area shape="rect" id="node4" href="$classsf_1_1_circle_shape.html#a21cdf85fc2f201e10222a241af864be0" title="Set the radius of the circle." alt="" coords="200,123,376,149"/>
+</map>

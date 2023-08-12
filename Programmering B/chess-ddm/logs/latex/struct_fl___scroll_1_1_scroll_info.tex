@@ -1,0 +1,138 @@
+\hypertarget{struct_fl___scroll_1_1_scroll_info}{}\doxysection{Fl\+\_\+\+Scroll\+::Scroll\+Info Struct Reference}
+\label{struct_fl___scroll_1_1_scroll_info}\index{Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Scroll.\+H$>$}
+
+
+
+Collaboration diagram for Fl\+\_\+\+Scroll\+::Scroll\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_fl___scroll_1_1_scroll_info__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___region___l_r_t_b}{Fl\+\_\+\+Region\+\_\+\+L\+R\+TB}}
+\begin{DoxyCompactList}\small\item\em A local struct to manage a region defined by left/right/top/bottom. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___region___x_y_w_h}{Fl\+\_\+\+Region\+\_\+\+X\+Y\+WH}}
+\begin{DoxyCompactList}\small\item\em A local struct to manage a region defined by xywh. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___scrollbar___data}{Fl\+\_\+\+Scrollbar\+\_\+\+Data}}
+\begin{DoxyCompactList}\small\item\em A local struct to manage a scrollbar\textquotesingle{}s xywh region and tab values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_a4057566bd6430cadf21f9dcce9cb84a7}{scrollsize}}
+\begin{DoxyCompactList}\small\item\em the effective scrollbar thickness (local or global) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___region___x_y_w_h}{Fl\+\_\+\+Region\+\_\+\+X\+Y\+WH}} \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_a6b1b152acb5a509d8a701f0547db1648}{innerbox}}
+\begin{DoxyCompactList}\small\item\em widget\textquotesingle{}s inner box, excluding scrollbars \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___region___x_y_w_h}{Fl\+\_\+\+Region\+\_\+\+X\+Y\+WH}} \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_aae9aa002dce20fefd0b76831cd431f0c}{innerchild}}
+\begin{DoxyCompactList}\small\item\em widget\textquotesingle{}s inner box, including scrollbars \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___region___l_r_t_b}{Fl\+\_\+\+Region\+\_\+\+L\+R\+TB}} \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_a11df1f6333d826848e69a0ddfd8e209b}{child}}
+\begin{DoxyCompactList}\small\item\em child bounding box\+: left/right/top/bottom \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_a644cbf16946465c277355fcbb3e3d056}{hneeded}}
+\begin{DoxyCompactList}\small\item\em horizontal scrollbar visibility \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_a65d441a8beb662fa7fa88dfce78520e5}{vneeded}}
+\begin{DoxyCompactList}\small\item\em vertical scrollbar visibility \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___scrollbar___data}{Fl\+\_\+\+Scrollbar\+\_\+\+Data}} \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_a9f30a1471199feee650000708b4b2451}{hscroll}}
+\begin{DoxyCompactList}\small\item\em horizontal scrollbar region + values \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___scrollbar___data}{Fl\+\_\+\+Scrollbar\+\_\+\+Data}} \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_ad7e2a81ba4a7950257f0649c1c6b4c29}{vscroll}}
+\begin{DoxyCompactList}\small\item\em vertical scrollbar region + values \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure to manage scrollbar and widget interior sizes. This is filled out by \mbox{\hyperlink{class_fl___scroll_a6084ec3aef85192dd0fe18b001f87ecc}{recalc\+\_\+scrollbars()}} for use in calculations that need to know the visible scroll area size, etc. \begin{DoxyNote}{Note}
+Availability in F\+L\+T\+K\+\_\+\+A\+B\+I\+\_\+\+V\+E\+R\+S\+I\+ON 10303 or higher. 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_fl___scroll_1_1_scroll_info_a11df1f6333d826848e69a0ddfd8e209b}\label{struct_fl___scroll_1_1_scroll_info_a11df1f6333d826848e69a0ddfd8e209b}} 
+\index{Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}!child@{child}}
+\index{child@{child}!Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}}
+\doxysubsubsection{\texorpdfstring{child}{child}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___region___l_r_t_b}{Fl\+\_\+\+Region\+\_\+\+L\+R\+TB}} Fl\+\_\+\+Scroll\+::\+Scroll\+Info\+::child}
+
+
+
+child bounding box\+: left/right/top/bottom 
+
+\mbox{\Hypertarget{struct_fl___scroll_1_1_scroll_info_a644cbf16946465c277355fcbb3e3d056}\label{struct_fl___scroll_1_1_scroll_info_a644cbf16946465c277355fcbb3e3d056}} 
+\index{Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}!hneeded@{hneeded}}
+\index{hneeded@{hneeded}!Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}}
+\doxysubsubsection{\texorpdfstring{hneeded}{hneeded}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Scroll\+::\+Scroll\+Info\+::hneeded}
+
+
+
+horizontal scrollbar visibility 
+
+\mbox{\Hypertarget{struct_fl___scroll_1_1_scroll_info_a9f30a1471199feee650000708b4b2451}\label{struct_fl___scroll_1_1_scroll_info_a9f30a1471199feee650000708b4b2451}} 
+\index{Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}!hscroll@{hscroll}}
+\index{hscroll@{hscroll}!Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}}
+\doxysubsubsection{\texorpdfstring{hscroll}{hscroll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___scrollbar___data}{Fl\+\_\+\+Scrollbar\+\_\+\+Data}} Fl\+\_\+\+Scroll\+::\+Scroll\+Info\+::hscroll}
+
+
+
+horizontal scrollbar region + values 
+
+\mbox{\Hypertarget{struct_fl___scroll_1_1_scroll_info_a6b1b152acb5a509d8a701f0547db1648}\label{struct_fl___scroll_1_1_scroll_info_a6b1b152acb5a509d8a701f0547db1648}} 
+\index{Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}!innerbox@{innerbox}}
+\index{innerbox@{innerbox}!Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}}
+\doxysubsubsection{\texorpdfstring{innerbox}{innerbox}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___region___x_y_w_h}{Fl\+\_\+\+Region\+\_\+\+X\+Y\+WH}} Fl\+\_\+\+Scroll\+::\+Scroll\+Info\+::innerbox}
+
+
+
+widget\textquotesingle{}s inner box, excluding scrollbars 
+
+\mbox{\Hypertarget{struct_fl___scroll_1_1_scroll_info_aae9aa002dce20fefd0b76831cd431f0c}\label{struct_fl___scroll_1_1_scroll_info_aae9aa002dce20fefd0b76831cd431f0c}} 
+\index{Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}!innerchild@{innerchild}}
+\index{innerchild@{innerchild}!Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}}
+\doxysubsubsection{\texorpdfstring{innerchild}{innerchild}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___region___x_y_w_h}{Fl\+\_\+\+Region\+\_\+\+X\+Y\+WH}} Fl\+\_\+\+Scroll\+::\+Scroll\+Info\+::innerchild}
+
+
+
+widget\textquotesingle{}s inner box, including scrollbars 
+
+\mbox{\Hypertarget{struct_fl___scroll_1_1_scroll_info_a4057566bd6430cadf21f9dcce9cb84a7}\label{struct_fl___scroll_1_1_scroll_info_a4057566bd6430cadf21f9dcce9cb84a7}} 
+\index{Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}!scrollsize@{scrollsize}}
+\index{scrollsize@{scrollsize}!Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}}
+\doxysubsubsection{\texorpdfstring{scrollsize}{scrollsize}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Scroll\+::\+Scroll\+Info\+::scrollsize}
+
+
+
+the effective scrollbar thickness (local or global) 
+
+\mbox{\Hypertarget{struct_fl___scroll_1_1_scroll_info_a65d441a8beb662fa7fa88dfce78520e5}\label{struct_fl___scroll_1_1_scroll_info_a65d441a8beb662fa7fa88dfce78520e5}} 
+\index{Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}!vneeded@{vneeded}}
+\index{vneeded@{vneeded}!Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}}
+\doxysubsubsection{\texorpdfstring{vneeded}{vneeded}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Scroll\+::\+Scroll\+Info\+::vneeded}
+
+
+
+vertical scrollbar visibility 
+
+\mbox{\Hypertarget{struct_fl___scroll_1_1_scroll_info_ad7e2a81ba4a7950257f0649c1c6b4c29}\label{struct_fl___scroll_1_1_scroll_info_ad7e2a81ba4a7950257f0649c1c6b4c29}} 
+\index{Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}!vscroll@{vscroll}}
+\index{vscroll@{vscroll}!Fl\_Scroll::ScrollInfo@{Fl\_Scroll::ScrollInfo}}
+\doxysubsubsection{\texorpdfstring{vscroll}{vscroll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_fl___scroll_1_1_scroll_info_1_1_fl___scrollbar___data}{Fl\+\_\+\+Scrollbar\+\_\+\+Data}} Fl\+\_\+\+Scroll\+::\+Scroll\+Info\+::vscroll}
+
+
+
+vertical scrollbar region + values 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___scroll_8_h}{Fl\+\_\+\+Scroll.\+H}}\end{DoxyCompactItemize}

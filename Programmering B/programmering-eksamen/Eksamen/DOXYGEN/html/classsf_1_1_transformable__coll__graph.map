@@ -1,0 +1,8 @@
+<map id="sf::Transformable" name="sf::Transformable">
+<area shape="rect" id="node1" title="Decomposed transform defined by a position, a rotation and a scale." alt="" coords="253,549,383,773"/>
+<area shape="rect" id="node2" href="$classsf_1_1_transform.html" title="Define a 3x3 transform matrix." alt="" coords="119,233,245,457"/>
+<area shape="rect" id="node3" title=" " alt="" coords="159,42,205,119"/>
+<area shape="rect" id="node4" href="$classsf_1_1_vector2.html" title=" " alt="" coords="349,270,482,421"/>
+<area shape="rect" id="node5" href="$classsf_1_1_vector2.html" title="Utility template class for manipulating 2&#45;dimensional vectors." alt="" coords="357,5,473,156"/>
+<area shape="rect" id="node6" title=" " alt="" coords="507,307,553,384"/>
+</map>

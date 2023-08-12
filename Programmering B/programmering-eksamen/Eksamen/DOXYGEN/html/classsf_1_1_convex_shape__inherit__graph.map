@@ -1,0 +1,7 @@
+<map id="sf::ConvexShape" name="sf::ConvexShape">
+<area shape="rect" id="node1" title="Specialized shape representing a convex polygon." alt="" coords="87,931,211,1067"/>
+<area shape="rect" id="node5" href="$classbullet.html" title=" " alt="" coords="97,1115,200,1295"/>
+<area shape="rect" id="node2" href="$classsf_1_1_shape.html" title="Base class for textured shapes with outline." alt="" coords="69,380,229,883"/>
+<area shape="rect" id="node3" href="$classsf_1_1_drawable.html" title="Abstract base class for objects that can be drawn to a render target." alt="" coords="5,123,108,215"/>
+<area shape="rect" id="node4" href="$classsf_1_1_transformable.html" title="Decomposed transform defined by a position, a rotation and a scale." alt="" coords="133,5,349,332"/>
+</map>

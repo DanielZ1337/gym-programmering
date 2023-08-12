@@ -1,0 +1,199 @@
+\hypertarget{class_fl___file___input}{}\doxysection{Fl\+\_\+\+File\+\_\+\+Input Class Reference}
+\label{class_fl___file___input}\index{Fl\_File\_Input@{Fl\_File\_Input}}
+
+
+This widget displays a pathname in a text input field.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+File\+\_\+\+Input.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+File\+\_\+\+Input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{class_fl___file___input__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+File\+\_\+\+Input\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{class_fl___file___input__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___file___input_a954e1e72405152a99e97e578a7ccf843}{Fl\+\_\+\+File\+\_\+\+Input}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$L=0)
+\item 
+virtual int \mbox{\hyperlink{class_fl___file___input_adb2033606aa7a698fc127f90cda59df7}{handle}} (int event)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} \mbox{\hyperlink{class_fl___file___input_a804254521f6c59332627b6471997b816}{down\+\_\+box}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___input_a00113a43450938c39f1c72688d992938}{down\+\_\+box}} (\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} \mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___file___input_a7e5f2f3b29dccd1ecee9426c07cd5df1}{errorcolor}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___input_a4ddfe232300adb2fc693ae99e356ea7b}{errorcolor}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c)
+\item 
+int \mbox{\hyperlink{class_fl___file___input_af9c1ba9acd2ef8db5d69727f363b8e0b}{value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$str)
+\item 
+int \mbox{\hyperlink{class_fl___file___input_a93a4ada3650b5a4d8364829c23f6b5f4}{value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$str, int len)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___input_ab9f7b7721a18a5bae591f4e36ddd20c7}{value}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___input_a9d129c6dd1e06a76d7c2fcb95226d459}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This widget displays a pathname in a text input field. 
+
+A navigation bar located above the input field allows the user to navigate upward in the directory tree. You may want to handle F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+C\+H\+A\+N\+G\+ED events for tracking text changes and also F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+R\+E\+L\+E\+A\+SE for button release when changing to parent dir. F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+R\+E\+L\+E\+A\+SE callback won\textquotesingle{}t be called if the directory clicked is the same as the current one.
+
+
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=6cm]{Fl_File_Input.png}
+\doxyfigcaption{Fl\+\_\+\+File\+\_\+\+Input}
+\end{DoxyImage}
+
+
+\begin{DoxyNote}{Note}
+As all \mbox{\hyperlink{class_fl___input}{Fl\+\_\+\+Input}} derived objects, \mbox{\hyperlink{class_fl___file___input}{Fl\+\_\+\+File\+\_\+\+Input}} may call its callback when losing focus (see F\+L\+\_\+\+U\+N\+F\+O\+C\+US) to update its state like its cursor shape. One resulting side effect is that you should call \mbox{\hyperlink{class_fl___widget_abd83334100f22d5880cf34a233a35831}{clear\+\_\+changed()}} early in your callback to avoid reentrant calls if you plan to show another window or dialog box in the callback. 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___file___input_a954e1e72405152a99e97e578a7ccf843}\label{class_fl___file___input_a954e1e72405152a99e97e578a7ccf843}} 
+\index{Fl\_File\_Input@{Fl\_File\_Input}!Fl\_File\_Input@{Fl\_File\_Input}}
+\index{Fl\_File\_Input@{Fl\_File\_Input}!Fl\_File\_Input@{Fl\_File\_Input}}
+\doxysubsubsection{\texorpdfstring{Fl\_File\_Input()}{Fl\_File\_Input()}}
+{\footnotesize\ttfamily Fl\+\_\+\+File\+\_\+\+Input\+::\+Fl\+\_\+\+File\+\_\+\+Input (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{L = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___file___input_a804254521f6c59332627b6471997b816}\label{class_fl___file___input_a804254521f6c59332627b6471997b816}} 
+\index{Fl\_File\_Input@{Fl\_File\_Input}!down\_box@{down\_box}}
+\index{down\_box@{down\_box}!Fl\_File\_Input@{Fl\_File\_Input}}
+\doxysubsubsection{\texorpdfstring{down\_box()}{down\_box()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} Fl\+\_\+\+File\+\_\+\+Input\+::down\+\_\+box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the box type used for the navigation bar. \mbox{\Hypertarget{class_fl___file___input_a00113a43450938c39f1c72688d992938}\label{class_fl___file___input_a00113a43450938c39f1c72688d992938}} 
+\index{Fl\_File\_Input@{Fl\_File\_Input}!down\_box@{down\_box}}
+\index{down\_box@{down\_box}!Fl\_File\_Input@{Fl\_File\_Input}}
+\doxysubsubsection{\texorpdfstring{down\_box()}{down\_box()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Input\+::down\+\_\+box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the box type to use for the navigation bar. ~\newline
+ \mbox{\Hypertarget{class_fl___file___input_a9d129c6dd1e06a76d7c2fcb95226d459}\label{class_fl___file___input_a9d129c6dd1e06a76d7c2fcb95226d459}} 
+\index{Fl\_File\_Input@{Fl\_File\_Input}!draw@{draw}}
+\index{draw@{draw}!Fl\_File\_Input@{Fl\_File\_Input}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Input\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___file___input_a9d129c6dd1e06a76d7c2fcb95226d459}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___file___input_a9d129c6dd1e06a76d7c2fcb95226d459}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Implements \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___file___input_a7e5f2f3b29dccd1ecee9426c07cd5df1}\label{class_fl___file___input_a7e5f2f3b29dccd1ecee9426c07cd5df1}} 
+\index{Fl\_File\_Input@{Fl\_File\_Input}!errorcolor@{errorcolor}}
+\index{errorcolor@{errorcolor}!Fl\_File\_Input@{Fl\_File\_Input}}
+\doxysubsubsection{\texorpdfstring{errorcolor()}{errorcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+File\+\_\+\+Input\+::errorcolor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the current error color. \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000016}{Todo}}]Better docs for \mbox{\hyperlink{class_fl___file___input_a7e5f2f3b29dccd1ecee9426c07cd5df1}{Fl\+\_\+\+File\+\_\+\+Input\+::errorcolor()}} -\/ is it even used? \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_fl___file___input_a4ddfe232300adb2fc693ae99e356ea7b}\label{class_fl___file___input_a4ddfe232300adb2fc693ae99e356ea7b}} 
+\index{Fl\_File\_Input@{Fl\_File\_Input}!errorcolor@{errorcolor}}
+\index{errorcolor@{errorcolor}!Fl\_File\_Input@{Fl\_File\_Input}}
+\doxysubsubsection{\texorpdfstring{errorcolor()}{errorcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Input\+::errorcolor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current error color to {\ttfamily c} \mbox{\Hypertarget{class_fl___file___input_adb2033606aa7a698fc127f90cda59df7}\label{class_fl___file___input_adb2033606aa7a698fc127f90cda59df7}} 
+\index{Fl\_File\_Input@{Fl\_File\_Input}!handle@{handle}}
+\index{handle@{handle}!Fl\_File\_Input@{Fl\_File\_Input}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily virtual int Fl\+\_\+\+File\+\_\+\+Input\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___file___input_adb2033606aa7a698fc127f90cda59df7}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___widget_a3521aba25eda761620953dd49d335ea7}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___file___input_ab9f7b7721a18a5bae591f4e36ddd20c7}\label{class_fl___file___input_ab9f7b7721a18a5bae591f4e36ddd20c7}} 
+\index{Fl\_File\_Input@{Fl\_File\_Input}!value@{value}}
+\index{value@{value}!Fl\_File\_Input@{Fl\_File\_Input}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Input\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current value, which is a pointer to an internal buffer and is valid only until the next event is handled. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_fl___file___input_ab9f7b7721a18a5bae591f4e36ddd20c7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___file___input_af9c1ba9acd2ef8db5d69727f363b8e0b}\label{class_fl___file___input_af9c1ba9acd2ef8db5d69727f363b8e0b}} 
+\index{Fl\_File\_Input@{Fl\_File\_Input}!value@{value}}
+\index{value@{value}!Fl\_File\_Input@{Fl\_File\_Input}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+File\+\_\+\+Input\+::value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{str }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___input_a93a4ada3650b5a4d8364829c23f6b5f4}\label{class_fl___file___input_a93a4ada3650b5a4d8364829c23f6b5f4}} 
+\index{Fl\_File\_Input@{Fl\_File\_Input}!value@{value}}
+\index{value@{value}!Fl\_File\_Input@{Fl\_File\_Input}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+File\+\_\+\+Input\+::value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{str,  }\item[{int}]{len }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___file___input_8_h}{Fl\+\_\+\+File\+\_\+\+Input.\+H}}\end{DoxyCompactItemize}

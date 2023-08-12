@@ -1,0 +1,1119 @@
+\hypertarget{class_fl___window}{}\doxysection{Fl\+\_\+\+Window Class Reference}
+\label{class_fl___window}\index{Fl\_Window@{Fl\_Window}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Window.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_fl___window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_fl___window_1_1shape__data__type}{shape\+\_\+data\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_aeb3ffb4925bd90950de419f962bcf7f6}{shape}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$img)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a747b5a42083e70bf0768627e8dfb0ebf}{shape}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} \&\mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a9181d737b20c35fc3633ada4e193022e}{combine\+\_\+mask}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+\mbox{\hyperlink{class_fl___window_a9718a55f909d150394f4a67ba762aa0c}{Fl\+\_\+\+Window}} (int \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}, int \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$title=0)
+\item 
+\mbox{\hyperlink{class_fl___window_a615bf5d04b79df5c8f53f3dcdf19e9b5}{Fl\+\_\+\+Window}} (int \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x}}, int \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y}}, int \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}, int \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$title=0)
+\item 
+virtual \mbox{\hyperlink{class_fl___window_a929d24116cc859b4a0bc39d44ff0235f}{$\sim$\+Fl\+\_\+\+Window}} ()
+\item 
+virtual int \mbox{\hyperlink{class_fl___window_addf8533ea9678ee2aa33c09627cf6ee6}{handle}} (int)
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_adb45dff26b1be92975f0cec58ca3d592}{resize}} (int X, int Y, int W, int H)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a72f5733f13cb6d8b646f1e7ffcd92333}{border}} (int \mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_ab1f6119abc21b6636a13651b89bef1da}{clear\+\_\+border}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_fl___window_a9ea4da7c37fd62ce5fd75a4ac03cdb67}{border}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a8b2843691557ff339326bb14b065f717}{set\+\_\+override}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_fl___window_a4e5c0cc3c6caf3dcf94f6784c14f5e0f}{override}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_adbcee49a29aaeaef961b235035a127a5}{set\+\_\+modal}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_fl___window_a9461ef764197f671e0a9e9d0679b4145}{modal}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_aa95384f21fd3d1b559e116f9298e97c2}{set\+\_\+non\+\_\+modal}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_fl___window_a62d20d4914c1e18e054653bc34f1209c}{non\+\_\+modal}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a520677d42e004875f8b3715c1a1e4c15}{clear\+\_\+modal\+\_\+states}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a3236b2a68a20b3ad84133576955a8527}{set\+\_\+menu\+\_\+window}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_fl___window_a6b96d2dad3e3a4dd186e3ce7a1f14387}{menu\+\_\+window}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_af048ffbe2beb649c9073a039585e5936}{set\+\_\+tooltip\+\_\+window}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_fl___window_af947957fd93b91b528e72b126201d534}{tooltip\+\_\+window}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_adbe55edbed0b87026b12a8b78a27f083}{hotspot}} (int \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x}}, int \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y}}, int offscreen=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_af04ceff1297434b9ec8521f47fd1051a}{hotspot}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$, int offscreen=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a77150540dca37718d5c2c60bd8f192e8}{hotspot}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&p, int offscreen=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a1e98da34a021275f42007528768c53a7}{free\+\_\+position}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_aa0f717a52f23e54d7db8fee71a5f299e}{size\+\_\+range}} (int minw, int minh, int maxw=0, int maxh=0, int dw=0, int dh=0, int aspect=0)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___window_acabd7585709d6627a6b7d8f8eef72c66}{label}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___window_a0bdf620528ecce0db5d03152c8650af1}{iconlabel}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_abbf6ead38d7f0850a179d646e13cdc1a}{label}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_aa42d0d6dadaf7e81922c56dee5c8826c}{iconlabel}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a7f34a499bd30417479a20bd16963f4fa}{label}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$label, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___window_a0bdf620528ecce0db5d03152c8650af1}{iconlabel}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_ab2222fc3011e34e90f870a663b24d416}{copy\+\_\+label}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$a)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___window_ad8b2cc5ad0cb171a1b19ae6ee091fe97}{xclass}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a913bb4f81e4627e5b4a860ef78bca1ff}{xclass}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a508f3acd43f9b365d35897b5ec197dbe}{icon}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a2c67d0656099b902c17525dfb9b1ebe5}{icons}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$\mbox{[}$\,$\mbox{]}, int)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$ \mbox{\hyperlink{class_fl___window_a0fc6c91d4e4b165e4af50c58adc896a2}{icon}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_aebe49571396c9d9e88e6006e0d4899a1}{icon}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$ic)
+\item 
+int \mbox{\hyperlink{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}{shown}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a42fbeddb68a203ff9123d33156a29fc7}{hide}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a0d75dfcdc8fb797f9247482da1e0152b}{show}} (int argc, char $\ast$$\ast$argv)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_aafbec14ca8ff8abdaff77a35ebb23dd8}{wait\+\_\+for\+\_\+expose}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_ac3f59c5dfbf15d4ae5485c5a8c73b0c3}{fullscreen}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_ac75ca514e368f4b43ae1ce7e3ea3c655}{fullscreen\+\_\+off}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a233810d6643660790d3638cb2cb40571}{fullscreen\+\_\+off}} (int X, int Y, int W, int H)
+\item 
+unsigned int \mbox{\hyperlink{class_fl___window_a228c2192184b11e14e7dfd64b673a662}{fullscreen\+\_\+active}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a588c4f9268efdfe212586484a5edce80}{fullscreen\+\_\+screens}} (int top, int bottom, int left, int right)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a473a9728b4275ce16347e74faafb3cde}{iconize}} ()
+\item 
+int \mbox{\hyperlink{class_fl___window_a26be3fa772a044d4c922b261b1df60bd}{x\+\_\+root}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___window_a0f37fa7a5087b3cb44a4dd7681afa654}{y\+\_\+root}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a65a2499309b3fdd1bed463cefa0cd1e2}{make\+\_\+current}} ()
+\item 
+virtual \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$ \mbox{\hyperlink{class_fl___window_a626ac137ca3d89ca743f6436af9981b9}{as\+\_\+window}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a4b14c4708c444295140fcb291afdf551}{cursor}} (\mbox{\hyperlink{_enumerations_8_h_a72bde974edc7926b1217dd51b8c7e8e0}{Fl\+\_\+\+Cursor}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_abe7eb85313e94ae9614743c3317494da}{cursor}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$, int, int)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a08433e23a3865539bc861e2dfec5d68e}{default\+\_\+cursor}} (\mbox{\hyperlink{_enumerations_8_h_a72bde974edc7926b1217dd51b8c7e8e0}{Fl\+\_\+\+Cursor}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a186e093271f47ce441fe7deb74b8834d}{cursor}} (\mbox{\hyperlink{_enumerations_8_h_a72bde974edc7926b1217dd51b8c7e8e0}{Fl\+\_\+\+Cursor}} c, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}=\mbox{\hyperlink{_enumerations_8_h_ac1600c6c32be996f90f133cdc4135292}{F\+L\+\_\+\+W\+H\+I\+TE}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a76576c532acc2be359813d013f9181ef}{default\+\_\+cursor}} (\mbox{\hyperlink{_enumerations_8_h_a72bde974edc7926b1217dd51b8c7e8e0}{Fl\+\_\+\+Cursor}} c, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}=\mbox{\hyperlink{_enumerations_8_h_ac1600c6c32be996f90f133cdc4135292}{F\+L\+\_\+\+W\+H\+I\+TE}})
+\item 
+int \mbox{\hyperlink{class_fl___window_a8101e821aa51df1f2e2026cb24478c59}{decorated\+\_\+w}} ()
+\item 
+int \mbox{\hyperlink{class_fl___window_a3232ff0130833cf3831ecb4365d5f258}{decorated\+\_\+h}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_aed60c628b672e3c7b0c141f484c5416f}{default\+\_\+xclass}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$)
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___window_aedc3dead927fc898dd6da9cd66cecf2c}{default\+\_\+xclass}} ()
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a6a46e6b44e0eca2f186122a4ae6114e0}{default\+\_\+icon}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a993a162a56683f63edc499def12d5d14}{default\+\_\+icons}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$\mbox{[}$\,$\mbox{]}, int)
+\item 
+static \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$ \mbox{\hyperlink{class_fl___window_a5149cf058a24c5c047a00d096ff1ab1d}{current}} ()
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a03c34aa5e120e9a7b7f3dde4a197ed3e}{default\+\_\+callback}} (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$\mbox{\hyperlink{forms_8_h_a3b90d5a73541ab9402511d87bed076ef}{v}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a4dea919a9f069f00b623abb8179ef52c}{draw}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a73b07ee9fe3a23fb2511cf33ac80c2df}{flush}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a308532b4ea446cbafe7001cb3777389b}{force\+\_\+position}} (int force)
+\item 
+int \mbox{\hyperlink{class_fl___window_a16d140c82cf652b1bf7f3a95caab445a}{force\+\_\+position}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a045f3dcd71a0d68837559d93a6cbd35e}{free\+\_\+icons}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_fl___window_1_1shape__data__type}{shape\+\_\+data\+\_\+type}} $\ast$ \mbox{\hyperlink{class_fl___window_a06a91a471054d097d6f566856bd7885f}{shape\+\_\+data\+\_\+}}
+\begin{DoxyCompactList}\small\item\em non-\/null means the window has a non-\/rectangular shape \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$ \mbox{\hyperlink{class_fl___window_a8292163f1173f9d5d54b9573270f3cfe}{current\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fl___window_abc1661cbd284895df88b4a2372a4a215}{Fl\+\_\+X}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This widget produces an actual window. This can either be a main window, with a border and title and all the window management controls, or a \char`\"{}subwindow\char`\"{} inside a window. This is controlled by whether or not the window has a \mbox{\hyperlink{class_fl___widget_a6f55261683ecaf68d70e424213d030b0}{parent()}}.
+
+Once you create a window, you usually add children \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \textquotesingle{}s to it by using window-\/$>$add(child) for each new widget. See \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} for more information on how to add and remove children.
+
+There are several subclasses of \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} that provide double-\/buffering, overlay, menu, and Open\+GL support.
+
+The window\textquotesingle{}s callback is done if the user tries to close a window using the window manager and \mbox{\hyperlink{group__fl__windows_gaf0938156f04e1babebaa8eb75a8d0fce}{Fl\+::modal()}} is zero or equal to the window. \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} has a default callback that calls \mbox{\hyperlink{class_fl___window_a42fbeddb68a203ff9123d33156a29fc7}{Fl\+\_\+\+Window\+::hide()}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___window_a9718a55f909d150394f4a67ba762aa0c}\label{class_fl___window_a9718a55f909d150394f4a67ba762aa0c}} 
+\index{Fl\_Window@{Fl\_Window}!Fl\_Window@{Fl\_Window}}
+\index{Fl\_Window@{Fl\_Window}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{Fl\_Window()}{Fl\_Window()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Window\+::\+Fl\+\_\+\+Window (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{title = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Creates a window from the given size and title. If \mbox{\hyperlink{class_fl___group_abfc73a2ad1014a5a19fbfb412bb6d0a4}{Fl\+\_\+\+Group\+::current()}} is not N\+U\+LL, the window is created as a subwindow of the parent window.
+
+The (w,h) form of the constructor creates a top-\/level window and asks the window manager to position the window. The (x,y,w,h) form of the constructor either creates a subwindow or a top-\/level window at the specified location (x,y) , subject to window manager configuration. If you do not specify the position of the window, the window manager will pick a place to show the window or allow the user to pick a location. Use position(x,y) or \mbox{\hyperlink{class_fl___window_adbe55edbed0b87026b12a8b78a27f083}{hotspot()}} before calling \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} to request a position on the screen. See \mbox{\hyperlink{class_fl___window_adb45dff26b1be92975f0cec58ca3d592}{Fl\+\_\+\+Window\+::resize()}} for some more details on positioning windows.
+
+Top-\/level windows initially have \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}} set to 0 and \mbox{\hyperlink{class_fl___widget_a6f55261683ecaf68d70e424213d030b0}{parent()}} set to N\+U\+LL. Subwindows initially have \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}} set to 1 and \mbox{\hyperlink{class_fl___widget_a6f55261683ecaf68d70e424213d030b0}{parent()}} set to the parent window pointer.
+
+\mbox{\hyperlink{class_fl___widget_a9d1f48fbbe4d885e81df38b2a93b614f}{Fl\+\_\+\+Widget\+::box()}} defaults to F\+L\+\_\+\+F\+L\+A\+T\+\_\+\+B\+OX. If you plan to completely fill the window with children widgets you should change this to F\+L\+\_\+\+N\+O\+\_\+\+B\+OX. If you turn the window border off you may want to change this to F\+L\+\_\+\+U\+P\+\_\+\+B\+OX.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___window_a615bf5d04b79df5c8f53f3dcdf19e9b5}{Fl\+\_\+\+Window(int x, int y, int w, int h, const char$\ast$ title)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___window_a615bf5d04b79df5c8f53f3dcdf19e9b5}\label{class_fl___window_a615bf5d04b79df5c8f53f3dcdf19e9b5}} 
+\index{Fl\_Window@{Fl\_Window}!Fl\_Window@{Fl\_Window}}
+\index{Fl\_Window@{Fl\_Window}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{Fl\_Window()}{Fl\_Window()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Window\+::\+Fl\+\_\+\+Window (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{title = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Creates a window from the given position, size and title.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___window_a9718a55f909d150394f4a67ba762aa0c}{Fl\+\_\+\+Window(int w, int h, const char $\ast$title)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___window_a929d24116cc859b4a0bc39d44ff0235f}\label{class_fl___window_a929d24116cc859b4a0bc39d44ff0235f}} 
+\index{Fl\_Window@{Fl\_Window}!````~Fl\_Window@{$\sim$Fl\_Window}}
+\index{````~Fl\_Window@{$\sim$Fl\_Window}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Window()}{~Fl\_Window()}}
+{\footnotesize\ttfamily virtual Fl\+\_\+\+Window\+::$\sim$\+Fl\+\_\+\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The destructor {\itshape also deletes all the children}. This allows a whole tree to be deleted at once, without having to keep a pointer to all the children in the user code. A kludge has been done so the \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} and all of its children can be automatic (local) variables, but you must declare the \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} {\itshape first} so that it is destroyed last. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___window_a626ac137ca3d89ca743f6436af9981b9}\label{class_fl___window_a626ac137ca3d89ca743f6436af9981b9}} 
+\index{Fl\_Window@{Fl\_Window}!as\_window@{as\_window}}
+\index{as\_window@{as\_window}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{as\_window()}{as\_window()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}$\ast$ Fl\+\_\+\+Window\+::as\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns an \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} pointer if this widget is an \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}.
+
+Use this method if you have a widget (pointer) and need to know whether this widget is derived from \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}. If it returns non-\/\+N\+U\+LL, then the widget in question is derived from \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}, and you can use the returned pointer to access its children or other Fl\+\_\+\+Window-\/specific methods.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em N\+U\+LL} & if this widget is not derived from \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This method is provided to avoid dynamic\+\_\+cast. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a645c3112dc8c242b099ef8aee45fe7ee}{Fl\+\_\+\+Widget\+::as\+\_\+group()}}, \mbox{\hyperlink{class_fl___widget_a5951fcf543a56357c2375657c7db6314}{Fl\+\_\+\+Widget\+::as\+\_\+gl\+\_\+window()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___widget_a464c6760c08e56cf53338398e5bc60f4}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___window_a9ea4da7c37fd62ce5fd75a4ac03cdb67}\label{class_fl___window_a9ea4da7c37fd62ce5fd75a4ac03cdb67}} 
+\index{Fl\_Window@{Fl\_Window}!border@{border}}
+\index{border@{border}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{border()}{border()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Window\+::border (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+See void \mbox{\hyperlink{class_fl___window_a72f5733f13cb6d8b646f1e7ffcd92333}{Fl\+\_\+\+Window\+::border(int)}} Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_fl___window_a9ea4da7c37fd62ce5fd75a4ac03cdb67_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_a72f5733f13cb6d8b646f1e7ffcd92333}\label{class_fl___window_a72f5733f13cb6d8b646f1e7ffcd92333}} 
+\index{Fl\_Window@{Fl\_Window}!border@{border}}
+\index{border@{border}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{border()}{border()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::border (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption})}
+
+Sets whether or not the window manager border is around the window. The default value is true. void \mbox{\hyperlink{class_fl___window_a72f5733f13cb6d8b646f1e7ffcd92333}{border(int)}} can be used to turn the border on and off. {\itshape Under most X window managers this does not work after \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} has been called, although S\+GI\textquotesingle{}s 4D\+WM does work.} \mbox{\Hypertarget{class_fl___window_ab1f6119abc21b6636a13651b89bef1da}\label{class_fl___window_ab1f6119abc21b6636a13651b89bef1da}} 
+\index{Fl\_Window@{Fl\_Window}!clear\_border@{clear\_border}}
+\index{clear\_border@{clear\_border}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{clear\_border()}{clear\_border()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::clear\+\_\+border (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fast inline function to turn the window manager border off. It only works before \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} is called. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_fl___window_ab1f6119abc21b6636a13651b89bef1da_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_a520677d42e004875f8b3715c1a1e4c15}\label{class_fl___window_a520677d42e004875f8b3715c1a1e4c15}} 
+\index{Fl\_Window@{Fl\_Window}!clear\_modal\_states@{clear\_modal\_states}}
+\index{clear\_modal\_states@{clear\_modal\_states}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{clear\_modal\_states()}{clear\_modal\_states()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::clear\+\_\+modal\+\_\+states (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clears the \char`\"{}modal\char`\"{} flags and converts a \char`\"{}modal\char`\"{} or \char`\"{}non-\/modal\char`\"{} window back into a \char`\"{}normal\char`\"{} window.
+
+Note that there are {\itshape three} states for a window\+: modal, non-\/modal, and normal.
+
+You can not change the \char`\"{}modality\char`\"{} of a window whilst it is shown, so it is necessary to first \mbox{\hyperlink{class_fl___window_a42fbeddb68a203ff9123d33156a29fc7}{hide()}} the window, change its \char`\"{}modality\char`\"{} as required, then re-\/show the window for the new state to take effect.
+
+This method can also be used to change a \char`\"{}modal\char`\"{} window into a \char`\"{}non-\/modal\char`\"{} one. On several supported platforms, the \char`\"{}modal\char`\"{} state over-\/rides the \char`\"{}non-\/modal\char`\"{} state, so the \char`\"{}modal\char`\"{} state must be cleared before the window can be set into the \char`\"{}non-\/modal\char`\"{} state. In general, the following sequence should work\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{win-\/>hide();}
+\DoxyCodeLine{win-\/>clear\_modal\_states();}
+\DoxyCodeLine{\textcolor{comment}{//Set win to new state as desired, or leave "normal", e.g...}}
+\DoxyCodeLine{win-\/>set\_non\_modal();}
+\DoxyCodeLine{win-\/>show();}
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+Under some window managers, the sequence of hiding the window and changing its modality will often cause it to be re-\/displayed at a different position when it is subsequently shown. This is an irritating feature but appears to be unavoidable at present. As a result we would advise to use this method only when absolutely necessary.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_adbcee49a29aaeaef961b235035a127a5}{set\+\_\+modal()}}, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_aa95384f21fd3d1b559e116f9298e97c2}{set\+\_\+non\+\_\+modal()}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_fl___window_a520677d42e004875f8b3715c1a1e4c15_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_a9181d737b20c35fc3633ada4e193022e}\label{class_fl___window_a9181d737b20c35fc3633ada4e193022e}} 
+\index{Fl\_Window@{Fl\_Window}!combine\_mask@{combine\_mask}}
+\index{combine\_mask@{combine\_mask}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{combine\_mask()}{combine\_mask()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::combine\+\_\+mask (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_ab2222fc3011e34e90f870a663b24d416}\label{class_fl___window_ab2222fc3011e34e90f870a663b24d416}} 
+\index{Fl\_Window@{Fl\_Window}!copy\_label@{copy\_label}}
+\index{copy\_label@{copy\_label}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{copy\_label()}{copy\_label()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::copy\+\_\+label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_a5149cf058a24c5c047a00d096ff1ab1d}\label{class_fl___window_a5149cf058a24c5c047a00d096ff1ab1d}} 
+\index{Fl\_Window@{Fl\_Window}!current@{current}}
+\index{current@{current}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}$\ast$ Fl\+\_\+\+Window\+::current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___window_abe7eb85313e94ae9614743c3317494da}\label{class_fl___window_abe7eb85313e94ae9614743c3317494da}} 
+\index{Fl\_Window@{Fl\_Window}!cursor@{cursor}}
+\index{cursor@{cursor}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{cursor()}{cursor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_a186e093271f47ce441fe7deb74b8834d}\label{class_fl___window_a186e093271f47ce441fe7deb74b8834d}} 
+\index{Fl\_Window@{Fl\_Window}!cursor@{cursor}}
+\index{cursor@{cursor}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{cursor()}{cursor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a72bde974edc7926b1217dd51b8c7e8e0}{Fl\+\_\+\+Cursor}}}]{c,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{ = {\ttfamily \mbox{\hyperlink{_enumerations_8_h_ac1600c6c32be996f90f133cdc4135292}{F\+L\+\_\+\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_a4b14c4708c444295140fcb291afdf551}\label{class_fl___window_a4b14c4708c444295140fcb291afdf551}} 
+\index{Fl\_Window@{Fl\_Window}!cursor@{cursor}}
+\index{cursor@{cursor}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{cursor()}{cursor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a72bde974edc7926b1217dd51b8c7e8e0}{Fl\+\_\+\+Cursor}}}]{ }\end{DoxyParamCaption})}
+
+Changes the cursor for this window. This always calls the system, if you are changing the cursor a lot you may want to keep track of how you set it in a static variable and call this only if the new cursor is different.
+
+The type Fl\+\_\+\+Cursor is an enumeration defined in $<$\mbox{\hyperlink{_enumerations_8_h}{F\+L/\+Enumerations.\+H}}$>$.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___window_abe7eb85313e94ae9614743c3317494da}{cursor(const Fl\+\_\+\+R\+G\+B\+\_\+\+Image$\ast$, int, int)}}, \mbox{\hyperlink{class_fl___window_a08433e23a3865539bc861e2dfec5d68e}{default\+\_\+cursor()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___window_a3232ff0130833cf3831ecb4365d5f258}\label{class_fl___window_a3232ff0130833cf3831ecb4365d5f258}} 
+\index{Fl\_Window@{Fl\_Window}!decorated\_h@{decorated\_h}}
+\index{decorated\_h@{decorated\_h}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{decorated\_h()}{decorated\_h()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Window\+::decorated\+\_\+h (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the window height including any window title bar and any frame added by the window manager.
+
+Same as \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h()}} if applied to a subwindow. \mbox{\Hypertarget{class_fl___window_a8101e821aa51df1f2e2026cb24478c59}\label{class_fl___window_a8101e821aa51df1f2e2026cb24478c59}} 
+\index{Fl\_Window@{Fl\_Window}!decorated\_w@{decorated\_w}}
+\index{decorated\_w@{decorated\_w}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{decorated\_w()}{decorated\_w()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Window\+::decorated\+\_\+w (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the window width including any frame added by the window manager.
+
+Same as \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w()}} if applied to a subwindow. \mbox{\Hypertarget{class_fl___window_a03c34aa5e120e9a7b7f3dde4a197ed3e}\label{class_fl___window_a03c34aa5e120e9a7b7f3dde4a197ed3e}} 
+\index{Fl\_Window@{Fl\_Window}!default\_callback@{default\_callback}}
+\index{default\_callback@{default\_callback}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{default\_callback()}{default\_callback()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::default\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$}]{,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___window_a76576c532acc2be359813d013f9181ef}\label{class_fl___window_a76576c532acc2be359813d013f9181ef}} 
+\index{Fl\_Window@{Fl\_Window}!default\_cursor@{default\_cursor}}
+\index{default\_cursor@{default\_cursor}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{default\_cursor()}{default\_cursor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::default\+\_\+cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a72bde974edc7926b1217dd51b8c7e8e0}{Fl\+\_\+\+Cursor}}}]{c,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{ = {\ttfamily \mbox{\hyperlink{_enumerations_8_h_ac1600c6c32be996f90f133cdc4135292}{F\+L\+\_\+\+W\+H\+I\+TE}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_a08433e23a3865539bc861e2dfec5d68e}\label{class_fl___window_a08433e23a3865539bc861e2dfec5d68e}} 
+\index{Fl\_Window@{Fl\_Window}!default\_cursor@{default\_cursor}}
+\index{default\_cursor@{default\_cursor}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{default\_cursor()}{default\_cursor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::default\+\_\+cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a72bde974edc7926b1217dd51b8c7e8e0}{Fl\+\_\+\+Cursor}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_a6a46e6b44e0eca2f186122a4ae6114e0}\label{class_fl___window_a6a46e6b44e0eca2f186122a4ae6114e0}} 
+\index{Fl\_Window@{Fl\_Window}!default\_icon@{default\_icon}}
+\index{default\_icon@{default\_icon}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{default\_icon()}{default\_icon()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::default\+\_\+icon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___window_a993a162a56683f63edc499def12d5d14}\label{class_fl___window_a993a162a56683f63edc499def12d5d14}} 
+\index{Fl\_Window@{Fl\_Window}!default\_icons@{default\_icons}}
+\index{default\_icons@{default\_icons}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{default\_icons()}{default\_icons()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::default\+\_\+icons (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$}]{\mbox{[}$\,$\mbox{]},  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___window_aedc3dead927fc898dd6da9cd66cecf2c}\label{class_fl___window_aedc3dead927fc898dd6da9cd66cecf2c}} 
+\index{Fl\_Window@{Fl\_Window}!default\_xclass@{default\_xclass}}
+\index{default\_xclass@{default\_xclass}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{default\_xclass()}{default\_xclass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Window\+::default\+\_\+xclass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___window_aed60c628b672e3c7b0c141f484c5416f}\label{class_fl___window_aed60c628b672e3c7b0c141f484c5416f}} 
+\index{Fl\_Window@{Fl\_Window}!default\_xclass@{default\_xclass}}
+\index{default\_xclass@{default\_xclass}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{default\_xclass()}{default\_xclass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::default\+\_\+xclass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___window_a4dea919a9f069f00b623abb8179ef52c}\label{class_fl___window_a4dea919a9f069f00b623abb8179ef52c}} 
+\index{Fl\_Window@{Fl\_Window}!draw@{draw}}
+\index{draw@{draw}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___window_a4dea919a9f069f00b623abb8179ef52c}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___window_a4dea919a9f069f00b623abb8179ef52c}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_a96b778e518df02471139179d4c90157c}{Fl\+\_\+\+Group}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___gl___window_ab3c931bb0ae05687baf9928011ceaf94}{Fl\+\_\+\+Gl\+\_\+\+Window}}, and \mbox{\hyperlink{class_fl___glut___window_a7bde4cf7e1e95c49c417940719e82de3}{Fl\+\_\+\+Glut\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___window_a73b07ee9fe3a23fb2511cf33ac80c2df}\label{class_fl___window_a73b07ee9fe3a23fb2511cf33ac80c2df}} 
+\index{Fl\_Window@{Fl\_Window}!flush@{flush}}
+\index{flush@{flush}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Forces the window to be drawn, this window is also made current and calls \mbox{\hyperlink{class_fl___window_a4dea919a9f069f00b623abb8179ef52c}{draw()}}. 
+
+Reimplemented in \mbox{\hyperlink{class_fl___gl___window_afc1f3b65a2d872fd21049749179a8f2f}{Fl\+\_\+\+Gl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___overlay___window_a7246d014381be4e55463f790bab43a1c}{Fl\+\_\+\+Overlay\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___double___window_a080455493ab7e91b910247ff5832c139}{Fl\+\_\+\+Double\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___single___window_a6f96635369625f1aaaff8b51de9a5afd}{Fl\+\_\+\+Single\+\_\+\+Window}}, and \mbox{\hyperlink{class_fl___menu___window_adac62f9dacdf8afd3382554a41b5fe85}{Fl\+\_\+\+Menu\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___window_a16d140c82cf652b1bf7f3a95caab445a}\label{class_fl___window_a16d140c82cf652b1bf7f3a95caab445a}} 
+\index{Fl\_Window@{Fl\_Window}!force\_position@{force\_position}}
+\index{force\_position@{force\_position}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{force\_position()}{force\_position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Window\+::force\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Returns the internal state of the window\textquotesingle{}s F\+O\+R\+C\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON flag.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em 1} & if flag is set \\
+\hline
+{\em 0} & otherwise\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___window_a308532b4ea446cbafe7001cb3777389b}{force\+\_\+position(int)}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_fl___window_a16d140c82cf652b1bf7f3a95caab445a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_a308532b4ea446cbafe7001cb3777389b}\label{class_fl___window_a308532b4ea446cbafe7001cb3777389b}} 
+\index{Fl\_Window@{Fl\_Window}!force\_position@{force\_position}}
+\index{force\_position@{force\_position}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{force\_position()}{force\_position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::force\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{force }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets an internal flag that tells F\+L\+TK and the window manager to honor position requests.
+
+This is used internally and should not be needed by user code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em force} & 1 to set the F\+O\+R\+C\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON flag, 0 to clear it \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___window_a308532b4ea446cbafe7001cb3777389b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_a045f3dcd71a0d68837559d93a6cbd35e}\label{class_fl___window_a045f3dcd71a0d68837559d93a6cbd35e}} 
+\index{Fl\_Window@{Fl\_Window}!free\_icons@{free\_icons}}
+\index{free\_icons@{free\_icons}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{free\_icons()}{free\_icons()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::free\+\_\+icons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___window_a1e98da34a021275f42007528768c53a7}\label{class_fl___window_a1e98da34a021275f42007528768c53a7}} 
+\index{Fl\_Window@{Fl\_Window}!free\_position@{free\_position}}
+\index{free\_position@{free\_position}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{free\_position()}{free\_position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::free\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Undoes the effect of a previous \mbox{\hyperlink{class_fl___window_adb45dff26b1be92975f0cec58ca3d592}{resize()}} or \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} so that the next time \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} is called the window manager is free to position the window.
+
+This is for Forms compatibility only.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000013}{Deprecated}}]please use force\+\_\+position(0) instead \end{DoxyRefDesc}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_fl___window_a1e98da34a021275f42007528768c53a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_ac3f59c5dfbf15d4ae5485c5a8c73b0c3}\label{class_fl___window_ac3f59c5dfbf15d4ae5485c5a8c73b0c3}} 
+\index{Fl\_Window@{Fl\_Window}!fullscreen@{fullscreen}}
+\index{fullscreen@{fullscreen}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{fullscreen()}{fullscreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::fullscreen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Makes the window completely fill one or more screens, without any window manager border visible. You must use \mbox{\hyperlink{class_fl___window_ac75ca514e368f4b43ae1ce7e3ea3c655}{fullscreen\+\_\+off()}} to undo this.
+
+\begin{DoxyNote}{Note}
+On some platforms, this can result in the keyboard being grabbed. The window may also be recreated, meaning \mbox{\hyperlink{class_fl___window_a42fbeddb68a203ff9123d33156a29fc7}{hide()}} and \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} will be called.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a588c4f9268efdfe212586484a5edce80}{Fl\+\_\+\+Window\+::fullscreen\+\_\+screens()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___window_a228c2192184b11e14e7dfd64b673a662}\label{class_fl___window_a228c2192184b11e14e7dfd64b673a662}} 
+\index{Fl\_Window@{Fl\_Window}!fullscreen\_active@{fullscreen\_active}}
+\index{fullscreen\_active@{fullscreen\_active}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{fullscreen\_active()}{fullscreen\_active()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Window\+::fullscreen\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns non zero if F\+U\+L\+L\+S\+C\+R\+E\+EN flag is set, 0 otherwise. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_fl___window_a228c2192184b11e14e7dfd64b673a662_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_ac75ca514e368f4b43ae1ce7e3ea3c655}\label{class_fl___window_ac75ca514e368f4b43ae1ce7e3ea3c655}} 
+\index{Fl\_Window@{Fl\_Window}!fullscreen\_off@{fullscreen\_off}}
+\index{fullscreen\_off@{fullscreen\_off}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{fullscreen\_off()}{fullscreen\_off()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::fullscreen\+\_\+off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Turns off any side effects of \mbox{\hyperlink{class_fl___window_ac3f59c5dfbf15d4ae5485c5a8c73b0c3}{fullscreen()}} \mbox{\Hypertarget{class_fl___window_a233810d6643660790d3638cb2cb40571}\label{class_fl___window_a233810d6643660790d3638cb2cb40571}} 
+\index{Fl\_Window@{Fl\_Window}!fullscreen\_off@{fullscreen\_off}}
+\index{fullscreen\_off@{fullscreen\_off}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{fullscreen\_off()}{fullscreen\_off()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::fullscreen\+\_\+off (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})}
+
+Turns off any side effects of \mbox{\hyperlink{class_fl___window_ac3f59c5dfbf15d4ae5485c5a8c73b0c3}{fullscreen()}} and does resize(x,y,w,h). \mbox{\Hypertarget{class_fl___window_a588c4f9268efdfe212586484a5edce80}\label{class_fl___window_a588c4f9268efdfe212586484a5edce80}} 
+\index{Fl\_Window@{Fl\_Window}!fullscreen\_screens@{fullscreen\_screens}}
+\index{fullscreen\_screens@{fullscreen\_screens}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{fullscreen\_screens()}{fullscreen\_screens()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::fullscreen\+\_\+screens (\begin{DoxyParamCaption}\item[{int}]{top,  }\item[{int}]{bottom,  }\item[{int}]{left,  }\item[{int}]{right }\end{DoxyParamCaption})}
+
+Sets which screens should be used when this window is in fullscreen mode. The window will be resized to the top of the screen with index {\ttfamily top}, the bottom of the screen with index {\ttfamily bottom}, etc.
+
+If this method is never called, or if any argument is $<$ 0, then the window will be resized to fill the screen it is currently on.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_ac3f59c5dfbf15d4ae5485c5a8c73b0c3}{Fl\+\_\+\+Window\+::fullscreen()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___window_addf8533ea9678ee2aa33c09627cf6ee6}\label{class_fl___window_addf8533ea9678ee2aa33c09627cf6ee6}} 
+\index{Fl\_Window@{Fl\_Window}!handle@{handle}}
+\index{handle@{handle}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily virtual int Fl\+\_\+\+Window\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___window_addf8533ea9678ee2aa33c09627cf6ee6}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_a7503757c2a734442e74717d1971b12ce}{Fl\+\_\+\+Group}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___gl___window_a72ef76517e337476c36bc8c1ee12863f}{Fl\+\_\+\+Gl\+\_\+\+Window}}, and \mbox{\hyperlink{class_fl___glut___window_a17e71b3f194705a7c9ffff4ae6aedad4}{Fl\+\_\+\+Glut\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___window_a42fbeddb68a203ff9123d33156a29fc7}\label{class_fl___window_a42fbeddb68a203ff9123d33156a29fc7}} 
+\index{Fl\_Window@{Fl\_Window}!hide@{hide}}
+\index{hide@{hide}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{hide()}{hide()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::hide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Removes the window from the screen. If the window is already hidden or has not been shown then this does nothing and is harmless. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___widget_a408b7ca0d0ed7682275e79b976c5dda4}{Fl\+\_\+\+Widget}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___gl___window_ad1fb7b91338789fe4d09c22b1ba3dd42}{Fl\+\_\+\+Gl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___overlay___window_ac2ebc6a209ed6d5d1fb813d3f54a489f}{Fl\+\_\+\+Overlay\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___double___window_acc0edc55a9d27e4e276e8a5b78deeeef}{Fl\+\_\+\+Double\+\_\+\+Window}}, and \mbox{\hyperlink{class_fl___menu___window_aadca68c365aea60fcb2841b756fa235a}{Fl\+\_\+\+Menu\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___window_a77150540dca37718d5c2c60bd8f192e8}\label{class_fl___window_a77150540dca37718d5c2c60bd8f192e8}} 
+\index{Fl\_Window@{Fl\_Window}!hotspot@{hotspot}}
+\index{hotspot@{hotspot}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{hotspot()}{hotspot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::hotspot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&}]{p,  }\item[{int}]{offscreen = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+See void \mbox{\hyperlink{class_fl___window_adbe55edbed0b87026b12a8b78a27f083}{Fl\+\_\+\+Window\+::hotspot}}(int x, int y, int offscreen = 0) Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{class_fl___window_a77150540dca37718d5c2c60bd8f192e8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_af04ceff1297434b9ec8521f47fd1051a}\label{class_fl___window_af04ceff1297434b9ec8521f47fd1051a}} 
+\index{Fl\_Window@{Fl\_Window}!hotspot@{hotspot}}
+\index{hotspot@{hotspot}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{hotspot()}{hotspot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::hotspot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{,  }\item[{int}]{offscreen = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+See void \mbox{\hyperlink{class_fl___window_adbe55edbed0b87026b12a8b78a27f083}{Fl\+\_\+\+Window\+::hotspot}}(int x, int y, int offscreen = 0) \mbox{\Hypertarget{class_fl___window_adbe55edbed0b87026b12a8b78a27f083}\label{class_fl___window_adbe55edbed0b87026b12a8b78a27f083}} 
+\index{Fl\_Window@{Fl\_Window}!hotspot@{hotspot}}
+\index{hotspot@{hotspot}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{hotspot()}{hotspot()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::hotspot (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{offscreen = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Positions the window so that the mouse is pointing at the given position, or at the center of the given widget, which may be the window itself. If the optional offscreen parameter is non-\/zero, then the window is allowed to extend off the screen (this does not work with some X window managers). \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}{position()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___window_a0fc6c91d4e4b165e4af50c58adc896a2}\label{class_fl___window_a0fc6c91d4e4b165e4af50c58adc896a2}} 
+\index{Fl\_Window@{Fl\_Window}!icon@{icon}}
+\index{icon@{icon}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{icon()}{icon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}$\ast$ Fl\+\_\+\+Window\+::icon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___window_a508f3acd43f9b365d35897b5ec197dbe}\label{class_fl___window_a508f3acd43f9b365d35897b5ec197dbe}} 
+\index{Fl\_Window@{Fl\_Window}!icon@{icon}}
+\index{icon@{icon}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{icon()}{icon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::icon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_aebe49571396c9d9e88e6006e0d4899a1}\label{class_fl___window_aebe49571396c9d9e88e6006e0d4899a1}} 
+\index{Fl\_Window@{Fl\_Window}!icon@{icon}}
+\index{icon@{icon}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{icon()}{icon()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::icon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{ic }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_a473a9728b4275ce16347e74faafb3cde}\label{class_fl___window_a473a9728b4275ce16347e74faafb3cde}} 
+\index{Fl\_Window@{Fl\_Window}!iconize@{iconize}}
+\index{iconize@{iconize}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{iconize()}{iconize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::iconize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Iconifies the window. If you call this when \mbox{\hyperlink{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}{shown()}} is false it will \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} it as an icon. If the window is already iconified this does nothing.
+
+Call \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} to restore the window.
+
+When a window is iconified/restored (either by these calls or by the user) the \mbox{\hyperlink{class_fl___window_addf8533ea9678ee2aa33c09627cf6ee6}{handle()}} method is called with F\+L\+\_\+\+H\+I\+DE and F\+L\+\_\+\+S\+H\+OW events and \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}} is turned on and off.
+
+There is no way to control what is drawn in the icon except with the string passed to \mbox{\hyperlink{class_fl___window_ad8b2cc5ad0cb171a1b19ae6ee091fe97}{Fl\+\_\+\+Window\+::xclass()}}. You should not rely on window managers displaying the icons. \mbox{\Hypertarget{class_fl___window_a0bdf620528ecce0db5d03152c8650af1}\label{class_fl___window_a0bdf620528ecce0db5d03152c8650af1}} 
+\index{Fl\_Window@{Fl\_Window}!iconlabel@{iconlabel}}
+\index{iconlabel@{iconlabel}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{iconlabel()}{iconlabel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Window\+::iconlabel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+See void \mbox{\hyperlink{class_fl___window_aa42d0d6dadaf7e81922c56dee5c8826c}{Fl\+\_\+\+Window\+::iconlabel(const char$\ast$)}} ~\newline
+ \mbox{\Hypertarget{class_fl___window_aa42d0d6dadaf7e81922c56dee5c8826c}\label{class_fl___window_aa42d0d6dadaf7e81922c56dee5c8826c}} 
+\index{Fl\_Window@{Fl\_Window}!iconlabel@{iconlabel}}
+\index{iconlabel@{iconlabel}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{iconlabel()}{iconlabel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::iconlabel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{ }\end{DoxyParamCaption})}
+
+Sets the icon label. \mbox{\Hypertarget{class_fl___window_a2c67d0656099b902c17525dfb9b1ebe5}\label{class_fl___window_a2c67d0656099b902c17525dfb9b1ebe5}} 
+\index{Fl\_Window@{Fl\_Window}!icons@{icons}}
+\index{icons@{icons}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{icons()}{icons()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::icons (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$}]{\mbox{[}$\,$\mbox{]},  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_acabd7585709d6627a6b7d8f8eef72c66}\label{class_fl___window_acabd7585709d6627a6b7d8f8eef72c66}} 
+\index{Fl\_Window@{Fl\_Window}!label@{label}}
+\index{label@{label}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Window\+::label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+See void \mbox{\hyperlink{class_fl___window_abbf6ead38d7f0850a179d646e13cdc1a}{Fl\+\_\+\+Window\+::label(const char$\ast$)}} ~\newline
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_fl___window_acabd7585709d6627a6b7d8f8eef72c66_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_abbf6ead38d7f0850a179d646e13cdc1a}\label{class_fl___window_abbf6ead38d7f0850a179d646e13cdc1a}} 
+\index{Fl\_Window@{Fl\_Window}!label@{label}}
+\index{label@{label}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{ }\end{DoxyParamCaption})}
+
+Sets the window title bar label. \mbox{\Hypertarget{class_fl___window_a7f34a499bd30417479a20bd16963f4fa}\label{class_fl___window_a7f34a499bd30417479a20bd16963f4fa}} 
+\index{Fl\_Window@{Fl\_Window}!label@{label}}
+\index{label@{label}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{label,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{iconlabel }\end{DoxyParamCaption})}
+
+Sets the icon label. \mbox{\Hypertarget{class_fl___window_a65a2499309b3fdd1bed463cefa0cd1e2}\label{class_fl___window_a65a2499309b3fdd1bed463cefa0cd1e2}} 
+\index{Fl\_Window@{Fl\_Window}!make\_current@{make\_current}}
+\index{make\_current@{make\_current}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{make\_current()}{make\_current()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::make\+\_\+current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets things up so that the drawing functions in $<$\mbox{\hyperlink{fl__draw_8_h}{F\+L/fl\+\_\+draw.\+H}}$>$ will go into this window. This is useful for incremental update of windows, such as in an idle callback, which will make your program behave much better if it draws a slow graphic. {\bfseries{Danger\+: incremental update is very hard to debug and maintain!}}
+
+This method only works for the \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} and \mbox{\hyperlink{class_fl___gl___window}{Fl\+\_\+\+Gl\+\_\+\+Window}} derived classes. \mbox{\Hypertarget{class_fl___window_a6b96d2dad3e3a4dd186e3ce7a1f14387}\label{class_fl___window_a6b96d2dad3e3a4dd186e3ce7a1f14387}} 
+\index{Fl\_Window@{Fl\_Window}!menu\_window@{menu\_window}}
+\index{menu\_window@{menu\_window}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{menu\_window()}{menu\_window()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Window\+::menu\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if this window is a menu window. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_fl___window_a6b96d2dad3e3a4dd186e3ce7a1f14387_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_a9461ef764197f671e0a9e9d0679b4145}\label{class_fl___window_a9461ef764197f671e0a9e9d0679b4145}} 
+\index{Fl\_Window@{Fl\_Window}!modal@{modal}}
+\index{modal@{modal}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{modal()}{modal()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Window\+::modal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if this window is modal. ~\newline
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_fl___window_a9461ef764197f671e0a9e9d0679b4145_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_a62d20d4914c1e18e054653bc34f1209c}\label{class_fl___window_a62d20d4914c1e18e054653bc34f1209c}} 
+\index{Fl\_Window@{Fl\_Window}!non\_modal@{non\_modal}}
+\index{non\_modal@{non\_modal}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{non\_modal()}{non\_modal()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Window\+::non\+\_\+modal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if this window is modal or non-\/modal. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_fl___window_a62d20d4914c1e18e054653bc34f1209c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_a4e5c0cc3c6caf3dcf94f6784c14f5e0f}\label{class_fl___window_a4e5c0cc3c6caf3dcf94f6784c14f5e0f}} 
+\index{Fl\_Window@{Fl\_Window}!override@{override}}
+\index{override@{override}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{override()}{override()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Window\+::override (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns non zero if F\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE flag is set, 0 otherwise. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_fl___window_a4e5c0cc3c6caf3dcf94f6784c14f5e0f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_adb45dff26b1be92975f0cec58ca3d592}\label{class_fl___window_adb45dff26b1be92975f0cec58ca3d592}} 
+\index{Fl\_Window@{Fl\_Window}!resize@{resize}}
+\index{resize@{resize}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::resize (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Changes the size and position of the window. If \mbox{\hyperlink{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}{shown()}} is true, these changes are communicated to the window server (which may refuse that size and cause a further resize). If \mbox{\hyperlink{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}{shown()}} is false, the size and position are used when \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} is called. See \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} for the effect of resizing on the child widgets.
+
+You can also call the \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} methods size(x,y) and position(w,h), which are inline wrappers for this virtual function.
+
+A top-\/level window can not force, but merely suggest a position and size to the operating system. The window manager may not be willing or able to display a window at the desired position or with the given dimensions. It is up to the application developer to verify window parameters after the resize request. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_aaec24e2eec53dcea00d1d1f63d5495d3}{Fl\+\_\+\+Group}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___gl___window_aff3bb62b9ce1d0c35c3df085bb21da92}{Fl\+\_\+\+Gl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___overlay___window_ae592a1cb84776f1d37357cc1108f870e}{Fl\+\_\+\+Overlay\+\_\+\+Window}}, and \mbox{\hyperlink{class_fl___double___window_aebad8d054ad0b4013fb35667a5f3fbb1}{Fl\+\_\+\+Double\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___window_a3236b2a68a20b3ad84133576955a8527}\label{class_fl___window_a3236b2a68a20b3ad84133576955a8527}} 
+\index{Fl\_Window@{Fl\_Window}!set\_menu\_window@{set\_menu\_window}}
+\index{set\_menu\_window@{set\_menu\_window}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{set\_menu\_window()}{set\_menu\_window()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::set\+\_\+menu\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Marks the window as a menu window.
+
+This is intended for internal use, but it can also be used if you write your own menu handling. However, this is not recommended.
+
+This flag is used for correct \char`\"{}parenting\char`\"{} of windows in communication with the windowing system. Modern X window managers can use different flags to distinguish menu and tooltip windows from normal windows.
+
+This must be called before the window is shown and cannot be changed later. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_fl___window_a3236b2a68a20b3ad84133576955a8527_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_adbcee49a29aaeaef961b235035a127a5}\label{class_fl___window_adbcee49a29aaeaef961b235035a127a5}} 
+\index{Fl\_Window@{Fl\_Window}!set\_modal@{set\_modal}}
+\index{set\_modal@{set\_modal}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{set\_modal()}{set\_modal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::set\+\_\+modal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A \char`\"{}modal\char`\"{} window, when \mbox{\hyperlink{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}{shown()}}, will prevent any events from being delivered to other windows in the same program, and will also remain on top of the other windows (if the X window manager supports the \char`\"{}transient for\char`\"{} property). Several modal windows may be shown at once, in which case only the last one shown gets events. You can see which window (if any) is modal by calling \mbox{\hyperlink{group__fl__windows_gaf0938156f04e1babebaa8eb75a8d0fce}{Fl\+::modal()}}. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_fl___window_adbcee49a29aaeaef961b235035a127a5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_aa95384f21fd3d1b559e116f9298e97c2}\label{class_fl___window_aa95384f21fd3d1b559e116f9298e97c2}} 
+\index{Fl\_Window@{Fl\_Window}!set\_non\_modal@{set\_non\_modal}}
+\index{set\_non\_modal@{set\_non\_modal}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{set\_non\_modal()}{set\_non\_modal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::set\+\_\+non\+\_\+modal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A \char`\"{}non-\/modal\char`\"{} window (terminology borrowed from Microsoft Windows) acts like a \mbox{\hyperlink{class_fl___window_a9461ef764197f671e0a9e9d0679b4145}{modal()}} one in that it remains on top, but it has no effect on event delivery. There are {\itshape three} states for a window\+: modal, non-\/modal, and normal. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_fl___window_aa95384f21fd3d1b559e116f9298e97c2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_a8b2843691557ff339326bb14b065f717}\label{class_fl___window_a8b2843691557ff339326bb14b065f717}} 
+\index{Fl\_Window@{Fl\_Window}!set\_override@{set\_override}}
+\index{set\_override@{set\_override}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{set\_override()}{set\_override()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::set\+\_\+override (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Activates the flags N\+O\+B\+O\+R\+D\+E\+R$\vert$\+F\+L\+\_\+\+O\+V\+E\+R\+R\+I\+DE Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_fl___window_a8b2843691557ff339326bb14b065f717_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_af048ffbe2beb649c9073a039585e5936}\label{class_fl___window_af048ffbe2beb649c9073a039585e5936}} 
+\index{Fl\_Window@{Fl\_Window}!set\_tooltip\_window@{set\_tooltip\_window}}
+\index{set\_tooltip\_window@{set\_tooltip\_window}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{set\_tooltip\_window()}{set\_tooltip\_window()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::set\+\_\+tooltip\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Marks the window as a tooltip window.
+
+This is intended for internal use, but it can also be used if you write your own tooltip handling. However, this is not recommended.
+
+This flag is used for correct \char`\"{}parenting\char`\"{} of windows in communication with the windowing system. Modern X window managers can use different flags to distinguish menu and tooltip windows from normal windows.
+
+This must be called before the window is shown and cannot be changed later.
+
+\begin{DoxyNote}{Note}
+Since Fl\+\_\+\+Tooltip\+\_\+\+Window is derived from \mbox{\hyperlink{class_fl___menu___window}{Fl\+\_\+\+Menu\+\_\+\+Window}}, this also {\bfseries{clears}} the \mbox{\hyperlink{class_fl___window_a6b96d2dad3e3a4dd186e3ce7a1f14387}{menu\+\_\+window()}} state. 
+\end{DoxyNote}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_fl___window_af048ffbe2beb649c9073a039585e5936_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_a747b5a42083e70bf0768627e8dfb0ebf}\label{class_fl___window_a747b5a42083e70bf0768627e8dfb0ebf}} 
+\index{Fl\_Window@{Fl\_Window}!shape@{shape}}
+\index{shape@{shape}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the window\textquotesingle{}s shape with an \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_aeb3ffb4925bd90950de419f962bcf7f6}{shape(const Fl\+\_\+\+Image$\ast$ img)}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_fl___window_a747b5a42083e70bf0768627e8dfb0ebf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_aeb3ffb4925bd90950de419f962bcf7f6}\label{class_fl___window_aeb3ffb4925bd90950de419f962bcf7f6}} 
+\index{Fl\_Window@{Fl\_Window}!shape@{shape}}
+\index{shape@{shape}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{shape()}{shape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$}]{img }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_a908afc4420fd505e958f6ed394a86acc}\label{class_fl___window_a908afc4420fd505e958f6ed394a86acc}} 
+\index{Fl\_Window@{Fl\_Window}!show@{show}}
+\index{show@{show}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Puts the window on the screen. Usually (on X) this has the side effect of opening the display.
+
+If the window is already shown then it is restored and raised to the top. This is really convenient because your program can call \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} at any time, even if the window is already up. It also means that \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} serves the purpose of raise() in other toolkits.
+
+\mbox{\hyperlink{class_fl___window_a0d75dfcdc8fb797f9247482da1e0152b}{Fl\+\_\+\+Window\+::show(int argc, char $\ast$$\ast$argv)}} is used for top-\/level windows and allows standard arguments to be parsed from the command-\/line.
+
+\begin{DoxyNote}{Note}
+For some obscure reasons \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{Fl\+\_\+\+Window\+::show()}} resets the current group by calling Fl\+\_\+\+Group\+::current(0). The comments in the code say \char`\"{}get rid of very common user bug\+: forgot end()\char`\"{}. Although this is true it may have unwanted side effects if you \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} an unrelated window (maybe for an error message or warning) while building a window or any other group widget.
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000025}{Todo}}]Check if we can remove resetting the current group in a later F\+L\+TK version (after 1.\+3.\+x). This may break \char`\"{}already broken\char`\"{} programs though if they rely on this \char`\"{}feature\char`\"{}.\end{DoxyRefDesc}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___window_a0d75dfcdc8fb797f9247482da1e0152b}{Fl\+\_\+\+Window\+::show(int argc, char $\ast$$\ast$argv)}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___widget_a3b7971dc3a0385c31e71b9f3786eac2d}{Fl\+\_\+\+Widget}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___gl___window_a05f9c5395325f1f5a905207f0ccb994a}{Fl\+\_\+\+Gl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___overlay___window_a4eebd23fcbe366b78cc9e4dded5172bb}{Fl\+\_\+\+Overlay\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}{Fl\+\_\+\+Double\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___single___window_afe0655393f47614fad9b94490f8711f8}{Fl\+\_\+\+Single\+\_\+\+Window}}, and \mbox{\hyperlink{class_fl___menu___window_a5658ae8d0587eeb640c44da3b2587441}{Fl\+\_\+\+Menu\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___window_a0d75dfcdc8fb797f9247482da1e0152b}\label{class_fl___window_a0d75dfcdc8fb797f9247482da1e0152b}} 
+\index{Fl\_Window@{Fl\_Window}!show@{show}}
+\index{show@{show}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::show (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+Puts the window on the screen and parses command-\/line arguments.
+
+Usually (on X) this has the side effect of opening the display.
+
+This form should be used for top-\/level windows, at least for the first (main) window. It allows standard arguments to be parsed from the command-\/line. You can use {\ttfamily argc} and {\ttfamily argv} from main(int argc, char $\ast$$\ast$argv) for this call.
+
+The first call also sets up some system-\/specific internal variables like the system colors.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000026}{Todo}}]explain which system parameters are set up.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & command-\/line argument count, usually from \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}} \\
+\hline
+{\em argv} & command-\/line argument vector, usually from \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{Fl\+\_\+\+Window\+::show()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}\label{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}} 
+\index{Fl\_Window@{Fl\_Window}!shown@{shown}}
+\index{shown@{shown}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{shown()}{shown()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Window\+::shown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns non-\/zero if \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{show()}} has been called (but not \mbox{\hyperlink{class_fl___window_a42fbeddb68a203ff9123d33156a29fc7}{hide()}} ). You can tell if a window is iconified with (w-\/$>$\mbox{\hyperlink{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}{shown()}} \&\& !w-\/$>$\mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}}). \mbox{\Hypertarget{class_fl___window_aa0f717a52f23e54d7db8fee71a5f299e}\label{class_fl___window_aa0f717a52f23e54d7db8fee71a5f299e}} 
+\index{Fl\_Window@{Fl\_Window}!size\_range@{size\_range}}
+\index{size\_range@{size\_range}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{size\_range()}{size\_range()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::size\+\_\+range (\begin{DoxyParamCaption}\item[{int}]{minw,  }\item[{int}]{minh,  }\item[{int}]{maxw = {\ttfamily 0},  }\item[{int}]{maxh = {\ttfamily 0},  }\item[{int}]{dw = {\ttfamily 0},  }\item[{int}]{dh = {\ttfamily 0},  }\item[{int}]{aspect = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the allowable range the user can resize this window to. This only works for top-\/level windows. 
+\begin{DoxyItemize}
+\item {\ttfamily minw} and {\ttfamily minh} are the smallest the window can be. Either value must be greater than 0. 
+\item {\ttfamily maxw} and {\ttfamily maxh} are the largest the window can be. If either is {\itshape equal} to the minimum then you cannot resize in that direction. If either is zero then F\+L\+TK picks a maximum size in that direction such that the window will fill the screen. 
+\item {\ttfamily dw} and {\ttfamily dh} are size increments. The window will be constrained to widths of minw + N $\ast$ dw, where N is any non-\/negative integer. If these are less or equal to 1 they are ignored (this is ignored on W\+I\+N32). 
+\item {\ttfamily aspect} is a flag that indicates that the window should preserve its aspect ratio. This only works if both the maximum and minimum have the same aspect ratio (ignored on W\+I\+N32 and by many X window managers).  
+\end{DoxyItemize}
+
+If this function is not called, F\+L\+TK tries to figure out the range from the setting of \mbox{\hyperlink{class_fl___group_ab0ed0d1974d7185594687849f386c5f3}{resizable()}}\+: 
+\begin{DoxyItemize}
+\item If \mbox{\hyperlink{class_fl___group_ab0ed0d1974d7185594687849f386c5f3}{resizable()}} is N\+U\+LL (this is the default) then the window cannot be resized and the resize border and max-\/size control will not be displayed for the window. 
+\item If either dimension of \mbox{\hyperlink{class_fl___group_ab0ed0d1974d7185594687849f386c5f3}{resizable()}} is less than 100, then that is considered the minimum size. Otherwise the \mbox{\hyperlink{class_fl___group_ab0ed0d1974d7185594687849f386c5f3}{resizable()}} has a minimum size of 100. 
+\item If either dimension of \mbox{\hyperlink{class_fl___group_ab0ed0d1974d7185594687849f386c5f3}{resizable()}} is zero, then that is also the maximum size (so the window cannot resize in that direction). 
+\end{DoxyItemize}
+
+It is undefined what happens if the current size does not fit in the constraints passed to \mbox{\hyperlink{class_fl___window_aa0f717a52f23e54d7db8fee71a5f299e}{size\+\_\+range()}}. \mbox{\Hypertarget{class_fl___window_af947957fd93b91b528e72b126201d534}\label{class_fl___window_af947957fd93b91b528e72b126201d534}} 
+\index{Fl\_Window@{Fl\_Window}!tooltip\_window@{tooltip\_window}}
+\index{tooltip\_window@{tooltip\_window}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{tooltip\_window()}{tooltip\_window()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Window\+::tooltip\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if this window is a tooltip window. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_fl___window_af947957fd93b91b528e72b126201d534_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___window_aafbec14ca8ff8abdaff77a35ebb23dd8}\label{class_fl___window_aafbec14ca8ff8abdaff77a35ebb23dd8}} 
+\index{Fl\_Window@{Fl\_Window}!wait\_for\_expose@{wait\_for\_expose}}
+\index{wait\_for\_expose@{wait\_for\_expose}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{wait\_for\_expose()}{wait\_for\_expose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::wait\+\_\+for\+\_\+expose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_a26be3fa772a044d4c922b261b1df60bd}\label{class_fl___window_a26be3fa772a044d4c922b261b1df60bd}} 
+\index{Fl\_Window@{Fl\_Window}!x\_root@{x\_root}}
+\index{x\_root@{x\_root}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{x\_root()}{x\_root()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Window\+::x\+\_\+root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___window_ad8b2cc5ad0cb171a1b19ae6ee091fe97}\label{class_fl___window_ad8b2cc5ad0cb171a1b19ae6ee091fe97}} 
+\index{Fl\_Window@{Fl\_Window}!xclass@{xclass}}
+\index{xclass@{xclass}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{xclass()}{xclass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Window\+::xclass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___window_a913bb4f81e4627e5b4a860ef78bca1ff}\label{class_fl___window_a913bb4f81e4627e5b4a860ef78bca1ff}} 
+\index{Fl\_Window@{Fl\_Window}!xclass@{xclass}}
+\index{xclass@{xclass}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{xclass()}{xclass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Window\+::xclass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___window_a0f37fa7a5087b3cb44a4dd7681afa654}\label{class_fl___window_a0f37fa7a5087b3cb44a4dd7681afa654}} 
+\index{Fl\_Window@{Fl\_Window}!y\_root@{y\_root}}
+\index{y\_root@{y\_root}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{y\_root()}{y\_root()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Window\+::y\+\_\+root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_fl___window_abc1661cbd284895df88b4a2372a4a215}\label{class_fl___window_abc1661cbd284895df88b4a2372a4a215}} 
+\index{Fl\_Window@{Fl\_Window}!Fl\_X@{Fl\_X}}
+\index{Fl\_X@{Fl\_X}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{Fl\_X}{Fl\_X}}
+{\footnotesize\ttfamily friend class Fl\+\_\+X\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___window_a8292163f1173f9d5d54b9573270f3cfe}\label{class_fl___window_a8292163f1173f9d5d54b9573270f3cfe}} 
+\index{Fl\_Window@{Fl\_Window}!current\_@{current\_}}
+\index{current\_@{current\_}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{current\_}{current\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}$\ast$ Fl\+\_\+\+Window\+::current\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Stores the last window that was made current. See current() const  \mbox{\Hypertarget{class_fl___window_a06a91a471054d097d6f566856bd7885f}\label{class_fl___window_a06a91a471054d097d6f566856bd7885f}} 
+\index{Fl\_Window@{Fl\_Window}!shape\_data\_@{shape\_data\_}}
+\index{shape\_data\_@{shape\_data\_}!Fl\_Window@{Fl\_Window}}
+\doxysubsubsection{\texorpdfstring{shape\_data\_}{shape\_data\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_fl___window_1_1shape__data__type}{shape\+\_\+data\+\_\+type}}$\ast$ Fl\+\_\+\+Window\+::shape\+\_\+data\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+non-\/null means the window has a non-\/rectangular shape 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___window_8_h}{Fl\+\_\+\+Window.\+H}}\end{DoxyCompactItemize}

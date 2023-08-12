@@ -1,0 +1,131 @@
+\hypertarget{_fl___device_8_h}{}\doxysection{C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\+Fl\+\_\+\+Device.H File Reference}
+\label{_fl___device_8_h}\index{C:/Users/david/Documents/chess-\/ddm/Skak Project/include/FL/Fl\_Device.H@{C:/Users/david/Documents/chess-\/ddm/Skak Project/include/FL/Fl\_Device.H}}
+
+
+declaration of classes \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}, \mbox{\hyperlink{class_fl___surface___device}{Fl\+\_\+\+Surface\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___display___device}{Fl\+\_\+\+Display\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___device___plugin}{Fl\+\_\+\+Device\+\_\+\+Plugin}}.  
+
+
+{\ttfamily \#include $<$F\+L/x.\+H$>$}\newline
+{\ttfamily \#include $<$F\+L/\+Fl\+\_\+\+Plugin.\+H$>$}\newline
+{\ttfamily \#include $<$F\+L/\+Fl\+\_\+\+Image.\+H$>$}\newline
+{\ttfamily \#include $<$F\+L/\+Fl\+\_\+\+Bitmap.\+H$>$}\newline
+{\ttfamily \#include $<$F\+L/\+Fl\+\_\+\+Pixmap.\+H$>$}\newline
+{\ttfamily \#include $<$F\+L/\+Fl\+\_\+\+R\+G\+B\+\_\+\+Image.\+H$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for Fl\+\_\+\+Device.\+H\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_fl___device_8_h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_fl___device_8_h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}}
+\item 
+class \mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}
+\begin{DoxyCompactList}\small\item\em A virtual class subclassed for each graphics driver F\+L\+TK uses. Typically, F\+L\+TK applications do not use directly objects from this class. Rather, they perform drawing operations (e.\+g., \mbox{\hyperlink{class_fl___graphics___driver_a2986a868e9cc8d9141acde94c0fe8ab0}{fl\+\_\+rectf()}}) that operate on the current drawing surface (see \mbox{\hyperlink{class_fl___surface___device}{Fl\+\_\+\+Surface\+\_\+\+Device}}). Drawing operations are functionally presented in drawing and as function lists in the \mbox{\hyperlink{group__fl__drawings}{Drawing functions}} and \mbox{\hyperlink{group__fl__attributes}{Color \& Font functions}} modules. The \mbox{\hyperlink{_fl___device_8_h_a70e4f05429b26bb420c70f64e972f2a5}{fl\+\_\+graphics\+\_\+driver}} global variable gives at any time the graphics driver used by all drawing operations. Its value changes when drawing operations are directed to another drawing surface by \mbox{\hyperlink{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}{Fl\+\_\+\+Surface\+\_\+\+Device\+::set\+\_\+current()}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_fl___graphics___driver_1_1matrix}{Fl\+\_\+\+Graphics\+\_\+\+Driver\+::matrix}}
+\item 
+class \mbox{\hyperlink{class_fl___xlib___graphics___driver}{Fl\+\_\+\+Xlib\+\_\+\+Graphics\+\_\+\+Driver}}
+\begin{DoxyCompactList}\small\item\em The Xlib-\/specific graphics class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_fl___surface___device}{Fl\+\_\+\+Surface\+\_\+\+Device}}
+\item 
+class \mbox{\hyperlink{class_fl___display___device}{Fl\+\_\+\+Display\+\_\+\+Device}}
+\item 
+class \mbox{\hyperlink{class_fl___device___plugin}{Fl\+\_\+\+Device\+\_\+\+Plugin}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_fl___device_8_h_abcfddf51900f110c482eb02d87432955}{X\+P\+O\+I\+NT}}~\mbox{\hyperlink{win32_8_h_a1ff179578a3389b4f8c2ca9ff5820851}{X\+Point}}
+\item 
+\#define \mbox{\hyperlink{_fl___device_8_h_a1bcd38908cba66c659bd98b2d791ca55}{F\+L\+\_\+\+R\+E\+G\+I\+O\+N\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~10
+\item 
+\#define \mbox{\hyperlink{_fl___device_8_h_a28fb61d3423470d0c1220ca380551077}{F\+L\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~32
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$ \mbox{\hyperlink{_fl___device_8_h_a702e2cb8dd542dda67e5c206b0d73a07}{Fl\+\_\+\+Draw\+\_\+\+Image\+\_\+\+Cb}}) (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$\mbox{\hyperlink{jpeglib_8h_aa379dc8ae39e55ae0c431a61a7d2f2bc}{data}}, int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$buf)
+\item 
+typedef short \mbox{\hyperlink{_fl___device_8_h_a80f9cf99cc19414c003f11fbf88aaca6}{C\+O\+O\+R\+D\+\_\+T}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}} $\ast$ \mbox{\hyperlink{_fl___device_8_h_a70e4f05429b26bb420c70f64e972f2a5}{fl\+\_\+graphics\+\_\+driver}}
+\begin{DoxyCompactList}\small\item\em Points to the driver that currently receives all graphics requests. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+declaration of classes \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}, \mbox{\hyperlink{class_fl___surface___device}{Fl\+\_\+\+Surface\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___display___device}{Fl\+\_\+\+Display\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___device___plugin}{Fl\+\_\+\+Device\+\_\+\+Plugin}}. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_fl___device_8_h_a28fb61d3423470d0c1220ca380551077}\label{_fl___device_8_h_a28fb61d3423470d0c1220ca380551077}} 
+\index{Fl\_Device.H@{Fl\_Device.H}!FL\_MATRIX\_STACK\_SIZE@{FL\_MATRIX\_STACK\_SIZE}}
+\index{FL\_MATRIX\_STACK\_SIZE@{FL\_MATRIX\_STACK\_SIZE}!Fl\_Device.H@{Fl\_Device.H}}
+\doxysubsubsection{\texorpdfstring{FL\_MATRIX\_STACK\_SIZE}{FL\_MATRIX\_STACK\_SIZE}}
+{\footnotesize\ttfamily \#define F\+L\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~32}
+
+\mbox{\Hypertarget{_fl___device_8_h_a1bcd38908cba66c659bd98b2d791ca55}\label{_fl___device_8_h_a1bcd38908cba66c659bd98b2d791ca55}} 
+\index{Fl\_Device.H@{Fl\_Device.H}!FL\_REGION\_STACK\_SIZE@{FL\_REGION\_STACK\_SIZE}}
+\index{FL\_REGION\_STACK\_SIZE@{FL\_REGION\_STACK\_SIZE}!Fl\_Device.H@{Fl\_Device.H}}
+\doxysubsubsection{\texorpdfstring{FL\_REGION\_STACK\_SIZE}{FL\_REGION\_STACK\_SIZE}}
+{\footnotesize\ttfamily \#define F\+L\+\_\+\+R\+E\+G\+I\+O\+N\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE~10}
+
+\mbox{\Hypertarget{_fl___device_8_h_abcfddf51900f110c482eb02d87432955}\label{_fl___device_8_h_abcfddf51900f110c482eb02d87432955}} 
+\index{Fl\_Device.H@{Fl\_Device.H}!XPOINT@{XPOINT}}
+\index{XPOINT@{XPOINT}!Fl\_Device.H@{Fl\_Device.H}}
+\doxysubsubsection{\texorpdfstring{XPOINT}{XPOINT}}
+{\footnotesize\ttfamily \#define X\+P\+O\+I\+NT~\mbox{\hyperlink{win32_8_h_a1ff179578a3389b4f8c2ca9ff5820851}{X\+Point}}}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_fl___device_8_h_a80f9cf99cc19414c003f11fbf88aaca6}\label{_fl___device_8_h_a80f9cf99cc19414c003f11fbf88aaca6}} 
+\index{Fl\_Device.H@{Fl\_Device.H}!COORD\_T@{COORD\_T}}
+\index{COORD\_T@{COORD\_T}!Fl\_Device.H@{Fl\_Device.H}}
+\doxysubsubsection{\texorpdfstring{COORD\_T}{COORD\_T}}
+{\footnotesize\ttfamily typedef short \mbox{\hyperlink{_fl___device_8_h_a80f9cf99cc19414c003f11fbf88aaca6}{C\+O\+O\+R\+D\+\_\+T}}}
+
+\mbox{\Hypertarget{_fl___device_8_h_a702e2cb8dd542dda67e5c206b0d73a07}\label{_fl___device_8_h_a702e2cb8dd542dda67e5c206b0d73a07}} 
+\index{Fl\_Device.H@{Fl\_Device.H}!Fl\_Draw\_Image\_Cb@{Fl\_Draw\_Image\_Cb}}
+\index{Fl\_Draw\_Image\_Cb@{Fl\_Draw\_Image\_Cb}!Fl\_Device.H@{Fl\_Device.H}}
+\doxysubsubsection{\texorpdfstring{Fl\_Draw\_Image\_Cb}{Fl\_Draw\_Image\_Cb}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$ Fl\+\_\+\+Draw\+\_\+\+Image\+\_\+\+Cb) (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$\mbox{\hyperlink{jpeglib_8h_aa379dc8ae39e55ae0c431a61a7d2f2bc}{data}}, int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$buf)}
+
+signature of image generation callback function. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data} & user data passed to function \\
+\hline
+\mbox{\texttt{ in}}  & {\em x,y,w} & position and width of scan line in image \\
+\hline
+\mbox{\texttt{ out}}  & {\em buf} & buffer for generated image data. You must copy {\ttfamily w} pixels from scanline {\ttfamily y}, starting at pixel {\ttfamily x} to this buffer. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_fl___device_8_h_a70e4f05429b26bb420c70f64e972f2a5}\label{_fl___device_8_h_a70e4f05429b26bb420c70f64e972f2a5}} 
+\index{Fl\_Device.H@{Fl\_Device.H}!fl\_graphics\_driver@{fl\_graphics\_driver}}
+\index{fl\_graphics\_driver@{fl\_graphics\_driver}!Fl\_Device.H@{Fl\_Device.H}}
+\doxysubsubsection{\texorpdfstring{fl\_graphics\_driver}{fl\_graphics\_driver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}$\ast$ fl\+\_\+graphics\+\_\+driver}
+
+
+
+Points to the driver that currently receives all graphics requests. 
+

@@ -1,0 +1,161 @@
+\hypertarget{class_fl___image___surface}{}\doxysection{Fl\+\_\+\+Image\+\_\+\+Surface Class Reference}
+\label{class_fl___image___surface}\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Image\+\_\+\+Surface.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Image\+\_\+\+Surface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_fl___image___surface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Image\+\_\+\+Surface\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_fl___image___surface__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___image___surface_a24b6b8bf7a0fea1fad2924a048f96ab9}{class\+\_\+name}} ()
+\item 
+\mbox{\hyperlink{class_fl___image___surface_af36c87480a7a49459918f692514cad9f}{Fl\+\_\+\+Image\+\_\+\+Surface}} (int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}, int highres)
+\item 
+\mbox{\hyperlink{class_fl___image___surface_a0bcc5c8a9b0ab6bfe3712cd550956506}{Fl\+\_\+\+Image\+\_\+\+Surface}} (int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}})
+\item 
+\mbox{\hyperlink{class_fl___image___surface_a56a48acc6a0674bb4ae31e817100552e}{$\sim$\+Fl\+\_\+\+Image\+\_\+\+Surface}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image___surface_a4b8a38a196aa91bfded34751792b237b}{set\+\_\+current}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image___surface_a0c4a97f89c9b0fc091d8d2c0be7da0ce}{draw}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$, int delta\+\_\+x=0, int delta\+\_\+y=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image___surface_acbfb32d505632286b9f59e5204761979}{draw\+\_\+decorated\+\_\+window}} (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$win, int delta\+\_\+x=0, int delta\+\_\+y=0)
+\item 
+\mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___image___surface_ab9034b7cc16d89886896b82b72b7e29b}{image}} ()
+\item 
+\mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___image___surface_ae2098213d133964c74fed9e5e67dbfcf}{highres\+\_\+image}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___image___surface_a4a9edc80546e6d1767ae29347261d15e}{class\+\_\+id}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Directs all graphics requests to an \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}.
+
+After creation of an \mbox{\hyperlink{class_fl___image___surface}{Fl\+\_\+\+Image\+\_\+\+Surface}} object, call \mbox{\hyperlink{class_fl___image___surface_a4b8a38a196aa91bfded34751792b237b}{set\+\_\+current()}} on it, and all subsequent graphics requests will be recorded in the image. It\textquotesingle{}s possible to draw widgets (using \mbox{\hyperlink{class_fl___image___surface_a0c4a97f89c9b0fc091d8d2c0be7da0ce}{Fl\+\_\+\+Image\+\_\+\+Surface\+::draw()}}) or to use any of the \mbox{\hyperlink{group__fl__drawings}{Drawing functions}} or the \mbox{\hyperlink{group__fl__attributes}{Color \& Font functions}}. Finally, call \mbox{\hyperlink{class_fl___image___surface_ab9034b7cc16d89886896b82b72b7e29b}{image()}} on the object to obtain a newly allocated \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} object. ~\newline
+ Fl\+\_\+\+G\+L\+\_\+\+Window objects can be drawn in the image as well.
+
+~\newline
+ Usage example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *g = ...; \textcolor{comment}{// a widget you want to draw in an image}}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___image___surface}{Fl\_Image\_Surface}} *img\_surf = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___image___surface_af36c87480a7a49459918f692514cad9f}{Fl\_Image\_Surface}}(g-\/>\mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}(), g-\/>\mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}()); \textcolor{comment}{// create an Fl\_Image\_Surface object}}
+\DoxyCodeLine{img\_surf-\/>\mbox{\hyperlink{class_fl___image___surface_a4b8a38a196aa91bfded34751792b237b}{set\_current}}(); \textcolor{comment}{// direct graphics requests to the image}}
+\DoxyCodeLine{\mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\_color}}(\mbox{\hyperlink{_enumerations_8_h_ac1600c6c32be996f90f133cdc4135292}{FL\_WHITE}}); \mbox{\hyperlink{group__fl__drawings_ga2986a868e9cc8d9141acde94c0fe8ab0}{fl\_rectf}}(0, 0, g-\/>\mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}(), g-\/>\mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}()); \textcolor{comment}{// draw a white background}}
+\DoxyCodeLine{img\_surf-\/>\mbox{\hyperlink{class_fl___image___surface_a0c4a97f89c9b0fc091d8d2c0be7da0ce}{draw}}(g); \textcolor{comment}{// draw the g widget in the image}}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___r_g_b___image}{Fl\_RGB\_Image}}* \mbox{\hyperlink{class_fl___image___surface_ab9034b7cc16d89886896b82b72b7e29b}{image}} = img\_surf-\/>\mbox{\hyperlink{class_fl___image___surface_ab9034b7cc16d89886896b82b72b7e29b}{image}}(); \textcolor{comment}{// get the resulting image}}
+\DoxyCodeLine{\textcolor{keyword}{delete} img\_surf; \textcolor{comment}{// delete the img\_surf object}}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___display___device_a888806f46c16a0c6cc7297fe553f535c}{Fl\_Display\_Device::display\_device}}()-\/>\mbox{\hyperlink{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}{set\_current}}();  \textcolor{comment}{// direct graphics requests back to the display}}
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___image___surface_af36c87480a7a49459918f692514cad9f}\label{class_fl___image___surface_af36c87480a7a49459918f692514cad9f}} 
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\doxysubsubsection{\texorpdfstring{Fl\_Image\_Surface()}{Fl\_Image\_Surface()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Image\+\_\+\+Surface\+::\+Fl\+\_\+\+Image\+\_\+\+Surface (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{highres }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___image___surface_a0bcc5c8a9b0ab6bfe3712cd550956506}\label{class_fl___image___surface_a0bcc5c8a9b0ab6bfe3712cd550956506}} 
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\doxysubsubsection{\texorpdfstring{Fl\_Image\_Surface()}{Fl\_Image\_Surface()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Image\+\_\+\+Surface\+::\+Fl\+\_\+\+Image\+\_\+\+Surface (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___image___surface_a56a48acc6a0674bb4ae31e817100552e}\label{class_fl___image___surface_a56a48acc6a0674bb4ae31e817100552e}} 
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!````~Fl\_Image\_Surface@{$\sim$Fl\_Image\_Surface}}
+\index{````~Fl\_Image\_Surface@{$\sim$Fl\_Image\_Surface}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Image\_Surface()}{~Fl\_Image\_Surface()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Image\+\_\+\+Surface\+::$\sim$\+Fl\+\_\+\+Image\+\_\+\+Surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___image___surface_a24b6b8bf7a0fea1fad2924a048f96ab9}\label{class_fl___image___surface_a24b6b8bf7a0fea1fad2924a048f96ab9}} 
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!class\_name@{class\_name}}
+\index{class\_name@{class\_name}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\doxysubsubsection{\texorpdfstring{class\_name()}{class\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Image\+\_\+\+Surface\+::class\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the class of this object. Use of the \mbox{\hyperlink{class_fl___image___surface_a24b6b8bf7a0fea1fad2924a048f96ab9}{class\+\_\+name()}} function is discouraged because it will be removed from future F\+L\+TK versions.
+
+The class of an instance of an \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}} subclass can be checked with code such as\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( instance-\/>class\_name() == \mbox{\hyperlink{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}{Fl\_Printer::class\_id}} ) \{ ... \}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___surface___device_a1162e0cf051b2c95dd88091ef3b833df}{Fl\+\_\+\+Surface\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___image___surface_a0c4a97f89c9b0fc091d8d2c0be7da0ce}\label{class_fl___image___surface_a0c4a97f89c9b0fc091d8d2c0be7da0ce}} 
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!draw@{draw}}
+\index{draw@{draw}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+\_\+\+Surface\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{,  }\item[{int}]{delta\+\_\+x = {\ttfamily 0},  }\item[{int}]{delta\+\_\+y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___image___surface_acbfb32d505632286b9f59e5204761979}\label{class_fl___image___surface_acbfb32d505632286b9f59e5204761979}} 
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!draw\_decorated\_window@{draw\_decorated\_window}}
+\index{draw\_decorated\_window@{draw\_decorated\_window}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\doxysubsubsection{\texorpdfstring{draw\_decorated\_window()}{draw\_decorated\_window()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+\_\+\+Surface\+::draw\+\_\+decorated\+\_\+window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$}]{win,  }\item[{int}]{delta\+\_\+x = {\ttfamily 0},  }\item[{int}]{delta\+\_\+y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___image___surface_ae2098213d133964c74fed9e5e67dbfcf}\label{class_fl___image___surface_ae2098213d133964c74fed9e5e67dbfcf}} 
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!highres\_image@{highres\_image}}
+\index{highres\_image@{highres\_image}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\doxysubsubsection{\texorpdfstring{highres\_image()}{highres\_image()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Image\+\_\+\+Surface\+::highres\+\_\+image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___image___surface_ab9034b7cc16d89886896b82b72b7e29b}\label{class_fl___image___surface_ab9034b7cc16d89886896b82b72b7e29b}} 
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!image@{image}}
+\index{image@{image}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Image\+\_\+\+Surface\+::image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___image___surface_a4b8a38a196aa91bfded34751792b237b}\label{class_fl___image___surface_a4b8a38a196aa91bfded34751792b237b}} 
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!set\_current@{set\_current}}
+\index{set\_current@{set\_current}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\doxysubsubsection{\texorpdfstring{set\_current()}{set\_current()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+\_\+\+Surface\+::set\+\_\+current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}{Fl\+\_\+\+Surface\+\_\+\+Device}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___image___surface_a4a9edc80546e6d1767ae29347261d15e}\label{class_fl___image___surface_a4a9edc80546e6d1767ae29347261d15e}} 
+\index{Fl\_Image\_Surface@{Fl\_Image\_Surface}!class\_id@{class\_id}}
+\index{class\_id@{class\_id}!Fl\_Image\_Surface@{Fl\_Image\_Surface}}
+\doxysubsubsection{\texorpdfstring{class\_id}{class\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Image\+\_\+\+Surface\+::class\+\_\+id\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___image___surface_8_h}{Fl\+\_\+\+Image\+\_\+\+Surface.\+H}}\end{DoxyCompactItemize}

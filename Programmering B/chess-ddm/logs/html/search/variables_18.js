@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['x_7224',['X',['../struct_fl___glut___stroke_vertex.html#ae9798f36bbdfe85b11e21d0fce76b958',1,'Fl_Glut_StrokeVertex::X()'],['../struct_fl___graphics___driver_1_1matrix.html#acb41790eabd000e1228cad28ffd45124',1,'Fl_Graphics_Driver::matrix::x()'],['../struct_fl___help___block.html#aee9b1066b0b87362519b0aaa0bd5b525',1,'Fl_Help_Block::x()'],['../struct_fl___help___link.html#ae4779c7f0291c60fdeb00eb088133fe2',1,'Fl_Help_Link::x()'],['../class_fl___post_script___graphics___driver_1_1_clip.html#a82247f1a1bdd81cc69aae2355bb886e2',1,'Fl_PostScript_Graphics_Driver::Clip::x()'],['../struct_fl___scroll_1_1_scroll_info_1_1_fl___region___x_y_w_h.html#aa61fc5a84f4c730d13ef71b83dacd3de',1,'Fl_Scroll::ScrollInfo::Fl_Region_XYWH::x()'],['../struct_fl___scroll_1_1_scroll_info_1_1_fl___scrollbar___data.html#a47f6d2936027e858ae6044ac176181a6',1,'Fl_Scroll::ScrollInfo::Fl_Scrollbar_Data::x()'],['../class_fl___text___display.html#a553086d9e30bf6745c02ba228e43db1c',1,'Fl_Text_Display::x()']]],
+  ['x_5fdensity_7225',['X_density',['../structjpeg__compress__struct.html#adef3c4b809ebca2a853b5659e177deaa',1,'jpeg_compress_struct::X_density()'],['../structjpeg__decompress__struct.html#a69f0da1031f16c621438d123921ba745',1,'jpeg_decompress_struct::X_density()']]],
+  ['x_5foffset_7226',['x_offset',['../class_fl___paged___device.html#ae57b70100d098bdd8657f399cc6fbd0a',1,'Fl_Paged_Device']]],
+  ['xflags_7227',['xflags',['../structgz__header__s.html#a40e35dc1a967c6537c6012cf5416210a',1,'gz_header_s']]]
+];

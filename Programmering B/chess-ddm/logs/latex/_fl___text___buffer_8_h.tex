@@ -1,0 +1,78 @@
+\hypertarget{_fl___text___buffer_8_h}{}\doxysection{C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\+Fl\+\_\+\+Text\+\_\+\+Buffer.H File Reference}
+\label{_fl___text___buffer_8_h}\index{C:/Users/david/Documents/chess-\/ddm/Skak Project/include/FL/Fl\_Text\_Buffer.H@{C:/Users/david/Documents/chess-\/ddm/Skak Project/include/FL/Fl\_Text\_Buffer.H}}
+{\ttfamily \#include \char`\"{}Fl\+\_\+\+Export.\+H\char`\"{}}\newline
+Include dependency graph for Fl\+\_\+\+Text\+\_\+\+Buffer.\+H\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{_fl___text___buffer_8_h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{_fl___text___buffer_8_h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}}
+\begin{DoxyCompactList}\small\item\em This is an internal class for \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} to manage text selections. This class works correctly with U\+T\+F-\/8 strings assuming that the parameters for all calls are on character boundaries. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}}
+\begin{DoxyCompactList}\small\item\em This class manages Unicode text displayed in one or more \mbox{\hyperlink{class_fl___text___display}{Fl\+\_\+\+Text\+\_\+\+Display}} widgets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_fl___text___buffer_8_h_acae0ad63ad39752e4e636f2377d5b71d}{I\+S\+\_\+\+U\+T\+F8\+\_\+\+A\+L\+I\+G\+N\+ED}}(a)
+\item 
+\#define \mbox{\hyperlink{_fl___text___buffer_8_h_abb7018b201a55f41f1f392c784613904}{I\+S\+\_\+\+U\+T\+F8\+\_\+\+A\+L\+I\+G\+N\+E\+D2}}(a,  \mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\item 
+\#define \mbox{\hyperlink{_fl___text___buffer_8_h_aca48bba5d04e6174920efb35b079d107}{F\+L\+\_\+\+T\+E\+X\+T\+\_\+\+M\+A\+X\+\_\+\+E\+X\+P\+\_\+\+C\+H\+A\+R\+\_\+\+L\+EN}}~20
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$ \mbox{\hyperlink{_fl___text___buffer_8_h_ae3f9ce6427d687a8714a4c7f2572bd29}{Fl\+\_\+\+Text\+\_\+\+Modify\+\_\+\+Cb}}) (int pos, int n\+Inserted, int n\+Deleted, int n\+Restyled, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$deleted\+Text, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)
+\item 
+typedef \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$ \mbox{\hyperlink{_fl___text___buffer_8_h_a6332a42d32987dfd522b063701df60b4}{Fl\+\_\+\+Text\+\_\+\+Predelete\+\_\+\+Cb}}) (int pos, int n\+Deleted, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_fl___text___buffer_8_h_aca48bba5d04e6174920efb35b079d107}\label{_fl___text___buffer_8_h_aca48bba5d04e6174920efb35b079d107}} 
+\index{Fl\_Text\_Buffer.H@{Fl\_Text\_Buffer.H}!FL\_TEXT\_MAX\_EXP\_CHAR\_LEN@{FL\_TEXT\_MAX\_EXP\_CHAR\_LEN}}
+\index{FL\_TEXT\_MAX\_EXP\_CHAR\_LEN@{FL\_TEXT\_MAX\_EXP\_CHAR\_LEN}!Fl\_Text\_Buffer.H@{Fl\_Text\_Buffer.H}}
+\doxysubsubsection{\texorpdfstring{FL\_TEXT\_MAX\_EXP\_CHAR\_LEN}{FL\_TEXT\_MAX\_EXP\_CHAR\_LEN}}
+{\footnotesize\ttfamily \#define F\+L\+\_\+\+T\+E\+X\+T\+\_\+\+M\+A\+X\+\_\+\+E\+X\+P\+\_\+\+C\+H\+A\+R\+\_\+\+L\+EN~20}
+
+\mbox{\Hypertarget{_fl___text___buffer_8_h_acae0ad63ad39752e4e636f2377d5b71d}\label{_fl___text___buffer_8_h_acae0ad63ad39752e4e636f2377d5b71d}} 
+\index{Fl\_Text\_Buffer.H@{Fl\_Text\_Buffer.H}!IS\_UTF8\_ALIGNED@{IS\_UTF8\_ALIGNED}}
+\index{IS\_UTF8\_ALIGNED@{IS\_UTF8\_ALIGNED}!Fl\_Text\_Buffer.H@{Fl\_Text\_Buffer.H}}
+\doxysubsubsection{\texorpdfstring{IS\_UTF8\_ALIGNED}{IS\_UTF8\_ALIGNED}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+U\+T\+F8\+\_\+\+A\+L\+I\+G\+N\+ED(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_fl___text___buffer_8_h_abb7018b201a55f41f1f392c784613904}\label{_fl___text___buffer_8_h_abb7018b201a55f41f1f392c784613904}} 
+\index{Fl\_Text\_Buffer.H@{Fl\_Text\_Buffer.H}!IS\_UTF8\_ALIGNED2@{IS\_UTF8\_ALIGNED2}}
+\index{IS\_UTF8\_ALIGNED2@{IS\_UTF8\_ALIGNED2}!Fl\_Text\_Buffer.H@{Fl\_Text\_Buffer.H}}
+\doxysubsubsection{\texorpdfstring{IS\_UTF8\_ALIGNED2}{IS\_UTF8\_ALIGNED2}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+U\+T\+F8\+\_\+\+A\+L\+I\+G\+N\+E\+D2(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{\mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_fl___text___buffer_8_h_ae3f9ce6427d687a8714a4c7f2572bd29}\label{_fl___text___buffer_8_h_ae3f9ce6427d687a8714a4c7f2572bd29}} 
+\index{Fl\_Text\_Buffer.H@{Fl\_Text\_Buffer.H}!Fl\_Text\_Modify\_Cb@{Fl\_Text\_Modify\_Cb}}
+\index{Fl\_Text\_Modify\_Cb@{Fl\_Text\_Modify\_Cb}!Fl\_Text\_Buffer.H@{Fl\_Text\_Buffer.H}}
+\doxysubsubsection{\texorpdfstring{Fl\_Text\_Modify\_Cb}{Fl\_Text\_Modify\_Cb}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$ Fl\+\_\+\+Text\+\_\+\+Modify\+\_\+\+Cb) (int pos, int n\+Inserted, int n\+Deleted, int n\+Restyled, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$deleted\+Text, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)}
+
+\mbox{\Hypertarget{_fl___text___buffer_8_h_a6332a42d32987dfd522b063701df60b4}\label{_fl___text___buffer_8_h_a6332a42d32987dfd522b063701df60b4}} 
+\index{Fl\_Text\_Buffer.H@{Fl\_Text\_Buffer.H}!Fl\_Text\_Predelete\_Cb@{Fl\_Text\_Predelete\_Cb}}
+\index{Fl\_Text\_Predelete\_Cb@{Fl\_Text\_Predelete\_Cb}!Fl\_Text\_Buffer.H@{Fl\_Text\_Buffer.H}}
+\doxysubsubsection{\texorpdfstring{Fl\_Text\_Predelete\_Cb}{Fl\_Text\_Predelete\_Cb}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$ Fl\+\_\+\+Text\+\_\+\+Predelete\+\_\+\+Cb) (int pos, int n\+Deleted, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$cb\+Arg)}
+

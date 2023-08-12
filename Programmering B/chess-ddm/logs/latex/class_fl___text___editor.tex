@@ -1,0 +1,504 @@
+\hypertarget{class_fl___text___editor}{}\doxysection{Fl\+\_\+\+Text\+\_\+\+Editor Class Reference}
+\label{class_fl___text___editor}\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Text\+\_\+\+Editor.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Text\+\_\+\+Editor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_fl___text___editor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Text\+\_\+\+Editor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___text___editor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef int($\ast$ \mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}}) (int key, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$editor)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___text___editor_ae62a6e795b53c0f01f267cb616080335}{Fl\+\_\+\+Text\+\_\+\+Editor}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\item 
+\mbox{\hyperlink{class_fl___text___editor_a005c8d6cace04036426ee2b301291ffd}{$\sim$\+Fl\+\_\+\+Text\+\_\+\+Editor}} ()
+\item 
+virtual int \mbox{\hyperlink{class_fl___text___editor_a5f1e480c0d50b17ae97c525b4faea396}{handle}} (int e)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_ac1f75b1873c079b9510c066e692421fc}{insert\+\_\+mode}} (int \mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\item 
+int \mbox{\hyperlink{class_fl___text___editor_a935f78e557ab505413eed5c190e3f195}{insert\+\_\+mode}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_a0ea7fb2bdad4daaf4454d408b780ac4e}{tab\+\_\+nav}} (int \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+int \mbox{\hyperlink{class_fl___text___editor_a33b585fb31e83c26b1d90f708855b0d8}{tab\+\_\+nav}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_a6d8e782a3c24702868d568c0fba226c3}{add\+\_\+key\+\_\+binding}} (int key, int state, \mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}} f, \mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$$\ast$list)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_a33d36d52a2925b1a335769e503ac4c9b}{add\+\_\+key\+\_\+binding}} (int key, int state, \mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}} f)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_ab0d1e68ab3570fe5bc125054f38333b3}{remove\+\_\+key\+\_\+binding}} (int key, int state, \mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$$\ast$list)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_a09e4787fb85c53f6da50aa3826a308d7}{remove\+\_\+key\+\_\+binding}} (int key, int state)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_a455496c72734a0b210569b9852cc2056}{remove\+\_\+all\+\_\+key\+\_\+bindings}} (\mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$$\ast$list)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_aa5c3f42b63073255e3cf16650c8a9b45}{remove\+\_\+all\+\_\+key\+\_\+bindings}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_a4e34de17527446d0fb2bc8337cc95750}{add\+\_\+default\+\_\+key\+\_\+bindings}} (\mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$$\ast$list)
+\item 
+\mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}} \mbox{\hyperlink{class_fl___text___editor_afdb12b3360089ac4c66282a295c9c77f}{bound\+\_\+key\+\_\+function}} (int key, int state, \mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$list) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}} \mbox{\hyperlink{class_fl___text___editor_a8ba0152cfc12505acd065c343f24eca9}{bound\+\_\+key\+\_\+function}} (int key, int state) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_aef165a4308f3004c43912bc13621d4ac}{default\+\_\+key\+\_\+function}} (\mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}} f)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_aa1f11357af8e235d1ffc19628734de70}{kf\+\_\+default}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_af7aa7b7e960efa8f5a0e9585809fe826}{kf\+\_\+ignore}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a853a8b949f8a1b059d2131bedbf7f39e}{kf\+\_\+backspace}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_ae77bf4027fb370b2966b76043f9ba76b}{kf\+\_\+enter}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a9cc339d9d45a5648fe4a6c52c2e3f7d5}{kf\+\_\+move}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a6bf172a514a6ae76c507e820fea5b489}{kf\+\_\+shift\+\_\+move}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a832c5b6ca78e78e910ff01b48307f2ab}{kf\+\_\+ctrl\+\_\+move}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_afb334a473c3b2fbe4e5ec1c06cb77bf7}{kf\+\_\+c\+\_\+s\+\_\+move}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a00042ee66c9832faae3d16c8a8cd8b09}{kf\+\_\+meta\+\_\+move}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a3b4eb37fb5779955c7a7d662d3ca7632}{kf\+\_\+m\+\_\+s\+\_\+move}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_acdb925adadb178135cc2f88ff18fb4e4}{kf\+\_\+home}} (int, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_aaa3c4e5bc85cc74d6ec47d9b6730b068}{kf\+\_\+end}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a47687c78a85d94fdc9664e7f03004e93}{kf\+\_\+left}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a8304534c77393c31c784cdba85d1f29b}{kf\+\_\+up}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_aef2a531e3c7a8a1c967d3e05353284fa}{kf\+\_\+right}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a451163e2f1b0657ff77bfcf0f0bbf286}{kf\+\_\+down}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a84967a7b9f09427be71fe73bacce0ba4}{kf\+\_\+page\+\_\+up}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a12a0cd65bb42ce11a49d4ee37ca3255b}{kf\+\_\+page\+\_\+down}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a3008e51dd9ea1844d005532deac05a03}{kf\+\_\+insert}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a9b5d25bf4471c6cc06c1f46417848f11}{kf\+\_\+delete}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_abf93061e974554508196fc70a3cbb42a}{kf\+\_\+copy}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_ae939fecf5215e0662d280623ab415806}{kf\+\_\+cut}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_abcd424feb82f34dc1dc9954023a6203c}{kf\+\_\+paste}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_ae36b8b553055c0b2bc745291bb057e55}{kf\+\_\+select\+\_\+all}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\item 
+static int \mbox{\hyperlink{class_fl___text___editor_a3b9489812c561b950d068b5f9253d5af}{kf\+\_\+undo}} (int c, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___text___editor_ad91b1716f8d9eea6d1c5ac2ab084077a}{handle\+\_\+key}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___editor_a58bd2347be44bd8dd1636712dc424b9b}{maybe\+\_\+do\+\_\+callback}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___text___editor_ae373dfe763e9ba2f4dd5006b84b4f395}{insert\+\_\+mode\+\_\+}}
+\item 
+\mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$ \mbox{\hyperlink{class_fl___text___editor_a62f36b68213996f5e4cf195e65d4bc77}{key\+\_\+bindings}}
+\item 
+\mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}} \mbox{\hyperlink{class_fl___text___editor_a12c2905db06a0fbc9ed4e45805c51722}{default\+\_\+key\+\_\+function\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$ \mbox{\hyperlink{class_fl___text___editor_aa8aa53bee028f24c393d8233156e5c37}{global\+\_\+key\+\_\+bindings}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This is the F\+L\+TK text editor widget.
+
+It allows the user to edit multiple lines of text and supports highlighting and scrolling. The buffer that is displayed in the widget is managed by the \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} class. 
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}\label{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!Key\_Func@{Key\_Func}}
+\index{Key\_Func@{Key\_Func}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{Key\_Func}{Key\_Func}}
+{\footnotesize\ttfamily typedef int($\ast$ Fl\+\_\+\+Text\+\_\+\+Editor\+::\+Key\+\_\+\+Func) (int key, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$editor)}
+
+Key function binding callback type. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___text___editor_ae62a6e795b53c0f01f267cb616080335}\label{class_fl___text___editor_ae62a6e795b53c0f01f267cb616080335}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{Fl\_Text\_Editor()}{Fl\_Text\_Editor()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Text\+\_\+\+Editor\+::\+Fl\+\_\+\+Text\+\_\+\+Editor (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___editor_a005c8d6cace04036426ee2b301291ffd}\label{class_fl___text___editor_a005c8d6cace04036426ee2b301291ffd}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!````~Fl\_Text\_Editor@{$\sim$Fl\_Text\_Editor}}
+\index{````~Fl\_Text\_Editor@{$\sim$Fl\_Text\_Editor}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Text\_Editor()}{~Fl\_Text\_Editor()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Text\+\_\+\+Editor\+::$\sim$\+Fl\+\_\+\+Text\+\_\+\+Editor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___text___editor_a4e34de17527446d0fb2bc8337cc95750}\label{class_fl___text___editor_a4e34de17527446d0fb2bc8337cc95750}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!add\_default\_key\_bindings@{add\_default\_key\_bindings}}
+\index{add\_default\_key\_bindings@{add\_default\_key\_bindings}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{add\_default\_key\_bindings()}{add\_default\_key\_bindings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::add\+\_\+default\+\_\+key\+\_\+bindings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$$\ast$}]{list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___editor_a33d36d52a2925b1a335769e503ac4c9b}\label{class_fl___text___editor_a33d36d52a2925b1a335769e503ac4c9b}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!add\_key\_binding@{add\_key\_binding}}
+\index{add\_key\_binding@{add\_key\_binding}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{add\_key\_binding()}{add\_key\_binding()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::add\+\_\+key\+\_\+binding (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{state,  }\item[{\mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a {\ttfamily key} of state {\ttfamily state} with the function {\ttfamily f}. \mbox{\Hypertarget{class_fl___text___editor_a6d8e782a3c24702868d568c0fba226c3}\label{class_fl___text___editor_a6d8e782a3c24702868d568c0fba226c3}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!add\_key\_binding@{add\_key\_binding}}
+\index{add\_key\_binding@{add\_key\_binding}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{add\_key\_binding()}{add\_key\_binding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::add\+\_\+key\+\_\+binding (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{state,  }\item[{\mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}}}]{f,  }\item[{\mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$$\ast$}]{list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___editor_a8ba0152cfc12505acd065c343f24eca9}\label{class_fl___text___editor_a8ba0152cfc12505acd065c343f24eca9}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!bound\_key\_function@{bound\_key\_function}}
+\index{bound\_key\_function@{bound\_key\_function}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{bound\_key\_function()}{bound\_key\_function()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}} Fl\+\_\+\+Text\+\_\+\+Editor\+::bound\+\_\+key\+\_\+function (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{state }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the function associated with a key binding. \mbox{\Hypertarget{class_fl___text___editor_afdb12b3360089ac4c66282a295c9c77f}\label{class_fl___text___editor_afdb12b3360089ac4c66282a295c9c77f}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!bound\_key\_function@{bound\_key\_function}}
+\index{bound\_key\_function@{bound\_key\_function}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{bound\_key\_function()}{bound\_key\_function()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}} Fl\+\_\+\+Text\+\_\+\+Editor\+::bound\+\_\+key\+\_\+function (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{state,  }\item[{\mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$}]{list }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___editor_aef165a4308f3004c43912bc13621d4ac}\label{class_fl___text___editor_aef165a4308f3004c43912bc13621d4ac}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!default\_key\_function@{default\_key\_function}}
+\index{default\_key\_function@{default\_key\_function}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{default\_key\_function()}{default\_key\_function()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::default\+\_\+key\+\_\+function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the default key function for unassigned keys. \mbox{\Hypertarget{class_fl___text___editor_a5f1e480c0d50b17ae97c525b4faea396}\label{class_fl___text___editor_a5f1e480c0d50b17ae97c525b4faea396}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!handle@{handle}}
+\index{handle@{handle}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily virtual int Fl\+\_\+\+Text\+\_\+\+Editor\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___text___editor_a5f1e480c0d50b17ae97c525b4faea396}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___text___display_a38b01043100644a6efc04a35aa232b3c}{Fl\+\_\+\+Text\+\_\+\+Display}}.
+
+\mbox{\Hypertarget{class_fl___text___editor_ad91b1716f8d9eea6d1c5ac2ab084077a}\label{class_fl___text___editor_ad91b1716f8d9eea6d1c5ac2ab084077a}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!handle\_key@{handle\_key}}
+\index{handle\_key@{handle\_key}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{handle\_key()}{handle\_key()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Editor\+::handle\+\_\+key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a935f78e557ab505413eed5c190e3f195}\label{class_fl___text___editor_a935f78e557ab505413eed5c190e3f195}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!insert\_mode@{insert\_mode}}
+\index{insert\_mode@{insert\_mode}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{insert\_mode()}{insert\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Editor\+::insert\+\_\+mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the current insert mode; if non-\/zero, new text is inserted before the current cursor position. Otherwise, new text replaces text at the current cursor position. \mbox{\Hypertarget{class_fl___text___editor_ac1f75b1873c079b9510c066e692421fc}\label{class_fl___text___editor_ac1f75b1873c079b9510c066e692421fc}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!insert\_mode@{insert\_mode}}
+\index{insert\_mode@{insert\_mode}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{insert\_mode()}{insert\_mode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::insert\+\_\+mode (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current insert mode; if non-\/zero, new text is inserted before the current cursor position. Otherwise, new text replaces text at the current cursor position. \mbox{\Hypertarget{class_fl___text___editor_a853a8b949f8a1b059d2131bedbf7f39e}\label{class_fl___text___editor_a853a8b949f8a1b059d2131bedbf7f39e}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_backspace@{kf\_backspace}}
+\index{kf\_backspace@{kf\_backspace}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_backspace()}{kf\_backspace()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+backspace (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_afb334a473c3b2fbe4e5ec1c06cb77bf7}\label{class_fl___text___editor_afb334a473c3b2fbe4e5ec1c06cb77bf7}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_c\_s\_move@{kf\_c\_s\_move}}
+\index{kf\_c\_s\_move@{kf\_c\_s\_move}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_c\_s\_move()}{kf\_c\_s\_move()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+c\+\_\+s\+\_\+move (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_abf93061e974554508196fc70a3cbb42a}\label{class_fl___text___editor_abf93061e974554508196fc70a3cbb42a}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_copy@{kf\_copy}}
+\index{kf\_copy@{kf\_copy}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_copy()}{kf\_copy()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+copy (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a832c5b6ca78e78e910ff01b48307f2ab}\label{class_fl___text___editor_a832c5b6ca78e78e910ff01b48307f2ab}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_ctrl\_move@{kf\_ctrl\_move}}
+\index{kf\_ctrl\_move@{kf\_ctrl\_move}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_ctrl\_move()}{kf\_ctrl\_move()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+ctrl\+\_\+move (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_ae939fecf5215e0662d280623ab415806}\label{class_fl___text___editor_ae939fecf5215e0662d280623ab415806}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_cut@{kf\_cut}}
+\index{kf\_cut@{kf\_cut}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_cut()}{kf\_cut()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+cut (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_aa1f11357af8e235d1ffc19628734de70}\label{class_fl___text___editor_aa1f11357af8e235d1ffc19628734de70}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_default@{kf\_default}}
+\index{kf\_default@{kf\_default}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_default()}{kf\_default()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+default (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a9b5d25bf4471c6cc06c1f46417848f11}\label{class_fl___text___editor_a9b5d25bf4471c6cc06c1f46417848f11}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_delete@{kf\_delete}}
+\index{kf\_delete@{kf\_delete}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_delete()}{kf\_delete()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+delete (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a451163e2f1b0657ff77bfcf0f0bbf286}\label{class_fl___text___editor_a451163e2f1b0657ff77bfcf0f0bbf286}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_down@{kf\_down}}
+\index{kf\_down@{kf\_down}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_down()}{kf\_down()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+down (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_aaa3c4e5bc85cc74d6ec47d9b6730b068}\label{class_fl___text___editor_aaa3c4e5bc85cc74d6ec47d9b6730b068}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_end@{kf\_end}}
+\index{kf\_end@{kf\_end}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_end()}{kf\_end()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+end (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_ae77bf4027fb370b2966b76043f9ba76b}\label{class_fl___text___editor_ae77bf4027fb370b2966b76043f9ba76b}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_enter@{kf\_enter}}
+\index{kf\_enter@{kf\_enter}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_enter()}{kf\_enter()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+enter (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_acdb925adadb178135cc2f88ff18fb4e4}\label{class_fl___text___editor_acdb925adadb178135cc2f88ff18fb4e4}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_home@{kf\_home}}
+\index{kf\_home@{kf\_home}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_home()}{kf\_home()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+home (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_af7aa7b7e960efa8f5a0e9585809fe826}\label{class_fl___text___editor_af7aa7b7e960efa8f5a0e9585809fe826}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_ignore@{kf\_ignore}}
+\index{kf\_ignore@{kf\_ignore}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_ignore()}{kf\_ignore()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+ignore (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a3008e51dd9ea1844d005532deac05a03}\label{class_fl___text___editor_a3008e51dd9ea1844d005532deac05a03}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_insert@{kf\_insert}}
+\index{kf\_insert@{kf\_insert}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_insert()}{kf\_insert()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+insert (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a47687c78a85d94fdc9664e7f03004e93}\label{class_fl___text___editor_a47687c78a85d94fdc9664e7f03004e93}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_left@{kf\_left}}
+\index{kf\_left@{kf\_left}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_left()}{kf\_left()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+left (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a3b4eb37fb5779955c7a7d662d3ca7632}\label{class_fl___text___editor_a3b4eb37fb5779955c7a7d662d3ca7632}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_m\_s\_move@{kf\_m\_s\_move}}
+\index{kf\_m\_s\_move@{kf\_m\_s\_move}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_m\_s\_move()}{kf\_m\_s\_move()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+m\+\_\+s\+\_\+move (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a00042ee66c9832faae3d16c8a8cd8b09}\label{class_fl___text___editor_a00042ee66c9832faae3d16c8a8cd8b09}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_meta\_move@{kf\_meta\_move}}
+\index{kf\_meta\_move@{kf\_meta\_move}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_meta\_move()}{kf\_meta\_move()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+meta\+\_\+move (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a9cc339d9d45a5648fe4a6c52c2e3f7d5}\label{class_fl___text___editor_a9cc339d9d45a5648fe4a6c52c2e3f7d5}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_move@{kf\_move}}
+\index{kf\_move@{kf\_move}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_move()}{kf\_move()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+move (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a12a0cd65bb42ce11a49d4ee37ca3255b}\label{class_fl___text___editor_a12a0cd65bb42ce11a49d4ee37ca3255b}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_page\_down@{kf\_page\_down}}
+\index{kf\_page\_down@{kf\_page\_down}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_page\_down()}{kf\_page\_down()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+page\+\_\+down (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a84967a7b9f09427be71fe73bacce0ba4}\label{class_fl___text___editor_a84967a7b9f09427be71fe73bacce0ba4}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_page\_up@{kf\_page\_up}}
+\index{kf\_page\_up@{kf\_page\_up}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_page\_up()}{kf\_page\_up()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+page\+\_\+up (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_abcd424feb82f34dc1dc9954023a6203c}\label{class_fl___text___editor_abcd424feb82f34dc1dc9954023a6203c}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_paste@{kf\_paste}}
+\index{kf\_paste@{kf\_paste}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_paste()}{kf\_paste()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+paste (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_aef2a531e3c7a8a1c967d3e05353284fa}\label{class_fl___text___editor_aef2a531e3c7a8a1c967d3e05353284fa}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_right@{kf\_right}}
+\index{kf\_right@{kf\_right}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_right()}{kf\_right()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+right (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_ae36b8b553055c0b2bc745291bb057e55}\label{class_fl___text___editor_ae36b8b553055c0b2bc745291bb057e55}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_select\_all@{kf\_select\_all}}
+\index{kf\_select\_all@{kf\_select\_all}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_select\_all()}{kf\_select\_all()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+select\+\_\+all (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a6bf172a514a6ae76c507e820fea5b489}\label{class_fl___text___editor_a6bf172a514a6ae76c507e820fea5b489}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_shift\_move@{kf\_shift\_move}}
+\index{kf\_shift\_move@{kf\_shift\_move}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_shift\_move()}{kf\_shift\_move()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+shift\+\_\+move (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a3b9489812c561b950d068b5f9253d5af}\label{class_fl___text___editor_a3b9489812c561b950d068b5f9253d5af}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_undo@{kf\_undo}}
+\index{kf\_undo@{kf\_undo}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_undo()}{kf\_undo()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+undo (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a8304534c77393c31c784cdba85d1f29b}\label{class_fl___text___editor_a8304534c77393c31c784cdba85d1f29b}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!kf\_up@{kf\_up}}
+\index{kf\_up@{kf\_up}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{kf\_up()}{kf\_up()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Text\+\_\+\+Editor\+::kf\+\_\+up (\begin{DoxyParamCaption}\item[{int}]{c,  }\item[{\mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} $\ast$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a58bd2347be44bd8dd1636712dc424b9b}\label{class_fl___text___editor_a58bd2347be44bd8dd1636712dc424b9b}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!maybe\_do\_callback@{maybe\_do\_callback}}
+\index{maybe\_do\_callback@{maybe\_do\_callback}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{maybe\_do\_callback()}{maybe\_do\_callback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::maybe\+\_\+do\+\_\+callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_aa5c3f42b63073255e3cf16650c8a9b45}\label{class_fl___text___editor_aa5c3f42b63073255e3cf16650c8a9b45}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!remove\_all\_key\_bindings@{remove\_all\_key\_bindings}}
+\index{remove\_all\_key\_bindings@{remove\_all\_key\_bindings}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{remove\_all\_key\_bindings()}{remove\_all\_key\_bindings()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::remove\+\_\+all\+\_\+key\+\_\+bindings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes all of the key bindings associated with the text editor or list. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_fl___text___editor_aa5c3f42b63073255e3cf16650c8a9b45_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___text___editor_a455496c72734a0b210569b9852cc2056}\label{class_fl___text___editor_a455496c72734a0b210569b9852cc2056}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!remove\_all\_key\_bindings@{remove\_all\_key\_bindings}}
+\index{remove\_all\_key\_bindings@{remove\_all\_key\_bindings}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{remove\_all\_key\_bindings()}{remove\_all\_key\_bindings()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::remove\+\_\+all\+\_\+key\+\_\+bindings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$$\ast$}]{list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___editor_a09e4787fb85c53f6da50aa3826a308d7}\label{class_fl___text___editor_a09e4787fb85c53f6da50aa3826a308d7}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!remove\_key\_binding@{remove\_key\_binding}}
+\index{remove\_key\_binding@{remove\_key\_binding}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{remove\_key\_binding()}{remove\_key\_binding()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::remove\+\_\+key\+\_\+binding (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes the key binding associated with the key \char`\"{}key\char`\"{} of state \char`\"{}state\char`\"{}. \mbox{\Hypertarget{class_fl___text___editor_ab0d1e68ab3570fe5bc125054f38333b3}\label{class_fl___text___editor_ab0d1e68ab3570fe5bc125054f38333b3}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!remove\_key\_binding@{remove\_key\_binding}}
+\index{remove\_key\_binding@{remove\_key\_binding}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{remove\_key\_binding()}{remove\_key\_binding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::remove\+\_\+key\+\_\+binding (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{int}]{state,  }\item[{\mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} $\ast$$\ast$}]{list }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___text___editor_a33b585fb31e83c26b1d90f708855b0d8}\label{class_fl___text___editor_a33b585fb31e83c26b1d90f708855b0d8}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!tab\_nav@{tab\_nav}}
+\index{tab\_nav@{tab\_nav}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{tab\_nav()}{tab\_nav()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Editor\+::tab\+\_\+nav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___text___editor_a0ea7fb2bdad4daaf4454d408b780ac4e}\label{class_fl___text___editor_a0ea7fb2bdad4daaf4454d408b780ac4e}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!tab\_nav@{tab\_nav}}
+\index{tab\_nav@{tab\_nav}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{tab\_nav()}{tab\_nav()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Editor\+::tab\+\_\+nav (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___text___editor_a12c2905db06a0fbc9ed4e45805c51722}\label{class_fl___text___editor_a12c2905db06a0fbc9ed4e45805c51722}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!default\_key\_function\_@{default\_key\_function\_}}
+\index{default\_key\_function\_@{default\_key\_function\_}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{default\_key\_function\_}{default\_key\_function\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___text___editor_a0855b27b22b601c4a725ad7ae6ff2852}{Key\+\_\+\+Func}} Fl\+\_\+\+Text\+\_\+\+Editor\+::default\+\_\+key\+\_\+function\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_aa8aa53bee028f24c393d8233156e5c37}\label{class_fl___text___editor_aa8aa53bee028f24c393d8233156e5c37}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!global\_key\_bindings@{global\_key\_bindings}}
+\index{global\_key\_bindings@{global\_key\_bindings}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{global\_key\_bindings}{global\_key\_bindings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Editor\+::global\+\_\+key\+\_\+bindings\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Global key binding list.
+
+Derived classes can add key bindings for all \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}} widgets by adding a \mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}} to this list.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___text___editor_a6d8e782a3c24702868d568c0fba226c3}{add\+\_\+key\+\_\+binding(int key, int state, Key\+\_\+\+Func f, Key\+\_\+\+Binding$\ast$$\ast$ list)}}; 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___text___editor_ae373dfe763e9ba2f4dd5006b84b4f395}\label{class_fl___text___editor_ae373dfe763e9ba2f4dd5006b84b4f395}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!insert\_mode\_@{insert\_mode\_}}
+\index{insert\_mode\_@{insert\_mode\_}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{insert\_mode\_}{insert\_mode\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Editor\+::insert\+\_\+mode\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___text___editor_a62f36b68213996f5e4cf195e65d4bc77}\label{class_fl___text___editor_a62f36b68213996f5e4cf195e65d4bc77}} 
+\index{Fl\_Text\_Editor@{Fl\_Text\_Editor}!key\_bindings@{key\_bindings}}
+\index{key\_bindings@{key\_bindings}!Fl\_Text\_Editor@{Fl\_Text\_Editor}}
+\doxysubsubsection{\texorpdfstring{key\_bindings}{key\_bindings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_fl___text___editor_1_1_key___binding}{Key\+\_\+\+Binding}}$\ast$ Fl\+\_\+\+Text\+\_\+\+Editor\+::key\+\_\+bindings\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___text___editor_8_h}{Fl\+\_\+\+Text\+\_\+\+Editor.\+H}}\end{DoxyCompactItemize}

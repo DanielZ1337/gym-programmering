@@ -1,0 +1,6 @@
+<map id="Fl_Round_Clock" name="Fl_Round_Clock">
+<area shape="rect" id="node1" title=" " alt="" coords="6,229,123,256"/>
+<area shape="rect" id="node2" href="$class_fl___clock.html" title="This widget provides a round analog clock display." alt="" coords="28,155,101,181"/>
+<area shape="rect" id="node3" href="$class_fl___clock___output.html" title="This widget can be used to display a program&#45;supplied time." alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node4" href="$class_fl___widget.html" title=" " alt="" coords="24,5,105,32"/>
+</map>

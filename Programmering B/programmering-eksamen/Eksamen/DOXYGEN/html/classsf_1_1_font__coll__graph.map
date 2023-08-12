@@ -1,0 +1,13 @@
+<map id="sf::Font" name="sf::Font">
+<area shape="rect" id="node1" title="Class for loading and manipulating character fonts." alt="" coords="359,484,532,811"/>
+<area shape="rect" id="node2" title=" " alt="" coords="158,285,295,377"/>
+<area shape="rect" id="node3" title=" " alt="" coords="47,5,86,83"/>
+<area shape="rect" id="node4" href="$structsf_1_1_font_1_1_page.html" title="Structure defining a page of glyphs." alt="" coords="132,145,236,223"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="261,145,382,223"/>
+<area shape="rect" id="node6" title=" " alt="" coords="377,293,513,370"/>
+<area shape="rect" id="node7" title=" " alt="" coords="422,145,474,223"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="498,145,611,223"/>
+<area shape="rect" id="node9" title=" " alt="" coords="537,293,591,370"/>
+<area shape="rect" id="node10" href="$structsf_1_1_font_1_1_info.html" title="Holds various information about a font." alt="" coords="631,293,726,370"/>
+<area shape="rect" id="node11" title="STL class." alt="" coords="639,145,719,223"/>
+</map>

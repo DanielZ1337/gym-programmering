@@ -1,0 +1,6 @@
+<map id="sounds::setupSound" name="sounds::setupSound">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,147,83"/>
+<area shape="rect" id="node2" href="$classsf_1_1_sound_buffer.html#a2be6a8025c97eb622a7dff6cf2594394" title="Load the sound buffer from a file." alt="" coords="195,5,388,32"/>
+<area shape="rect" id="node3" href="$classsf_1_1_sound.html#a8b395e9713d0efa48a18628c8ec1972e" title="Set the source buffer containing the audio data to play." alt="" coords="223,56,359,83"/>
+<area shape="rect" id="node4" href="$classsf_1_1_sound_source.html#a2f192f2b49fb8e2b82f3498d3663fcc2" title="Set the volume of the sound." alt="" coords="197,107,385,133"/>
+</map>

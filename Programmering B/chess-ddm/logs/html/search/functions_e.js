@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['name_5927',['name',['../class_fl___device___plugin.html#a7e0280fed0207f9a53ede3f296b64835',1,'Fl_Device_Plugin::name()'],['../class_fl___preferences.html#a6ff11b679bec179ebb211c31f8e46f2e',1,'Fl_Preferences::name()'],['../class_fl___preferences_1_1_node.html#a23b1fd536f8517975ff619f7baee818d',1,'Fl_Preferences::Node::name()'],['../class_fl___shared___image.html#a67bec522a680cd0c469bb458d12b838f',1,'Fl_Shared_Image::name()'],['../class_fl___preferences_1_1_name.html#a52058bb2af3eadcbb1a95e4fc01e315d',1,'Fl_Preferences::Name::Name(unsigned int n)'],['../class_fl___preferences_1_1_name.html#a492e9f40be730c22a457ed2e71138211',1,'Fl_Preferences::Name::Name(const char *format,...)']]],
+  ['nchecked_5928',['nchecked',['../class_fl___check___browser.html#a3b56c97e6438a589e22904e0f3fec05b',1,'Fl_Check_Browser']]],
+  ['nchildren_5929',['nChildren',['../class_fl___preferences_1_1_node.html#a67903443bbf1d129357b9358a07aa716',1,'Fl_Preferences::Node']]],
+  ['nentry_5930',['nEntry',['../class_fl___preferences_1_1_node.html#a29a407b0ae9ca2db5800a231aae9dfa9',1,'Fl_Preferences::Node']]],
+  ['new_5flist_5931',['new_list',['../class_fl___browser__.html#ac1aa2a6bed2109458ab8b701585dca9d',1,'Fl_Browser_']]],
+  ['newuuid_5932',['newUUID',['../class_fl___preferences.html#a5f8067d3c2e5d71a66a67424b47000a1',1,'Fl_Preferences']]],
+  ['next_5933',['next',['../class_fl___file___icon.html#adde6260e5369a55a78e15af2b6fbe740',1,'Fl_File_Icon::next()'],['../struct_fl___menu___item.html#a05f25b8c2c5c60a79b66882c6241f7be',1,'Fl_Menu_Item::next(int=1) const'],['../struct_fl___menu___item.html#aba264bfddfe881d0988cf24d540a9288',1,'Fl_Menu_Item::next(int i=1)'],['../class_fl___tree.html#a55113a9637a06aaf2bda7aabe9041a2b',1,'Fl_Tree::next()'],['../class_fl___tree___item.html#a6e5b948c859cbf5ce2cd551612a5a399',1,'Fl_Tree_Item::next()'],['../class_fl___wizard.html#a4a8c03714a5998e8fd1def71e228bbff',1,'Fl_Wizard::next()']]],
+  ['next_5fchar_5934',['next_char',['../class_fl___text___buffer.html#a4ee6c0ffe96189a4308e062c6799dc79',1,'Fl_Text_Buffer']]],
+  ['next_5fchar_5fclipped_5935',['next_char_clipped',['../class_fl___text___buffer.html#aaf4d73bc468b8c9d10d1e7758fee0c16',1,'Fl_Text_Buffer']]],
+  ['next_5fdisplayed_5936',['next_displayed',['../class_fl___tree___item.html#ada886c57582409d044041a7b69c267ce',1,'Fl_Tree_Item']]],
+  ['next_5fitem_5937',['next_item',['../class_fl___tree.html#a622cecd1ad8d3bb07f3c9f42b78661ba',1,'Fl_Tree']]],
+  ['next_5fselected_5fitem_5938',['next_selected_item',['../class_fl___tree.html#a6ee69a76afcf97cfff40d68e37a86e83',1,'Fl_Tree::next_selected_item(Fl_Tree_Item *item=0)'],['../class_fl___tree.html#a61d98dc4049249a138dddbcda9a111f4',1,'Fl_Tree::next_selected_item(Fl_Tree_Item *item, int dir)']]],
+  ['next_5fsibling_5939',['next_sibling',['../class_fl___tree___item.html#a4c560290a893a0a839c1983b9534592f',1,'Fl_Tree_Item']]],
+  ['next_5fvisible_5940',['next_visible',['../class_fl___tree___item.html#a9202fcbbf927dd9d6187862e4e2da2fa',1,'Fl_Tree_Item']]],
+  ['next_5fvisible_5fitem_5941',['next_visible_item',['../class_fl___tree.html#a37e0a5a4fd87e27a9fa9e6e128fa88c1',1,'Fl_Tree']]],
+  ['next_5fwindow_5942',['next_window',['../group__fl__windows.html#ga3377fa667615bfa756925d50f98817d1',1,'Fl']]],
+  ['next_5fword_5943',['next_word',['../class_fl___text___display.html#abb9d0b39bfcb5724db615f328b3acd7a',1,'Fl_Text_Display']]],
+  ['nitems_5944',['nitems',['../class_fl___check___browser.html#a94a74db92084b25c50909e453463e9e8',1,'Fl_Check_Browser']]],
+  ['node_5945',['Node',['../class_fl___preferences_1_1_node.html#a4bd495797480b4b2a51b06c6a099180f',1,'Fl_Preferences::Node']]],
+  ['non_5fmodal_5946',['non_modal',['../class_fl___window.html#a62d20d4914c1e18e054653bc34f1209c',1,'Fl_Window']]],
+  ['not_5fclipped_5947',['not_clipped',['../class_fl___graphics___driver.html#a4940b3e34162df8f24e6549bc4f0134a',1,'Fl_Graphics_Driver::not_clipped()'],['../class_fl___post_script___graphics___driver.html#ae1162e2d5862cc284a4c7d15719f21eb',1,'Fl_PostScript_Graphics_Driver::not_clipped()']]],
+  ['num_5fimages_5948',['num_images',['../class_fl___shared___image.html#a25fd4c7589a63736988c0ceafcb2c2a4',1,'Fl_Shared_Image']]]
+];

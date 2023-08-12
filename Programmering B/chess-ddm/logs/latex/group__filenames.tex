@@ -1,0 +1,161 @@
+\hypertarget{group__filenames}{}\doxysection{File names and U\+RI utility functions}
+\label{group__filenames}\index{File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__filenames_ga29253083ed9918c2f9d532bd5ed89cc3}{F\+L\+\_\+\+P\+A\+T\+H\+\_\+\+M\+AX}}~2048
+\item 
+\#define \mbox{\hyperlink{group__filenames_ga611853809ad3600822556b6c9f5b3232}{fl\+\_\+dirent\+\_\+h\+\_\+cyclic\+\_\+include}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int() \mbox{\hyperlink{group__filenames_gaaf6f4a54bb593dcf326fc5d12bb1435c}{Fl\+\_\+\+File\+\_\+\+Sort\+\_\+F}}(struct dirent $\ast$$\ast$, struct dirent $\ast$$\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{group__filenames_ga03be00cf16e01f91d6ac20a89e34eece}{fl\+\_\+filename\+\_\+name}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$filename)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{group__filenames_ga8b3b2215553fa108ab334b7e591ec8ab}{fl\+\_\+filename\+\_\+ext}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$buf)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{group__filenames_ga957325ab216ec3290693a737ac8881a3}{fl\+\_\+filename\+\_\+setext}} (char $\ast$to, int tolen, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ext)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{group__filenames_gabf6091d3cad1ec774ba8d2608994be6c}{fl\+\_\+filename\+\_\+expand}} (char $\ast$to, int tolen, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$from)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{group__filenames_ga501ffe4287dfd36c8cb56a42c9c4b34c}{fl\+\_\+filename\+\_\+absolute}} (char $\ast$to, int tolen, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$from)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{group__filenames_gaf0cfb5d9ee6743caf9ede70032bd2a9b}{fl\+\_\+filename\+\_\+relative}} (char $\ast$to, int tolen, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$from)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{group__filenames_gac4b44c55216afb84a7a9e75bd8b65793}{fl\+\_\+filename\+\_\+match}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$name, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$pattern)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{group__filenames_gaf8e5802ecf4af833172c20dd8d22b0e3}{fl\+\_\+filename\+\_\+isdir}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$name)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{group__filenames_ga09750e351834b0d9def73b546e883a7e}{fl\+\_\+alphasort}} (struct dirent $\ast$$\ast$, struct dirent $\ast$$\ast$)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{group__filenames_ga533169b53070b3286c3aaadf785207ea}{fl\+\_\+casealphasort}} (struct dirent $\ast$$\ast$, struct dirent $\ast$$\ast$)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{group__filenames_ga0219de041655866e7198f93090d8dd1d}{fl\+\_\+casenumericsort}} (struct dirent $\ast$$\ast$, struct dirent $\ast$$\ast$)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{group__filenames_ga2800a56e49038e2707b16e7fc340242a}{fl\+\_\+numericsort}} (struct dirent $\ast$$\ast$, struct dirent $\ast$$\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File names and U\+RI functions defined in $<$\mbox{\hyperlink{filename_8_h}{F\+L/filename.\+H}}$>$ 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__filenames_ga611853809ad3600822556b6c9f5b3232}\label{group__filenames_ga611853809ad3600822556b6c9f5b3232}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_dirent\_h\_cyclic\_include@{fl\_dirent\_h\_cyclic\_include}}
+\index{fl\_dirent\_h\_cyclic\_include@{fl\_dirent\_h\_cyclic\_include}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_dirent\_h\_cyclic\_include}{fl\_dirent\_h\_cyclic\_include}}
+{\footnotesize\ttfamily \#define fl\+\_\+dirent\+\_\+h\+\_\+cyclic\+\_\+include}
+
+\mbox{\Hypertarget{group__filenames_ga29253083ed9918c2f9d532bd5ed89cc3}\label{group__filenames_ga29253083ed9918c2f9d532bd5ed89cc3}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!FL\_PATH\_MAX@{FL\_PATH\_MAX}}
+\index{FL\_PATH\_MAX@{FL\_PATH\_MAX}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{FL\_PATH\_MAX}{FL\_PATH\_MAX}}
+{\footnotesize\ttfamily \#define F\+L\+\_\+\+P\+A\+T\+H\+\_\+\+M\+AX~2048}
+
+all path buffers should use this length 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{group__filenames_gaaf6f4a54bb593dcf326fc5d12bb1435c}\label{group__filenames_gaaf6f4a54bb593dcf326fc5d12bb1435c}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!Fl\_File\_Sort\_F@{Fl\_File\_Sort\_F}}
+\index{Fl\_File\_Sort\_F@{Fl\_File\_Sort\_F}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{Fl\_File\_Sort\_F}{Fl\_File\_Sort\_F}}
+{\footnotesize\ttfamily typedef int() Fl\+\_\+\+File\+\_\+\+Sort\+\_\+F(struct dirent $\ast$$\ast$, struct dirent $\ast$$\ast$)}
+
+File sorting function. \begin{DoxySeeAlso}{See also}
+fl\+\_\+filename\+\_\+list() 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__filenames_ga09750e351834b0d9def73b546e883a7e}\label{group__filenames_ga09750e351834b0d9def73b546e883a7e}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_alphasort@{fl\_alphasort}}
+\index{fl\_alphasort@{fl\_alphasort}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_alphasort()}{fl\_alphasort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int fl\+\_\+alphasort (\begin{DoxyParamCaption}\item[{struct dirent $\ast$$\ast$}]{,  }\item[{struct dirent $\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__filenames_ga533169b53070b3286c3aaadf785207ea}\label{group__filenames_ga533169b53070b3286c3aaadf785207ea}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_casealphasort@{fl\_casealphasort}}
+\index{fl\_casealphasort@{fl\_casealphasort}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_casealphasort()}{fl\_casealphasort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int fl\+\_\+casealphasort (\begin{DoxyParamCaption}\item[{struct dirent $\ast$$\ast$}]{,  }\item[{struct dirent $\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__filenames_ga0219de041655866e7198f93090d8dd1d}\label{group__filenames_ga0219de041655866e7198f93090d8dd1d}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_casenumericsort@{fl\_casenumericsort}}
+\index{fl\_casenumericsort@{fl\_casenumericsort}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_casenumericsort()}{fl\_casenumericsort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int fl\+\_\+casenumericsort (\begin{DoxyParamCaption}\item[{struct dirent $\ast$$\ast$}]{,  }\item[{struct dirent $\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__filenames_ga501ffe4287dfd36c8cb56a42c9c4b34c}\label{group__filenames_ga501ffe4287dfd36c8cb56a42c9c4b34c}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_filename\_absolute@{fl\_filename\_absolute}}
+\index{fl\_filename\_absolute@{fl\_filename\_absolute}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_filename\_absolute()}{fl\_filename\_absolute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int fl\+\_\+filename\+\_\+absolute (\begin{DoxyParamCaption}\item[{char $\ast$}]{to,  }\item[{int}]{tolen,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{from }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__filenames_gabf6091d3cad1ec774ba8d2608994be6c}\label{group__filenames_gabf6091d3cad1ec774ba8d2608994be6c}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_filename\_expand@{fl\_filename\_expand}}
+\index{fl\_filename\_expand@{fl\_filename\_expand}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_filename\_expand()}{fl\_filename\_expand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int fl\+\_\+filename\+\_\+expand (\begin{DoxyParamCaption}\item[{char $\ast$}]{to,  }\item[{int}]{tolen,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{from }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__filenames_ga8b3b2215553fa108ab334b7e591ec8ab}\label{group__filenames_ga8b3b2215553fa108ab334b7e591ec8ab}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_filename\_ext@{fl\_filename\_ext}}
+\index{fl\_filename\_ext@{fl\_filename\_ext}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_filename\_ext()}{fl\_filename\_ext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ fl\+\_\+filename\+\_\+ext (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{buf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__filenames_gaf8e5802ecf4af833172c20dd8d22b0e3}\label{group__filenames_gaf8e5802ecf4af833172c20dd8d22b0e3}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_filename\_isdir@{fl\_filename\_isdir}}
+\index{fl\_filename\_isdir@{fl\_filename\_isdir}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_filename\_isdir()}{fl\_filename\_isdir()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int fl\+\_\+filename\+\_\+isdir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__filenames_gac4b44c55216afb84a7a9e75bd8b65793}\label{group__filenames_gac4b44c55216afb84a7a9e75bd8b65793}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_filename\_match@{fl\_filename\_match}}
+\index{fl\_filename\_match@{fl\_filename\_match}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_filename\_match()}{fl\_filename\_match()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int fl\+\_\+filename\+\_\+match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{pattern }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__filenames_ga03be00cf16e01f91d6ac20a89e34eece}\label{group__filenames_ga03be00cf16e01f91d6ac20a89e34eece}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_filename\_name@{fl\_filename\_name}}
+\index{fl\_filename\_name@{fl\_filename\_name}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_filename\_name()}{fl\_filename\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ fl\+\_\+filename\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+Gets the file name from a path. Similar to basename(3), exceptions shown below. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <\mbox{\hyperlink{filename_8_h}{FL/filename.H}}>}}
+\DoxyCodeLine{[..]}
+\DoxyCodeLine{\textcolor{keyword}{const} \textcolor{keywordtype}{char} *out;}
+\DoxyCodeLine{out = \mbox{\hyperlink{group__filenames_ga03be00cf16e01f91d6ac20a89e34eece}{fl\_filename\_name}}(\textcolor{stringliteral}{"/usr/lib"});     \textcolor{comment}{// out="lib"}}
+\DoxyCodeLine{out = \mbox{\hyperlink{group__filenames_ga03be00cf16e01f91d6ac20a89e34eece}{fl\_filename\_name}}(\textcolor{stringliteral}{"/usr/"});        \textcolor{comment}{// out=""      (basename(3) returns "usr" instead)}}
+\DoxyCodeLine{out = \mbox{\hyperlink{group__filenames_ga03be00cf16e01f91d6ac20a89e34eece}{fl\_filename\_name}}(\textcolor{stringliteral}{"/usr"});         \textcolor{comment}{// out="usr"}}
+\DoxyCodeLine{out = \mbox{\hyperlink{group__filenames_ga03be00cf16e01f91d6ac20a89e34eece}{fl\_filename\_name}}(\textcolor{stringliteral}{"/"});            \textcolor{comment}{// out=""      (basename(3) returns "/" instead)}}
+\DoxyCodeLine{out = \mbox{\hyperlink{group__filenames_ga03be00cf16e01f91d6ac20a89e34eece}{fl\_filename\_name}}(\textcolor{stringliteral}{"."});            \textcolor{comment}{// out="."}}
+\DoxyCodeLine{out = \mbox{\hyperlink{group__filenames_ga03be00cf16e01f91d6ac20a89e34eece}{fl\_filename\_name}}(\textcolor{stringliteral}{".."});           \textcolor{comment}{// out=".."}}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+a pointer to the char after the last slash, or to {\ttfamily filename} if there is none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__filenames_gaf0cfb5d9ee6743caf9ede70032bd2a9b}\label{group__filenames_gaf0cfb5d9ee6743caf9ede70032bd2a9b}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_filename\_relative@{fl\_filename\_relative}}
+\index{fl\_filename\_relative@{fl\_filename\_relative}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_filename\_relative()}{fl\_filename\_relative()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int fl\+\_\+filename\+\_\+relative (\begin{DoxyParamCaption}\item[{char $\ast$}]{to,  }\item[{int}]{tolen,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{from }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__filenames_ga957325ab216ec3290693a737ac8881a3}\label{group__filenames_ga957325ab216ec3290693a737ac8881a3}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_filename\_setext@{fl\_filename\_setext}}
+\index{fl\_filename\_setext@{fl\_filename\_setext}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_filename\_setext()}{fl\_filename\_setext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ fl\+\_\+filename\+\_\+setext (\begin{DoxyParamCaption}\item[{char $\ast$}]{to,  }\item[{int}]{tolen,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{ext }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__filenames_ga2800a56e49038e2707b16e7fc340242a}\label{group__filenames_ga2800a56e49038e2707b16e7fc340242a}} 
+\index{File names and URI utility functions@{File names and URI utility functions}!fl\_numericsort@{fl\_numericsort}}
+\index{fl\_numericsort@{fl\_numericsort}!File names and URI utility functions@{File names and URI utility functions}}
+\doxysubsubsection{\texorpdfstring{fl\_numericsort()}{fl\_numericsort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int fl\+\_\+numericsort (\begin{DoxyParamCaption}\item[{struct dirent $\ast$$\ast$}]{,  }\item[{struct dirent $\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+

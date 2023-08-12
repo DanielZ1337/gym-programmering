@@ -1,0 +1,6 @@
+<map id="sounds" name="sounds">
+<area shape="rect" id="node1" title=" " alt="" coords="154,668,265,775"/>
+<area shape="rect" id="node2" href="$classsf_1_1_sound.html" title="Regular sound that can be played in the audio environment." alt="" coords="82,395,219,619"/>
+<area shape="rect" id="node3" href="$classsf_1_1_sound_source.html" title="Base class defining a sound&#39;s properties." alt="" coords="5,49,171,288"/>
+<area shape="rect" id="node4" href="$classsf_1_1_sound_buffer.html" title="Storage for audio samples defining a sound." alt="" coords="195,5,341,332"/>
+</map>

@@ -1,0 +1,91 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_fl___widget.html" title=" " alt="" coords="5,740,87,767"/>
+<area shape="rect" id="node2" href="$classchess___g_u_i.html" title=" " alt="" coords="152,132,239,159"/>
+<area shape="rect" id="node3" href="$class_fl___box.html" title=" " alt="" coords="164,183,227,209"/>
+<area shape="rect" id="node4" href="$class_fl___button.html" title="Buttons generate callbacks when they are clicked by the user." alt="" coords="156,233,235,260"/>
+<area shape="rect" id="node14" href="$class_fl___chart.html" title="Fl_Chart displays simple charts. It is provided for Forms compatibility." alt="" coords="160,461,231,488"/>
+<area shape="rect" id="node15" href="$class_fl___clock___output.html" title="This widget can be used to display a program&#45;supplied time." alt="" coords="136,512,255,539"/>
+<area shape="rect" id="node18" href="$class_fl___forms_bitmap.html" title=" " alt="" coords="136,563,255,589"/>
+<area shape="rect" id="node19" href="$class_fl___forms_pixmap.html" title="Forms pixmap drawing routines." alt="" coords="135,613,256,640"/>
+<area shape="rect" id="node20" href="$class_fl___forms_text.html" title=" " alt="" coords="144,664,247,691"/>
+<area shape="rect" id="node21" href="$class_fl___free.html" title=" " alt="" coords="162,715,229,741"/>
+<area shape="rect" id="node22" href="$class_fl___group.html" title=" " alt="" coords="158,765,233,792"/>
+<area shape="rect" id="node51" href="$class_fl___input__.html" title=" " alt="" coords="158,816,233,843"/>
+<area shape="rect" id="node60" href="$class_fl___menu__.html" title=" " alt="" coords="156,867,235,893"/>
+<area shape="rect" id="node65" href="$class_fl___positioner.html" title=" " alt="" coords="146,917,245,944"/>
+<area shape="rect" id="node66" href="$class_fl___progress.html" title=" " alt="" coords="149,968,241,995"/>
+<area shape="rect" id="node67" href="$class_fl___timer.html" title=" " alt="" coords="159,1019,231,1045"/>
+<area shape="rect" id="node68" href="$class_fl___valuator.html" title=" " alt="" coords="151,1348,239,1375"/>
+<area shape="rect" id="node88" href="$class_flcc___hue_box.html" title=" " alt="" coords="145,1399,245,1425"/>
+<area shape="rect" id="node89" href="$class_flcc___value_box.html" title=" " alt="" coords="140,1449,251,1476"/>
+<area shape="rect" id="node5" href="$class_fl___light___button.html" title=" " alt="" coords="311,56,424,83"/>
+<area shape="rect" id="node10" href="$class_fl___radio___button.html" title=" " alt="" coords="308,107,427,133"/>
+<area shape="rect" id="node11" href="$class_fl___repeat___button.html" title=" " alt="" coords="304,157,431,184"/>
+<area shape="rect" id="node12" href="$class_fl___return___button.html" title=" " alt="" coords="306,208,429,235"/>
+<area shape="rect" id="node13" href="$class_fl___toggle___button.html" title=" " alt="" coords="306,259,429,285"/>
+<area shape="rect" id="node6" href="$class_fl___check___button.html" title=" " alt="" coords="494,5,617,32"/>
+<area shape="rect" id="node7" href="$class_fl___radio___light___button.html" title=" " alt="" coords="479,56,632,83"/>
+<area shape="rect" id="node8" href="$class_fl___round___button.html" title=" " alt="" coords="494,107,617,133"/>
+<area shape="rect" id="node9" href="$class_fl___radio___round___button.html" title=" " alt="" coords="680,107,843,133"/>
+<area shape="rect" id="node16" href="$class_fl___clock.html" title="This widget provides a round analog clock display." alt="" coords="331,309,404,336"/>
+<area shape="rect" id="node17" href="$class_fl___round___clock.html" title=" " alt="" coords="497,309,614,336"/>
+<area shape="rect" id="node23" href="$class_fl___browser__.html" title=" " alt="" coords="320,360,415,387"/>
+<area shape="rect" id="node30" href="$class_fl___color___chooser.html" title="The Fl_Color_Chooser widget provides a standard RGB color chooser." alt="" coords="305,411,430,437"/>
+<area shape="rect" id="node31" href="$class_fl___help___view.html" title=" " alt="" coords="317,461,418,488"/>
+<area shape="rect" id="node32" href="$class_fl___input___choice.html" title=" " alt="" coords="310,512,425,539"/>
+<area shape="rect" id="node33" href="$class_fl___pack.html" title=" " alt="" coords="332,563,403,589"/>
+<area shape="rect" id="node34" href="$class_fl___scroll.html" title=" " alt="" coords="331,613,404,640"/>
+<area shape="rect" id="node35" href="$class_fl___spinner.html" title=" " alt="" coords="325,664,409,691"/>
+<area shape="rect" id="node36" href="$class_fl___table.html" title=" " alt="" coords="332,715,403,741"/>
+<area shape="rect" id="node38" href="$class_fl___tabs.html" title=" " alt="" coords="333,765,401,792"/>
+<area shape="rect" id="node39" href="$class_fl___text___display.html" title="Rich text display widget." alt="" coords="310,816,425,843"/>
+<area shape="rect" id="node41" href="$class_fl___tile.html" title=" " alt="" coords="337,867,397,893"/>
+<area shape="rect" id="node42" href="$class_fl___tree.html" title="Tree widget." alt="" coords="335,917,400,944"/>
+<area shape="rect" id="node43" href="$class_fl___window.html" title=" " alt="" coords="324,968,411,995"/>
+<area shape="rect" id="node50" href="$class_fl___wizard.html" title=" " alt="" coords="327,1019,408,1045"/>
+<area shape="rect" id="node24" href="$class_fl___browser.html" title=" " alt="" coords="512,360,599,387"/>
+<area shape="rect" id="node29" href="$class_fl___check___browser.html" title=" " alt="" coords="490,411,621,437"/>
+<area shape="rect" id="node25" href="$class_fl___file___browser.html" title=" " alt="" coords="704,284,819,311"/>
+<area shape="rect" id="node26" href="$class_fl___hold___browser.html" title=" " alt="" coords="701,335,821,361"/>
+<area shape="rect" id="node27" href="$class_fl___multi___browser.html" title=" " alt="" coords="700,385,823,412"/>
+<area shape="rect" id="node28" href="$class_fl___select___browser.html" title=" " alt="" coords="696,436,827,463"/>
+<area shape="rect" id="node37" href="$class_fl___table___row.html" title=" " alt="" coords="504,715,607,741"/>
+<area shape="rect" id="node40" href="$class_fl___text___editor.html" title=" " alt="" coords="502,765,609,792"/>
+<area shape="rect" id="node44" href="$class_fl___double___window.html" title=" " alt="" coords="489,816,622,843"/>
+<area shape="rect" id="node46" href="$class_fl___gl___window.html" title=" " alt="" coords="502,867,609,893"/>
+<area shape="rect" id="node48" href="$class_fl___single___window.html" title=" " alt="" coords="491,917,620,944"/>
+<area shape="rect" id="node45" href="$class_fl___overlay___window.html" title=" " alt="" coords="693,816,829,843"/>
+<area shape="rect" id="node47" href="$class_fl___glut___window.html" title=" " alt="" coords="703,867,820,893"/>
+<area shape="rect" id="node49" href="$class_fl___menu___window.html" title=" " alt="" coords="699,917,824,944"/>
+<area shape="rect" id="node52" href="$class_fl___input.html" title=" " alt="" coords="333,1069,401,1096"/>
+<area shape="rect" id="node53" href="$class_fl___file___input.html" title="This widget displays a pathname in a text input field." alt="" coords="507,968,603,995"/>
+<area shape="rect" id="node54" href="$class_fl___float___input.html" title=" " alt="" coords="503,1019,607,1045"/>
+<area shape="rect" id="node55" href="$class_fl___int___input.html" title=" " alt="" coords="511,1069,600,1096"/>
+<area shape="rect" id="node56" href="$class_fl___multiline___input.html" title=" " alt="" coords="494,1120,617,1147"/>
+<area shape="rect" id="node57" href="$class_fl___output.html" title=" " alt="" coords="516,1171,595,1197"/>
+<area shape="rect" id="node59" href="$class_fl___secret___input.html" title=" " alt="" coords="499,1221,612,1248"/>
+<area shape="rect" id="node58" href="$class_fl___multiline___output.html" title=" " alt="" coords="694,1171,829,1197"/>
+<area shape="rect" id="node61" href="$class_fl___choice.html" title="A button that is used to pop up a menu." alt="" coords="327,1120,407,1147"/>
+<area shape="rect" id="node62" href="$class_fl___menu___bar.html" title=" " alt="" coords="318,1171,417,1197"/>
+<area shape="rect" id="node64" href="$class_fl___menu___button.html" title=" " alt="" coords="309,1221,426,1248"/>
+<area shape="rect" id="node63" href="$class_fl___sys___menu___bar.html" title=" " alt="" coords="491,1272,620,1299"/>
+<area shape="rect" id="node69" href="$class_fl___adjuster.html" title=" " alt="" coords="323,1272,411,1299"/>
+<area shape="rect" id="node70" href="$class_fl___counter.html" title=" " alt="" coords="325,1323,410,1349"/>
+<area shape="rect" id="node72" href="$class_fl___dial.html" title=" " alt="" coords="336,1373,399,1400"/>
+<area shape="rect" id="node75" href="$class_fl___roller.html" title=" " alt="" coords="331,1424,404,1451"/>
+<area shape="rect" id="node76" href="$class_fl___slider.html" title=" " alt="" coords="331,1576,404,1603"/>
+<area shape="rect" id="node85" href="$class_fl___value___input.html" title=" " alt="" coords="313,1627,421,1653"/>
+<area shape="rect" id="node87" href="$class_fl___value___output.html" title=" " alt="" coords="308,1677,427,1704"/>
+<area shape="rect" id="node71" href="$class_fl___simple___counter.html" title=" " alt="" coords="489,1323,621,1349"/>
+<area shape="rect" id="node73" href="$class_fl___fill___dial.html" title=" " alt="" coords="512,1373,599,1400"/>
+<area shape="rect" id="node74" href="$class_fl___line___dial.html" title=" " alt="" coords="509,1424,602,1451"/>
+<area shape="rect" id="node77" href="$class_fl___fill___slider.html" title=" " alt="" coords="507,1475,604,1501"/>
+<area shape="rect" id="node78" href="$class_fl___hor___fill___slider.html" title=" " alt="" coords="493,1525,617,1552"/>
+<area shape="rect" id="node79" href="$class_fl___hor___nice___slider.html" title=" " alt="" coords="489,1576,622,1603"/>
+<area shape="rect" id="node80" href="$class_fl___hor___slider.html" title=" " alt="" coords="505,1627,605,1653"/>
+<area shape="rect" id="node81" href="$class_fl___nice___slider.html" title=" " alt="" coords="502,1677,609,1704"/>
+<area shape="rect" id="node82" href="$class_fl___scrollbar.html" title=" " alt="" coords="510,1728,601,1755"/>
+<area shape="rect" id="node83" href="$class_fl___value___slider.html" title=" " alt="" coords="499,1779,612,1805"/>
+<area shape="rect" id="node84" href="$class_fl___hor___value___slider.html" title=" " alt="" coords="691,1779,831,1805"/>
+<area shape="rect" id="node86" href="$class_flcc___value___input.html" title=" " alt="" coords="494,1829,617,1856"/>
+</map>

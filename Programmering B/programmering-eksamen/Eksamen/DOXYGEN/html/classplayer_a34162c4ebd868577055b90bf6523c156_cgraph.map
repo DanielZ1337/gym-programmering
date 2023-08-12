@@ -1,0 +1,8 @@
+<map id="player::player" name="player::player">
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,105,156"/>
+<area shape="rect" id="node2" href="$classsf_1_1_texture.html#a8e1b56eabfe33e2e0e1cb03712c7fcc7" title="Load the texture from a file on disk." alt="" coords="153,5,320,32"/>
+<area shape="rect" id="node3" href="$classsf_1_1_transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object" alt="" coords="172,57,301,98"/>
+<area shape="rect" id="node4" href="$classsf_1_1_transformable.html#a32baf2bf1a74699b03bf8c95030a38ed" title="set the orientation of the object" alt="" coords="172,122,301,163"/>
+<area shape="rect" id="node5" href="$classsf_1_1_transformable.html#aaec50b46b3f41b054763304d1e727471" title="set the scale factors of the object" alt="" coords="172,187,301,229"/>
+<area shape="rect" id="node6" href="$classsf_1_1_sprite.html#a3729c88d88ac38c19317c18e87242560" title="Change the source texture of the sprite." alt="" coords="165,253,308,280"/>
+</map>

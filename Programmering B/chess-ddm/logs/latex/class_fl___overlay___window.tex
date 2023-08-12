@@ -1,0 +1,195 @@
+\hypertarget{class_fl___overlay___window}{}\doxysection{Fl\+\_\+\+Overlay\+\_\+\+Window Class Reference}
+\label{class_fl___overlay___window}\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Overlay\+\_\+\+Window.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Overlay\+\_\+\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_fl___overlay___window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Overlay\+\_\+\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_fl___overlay___window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___overlay___window_a4eebd23fcbe366b78cc9e4dded5172bb}{show}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___overlay___window_a7246d014381be4e55463f790bab43a1c}{flush}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___overlay___window_ac2ebc6a209ed6d5d1fb813d3f54a489f}{hide}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___overlay___window_ae592a1cb84776f1d37357cc1108f870e}{resize}} (int, int, int, int)
+\item 
+\mbox{\hyperlink{class_fl___overlay___window_a8fb867f901aa002ce6ed86ab2244133c}{$\sim$\+Fl\+\_\+\+Overlay\+\_\+\+Window}} ()
+\item 
+int \mbox{\hyperlink{class_fl___overlay___window_a908270790afc34a1ab622289aaf73ca4}{can\+\_\+do\+\_\+overlay}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___overlay___window_a106f4f5b0b79e5e0e895dfa89f81abd8}{redraw\+\_\+overlay}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___overlay___window_a6bdc30c7d7941e7542e230904bc9de2d}{show}} (int a, char $\ast$$\ast$\mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___overlay___window_afcc728d34ee5a4cd40b2d666f9a9fae9}{draw\+\_\+overlay}} ()=0
+\item 
+\mbox{\hyperlink{class_fl___overlay___window_a875b41516151f7fbe64c9d4873525a63}{Fl\+\_\+\+Overlay\+\_\+\+Window}} (int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\item 
+\mbox{\hyperlink{class_fl___overlay___window_af03c719735e364a2c7b4510ca9bc3872}{Fl\+\_\+\+Overlay\+\_\+\+Window}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fl___overlay___window_adfd55de8eb313f383c5113ca8f310024}{\+\_\+\+Fl\+\_\+\+Overlay}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This window provides double buffering and also the ability to draw the \char`\"{}overlay\char`\"{} which is another picture placed on top of the main image. The overlay is designed to be a rapidly-\/changing but simple graphic such as a mouse selection box. \mbox{\hyperlink{class_fl___overlay___window}{Fl\+\_\+\+Overlay\+\_\+\+Window}} uses the overlay planes provided by your graphics hardware if they are available. 
+
+If no hardware support is found the overlay is simulated by drawing directly into the on-\/screen copy of the double-\/buffered window, and \char`\"{}erased\char`\"{} by copying the backbuffer over it again. This means the overlay will blink if you change the image in the window. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___overlay___window_a8fb867f901aa002ce6ed86ab2244133c}\label{class_fl___overlay___window_a8fb867f901aa002ce6ed86ab2244133c}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!````~Fl\_Overlay\_Window@{$\sim$Fl\_Overlay\_Window}}
+\index{````~Fl\_Overlay\_Window@{$\sim$Fl\_Overlay\_Window}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Overlay\_Window()}{~Fl\_Overlay\_Window()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Overlay\+\_\+\+Window\+::$\sim$\+Fl\+\_\+\+Overlay\+\_\+\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___overlay___window_a875b41516151f7fbe64c9d4873525a63}\label{class_fl___overlay___window_a875b41516151f7fbe64c9d4873525a63}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{Fl\_Overlay\_Window()}{Fl\_Overlay\_Window()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Overlay\+\_\+\+Window\+::\+Fl\+\_\+\+Overlay\+\_\+\+Window (\begin{DoxyParamCaption}\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+See \mbox{\hyperlink{class_fl___overlay___window_a875b41516151f7fbe64c9d4873525a63}{Fl\+\_\+\+Overlay\+\_\+\+Window\+::\+Fl\+\_\+\+Overlay\+\_\+\+Window}}(int X, int Y, int W, int H, const char $\ast$l=0) \mbox{\Hypertarget{class_fl___overlay___window_af03c719735e364a2c7b4510ca9bc3872}\label{class_fl___overlay___window_af03c719735e364a2c7b4510ca9bc3872}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{Fl\_Overlay\_Window()}{Fl\_Overlay\_Window()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Overlay\+\_\+\+Window\+::\+Fl\+\_\+\+Overlay\+\_\+\+Window (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates a new \mbox{\hyperlink{class_fl___overlay___window}{Fl\+\_\+\+Overlay\+\_\+\+Window}} widget using the given position, size, and label (title) string. If the positions (x,y) are not given, then the window manager will choose them. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___overlay___window_a908270790afc34a1ab622289aaf73ca4}\label{class_fl___overlay___window_a908270790afc34a1ab622289aaf73ca4}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!can\_do\_overlay@{can\_do\_overlay}}
+\index{can\_do\_overlay@{can\_do\_overlay}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{can\_do\_overlay()}{can\_do\_overlay()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Overlay\+\_\+\+Window\+::can\+\_\+do\+\_\+overlay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns non-\/zero if there\textquotesingle{}s hardware overlay support \mbox{\Hypertarget{class_fl___overlay___window_afcc728d34ee5a4cd40b2d666f9a9fae9}\label{class_fl___overlay___window_afcc728d34ee5a4cd40b2d666f9a9fae9}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!draw\_overlay@{draw\_overlay}}
+\index{draw\_overlay@{draw\_overlay}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{draw\_overlay()}{draw\_overlay()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Overlay\+\_\+\+Window\+::draw\+\_\+overlay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+You must subclass \mbox{\hyperlink{class_fl___overlay___window}{Fl\+\_\+\+Overlay\+\_\+\+Window}} and provide this method. It is just like a \mbox{\hyperlink{class_fl___window_a4dea919a9f069f00b623abb8179ef52c}{draw()}} method, except it draws the overlay. The overlay will have already been \char`\"{}cleared\char`\"{} when this is called. You can use any of the routines described in $<$\mbox{\hyperlink{fl__draw_8_h}{F\+L/fl\+\_\+draw.\+H}}$>$. \mbox{\Hypertarget{class_fl___overlay___window_a7246d014381be4e55463f790bab43a1c}\label{class_fl___overlay___window_a7246d014381be4e55463f790bab43a1c}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!flush@{flush}}
+\index{flush@{flush}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Overlay\+\_\+\+Window\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Forces the window to be drawn, this window is also made current and calls \mbox{\hyperlink{class_fl___window_a4dea919a9f069f00b623abb8179ef52c}{draw()}}. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___double___window_a080455493ab7e91b910247ff5832c139}{Fl\+\_\+\+Double\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___overlay___window_ac2ebc6a209ed6d5d1fb813d3f54a489f}\label{class_fl___overlay___window_ac2ebc6a209ed6d5d1fb813d3f54a489f}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!hide@{hide}}
+\index{hide@{hide}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{hide()}{hide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Overlay\+\_\+\+Window\+::hide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Removes the window from the screen. If the window is already hidden or has not been shown then this does nothing and is harmless. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___double___window_acc0edc55a9d27e4e276e8a5b78deeeef}{Fl\+\_\+\+Double\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___overlay___window_a106f4f5b0b79e5e0e895dfa89f81abd8}\label{class_fl___overlay___window_a106f4f5b0b79e5e0e895dfa89f81abd8}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!redraw\_overlay@{redraw\_overlay}}
+\index{redraw\_overlay@{redraw\_overlay}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{redraw\_overlay()}{redraw\_overlay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Overlay\+\_\+\+Window\+::redraw\+\_\+overlay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___overlay___window_ae592a1cb84776f1d37357cc1108f870e}\label{class_fl___overlay___window_ae592a1cb84776f1d37357cc1108f870e}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!resize@{resize}}
+\index{resize@{resize}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Overlay\+\_\+\+Window\+::resize (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Changes the size and position of the window. If \mbox{\hyperlink{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}{shown()}} is true, these changes are communicated to the window server (which may refuse that size and cause a further resize). If \mbox{\hyperlink{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}{shown()}} is false, the size and position are used when \mbox{\hyperlink{class_fl___overlay___window_a4eebd23fcbe366b78cc9e4dded5172bb}{show()}} is called. See \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} for the effect of resizing on the child widgets.
+
+You can also call the \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} methods size(x,y) and position(w,h), which are inline wrappers for this virtual function.
+
+A top-\/level window can not force, but merely suggest a position and size to the operating system. The window manager may not be willing or able to display a window at the desired position or with the given dimensions. It is up to the application developer to verify window parameters after the resize request. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___double___window_aebad8d054ad0b4013fb35667a5f3fbb1}{Fl\+\_\+\+Double\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___overlay___window_a4eebd23fcbe366b78cc9e4dded5172bb}\label{class_fl___overlay___window_a4eebd23fcbe366b78cc9e4dded5172bb}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!show@{show}}
+\index{show@{show}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Overlay\+\_\+\+Window\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Puts the window on the screen. Usually (on X) this has the side effect of opening the display.
+
+If the window is already shown then it is restored and raised to the top. This is really convenient because your program can call \mbox{\hyperlink{class_fl___overlay___window_a4eebd23fcbe366b78cc9e4dded5172bb}{show()}} at any time, even if the window is already up. It also means that \mbox{\hyperlink{class_fl___overlay___window_a4eebd23fcbe366b78cc9e4dded5172bb}{show()}} serves the purpose of raise() in other toolkits.
+
+\mbox{\hyperlink{class_fl___window_a0d75dfcdc8fb797f9247482da1e0152b}{Fl\+\_\+\+Window\+::show(int argc, char $\ast$$\ast$argv)}} is used for top-\/level windows and allows standard arguments to be parsed from the command-\/line.
+
+\begin{DoxyNote}{Note}
+For some obscure reasons \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{Fl\+\_\+\+Window\+::show()}} resets the current group by calling Fl\+\_\+\+Group\+::current(0). The comments in the code say \char`\"{}get rid of very common user bug\+: forgot end()\char`\"{}. Although this is true it may have unwanted side effects if you \mbox{\hyperlink{class_fl___overlay___window_a4eebd23fcbe366b78cc9e4dded5172bb}{show()}} an unrelated window (maybe for an error message or warning) while building a window or any other group widget.
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000025}{Todo}}]Check if we can remove resetting the current group in a later F\+L\+TK version (after 1.\+3.\+x). This may break \char`\"{}already broken\char`\"{} programs though if they rely on this \char`\"{}feature\char`\"{}.\end{DoxyRefDesc}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___window_a0d75dfcdc8fb797f9247482da1e0152b}{Fl\+\_\+\+Window\+::show(int argc, char $\ast$$\ast$argv)}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}{Fl\+\_\+\+Double\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___overlay___window_a6bdc30c7d7941e7542e230904bc9de2d}\label{class_fl___overlay___window_a6bdc30c7d7941e7542e230904bc9de2d}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!show@{show}}
+\index{show@{show}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Overlay\+\_\+\+Window\+::show (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{char $\ast$$\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___overlay___window_a6bdc30c7d7941e7542e230904bc9de2d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_fl___overlay___window_adfd55de8eb313f383c5113ca8f310024}\label{class_fl___overlay___window_adfd55de8eb313f383c5113ca8f310024}} 
+\index{Fl\_Overlay\_Window@{Fl\_Overlay\_Window}!\_Fl\_Overlay@{\_Fl\_Overlay}}
+\index{\_Fl\_Overlay@{\_Fl\_Overlay}!Fl\_Overlay\_Window@{Fl\_Overlay\_Window}}
+\doxysubsubsection{\texorpdfstring{\_Fl\_Overlay}{\_Fl\_Overlay}}
+{\footnotesize\ttfamily friend class \+\_\+\+Fl\+\_\+\+Overlay\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___overlay___window_8_h}{Fl\+\_\+\+Overlay\+\_\+\+Window.\+H}}\end{DoxyCompactItemize}

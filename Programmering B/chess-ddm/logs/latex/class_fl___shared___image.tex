@@ -1,0 +1,449 @@
+\hypertarget{class_fl___shared___image}{}\doxysection{Fl\+\_\+\+Shared\+\_\+\+Image Class Reference}
+\label{class_fl___shared___image}\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Shared\+\_\+\+Image.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Shared\+\_\+\+Image\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_fl___shared___image__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Shared\+\_\+\+Image\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_fl___shared___image__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___shared___image_a67bec522a680cd0c469bb458d12b838f}{name}} ()
+\item 
+int \mbox{\hyperlink{class_fl___shared___image_af425a9c43f38266b626e27eafdd9768f}{refcount}} ()
+\item 
+int \mbox{\hyperlink{class_fl___shared___image_abeb87fede91973b52eb798b8a08f5774}{original}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_a78812e7f8fc51248061c79bf72ae32ec}{release}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_a954dbe57648e63bb5f6c9d5aca4ef527}{reload}} ()
+\item 
+virtual \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___shared___image_a4a06b035220edababffdd07fd6ae229e}{copy}} (int W, int H)
+\item 
+\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___shared___image_a1a2682e8f70ecb7ae1fd8815a3a4b9e7}{copy}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_ac6a7539e2caf91f00b1bf728c9c1b7bc}{color\+\_\+average}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c, float \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}})
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_aa3f0190a62e732211734e48c725ba583}{desaturate}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_aa76e482ab511cb7bc559dba248373d3e}{draw}} (int X, int Y, int W, int H, int cx, int cy)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_ad6954b9df5ea1adbabba07a090ce01bc}{draw}} (int X, int Y)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_a1026830f0b7384269a5b8a304a438f52}{scale}} (int \mbox{\hyperlink{png_8h_ad46179dbe9c68fdcea52b34c3480ec0f}{width}}, int height, int proportional=1, int can\+\_\+expand=0)
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_a4d2cbe77925d05b473afd251b0127994}{uncache}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___shared___image_a6f99c91070e5a63a69daecbafcd4f043}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___shared___image_a67bec522a680cd0c469bb458d12b838f}{name}}, int W=0, int H=0)
+\item 
+static \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___shared___image_ad80da92bd9878ef2d9a43f4a5139b090}{get}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___shared___image_a67bec522a680cd0c469bb458d12b838f}{name}}, int W=0, int H=0)
+\item 
+static \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___shared___image_a6d192f80b36ffdbddfad4fb5992aadca}{get}} (\mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$rgb, int own\+\_\+it=1)
+\item 
+static \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} $\ast$$\ast$ \mbox{\hyperlink{class_fl___shared___image_acb104bbfd9461ef533f5a4b2e17b5b47}{images}} ()
+\item 
+static int \mbox{\hyperlink{class_fl___shared___image_a25fd4c7589a63736988c0ceafcb2c2a4}{num\+\_\+images}} ()
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_a82ae1953e3101256f0bf8c5a39e2bf74}{add\+\_\+handler}} (\mbox{\hyperlink{_fl___shared___image_8_h_a62af0791dfeceb958592fe18352e773e}{Fl\+\_\+\+Shared\+\_\+\+Handler}} f)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_a5605e46d3fd054ed6142803c75d54ed0}{remove\+\_\+handler}} (\mbox{\hyperlink{_fl___shared___image_8_h_a62af0791dfeceb958592fe18352e773e}{Fl\+\_\+\+Shared\+\_\+\+Handler}} f)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_a7523d15a005059a432404b21eaa7e58e}{scaling\+\_\+algorithm}} (\mbox{\hyperlink{_fl___image_8_h_a79b21b0aede6293a7521b40ff6196368}{Fl\+\_\+\+R\+G\+B\+\_\+\+Scaling}} algorithm)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___shared___image_abce198105631f02e4deee18e99bee668}{Fl\+\_\+\+Shared\+\_\+\+Image}} ()
+\item 
+\mbox{\hyperlink{class_fl___shared___image_addb22c44911a41940c486cc8e24c8fb9}{Fl\+\_\+\+Shared\+\_\+\+Image}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$n, \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$img=0)
+\item 
+virtual \mbox{\hyperlink{class_fl___shared___image_a6aa7e73dfbeedb8bd938acdc4dbedb17}{$\sim$\+Fl\+\_\+\+Shared\+\_\+\+Image}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_a14d578defbe9b67d276beab4d21183aa}{add}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___shared___image_a417ff910025f28d2337e54fac47e4f44}{update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_fl___shared___image_a1f2797def7eae8b496b9e2774a557fc3}{compare}} (\mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} $\ast$$\ast$i0, \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} $\ast$$\ast$i1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___shared___image_a5a551ae6cef553aef679d26bf5dae782}{name\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___shared___image_ae68c77edaf049009ca0efa34a615e402}{original\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___shared___image_a5d1f1245c4b2c84b5aeee072f8626968}{refcount\+\_\+}}
+\item 
+\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___shared___image_ac7543f043f90d2f5869fef9e61ff29e6}{image\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___shared___image_a163056147dfd176f932ea3eb90c47654}{alloc\+\_\+image\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} $\ast$$\ast$ \mbox{\hyperlink{class_fl___shared___image_a22f271eb625b5e3c2a234a9b51f12283}{images\+\_\+}}
+\item 
+static int \mbox{\hyperlink{class_fl___shared___image_a06a5bfb6b6dc605ebf045bb18779441c}{num\+\_\+images\+\_\+}}
+\item 
+static int \mbox{\hyperlink{class_fl___shared___image_ac08c9613d5de0aa508aa2d10478ab329}{alloc\+\_\+images\+\_\+}}
+\item 
+static \mbox{\hyperlink{_fl___shared___image_8_h_a62af0791dfeceb958592fe18352e773e}{Fl\+\_\+\+Shared\+\_\+\+Handler}} $\ast$ \mbox{\hyperlink{class_fl___shared___image_ac7f4bfb3bbd57dfe1e64c6c4da1ea648}{handlers\+\_\+}}
+\item 
+static int \mbox{\hyperlink{class_fl___shared___image_ac9df79c86ca2b21de75a652eb002b7ac}{num\+\_\+handlers\+\_\+}}
+\item 
+static int \mbox{\hyperlink{class_fl___shared___image_ac926021949087cd24e724425f1196296}{alloc\+\_\+handlers\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fl___shared___image_a6602d329ab8a0e9910031eb79c36ddfa}{Fl\+\_\+\+J\+P\+E\+G\+\_\+\+Image}}
+\item 
+class \mbox{\hyperlink{class_fl___shared___image_a7ba57a94fc5ebe647545e4e543109f35}{Fl\+\_\+\+P\+N\+G\+\_\+\+Image}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class supports caching, loading, scaling, and drawing of image files.
+
+Most applications will also want to link against the fltk\+\_\+images library and call the \mbox{\hyperlink{_fl___shared___image_8_h_a5c361cb2fdac6c22f6259f5e044657f4}{fl\+\_\+register\+\_\+images()}} function to support standard image formats such as B\+MP, G\+IF, J\+P\+EG, and P\+NG.
+
+Images can be requested (loaded) with \mbox{\hyperlink{class_fl___shared___image_ad80da92bd9878ef2d9a43f4a5139b090}{Fl\+\_\+\+Shared\+\_\+\+Image\+::get()}}, \mbox{\hyperlink{class_fl___shared___image_a6f99c91070e5a63a69daecbafcd4f043}{find()}}, and some other methods. All images are cached in an internal list of shared images and should be released when they are no longer needed. A refcount is used to determine if a released image is to be destroyed with delete.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___shared___image_ad80da92bd9878ef2d9a43f4a5139b090}{Fl\+\_\+\+Shared\+\_\+\+Image\+::get()}} 
+
+\mbox{\hyperlink{class_fl___shared___image_a6f99c91070e5a63a69daecbafcd4f043}{Fl\+\_\+\+Shared\+\_\+\+Image\+::find()}} 
+
+\mbox{\hyperlink{class_fl___shared___image_a78812e7f8fc51248061c79bf72ae32ec}{Fl\+\_\+\+Shared\+\_\+\+Image\+::release()}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___shared___image_abce198105631f02e4deee18e99bee668}\label{class_fl___shared___image_abce198105631f02e4deee18e99bee668}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{Fl\_Shared\_Image()}{Fl\_Shared\_Image()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Shared\+\_\+\+Image\+::\+Fl\+\_\+\+Shared\+\_\+\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_addb22c44911a41940c486cc8e24c8fb9}\label{class_fl___shared___image_addb22c44911a41940c486cc8e24c8fb9}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{Fl\_Shared\_Image()}{Fl\_Shared\_Image()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Shared\+\_\+\+Image\+::\+Fl\+\_\+\+Shared\+\_\+\+Image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{n,  }\item[{\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$}]{img = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a6aa7e73dfbeedb8bd938acdc4dbedb17}\label{class_fl___shared___image_a6aa7e73dfbeedb8bd938acdc4dbedb17}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!````~Fl\_Shared\_Image@{$\sim$Fl\_Shared\_Image}}
+\index{````~Fl\_Shared\_Image@{$\sim$Fl\_Shared\_Image}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Shared\_Image()}{~Fl\_Shared\_Image()}}
+{\footnotesize\ttfamily virtual Fl\+\_\+\+Shared\+\_\+\+Image\+::$\sim$\+Fl\+\_\+\+Shared\+\_\+\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___shared___image_a14d578defbe9b67d276beab4d21183aa}\label{class_fl___shared___image_a14d578defbe9b67d276beab4d21183aa}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!add@{add}}
+\index{add@{add}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::add (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a82ae1953e3101256f0bf8c5a39e2bf74}\label{class_fl___shared___image_a82ae1953e3101256f0bf8c5a39e2bf74}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!add\_handler@{add\_handler}}
+\index{add\_handler@{add\_handler}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{add\_handler()}{add\_handler()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::add\+\_\+handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___shared___image_8_h_a62af0791dfeceb958592fe18352e773e}{Fl\+\_\+\+Shared\+\_\+\+Handler}}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_ac6a7539e2caf91f00b1bf728c9c1b7bc}\label{class_fl___shared___image_ac6a7539e2caf91f00b1bf728c9c1b7bc}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!color\_average@{color\_average}}
+\index{color\_average@{color\_average}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{color\_average()}{color\_average()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::color\+\_\+average (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c,  }\item[{float}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___image_a1042c579d034d57f07db9fae6f1fc2d7}{Fl\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___shared___image_a1f2797def7eae8b496b9e2774a557fc3}\label{class_fl___shared___image_a1f2797def7eae8b496b9e2774a557fc3}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!compare@{compare}}
+\index{compare@{compare}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Shared\+\_\+\+Image\+::compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} $\ast$$\ast$}]{i0,  }\item[{\mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} $\ast$$\ast$}]{i1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a1a2682e8f70ecb7ae1fd8815a3a4b9e7}\label{class_fl___shared___image_a1a2682e8f70ecb7ae1fd8815a3a4b9e7}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!copy@{copy}}
+\index{copy@{copy}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_fl___shared___image_a1a2682e8f70ecb7ae1fd8815a3a4b9e7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___shared___image_a4a06b035220edababffdd07fd6ae229e}\label{class_fl___shared___image_a4a06b035220edababffdd07fd6ae229e}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!copy@{copy}}
+\index{copy@{copy}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::copy (\begin{DoxyParamCaption}\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___image_a8c830df178375a758ce8a3fa2e15359d}{Fl\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___shared___image_aa3f0190a62e732211734e48c725ba583}\label{class_fl___shared___image_aa3f0190a62e732211734e48c725ba583}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!desaturate@{desaturate}}
+\index{desaturate@{desaturate}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{desaturate()}{desaturate()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::desaturate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___image_a1ab3c0381a8d03553ded4edf4e436da4}{Fl\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___shared___image_ad6954b9df5ea1adbabba07a090ce01bc}\label{class_fl___shared___image_ad6954b9df5ea1adbabba07a090ce01bc}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!draw@{draw}}
+\index{draw@{draw}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::draw (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_fl___shared___image_ad6954b9df5ea1adbabba07a090ce01bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___shared___image_aa76e482ab511cb7bc559dba248373d3e}\label{class_fl___shared___image_aa76e482ab511cb7bc559dba248373d3e}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!draw@{draw}}
+\index{draw@{draw}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::draw (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{int}]{cx,  }\item[{int}]{cy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the image with a bounding box. Arguments {\ttfamily X,Y,W,H} specify a bounding box for the image, with the origin ~\newline
+ (upper-\/left corner) of the image offset by the {\ttfamily cx} and {\ttfamily cy} arguments.
+
+In other words\+: {\ttfamily fl\+\_\+push\+\_\+clip(\+X,\+Y,\+W,\+H)} is applied, the image is drawn with its upper-\/left corner at {\ttfamily X-\/cx,Y-\/cy} and its own width and height, {\ttfamily fl\+\_\+pop\+\_\+clip}{\ttfamily ()} is applied. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___image_a95e713f20628bfb4c8155ab94ba65ba1}{Fl\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___shared___image_a6f99c91070e5a63a69daecbafcd4f043}\label{class_fl___shared___image_a6f99c91070e5a63a69daecbafcd4f043}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!find@{find}}
+\index{find@{find}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name,  }\item[{int}]{W = {\ttfamily 0},  }\item[{int}]{H = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_ad80da92bd9878ef2d9a43f4a5139b090}\label{class_fl___shared___image_ad80da92bd9878ef2d9a43f4a5139b090}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!get@{get}}
+\index{get@{get}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name,  }\item[{int}]{W = {\ttfamily 0},  }\item[{int}]{H = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a6d192f80b36ffdbddfad4fb5992aadca}\label{class_fl___shared___image_a6d192f80b36ffdbddfad4fb5992aadca}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!get@{get}}
+\index{get@{get}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$}]{rgb,  }\item[{int}]{own\+\_\+it = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_acb104bbfd9461ef533f5a4b2e17b5b47}\label{class_fl___shared___image_acb104bbfd9461ef533f5a4b2e17b5b47}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!images@{images}}
+\index{images@{images}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{images()}{images()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}}$\ast$$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::images (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a67bec522a680cd0c469bb458d12b838f}\label{class_fl___shared___image_a67bec522a680cd0c469bb458d12b838f}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!name@{name}}
+\index{name@{name}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the filename of the shared image \mbox{\Hypertarget{class_fl___shared___image_a25fd4c7589a63736988c0ceafcb2c2a4}\label{class_fl___shared___image_a25fd4c7589a63736988c0ceafcb2c2a4}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!num\_images@{num\_images}}
+\index{num\_images@{num\_images}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{num\_images()}{num\_images()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Shared\+\_\+\+Image\+::num\+\_\+images (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_abeb87fede91973b52eb798b8a08f5774}\label{class_fl___shared___image_abeb87fede91973b52eb798b8a08f5774}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!original@{original}}
+\index{original@{original}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{original()}{original()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Shared\+\_\+\+Image\+::original (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether this is an original image. Images loaded from a file or from memory are marked {\ttfamily original} as opposed to images created as a copy of another image with different size (width or height). \begin{DoxyNote}{Note}
+This is useful for debugging (rarely used in user code). 
+\end{DoxyNote}
+\begin{DoxySince}{Since}
+F\+L\+TK 1.\+4.\+0 
+\end{DoxySince}
+\mbox{\Hypertarget{class_fl___shared___image_af425a9c43f38266b626e27eafdd9768f}\label{class_fl___shared___image_af425a9c43f38266b626e27eafdd9768f}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!refcount@{refcount}}
+\index{refcount@{refcount}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{refcount()}{refcount()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Shared\+\_\+\+Image\+::refcount (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of references of this shared image. When reference is below 1, the image is deleted. \mbox{\Hypertarget{class_fl___shared___image_a78812e7f8fc51248061c79bf72ae32ec}\label{class_fl___shared___image_a78812e7f8fc51248061c79bf72ae32ec}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!release@{release}}
+\index{release@{release}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___shared___image_a954dbe57648e63bb5f6c9d5aca4ef527}\label{class_fl___shared___image_a954dbe57648e63bb5f6c9d5aca4ef527}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!reload@{reload}}
+\index{reload@{reload}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{reload()}{reload()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___shared___image_a5605e46d3fd054ed6142803c75d54ed0}\label{class_fl___shared___image_a5605e46d3fd054ed6142803c75d54ed0}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!remove\_handler@{remove\_handler}}
+\index{remove\_handler@{remove\_handler}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{remove\_handler()}{remove\_handler()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::remove\+\_\+handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___shared___image_8_h_a62af0791dfeceb958592fe18352e773e}{Fl\+\_\+\+Shared\+\_\+\+Handler}}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a1026830f0b7384269a5b8a304a438f52}\label{class_fl___shared___image_a1026830f0b7384269a5b8a304a438f52}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!scale@{scale}}
+\index{scale@{scale}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::scale (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{proportional = {\ttfamily 1},  }\item[{int}]{can\+\_\+expand = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___shared___image_a7523d15a005059a432404b21eaa7e58e}\label{class_fl___shared___image_a7523d15a005059a432404b21eaa7e58e}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!scaling\_algorithm@{scaling\_algorithm}}
+\index{scaling\_algorithm@{scaling\_algorithm}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{scaling\_algorithm()}{scaling\_algorithm()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::scaling\+\_\+algorithm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___image_8_h_a79b21b0aede6293a7521b40ff6196368}{Fl\+\_\+\+R\+G\+B\+\_\+\+Scaling}}}]{algorithm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Sets what algorithm is used when resizing a source image. The default algorithm is F\+L\+\_\+\+R\+G\+B\+\_\+\+S\+C\+A\+L\+I\+N\+G\+\_\+\+B\+I\+L\+I\+N\+E\+AR. Drawing an \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}} is sometimes performed by first resizing the source image and then drawing the resized copy. This occurs, e.\+g., when drawing to screen under Linux or M\+S\+Windows after having called \mbox{\hyperlink{class_fl___shared___image_a1026830f0b7384269a5b8a304a438f52}{Fl\+\_\+\+Shared\+\_\+\+Image\+::scale()}}. This function controls what method is used when the image to be resized is an \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}}. \begin{DoxyVersion}{Version}
+1.\+3.\+4 and requires compiling with F\+L\+T\+K\+\_\+\+A\+B\+I\+\_\+\+V\+E\+R\+S\+I\+ON = 10304 
+\end{DoxyVersion}
+\mbox{\Hypertarget{class_fl___shared___image_a4d2cbe77925d05b473afd251b0127994}\label{class_fl___shared___image_a4d2cbe77925d05b473afd251b0127994}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!uncache@{uncache}}
+\index{uncache@{uncache}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{uncache()}{uncache()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::uncache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___image_ab439ce86ab05a416defe4e31d4ea79c9}{Fl\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___shared___image_a417ff910025f28d2337e54fac47e4f44}\label{class_fl___shared___image_a417ff910025f28d2337e54fac47e4f44}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!update@{update}}
+\index{update@{update}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Shared\+\_\+\+Image\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_fl___shared___image_a6602d329ab8a0e9910031eb79c36ddfa}\label{class_fl___shared___image_a6602d329ab8a0e9910031eb79c36ddfa}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!Fl\_JPEG\_Image@{Fl\_JPEG\_Image}}
+\index{Fl\_JPEG\_Image@{Fl\_JPEG\_Image}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{Fl\_JPEG\_Image}{Fl\_JPEG\_Image}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_fl___j_p_e_g___image}{Fl\+\_\+\+J\+P\+E\+G\+\_\+\+Image}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a7ba57a94fc5ebe647545e4e543109f35}\label{class_fl___shared___image_a7ba57a94fc5ebe647545e4e543109f35}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!Fl\_PNG\_Image@{Fl\_PNG\_Image}}
+\index{Fl\_PNG\_Image@{Fl\_PNG\_Image}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{Fl\_PNG\_Image}{Fl\_PNG\_Image}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_fl___p_n_g___image}{Fl\+\_\+\+P\+N\+G\+\_\+\+Image}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___shared___image_ac926021949087cd24e724425f1196296}\label{class_fl___shared___image_ac926021949087cd24e724425f1196296}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!alloc\_handlers\_@{alloc\_handlers\_}}
+\index{alloc\_handlers\_@{alloc\_handlers\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{alloc\_handlers\_}{alloc\_handlers\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Shared\+\_\+\+Image\+::alloc\+\_\+handlers\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a163056147dfd176f932ea3eb90c47654}\label{class_fl___shared___image_a163056147dfd176f932ea3eb90c47654}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!alloc\_image\_@{alloc\_image\_}}
+\index{alloc\_image\_@{alloc\_image\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{alloc\_image\_}{alloc\_image\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Shared\+\_\+\+Image\+::alloc\+\_\+image\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_ac08c9613d5de0aa508aa2d10478ab329}\label{class_fl___shared___image_ac08c9613d5de0aa508aa2d10478ab329}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!alloc\_images\_@{alloc\_images\_}}
+\index{alloc\_images\_@{alloc\_images\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{alloc\_images\_}{alloc\_images\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Shared\+\_\+\+Image\+::alloc\+\_\+images\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_ac7f4bfb3bbd57dfe1e64c6c4da1ea648}\label{class_fl___shared___image_ac7f4bfb3bbd57dfe1e64c6c4da1ea648}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!handlers\_@{handlers\_}}
+\index{handlers\_@{handlers\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{handlers\_}{handlers\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___shared___image_8_h_a62af0791dfeceb958592fe18352e773e}{Fl\+\_\+\+Shared\+\_\+\+Handler}}$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::handlers\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_ac7543f043f90d2f5869fef9e61ff29e6}\label{class_fl___shared___image_ac7543f043f90d2f5869fef9e61ff29e6}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!image\_@{image\_}}
+\index{image\_@{image\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{image\_}{image\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::image\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a22f271eb625b5e3c2a234a9b51f12283}\label{class_fl___shared___image_a22f271eb625b5e3c2a234a9b51f12283}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!images\_@{images\_}}
+\index{images\_@{images\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{images\_}{images\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}}$\ast$$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::images\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a5a551ae6cef553aef679d26bf5dae782}\label{class_fl___shared___image_a5a551ae6cef553aef679d26bf5dae782}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!name\_@{name\_}}
+\index{name\_@{name\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{name\_}{name\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Shared\+\_\+\+Image\+::name\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_ac9df79c86ca2b21de75a652eb002b7ac}\label{class_fl___shared___image_ac9df79c86ca2b21de75a652eb002b7ac}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!num\_handlers\_@{num\_handlers\_}}
+\index{num\_handlers\_@{num\_handlers\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{num\_handlers\_}{num\_handlers\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Shared\+\_\+\+Image\+::num\+\_\+handlers\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a06a5bfb6b6dc605ebf045bb18779441c}\label{class_fl___shared___image_a06a5bfb6b6dc605ebf045bb18779441c}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!num\_images\_@{num\_images\_}}
+\index{num\_images\_@{num\_images\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{num\_images\_}{num\_images\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Shared\+\_\+\+Image\+::num\+\_\+images\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_ae68c77edaf049009ca0efa34a615e402}\label{class_fl___shared___image_ae68c77edaf049009ca0efa34a615e402}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!original\_@{original\_}}
+\index{original\_@{original\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{original\_}{original\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Shared\+\_\+\+Image\+::original\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___shared___image_a5d1f1245c4b2c84b5aeee072f8626968}\label{class_fl___shared___image_a5d1f1245c4b2c84b5aeee072f8626968}} 
+\index{Fl\_Shared\_Image@{Fl\_Shared\_Image}!refcount\_@{refcount\_}}
+\index{refcount\_@{refcount\_}!Fl\_Shared\_Image@{Fl\_Shared\_Image}}
+\doxysubsubsection{\texorpdfstring{refcount\_}{refcount\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Shared\+\_\+\+Image\+::refcount\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___shared___image_8_h}{Fl\+\_\+\+Shared\+\_\+\+Image.\+H}}\end{DoxyCompactItemize}

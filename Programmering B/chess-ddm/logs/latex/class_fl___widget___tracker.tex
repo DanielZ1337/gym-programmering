@@ -1,0 +1,106 @@
+\hypertarget{class_fl___widget___tracker}{}\doxysection{Fl\+\_\+\+Widget\+\_\+\+Tracker Class Reference}
+\label{class_fl___widget___tracker}\index{Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}}
+
+
+{\ttfamily \#include $<$Fl.\+H$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___widget___tracker_af56fbd8246a36a9f81af4b33a51bdbbf}{Fl\+\_\+\+Widget\+\_\+\+Tracker}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$wi)
+\item 
+\mbox{\hyperlink{class_fl___widget___tracker_ad8b10b224a41cbe76566b57742190834}{$\sim$\+Fl\+\_\+\+Widget\+\_\+\+Tracker}} ()
+\item 
+\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$ \mbox{\hyperlink{class_fl___widget___tracker_a576527397fe3915b852f1d7402923fb5}{widget}} ()
+\item 
+int \mbox{\hyperlink{class_fl___widget___tracker_a2838e5c2490a0bbd2e36d0edf92c822c}{deleted}} ()
+\item 
+int \mbox{\hyperlink{class_fl___widget___tracker_a1dede6a8196c421e380233236bb697cf}{exists}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class should be used to control safe widget deletion.
+
+You can use an \mbox{\hyperlink{class_fl___widget___tracker}{Fl\+\_\+\+Widget\+\_\+\+Tracker}} object to watch another widget, if you need to know, if this widget has been deleted during a callback.
+
+This simplifies the use of the \char`\"{}safe widget deletion\char`\"{} methods \mbox{\hyperlink{group__fl__del__widget_gaa6dcacf7538e5424c8366f7a569c0e05}{Fl\+::watch\+\_\+widget\+\_\+pointer()}} and \mbox{\hyperlink{group__fl__del__widget_gabcf12c2424e03d16611f69cf8cf5a033}{Fl\+::release\+\_\+widget\+\_\+pointer()}} and makes their use more reliable, because the destructor autmatically releases the widget pointer from the widget watch list.
+
+It is intended to be used as an automatic (local/stack) variable, such that the automatic destructor is called when the object\textquotesingle{}s scope is left. This ensures that no stale widget pointers are left in the widget watch list (see example below).
+
+You can also create \mbox{\hyperlink{class_fl___widget___tracker}{Fl\+\_\+\+Widget\+\_\+\+Tracker}} objects with {\ttfamily new}, but then it is your responsibility to delete the object (and thus remove the widget pointer from the watch list) when it is not needed any more.
+
+Example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} MyClass::handle (\textcolor{keywordtype}{int} event) \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (...) \{}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___widget___tracker}{Fl\_Widget\_Tracker}} wp(\textcolor{keyword}{this});   \textcolor{comment}{// watch myself}}
+\DoxyCodeLine{do\_callback();            \textcolor{comment}{// call the callback}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (wp.deleted()) \textcolor{keywordflow}{return} 1;   \textcolor{comment}{// exit, if deleted}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{// Now we are sure that the widget has not been deleted.}}
+\DoxyCodeLine{\textcolor{comment}{// It is safe to access the widget}}
+\DoxyCodeLine{}
+\DoxyCodeLine{clear\_changed();      \textcolor{comment}{// access the widget}}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___widget___tracker_af56fbd8246a36a9f81af4b33a51bdbbf}\label{class_fl___widget___tracker_af56fbd8246a36a9f81af4b33a51bdbbf}} 
+\index{Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}!Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}}
+\index{Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}!Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}}
+\doxysubsubsection{\texorpdfstring{Fl\_Widget\_Tracker()}{Fl\_Widget\_Tracker()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Widget\+\_\+\+Tracker\+::\+Fl\+\_\+\+Widget\+\_\+\+Tracker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{wi }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___widget___tracker_ad8b10b224a41cbe76566b57742190834}\label{class_fl___widget___tracker_ad8b10b224a41cbe76566b57742190834}} 
+\index{Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}!````~Fl\_Widget\_Tracker@{$\sim$Fl\_Widget\_Tracker}}
+\index{````~Fl\_Widget\_Tracker@{$\sim$Fl\_Widget\_Tracker}!Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Widget\_Tracker()}{~Fl\_Widget\_Tracker()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Widget\+\_\+\+Tracker\+::$\sim$\+Fl\+\_\+\+Widget\+\_\+\+Tracker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___widget___tracker_a2838e5c2490a0bbd2e36d0edf92c822c}\label{class_fl___widget___tracker_a2838e5c2490a0bbd2e36d0edf92c822c}} 
+\index{Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}!deleted@{deleted}}
+\index{deleted@{deleted}!Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}}
+\doxysubsubsection{\texorpdfstring{deleted()}{deleted()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+\_\+\+Tracker\+::deleted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns 1, if the watched widget has been deleted.
+
+This is a convenience method. You can also use something like
+
+{\ttfamily  if (wp.\+widget() == 0) // ...}
+
+where {\ttfamily wp} is an \mbox{\hyperlink{class_fl___widget___tracker}{Fl\+\_\+\+Widget\+\_\+\+Tracker}} object. \mbox{\Hypertarget{class_fl___widget___tracker_a1dede6a8196c421e380233236bb697cf}\label{class_fl___widget___tracker_a1dede6a8196c421e380233236bb697cf}} 
+\index{Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}!exists@{exists}}
+\index{exists@{exists}!Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+\_\+\+Tracker\+::exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns 1, if the watched widget exists (has not been deleted).
+
+This is a convenience method. You can also use something like
+
+{\ttfamily  if (wp.\+widget() != 0) // ...}
+
+where {\ttfamily wp} is an \mbox{\hyperlink{class_fl___widget___tracker}{Fl\+\_\+\+Widget\+\_\+\+Tracker}} object. \mbox{\Hypertarget{class_fl___widget___tracker_a576527397fe3915b852f1d7402923fb5}\label{class_fl___widget___tracker_a576527397fe3915b852f1d7402923fb5}} 
+\index{Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}!widget@{widget}}
+\index{widget@{widget}!Fl\_Widget\_Tracker@{Fl\_Widget\_Tracker}}
+\doxysubsubsection{\texorpdfstring{widget()}{widget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}}$\ast$ Fl\+\_\+\+Widget\+\_\+\+Tracker\+::widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a pointer to the watched widget.
+
+This pointer is {\ttfamily N\+U\+LL}, if the widget has been deleted. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl_8_h}{Fl.\+H}}\end{DoxyCompactItemize}

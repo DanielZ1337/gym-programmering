@@ -1,0 +1,89 @@
+\hypertarget{struct_fl___multi___label}{}\doxysection{Fl\+\_\+\+Multi\+\_\+\+Label Struct Reference}
+\label{struct_fl___multi___label}\index{Fl\_Multi\_Label@{Fl\_Multi\_Label}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Multi\+\_\+\+Label.\+H$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{struct_fl___multi___label_a50c609957da3af418a48cfea9fbb632a}{label}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{struct_fl___multi___label_af72aa419e40c7a64116ea19f4fee4b98}{label}} (\mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{struct_fl___multi___label_a6b4edb800cb21d45cd137ecd8a8d66ef}{labela}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{struct_fl___multi___label_a2fb8179ce00ac149aec20a4f659eb2f8}{labelb}}
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{struct_fl___multi___label_a09c69b2d4b971cfb85396795a643f83a}{typea}}
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{struct_fl___multi___label_a8a52fb11250265e3132caaa36a24bacf}{typeb}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This struct allows multiple labels to be added to objects that might normally have only one label.
+
+This struct allows a mixed text and/or graphics label to be applied to an object that would normally only have a single (usually text only) label.
+
+Most regular F\+L\+TK widgets now support the ability to associate both images and text with a label but some special cases, notably the non-\/widget \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} objects, do not. \mbox{\hyperlink{struct_fl___multi___label}{Fl\+\_\+\+Multi\+\_\+\+Label}} may be used to create menu items that have an icon and text, which would not normally be possible for an \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}}. For example, \mbox{\hyperlink{struct_fl___multi___label}{Fl\+\_\+\+Multi\+\_\+\+Label}} is used in the New-\/$>$Code submenu in fluid, and others.
+
+Each \mbox{\hyperlink{struct_fl___multi___label}{Fl\+\_\+\+Multi\+\_\+\+Label}} holds two elements, labela and labelb; each may hold either a text label (const char$\ast$) or an image (Fl\+\_\+\+Image$\ast$). When displayed, labela is drawn first and labelb is drawn immediately to its right.
+
+More complex labels might be constructed by setting labelb as another \mbox{\hyperlink{struct_fl___multi___label}{Fl\+\_\+\+Multi\+\_\+\+Label}} and thus chaining up a series of label elements.
+
+When assigning a label element to one of labela or labelb, they should be explicitly cast to (const char$\ast$) if they are not of that type already.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_fl___label}{Fl\+\_\+\+Label}} and \mbox{\hyperlink{_enumerations_8_h_ad5774781d33328b82990ff9e25dfd61b}{Fl\+\_\+\+Labeltype}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_fl___multi___label_af72aa419e40c7a64116ea19f4fee4b98}\label{struct_fl___multi___label_af72aa419e40c7a64116ea19f4fee4b98}} 
+\index{Fl\_Multi\_Label@{Fl\_Multi\_Label}!label@{label}}
+\index{label@{label}!Fl\_Multi\_Label@{Fl\_Multi\_Label}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Multi\+\_\+\+Label\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This method is used to associate a \mbox{\hyperlink{struct_fl___multi___label}{Fl\+\_\+\+Multi\+\_\+\+Label}} with a \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}}. \mbox{\Hypertarget{struct_fl___multi___label_a50c609957da3af418a48cfea9fbb632a}\label{struct_fl___multi___label_a50c609957da3af418a48cfea9fbb632a}} 
+\index{Fl\_Multi\_Label@{Fl\_Multi\_Label}!label@{label}}
+\index{label@{label}!Fl\_Multi\_Label@{Fl\_Multi\_Label}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Multi\+\_\+\+Label\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+This method is used to associate a \mbox{\hyperlink{struct_fl___multi___label}{Fl\+\_\+\+Multi\+\_\+\+Label}} with a \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_fl___multi___label_a6b4edb800cb21d45cd137ecd8a8d66ef}\label{struct_fl___multi___label_a6b4edb800cb21d45cd137ecd8a8d66ef}} 
+\index{Fl\_Multi\_Label@{Fl\_Multi\_Label}!labela@{labela}}
+\index{labela@{labela}!Fl\_Multi\_Label@{Fl\_Multi\_Label}}
+\doxysubsubsection{\texorpdfstring{labela}{labela}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Multi\+\_\+\+Label\+::labela}
+
+Holds the \char`\"{}leftmost\char`\"{} of the two elements in the composite label. Typically this would be assigned either a text string (const char$\ast$), a (Fl\+\_\+\+Image$\ast$) or a (Fl\+\_\+\+Multi\+\_\+\+Label$\ast$). \mbox{\Hypertarget{struct_fl___multi___label_a2fb8179ce00ac149aec20a4f659eb2f8}\label{struct_fl___multi___label_a2fb8179ce00ac149aec20a4f659eb2f8}} 
+\index{Fl\_Multi\_Label@{Fl\_Multi\_Label}!labelb@{labelb}}
+\index{labelb@{labelb}!Fl\_Multi\_Label@{Fl\_Multi\_Label}}
+\doxysubsubsection{\texorpdfstring{labelb}{labelb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Multi\+\_\+\+Label\+::labelb}
+
+Holds the \char`\"{}rightmost\char`\"{} of the two elements in the composite label. Typically this would be assigned either a text string (const char$\ast$), a (Fl\+\_\+\+Image$\ast$) or a (Fl\+\_\+\+Multi\+\_\+\+Label$\ast$). \mbox{\Hypertarget{struct_fl___multi___label_a09c69b2d4b971cfb85396795a643f83a}\label{struct_fl___multi___label_a09c69b2d4b971cfb85396795a643f83a}} 
+\index{Fl\_Multi\_Label@{Fl\_Multi\_Label}!typea@{typea}}
+\index{typea@{typea}!Fl\_Multi\_Label@{Fl\_Multi\_Label}}
+\doxysubsubsection{\texorpdfstring{typea}{typea}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} Fl\+\_\+\+Multi\+\_\+\+Label\+::typea}
+
+Holds the \char`\"{}type\char`\"{} of labela. Typically this is set to F\+L\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+L\+A\+B\+EL for a text label, \+\_\+\+F\+L\+\_\+\+I\+M\+A\+G\+E\+\_\+\+L\+A\+B\+EL for an image (based on Fl\+\_\+image) or \+\_\+\+F\+L\+\_\+\+M\+U\+L\+T\+I\+\_\+\+L\+A\+B\+EL if \char`\"{}chaining\char`\"{} multiple \mbox{\hyperlink{struct_fl___multi___label}{Fl\+\_\+\+Multi\+\_\+\+Label}} elements together. \mbox{\Hypertarget{struct_fl___multi___label_a8a52fb11250265e3132caaa36a24bacf}\label{struct_fl___multi___label_a8a52fb11250265e3132caaa36a24bacf}} 
+\index{Fl\_Multi\_Label@{Fl\_Multi\_Label}!typeb@{typeb}}
+\index{typeb@{typeb}!Fl\_Multi\_Label@{Fl\_Multi\_Label}}
+\doxysubsubsection{\texorpdfstring{typeb}{typeb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} Fl\+\_\+\+Multi\+\_\+\+Label\+::typeb}
+
+Holds the \char`\"{}type\char`\"{} of labelb. Typically this is set to F\+L\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+L\+A\+B\+EL for a text label, \+\_\+\+F\+L\+\_\+\+I\+M\+A\+G\+E\+\_\+\+L\+A\+B\+EL for an image (based on Fl\+\_\+image) or \+\_\+\+F\+L\+\_\+\+M\+U\+L\+T\+I\+\_\+\+L\+A\+B\+EL if \char`\"{}chaining\char`\"{} multiple \mbox{\hyperlink{struct_fl___multi___label}{Fl\+\_\+\+Multi\+\_\+\+Label}} elements together. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___multi___label_8_h}{Fl\+\_\+\+Multi\+\_\+\+Label.\+H}}\end{DoxyCompactItemize}

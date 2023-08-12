@@ -1,0 +1,7 @@
+<map id="Fl_Dial" name="Fl_Dial">
+<area shape="rect" id="node1" title=" " alt="" coords="75,155,137,181"/>
+<area shape="rect" id="node4" href="$class_fl___fill___dial.html" title=" " alt="" coords="5,229,92,256"/>
+<area shape="rect" id="node5" href="$class_fl___line___dial.html" title=" " alt="" coords="117,229,210,256"/>
+<area shape="rect" id="node2" href="$class_fl___valuator.html" title=" " alt="" coords="62,80,150,107"/>
+<area shape="rect" id="node3" href="$class_fl___widget.html" title=" " alt="" coords="65,5,147,32"/>
+</map>

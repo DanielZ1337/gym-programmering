@@ -1,0 +1,12 @@
+<map id="player" name="player">
+<area shape="rect" id="node1" title=" " alt="" coords="221,1123,339,1259"/>
+<area shape="rect" id="node2" href="$classcharacters.html" title=" " alt="" coords="145,968,255,1060"/>
+<area shape="rect" id="node3" href="$classsf_1_1_sprite.html" title="Drawable representation of a texture, with its own transformations, color, etc." alt="" coords="119,637,260,905"/>
+<area shape="rect" id="node4" href="$classsf_1_1_texture.html" title="Image living on the graphics card that can be used for drawing." alt="" coords="43,292,186,575"/>
+<area shape="rect" id="node5" title=" " alt="" coords="53,42,91,119"/>
+<area shape="rect" id="node7" href="$classhitbox__enemy.html" title=" " alt="" coords="210,387,374,479"/>
+<area shape="rect" id="node6" title=" " alt="" coords="355,42,402,119"/>
+<area shape="rect" id="node8" href="$classsf_1_1_circle_shape.html" title="Specialized shape representing a circle." alt="" coords="175,5,299,156"/>
+<area shape="rect" id="node9" href="$classhitbox__car.html" title=" " alt="" coords="455,968,598,1060"/>
+<area shape="rect" id="node10" href="$classsf_1_1_rectangle_shape.html" title="Specialized shape representing a rectangle." alt="" coords="463,703,601,839"/>
+</map>

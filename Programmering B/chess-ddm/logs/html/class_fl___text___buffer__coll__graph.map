@@ -1,0 +1,4 @@
+<map id="Fl_Text_Buffer" name="Fl_Text_Buffer">
+<area shape="rect" id="node1" title="This class manages Unicode text displayed in one or more Fl_Text_Display widgets." alt="" coords="16,124,121,151"/>
+<area shape="rect" id="node2" href="$class_fl___text___selection.html" title="This is an internal class for Fl_Text_Buffer to manage text selections. This class works correctly wi..." alt="" coords="5,5,132,32"/>
+</map>

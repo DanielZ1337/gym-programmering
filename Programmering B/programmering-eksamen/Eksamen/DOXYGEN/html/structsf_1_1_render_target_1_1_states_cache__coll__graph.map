@@ -1,0 +1,11 @@
+<map id="sf::RenderTarget::StatesCache" name="sf::RenderTarget::StatesCache">
+<area shape="rect" id="node1" title="Render states cache." alt="" coords="225,520,387,612"/>
+<area shape="rect" id="node2" href="$structsf_1_1_blend_mode.html" title="Blending modes for drawing." alt="" coords="51,277,158,384"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,42,79,119"/>
+<area shape="rect" id="node4" title=" " alt="" coords="138,42,197,119"/>
+<area shape="rect" id="node5" title=" " alt="" coords="182,292,313,369"/>
+<area shape="rect" id="node6" href="$classsf_1_1_vertex.html" title="Define a point with color and texture coordinates." alt="" coords="337,263,417,399"/>
+<area shape="rect" id="node7" href="$classsf_1_1_color.html" title="Utility class for manipulating RGBA colors." alt="" coords="224,20,316,141"/>
+<area shape="rect" id="node8" href="$classsf_1_1_vector2.html" title=" " alt="" coords="442,5,575,156"/>
+<area shape="rect" id="node9" title=" " alt="" coords="456,292,503,369"/>
+</map>

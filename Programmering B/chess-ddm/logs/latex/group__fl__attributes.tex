@@ -1,0 +1,453 @@
+\hypertarget{group__fl__attributes}{}\doxysection{Color \& Font functions}
+\label{group__fl__attributes}\index{Color \& Font functions@{Color \& Font functions}}
+
+
+fl global color, font functions. These functions are declared in $<$\mbox{\hyperlink{_fl_8_h}{F\+L/\+Fl.\+H}}$>$ or $<$\mbox{\hyperlink{fl__draw_8_h}{F\+L/fl\+\_\+draw.\+H}}$>$.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_gaed9b5e5a196cbbf3918cca83cb280d7a}{Fl\+::set\+\_\+color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}})
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_ga6e7b4ee94a41e8f345f1d11fe20f8ff2}{Fl\+::set\+\_\+color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}, unsigned c)
+\item 
+static unsigned \mbox{\hyperlink{group__fl__attributes_gaafd4aeaec9c7fadd27b7771f087355d3}{Fl\+::get\+\_\+color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}})
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_gad41ba457eaa9d980e1221eb8fd174968}{Fl\+::get\+\_\+color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \&\mbox{\hyperlink{png_8h_a785e03b9f52b7b9ca5116a272adc908f}{red}}, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \&green, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \&blue)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_ga33e301d16b1679406c52a092785639f4}{Fl\+::free\+\_\+color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}, int overlay=0)
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{group__fl__attributes_ga10f7749e09d9a15585f0c748dcd2bc9a}{Fl\+::get\+\_\+font}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}})
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{group__fl__attributes_ga464d8439250b0636ddc9375fc660b29f}{Fl\+::get\+\_\+font\+\_\+name}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}, int $\ast$attributes=0)
+\item 
+static int \mbox{\hyperlink{group__fl__attributes_ga3751aad3db88d47d05eea1b1c90b2c47}{Fl\+::get\+\_\+font\+\_\+sizes}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}, int $\ast$\&sizep)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_gac8bc23064aae455f7e5649240cf66b6d}{Fl\+::set\+\_\+font}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_ga229f381b4ccf634ad83bd5ad4b428ea1}{Fl\+::set\+\_\+font}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}, \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}})
+\item 
+static \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{group__fl__attributes_gaacc901040c27daf45117a3691d0ab03a}{Fl\+::set\+\_\+fonts}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\+\_\+color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_ga40be3354c55ced3fb119e063cd832716}{fl\+\_\+color}} (int c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_ga208595f1c4e4bd0c32ee5a56194b405c}{fl\+\_\+color}} (\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} r, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} g, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{group__fl__attributes_gaea8392e995de663b0d8063af199cf085}{fl\+\_\+color}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}{fl\+\_\+font}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} face, \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} fsize)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{group__fl__attributes_gad234d90fe63191609ec196e1b8041d1a}{fl\+\_\+font}} ()
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{group__fl__attributes_ga15b0cb282ba6d148f095647731f167b2}{fl\+\_\+size}} ()
+\item 
+int \mbox{\hyperlink{group__fl__attributes_gac4acb828270adf35bf1d8fc06051f938}{fl\+\_\+height}} ()
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{group__fl__attributes_ga287690bb893d1cc57a5010d59b2da8c9}{fl\+\_\+height}} (int font, int size)
+\item 
+int \mbox{\hyperlink{group__fl__attributes_ga080e029f6b6fe5e6bf527bbfd890317d}{fl\+\_\+descent}} ()
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} double \mbox{\hyperlink{group__fl__attributes_ga92c762ce2fc7fa891bac6b7590f967bd}{fl\+\_\+width}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$txt)
+\item 
+double \mbox{\hyperlink{group__fl__attributes_gae491dc82c611608435ed434e368ef668}{fl\+\_\+width}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$txt, int n)
+\item 
+double \mbox{\hyperlink{group__fl__attributes_ga4a5b5e4a977299acdc7fcbd3c8a700b5}{fl\+\_\+width}} (unsigned int c)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_ga14cb75a92b6cdd576f9512b38a208f8b}{fl\+\_\+text\+\_\+extents}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$, int \&dx, int \&dy, int \&\mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \&\mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__attributes_gaa52f1ed8201b9d89c2b2edbaed80e907}{fl\+\_\+text\+\_\+extents}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$t, int n, int \&dx, int \&dy, int \&\mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \&\mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}})
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{group__fl__attributes_ga72f4633efc609fb9a03f6d41fcc2d004}{fl\+\_\+latin1\+\_\+to\+\_\+local}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$t, int n=-\/1)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{group__fl__attributes_gaa53f38d7a3686f824ae46f5561535605}{fl\+\_\+local\+\_\+to\+\_\+latin1}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$t, int n=-\/1)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{group__fl__attributes_ga442024dcea71a49199d61d891eca465b}{fl\+\_\+mac\+\_\+roman\+\_\+to\+\_\+local}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$t, int n=-\/1)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{group__fl__attributes_gabac00f62d82963387b53aafc198e140e}{fl\+\_\+local\+\_\+to\+\_\+mac\+\_\+roman}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$t, int n=-\/1)
+\item 
+\mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{group__fl__attributes_ga497a7e059e9f5c89feed24ab0b1338f2}{fl\+\_\+show\+\_\+colormap}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} oldcol)
+\begin{DoxyCompactList}\small\item\em Pops up a window to let the user pick a colormap entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+fl global color, font functions. These functions are declared in $<$\mbox{\hyperlink{_fl_8_h}{F\+L/\+Fl.\+H}}$>$ or $<$\mbox{\hyperlink{fl__draw_8_h}{F\+L/fl\+\_\+draw.\+H}}$>$. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__fl__attributes_gaea8392e995de663b0d8063af199cf085}\label{group__fl__attributes_gaea8392e995de663b0d8063af199cf085}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_color@{fl\_color}}
+\index{fl\_color@{fl\_color}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_color()}{fl\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} fl\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the last \mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\+\_\+color()}} that was set. This can be used for state save/restore. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{group__fl__attributes_gaea8392e995de663b0d8063af199cf085_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}\label{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_color@{fl\_color}}
+\index{fl\_color@{fl\_color}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_color()}{fl\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} fl\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the color for all subsequent drawing operations. For colormapped displays, a color cell will be allocated out of {\ttfamily fl\+\_\+colormap} the first time you use a color. If the colormap fills up then a least-\/squares algorithm is used to find the closest color. If no valid graphical context (fl\+\_\+gc) is available, the foreground is not set for the current window. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & color \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_ga40be3354c55ced3fb119e063cd832716}\label{group__fl__attributes_ga40be3354c55ced3fb119e063cd832716}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_color@{fl\_color}}
+\index{fl\_color@{fl\_color}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_color()}{fl\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} fl\+\_\+color (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+for back compatibility -\/ use \mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\+\_\+color(\+Fl\+\_\+\+Color c)}} instead Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{group__fl__attributes_ga40be3354c55ced3fb119e063cd832716_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_ga208595f1c4e4bd0c32ee5a56194b405c}\label{group__fl__attributes_ga208595f1c4e4bd0c32ee5a56194b405c}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_color@{fl\_color}}
+\index{fl\_color@{fl\_color}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_color()}{fl\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} fl\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{r,  }\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{g,  }\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the color for all subsequent drawing operations. The closest possible match to the R\+GB color is used. The R\+GB color is used directly on True\+Color displays. For colormap visuals the nearest index in the gray ramp or color cube is used. If no valid graphical context (fl\+\_\+gc) is available, the foreground is not set for the current window. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em r,g,b} & color components \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{group__fl__attributes_ga208595f1c4e4bd0c32ee5a56194b405c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_ga080e029f6b6fe5e6bf527bbfd890317d}\label{group__fl__attributes_ga080e029f6b6fe5e6bf527bbfd890317d}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_descent@{fl\_descent}}
+\index{fl\_descent@{fl\_descent}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_descent()}{fl\_descent()}}
+{\footnotesize\ttfamily int fl\+\_\+descent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the recommended distance above the bottom of a \mbox{\hyperlink{group__fl__attributes_gac4acb828270adf35bf1d8fc06051f938}{fl\+\_\+height()}} tall box to draw the text at so it looks centered vertically in that box. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{group__fl__attributes_ga080e029f6b6fe5e6bf527bbfd890317d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_gad234d90fe63191609ec196e1b8041d1a}\label{group__fl__attributes_gad234d90fe63191609ec196e1b8041d1a}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_font@{fl\_font}}
+\index{fl\_font@{fl\_font}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_font()}{fl\_font()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} fl\+\_\+font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the {\ttfamily face} set by the most recent call to \mbox{\hyperlink{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}{fl\+\_\+font()}}. This can be used to save/restore the font. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{group__fl__attributes_gad234d90fe63191609ec196e1b8041d1a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}\label{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_font@{fl\_font}}
+\index{fl\_font@{fl\_font}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_font()}{fl\_font()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} fl\+\_\+font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{face,  }\item[{\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}}}]{fsize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current font, which is then used in various drawing routines. You may call this outside a draw context if necessary to call \mbox{\hyperlink{group__fl__attributes_ga92c762ce2fc7fa891bac6b7590f967bd}{fl\+\_\+width()}}, but on X this will open the display.
+
+The font is identified by a {\ttfamily face} and a {\ttfamily size}. The size of the font is measured in pixels and not \char`\"{}points\char`\"{}. Lines should be spaced {\ttfamily size} pixels apart or more. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_gac4acb828270adf35bf1d8fc06051f938}\label{group__fl__attributes_gac4acb828270adf35bf1d8fc06051f938}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_height@{fl\_height}}
+\index{fl\_height@{fl\_height}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_height()}{fl\_height()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int fl\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the recommended minimum line spacing for the current font. You can also use the value of {\ttfamily size} passed to \mbox{\hyperlink{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}{fl\+\_\+font()}} Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{group__fl__attributes_gac4acb828270adf35bf1d8fc06051f938_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_ga287690bb893d1cc57a5010d59b2da8c9}\label{group__fl__attributes_ga287690bb893d1cc57a5010d59b2da8c9}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_height@{fl\_height}}
+\index{fl\_height@{fl\_height}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_height()}{fl\_height()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} int fl\+\_\+height (\begin{DoxyParamCaption}\item[{int}]{font,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{group__fl__attributes_ga72f4633efc609fb9a03f6d41fcc2d004}\label{group__fl__attributes_ga72f4633efc609fb9a03f6d41fcc2d004}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_latin1\_to\_local@{fl\_latin1\_to\_local}}
+\index{fl\_latin1\_to\_local@{fl\_latin1\_to\_local}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_latin1\_to\_local()}{fl\_latin1\_to\_local()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ fl\+\_\+latin1\+\_\+to\+\_\+local (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{t,  }\item[{int}]{n = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Converts text from Windows/\+X11 latin1 character set to local encoding. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & character string (latin1 encoding) \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & optional number of characters to convert (default is all) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to internal buffer containing converted characters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__fl__attributes_gaa53f38d7a3686f824ae46f5561535605}\label{group__fl__attributes_gaa53f38d7a3686f824ae46f5561535605}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_local\_to\_latin1@{fl\_local\_to\_latin1}}
+\index{fl\_local\_to\_latin1@{fl\_local\_to\_latin1}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_local\_to\_latin1()}{fl\_local\_to\_latin1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ fl\+\_\+local\+\_\+to\+\_\+latin1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{t,  }\item[{int}]{n = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Converts text from local encoding to Windowx/\+X11 latin1 character set. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & character string (local encoding) \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & optional number of characters to convert (default is all) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to internal buffer containing converted characters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__fl__attributes_gabac00f62d82963387b53aafc198e140e}\label{group__fl__attributes_gabac00f62d82963387b53aafc198e140e}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_local\_to\_mac\_roman@{fl\_local\_to\_mac\_roman}}
+\index{fl\_local\_to\_mac\_roman@{fl\_local\_to\_mac\_roman}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_local\_to\_mac\_roman()}{fl\_local\_to\_mac\_roman()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ fl\+\_\+local\+\_\+to\+\_\+mac\+\_\+roman (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{t,  }\item[{int}]{n = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Converts text from local encoding to Mac Roman character set. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & character string (local encoding) \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & optional number of characters to convert (default is all) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to internal buffer containing converted characters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__fl__attributes_ga442024dcea71a49199d61d891eca465b}\label{group__fl__attributes_ga442024dcea71a49199d61d891eca465b}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_mac\_roman\_to\_local@{fl\_mac\_roman\_to\_local}}
+\index{fl\_mac\_roman\_to\_local@{fl\_mac\_roman\_to\_local}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_mac\_roman\_to\_local()}{fl\_mac\_roman\_to\_local()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ fl\+\_\+mac\+\_\+roman\+\_\+to\+\_\+local (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{t,  }\item[{int}]{n = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Converts text from Mac Roman character set to local encoding. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em t} & character string (Mac Roman encoding) \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & optional number of characters to convert (default is all) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to internal buffer containing converted characters 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__fl__attributes_ga497a7e059e9f5c89feed24ab0b1338f2}\label{group__fl__attributes_ga497a7e059e9f5c89feed24ab0b1338f2}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_show\_colormap@{fl\_show\_colormap}}
+\index{fl\_show\_colormap@{fl\_show\_colormap}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_show\_colormap()}{fl\_show\_colormap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} fl\+\_\+show\+\_\+colormap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{oldcol }\end{DoxyParamCaption})}
+
+
+
+Pops up a window to let the user pick a colormap entry. 
+
+ 
+\begin{DoxyImage}
+\includegraphics[height=10cm]{fl_show_colormap.png}
+\doxyfigcaption{fl\+\_\+show\+\_\+colormap}
+\end{DoxyImage}
+ 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em oldcol} & color to be highlighted when grid is shown. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em Fl\+\_\+\+Color} & value of the chosen colormap entry. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___color___chooser}{Fl\+\_\+\+Color\+\_\+\+Chooser}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{group__fl__attributes_ga15b0cb282ba6d148f095647731f167b2}\label{group__fl__attributes_ga15b0cb282ba6d148f095647731f167b2}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_size@{fl\_size}}
+\index{fl\_size@{fl\_size}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_size()}{fl\_size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} fl\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the {\ttfamily size} set by the most recent call to \mbox{\hyperlink{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}{fl\+\_\+font()}}. This can be used to save/restore the font. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{group__fl__attributes_ga15b0cb282ba6d148f095647731f167b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_ga14cb75a92b6cdd576f9512b38a208f8b}\label{group__fl__attributes_ga14cb75a92b6cdd576f9512b38a208f8b}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_text\_extents@{fl\_text\_extents}}
+\index{fl\_text\_extents@{fl\_text\_extents}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_text\_extents()}{fl\_text\_extents()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} fl\+\_\+text\+\_\+extents (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{,  }\item[{int \&}]{dx,  }\item[{int \&}]{dy,  }\item[{int \&}]{w,  }\item[{int \&}]{h }\end{DoxyParamCaption})}
+
+Determines the minimum pixel dimensions of a nul-\/terminated string.
+
+Usage\+: given a string \char`\"{}txt\char`\"{} drawn using fl\+\_\+draw(txt, x, y) you would determine its pixel extents on the display using fl\+\_\+text\+\_\+extents(txt, dx, dy, wo, ho) such that a bounding box that exactly fits around the text could be drawn with fl\+\_\+rect(x+dx, y+dy, wo, ho). Note the dx, dy values hold the offset of the first \char`\"{}colored in\char`\"{} pixel of the string, from the draw origin.
+
+No F\+L\+TK symbol expansion will be performed. \mbox{\Hypertarget{group__fl__attributes_gaa52f1ed8201b9d89c2b2edbaed80e907}\label{group__fl__attributes_gaa52f1ed8201b9d89c2b2edbaed80e907}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_text\_extents@{fl\_text\_extents}}
+\index{fl\_text\_extents@{fl\_text\_extents}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_text\_extents()}{fl\_text\_extents()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} fl\+\_\+text\+\_\+extents (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{t,  }\item[{int}]{n,  }\item[{int \&}]{dx,  }\item[{int \&}]{dy,  }\item[{int \&}]{w,  }\item[{int \&}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determines the minimum pixel dimensions of a sequence of {\ttfamily n} characters. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__fl__attributes_ga14cb75a92b6cdd576f9512b38a208f8b}{fl\+\_\+text\+\_\+extents(const char$\ast$, int\& dx, int\& dy, int\& w, int\& h)}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{group__fl__attributes_gaa52f1ed8201b9d89c2b2edbaed80e907_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_ga92c762ce2fc7fa891bac6b7590f967bd}\label{group__fl__attributes_ga92c762ce2fc7fa891bac6b7590f967bd}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_width@{fl\_width}}
+\index{fl\_width@{fl\_width}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_width()}{fl\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___export_8_h_aa9ba29a18aee9d738370a06eeb4470fc}{F\+L\+\_\+\+E\+X\+P\+O\+RT}} double fl\+\_\+width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{txt }\end{DoxyParamCaption})}
+
+Returns the typographical width of a nul-\/terminated string using the current font face and size. \mbox{\Hypertarget{group__fl__attributes_gae491dc82c611608435ed434e368ef668}\label{group__fl__attributes_gae491dc82c611608435ed434e368ef668}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_width@{fl\_width}}
+\index{fl\_width@{fl\_width}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_width()}{fl\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double fl\+\_\+width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{txt,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the typographical width of a sequence of {\ttfamily n} characters using the current font face and size. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{group__fl__attributes_gae491dc82c611608435ed434e368ef668_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_ga4a5b5e4a977299acdc7fcbd3c8a700b5}\label{group__fl__attributes_ga4a5b5e4a977299acdc7fcbd3c8a700b5}} 
+\index{Color \& Font functions@{Color \& Font functions}!fl\_width@{fl\_width}}
+\index{fl\_width@{fl\_width}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{fl\_width()}{fl\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double fl\+\_\+width (\begin{DoxyParamCaption}\item[{unsigned int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the typographical width of a single character using the current font face and size. \begin{DoxyNote}{Note}
+if a valid fl\+\_\+gc is N\+OT found then it uses the first window gc, or the screen gc if no fltk window is available when called. 
+\end{DoxyNote}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{group__fl__attributes_ga4a5b5e4a977299acdc7fcbd3c8a700b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__fl__attributes_ga33e301d16b1679406c52a092785639f4}\label{group__fl__attributes_ga33e301d16b1679406c52a092785639f4}} 
+\index{Color \& Font functions@{Color \& Font functions}!free\_color@{free\_color}}
+\index{free\_color@{free\_color}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{free\_color()}{free\_color()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::free\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{i,  }\item[{int}]{overlay = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Frees the specified color from the colormap, if applicable. If overlay is non-\/zero then the color is freed from the overlay colormap. \mbox{\Hypertarget{group__fl__attributes_gaafd4aeaec9c7fadd27b7771f087355d3}\label{group__fl__attributes_gaafd4aeaec9c7fadd27b7771f087355d3}} 
+\index{Color \& Font functions@{Color \& Font functions}!get\_color@{get\_color}}
+\index{get\_color@{get\_color}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{get\_color()}{get\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static unsigned Fl\+::get\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__fl__attributes_gad41ba457eaa9d980e1221eb8fd174968}\label{group__fl__attributes_gad41ba457eaa9d980e1221eb8fd174968}} 
+\index{Color \& Font functions@{Color \& Font functions}!get\_color@{get\_color}}
+\index{get\_color@{get\_color}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{get\_color()}{get\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::get\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{i,  }\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \&}]{red,  }\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \&}]{green,  }\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \&}]{blue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__fl__attributes_ga10f7749e09d9a15585f0c748dcd2bc9a}\label{group__fl__attributes_ga10f7749e09d9a15585f0c748dcd2bc9a}} 
+\index{Color \& Font functions@{Color \& Font functions}!get\_font@{get\_font}}
+\index{get\_font@{get\_font}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{get\_font()}{get\_font()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+::get\+\_\+font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__fl__attributes_ga464d8439250b0636ddc9375fc660b29f}\label{group__fl__attributes_ga464d8439250b0636ddc9375fc660b29f}} 
+\index{Color \& Font functions@{Color \& Font functions}!get\_font\_name@{get\_font\_name}}
+\index{get\_font\_name@{get\_font\_name}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{get\_font\_name()}{get\_font\_name()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+::get\+\_\+font\+\_\+name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{,  }\item[{int $\ast$}]{attributes = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a human-\/readable string describing the family of this face. This is useful if you are presenting a choice to the user. There is no guarantee that each face has a different name. The return value points to a static buffer that is overwritten each call.
+
+The integer pointed to by {\ttfamily attributes} (if the pointer is not zero) is set to zero, F\+L\+\_\+\+B\+O\+LD or F\+L\+\_\+\+I\+T\+A\+L\+IC or F\+L\+\_\+\+B\+O\+LD $\vert$ F\+L\+\_\+\+I\+T\+A\+L\+IC. To locate a \char`\"{}family\char`\"{} of fonts, search forward and back for a set with non-\/zero attributes, these faces along with the face with a zero attribute before them constitute a family. \mbox{\Hypertarget{group__fl__attributes_ga3751aad3db88d47d05eea1b1c90b2c47}\label{group__fl__attributes_ga3751aad3db88d47d05eea1b1c90b2c47}} 
+\index{Color \& Font functions@{Color \& Font functions}!get\_font\_sizes@{get\_font\_sizes}}
+\index{get\_font\_sizes@{get\_font\_sizes}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{get\_font\_sizes()}{get\_font\_sizes()}}
+{\footnotesize\ttfamily static int Fl\+::get\+\_\+font\+\_\+sizes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{,  }\item[{int $\ast$\&}]{sizep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return an array of sizes in {\ttfamily sizep}. The return value is the length of this array. The sizes are sorted from smallest to largest and indicate what sizes can be given to \mbox{\hyperlink{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}{fl\+\_\+font()}} that will be matched exactly (\mbox{\hyperlink{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}{fl\+\_\+font()}} will pick the closest size for other sizes). A zero in the first location of the array indicates a scalable font, where any size works, although the array may list sizes that work \char`\"{}better\char`\"{} than others. Warning\+: the returned array points at a static buffer that is overwritten each call. Under X this will open the display. \mbox{\Hypertarget{group__fl__attributes_ga6e7b4ee94a41e8f345f1d11fe20f8ff2}\label{group__fl__attributes_ga6e7b4ee94a41e8f345f1d11fe20f8ff2}} 
+\index{Color \& Font functions@{Color \& Font functions}!set\_color@{set\_color}}
+\index{set\_color@{set\_color}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{set\_color()}{set\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{i,  }\item[{unsigned}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets an entry in the fl\+\_\+color index table. You can set it to any 8-\/bit R\+GB color. The color is not allocated until fl\+\_\+color(i) is used. \mbox{\Hypertarget{group__fl__attributes_gaed9b5e5a196cbbf3918cca83cb280d7a}\label{group__fl__attributes_gaed9b5e5a196cbbf3918cca83cb280d7a}} 
+\index{Color \& Font functions@{Color \& Font functions}!set\_color@{set\_color}}
+\index{set\_color@{set\_color}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{set\_color()}{set\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::set\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{,  }\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{,  }\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{,  }\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__fl__attributes_gac8bc23064aae455f7e5649240cf66b6d}\label{group__fl__attributes_gac8bc23064aae455f7e5649240cf66b6d}} 
+\index{Color \& Font functions@{Color \& Font functions}!set\_font@{set\_font}}
+\index{set\_font@{set\_font}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{set\_font()}{set\_font()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::set\+\_\+font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__fl__attributes_ga229f381b4ccf634ad83bd5ad4b428ea1}\label{group__fl__attributes_ga229f381b4ccf634ad83bd5ad4b428ea1}} 
+\index{Color \& Font functions@{Color \& Font functions}!set\_font@{set\_font}}
+\index{set\_font@{set\_font}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{set\_font()}{set\_font()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::set\+\_\+font (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__fl__attributes_gaacc901040c27daf45117a3691d0ab03a}\label{group__fl__attributes_gaacc901040c27daf45117a3691d0ab03a}} 
+\index{Color \& Font functions@{Color \& Font functions}!set\_fonts@{set\_fonts}}
+\index{set\_fonts@{set\_fonts}!Color \& Font functions@{Color \& Font functions}}
+\doxysubsubsection{\texorpdfstring{set\_fonts()}{set\_fonts()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} Fl\+::set\+\_\+fonts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+F\+L\+TK will open the display, and add every fonts on the server to the face table. It will attempt to put \char`\"{}families\char`\"{} of faces together, so that the normal one is first, followed by bold, italic, and bold italic.
+
+The optional argument is a string to describe the set of fonts to add. Passing N\+U\+LL will select only fonts that have the I\+S\+O8859-\/1 character set (and are thus usable by normal text). Passing \char`\"{}-\/$\ast$\char`\"{} will select all fonts with any encoding as long as they have normal X font names with dashes in them. Passing \char`\"{}$\ast$\char`\"{} will list every font that exists (on X this may produce some strange output). Other values may be useful but are system dependent. With W\+I\+N32 N\+U\+LL selects fonts with I\+S\+O8859-\/1 encoding and non-\/\+N\+U\+LL selects all fonts.
+
+The return value is how many faces are in the table after this is done. 

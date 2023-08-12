@@ -1,0 +1,1499 @@
+\hypertarget{class_fl___table}{}\doxysection{Fl\+\_\+\+Table Class Reference}
+\label{class_fl___table}\index{Fl\_Table@{Fl\_Table}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Table.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_fl___table__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Table\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_fl___table__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} \{ \newline
+\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135ae39e81bc3cff70a2f0a2004da58c0b0b}{C\+O\+N\+T\+E\+X\+T\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a679ea089903231312d0cf975b1a04ec3}{C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+T\+A\+R\+T\+P\+A\+GE}} = 0x01, 
+\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135aae8f86bb7116f5f121dcb0258d276b47}{C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+N\+D\+P\+A\+GE}} = 0x02, 
+\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a8ee5f70da9ccdbd2494aeee6b85da7ce}{C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+O\+W\+\_\+\+H\+E\+A\+D\+ER}} = 0x04, 
+\newline
+\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a113dfa5119db9dfbba4f5ff5f993bf5e}{C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+L\+\_\+\+H\+E\+A\+D\+ER}} = 0x08, 
+\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135abd0b9bdac4ddce885be6e6a4bcd3367a}{C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+E\+LL}} = 0x10, 
+\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a54275f15690f1b1a2a7004ded703f457}{C\+O\+N\+T\+E\+X\+T\+\_\+\+T\+A\+B\+LE}} = 0x20, 
+\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a8c0f361d95f40e3ebedd1a91fb6d85b8}{C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+C\+\_\+\+R\+E\+S\+I\+ZE}} = 0x40
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___table_a871579c566dfab404512ea98205a695e}{Fl\+\_\+\+Table}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\item 
+\mbox{\hyperlink{class_fl___table_a0734f2c09123c1047c2176b49da52b27}{$\sim$\+Fl\+\_\+\+Table}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a4cf2b08373ddd2c4c7605f3917332093}{clear}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a2a773eb7ba7ffe6bc402e2069a763fab}{table\+\_\+box}} (\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} \mbox{\hyperlink{class_fl___table_ab040f9e6b7329ce3073ca4d6e865a18f}{table\+\_\+box}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_ad353dc62b5473ee0c67f7d2fc534763d}{rows}} (int \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+int \mbox{\hyperlink{class_fl___table_af63dddf97c8804488f8a179780a674c0}{rows}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_aafd81e678aacf95abe7f762cab91c33a}{cols}} (int \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+int \mbox{\hyperlink{class_fl___table_a82b1a353a6d0345e6714fb7d3a2ae0ac}{cols}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a8f83d61e9c7ec6d19a49ad1ae1eb6ffc}{visible\+\_\+cells}} (int \&r1, int \&r2, int \&c1, int \&c2)
+\item 
+int \mbox{\hyperlink{class_fl___table_a07790a74e83f67720962c7fa2916c1ac}{is\+\_\+interactive\+\_\+resize}} ()
+\item 
+int \mbox{\hyperlink{class_fl___table_aeb5f1b07e438b02eb4c62d40e837181b}{row\+\_\+resize}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_ab6bd035482b75e61ba46414582595b31}{row\+\_\+resize}} (int flag)
+\item 
+int \mbox{\hyperlink{class_fl___table_aadc07cb4e46548b3d0f548e6a7335744}{col\+\_\+resize}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_af013461380039ff090a3d31477204ea6}{col\+\_\+resize}} (int flag)
+\item 
+int \mbox{\hyperlink{class_fl___table_ad3d47b28fc87609a01725a78512adf5e}{col\+\_\+resize\+\_\+min}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a00f9f4e0789368767d1faa3db5eb9648}{col\+\_\+resize\+\_\+min}} (int \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+int \mbox{\hyperlink{class_fl___table_a4280d0d1ad2d5a31b1a16b73009dc46b}{row\+\_\+resize\+\_\+min}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a1ba8d7474c42d3e50a18fd6a8cb04848}{row\+\_\+resize\+\_\+min}} (int \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+int \mbox{\hyperlink{class_fl___table_ad51f00bbee634d5ba3c90c67a7c5650a}{row\+\_\+header}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a4a0027decca0c341dfae1c8e2d9b53fe}{row\+\_\+header}} (int flag)
+\item 
+int \mbox{\hyperlink{class_fl___table_a817530f910f7db0a0b5bb8c0c3604a94}{col\+\_\+header}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_abcfb0374426baff30a91aca68dc0aea9}{col\+\_\+header}} (int flag)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_ab6302030b06b2da8188ead8132334c99}{col\+\_\+header\+\_\+height}} (int height)
+\item 
+int \mbox{\hyperlink{class_fl___table_a74f6329190edb7d4f2e300c66b779d6d}{col\+\_\+header\+\_\+height}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a268c4e45f55c90d66397a066e0805679}{row\+\_\+header\+\_\+width}} (int \mbox{\hyperlink{png_8h_ad46179dbe9c68fdcea52b34c3480ec0f}{width}})
+\item 
+int \mbox{\hyperlink{class_fl___table_a6b5f2695ce39389ae6c7279025efa70f}{row\+\_\+header\+\_\+width}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a5bf200912eb6fdee6a346019e5e0425d}{row\+\_\+header\+\_\+color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___table_a829d2d92e8753b0f2635e61173fc93e5}{row\+\_\+header\+\_\+color}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_ae2a103fe19552965300c0d1aa59561af}{col\+\_\+header\+\_\+color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___table_ad09f503dc6235d7a570b84a1702932c8}{col\+\_\+header\+\_\+color}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a0646cb480652322aa8c03426c55932fa}{row\+\_\+height}} (int row, int height)
+\item 
+int \mbox{\hyperlink{class_fl___table_a4e13e99335dbe82a2f69d171926e0e2b}{row\+\_\+height}} (int row)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a89982b606a376c9cdb29da769eac3ccd}{col\+\_\+width}} (int col, int \mbox{\hyperlink{png_8h_ad46179dbe9c68fdcea52b34c3480ec0f}{width}})
+\item 
+int \mbox{\hyperlink{class_fl___table_aabe4ad5c6d0dccc5031ff12b52b681d1}{col\+\_\+width}} (int col)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a5826287bf9375fd27ee56f788b326771}{row\+\_\+height\+\_\+all}} (int height)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a1ad4a058551c0c7674f9d021d1a21ef4}{col\+\_\+width\+\_\+all}} (int \mbox{\hyperlink{png_8h_ad46179dbe9c68fdcea52b34c3480ec0f}{width}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_adabe9c746a90e0523ab135b7771ca96a}{row\+\_\+position}} (int row)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a53088bde3fd7f31e5a3fe61648f1dcf0}{col\+\_\+position}} (int col)
+\item 
+int \mbox{\hyperlink{class_fl___table_ab6666085176ae0bcef136a335709d20c}{row\+\_\+position}} ()
+\item 
+int \mbox{\hyperlink{class_fl___table_ae8d425e06ce14b1109a19e82941306e4}{col\+\_\+position}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a9d4a4cbb4cdf316b3de15f59b1bb1047}{top\+\_\+row}} (int row)
+\item 
+int \mbox{\hyperlink{class_fl___table_acfb1d87d8945045021d6b7406b6a89d1}{top\+\_\+row}} ()
+\item 
+int \mbox{\hyperlink{class_fl___table_a7913a4f0c7db42374c1b17975a173916}{is\+\_\+selected}} (int r, int c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_aec0089641778336bb7e7306fbf15ce32}{get\+\_\+selection}} (int \&row\+\_\+top, int \&col\+\_\+left, int \&row\+\_\+bot, int \&col\+\_\+right)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a64089393a7bf7b6aa08b16a1f3e4e40b}{set\+\_\+selection}} (int row\+\_\+top, int col\+\_\+left, int row\+\_\+bot, int col\+\_\+right)
+\item 
+int \mbox{\hyperlink{class_fl___table_a6dcd106371b3e67cace4b47df2369a83}{move\+\_\+cursor}} (int R, int C, int shiftselect)
+\item 
+int \mbox{\hyperlink{class_fl___table_acdda2cc8a9f2224d9045a97c35ff6e00}{move\+\_\+cursor}} (int R, int C)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_ab513a3c2f785008b5f8b4ea0b3d643f5}{resize}} (int X, int Y, int W, int H)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_aa3c46d45261be0a64db3784147115d6a}{draw}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a6d89cb4006a9147b01c69c04ffee9499}{init\+\_\+sizes}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_ae16819dc983201f4572223f129d31ad2}{add}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&wgt)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a26bfafdfe555fed1342bb95522fff327}{add}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$wgt)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a351e01781762eda7a8f9061492e1d1db}{insert}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&wgt, int n)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a9169a43b71039343338f273bae35a2fb}{insert}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&wgt, \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$w2)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a0a0b25dc24e8f6e58953736966862385}{remove}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&wgt)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_ae7a75ac6a2e2a28d7c3e288699abd889}{begin}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_ab8ebe08ee81d0fa3b19ad05ce6a532c8}{end}} ()
+\item 
+\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$ \mbox{\hyperlink{class_fl___table_a149fdf54f6f74ec872d9f6675ccd914f}{array}} ()
+\item 
+\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$ \mbox{\hyperlink{class_fl___table_a25232ccedd376c1ed86ff71271d3d92b}{child}} (int n) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a5ec10a1ffee8aec8a9357951247f2493}{children}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a511e677071c58008b7b3ef959adef5bb}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$wgt) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a0be6478b9da469cb68ea707e7e15057b}{find}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&wgt) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a6b2186f88098d2bd4a04f490d747d612}{callback\+\_\+row}} ()
+\item 
+int \mbox{\hyperlink{class_fl___table_a5a34a561ff98dc0eba7a5bc866329343}{callback\+\_\+col}} ()
+\item 
+\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} \mbox{\hyperlink{class_fl___table_a6baccc8711394e89f6bb9f57df02f44f}{callback\+\_\+context}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a6eb5e914ea4ec3a97a50608cddeef3f0}{do\+\_\+callback}} (\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} context, int row, int col)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50b}{Resize\+Flag}} \{ \newline
+\mbox{\hyperlink{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50ba2f77858c7947c4992197486594184459}{R\+E\+S\+I\+Z\+E\+\_\+\+N\+O\+NE}} = 0, 
+\mbox{\hyperlink{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50baea0ffddaa14f1c0f516e4de399037a84}{R\+E\+S\+I\+Z\+E\+\_\+\+C\+O\+L\+\_\+\+L\+E\+FT}} = 1, 
+\mbox{\hyperlink{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50ba7148f65594304713d9b57ba30de532eb}{R\+E\+S\+I\+Z\+E\+\_\+\+C\+O\+L\+\_\+\+R\+I\+G\+HT}} = 2, 
+\mbox{\hyperlink{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50babc1c7c942db650fc6568381d000fe5ea}{R\+E\+S\+I\+Z\+E\+\_\+\+R\+O\+W\+\_\+\+A\+B\+O\+VE}} = 3, 
+\newline
+\mbox{\hyperlink{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50ba826a9124032d9b17d38e543d4f21cd2b}{R\+E\+S\+I\+Z\+E\+\_\+\+R\+O\+W\+\_\+\+B\+E\+L\+OW}} = 4
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___table_a810b0f1bdfe62ea8faf001c52c124a9d}{handle}} (int e)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a2704879da38d6ad3f0f0d22054e03e0a}{recalc\+\_\+dimensions}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a1c30c68bd40a4af80b6af2bc6f606e58}{table\+\_\+resized}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_ad2e84421bd13c3c72a41c8fa154b3768}{table\+\_\+scrolled}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a1ff4d0fee238c4ebe081ce4fc530fff0}{get\+\_\+bounds}} (\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} context, int \&X, int \&Y, int \&W, int \&H)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a050f417e5cf4b5a6bb79e9cc875cf243}{change\+\_\+cursor}} (\mbox{\hyperlink{_enumerations_8_h_a72bde974edc7926b1217dd51b8c7e8e0}{Fl\+\_\+\+Cursor}} newcursor)
+\item 
+\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} \mbox{\hyperlink{class_fl___table_ad2bb2ecb983ff1be575a53276cff5557}{cursor2rowcol}} (int \&R, int \&C, \mbox{\hyperlink{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50b}{Resize\+Flag}} \&resizeflag)
+\item 
+int \mbox{\hyperlink{class_fl___table_ae2335df5af6114f0344ecf55992888a0}{find\+\_\+cell}} (\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} context, int R, int C, int \&X, int \&Y, int \&W, int \&H)
+\item 
+int \mbox{\hyperlink{class_fl___table_a815bbf5b98060cb20fb14387e20d4870}{row\+\_\+col\+\_\+clamp}} (\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} context, int \&R, int \&C)
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}{draw\+\_\+cell}} (\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} context, int R=0, int C=0, int X=0, int Y=0, int W=0, int H=0)
+\item 
+long \mbox{\hyperlink{class_fl___table_a2d4398d4e3f28fe1261128e602fd0069}{row\+\_\+scroll\+\_\+position}} (int row)
+\item 
+long \mbox{\hyperlink{class_fl___table_a15637ba3f8ea31d9bdeabaa1c67d7e77}{col\+\_\+scroll\+\_\+position}} (int col)
+\item 
+int \mbox{\hyperlink{class_fl___table_ae47818a24992bc2d2c931071c08ac367}{is\+\_\+fltk\+\_\+container}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_a715a509d3d3797a394987f6b152fa571}{damage\+\_\+zone}} (int r1, int c1, int r2, int c2, int r3=0, int c3=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_afdd361670b57f681e8a23f8178c64828}{redraw\+\_\+range}} (int top\+Row, int bot\+Row, int left\+Col, int right\+Col)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table_ab70607cc0f10352542cc2fad5aa5053b}{scroll\+\_\+cb}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___table_aa62bfe9499ddd5afac009561c54cdcbe}{table\+\_\+w}}
+\item 
+int \mbox{\hyperlink{class_fl___table_af97f53afa2c436e940d4b87423fd75b9}{table\+\_\+h}}
+\item 
+int \mbox{\hyperlink{class_fl___table_aef3fd41ccc13992285df179ad33af352}{toprow}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a32d6762316f1eb9a7d150757bb50b443}{botrow}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a5acce681c1ef8540aa355f9684d065c1}{leftcol}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a4377aa8098356e601e2cbd970587199b}{rightcol}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a298ac46626281813442cba3b5716b12b}{current\+\_\+row}}
+\item 
+int \mbox{\hyperlink{class_fl___table_ab4a32b40d7e737a11065227013ecec08}{current\+\_\+col}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a2d3de6372e2564f0e091986faeeac1cf}{select\+\_\+row}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a8555eb73e47b4ca0cd4e5eb4e5f305b3}{select\+\_\+col}}
+\item 
+int \mbox{\hyperlink{class_fl___table_aad1db2634548779a2c7b86164fcdeee3}{toprow\+\_\+scrollpos}}
+\item 
+int \mbox{\hyperlink{class_fl___table_acb120bac09df320b70213a6a54982428}{leftcol\+\_\+scrollpos}}
+\item 
+int \mbox{\hyperlink{class_fl___table_ae724c0b7c723a1baa5de49288dc06c31}{tix}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a55afc80bbe4c1d83e24cef1324ec822a}{tiy}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a54761aeedcd145b802676c6201fa2df2}{tiw}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a58b03ed655765b4752d822abce39c6eb}{tih}}
+\item 
+int \mbox{\hyperlink{class_fl___table_ab70b001a956df9559ed30509f2febaf3}{tox}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a0914cdc2b9310a1aa40c241ea5280944}{toy}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a58a7a1070516d9c2e1396f67589d109d}{tow}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a15adf01af904acc239ecaf472e8013c2}{toh}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a7512779d4c093a846775dc42fb9026fb}{wix}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a59ff5e7980d2164688c19e97cd12ebb5}{wiy}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a0dea3d15781ad202e71a03e9e387a8d0}{wiw}}
+\item 
+int \mbox{\hyperlink{class_fl___table_a4e31d318bccf8ba718f5d4205556ce87}{wih}}
+\item 
+\mbox{\hyperlink{class_fl___scroll}{Fl\+\_\+\+Scroll}} $\ast$ \mbox{\hyperlink{class_fl___table_a124843f3bd7655986958feab44f124e1}{table}}
+\item 
+\mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}} $\ast$ \mbox{\hyperlink{class_fl___table_ab835e84d7a0193f4307209933ab53ae9}{vscrollbar}}
+\item 
+\mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}} $\ast$ \mbox{\hyperlink{class_fl___table_ae982bf4b8abb3befabd15fa9ac1878ff}{hscrollbar}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A table of widgets or other content.
+
+This is the base class for table widgets.
+
+To be useful it must be subclassed and several virtual functions defined. Normally applications use widgets derived from this widget, and do not use this widget directly; this widget is usually too low level to be used directly by applications.
+
+This widget does {\itshape not} handle the data in the table. The \mbox{\hyperlink{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}{draw\+\_\+cell()}} method must be overridden by a subclass to manage drawing the contents of the cells.
+
+This widget can be used in several ways\+:
+
+
+\begin{DoxyItemize}
+\item As a custom widget; see examples/table-\/simple.\+cxx and test/table.\+cxx. Very optimal for even extremely large tables.
+\item As a table made up of a single F\+L\+TK widget instanced all over the table, simulating a numeric spreadsheet. See examples/table-\/spreadsheet.\+cxx and examples/table-\/spreadsheet-\/with-\/keyboard-\/nav.\+cxx. Optimal for large tables.
+\item As a regular container of F\+L\+TK widgets, one widget per cell. See examples/table-\/as-\/container.\+cxx. {\itshape Not} recommended for large tables.
+\end{DoxyItemize}
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=6cm]{table-simple.png}
+\doxyfigcaption{table-\/simple example}
+\end{DoxyImage}
+
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=6cm]{table-as-container.png}
+\doxyfigcaption{table-\/as-\/container example}
+\end{DoxyImage}
+
+
+When acting as part of a custom widget, events on the cells and/or headings generate callbacks when they are clicked by the user. You control when events are generated based on the setting for \mbox{\hyperlink{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}{Fl\+\_\+\+Table\+::when()}}.
+
+When acting as a container for F\+L\+TK widgets, the F\+L\+TK widgets maintain themselves. Although the \mbox{\hyperlink{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}{draw\+\_\+cell()}} method must be overridden, its contents can be very simple. See the \mbox{\hyperlink{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}{draw\+\_\+cell()}} code in examples/table-\/simple.\+cxx.
+
+The following variables are available to classes deriving from \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}}\+:
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=6cm]{table-dimensions.png}
+\doxyfigcaption{Fl\+\_\+\+Table Dimensions}
+\end{DoxyImage}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x()}}/y()/w()/h() &\mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}} widget\textquotesingle{}s outer dimension. The outer edge of the border of the \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}}. (Red in the diagram above)
+
+\\\cline{1-2}
+wix/wiy/wiw/wih &\mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}} widget\textquotesingle{}s inner dimension. The inner edge of the border of the \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}}. eg. if the \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}}\textquotesingle{}s \mbox{\hyperlink{class_fl___widget_a9d1f48fbbe4d885e81df38b2a93b614f}{box()}} is F\+L\+\_\+\+N\+O\+\_\+\+B\+OX, these values are the same as \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x()}}/y()/w()/h(). (Yellow in the diagram above)
+
+\\\cline{1-2}
+tox/toy/tow/toh &The table\textquotesingle{}s outer dimension. The outer edge of the border around the cells, but inside the row/col headings and scrollbars. (Green in the diagram above) 
+
+\\\cline{1-2}
+tix/tiy/tiw/tih &The table\textquotesingle{}s inner dimension. The inner edge of the border around the cells, but inside the row/col headings and scrollbars. A\+KA the table\textquotesingle{}s clip region. eg. if the \mbox{\hyperlink{class_fl___table_ab040f9e6b7329ce3073ca4d6e865a18f}{table\+\_\+box()}} is F\+L\+\_\+\+N\+O\+\_\+\+B\+OX, these values are the same as tox/toy/tow/toh. (Blue in the diagram above) \\\cline{1-2}
+\end{longtabu}
+
+
+C\+O\+RE D\+E\+V\+E\+L\+O\+P\+E\+RS
+
+
+\begin{DoxyItemize}
+\item Greg Ercolano \+: 12/16/2002 -\/ initial implementation 12/16/02. \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}}, \mbox{\hyperlink{class_fl___table___row}{Fl\+\_\+\+Table\+\_\+\+Row}}, docs.
+\item Jean-\/\+Marc Lienher \+: 02/22/2004 -\/ added keyboard nav + mouse selection, and ported \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}} into fltk-\/utf8-\/1.\+1.\+4
+\end{DoxyItemize}
+
+O\+T\+H\+ER C\+O\+N\+T\+R\+I\+B\+U\+T\+O\+RS
+
+
+\begin{DoxyItemize}
+\item Inspired by the Feb 2000 version of F\+L\+VW\textquotesingle{}s Flvw\+\_\+\+Table widget. Mucho thanks to those folks.
+\item Mister Satan \+: 04/07/2003 -\/ Min\+GW porting mods, and singleinput.\+cxx; a cool \mbox{\hyperlink{class_fl___input}{Fl\+\_\+\+Input}} oriented spreadsheet example
+\item Marek Paliwoda \+: 01/08/2003 -\/ Porting mods for Borland
+\item Ori Berger \+: 03/16/2006 -\/ Optimizations for $>$500k rows/cols
+\end{DoxyItemize}
+
+L\+I\+C\+E\+N\+SE
+
+Greg added the following license to the original distribution of \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}}. He kindly gave his permission to integrate \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}} and \mbox{\hyperlink{class_fl___table___row}{Fl\+\_\+\+Table\+\_\+\+Row}} into F\+L\+TK, allowing F\+L\+TK license to apply while his widgets are part of the library.
+
+If used on its own, this is the license that applies\+:
+
+\begin{DoxyVerb}Fl_Table License
+December 16, 2002
+
+The Fl_Table library and included programs are provided under the terms
+of the GNU Library General Public License (LGPL) with the following
+exceptions:
+
+1. Modifications to the Fl_Table configure script, config
+header file, and makefiles by themselves to support
+a specific platform do not constitute a modified or
+derivative work.
+
+The authors do request that such modifications be
+contributed to the Fl_Table project - send all
+contributions to "erco at seriss dot com".
+
+2. Widgets that are subclassed from Fl_Table widgets do not
+constitute a derivative work.
+
+3. Static linking of applications and widgets to the
+Fl_Table library does not constitute a derivative work
+and does not require the author to provide source
+code for the application or widget, use the shared
+Fl_Table libraries, or link their applications or
+widgets against a user-supplied version of Fl_Table.
+
+If you link the application or widget to a modified
+version of Fl_Table, then the changes to Fl_Table must be
+provided under the terms of the LGPL in sections
+1, 2, and 4.
+
+4. You do not have to provide a copy of the Fl_Table license
+with programs that are linked to the Fl_Table library, nor
+do you have to identify the Fl_Table license in your
+program or documentation as required by section 6
+of the LGPL.
+
+However, programs must still identify their use of Fl_Table.
+The following example statement can be included in user
+documentation to satisfy this requirement:
+
+[program/widget] is based in part on the work of
+the Fl_Table project http://seriss.com/people/erco/fltk/Fl_Table/
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50b}\label{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50b}} 
+\index{Fl\_Table@{Fl\_Table}!ResizeFlag@{ResizeFlag}}
+\index{ResizeFlag@{ResizeFlag}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{ResizeFlag}{ResizeFlag}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50b}{Fl\+\_\+\+Table\+::\+Resize\+Flag}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESIZE\_NONE@{RESIZE\_NONE}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!RESIZE\_NONE@{RESIZE\_NONE}}}\mbox{\Hypertarget{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50ba2f77858c7947c4992197486594184459}\label{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50ba2f77858c7947c4992197486594184459}} 
+R\+E\+S\+I\+Z\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESIZE\_COL\_LEFT@{RESIZE\_COL\_LEFT}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!RESIZE\_COL\_LEFT@{RESIZE\_COL\_LEFT}}}\mbox{\Hypertarget{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50baea0ffddaa14f1c0f516e4de399037a84}\label{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50baea0ffddaa14f1c0f516e4de399037a84}} 
+R\+E\+S\+I\+Z\+E\+\_\+\+C\+O\+L\+\_\+\+L\+E\+FT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESIZE\_COL\_RIGHT@{RESIZE\_COL\_RIGHT}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!RESIZE\_COL\_RIGHT@{RESIZE\_COL\_RIGHT}}}\mbox{\Hypertarget{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50ba7148f65594304713d9b57ba30de532eb}\label{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50ba7148f65594304713d9b57ba30de532eb}} 
+R\+E\+S\+I\+Z\+E\+\_\+\+C\+O\+L\+\_\+\+R\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESIZE\_ROW\_ABOVE@{RESIZE\_ROW\_ABOVE}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!RESIZE\_ROW\_ABOVE@{RESIZE\_ROW\_ABOVE}}}\mbox{\Hypertarget{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50babc1c7c942db650fc6568381d000fe5ea}\label{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50babc1c7c942db650fc6568381d000fe5ea}} 
+R\+E\+S\+I\+Z\+E\+\_\+\+R\+O\+W\+\_\+\+A\+B\+O\+VE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESIZE\_ROW\_BELOW@{RESIZE\_ROW\_BELOW}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!RESIZE\_ROW\_BELOW@{RESIZE\_ROW\_BELOW}}}\mbox{\Hypertarget{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50ba826a9124032d9b17d38e543d4f21cd2b}\label{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50ba826a9124032d9b17d38e543d4f21cd2b}} 
+R\+E\+S\+I\+Z\+E\+\_\+\+R\+O\+W\+\_\+\+B\+E\+L\+OW&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}\label{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}} 
+\index{Fl\_Table@{Fl\_Table}!TableContext@{TableContext}}
+\index{TableContext@{TableContext}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{TableContext}{TableContext}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Fl\+\_\+\+Table\+::\+Table\+Context}}}
+
+The context bit flags for \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}} related callbacks.
+
+Used in \mbox{\hyperlink{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}{draw\+\_\+cell()}}, \mbox{\hyperlink{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}{callback()}}, etc. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTEXT\_NONE@{CONTEXT\_NONE}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!CONTEXT\_NONE@{CONTEXT\_NONE}}}\mbox{\Hypertarget{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135ae39e81bc3cff70a2f0a2004da58c0b0b}\label{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135ae39e81bc3cff70a2f0a2004da58c0b0b}} 
+C\+O\+N\+T\+E\+X\+T\+\_\+\+N\+O\+NE&no known context \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTEXT\_STARTPAGE@{CONTEXT\_STARTPAGE}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!CONTEXT\_STARTPAGE@{CONTEXT\_STARTPAGE}}}\mbox{\Hypertarget{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a679ea089903231312d0cf975b1a04ec3}\label{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a679ea089903231312d0cf975b1a04ec3}} 
+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+T\+A\+R\+T\+P\+A\+GE&before a page is redrawn \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTEXT\_ENDPAGE@{CONTEXT\_ENDPAGE}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!CONTEXT\_ENDPAGE@{CONTEXT\_ENDPAGE}}}\mbox{\Hypertarget{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135aae8f86bb7116f5f121dcb0258d276b47}\label{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135aae8f86bb7116f5f121dcb0258d276b47}} 
+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+N\+D\+P\+A\+GE&after a page is redrawn \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTEXT\_ROW\_HEADER@{CONTEXT\_ROW\_HEADER}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!CONTEXT\_ROW\_HEADER@{CONTEXT\_ROW\_HEADER}}}\mbox{\Hypertarget{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a8ee5f70da9ccdbd2494aeee6b85da7ce}\label{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a8ee5f70da9ccdbd2494aeee6b85da7ce}} 
+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+O\+W\+\_\+\+H\+E\+A\+D\+ER&in the row header \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTEXT\_COL\_HEADER@{CONTEXT\_COL\_HEADER}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!CONTEXT\_COL\_HEADER@{CONTEXT\_COL\_HEADER}}}\mbox{\Hypertarget{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a113dfa5119db9dfbba4f5ff5f993bf5e}\label{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a113dfa5119db9dfbba4f5ff5f993bf5e}} 
+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+L\+\_\+\+H\+E\+A\+D\+ER&in the col header \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTEXT\_CELL@{CONTEXT\_CELL}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!CONTEXT\_CELL@{CONTEXT\_CELL}}}\mbox{\Hypertarget{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135abd0b9bdac4ddce885be6e6a4bcd3367a}\label{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135abd0b9bdac4ddce885be6e6a4bcd3367a}} 
+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+E\+LL&in one of the cells \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTEXT\_TABLE@{CONTEXT\_TABLE}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!CONTEXT\_TABLE@{CONTEXT\_TABLE}}}\mbox{\Hypertarget{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a54275f15690f1b1a2a7004ded703f457}\label{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a54275f15690f1b1a2a7004ded703f457}} 
+C\+O\+N\+T\+E\+X\+T\+\_\+\+T\+A\+B\+LE&in a dead zone of table \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTEXT\_RC\_RESIZE@{CONTEXT\_RC\_RESIZE}!Fl\_Table@{Fl\_Table}}\index{Fl\_Table@{Fl\_Table}!CONTEXT\_RC\_RESIZE@{CONTEXT\_RC\_RESIZE}}}\mbox{\Hypertarget{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a8c0f361d95f40e3ebedd1a91fb6d85b8}\label{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a8c0f361d95f40e3ebedd1a91fb6d85b8}} 
+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+C\+\_\+\+R\+E\+S\+I\+ZE&column or row being resized \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___table_a871579c566dfab404512ea98205a695e}\label{class_fl___table_a871579c566dfab404512ea98205a695e}} 
+\index{Fl\_Table@{Fl\_Table}!Fl\_Table@{Fl\_Table}}
+\index{Fl\_Table@{Fl\_Table}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{Fl\_Table()}{Fl\_Table()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Table\+::\+Fl\+\_\+\+Table (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+The constructor for the \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}}. This creates an empty table with no rows or columns, with headers and row/column resize behavior disabled. \mbox{\Hypertarget{class_fl___table_a0734f2c09123c1047c2176b49da52b27}\label{class_fl___table_a0734f2c09123c1047c2176b49da52b27}} 
+\index{Fl\_Table@{Fl\_Table}!````~Fl\_Table@{$\sim$Fl\_Table}}
+\index{````~Fl\_Table@{$\sim$Fl\_Table}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Table()}{~Fl\_Table()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Table\+::$\sim$\+Fl\+\_\+\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The destructor for the \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}}. Destroys the table and its associated widgets. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___table_ae16819dc983201f4572223f129d31ad2}\label{class_fl___table_ae16819dc983201f4572223f129d31ad2}} 
+\index{Fl\_Table@{Fl\_Table}!add@{add}}
+\index{add@{add}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&}]{wgt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_fl___table_ae16819dc983201f4572223f129d31ad2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a26bfafdfe555fed1342bb95522fff327}\label{class_fl___table_a26bfafdfe555fed1342bb95522fff327}} 
+\index{Fl\_Table@{Fl\_Table}!add@{add}}
+\index{add@{add}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{wgt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___table_a149fdf54f6f74ec872d9f6675ccd914f}\label{class_fl___table_a149fdf54f6f74ec872d9f6675ccd914f}} 
+\index{Fl\_Table@{Fl\_Table}!array@{array}}
+\index{array@{array}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{array()}{array()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}}$\ast$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$ Fl\+\_\+\+Table\+::array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_fl___table_a149fdf54f6f74ec872d9f6675ccd914f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_ae7a75ac6a2e2a28d7c3e288699abd889}\label{class_fl___table_ae7a75ac6a2e2a28d7c3e288699abd889}} 
+\index{Fl\_Table@{Fl\_Table}!begin@{begin}}
+\index{begin@{begin}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_fl___table_ae7a75ac6a2e2a28d7c3e288699abd889_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a5a34a561ff98dc0eba7a5bc866329343}\label{class_fl___table_a5a34a561ff98dc0eba7a5bc866329343}} 
+\index{Fl\_Table@{Fl\_Table}!callback\_col@{callback\_col}}
+\index{callback\_col@{callback\_col}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{callback\_col()}{callback\_col()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::callback\+\_\+col (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current column the event occurred on.
+
+This function should only be used from within the user\textquotesingle{}s callback function. \mbox{\Hypertarget{class_fl___table_a6baccc8711394e89f6bb9f57df02f44f}\label{class_fl___table_a6baccc8711394e89f6bb9f57df02f44f}} 
+\index{Fl\_Table@{Fl\_Table}!callback\_context@{callback\_context}}
+\index{callback\_context@{callback\_context}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{callback\_context()}{callback\_context()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} Fl\+\_\+\+Table\+::callback\+\_\+context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current \textquotesingle{}table context\textquotesingle{}.
+
+This function should only be used from within the user\textquotesingle{}s callback function. \mbox{\Hypertarget{class_fl___table_a6b2186f88098d2bd4a04f490d747d612}\label{class_fl___table_a6b2186f88098d2bd4a04f490d747d612}} 
+\index{Fl\_Table@{Fl\_Table}!callback\_row@{callback\_row}}
+\index{callback\_row@{callback\_row}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{callback\_row()}{callback\_row()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::callback\+\_\+row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current row the event occurred on.
+
+This function should only be used from within the user\textquotesingle{}s callback function. \mbox{\Hypertarget{class_fl___table_a050f417e5cf4b5a6bb79e9cc875cf243}\label{class_fl___table_a050f417e5cf4b5a6bb79e9cc875cf243}} 
+\index{Fl\_Table@{Fl\_Table}!change\_cursor@{change\_cursor}}
+\index{change\_cursor@{change\_cursor}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{change\_cursor()}{change\_cursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::change\+\_\+cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a72bde974edc7926b1217dd51b8c7e8e0}{Fl\+\_\+\+Cursor}}}]{newcursor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a25232ccedd376c1ed86ff71271d3d92b}\label{class_fl___table_a25232ccedd376c1ed86ff71271d3d92b}} 
+\index{Fl\_Table@{Fl\_Table}!child@{child}}
+\index{child@{child}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{child()}{child()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}}$\ast$ Fl\+\_\+\+Table\+::child (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the child widget by an index.
+
+When using the \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}} as a container for F\+L\+TK widgets, this method returns the widget pointer from the internal array of widgets in the container.
+
+Typically used in loops, eg\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{for} ( \textcolor{keywordtype}{int} \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}=0; \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}<\mbox{\hyperlink{class_fl___table_a5ec10a1ffee8aec8a9357951247f2493}{children}}(); \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}}++ ) \{}
+\DoxyCodeLine{  \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{class_fl___widget_a9c582969d134d01916816daf73a35402}{w}} = \mbox{\hyperlink{class_fl___table_a25232ccedd376c1ed86ff71271d3d92b}{child}}(\mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}});}
+\DoxyCodeLine{  [..]}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{class_fl___table_a25232ccedd376c1ed86ff71271d3d92b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a5ec10a1ffee8aec8a9357951247f2493}\label{class_fl___table_a5ec10a1ffee8aec8a9357951247f2493}} 
+\index{Fl\_Table@{Fl\_Table}!children@{children}}
+\index{children@{children}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{children()}{children()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::children (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of children in the table.
+
+When using the \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}} as a container for F\+L\+TK widgets, this method returns how many child widgets the table has.
+
+\begin{DoxySeeAlso}{See also}
+child(int) 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_fl___table_a5ec10a1ffee8aec8a9357951247f2493_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a4cf2b08373ddd2c4c7605f3917332093}\label{class_fl___table_a4cf2b08373ddd2c4c7605f3917332093}} 
+\index{Fl\_Table@{Fl\_Table}!clear@{clear}}
+\index{clear@{clear}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Clears the table to zero rows (rows(0)), zero columns (cols(0)), and clears any widgets (table-\/$>$\mbox{\hyperlink{class_fl___table_a4cf2b08373ddd2c4c7605f3917332093}{clear()}}) that were added with \mbox{\hyperlink{class_fl___table_ae7a75ac6a2e2a28d7c3e288699abd889}{begin()}}/end() or \mbox{\hyperlink{class_fl___table_ae16819dc983201f4572223f129d31ad2}{add()}}/insert()/etc. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___table_ad353dc62b5473ee0c67f7d2fc534763d}{rows(int)}}, \mbox{\hyperlink{class_fl___table_aafd81e678aacf95abe7f762cab91c33a}{cols(int)}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___table___row_a1023be767f8e346cf66936d7b6279095}{Fl\+\_\+\+Table\+\_\+\+Row}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_fl___table_a4cf2b08373ddd2c4c7605f3917332093_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a817530f910f7db0a0b5bb8c0c3604a94}\label{class_fl___table_a817530f910f7db0a0b5bb8c0c3604a94}} 
+\index{Fl\_Table@{Fl\_Table}!col\_header@{col\_header}}
+\index{col\_header@{col\_header}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_header()}{col\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::col\+\_\+header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns if column headers are enabled or not. \mbox{\Hypertarget{class_fl___table_abcfb0374426baff30a91aca68dc0aea9}\label{class_fl___table_abcfb0374426baff30a91aca68dc0aea9}} 
+\index{Fl\_Table@{Fl\_Table}!col\_header@{col\_header}}
+\index{col\_header@{col\_header}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_header()}{col\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::col\+\_\+header (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enable or disable column headers. If changed, the table is redrawn. \mbox{\Hypertarget{class_fl___table_ad09f503dc6235d7a570b84a1702932c8}\label{class_fl___table_ad09f503dc6235d7a570b84a1702932c8}} 
+\index{Fl\_Table@{Fl\_Table}!col\_header\_color@{col\_header\_color}}
+\index{col\_header\_color@{col\_header\_color}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_header\_color()}{col\_header\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Table\+::col\+\_\+header\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the color for column headers. \mbox{\Hypertarget{class_fl___table_ae2a103fe19552965300c0d1aa59561af}\label{class_fl___table_ae2a103fe19552965300c0d1aa59561af}} 
+\index{Fl\_Table@{Fl\_Table}!col\_header\_color@{col\_header\_color}}
+\index{col\_header\_color@{col\_header\_color}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_header\_color()}{col\_header\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::col\+\_\+header\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the color for column headers and redraws the table. \mbox{\Hypertarget{class_fl___table_a74f6329190edb7d4f2e300c66b779d6d}\label{class_fl___table_a74f6329190edb7d4f2e300c66b779d6d}} 
+\index{Fl\_Table@{Fl\_Table}!col\_header\_height@{col\_header\_height}}
+\index{col\_header\_height@{col\_header\_height}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_header\_height()}{col\_header\_height()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::col\+\_\+header\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the column header height. \mbox{\Hypertarget{class_fl___table_ab6302030b06b2da8188ead8132334c99}\label{class_fl___table_ab6302030b06b2da8188ead8132334c99}} 
+\index{Fl\_Table@{Fl\_Table}!col\_header\_height@{col\_header\_height}}
+\index{col\_header\_height@{col\_header\_height}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_header\_height()}{col\_header\_height()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::col\+\_\+header\+\_\+height (\begin{DoxyParamCaption}\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the height in pixels for column headers and redraws the table. \mbox{\Hypertarget{class_fl___table_ae8d425e06ce14b1109a19e82941306e4}\label{class_fl___table_ae8d425e06ce14b1109a19e82941306e4}} 
+\index{Fl\_Table@{Fl\_Table}!col\_position@{col\_position}}
+\index{col\_position@{col\_position}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_position()}{col\_position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::col\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current column scroll position as a column number. \mbox{\Hypertarget{class_fl___table_a53088bde3fd7f31e5a3fe61648f1dcf0}\label{class_fl___table_a53088bde3fd7f31e5a3fe61648f1dcf0}} 
+\index{Fl\_Table@{Fl\_Table}!col\_position@{col\_position}}
+\index{col\_position@{col\_position}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_position()}{col\_position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::col\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{col }\end{DoxyParamCaption})}
+
+Sets the column scroll position to column \textquotesingle{}col\textquotesingle{}, and causes the screen to redraw. \mbox{\Hypertarget{class_fl___table_aadc07cb4e46548b3d0f548e6a7335744}\label{class_fl___table_aadc07cb4e46548b3d0f548e6a7335744}} 
+\index{Fl\_Table@{Fl\_Table}!col\_resize@{col\_resize}}
+\index{col\_resize@{col\_resize}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_resize()}{col\_resize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::col\+\_\+resize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns if column resizing by the user is allowed. \mbox{\Hypertarget{class_fl___table_af013461380039ff090a3d31477204ea6}\label{class_fl___table_af013461380039ff090a3d31477204ea6}} 
+\index{Fl\_Table@{Fl\_Table}!col\_resize@{col\_resize}}
+\index{col\_resize@{col\_resize}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_resize()}{col\_resize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::col\+\_\+resize (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allows/disallows column resizing by the user. 1=allow interactive resizing, 0=disallow interactive resizing. Since interactive resizing is done via the column headers, {\ttfamily \mbox{\hyperlink{class_fl___table_a817530f910f7db0a0b5bb8c0c3604a94}{col\+\_\+header()}}} must also be enabled to allow resizing. \mbox{\Hypertarget{class_fl___table_ad3d47b28fc87609a01725a78512adf5e}\label{class_fl___table_ad3d47b28fc87609a01725a78512adf5e}} 
+\index{Fl\_Table@{Fl\_Table}!col\_resize\_min@{col\_resize\_min}}
+\index{col\_resize\_min@{col\_resize\_min}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_resize\_min()}{col\_resize\_min()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::col\+\_\+resize\+\_\+min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current column minimum resize value. \mbox{\Hypertarget{class_fl___table_a00f9f4e0789368767d1faa3db5eb9648}\label{class_fl___table_a00f9f4e0789368767d1faa3db5eb9648}} 
+\index{Fl\_Table@{Fl\_Table}!col\_resize\_min@{col\_resize\_min}}
+\index{col\_resize\_min@{col\_resize\_min}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_resize\_min()}{col\_resize\_min()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::col\+\_\+resize\+\_\+min (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current column minimum resize value. This is used to prevent the user from interactively resizing any column to be smaller than \textquotesingle{}pixels\textquotesingle{}. Must be a value $>$=1. \mbox{\Hypertarget{class_fl___table_a15637ba3f8ea31d9bdeabaa1c67d7e77}\label{class_fl___table_a15637ba3f8ea31d9bdeabaa1c67d7e77}} 
+\index{Fl\_Table@{Fl\_Table}!col\_scroll\_position@{col\_scroll\_position}}
+\index{col\_scroll\_position@{col\_scroll\_position}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_scroll\_position()}{col\_scroll\_position()}}
+{\footnotesize\ttfamily long Fl\+\_\+\+Table\+::col\+\_\+scroll\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_aabe4ad5c6d0dccc5031ff12b52b681d1}\label{class_fl___table_aabe4ad5c6d0dccc5031ff12b52b681d1}} 
+\index{Fl\_Table@{Fl\_Table}!col\_width@{col\_width}}
+\index{col\_width@{col\_width}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_width()}{col\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::col\+\_\+width (\begin{DoxyParamCaption}\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current width of the specified column in pixels. \mbox{\Hypertarget{class_fl___table_a89982b606a376c9cdb29da769eac3ccd}\label{class_fl___table_a89982b606a376c9cdb29da769eac3ccd}} 
+\index{Fl\_Table@{Fl\_Table}!col\_width@{col\_width}}
+\index{col\_width@{col\_width}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_width()}{col\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::col\+\_\+width (\begin{DoxyParamCaption}\item[{int}]{col,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+Sets the width of the specified column in pixels, and the table is redrawn. \mbox{\hyperlink{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}{callback()}} will be invoked with C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+C\+\_\+\+R\+E\+S\+I\+ZE if the column\textquotesingle{}s width was actually changed, and \mbox{\hyperlink{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}{when()}} is F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+C\+H\+A\+N\+G\+ED. \mbox{\Hypertarget{class_fl___table_a1ad4a058551c0c7674f9d021d1a21ef4}\label{class_fl___table_a1ad4a058551c0c7674f9d021d1a21ef4}} 
+\index{Fl\_Table@{Fl\_Table}!col\_width\_all@{col\_width\_all}}
+\index{col\_width\_all@{col\_width\_all}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{col\_width\_all()}{col\_width\_all()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::col\+\_\+width\+\_\+all (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convenience method to set the width of all columns to the same value, in pixels. The screen is redrawn. \mbox{\Hypertarget{class_fl___table_a82b1a353a6d0345e6714fb7d3a2ae0ac}\label{class_fl___table_a82b1a353a6d0345e6714fb7d3a2ae0ac}} 
+\index{Fl\_Table@{Fl\_Table}!cols@{cols}}
+\index{cols@{cols}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{cols()}{cols()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of columns in the table. \mbox{\Hypertarget{class_fl___table_aafd81e678aacf95abe7f762cab91c33a}\label{class_fl___table_aafd81e678aacf95abe7f762cab91c33a}} 
+\index{Fl\_Table@{Fl\_Table}!cols@{cols}}
+\index{cols@{cols}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{cols()}{cols()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::cols (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the number of columns in the table and redraw. \mbox{\Hypertarget{class_fl___table_ad2bb2ecb983ff1be575a53276cff5557}\label{class_fl___table_ad2bb2ecb983ff1be575a53276cff5557}} 
+\index{Fl\_Table@{Fl\_Table}!cursor2rowcol@{cursor2rowcol}}
+\index{cursor2rowcol@{cursor2rowcol}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{cursor2rowcol()}{cursor2rowcol()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} Fl\+\_\+\+Table\+::cursor2rowcol (\begin{DoxyParamCaption}\item[{int \&}]{R,  }\item[{int \&}]{C,  }\item[{\mbox{\hyperlink{class_fl___table_a7fda5eb45b52c3902d49ecc32c4cd50b}{Resize\+Flag}} \&}]{resizeflag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a715a509d3d3797a394987f6b152fa571}\label{class_fl___table_a715a509d3d3797a394987f6b152fa571}} 
+\index{Fl\_Table@{Fl\_Table}!damage\_zone@{damage\_zone}}
+\index{damage\_zone@{damage\_zone}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{damage\_zone()}{damage\_zone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::damage\+\_\+zone (\begin{DoxyParamCaption}\item[{int}]{r1,  }\item[{int}]{c1,  }\item[{int}]{r2,  }\item[{int}]{c2,  }\item[{int}]{r3 = {\ttfamily 0},  }\item[{int}]{c3 = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a6eb5e914ea4ec3a97a50608cddeef3f0}\label{class_fl___table_a6eb5e914ea4ec3a97a50608cddeef3f0}} 
+\index{Fl\_Table@{Fl\_Table}!do\_callback@{do\_callback}}
+\index{do\_callback@{do\_callback}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{do\_callback()}{do\_callback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::do\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}}}]{context,  }\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_fl___table_a6eb5e914ea4ec3a97a50608cddeef3f0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_aa3c46d45261be0a64db3784147115d6a}\label{class_fl___table_aa3c46d45261be0a64db3784147115d6a}} 
+\index{Fl\_Table@{Fl\_Table}!draw@{draw}}
+\index{draw@{draw}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___table_aa3c46d45261be0a64db3784147115d6a}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___table_aa3c46d45261be0a64db3784147115d6a}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_a96b778e518df02471139179d4c90157c}{Fl\+\_\+\+Group}}.
+
+\mbox{\Hypertarget{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}\label{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}} 
+\index{Fl\_Table@{Fl\_Table}!draw\_cell@{draw\_cell}}
+\index{draw\_cell@{draw\_cell}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{draw\_cell()}{draw\_cell()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::draw\+\_\+cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}}}]{context,  }\item[{int}]{R = {\ttfamily 0},  }\item[{int}]{C = {\ttfamily 0},  }\item[{int}]{X = {\ttfamily 0},  }\item[{int}]{Y = {\ttfamily 0},  }\item[{int}]{W = {\ttfamily 0},  }\item[{int}]{H = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Subclass should override this method to handle drawing the cells.
+
+This method will be called whenever the table is redrawn, once per cell.
+
+Only cells that are completely (or partially) visible will be told to draw.
+
+{\ttfamily context} will be one of the following\+:
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+{\ttfamily \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a679ea089903231312d0cf975b1a04ec3}{Fl\+\_\+\+Table\+::\+C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+T\+A\+R\+T\+P\+A\+GE}}}  &When table, or parts of the table, are about to be redrawn.~\newline
+ Use to initialize static data, such as font selections.
+
+R/C will be zero,~\newline
+ X/\+Y/\+W/H will be the dimensions of the table\textquotesingle{}s entire data area.~\newline
+ (Useful for locking a database before accessing; see also \mbox{\hyperlink{class_fl___table_a8f83d61e9c7ec6d19a49ad1ae1eb6ffc}{visible\+\_\+cells()}}) \\\cline{1-2}
+{\ttfamily \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135aae8f86bb7116f5f121dcb0258d276b47}{Fl\+\_\+\+Table\+::\+C\+O\+N\+T\+E\+X\+T\+\_\+\+E\+N\+D\+P\+A\+GE}}}  &When table has completed being redrawn.~\newline
+ R/C will be zero, X/\+Y/\+W/H dimensions of table\textquotesingle{}s data area.~\newline
+ (Useful for unlocking a database after accessing) \\\cline{1-2}
+{\ttfamily \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a8ee5f70da9ccdbd2494aeee6b85da7ce}{Fl\+\_\+\+Table\+::\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+O\+W\+\_\+\+H\+E\+A\+D\+ER}}}  &Whenever a row header cell needs to be drawn.~\newline
+ R will be the row number of the header being redrawn,~\newline
+ C will be zero,~\newline
+ X/\+Y/\+W/H will be the fltk drawing area of the row header in the window  \\\cline{1-2}
+{\ttfamily \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a113dfa5119db9dfbba4f5ff5f993bf5e}{Fl\+\_\+\+Table\+::\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+O\+L\+\_\+\+H\+E\+A\+D\+ER}}}  &Whenever a column header cell needs to be drawn.~\newline
+ R will be zero, ~\newline
+ C will be the column number of the header being redrawn,~\newline
+ X/\+Y/\+W/H will be the fltk drawing area of the column header in the window  \\\cline{1-2}
+{\ttfamily \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135abd0b9bdac4ddce885be6e6a4bcd3367a}{Fl\+\_\+\+Table\+::\+C\+O\+N\+T\+E\+X\+T\+\_\+\+C\+E\+LL}}}  &Whenever a data cell in the table needs to be drawn.~\newline
+ R/C will be the row/column of the cell to be drawn,~\newline
+ X/\+Y/\+W/H will be the fltk drawing area of the cell in the window  \\\cline{1-2}
+{\ttfamily \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a8c0f361d95f40e3ebedd1a91fb6d85b8}{Fl\+\_\+\+Table\+::\+C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+C\+\_\+\+R\+E\+S\+I\+ZE}}}  &Whenever table or row/column is resized or scrolled, either interactively or via \mbox{\hyperlink{class_fl___table_a89982b606a376c9cdb29da769eac3ccd}{col\+\_\+width()}} or \mbox{\hyperlink{class_fl___table_a0646cb480652322aa8c03426c55932fa}{row\+\_\+height()}}.~\newline
+ R/\+C/\+X/\+Y/\+W/H will all be zero. 
+
+Useful for fltk containers that need to resize or move the child fltk widgets.  \\\cline{1-2}
+\end{longtabu}
+
+
+{\ttfamily row} and {\ttfamily col} will be set to the row and column number of the cell being drawn. In the case of row headers, {\ttfamily col} will be {\itshape 0}. In the case of column headers, {\ttfamily row} will be {\itshape 0}.
+
+{\ttfamily x/y/w/h} will be the position and dimensions of where the cell should be drawn.
+
+In the case of custom widgets, a minimal \mbox{\hyperlink{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}{draw\+\_\+cell()}} override might look like the following. With custom widgets it is up to the caller to handle drawing everything within the dimensions of the cell, including handling the selection color. Note all clipping must be handled as well; this allows drawing outside the dimensions of the cell if so desired for \textquotesingle{}custom effects\textquotesingle{}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// This is called whenever Fl\_Table wants you to draw a cell}}
+\DoxyCodeLine{\textcolor{keywordtype}{void} MyTable::draw\_cell(\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{TableContext}} context, \textcolor{keywordtype}{int} R=0, \textcolor{keywordtype}{int} C=0, \textcolor{keywordtype}{int} X=0, \textcolor{keywordtype}{int} Y=0, \textcolor{keywordtype}{int} W=0, \textcolor{keywordtype}{int} H=0) \{}
+\DoxyCodeLine{    \textcolor{keyword}{static} \textcolor{keywordtype}{char} \mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}[40];}
+\DoxyCodeLine{    sprintf(\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, \textcolor{stringliteral}{"\%d/\%d"}, R, C);              \textcolor{comment}{// text for each cell}}
+\DoxyCodeLine{    \textcolor{keywordflow}{switch} ( context ) \{}
+\DoxyCodeLine{    \textcolor{keywordflow}{case} \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a679ea089903231312d0cf975b1a04ec3}{CONTEXT\_STARTPAGE}}:             \textcolor{comment}{// Fl\_Table telling us it's starting to draw page}}
+\DoxyCodeLine{        \mbox{\hyperlink{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}{fl\_font}}(\mbox{\hyperlink{_enumerations_8_h_a74d2c443f7ab53a6ce5d4ca0c7461bc9}{FL\_HELVETICA}}, 16);}
+\DoxyCodeLine{        \textcolor{keywordflow}{return};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{case} \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a8ee5f70da9ccdbd2494aeee6b85da7ce}{CONTEXT\_ROW\_HEADER}}:            \textcolor{comment}{// Fl\_Table telling us to draw row/col headers}}
+\DoxyCodeLine{    \textcolor{keywordflow}{case} \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135a113dfa5119db9dfbba4f5ff5f993bf5e}{CONTEXT\_COL\_HEADER}}:}
+\DoxyCodeLine{        \mbox{\hyperlink{group__fl__drawings_gabe60242ba3b975800717b95cb6bc06d2}{fl\_push\_clip}}(X, Y, W, H);}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{       \mbox{\hyperlink{group__fl__drawings_ga475ff2bbcafeb30d4551f635e42d6259}{fl\_draw\_box}}(\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bca1a4ca2c485bc6caa3dea7b54d108b984}{FL\_THIN\_UP\_BOX}}, X, Y, W, H, \mbox{\hyperlink{class_fl___widget_a0f4654d4d9aab8a1c1078fca5660742a}{color}}());}
+\DoxyCodeLine{       \mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\_color}}(\mbox{\hyperlink{_enumerations_8_h_a705ea07a3ad2b7e3b7745c9c3c651bba}{FL\_BLACK}});}
+\DoxyCodeLine{       \mbox{\hyperlink{group__fl__drawings_gacf054f0c5c5d3ab6caa1e8be3d58ec7e}{fl\_draw}}(\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, X, Y, W, H, \mbox{\hyperlink{_enumerations_8_h_a427f1ce53c37478a59f64bec4a2e2241}{FL\_ALIGN\_CENTER}});}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \mbox{\hyperlink{group__fl__drawings_ga7abb216a9a87408c8926126cc9efce22}{fl\_pop\_clip}}();}
+\DoxyCodeLine{        \textcolor{keywordflow}{return};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{case} \mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135abd0b9bdac4ddce885be6e6a4bcd3367a}{CONTEXT\_CELL}}:                  \textcolor{comment}{// Fl\_Table telling us to draw cells}}
+\DoxyCodeLine{        \mbox{\hyperlink{group__fl__drawings_gabe60242ba3b975800717b95cb6bc06d2}{fl\_push\_clip}}(X, Y, W, H);}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{       \textcolor{comment}{// BG COLOR}}
+\DoxyCodeLine{       \mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\_color}}( row\_selected(R) ? \mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\_color}}() : \mbox{\hyperlink{_enumerations_8_h_ac1600c6c32be996f90f133cdc4135292}{FL\_WHITE}});}
+\DoxyCodeLine{       \mbox{\hyperlink{group__fl__drawings_ga2986a868e9cc8d9141acde94c0fe8ab0}{fl\_rectf}}(X, Y, W, H);}
+\DoxyCodeLine{       }
+\DoxyCodeLine{       \textcolor{comment}{// TEXT}}
+\DoxyCodeLine{       \mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\_color}}(\mbox{\hyperlink{_enumerations_8_h_a705ea07a3ad2b7e3b7745c9c3c651bba}{FL\_BLACK}});}
+\DoxyCodeLine{       \mbox{\hyperlink{group__fl__drawings_gacf054f0c5c5d3ab6caa1e8be3d58ec7e}{fl\_draw}}(\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, X, Y, W, H, \mbox{\hyperlink{_enumerations_8_h_a427f1ce53c37478a59f64bec4a2e2241}{FL\_ALIGN\_CENTER}});}
+\DoxyCodeLine{       }
+\DoxyCodeLine{       \textcolor{comment}{// BORDER}}
+\DoxyCodeLine{       \mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\_color}}(\mbox{\hyperlink{_enumerations_8_h_a186273e1025db07389a99cf29ac81493}{FL\_LIGHT2}});}
+\DoxyCodeLine{       \mbox{\hyperlink{group__fl__drawings_ga690c83e11f49fa837b563f4c0bc4fd1b}{fl\_rect}}(X, Y, W, H);}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{        \mbox{\hyperlink{group__fl__drawings_ga7abb216a9a87408c8926126cc9efce22}{fl\_pop\_clip}}();}
+\DoxyCodeLine{        \textcolor{keywordflow}{return};}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{    \textcolor{keywordflow}{return};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    \textcolor{comment}{//NOTREACHED}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ \mbox{\Hypertarget{class_fl___table_ab8ebe08ee81d0fa3b19ad05ce6a532c8}\label{class_fl___table_ab8ebe08ee81d0fa3b19ad05ce6a532c8}} 
+\index{Fl\_Table@{Fl\_Table}!end@{end}}
+\index{end@{end}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_fl___table_ab8ebe08ee81d0fa3b19ad05ce6a532c8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a0be6478b9da469cb68ea707e7e15057b}\label{class_fl___table_a0be6478b9da469cb68ea707e7e15057b}} 
+\index{Fl\_Table@{Fl\_Table}!find@{find}}
+\index{find@{find}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&}]{wgt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{class_fl___table_a0be6478b9da469cb68ea707e7e15057b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a511e677071c58008b7b3ef959adef5bb}\label{class_fl___table_a511e677071c58008b7b3ef959adef5bb}} 
+\index{Fl\_Table@{Fl\_Table}!find@{find}}
+\index{find@{find}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::find (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{wgt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{class_fl___table_a511e677071c58008b7b3ef959adef5bb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_ae2335df5af6114f0344ecf55992888a0}\label{class_fl___table_ae2335df5af6114f0344ecf55992888a0}} 
+\index{Fl\_Table@{Fl\_Table}!find\_cell@{find\_cell}}
+\index{find\_cell@{find\_cell}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{find\_cell()}{find\_cell()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::find\+\_\+cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}}}]{context,  }\item[{int}]{R,  }\item[{int}]{C,  }\item[{int \&}]{X,  }\item[{int \&}]{Y,  }\item[{int \&}]{W,  }\item[{int \&}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a1ff4d0fee238c4ebe081ce4fc530fff0}\label{class_fl___table_a1ff4d0fee238c4ebe081ce4fc530fff0}} 
+\index{Fl\_Table@{Fl\_Table}!get\_bounds@{get\_bounds}}
+\index{get\_bounds@{get\_bounds}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{get\_bounds()}{get\_bounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::get\+\_\+bounds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}}}]{context,  }\item[{int \&}]{X,  }\item[{int \&}]{Y,  }\item[{int \&}]{W,  }\item[{int \&}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_aec0089641778336bb7e7306fbf15ce32}\label{class_fl___table_aec0089641778336bb7e7306fbf15ce32}} 
+\index{Fl\_Table@{Fl\_Table}!get\_selection@{get\_selection}}
+\index{get\_selection@{get\_selection}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{get\_selection()}{get\_selection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::get\+\_\+selection (\begin{DoxyParamCaption}\item[{int \&}]{row\+\_\+top,  }\item[{int \&}]{col\+\_\+left,  }\item[{int \&}]{row\+\_\+bot,  }\item[{int \&}]{col\+\_\+right }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___table_a810b0f1bdfe62ea8faf001c52c124a9d}\label{class_fl___table_a810b0f1bdfe62ea8faf001c52c124a9d}} 
+\index{Fl\_Table@{Fl\_Table}!handle@{handle}}
+\index{handle@{handle}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___table_a810b0f1bdfe62ea8faf001c52c124a9d}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_a7503757c2a734442e74717d1971b12ce}{Fl\+\_\+\+Group}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___table___row_a311f4d503232cbe8aef567470f420a16}{Fl\+\_\+\+Table\+\_\+\+Row}}.
+
+\mbox{\Hypertarget{class_fl___table_a6d89cb4006a9147b01c69c04ffee9499}\label{class_fl___table_a6d89cb4006a9147b01c69c04ffee9499}} 
+\index{Fl\_Table@{Fl\_Table}!init\_sizes@{init\_sizes}}
+\index{init\_sizes@{init\_sizes}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{init\_sizes()}{init\_sizes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::init\+\_\+sizes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_fl___table_a6d89cb4006a9147b01c69c04ffee9499_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a9169a43b71039343338f273bae35a2fb}\label{class_fl___table_a9169a43b71039343338f273bae35a2fb}} 
+\index{Fl\_Table@{Fl\_Table}!insert@{insert}}
+\index{insert@{insert}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&}]{wgt,  }\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{w2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_fl___table_a9169a43b71039343338f273bae35a2fb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a351e01781762eda7a8f9061492e1d1db}\label{class_fl___table_a351e01781762eda7a8f9061492e1d1db}} 
+\index{Fl\_Table@{Fl\_Table}!insert@{insert}}
+\index{insert@{insert}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&}]{wgt,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_fl___table_a351e01781762eda7a8f9061492e1d1db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_ae47818a24992bc2d2c931071c08ac367}\label{class_fl___table_ae47818a24992bc2d2c931071c08ac367}} 
+\index{Fl\_Table@{Fl\_Table}!is\_fltk\_container@{is\_fltk\_container}}
+\index{is\_fltk\_container@{is\_fltk\_container}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{is\_fltk\_container()}{is\_fltk\_container()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::is\+\_\+fltk\+\_\+container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_fl___table_ae47818a24992bc2d2c931071c08ac367_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a07790a74e83f67720962c7fa2916c1ac}\label{class_fl___table_a07790a74e83f67720962c7fa2916c1ac}} 
+\index{Fl\_Table@{Fl\_Table}!is\_interactive\_resize@{is\_interactive\_resize}}
+\index{is\_interactive\_resize@{is\_interactive\_resize}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{is\_interactive\_resize()}{is\_interactive\_resize()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::is\+\_\+interactive\+\_\+resize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns 1 if someone is interactively resizing a row or column. You can currently call this only from within your \mbox{\hyperlink{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}{callback()}}. \mbox{\Hypertarget{class_fl___table_a7913a4f0c7db42374c1b17975a173916}\label{class_fl___table_a7913a4f0c7db42374c1b17975a173916}} 
+\index{Fl\_Table@{Fl\_Table}!is\_selected@{is\_selected}}
+\index{is\_selected@{is\_selected}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{is\_selected()}{is\_selected()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::is\+\_\+selected (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___table_acdda2cc8a9f2224d9045a97c35ff6e00}\label{class_fl___table_acdda2cc8a9f2224d9045a97c35ff6e00}} 
+\index{Fl\_Table@{Fl\_Table}!move\_cursor@{move\_cursor}}
+\index{move\_cursor@{move\_cursor}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{move\_cursor()}{move\_cursor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::move\+\_\+cursor (\begin{DoxyParamCaption}\item[{int}]{R,  }\item[{int}]{C }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___table_a6dcd106371b3e67cace4b47df2369a83}\label{class_fl___table_a6dcd106371b3e67cace4b47df2369a83}} 
+\index{Fl\_Table@{Fl\_Table}!move\_cursor@{move\_cursor}}
+\index{move\_cursor@{move\_cursor}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{move\_cursor()}{move\_cursor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::move\+\_\+cursor (\begin{DoxyParamCaption}\item[{int}]{R,  }\item[{int}]{C,  }\item[{int}]{shiftselect }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___table_a2704879da38d6ad3f0f0d22054e03e0a}\label{class_fl___table_a2704879da38d6ad3f0f0d22054e03e0a}} 
+\index{Fl\_Table@{Fl\_Table}!recalc\_dimensions@{recalc\_dimensions}}
+\index{recalc\_dimensions@{recalc\_dimensions}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{recalc\_dimensions()}{recalc\_dimensions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::recalc\+\_\+dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_afdd361670b57f681e8a23f8178c64828}\label{class_fl___table_afdd361670b57f681e8a23f8178c64828}} 
+\index{Fl\_Table@{Fl\_Table}!redraw\_range@{redraw\_range}}
+\index{redraw\_range@{redraw\_range}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{redraw\_range()}{redraw\_range()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::redraw\+\_\+range (\begin{DoxyParamCaption}\item[{int}]{top\+Row,  }\item[{int}]{bot\+Row,  }\item[{int}]{left\+Col,  }\item[{int}]{right\+Col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a0a0b25dc24e8f6e58953736966862385}\label{class_fl___table_a0a0b25dc24e8f6e58953736966862385}} 
+\index{Fl\_Table@{Fl\_Table}!remove@{remove}}
+\index{remove@{remove}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \&}]{wgt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{class_fl___table_a0a0b25dc24e8f6e58953736966862385_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_ab513a3c2f785008b5f8b4ea0b3d643f5}\label{class_fl___table_ab513a3c2f785008b5f8b4ea0b3d643f5}} 
+\index{Fl\_Table@{Fl\_Table}!resize@{resize}}
+\index{resize@{resize}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::resize (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Changes the size of the \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}}, causing it to redraw. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_aaec24e2eec53dcea00d1d1f63d5495d3}{Fl\+\_\+\+Group}}.
+
+\mbox{\Hypertarget{class_fl___table_a815bbf5b98060cb20fb14387e20d4870}\label{class_fl___table_a815bbf5b98060cb20fb14387e20d4870}} 
+\index{Fl\_Table@{Fl\_Table}!row\_col\_clamp@{row\_col\_clamp}}
+\index{row\_col\_clamp@{row\_col\_clamp}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_col\_clamp()}{row\_col\_clamp()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::row\+\_\+col\+\_\+clamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}}}]{context,  }\item[{int \&}]{R,  }\item[{int \&}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_ad51f00bbee634d5ba3c90c67a7c5650a}\label{class_fl___table_ad51f00bbee634d5ba3c90c67a7c5650a}} 
+\index{Fl\_Table@{Fl\_Table}!row\_header@{row\_header}}
+\index{row\_header@{row\_header}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_header()}{row\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::row\+\_\+header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns if row headers are enabled or not. \mbox{\Hypertarget{class_fl___table_a4a0027decca0c341dfae1c8e2d9b53fe}\label{class_fl___table_a4a0027decca0c341dfae1c8e2d9b53fe}} 
+\index{Fl\_Table@{Fl\_Table}!row\_header@{row\_header}}
+\index{row\_header@{row\_header}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_header()}{row\_header()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::row\+\_\+header (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enables/disables showing the row headers. 1=enabled, 0=disabled. If changed, the table is redrawn. \mbox{\Hypertarget{class_fl___table_a829d2d92e8753b0f2635e61173fc93e5}\label{class_fl___table_a829d2d92e8753b0f2635e61173fc93e5}} 
+\index{Fl\_Table@{Fl\_Table}!row\_header\_color@{row\_header\_color}}
+\index{row\_header\_color@{row\_header\_color}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_header\_color()}{row\_header\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Table\+::row\+\_\+header\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current row header color. \mbox{\Hypertarget{class_fl___table_a5bf200912eb6fdee6a346019e5e0425d}\label{class_fl___table_a5bf200912eb6fdee6a346019e5e0425d}} 
+\index{Fl\_Table@{Fl\_Table}!row\_header\_color@{row\_header\_color}}
+\index{row\_header\_color@{row\_header\_color}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_header\_color()}{row\_header\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::row\+\_\+header\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the row header color and causes the screen to redraw. \mbox{\Hypertarget{class_fl___table_a6b5f2695ce39389ae6c7279025efa70f}\label{class_fl___table_a6b5f2695ce39389ae6c7279025efa70f}} 
+\index{Fl\_Table@{Fl\_Table}!row\_header\_width@{row\_header\_width}}
+\index{row\_header\_width@{row\_header\_width}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_header\_width()}{row\_header\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::row\+\_\+header\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current row header width (in pixels). \mbox{\Hypertarget{class_fl___table_a268c4e45f55c90d66397a066e0805679}\label{class_fl___table_a268c4e45f55c90d66397a066e0805679}} 
+\index{Fl\_Table@{Fl\_Table}!row\_header\_width@{row\_header\_width}}
+\index{row\_header\_width@{row\_header\_width}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_header\_width()}{row\_header\_width()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::row\+\_\+header\+\_\+width (\begin{DoxyParamCaption}\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the row header width to n and causes the screen to redraw. \mbox{\Hypertarget{class_fl___table_a4e13e99335dbe82a2f69d171926e0e2b}\label{class_fl___table_a4e13e99335dbe82a2f69d171926e0e2b}} 
+\index{Fl\_Table@{Fl\_Table}!row\_height@{row\_height}}
+\index{row\_height@{row\_height}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_height()}{row\_height()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::row\+\_\+height (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current height of the specified row as a value in pixels. \mbox{\Hypertarget{class_fl___table_a0646cb480652322aa8c03426c55932fa}\label{class_fl___table_a0646cb480652322aa8c03426c55932fa}} 
+\index{Fl\_Table@{Fl\_Table}!row\_height@{row\_height}}
+\index{row\_height@{row\_height}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_height()}{row\_height()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::row\+\_\+height (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Sets the height of the specified row in pixels, and the table is redrawn. \mbox{\hyperlink{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}{callback()}} will be invoked with C\+O\+N\+T\+E\+X\+T\+\_\+\+R\+C\+\_\+\+R\+E\+S\+I\+ZE if the row\textquotesingle{}s height was actually changed, and \mbox{\hyperlink{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}{when()}} is F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+C\+H\+A\+N\+G\+ED. \mbox{\Hypertarget{class_fl___table_a5826287bf9375fd27ee56f788b326771}\label{class_fl___table_a5826287bf9375fd27ee56f788b326771}} 
+\index{Fl\_Table@{Fl\_Table}!row\_height\_all@{row\_height\_all}}
+\index{row\_height\_all@{row\_height\_all}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_height\_all()}{row\_height\_all()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::row\+\_\+height\+\_\+all (\begin{DoxyParamCaption}\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convenience method to set the height of all rows to the same value, in pixels. The screen is redrawn. \mbox{\Hypertarget{class_fl___table_ab6666085176ae0bcef136a335709d20c}\label{class_fl___table_ab6666085176ae0bcef136a335709d20c}} 
+\index{Fl\_Table@{Fl\_Table}!row\_position@{row\_position}}
+\index{row\_position@{row\_position}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_position()}{row\_position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::row\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current row scroll position as a row number. \mbox{\Hypertarget{class_fl___table_adabe9c746a90e0523ab135b7771ca96a}\label{class_fl___table_adabe9c746a90e0523ab135b7771ca96a}} 
+\index{Fl\_Table@{Fl\_Table}!row\_position@{row\_position}}
+\index{row\_position@{row\_position}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_position()}{row\_position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::row\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})}
+
+Sets the row scroll position to \textquotesingle{}row\textquotesingle{}, and causes the screen to redraw. \mbox{\Hypertarget{class_fl___table_aeb5f1b07e438b02eb4c62d40e837181b}\label{class_fl___table_aeb5f1b07e438b02eb4c62d40e837181b}} 
+\index{Fl\_Table@{Fl\_Table}!row\_resize@{row\_resize}}
+\index{row\_resize@{row\_resize}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_resize()}{row\_resize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::row\+\_\+resize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns if row resizing by the user is allowed. \mbox{\Hypertarget{class_fl___table_ab6bd035482b75e61ba46414582595b31}\label{class_fl___table_ab6bd035482b75e61ba46414582595b31}} 
+\index{Fl\_Table@{Fl\_Table}!row\_resize@{row\_resize}}
+\index{row\_resize@{row\_resize}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_resize()}{row\_resize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::row\+\_\+resize (\begin{DoxyParamCaption}\item[{int}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allows/disallows row resizing by the user. 1=allow interactive resizing, 0=disallow interactive resizing. Since interactive resizing is done via the row headers, \mbox{\hyperlink{class_fl___table_ad51f00bbee634d5ba3c90c67a7c5650a}{row\+\_\+header()}} must also be enabled to allow resizing. \mbox{\Hypertarget{class_fl___table_a4280d0d1ad2d5a31b1a16b73009dc46b}\label{class_fl___table_a4280d0d1ad2d5a31b1a16b73009dc46b}} 
+\index{Fl\_Table@{Fl\_Table}!row\_resize\_min@{row\_resize\_min}}
+\index{row\_resize\_min@{row\_resize\_min}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_resize\_min()}{row\_resize\_min()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::row\+\_\+resize\+\_\+min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current row minimum resize value. \mbox{\Hypertarget{class_fl___table_a1ba8d7474c42d3e50a18fd6a8cb04848}\label{class_fl___table_a1ba8d7474c42d3e50a18fd6a8cb04848}} 
+\index{Fl\_Table@{Fl\_Table}!row\_resize\_min@{row\_resize\_min}}
+\index{row\_resize\_min@{row\_resize\_min}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_resize\_min()}{row\_resize\_min()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::row\+\_\+resize\+\_\+min (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current row minimum resize value. This is used to prevent the user from interactively resizing any row to be smaller than \textquotesingle{}pixels\textquotesingle{}. Must be a value $>$=1. \mbox{\Hypertarget{class_fl___table_a2d4398d4e3f28fe1261128e602fd0069}\label{class_fl___table_a2d4398d4e3f28fe1261128e602fd0069}} 
+\index{Fl\_Table@{Fl\_Table}!row\_scroll\_position@{row\_scroll\_position}}
+\index{row\_scroll\_position@{row\_scroll\_position}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{row\_scroll\_position()}{row\_scroll\_position()}}
+{\footnotesize\ttfamily long Fl\+\_\+\+Table\+::row\+\_\+scroll\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_af63dddf97c8804488f8a179780a674c0}\label{class_fl___table_af63dddf97c8804488f8a179780a674c0}} 
+\index{Fl\_Table@{Fl\_Table}!rows@{rows}}
+\index{rows@{rows}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{rows()}{rows()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of rows in the table. \mbox{\Hypertarget{class_fl___table_ad353dc62b5473ee0c67f7d2fc534763d}\label{class_fl___table_ad353dc62b5473ee0c67f7d2fc534763d}} 
+\index{Fl\_Table@{Fl\_Table}!rows@{rows}}
+\index{rows@{rows}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{rows()}{rows()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::rows (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the number of rows in the table, and the table is redrawn. 
+
+Reimplemented in \mbox{\hyperlink{class_fl___table___row_adef43f133affb3506a35234a77e58447}{Fl\+\_\+\+Table\+\_\+\+Row}}.
+
+\mbox{\Hypertarget{class_fl___table_ab70607cc0f10352542cc2fad5aa5053b}\label{class_fl___table_ab70607cc0f10352542cc2fad5aa5053b}} 
+\index{Fl\_Table@{Fl\_Table}!scroll\_cb@{scroll\_cb}}
+\index{scroll\_cb@{scroll\_cb}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{scroll\_cb()}{scroll\_cb()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::scroll\+\_\+cb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a64089393a7bf7b6aa08b16a1f3e4e40b}\label{class_fl___table_a64089393a7bf7b6aa08b16a1f3e4e40b}} 
+\index{Fl\_Table@{Fl\_Table}!set\_selection@{set\_selection}}
+\index{set\_selection@{set\_selection}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{set\_selection()}{set\_selection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::set\+\_\+selection (\begin{DoxyParamCaption}\item[{int}]{row\+\_\+top,  }\item[{int}]{col\+\_\+left,  }\item[{int}]{row\+\_\+bot,  }\item[{int}]{col\+\_\+right }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___table_a2a773eb7ba7ffe6bc402e2069a763fab}\label{class_fl___table_a2a773eb7ba7ffe6bc402e2069a763fab}} 
+\index{Fl\_Table@{Fl\_Table}!table\_box@{table\_box}}
+\index{table\_box@{table\_box}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{table\_box()}{table\_box()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::table\+\_\+box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}}}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the kind of box drawn around the data table, the default being F\+L\+\_\+\+N\+O\+\_\+\+B\+OX. Changing this value will cause the table to redraw. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_fl___table_a2a773eb7ba7ffe6bc402e2069a763fab_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_ab040f9e6b7329ce3073ca4d6e865a18f}\label{class_fl___table_ab040f9e6b7329ce3073ca4d6e865a18f}} 
+\index{Fl\_Table@{Fl\_Table}!table\_box@{table\_box}}
+\index{table\_box@{table\_box}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{table\_box()}{table\_box()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} Fl\+\_\+\+Table\+::table\+\_\+box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current box type used for the data table. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_fl___table_ab040f9e6b7329ce3073ca4d6e865a18f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table_a1c30c68bd40a4af80b6af2bc6f606e58}\label{class_fl___table_a1c30c68bd40a4af80b6af2bc6f606e58}} 
+\index{Fl\_Table@{Fl\_Table}!table\_resized@{table\_resized}}
+\index{table\_resized@{table\_resized}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{table\_resized()}{table\_resized()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::table\+\_\+resized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_ad2e84421bd13c3c72a41c8fa154b3768}\label{class_fl___table_ad2e84421bd13c3c72a41c8fa154b3768}} 
+\index{Fl\_Table@{Fl\_Table}!table\_scrolled@{table\_scrolled}}
+\index{table\_scrolled@{table\_scrolled}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{table\_scrolled()}{table\_scrolled()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::table\+\_\+scrolled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_acfb1d87d8945045021d6b7406b6a89d1}\label{class_fl___table_acfb1d87d8945045021d6b7406b6a89d1}} 
+\index{Fl\_Table@{Fl\_Table}!top\_row@{top\_row}}
+\index{top\_row@{top\_row}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{top\_row()}{top\_row()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::top\+\_\+row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current top row shown in the table. This row may be partially obscured. \mbox{\Hypertarget{class_fl___table_a9d4a4cbb4cdf316b3de15f59b1bb1047}\label{class_fl___table_a9d4a4cbb4cdf316b3de15f59b1bb1047}} 
+\index{Fl\_Table@{Fl\_Table}!top\_row@{top\_row}}
+\index{top\_row@{top\_row}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{top\_row()}{top\_row()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::top\+\_\+row (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets which row should be at the top of the table, scrolling as necessary, and the table is redrawn. If the table cannot be scrolled that far, it is scrolled as far as possible. \mbox{\Hypertarget{class_fl___table_a8f83d61e9c7ec6d19a49ad1ae1eb6ffc}\label{class_fl___table_a8f83d61e9c7ec6d19a49ad1ae1eb6ffc}} 
+\index{Fl\_Table@{Fl\_Table}!visible\_cells@{visible\_cells}}
+\index{visible\_cells@{visible\_cells}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{visible\_cells()}{visible\_cells()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+::visible\+\_\+cells (\begin{DoxyParamCaption}\item[{int \&}]{r1,  }\item[{int \&}]{r2,  }\item[{int \&}]{c1,  }\item[{int \&}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the range of row and column numbers for all visible and partially visible cells in the table.
+
+These values can be used e.\+g. by your \mbox{\hyperlink{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}{draw\+\_\+cell()}} routine during C\+O\+N\+T\+E\+X\+T\+\_\+\+S\+T\+A\+R\+T\+P\+A\+GE to figure out what cells are about to be redrawn for the purposes of locking the data from a database before it\textquotesingle{}s drawn.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{       \mbox{\hyperlink{class_fl___table_a5acce681c1ef8540aa355f9684d065c1}{leftcol}}             \mbox{\hyperlink{class_fl___table_a4377aa8098356e601e2cbd970587199b}{rightcol}}}
+\DoxyCodeLine{          :                   :}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___table_aef3fd41ccc13992285df179ad33af352}{toprow}} .. .-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/.}
+\DoxyCodeLine{          |                   |}
+\DoxyCodeLine{          |  V I S I B L E    |}
+\DoxyCodeLine{          |                   |}
+\DoxyCodeLine{          |    T A B L E      |}
+\DoxyCodeLine{          |                   |}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___table_a32d6762316f1eb9a7d150757bb50b443}{botrow}} .. \textcolor{stringliteral}{'-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/`}}
+\end{DoxyCode}
+
+
+e.\+g. in a table where the visible rows are 5-\/20, and the visible columns are 100-\/120, then those variables would be\+:
+
+
+\begin{DoxyItemize}
+\item toprow = 5
+\item botrow = 20
+\item leftcol = 100
+\item rightcol = 120 
+\end{DoxyItemize}
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___table_a32d6762316f1eb9a7d150757bb50b443}\label{class_fl___table_a32d6762316f1eb9a7d150757bb50b443}} 
+\index{Fl\_Table@{Fl\_Table}!botrow@{botrow}}
+\index{botrow@{botrow}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{botrow}{botrow}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::botrow\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_ab4a32b40d7e737a11065227013ecec08}\label{class_fl___table_ab4a32b40d7e737a11065227013ecec08}} 
+\index{Fl\_Table@{Fl\_Table}!current\_col@{current\_col}}
+\index{current\_col@{current\_col}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{current\_col}{current\_col}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::current\+\_\+col\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a298ac46626281813442cba3b5716b12b}\label{class_fl___table_a298ac46626281813442cba3b5716b12b}} 
+\index{Fl\_Table@{Fl\_Table}!current\_row@{current\_row}}
+\index{current\_row@{current\_row}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{current\_row}{current\_row}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::current\+\_\+row\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_ae982bf4b8abb3befabd15fa9ac1878ff}\label{class_fl___table_ae982bf4b8abb3befabd15fa9ac1878ff}} 
+\index{Fl\_Table@{Fl\_Table}!hscrollbar@{hscrollbar}}
+\index{hscrollbar@{hscrollbar}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{hscrollbar}{hscrollbar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}}$\ast$ Fl\+\_\+\+Table\+::hscrollbar\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a5acce681c1ef8540aa355f9684d065c1}\label{class_fl___table_a5acce681c1ef8540aa355f9684d065c1}} 
+\index{Fl\_Table@{Fl\_Table}!leftcol@{leftcol}}
+\index{leftcol@{leftcol}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{leftcol}{leftcol}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::leftcol\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_acb120bac09df320b70213a6a54982428}\label{class_fl___table_acb120bac09df320b70213a6a54982428}} 
+\index{Fl\_Table@{Fl\_Table}!leftcol\_scrollpos@{leftcol\_scrollpos}}
+\index{leftcol\_scrollpos@{leftcol\_scrollpos}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{leftcol\_scrollpos}{leftcol\_scrollpos}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::leftcol\+\_\+scrollpos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a4377aa8098356e601e2cbd970587199b}\label{class_fl___table_a4377aa8098356e601e2cbd970587199b}} 
+\index{Fl\_Table@{Fl\_Table}!rightcol@{rightcol}}
+\index{rightcol@{rightcol}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{rightcol}{rightcol}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::rightcol\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a8555eb73e47b4ca0cd4e5eb4e5f305b3}\label{class_fl___table_a8555eb73e47b4ca0cd4e5eb4e5f305b3}} 
+\index{Fl\_Table@{Fl\_Table}!select\_col@{select\_col}}
+\index{select\_col@{select\_col}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{select\_col}{select\_col}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::select\+\_\+col\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a2d3de6372e2564f0e091986faeeac1cf}\label{class_fl___table_a2d3de6372e2564f0e091986faeeac1cf}} 
+\index{Fl\_Table@{Fl\_Table}!select\_row@{select\_row}}
+\index{select\_row@{select\_row}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{select\_row}{select\_row}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::select\+\_\+row\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a124843f3bd7655986958feab44f124e1}\label{class_fl___table_a124843f3bd7655986958feab44f124e1}} 
+\index{Fl\_Table@{Fl\_Table}!table@{table}}
+\index{table@{table}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___scroll}{Fl\+\_\+\+Scroll}}$\ast$ Fl\+\_\+\+Table\+::table\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_af97f53afa2c436e940d4b87423fd75b9}\label{class_fl___table_af97f53afa2c436e940d4b87423fd75b9}} 
+\index{Fl\_Table@{Fl\_Table}!table\_h@{table\_h}}
+\index{table\_h@{table\_h}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{table\_h}{table\_h}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::table\+\_\+h\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_aa62bfe9499ddd5afac009561c54cdcbe}\label{class_fl___table_aa62bfe9499ddd5afac009561c54cdcbe}} 
+\index{Fl\_Table@{Fl\_Table}!table\_w@{table\_w}}
+\index{table\_w@{table\_w}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{table\_w}{table\_w}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::table\+\_\+w\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a58b03ed655765b4752d822abce39c6eb}\label{class_fl___table_a58b03ed655765b4752d822abce39c6eb}} 
+\index{Fl\_Table@{Fl\_Table}!tih@{tih}}
+\index{tih@{tih}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{tih}{tih}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::tih\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a54761aeedcd145b802676c6201fa2df2}\label{class_fl___table_a54761aeedcd145b802676c6201fa2df2}} 
+\index{Fl\_Table@{Fl\_Table}!tiw@{tiw}}
+\index{tiw@{tiw}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{tiw}{tiw}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::tiw\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_ae724c0b7c723a1baa5de49288dc06c31}\label{class_fl___table_ae724c0b7c723a1baa5de49288dc06c31}} 
+\index{Fl\_Table@{Fl\_Table}!tix@{tix}}
+\index{tix@{tix}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{tix}{tix}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::tix\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a55afc80bbe4c1d83e24cef1324ec822a}\label{class_fl___table_a55afc80bbe4c1d83e24cef1324ec822a}} 
+\index{Fl\_Table@{Fl\_Table}!tiy@{tiy}}
+\index{tiy@{tiy}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{tiy}{tiy}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::tiy\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a15adf01af904acc239ecaf472e8013c2}\label{class_fl___table_a15adf01af904acc239ecaf472e8013c2}} 
+\index{Fl\_Table@{Fl\_Table}!toh@{toh}}
+\index{toh@{toh}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{toh}{toh}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::toh\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_aef3fd41ccc13992285df179ad33af352}\label{class_fl___table_aef3fd41ccc13992285df179ad33af352}} 
+\index{Fl\_Table@{Fl\_Table}!toprow@{toprow}}
+\index{toprow@{toprow}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{toprow}{toprow}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::toprow\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_aad1db2634548779a2c7b86164fcdeee3}\label{class_fl___table_aad1db2634548779a2c7b86164fcdeee3}} 
+\index{Fl\_Table@{Fl\_Table}!toprow\_scrollpos@{toprow\_scrollpos}}
+\index{toprow\_scrollpos@{toprow\_scrollpos}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{toprow\_scrollpos}{toprow\_scrollpos}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::toprow\+\_\+scrollpos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a58a7a1070516d9c2e1396f67589d109d}\label{class_fl___table_a58a7a1070516d9c2e1396f67589d109d}} 
+\index{Fl\_Table@{Fl\_Table}!tow@{tow}}
+\index{tow@{tow}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{tow}{tow}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::tow\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_ab70b001a956df9559ed30509f2febaf3}\label{class_fl___table_ab70b001a956df9559ed30509f2febaf3}} 
+\index{Fl\_Table@{Fl\_Table}!tox@{tox}}
+\index{tox@{tox}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{tox}{tox}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::tox\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a0914cdc2b9310a1aa40c241ea5280944}\label{class_fl___table_a0914cdc2b9310a1aa40c241ea5280944}} 
+\index{Fl\_Table@{Fl\_Table}!toy@{toy}}
+\index{toy@{toy}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{toy}{toy}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::toy\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_ab835e84d7a0193f4307209933ab53ae9}\label{class_fl___table_ab835e84d7a0193f4307209933ab53ae9}} 
+\index{Fl\_Table@{Fl\_Table}!vscrollbar@{vscrollbar}}
+\index{vscrollbar@{vscrollbar}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{vscrollbar}{vscrollbar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___scrollbar}{Fl\+\_\+\+Scrollbar}}$\ast$ Fl\+\_\+\+Table\+::vscrollbar\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a4e31d318bccf8ba718f5d4205556ce87}\label{class_fl___table_a4e31d318bccf8ba718f5d4205556ce87}} 
+\index{Fl\_Table@{Fl\_Table}!wih@{wih}}
+\index{wih@{wih}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{wih}{wih}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::wih\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a0dea3d15781ad202e71a03e9e387a8d0}\label{class_fl___table_a0dea3d15781ad202e71a03e9e387a8d0}} 
+\index{Fl\_Table@{Fl\_Table}!wiw@{wiw}}
+\index{wiw@{wiw}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{wiw}{wiw}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::wiw\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a7512779d4c093a846775dc42fb9026fb}\label{class_fl___table_a7512779d4c093a846775dc42fb9026fb}} 
+\index{Fl\_Table@{Fl\_Table}!wix@{wix}}
+\index{wix@{wix}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{wix}{wix}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::wix\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___table_a59ff5e7980d2164688c19e97cd12ebb5}\label{class_fl___table_a59ff5e7980d2164688c19e97cd12ebb5}} 
+\index{Fl\_Table@{Fl\_Table}!wiy@{wiy}}
+\index{wiy@{wiy}!Fl\_Table@{Fl\_Table}}
+\doxysubsubsection{\texorpdfstring{wiy}{wiy}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+::wiy\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___table_8_h}{Fl\+\_\+\+Table.\+H}}\end{DoxyCompactItemize}

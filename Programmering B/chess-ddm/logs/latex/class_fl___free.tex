@@ -1,0 +1,127 @@
+\hypertarget{class_fl___free}{}\doxysection{Fl\+\_\+\+Free Class Reference}
+\label{class_fl___free}\index{Fl\_Free@{Fl\_Free}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Free.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Free\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___free__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Free\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___free__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___free_a5e539871ecd1108f5770e4172014ac0a}{handle}} (int e)
+\item 
+\mbox{\hyperlink{class_fl___free_a8090d92289e196bcf1ade3a17a2acb74}{Fl\+\_\+\+Free}} (\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} t, int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$L, \mbox{\hyperlink{_fl___free_8_h_a4bf149c6264cd35972617f05f7e3036b}{F\+L\+\_\+\+H\+A\+N\+D\+L\+E\+P\+TR}} hdl)
+\item 
+\mbox{\hyperlink{class_fl___free_ab3fcdf6ed6cdf08b6e8dff45e17184f2}{$\sim$\+Fl\+\_\+\+Free}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___free_adb1b66948bacd9730b9e72f38d136bba}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Emulation of the Forms \char`\"{}free\char`\"{} widget.
+
+This emulation allows the free demo to run, and appears to be useful for porting programs written in Forms which use the free widget or make subclasses of the Forms widgets.
+
+There are five types of free, which determine when the handle function is called\+:
+
+\begin{DoxyItemize}
+\item {\ttfamily F\+L\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+F\+R\+EE} normal event handling. \item {\ttfamily F\+L\+\_\+\+S\+L\+E\+E\+P\+I\+N\+G\+\_\+\+F\+R\+EE} deactivates event handling (widget is inactive). \item {\ttfamily F\+L\+\_\+\+I\+N\+P\+U\+T\+\_\+\+F\+R\+EE} accepts F\+L\+\_\+\+F\+O\+C\+US events. \item {\ttfamily F\+L\+\_\+\+C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+F\+R\+EE} sets a timeout callback 100 times a second and provides an F\+L\+\_\+\+S\+T\+EP event. This has obvious detrimental effects on machine performance. \item {\ttfamily F\+L\+\_\+\+A\+L\+L\+\_\+\+F\+R\+EE} same as F\+L\+\_\+\+I\+N\+P\+U\+T\+\_\+\+F\+R\+EE and F\+L\+\_\+\+C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+\_\+\+F\+R\+EE. \end{DoxyItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___free_a8090d92289e196bcf1ade3a17a2acb74}\label{class_fl___free_a8090d92289e196bcf1ade3a17a2acb74}} 
+\index{Fl\_Free@{Fl\_Free}!Fl\_Free@{Fl\_Free}}
+\index{Fl\_Free@{Fl\_Free}!Fl\_Free@{Fl\_Free}}
+\doxysubsubsection{\texorpdfstring{Fl\_Free()}{Fl\_Free()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Free\+::\+Fl\+\_\+\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{t,  }\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{L,  }\item[{\mbox{\hyperlink{_fl___free_8_h_a4bf149c6264cd35972617f05f7e3036b}{F\+L\+\_\+\+H\+A\+N\+D\+L\+E\+P\+TR}}}]{hdl }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___free_ab3fcdf6ed6cdf08b6e8dff45e17184f2}\label{class_fl___free_ab3fcdf6ed6cdf08b6e8dff45e17184f2}} 
+\index{Fl\_Free@{Fl\_Free}!````~Fl\_Free@{$\sim$Fl\_Free}}
+\index{````~Fl\_Free@{$\sim$Fl\_Free}!Fl\_Free@{Fl\_Free}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Free()}{~Fl\_Free()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Free\+::$\sim$\+Fl\+\_\+\+Free (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___free_adb1b66948bacd9730b9e72f38d136bba}\label{class_fl___free_adb1b66948bacd9730b9e72f38d136bba}} 
+\index{Fl\_Free@{Fl\_Free}!draw@{draw}}
+\index{draw@{draw}!Fl\_Free@{Fl\_Free}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Free\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___free_adb1b66948bacd9730b9e72f38d136bba}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___free_adb1b66948bacd9730b9e72f38d136bba}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Implements \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___free_a5e539871ecd1108f5770e4172014ac0a}\label{class_fl___free_a5e539871ecd1108f5770e4172014ac0a}} 
+\index{Fl\_Free@{Fl\_Free}!handle@{handle}}
+\index{handle@{handle}!Fl\_Free@{Fl\_Free}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Free\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___free_a5e539871ecd1108f5770e4172014ac0a}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___widget_a3521aba25eda761620953dd49d335ea7}{Fl\+\_\+\+Widget}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___free_8_h}{Fl\+\_\+\+Free.\+H}}\end{DoxyCompactItemize}

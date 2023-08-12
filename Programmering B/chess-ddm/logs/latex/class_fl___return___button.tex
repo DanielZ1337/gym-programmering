@@ -1,0 +1,120 @@
+\hypertarget{class_fl___return___button}{}\doxysection{Fl\+\_\+\+Return\+\_\+\+Button Class Reference}
+\label{class_fl___return___button}\index{Fl\_Return\_Button@{Fl\_Return\_Button}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Return\+\_\+\+Button.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Return\+\_\+\+Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_fl___return___button__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Return\+\_\+\+Button\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{class_fl___return___button__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___return___button_a92e2270728a58b60099ddfb322018996}{handle}} (int)
+\item 
+\mbox{\hyperlink{class_fl___return___button_a34d15a3791dcd9d1fc7d2d117fbb90e6}{Fl\+\_\+\+Return\+\_\+\+Button}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___return___button_a38f67742bb98547f4f2d46457f2321c9}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_fl___return___button}{Fl\+\_\+\+Return\+\_\+\+Button}} is a subclass of \mbox{\hyperlink{class_fl___button}{Fl\+\_\+\+Button}} that generates a callback when it is pressed or when the user presses the Enter key. A carriage-\/return symbol is drawn next to the button label. 
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=4cm]{Fl_Return_Button.png}
+\doxyfigcaption{Fl\+\_\+\+Return\+\_\+\+Button}
+\end{DoxyImage}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___return___button_a34d15a3791dcd9d1fc7d2d117fbb90e6}\label{class_fl___return___button_a34d15a3791dcd9d1fc7d2d117fbb90e6}} 
+\index{Fl\_Return\_Button@{Fl\_Return\_Button}!Fl\_Return\_Button@{Fl\_Return\_Button}}
+\index{Fl\_Return\_Button@{Fl\_Return\_Button}!Fl\_Return\_Button@{Fl\_Return\_Button}}
+\doxysubsubsection{\texorpdfstring{Fl\_Return\_Button()}{Fl\_Return\_Button()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Return\+\_\+\+Button\+::\+Fl\+\_\+\+Return\+\_\+\+Button (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{class_fl___return___button}{Fl\+\_\+\+Return\+\_\+\+Button}} widget using the given position, size, and label string. The default boxtype is F\+L\+\_\+\+U\+P\+\_\+\+B\+OX. 
+
+The inherited destructor deletes the button. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___return___button_a38f67742bb98547f4f2d46457f2321c9}\label{class_fl___return___button_a38f67742bb98547f4f2d46457f2321c9}} 
+\index{Fl\_Return\_Button@{Fl\_Return\_Button}!draw@{draw}}
+\index{draw@{draw}!Fl\_Return\_Button@{Fl\_Return\_Button}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Return\+\_\+\+Button\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___return___button_a38f67742bb98547f4f2d46457f2321c9}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___return___button_a38f67742bb98547f4f2d46457f2321c9}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___button_a98687e86bf07a47a8be8325250e2036b}{Fl\+\_\+\+Button}}.
+
+\mbox{\Hypertarget{class_fl___return___button_a92e2270728a58b60099ddfb322018996}\label{class_fl___return___button_a92e2270728a58b60099ddfb322018996}} 
+\index{Fl\_Return\_Button@{Fl\_Return\_Button}!handle@{handle}}
+\index{handle@{handle}!Fl\_Return\_Button@{Fl\_Return\_Button}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Return\+\_\+\+Button\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___return___button_a92e2270728a58b60099ddfb322018996}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___button_a85a9bcd4943f577e6eb68f054ae3c80c}{Fl\+\_\+\+Button}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___return___button_8_h}{Fl\+\_\+\+Return\+\_\+\+Button.\+H}}\end{DoxyCompactItemize}

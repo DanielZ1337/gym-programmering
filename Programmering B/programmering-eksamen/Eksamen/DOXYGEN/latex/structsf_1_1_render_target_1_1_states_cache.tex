@@ -1,0 +1,186 @@
+\hypertarget{structsf_1_1_render_target_1_1_states_cache}{}\doxysection{sf\+::Render\+Target\+::States\+Cache Struct Reference}
+\label{structsf_1_1_render_target_1_1_states_cache}\index{sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}}
+
+
+Render states cache.  
+
+
+
+
+Collaboration diagram for sf\+::Render\+Target\+::States\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsf_1_1_render_target_1_1_states_cache__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_a11f8bb99f22589badbd6e62633ecf1f2a35c065ef4023ad479d5313b58fe2a74f}{Vertex\+Cache\+Size}} = 4
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_afe18ed60c54c1acacc318f8745f891ba}{enable}}
+\begin{DoxyCompactList}\small\item\em Is the cache enabled? \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_a72b00743fb5bd49128f5e99e05feef4c}{gl\+States\+Set}}
+\begin{DoxyCompactList}\small\item\em Are our internal GL states set yet? \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_a187e43ee4890f6c276ab8376f92e8695}{view\+Changed}}
+\begin{DoxyCompactList}\small\item\em Has the current view changed since last draw? \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structsf_1_1_blend_mode}{Blend\+Mode}} \mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_af2567b7c8f2fe811f28c78426b1a7be9}{last\+Blend\+Mode}}
+\begin{DoxyCompactList}\small\item\em Cached blending mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacesf_add9ac83466d96b9f50a009b9f4064266}{Uint64}} \mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_acdcd0a6ef1410c9cd63f9c4b9115f8d5}{last\+Texture\+Id}}
+\begin{DoxyCompactList}\small\item\em Cached texture. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_a7f83a1139be25ac92a118dfbb26154be}{tex\+Coords\+Array\+Enabled}}
+\begin{DoxyCompactList}\small\item\em Is G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+O\+O\+R\+D\+\_\+\+A\+R\+R\+AY client state enabled? \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_ab112b32284a6cadb5d2b2fd68b0a5f03}{use\+Vertex\+Cache}}
+\begin{DoxyCompactList}\small\item\em Did we previously use the vertex cache? \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsf_1_1_vertex}{Vertex}} \mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_a15af73593020c616d4cf0a4cfccd2ab4}{vertex\+Cache}} \mbox{[}\mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_a11f8bb99f22589badbd6e62633ecf1f2a35c065ef4023ad479d5313b58fe2a74f}{Vertex\+Cache\+Size}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Pre-\/transformed vertices cache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Render states cache. 
+
+Definition at line 457 of file Render\+Target.\+hpp.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structsf_1_1_render_target_1_1_states_cache_a11f8bb99f22589badbd6e62633ecf1f2}\label{structsf_1_1_render_target_1_1_states_cache_a11f8bb99f22589badbd6e62633ecf1f2}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VertexCacheSize@{VertexCacheSize}!sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}}\index{sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}!VertexCacheSize@{VertexCacheSize}}}\mbox{\Hypertarget{structsf_1_1_render_target_1_1_states_cache_a11f8bb99f22589badbd6e62633ecf1f2a35c065ef4023ad479d5313b58fe2a74f}\label{structsf_1_1_render_target_1_1_states_cache_a11f8bb99f22589badbd6e62633ecf1f2a35c065ef4023ad479d5313b58fe2a74f}} 
+Vertex\+Cache\+Size&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 459 of file Render\+Target.\+hpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structsf_1_1_render_target_1_1_states_cache_afe18ed60c54c1acacc318f8745f891ba}\label{structsf_1_1_render_target_1_1_states_cache_afe18ed60c54c1acacc318f8745f891ba}} 
+\index{sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}!enable@{enable}}
+\index{enable@{enable}!sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}}
+\doxysubsubsection{\texorpdfstring{enable}{enable}}
+{\footnotesize\ttfamily bool sf\+::\+Render\+Target\+::\+States\+Cache\+::enable}
+
+
+
+Is the cache enabled? 
+
+
+
+Definition at line 461 of file Render\+Target.\+hpp.
+
+\mbox{\Hypertarget{structsf_1_1_render_target_1_1_states_cache_a72b00743fb5bd49128f5e99e05feef4c}\label{structsf_1_1_render_target_1_1_states_cache_a72b00743fb5bd49128f5e99e05feef4c}} 
+\index{sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}!glStatesSet@{glStatesSet}}
+\index{glStatesSet@{glStatesSet}!sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}}
+\doxysubsubsection{\texorpdfstring{glStatesSet}{glStatesSet}}
+{\footnotesize\ttfamily bool sf\+::\+Render\+Target\+::\+States\+Cache\+::gl\+States\+Set}
+
+
+
+Are our internal GL states set yet? 
+
+
+
+Definition at line 462 of file Render\+Target.\+hpp.
+
+\mbox{\Hypertarget{structsf_1_1_render_target_1_1_states_cache_af2567b7c8f2fe811f28c78426b1a7be9}\label{structsf_1_1_render_target_1_1_states_cache_af2567b7c8f2fe811f28c78426b1a7be9}} 
+\index{sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}!lastBlendMode@{lastBlendMode}}
+\index{lastBlendMode@{lastBlendMode}!sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}}
+\doxysubsubsection{\texorpdfstring{lastBlendMode}{lastBlendMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsf_1_1_blend_mode}{Blend\+Mode}} sf\+::\+Render\+Target\+::\+States\+Cache\+::last\+Blend\+Mode}
+
+
+
+Cached blending mode. 
+
+
+
+Definition at line 464 of file Render\+Target.\+hpp.
+
+\mbox{\Hypertarget{structsf_1_1_render_target_1_1_states_cache_acdcd0a6ef1410c9cd63f9c4b9115f8d5}\label{structsf_1_1_render_target_1_1_states_cache_acdcd0a6ef1410c9cd63f9c4b9115f8d5}} 
+\index{sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}!lastTextureId@{lastTextureId}}
+\index{lastTextureId@{lastTextureId}!sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}}
+\doxysubsubsection{\texorpdfstring{lastTextureId}{lastTextureId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacesf_add9ac83466d96b9f50a009b9f4064266}{Uint64}} sf\+::\+Render\+Target\+::\+States\+Cache\+::last\+Texture\+Id}
+
+
+
+Cached texture. 
+
+
+
+Definition at line 465 of file Render\+Target.\+hpp.
+
+\mbox{\Hypertarget{structsf_1_1_render_target_1_1_states_cache_a7f83a1139be25ac92a118dfbb26154be}\label{structsf_1_1_render_target_1_1_states_cache_a7f83a1139be25ac92a118dfbb26154be}} 
+\index{sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}!texCoordsArrayEnabled@{texCoordsArrayEnabled}}
+\index{texCoordsArrayEnabled@{texCoordsArrayEnabled}!sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}}
+\doxysubsubsection{\texorpdfstring{texCoordsArrayEnabled}{texCoordsArrayEnabled}}
+{\footnotesize\ttfamily bool sf\+::\+Render\+Target\+::\+States\+Cache\+::tex\+Coords\+Array\+Enabled}
+
+
+
+Is G\+L\+\_\+\+T\+E\+X\+T\+U\+R\+E\+\_\+\+C\+O\+O\+R\+D\+\_\+\+A\+R\+R\+AY client state enabled? 
+
+
+
+Definition at line 466 of file Render\+Target.\+hpp.
+
+\mbox{\Hypertarget{structsf_1_1_render_target_1_1_states_cache_ab112b32284a6cadb5d2b2fd68b0a5f03}\label{structsf_1_1_render_target_1_1_states_cache_ab112b32284a6cadb5d2b2fd68b0a5f03}} 
+\index{sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}!useVertexCache@{useVertexCache}}
+\index{useVertexCache@{useVertexCache}!sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}}
+\doxysubsubsection{\texorpdfstring{useVertexCache}{useVertexCache}}
+{\footnotesize\ttfamily bool sf\+::\+Render\+Target\+::\+States\+Cache\+::use\+Vertex\+Cache}
+
+
+
+Did we previously use the vertex cache? 
+
+
+
+Definition at line 467 of file Render\+Target.\+hpp.
+
+\mbox{\Hypertarget{structsf_1_1_render_target_1_1_states_cache_a15af73593020c616d4cf0a4cfccd2ab4}\label{structsf_1_1_render_target_1_1_states_cache_a15af73593020c616d4cf0a4cfccd2ab4}} 
+\index{sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}!vertexCache@{vertexCache}}
+\index{vertexCache@{vertexCache}!sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}}
+\doxysubsubsection{\texorpdfstring{vertexCache}{vertexCache}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_vertex}{Vertex}} sf\+::\+Render\+Target\+::\+States\+Cache\+::vertex\+Cache\mbox{[}\mbox{\hyperlink{structsf_1_1_render_target_1_1_states_cache_a11f8bb99f22589badbd6e62633ecf1f2a35c065ef4023ad479d5313b58fe2a74f}{Vertex\+Cache\+Size}}\mbox{]}}
+
+
+
+Pre-\/transformed vertices cache. 
+
+
+
+Definition at line 468 of file Render\+Target.\+hpp.
+
+\mbox{\Hypertarget{structsf_1_1_render_target_1_1_states_cache_a187e43ee4890f6c276ab8376f92e8695}\label{structsf_1_1_render_target_1_1_states_cache_a187e43ee4890f6c276ab8376f92e8695}} 
+\index{sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}!viewChanged@{viewChanged}}
+\index{viewChanged@{viewChanged}!sf::RenderTarget::StatesCache@{sf::RenderTarget::StatesCache}}
+\doxysubsubsection{\texorpdfstring{viewChanged}{viewChanged}}
+{\footnotesize\ttfamily bool sf\+::\+Render\+Target\+::\+States\+Cache\+::view\+Changed}
+
+
+
+Has the current view changed since last draw? 
+
+
+
+Definition at line 463 of file Render\+Target.\+hpp.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/danielz/\+One\+Drive -\/ E\+F\+I\+F/\+Eksamensprojekt programmering B -\/ Daniel \& Korre/eksamensprojekt-\/daniel-\/korre/\+Eksamen/include/\+S\+F\+M\+L/\+Graphics/\mbox{\hyperlink{_render_target_8hpp}{Render\+Target.\+hpp}}\end{DoxyCompactItemize}

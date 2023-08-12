@@ -1,0 +1,6 @@
+<map id="sf::Lock" name="sf::Lock">
+<area shape="rect" id="node1" title="Automatic wrapper for locking and unlocking mutexes." alt="" coords="51,373,129,465"/>
+<area shape="rect" id="node2" href="$classsf_1_1_non_copyable.html" title="Utility class that makes any derived class non&#45;copyable." alt="" coords="5,5,132,127"/>
+<area shape="rect" id="node3" href="$classsf_1_1_mutex.html" title="Blocks concurrent access to shared resources from multiple threads." alt="" coords="107,189,193,311"/>
+<area shape="rect" id="node4" title=" " alt="" coords="157,27,247,105"/>
+</map>

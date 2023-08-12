@@ -1,0 +1,7 @@
+<map id="bullet::bullet" name="bullet::bullet">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,97,108"/>
+<area shape="rect" id="node2" href="$classmath_1_1vector.html#aade3e2a97abedb2d891fb894857bedb0" title=" " alt="" coords="160,5,305,32"/>
+<area shape="rect" id="node3" href="$classmath_1_1vector.html#a0597a265b4b66404229fae578b3cb055" title=" " alt="" coords="155,56,311,83"/>
+<area shape="rect" id="node4" href="$classsf_1_1_convex_shape.html#a5929e0ab0ba5ca1f102b40c234a8e92d" title="Set the position of a point." alt="" coords="145,107,320,133"/>
+<area shape="rect" id="node5" href="$classsf_1_1_convex_shape.html#a56e6e79ade6dd651cc1a0e39cb68deae" title="Set the number of points of the polygon." alt="" coords="145,158,320,199"/>
+</map>

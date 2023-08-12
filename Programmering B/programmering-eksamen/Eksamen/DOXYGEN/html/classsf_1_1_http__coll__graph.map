@@ -1,0 +1,13 @@
+<map id="sf::Http" name="sf::Http">
+<area shape="rect" id="node1" title="A HTTP client." alt="" coords="260,748,379,869"/>
+<area shape="rect" id="node2" href="$classsf_1_1_non_copyable.html" title="Utility class that makes any derived class non&#45;copyable." alt="" coords="5,5,132,127"/>
+<area shape="rect" id="node5" href="$classsf_1_1_socket.html" title="Base class for all the socket types." alt="" coords="85,204,196,384"/>
+<area shape="rect" id="node3" title=" " alt="" coords="111,535,218,612"/>
+<area shape="rect" id="node4" href="$classsf_1_1_tcp_socket.html" title="Specialized socket using the TCP protocol." alt="" coords="243,461,396,685"/>
+<area shape="rect" id="node6" title=" " alt="" coords="417,27,456,105"/>
+<area shape="rect" id="node8" href="$structsf_1_1_tcp_socket_1_1_pending_packet.html" title="Structure holding the data of a pending packet." alt="" coords="220,255,419,333"/>
+<area shape="rect" id="node11" href="$classsf_1_1_ip_address.html" title="Encapsulate an IPv4 network address." alt="" coords="443,189,587,399"/>
+<area shape="rect" id="node7" title=" " alt="" coords="257,27,304,105"/>
+<area shape="rect" id="node9" title="STL class." alt="" coords="667,535,747,612"/>
+<area shape="rect" id="node10" title="STL class." alt="" coords="704,248,831,340"/>
+</map>

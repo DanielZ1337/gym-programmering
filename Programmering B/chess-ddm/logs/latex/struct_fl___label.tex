@@ -1,0 +1,123 @@
+\hypertarget{struct_fl___label}{}\doxysection{Fl\+\_\+\+Label Struct Reference}
+\label{struct_fl___label}\index{Fl\_Label@{Fl\_Label}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Widget.\+H$>$}
+
+
+
+Collaboration diagram for Fl\+\_\+\+Label\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{struct_fl___label__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{struct_fl___label_a0a3c4875555bcdb2f83e495dddb26349}{draw}} (int, int, int, int, \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{struct_fl___label_a30b371b7193a9ff17191e330eacfe631}{measure}} (int \&\mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \&\mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{struct_fl___label_a7061f748221b91736fa7cc4dbdaa9adc}{value}}
+\item 
+\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{struct_fl___label_ac82178559994ffa5102c35bbb68f7e5b}{image}}
+\item 
+\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{struct_fl___label_a2bff314c295248d94c2918a2ca53006d}{deimage}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{struct_fl___label_ac9b449b770124edddd9adf10dff12da4}{font}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{struct_fl___label_a391e859f1c1bafa283b8b04981d1f173}{size}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{struct_fl___label_aad739e4362e531cd8cc6007ee17af06b}{color}}
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} \mbox{\hyperlink{struct_fl___label_a7c1c8fefd7dae7e87835c7dfd78c0691}{align\+\_\+}}
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{struct_fl___label_a26d6e87dbf601f7a38d4c0f391b48558}{type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This struct stores all information for a text or mixed graphics label.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000021}{Todo}}]There is an aspiration that the \mbox{\hyperlink{struct_fl___label}{Fl\+\_\+\+Label}} type will become a widget by itself. That way we will be avoiding a lot of code duplication by handling labels in a similar fashion to widgets containing text. We also provide an easy interface for very complex labels, containing html or vector graphics. However, this re-\/factoring is not in place in this release. \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_fl___label_a0a3c4875555bcdb2f83e495dddb26349}\label{struct_fl___label_a0a3c4875555bcdb2f83e495dddb26349}} 
+\index{Fl\_Label@{Fl\_Label}!draw@{draw}}
+\index{draw@{draw}!Fl\_Label@{Fl\_Label}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Label\+::draw (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}}}]{ }\end{DoxyParamCaption}) const}
+
+Draws the label aligned to the given box \mbox{\Hypertarget{struct_fl___label_a30b371b7193a9ff17191e330eacfe631}\label{struct_fl___label_a30b371b7193a9ff17191e330eacfe631}} 
+\index{Fl\_Label@{Fl\_Label}!measure@{measure}}
+\index{measure@{measure}!Fl\_Label@{Fl\_Label}}
+\doxysubsubsection{\texorpdfstring{measure()}{measure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Label\+::measure (\begin{DoxyParamCaption}\item[{int \&}]{w,  }\item[{int \&}]{h }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_fl___label_a7c1c8fefd7dae7e87835c7dfd78c0691}\label{struct_fl___label_a7c1c8fefd7dae7e87835c7dfd78c0691}} 
+\index{Fl\_Label@{Fl\_Label}!align\_@{align\_}}
+\index{align\_@{align\_}!Fl\_Label@{Fl\_Label}}
+\doxysubsubsection{\texorpdfstring{align\_}{align\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} Fl\+\_\+\+Label\+::align\+\_\+}
+
+alignment of label \mbox{\Hypertarget{struct_fl___label_aad739e4362e531cd8cc6007ee17af06b}\label{struct_fl___label_aad739e4362e531cd8cc6007ee17af06b}} 
+\index{Fl\_Label@{Fl\_Label}!color@{color}}
+\index{color@{color}!Fl\_Label@{Fl\_Label}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Label\+::color}
+
+text color \mbox{\Hypertarget{struct_fl___label_a2bff314c295248d94c2918a2ca53006d}\label{struct_fl___label_a2bff314c295248d94c2918a2ca53006d}} 
+\index{Fl\_Label@{Fl\_Label}!deimage@{deimage}}
+\index{deimage@{deimage}!Fl\_Label@{Fl\_Label}}
+\doxysubsubsection{\texorpdfstring{deimage}{deimage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Label\+::deimage}
+
+optional image for a deactivated label \mbox{\Hypertarget{struct_fl___label_ac9b449b770124edddd9adf10dff12da4}\label{struct_fl___label_ac9b449b770124edddd9adf10dff12da4}} 
+\index{Fl\_Label@{Fl\_Label}!font@{font}}
+\index{font@{font}!Fl\_Label@{Fl\_Label}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} Fl\+\_\+\+Label\+::font}
+
+label font used in text \mbox{\Hypertarget{struct_fl___label_ac82178559994ffa5102c35bbb68f7e5b}\label{struct_fl___label_ac82178559994ffa5102c35bbb68f7e5b}} 
+\index{Fl\_Label@{Fl\_Label}!image@{image}}
+\index{image@{image}!Fl\_Label@{Fl\_Label}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Label\+::image}
+
+optional image for an active label \mbox{\Hypertarget{struct_fl___label_a391e859f1c1bafa283b8b04981d1f173}\label{struct_fl___label_a391e859f1c1bafa283b8b04981d1f173}} 
+\index{Fl\_Label@{Fl\_Label}!size@{size}}
+\index{size@{size}!Fl\_Label@{Fl\_Label}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} Fl\+\_\+\+Label\+::size}
+
+size of label font \mbox{\Hypertarget{struct_fl___label_a26d6e87dbf601f7a38d4c0f391b48558}\label{struct_fl___label_a26d6e87dbf601f7a38d4c0f391b48558}} 
+\index{Fl\_Label@{Fl\_Label}!type@{type}}
+\index{type@{type}!Fl\_Label@{Fl\_Label}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} Fl\+\_\+\+Label\+::type}
+
+type of label. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad5774781d33328b82990ff9e25dfd61b}{Fl\+\_\+\+Labeltype}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{struct_fl___label_a7061f748221b91736fa7cc4dbdaa9adc}\label{struct_fl___label_a7061f748221b91736fa7cc4dbdaa9adc}} 
+\index{Fl\_Label@{Fl\_Label}!value@{value}}
+\index{value@{value}!Fl\_Label@{Fl\_Label}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Label\+::value}
+
+label text 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___widget_8_h}{Fl\+\_\+\+Widget.\+H}}\end{DoxyCompactItemize}

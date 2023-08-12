@@ -1,0 +1,371 @@
+\hypertarget{class_fl___image}{}\doxysection{Fl\+\_\+\+Image Class Reference}
+\label{class_fl___image}\index{Fl\_Image@{Fl\_Image}}
+
+
+Base class for image caching and drawing.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Image.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Image\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___image__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___image_a7cf92084aede6baa2bdb00caa8f5a010}{w}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___image_aef3567278e27544da6fb8b674d367b6c}{h}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___image_af71d5ba43e3b624d25c2a578cb7a45e7}{d}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___image_aeaae765ea06ad475f48aaab30f45db85}{ld}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___image_a151a0c7d2474ee6a2c9b96244f8e0e07}{count}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$ \mbox{\hyperlink{class_fl___image_a0a953ba4f904464fd49d6340368cc43c}{data}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___image_a622aa5a850cc10580eb79bd38b16dbe1}{fail}} ()
+\item 
+\mbox{\hyperlink{class_fl___image_ac01226c895b564a626e3af6dc869a4e3}{Fl\+\_\+\+Image}} (int W, int H, int D)
+\item 
+virtual \mbox{\hyperlink{class_fl___image_afef590ca13847628e1b263ee3ea6c6ec}{$\sim$\+Fl\+\_\+\+Image}} ()
+\item 
+virtual \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___image_a8c830df178375a758ce8a3fa2e15359d}{copy}} (int W, int H)
+\item 
+\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___image_acef2b3eff2aaa48ae174d246703446e0}{copy}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_a1042c579d034d57f07db9fae6f1fc2d7}{color\+\_\+average}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c, float \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_aeaf2391ad1c94e246877188851861f5e}{inactive}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_a1ab3c0381a8d03553ded4edf4e436da4}{desaturate}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_aff8c4d2f915bbf1fcbcfd5ed27320c79}{label}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$\mbox{\hyperlink{class_fl___image_ac99df85a5ccd161b2b39042231aa2985}{w}})
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_a9732d7bafcbe201a570ee465833eee67}{label}} (\mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} $\ast$\mbox{\hyperlink{forms_8_h_a2ccd5640c2b2869841c5dab22b937079}{m}})
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_a95e713f20628bfb4c8155ab94ba65ba1}{draw}} (int X, int Y, int W, int H, int cx=0, int cy=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_a1fc6e1aadc77a215a8bc5051d7f9a95b}{draw}} (int X, int Y)
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_ab439ce86ab05a416defe4e31d4ea79c9}{uncache}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_a370856c8f01988e32ff8798052eb7464}{R\+G\+B\+\_\+scaling}} (\mbox{\hyperlink{_fl___image_8_h_a79b21b0aede6293a7521b40ff6196368}{Fl\+\_\+\+R\+G\+B\+\_\+\+Scaling}})
+\item 
+static \mbox{\hyperlink{_fl___image_8_h_a79b21b0aede6293a7521b40ff6196368}{Fl\+\_\+\+R\+G\+B\+\_\+\+Scaling}} \mbox{\hyperlink{class_fl___image_a49a3d4c6f14002c6be29ce4a75d4cae9}{R\+G\+B\+\_\+scaling}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} int \mbox{\hyperlink{class_fl___image_aae849b09f286e85b49bfcd9d5e6dde33}{E\+R\+R\+\_\+\+N\+O\+\_\+\+I\+M\+A\+GE}} = -\/1
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} int \mbox{\hyperlink{class_fl___image_aaa4adb4ff6024ccf78c26c7a49673dce}{E\+R\+R\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+SS}} = -\/2
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} int \mbox{\hyperlink{class_fl___image_ae7b046e13827599fd781c35108dd2540}{E\+R\+R\+\_\+\+F\+O\+R\+M\+AT}} = -\/3
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_ac99df85a5ccd161b2b39042231aa2985}{w}} (int W)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_a64dbb6fe30e3080a24f718231b371a17}{h}} (int H)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_a18590218a8cec61d9f5de1abd125d0e9}{d}} (int D)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_aa4bc0fa11331f6c25f9f191f4d0c371c}{ld}} (int LD)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_a2a4f85cda73a6105eca51d914b650e46}{data}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$p, int c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_af875ebd4fa579a37157d5fa528bed59a}{draw\+\_\+empty}} (int X, int Y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_ae7a70ca799c8bdcb1433c9c2d02c3b58}{labeltype}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___label}{Fl\+\_\+\+Label}} $\ast$lo, int lx, int ly, int lw, int lh, \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} la)
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___image_a41df16babe6979dbdc089f62ac87a346}{measure}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___label}{Fl\+\_\+\+Label}} $\ast$lo, int \&lw, int \&lh)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for image caching and drawing. 
+
+\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} is the base class used for caching and drawing all kinds of images in F\+L\+TK. This class keeps track of common image data such as the pixels, colormap, width, height, and depth. Virtual methods are used to provide type-\/specific image handling.
+
+Since the \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} class does not support image drawing by itself, calling the \mbox{\hyperlink{class_fl___image_a95e713f20628bfb4c8155ab94ba65ba1}{draw()}} method results in a box with an X in it being drawn instead. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___image_ac01226c895b564a626e3af6dc869a4e3}\label{class_fl___image_ac01226c895b564a626e3af6dc869a4e3}} 
+\index{Fl\_Image@{Fl\_Image}!Fl\_Image@{Fl\_Image}}
+\index{Fl\_Image@{Fl\_Image}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{Fl\_Image()}{Fl\_Image()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Image\+::\+Fl\+\_\+\+Image (\begin{DoxyParamCaption}\item[{int}]{W,  }\item[{int}]{H,  }\item[{int}]{D }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___image_afef590ca13847628e1b263ee3ea6c6ec}\label{class_fl___image_afef590ca13847628e1b263ee3ea6c6ec}} 
+\index{Fl\_Image@{Fl\_Image}!````~Fl\_Image@{$\sim$Fl\_Image}}
+\index{````~Fl\_Image@{$\sim$Fl\_Image}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Image()}{~Fl\_Image()}}
+{\footnotesize\ttfamily virtual Fl\+\_\+\+Image\+::$\sim$\+Fl\+\_\+\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___image_a1042c579d034d57f07db9fae6f1fc2d7}\label{class_fl___image_a1042c579d034d57f07db9fae6f1fc2d7}} 
+\index{Fl\_Image@{Fl\_Image}!color\_average@{color\_average}}
+\index{color\_average@{color\_average}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{color\_average()}{color\_average()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::color\+\_\+average (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c,  }\item[{float}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___r_g_b___image_ad9a980e811668d1864923435bcba53cd}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___shared___image_ac6a7539e2caf91f00b1bf728c9c1b7bc}{Fl\+\_\+\+Shared\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___pixmap_ace23d91c4688d32a328cbd78024549cc}{Fl\+\_\+\+Pixmap}}, and \mbox{\hyperlink{class_fl___tiled___image_a563becbd904af7e4ce33bd591704b2d9}{Fl\+\_\+\+Tiled\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___image_acef2b3eff2aaa48ae174d246703446e0}\label{class_fl___image_acef2b3eff2aaa48ae174d246703446e0}} 
+\index{Fl\_Image@{Fl\_Image}!copy@{copy}}
+\index{copy@{copy}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Image\+::copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The \mbox{\hyperlink{class_fl___image_acef2b3eff2aaa48ae174d246703446e0}{copy()}} method creates a copy of the specified image. If the width and height are provided, the image is resized to the specified size. The image should be deleted (or in the case of \mbox{\hyperlink{class_fl___shared___image}{Fl\+\_\+\+Shared\+\_\+\+Image}}, released) when you are done with it. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_fl___image_acef2b3eff2aaa48ae174d246703446e0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___image_a8c830df178375a758ce8a3fa2e15359d}\label{class_fl___image_a8c830df178375a758ce8a3fa2e15359d}} 
+\index{Fl\_Image@{Fl\_Image}!copy@{copy}}
+\index{copy@{copy}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Image\+::copy (\begin{DoxyParamCaption}\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___r_g_b___image_adedad8be106bc239a8cf21a91c1443a0}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___shared___image_a4a06b035220edababffdd07fd6ae229e}{Fl\+\_\+\+Shared\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___pixmap_ac33f816abac875608c70f1e09689d360}{Fl\+\_\+\+Pixmap}}, \mbox{\hyperlink{class_fl___bitmap_af8d08b1153115fc223215251878c8005}{Fl\+\_\+\+Bitmap}}, and \mbox{\hyperlink{class_fl___tiled___image_acc12cbb2e2caa79a550bf329049dd6fd}{Fl\+\_\+\+Tiled\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___image_a151a0c7d2474ee6a2c9b96244f8e0e07}\label{class_fl___image_a151a0c7d2474ee6a2c9b96244f8e0e07}} 
+\index{Fl\_Image@{Fl\_Image}!count@{count}}
+\index{count@{count}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Image\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The \mbox{\hyperlink{class_fl___image_a151a0c7d2474ee6a2c9b96244f8e0e07}{count()}} method returns the number of data values associated with the image. The value will be 0 for images with no associated data, 1 for bitmap and color images, and greater than 2 for pixmap images. \mbox{\Hypertarget{class_fl___image_af71d5ba43e3b624d25c2a578cb7a45e7}\label{class_fl___image_af71d5ba43e3b624d25c2a578cb7a45e7}} 
+\index{Fl\_Image@{Fl\_Image}!d@{d}}
+\index{d@{d}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{d()}{d()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Image\+::d (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current image depth. The return value will be 0 for bitmaps, 1 for pixmaps, and 1 to 4 for color images.\mbox{\Hypertarget{class_fl___image_a18590218a8cec61d9f5de1abd125d0e9}\label{class_fl___image_a18590218a8cec61d9f5de1abd125d0e9}} 
+\index{Fl\_Image@{Fl\_Image}!d@{d}}
+\index{d@{d}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{d()}{d()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::d (\begin{DoxyParamCaption}\item[{int}]{D }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets the current image depth. \mbox{\Hypertarget{class_fl___image_a0a953ba4f904464fd49d6340368cc43c}\label{class_fl___image_a0a953ba4f904464fd49d6340368cc43c}} 
+\index{Fl\_Image@{Fl\_Image}!data@{data}}
+\index{data@{data}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$ Fl\+\_\+\+Image\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a pointer to the current image data array. Use the \mbox{\hyperlink{class_fl___image_a151a0c7d2474ee6a2c9b96244f8e0e07}{count()}} method to find the size of the data array. \mbox{\Hypertarget{class_fl___image_a2a4f85cda73a6105eca51d914b650e46}\label{class_fl___image_a2a4f85cda73a6105eca51d914b650e46}} 
+\index{Fl\_Image@{Fl\_Image}!data@{data}}
+\index{data@{data}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$}]{p,  }\item[{int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets the current array pointer and count of pointers in the array. \mbox{\Hypertarget{class_fl___image_a1ab3c0381a8d03553ded4edf4e436da4}\label{class_fl___image_a1ab3c0381a8d03553ded4edf4e436da4}} 
+\index{Fl\_Image@{Fl\_Image}!desaturate@{desaturate}}
+\index{desaturate@{desaturate}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{desaturate()}{desaturate()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::desaturate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___r_g_b___image_ad9540d11eec83e7c09b374c34f280502}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___shared___image_aa3f0190a62e732211734e48c725ba583}{Fl\+\_\+\+Shared\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___pixmap_a1df9567ce06b1f5fbfa9bf30bae9846f}{Fl\+\_\+\+Pixmap}}, and \mbox{\hyperlink{class_fl___tiled___image_aaaccf2554a2dcaee2f32945a6183621c}{Fl\+\_\+\+Tiled\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___image_a1fc6e1aadc77a215a8bc5051d7f9a95b}\label{class_fl___image_a1fc6e1aadc77a215a8bc5051d7f9a95b}} 
+\index{Fl\_Image@{Fl\_Image}!draw@{draw}}
+\index{draw@{draw}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::draw (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Draws the image. This form specifies the upper-\/lefthand corner of the image. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_fl___image_a1fc6e1aadc77a215a8bc5051d7f9a95b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___image_a95e713f20628bfb4c8155ab94ba65ba1}\label{class_fl___image_a95e713f20628bfb4c8155ab94ba65ba1}} 
+\index{Fl\_Image@{Fl\_Image}!draw@{draw}}
+\index{draw@{draw}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::draw (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{int}]{cx = {\ttfamily 0},  }\item[{int}]{cy = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the image with a bounding box. Arguments {\ttfamily X,Y,W,H} specify a bounding box for the image, with the origin ~\newline
+ (upper-\/left corner) of the image offset by the {\ttfamily cx} and {\ttfamily cy} arguments.
+
+In other words\+: {\ttfamily fl\+\_\+push\+\_\+clip(\+X,\+Y,\+W,\+H)} is applied, the image is drawn with its upper-\/left corner at {\ttfamily X-\/cx,Y-\/cy} and its own width and height, {\ttfamily fl\+\_\+pop\+\_\+clip}{\ttfamily ()} is applied. 
+
+Reimplemented in \mbox{\hyperlink{class_fl___r_g_b___image_aa40d006a6442c875701bbd0fd3be3fc3}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___pixmap_a67428bd068ae7af1043b17f426076787}{Fl\+\_\+\+Pixmap}}, \mbox{\hyperlink{class_fl___bitmap_abd03a34e84704ae410bd366626c0a6ef}{Fl\+\_\+\+Bitmap}}, \mbox{\hyperlink{class_fl___shared___image_aa76e482ab511cb7bc559dba248373d3e}{Fl\+\_\+\+Shared\+\_\+\+Image}}, and \mbox{\hyperlink{class_fl___tiled___image_a331efee51791079843b7da027732c643}{Fl\+\_\+\+Tiled\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___image_af875ebd4fa579a37157d5fa528bed59a}\label{class_fl___image_af875ebd4fa579a37157d5fa528bed59a}} 
+\index{Fl\_Image@{Fl\_Image}!draw\_empty@{draw\_empty}}
+\index{draw\_empty@{draw\_empty}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{draw\_empty()}{draw\_empty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::draw\+\_\+empty (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___image_a622aa5a850cc10580eb79bd38b16dbe1}\label{class_fl___image_a622aa5a850cc10580eb79bd38b16dbe1}} 
+\index{Fl\_Image@{Fl\_Image}!fail@{fail}}
+\index{fail@{fail}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Image\+::fail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___image_aef3567278e27544da6fb8b674d367b6c}\label{class_fl___image_aef3567278e27544da6fb8b674d367b6c}} 
+\index{Fl\_Image@{Fl\_Image}!h@{h}}
+\index{h@{h}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{h()}{h()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Image\+::h (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current image height in pixels. \mbox{\Hypertarget{class_fl___image_a64dbb6fe30e3080a24f718231b371a17}\label{class_fl___image_a64dbb6fe30e3080a24f718231b371a17}} 
+\index{Fl\_Image@{Fl\_Image}!h@{h}}
+\index{h@{h}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{h()}{h()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::h (\begin{DoxyParamCaption}\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets the current image height in pixels. \mbox{\Hypertarget{class_fl___image_aeaf2391ad1c94e246877188851861f5e}\label{class_fl___image_aeaf2391ad1c94e246877188851861f5e}} 
+\index{Fl\_Image@{Fl\_Image}!inactive@{inactive}}
+\index{inactive@{inactive}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{inactive()}{inactive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::inactive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The \mbox{\hyperlink{class_fl___image_aeaf2391ad1c94e246877188851861f5e}{inactive()}} method calls color\+\_\+average(F\+L\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR, 0.\+33f) to produce an image that appears grayed out.
+
+An internal copy is made of the original image before changes are applied, to avoid modifying the original image. \mbox{\Hypertarget{class_fl___image_a9732d7bafcbe201a570ee465833eee67}\label{class_fl___image_a9732d7bafcbe201a570ee465833eee67}} 
+\index{Fl\_Image@{Fl\_Image}!label@{label}}
+\index{label@{label}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___r_g_b___image_a768b28caa83cb054934397e2c2122a62}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___pixmap_a7b0fc12ba7bc680fcd70d10d22eb9a92}{Fl\+\_\+\+Pixmap}}, and \mbox{\hyperlink{class_fl___bitmap_a8d35f1528e46fc3447618d5534e7e428}{Fl\+\_\+\+Bitmap}}.
+
+\mbox{\Hypertarget{class_fl___image_aff8c4d2f915bbf1fcbcfd5ed27320c79}\label{class_fl___image_aff8c4d2f915bbf1fcbcfd5ed27320c79}} 
+\index{Fl\_Image@{Fl\_Image}!label@{label}}
+\index{label@{label}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___r_g_b___image_ae17b8998b29d865f0ba5a98ca30b183c}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___pixmap_ae192c4c04bb256ebe4e79ba8a6d3ed55}{Fl\+\_\+\+Pixmap}}, and \mbox{\hyperlink{class_fl___bitmap_af17e00fe7cc3909a0ad8910dc71aee5f}{Fl\+\_\+\+Bitmap}}.
+
+\mbox{\Hypertarget{class_fl___image_ae7a70ca799c8bdcb1433c9c2d02c3b58}\label{class_fl___image_ae7a70ca799c8bdcb1433c9c2d02c3b58}} 
+\index{Fl\_Image@{Fl\_Image}!labeltype@{labeltype}}
+\index{labeltype@{labeltype}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{labeltype()}{labeltype()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::labeltype (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___label}{Fl\+\_\+\+Label}} $\ast$}]{lo,  }\item[{int}]{lx,  }\item[{int}]{ly,  }\item[{int}]{lw,  }\item[{int}]{lh,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}}}]{la }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___image_aeaae765ea06ad475f48aaab30f45db85}\label{class_fl___image_aeaae765ea06ad475f48aaab30f45db85}} 
+\index{Fl\_Image@{Fl\_Image}!ld@{ld}}
+\index{ld@{ld}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{ld()}{ld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Image\+::ld (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current line data size in bytes. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___image_aa4bc0fa11331f6c25f9f191f4d0c371c}{ld(int)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___image_aa4bc0fa11331f6c25f9f191f4d0c371c}\label{class_fl___image_aa4bc0fa11331f6c25f9f191f4d0c371c}} 
+\index{Fl\_Image@{Fl\_Image}!ld@{ld}}
+\index{ld@{ld}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{ld()}{ld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::ld (\begin{DoxyParamCaption}\item[{int}]{LD }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets the current line data size in bytes.
+
+Color images may contain extra data that is included after every line of color image data and is normally not present.
+
+If {\ttfamily LD} is zero, then line data size is assumed to be \mbox{\hyperlink{class_fl___image_ac99df85a5ccd161b2b39042231aa2985}{w()}} $\ast$ \mbox{\hyperlink{class_fl___image_a18590218a8cec61d9f5de1abd125d0e9}{d()}} bytes.
+
+If {\ttfamily LD} is non-\/zero, then it must be positive and larger than \mbox{\hyperlink{class_fl___image_ac99df85a5ccd161b2b39042231aa2985}{w()}} $\ast$ \mbox{\hyperlink{class_fl___image_a18590218a8cec61d9f5de1abd125d0e9}{d()}} to account for the extra data per line. \mbox{\Hypertarget{class_fl___image_a41df16babe6979dbdc089f62ac87a346}\label{class_fl___image_a41df16babe6979dbdc089f62ac87a346}} 
+\index{Fl\_Image@{Fl\_Image}!measure@{measure}}
+\index{measure@{measure}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{measure()}{measure()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::measure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{struct_fl___label}{Fl\+\_\+\+Label}} $\ast$}]{lo,  }\item[{int \&}]{lw,  }\item[{int \&}]{lh }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___image_a49a3d4c6f14002c6be29ce4a75d4cae9}\label{class_fl___image_a49a3d4c6f14002c6be29ce4a75d4cae9}} 
+\index{Fl\_Image@{Fl\_Image}!RGB\_scaling@{RGB\_scaling}}
+\index{RGB\_scaling@{RGB\_scaling}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{RGB\_scaling()}{RGB\_scaling()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_fl___image_8_h_a79b21b0aede6293a7521b40ff6196368}{Fl\+\_\+\+R\+G\+B\+\_\+\+Scaling}} Fl\+\_\+\+Image\+::\+R\+G\+B\+\_\+scaling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___image_a370856c8f01988e32ff8798052eb7464}\label{class_fl___image_a370856c8f01988e32ff8798052eb7464}} 
+\index{Fl\_Image@{Fl\_Image}!RGB\_scaling@{RGB\_scaling}}
+\index{RGB\_scaling@{RGB\_scaling}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{RGB\_scaling()}{RGB\_scaling()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::\+R\+G\+B\+\_\+scaling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___image_8_h_a79b21b0aede6293a7521b40ff6196368}{Fl\+\_\+\+R\+G\+B\+\_\+\+Scaling}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___image_ab439ce86ab05a416defe4e31d4ea79c9}\label{class_fl___image_ab439ce86ab05a416defe4e31d4ea79c9}} 
+\index{Fl\_Image@{Fl\_Image}!uncache@{uncache}}
+\index{uncache@{uncache}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{uncache()}{uncache()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::uncache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___r_g_b___image_a35306c493ff6cf91fca195d35d9de769}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___shared___image_a4d2cbe77925d05b473afd251b0127994}{Fl\+\_\+\+Shared\+\_\+\+Image}}, \mbox{\hyperlink{class_fl___pixmap_aaf05c49045b69f73df78161ffc9d1322}{Fl\+\_\+\+Pixmap}}, and \mbox{\hyperlink{class_fl___bitmap_afd50086093bdbf6c0de1c20ec1ecd4b5}{Fl\+\_\+\+Bitmap}}.
+
+\mbox{\Hypertarget{class_fl___image_a7cf92084aede6baa2bdb00caa8f5a010}\label{class_fl___image_a7cf92084aede6baa2bdb00caa8f5a010}} 
+\index{Fl\_Image@{Fl\_Image}!w@{w}}
+\index{w@{w}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{w()}{w()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Image\+::w (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the current image width in pixels. \mbox{\Hypertarget{class_fl___image_ac99df85a5ccd161b2b39042231aa2985}\label{class_fl___image_ac99df85a5ccd161b2b39042231aa2985}} 
+\index{Fl\_Image@{Fl\_Image}!w@{w}}
+\index{w@{w}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{w()}{w()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Image\+::w (\begin{DoxyParamCaption}\item[{int}]{W }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets the current image width in pixels. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___image_aaa4adb4ff6024ccf78c26c7a49673dce}\label{class_fl___image_aaa4adb4ff6024ccf78c26c7a49673dce}} 
+\index{Fl\_Image@{Fl\_Image}!ERR\_FILE\_ACCESS@{ERR\_FILE\_ACCESS}}
+\index{ERR\_FILE\_ACCESS@{ERR\_FILE\_ACCESS}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{ERR\_FILE\_ACCESS}{ERR\_FILE\_ACCESS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} int Fl\+\_\+\+Image\+::\+E\+R\+R\+\_\+\+F\+I\+L\+E\+\_\+\+A\+C\+C\+E\+SS = -\/2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___image_ae7b046e13827599fd781c35108dd2540}\label{class_fl___image_ae7b046e13827599fd781c35108dd2540}} 
+\index{Fl\_Image@{Fl\_Image}!ERR\_FORMAT@{ERR\_FORMAT}}
+\index{ERR\_FORMAT@{ERR\_FORMAT}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{ERR\_FORMAT}{ERR\_FORMAT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} int Fl\+\_\+\+Image\+::\+E\+R\+R\+\_\+\+F\+O\+R\+M\+AT = -\/3\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___image_aae849b09f286e85b49bfcd9d5e6dde33}\label{class_fl___image_aae849b09f286e85b49bfcd9d5e6dde33}} 
+\index{Fl\_Image@{Fl\_Image}!ERR\_NO\_IMAGE@{ERR\_NO\_IMAGE}}
+\index{ERR\_NO\_IMAGE@{ERR\_NO\_IMAGE}!Fl\_Image@{Fl\_Image}}
+\doxysubsubsection{\texorpdfstring{ERR\_NO\_IMAGE}{ERR\_NO\_IMAGE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} int Fl\+\_\+\+Image\+::\+E\+R\+R\+\_\+\+N\+O\+\_\+\+I\+M\+A\+GE = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___image_8_h}{Fl\+\_\+\+Image.\+H}}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+<map id="Fl_Image" name="Fl_Image">
+<area shape="rect" id="node1" title="Base class for image caching and drawing." alt="" coords="5,183,80,209"/>
+<area shape="rect" id="node2" href="$class_fl___bitmap.html" title=" " alt="" coords="149,31,230,57"/>
+<area shape="rect" id="node4" href="$class_fl___pixmap.html" title=" " alt="" coords="147,107,231,133"/>
+<area shape="rect" id="node7" href="$class_fl___r_g_b___image.html" title=" " alt="" coords="134,183,245,209"/>
+<area shape="rect" id="node12" href="$class_fl___shared___image.html" title=" " alt="" coords="128,233,251,260"/>
+<area shape="rect" id="node13" href="$class_fl___tiled___image.html" title=" " alt="" coords="135,284,244,311"/>
+<area shape="rect" id="node3" href="$class_fl___x_b_m___image.html" title=" " alt="" coords="302,5,411,32"/>
+<area shape="rect" id="node5" href="$class_fl___g_i_f___image.html" title=" " alt="" coords="305,56,408,83"/>
+<area shape="rect" id="node6" href="$class_fl___x_p_m___image.html" title=" " alt="" coords="302,107,411,133"/>
+<area shape="rect" id="node8" href="$class_fl___b_m_p___image.html" title=" " alt="" coords="301,157,412,184"/>
+<area shape="rect" id="node9" href="$class_fl___j_p_e_g___image.html" title=" " alt="" coords="299,208,415,235"/>
+<area shape="rect" id="node10" href="$class_fl___p_n_g___image.html" title=" " alt="" coords="301,259,412,285"/>
+<area shape="rect" id="node11" href="$class_fl___p_n_m___image.html" title=" " alt="" coords="301,309,412,336"/>
+</map>

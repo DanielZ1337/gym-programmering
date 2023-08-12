@@ -1,0 +1,163 @@
+\hypertarget{class_fl___surface___device}{}\doxysection{Fl\+\_\+\+Surface\+\_\+\+Device Class Reference}
+\label{class_fl___surface___device}\index{Fl\_Surface\_Device@{Fl\_Surface\_Device}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Device.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Surface\+\_\+\+Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___surface___device__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Surface\+\_\+\+Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_fl___surface___device__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___surface___device_a1162e0cf051b2c95dd88091ef3b833df}{class\+\_\+name}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}{set\+\_\+current}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___surface___device_a3993b12f96391f224a0d52a1fd15cfee}{driver}} (\mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}} $\ast$graphics\+\_\+driver)
+\begin{DoxyCompactList}\small\item\em Sets the graphics driver of this drawing surface. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}} $\ast$ \mbox{\hyperlink{class_fl___surface___device_ad65054e24f1b8a2a36a685495ea7776c}{driver}} ()
+\begin{DoxyCompactList}\small\item\em Returns the graphics driver of this drawing surface. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_fl___surface___device_a7ccd4356e0026af4f6cbfda08827a116}{$\sim$\+Fl\+\_\+\+Surface\+\_\+\+Device}} ()
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_fl___surface___device}{Fl\+\_\+\+Surface\+\_\+\+Device}} $\ast$ \mbox{\hyperlink{class_fl___surface___device_a6a2643e352fdcb9e78faa167d1cd0a14}{surface}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___surface___device_ad3ae0e63369bac876e7b7d926af87ea9}{class\+\_\+id}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___surface___device_ad9ee333db23389529698ef07efb6a2fe}{Fl\+\_\+\+Surface\+\_\+\+Device}} (\mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}} $\ast$graphics\+\_\+driver)
+\begin{DoxyCompactList}\small\item\em Constructor that sets the graphics driver to use for the created surface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A drawing surface that\textquotesingle{}s susceptible to receive graphical output. Any F\+L\+TK application has at any time a current drawing surface to which all drawing requests are directed. The current surface is given by \mbox{\hyperlink{class_fl___surface___device_a6a2643e352fdcb9e78faa167d1cd0a14}{Fl\+\_\+\+Surface\+\_\+\+Device\+::surface()}}. When \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}} begins running, the current drawing surface has been set to the computer\textquotesingle{}s display, an instance of the \mbox{\hyperlink{class_fl___display___device}{Fl\+\_\+\+Display\+\_\+\+Device}} class.
+
+A drawing surface other than the computer\textquotesingle{}s display, is typically used as follows\+: 
+\begin{DoxyEnumerate}
+\item Create {\ttfamily surface}, an object from a particular \mbox{\hyperlink{class_fl___surface___device}{Fl\+\_\+\+Surface\+\_\+\+Device}} derived class (e.\+g., \mbox{\hyperlink{class_fl___copy___surface}{Fl\+\_\+\+Copy\+\_\+\+Surface}}, \mbox{\hyperlink{class_fl___printer}{Fl\+\_\+\+Printer}}). 
+\item Memorize what is the current drawing surface with {\ttfamily  \mbox{\hyperlink{class_fl___surface___device}{Fl\+\_\+\+Surface\+\_\+\+Device}} $\ast$old\+\_\+current = \mbox{\hyperlink{class_fl___surface___device_a6a2643e352fdcb9e78faa167d1cd0a14}{Fl\+\_\+\+Surface\+\_\+\+Device\+::surface()}};} 
+\item Call {\ttfamily surface-\/$>$\mbox{\hyperlink{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}{set\+\_\+current()}}}; to redirect all graphics requests to {\ttfamily surface} which becomes the new current drawing surface (not necessary with class \mbox{\hyperlink{class_fl___printer}{Fl\+\_\+\+Printer}} because it is done by \mbox{\hyperlink{class_fl___printer_a8f3603112736f55dd08ef7ad4aaed551}{Fl\+\_\+\+Printer\+::start\+\_\+job()}}). 
+\item At this point any of the \mbox{\hyperlink{group__fl__drawings}{Drawing functions}} (e.\+g., \mbox{\hyperlink{group__fl__drawings_ga690c83e11f49fa837b563f4c0bc4fd1b}{fl\+\_\+rect()}}) or the \mbox{\hyperlink{group__fl__attributes}{Color \& Font functions}} or drawing\+\_\+images functions (e.\+g., \mbox{\hyperlink{group__fl__drawings_gaf9ad52880174bae01461adfa5b4020ff}{fl\+\_\+draw\+\_\+image()}}, \mbox{\hyperlink{class_fl___image_a95e713f20628bfb4c8155ab94ba65ba1}{Fl\+\_\+\+Image\+::draw()}}) operates on the new current drawing surface. Certain drawing surfaces allow additional ways to draw to them (e.\+g., \mbox{\hyperlink{class_fl___printer_a0b6a37315107179fec2eab69008f5150}{Fl\+\_\+\+Printer\+::print\+\_\+widget()}}, \mbox{\hyperlink{class_fl___image___surface_a0c4a97f89c9b0fc091d8d2c0be7da0ce}{Fl\+\_\+\+Image\+\_\+\+Surface\+::draw()}}). 
+\item After all drawing requests have been performed, redirect graphics requests back to their previous destination with {\ttfamily old\+\_\+current-\/$>$\mbox{\hyperlink{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}{set\+\_\+current()}}};. 
+\item Delete {\ttfamily surface}. 
+\end{DoxyEnumerate}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___surface___device_ad9ee333db23389529698ef07efb6a2fe}\label{class_fl___surface___device_ad9ee333db23389529698ef07efb6a2fe}} 
+\index{Fl\_Surface\_Device@{Fl\_Surface\_Device}!Fl\_Surface\_Device@{Fl\_Surface\_Device}}
+\index{Fl\_Surface\_Device@{Fl\_Surface\_Device}!Fl\_Surface\_Device@{Fl\_Surface\_Device}}
+\doxysubsubsection{\texorpdfstring{Fl\_Surface\_Device()}{Fl\_Surface\_Device()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Surface\+\_\+\+Device\+::\+Fl\+\_\+\+Surface\+\_\+\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}} $\ast$}]{graphics\+\_\+driver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Constructor that sets the graphics driver to use for the created surface. 
+
+\mbox{\Hypertarget{class_fl___surface___device_a7ccd4356e0026af4f6cbfda08827a116}\label{class_fl___surface___device_a7ccd4356e0026af4f6cbfda08827a116}} 
+\index{Fl\_Surface\_Device@{Fl\_Surface\_Device}!````~Fl\_Surface\_Device@{$\sim$Fl\_Surface\_Device}}
+\index{````~Fl\_Surface\_Device@{$\sim$Fl\_Surface\_Device}!Fl\_Surface\_Device@{Fl\_Surface\_Device}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Surface\_Device()}{~Fl\_Surface\_Device()}}
+{\footnotesize\ttfamily virtual Fl\+\_\+\+Surface\+\_\+\+Device\+::$\sim$\+Fl\+\_\+\+Surface\+\_\+\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+The destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___surface___device_a1162e0cf051b2c95dd88091ef3b833df}\label{class_fl___surface___device_a1162e0cf051b2c95dd88091ef3b833df}} 
+\index{Fl\_Surface\_Device@{Fl\_Surface\_Device}!class\_name@{class\_name}}
+\index{class\_name@{class\_name}!Fl\_Surface\_Device@{Fl\_Surface\_Device}}
+\doxysubsubsection{\texorpdfstring{class\_name()}{class\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Surface\+\_\+\+Device\+::class\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the class of this object. Use of the \mbox{\hyperlink{class_fl___surface___device_a1162e0cf051b2c95dd88091ef3b833df}{class\+\_\+name()}} function is discouraged because it will be removed from future F\+L\+TK versions.
+
+The class of an instance of an \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}} subclass can be checked with code such as\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( instance-\/>class\_name() == \mbox{\hyperlink{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}{Fl\_Printer::class\_id}} ) \{ ... \}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___device_af9ffc95e2a6b873027ff796c1e76bc82}{Fl\+\_\+\+Device}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___display___device_a1e1955edf0171ced7e9fe4028d82237b}{Fl\+\_\+\+Display\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___post_script___file___device_ad2d843215cf1bc1aa929b5c7226f67f6}{Fl\+\_\+\+Post\+Script\+\_\+\+File\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___printer_a8c51e8af2802d245d5a9d1cfa34413ae}{Fl\+\_\+\+Printer}}, \mbox{\hyperlink{class_fl___paged___device_abf25bf6a1dbe7e4dc6de7ce7c5564425}{Fl\+\_\+\+Paged\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___post_script___printer_a1f1fbe50c4fd6350aec1cddd42f0bedd}{Fl\+\_\+\+Post\+Script\+\_\+\+Printer}}, and \mbox{\hyperlink{class_fl___image___surface_a24b6b8bf7a0fea1fad2924a048f96ab9}{Fl\+\_\+\+Image\+\_\+\+Surface}}.
+
+\mbox{\Hypertarget{class_fl___surface___device_ad65054e24f1b8a2a36a685495ea7776c}\label{class_fl___surface___device_ad65054e24f1b8a2a36a685495ea7776c}} 
+\index{Fl\_Surface\_Device@{Fl\_Surface\_Device}!driver@{driver}}
+\index{driver@{driver}!Fl\_Surface\_Device@{Fl\_Surface\_Device}}
+\doxysubsubsection{\texorpdfstring{driver()}{driver()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}$\ast$ Fl\+\_\+\+Surface\+\_\+\+Device\+::driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the graphics driver of this drawing surface. 
+
+\mbox{\Hypertarget{class_fl___surface___device_a3993b12f96391f224a0d52a1fd15cfee}\label{class_fl___surface___device_a3993b12f96391f224a0d52a1fd15cfee}} 
+\index{Fl\_Surface\_Device@{Fl\_Surface\_Device}!driver@{driver}}
+\index{driver@{driver}!Fl\_Surface\_Device@{Fl\_Surface\_Device}}
+\doxysubsubsection{\texorpdfstring{driver()}{driver()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Surface\+\_\+\+Device\+::driver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}} $\ast$}]{graphics\+\_\+driver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the graphics driver of this drawing surface. 
+
+\mbox{\Hypertarget{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}\label{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}} 
+\index{Fl\_Surface\_Device@{Fl\_Surface\_Device}!set\_current@{set\_current}}
+\index{set\_current@{set\_current}!Fl\_Surface\_Device@{Fl\_Surface\_Device}}
+\doxysubsubsection{\texorpdfstring{set\_current()}{set\_current()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Surface\+\_\+\+Device\+::set\+\_\+current (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___printer_af29bb9b0f186dae10d35e7a22a463ea4}{Fl\+\_\+\+Printer}}, \mbox{\hyperlink{class_fl___copy___surface_a303a6d9cd0f8df6d7e24589e6c88e54c}{Fl\+\_\+\+Copy\+\_\+\+Surface}}, and \mbox{\hyperlink{class_fl___image___surface_a4b8a38a196aa91bfded34751792b237b}{Fl\+\_\+\+Image\+\_\+\+Surface}}.
+
+\mbox{\Hypertarget{class_fl___surface___device_a6a2643e352fdcb9e78faa167d1cd0a14}\label{class_fl___surface___device_a6a2643e352fdcb9e78faa167d1cd0a14}} 
+\index{Fl\_Surface\_Device@{Fl\_Surface\_Device}!surface@{surface}}
+\index{surface@{surface}!Fl\_Surface\_Device@{Fl\_Surface\_Device}}
+\doxysubsubsection{\texorpdfstring{surface()}{surface()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_fl___surface___device}{Fl\+\_\+\+Surface\+\_\+\+Device}}$\ast$ Fl\+\_\+\+Surface\+\_\+\+Device\+::surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+The current drawing surface. In other words, the \mbox{\hyperlink{class_fl___surface___device}{Fl\+\_\+\+Surface\+\_\+\+Device}} object that currently receives all graphics output 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___surface___device_ad3ae0e63369bac876e7b7d926af87ea9}\label{class_fl___surface___device_ad3ae0e63369bac876e7b7d926af87ea9}} 
+\index{Fl\_Surface\_Device@{Fl\_Surface\_Device}!class\_id@{class\_id}}
+\index{class\_id@{class\_id}!Fl\_Surface\_Device@{Fl\_Surface\_Device}}
+\doxysubsubsection{\texorpdfstring{class\_id}{class\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Surface\+\_\+\+Device\+::class\+\_\+id\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___device_8_h}{Fl\+\_\+\+Device.\+H}}\end{DoxyCompactItemize}

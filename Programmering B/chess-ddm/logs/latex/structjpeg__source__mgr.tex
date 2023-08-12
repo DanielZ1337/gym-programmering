@@ -1,0 +1,79 @@
+\hypertarget{structjpeg__source__mgr}{}\doxysection{jpeg\+\_\+source\+\_\+mgr Struct Reference}
+\label{structjpeg__source__mgr}\index{jpeg\_source\_mgr@{jpeg\_source\_mgr}}
+
+
+{\ttfamily \#include $<$jpeglib.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structjpeg__source__mgr_af8fda02c19c9dc4e505daabb77c3ad81}{J\+M\+E\+T\+H\+OD}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}, init\+\_\+source,(\mbox{\hyperlink{jpeglib_8h_a00c7d78af44bd26a901c791ccfc1e178}{j\+\_\+decompress\+\_\+ptr}} cinfo))
+\item 
+\mbox{\hyperlink{structjpeg__source__mgr_ab4a579b1f50108e2de73c7c0c1bbb9fd}{J\+M\+E\+T\+H\+OD}} (\mbox{\hyperlink{jmorecfg_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}}, fill\+\_\+input\+\_\+buffer,(\mbox{\hyperlink{jpeglib_8h_a00c7d78af44bd26a901c791ccfc1e178}{j\+\_\+decompress\+\_\+ptr}} cinfo))
+\item 
+\mbox{\hyperlink{structjpeg__source__mgr_a3e29df8ddadb0c15e54b69b5a7a10305}{J\+M\+E\+T\+H\+OD}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}, skip\+\_\+input\+\_\+data,(\mbox{\hyperlink{jpeglib_8h_a00c7d78af44bd26a901c791ccfc1e178}{j\+\_\+decompress\+\_\+ptr}} cinfo, long num\+\_\+bytes))
+\item 
+\mbox{\hyperlink{structjpeg__source__mgr_a60a35ccd1fb8d954f34c0cdbf29ac010}{J\+M\+E\+T\+H\+OD}} (\mbox{\hyperlink{jmorecfg_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}}, resync\+\_\+to\+\_\+restart,(\mbox{\hyperlink{jpeglib_8h_a00c7d78af44bd26a901c791ccfc1e178}{j\+\_\+decompress\+\_\+ptr}} cinfo, int \mbox{\hyperlink{jpeglib_8h_a3450f7500f843178b4517d0e7ef2b537}{desired}}))
+\item 
+\mbox{\hyperlink{structjpeg__source__mgr_a6c0683ce1166b9ee659b2d3aa1efb1c2}{J\+M\+E\+T\+H\+OD}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}, term\+\_\+source,(\mbox{\hyperlink{jpeglib_8h_a00c7d78af44bd26a901c791ccfc1e178}{j\+\_\+decompress\+\_\+ptr}} cinfo))
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{jmorecfg_8h_a356ad249f20e691b520da439f92cccbc}{J\+O\+C\+T\+ET}} $\ast$ \mbox{\hyperlink{structjpeg__source__mgr_aad884e7f4ba7496ab0f56c942c7585c1}{next\+\_\+input\+\_\+byte}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structjpeg__source__mgr_a8ecb72557c1c9666d77fffea074282a4}{bytes\+\_\+in\+\_\+buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structjpeg__source__mgr_ab4a579b1f50108e2de73c7c0c1bbb9fd}\label{structjpeg__source__mgr_ab4a579b1f50108e2de73c7c0c1bbb9fd}} 
+\index{jpeg\_source\_mgr@{jpeg\_source\_mgr}!JMETHOD@{JMETHOD}}
+\index{JMETHOD@{JMETHOD}!jpeg\_source\_mgr@{jpeg\_source\_mgr}}
+\doxysubsubsection{\texorpdfstring{JMETHOD()}{JMETHOD()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily jpeg\+\_\+source\+\_\+mgr\+::\+J\+M\+E\+T\+H\+OD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jmorecfg_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}}}]{,  }\item[{fill\+\_\+input\+\_\+buffer}]{,  }\item[{(\mbox{\hyperlink{jpeglib_8h_a00c7d78af44bd26a901c791ccfc1e178}{j\+\_\+decompress\+\_\+ptr}} cinfo)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structjpeg__source__mgr_a60a35ccd1fb8d954f34c0cdbf29ac010}\label{structjpeg__source__mgr_a60a35ccd1fb8d954f34c0cdbf29ac010}} 
+\index{jpeg\_source\_mgr@{jpeg\_source\_mgr}!JMETHOD@{JMETHOD}}
+\index{JMETHOD@{JMETHOD}!jpeg\_source\_mgr@{jpeg\_source\_mgr}}
+\doxysubsubsection{\texorpdfstring{JMETHOD()}{JMETHOD()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily jpeg\+\_\+source\+\_\+mgr\+::\+J\+M\+E\+T\+H\+OD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{jmorecfg_8h_a7c6368b321bd9acd0149b030bb8275ed}{boolean}}}]{,  }\item[{resync\+\_\+to\+\_\+restart}]{,  }\item[{(\mbox{\hyperlink{jpeglib_8h_a00c7d78af44bd26a901c791ccfc1e178}{j\+\_\+decompress\+\_\+ptr}} cinfo, int \mbox{\hyperlink{jpeglib_8h_a3450f7500f843178b4517d0e7ef2b537}{desired}})}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structjpeg__source__mgr_af8fda02c19c9dc4e505daabb77c3ad81}\label{structjpeg__source__mgr_af8fda02c19c9dc4e505daabb77c3ad81}} 
+\index{jpeg\_source\_mgr@{jpeg\_source\_mgr}!JMETHOD@{JMETHOD}}
+\index{JMETHOD@{JMETHOD}!jpeg\_source\_mgr@{jpeg\_source\_mgr}}
+\doxysubsubsection{\texorpdfstring{JMETHOD()}{JMETHOD()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily jpeg\+\_\+source\+\_\+mgr\+::\+J\+M\+E\+T\+H\+OD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{,  }\item[{init\+\_\+source}]{,  }\item[{(\mbox{\hyperlink{jpeglib_8h_a00c7d78af44bd26a901c791ccfc1e178}{j\+\_\+decompress\+\_\+ptr}} cinfo)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structjpeg__source__mgr_a3e29df8ddadb0c15e54b69b5a7a10305}\label{structjpeg__source__mgr_a3e29df8ddadb0c15e54b69b5a7a10305}} 
+\index{jpeg\_source\_mgr@{jpeg\_source\_mgr}!JMETHOD@{JMETHOD}}
+\index{JMETHOD@{JMETHOD}!jpeg\_source\_mgr@{jpeg\_source\_mgr}}
+\doxysubsubsection{\texorpdfstring{JMETHOD()}{JMETHOD()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily jpeg\+\_\+source\+\_\+mgr\+::\+J\+M\+E\+T\+H\+OD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{,  }\item[{skip\+\_\+input\+\_\+data}]{,  }\item[{(\mbox{\hyperlink{jpeglib_8h_a00c7d78af44bd26a901c791ccfc1e178}{j\+\_\+decompress\+\_\+ptr}} cinfo, long num\+\_\+bytes)}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structjpeg__source__mgr_a6c0683ce1166b9ee659b2d3aa1efb1c2}\label{structjpeg__source__mgr_a6c0683ce1166b9ee659b2d3aa1efb1c2}} 
+\index{jpeg\_source\_mgr@{jpeg\_source\_mgr}!JMETHOD@{JMETHOD}}
+\index{JMETHOD@{JMETHOD}!jpeg\_source\_mgr@{jpeg\_source\_mgr}}
+\doxysubsubsection{\texorpdfstring{JMETHOD()}{JMETHOD()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily jpeg\+\_\+source\+\_\+mgr\+::\+J\+M\+E\+T\+H\+OD (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{,  }\item[{term\+\_\+source}]{,  }\item[{(\mbox{\hyperlink{jpeglib_8h_a00c7d78af44bd26a901c791ccfc1e178}{j\+\_\+decompress\+\_\+ptr}} cinfo)}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structjpeg__source__mgr_a8ecb72557c1c9666d77fffea074282a4}\label{structjpeg__source__mgr_a8ecb72557c1c9666d77fffea074282a4}} 
+\index{jpeg\_source\_mgr@{jpeg\_source\_mgr}!bytes\_in\_buffer@{bytes\_in\_buffer}}
+\index{bytes\_in\_buffer@{bytes\_in\_buffer}!jpeg\_source\_mgr@{jpeg\_source\_mgr}}
+\doxysubsubsection{\texorpdfstring{bytes\_in\_buffer}{bytes\_in\_buffer}}
+{\footnotesize\ttfamily size\+\_\+t jpeg\+\_\+source\+\_\+mgr\+::bytes\+\_\+in\+\_\+buffer}
+
+\mbox{\Hypertarget{structjpeg__source__mgr_aad884e7f4ba7496ab0f56c942c7585c1}\label{structjpeg__source__mgr_aad884e7f4ba7496ab0f56c942c7585c1}} 
+\index{jpeg\_source\_mgr@{jpeg\_source\_mgr}!next\_input\_byte@{next\_input\_byte}}
+\index{next\_input\_byte@{next\_input\_byte}!jpeg\_source\_mgr@{jpeg\_source\_mgr}}
+\doxysubsubsection{\texorpdfstring{next\_input\_byte}{next\_input\_byte}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{jmorecfg_8h_a356ad249f20e691b520da439f92cccbc}{J\+O\+C\+T\+ET}}$\ast$ jpeg\+\_\+source\+\_\+mgr\+::next\+\_\+input\+\_\+byte}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/images/\mbox{\hyperlink{jpeglib_8h}{jpeglib.\+h}}\end{DoxyCompactItemize}

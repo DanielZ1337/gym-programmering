@@ -1,0 +1,29 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,461,56,488"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a7246cea9c08362c2dccf898c192c113b" title=" " alt="" coords="152,5,235,32"/>
+<area shape="rect" id="node3" href="$classsf_1_1_render_target.html#a6bb6f0ba348f2b1e2f46114aeaf60f26" title="Clear the entire target with a single color." alt="" coords="117,56,270,83"/>
+<area shape="rect" id="node4" href="$classsf_1_1_window.html#a99d1e030387b0c26f5995670504fe7b5" title="Close the window and destroy all the attached resources." alt="" coords="131,107,256,133"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a11751589a3a31c869d23db147abc7de6" title=" " alt="" coords="387,208,449,235"/>
+<area shape="rect" id="node6" href="$classsf_1_1_window.html#adabf839cb103ac96cfc82f781638772a" title="Display on screen what has been rendered to the window so far." alt="" coords="126,360,261,387"/>
+<area shape="rect" id="node7" href="$classsf_1_1_render_target.html#a12417a3bcc245c41d957b29583556f39" title="Draw a drawable object to the render target." alt="" coords="117,411,269,437"/>
+<area shape="rect" id="node8" href="$classsf_1_1_transformable.html#a73f9739bc6e74db2cea154bc8e94ec46" title="get the position of the object" alt="" coords="353,327,483,369"/>
+<area shape="rect" id="node9" href="$classuser_input.html#a8dbf6e6ce36e9f963c5a8ce5004be237" title=" " alt="" coords="104,512,283,539"/>
+<area shape="rect" id="node14" href="$classsf_1_1_transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object" alt="" coords="553,563,683,605"/>
+<area shape="rect" id="node15" href="$main_8cpp.html#add78815575980b6ac870e90d81de3e24" title=" " alt="" coords="368,259,468,285"/>
+<area shape="rect" id="node16" href="$classplayer.html#ae8cb5bd38ee327c4d847621aa1920862" title=" " alt="" coords="127,208,260,235"/>
+<area shape="rect" id="node18" href="$classsf_1_1_window.html#ae873503db7d48157bb9cbf6129562bce" title="Tell whether or not the window is open." alt="" coords="126,613,261,640"/>
+<area shape="rect" id="node19" href="$classsf_1_1_transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset." alt="" coords="114,664,273,691"/>
+<area shape="rect" id="node20" href="$classsf_1_1_sound.html#a2953ffe632536e72e696fd880ced2532" title="Start or resume playing the sound." alt="" coords="363,715,473,741"/>
+<area shape="rect" id="node21" href="$classsf_1_1_window.html#a338e996585faf82e93069858e3b531b7" title="Pop the event on top of the event queue, if any, and return it." alt="" coords="120,816,267,843"/>
+<area shape="rect" id="node22" href="$main_8cpp.html#a324ee2f5f9b961e2a82623e336a9ffb3" title=" " alt="" coords="138,259,249,285"/>
+<area shape="rect" id="node23" href="$classsf_1_1_window.html#af4322d315baf93405bf0d5087ad5e784" title="Limit the framerate to a maximum fixed frequency." alt="" coords="108,867,279,909"/>
+<area shape="rect" id="node24" href="$main_8cpp.html#a167cd28b003c51cb0460a6d99573b9f0" title=" " alt="" coords="148,765,239,792"/>
+<area shape="rect" id="node27" href="$classsf_1_1_sound.html#aa9c91c34f7c6d344d5ee9b997511f754" title="stop playing the sound" alt="" coords="138,933,249,960"/>
+<area shape="rect" id="node10" href="$classphysics.html#af975dfedfcd177ab13651c9d5db341de" title=" " alt="" coords="355,393,481,420"/>
+<area shape="rect" id="node11" href="$classsf_1_1_sprite.html#ab2f4c781464da6f8a52b1df6058a48b8" title="Get the local bounding rectangle of the entity." alt="" coords="331,444,505,471"/>
+<area shape="rect" id="node12" href="$classsf_1_1_window.html#a420028b8e4d9baedcaaba7b2047b8cb3" title="Get the position of the window." alt="" coords="339,495,497,521"/>
+<area shape="rect" id="node13" href="$classplayer.html#a59ba7e8a79f02353c1a000f0cc0ed2c3" title=" " alt="" coords="347,545,489,572"/>
+<area shape="rect" id="node17" href="$classplayer.html#a97de83bce15f880241f561b55b016b02" title=" " alt="" coords="368,157,468,184"/>
+<area shape="rect" id="node25" href="$classsf_1_1_sound.html#af23ab4f78f975bbabac031102321612b" title="Set whether or not the sound should loop after reaching the end." alt="" coords="353,765,483,792"/>
+<area shape="rect" id="node26" href="$classsounds.html#a4fb3d0cdf2d9ee548ad59c1f5d5b2364" title=" " alt="" coords="347,816,489,843"/>
+</map>

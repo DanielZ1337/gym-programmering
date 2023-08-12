@@ -1,0 +1,89 @@
+\hypertarget{group__fl__del__widget}{}\doxysection{Safe widget deletion support functions}
+\label{group__fl__del__widget}\index{Safe widget deletion support functions@{Safe widget deletion support functions}}
+
+
+These functions, declared in $<$\mbox{\hyperlink{_fl_8_h}{F\+L/\+Fl.\+H}}$>$, support deletion of widgets inside callbacks.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__del__widget_ga5908e37029f697e8b2f86a2f48d98b18}{Fl\+::delete\+\_\+widget}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$\mbox{\hyperlink{group__fl__screen_ga4fcd39428db4299026322c91715cf379}{w}})
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__del__widget_gab3643acf692210ed29df86032b902869}{Fl\+::do\+\_\+widget\+\_\+deletion}} ()
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__del__widget_gaa6dcacf7538e5424c8366f7a569c0e05}{Fl\+::watch\+\_\+widget\+\_\+pointer}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$\&\mbox{\hyperlink{group__fl__screen_ga4fcd39428db4299026322c91715cf379}{w}})
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__del__widget_gabcf12c2424e03d16611f69cf8cf5a033}{Fl\+::release\+\_\+widget\+\_\+pointer}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$\&\mbox{\hyperlink{group__fl__screen_ga4fcd39428db4299026322c91715cf379}{w}})
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{group__fl__del__widget_ga23a2b4509c67d3d90029ccc493f2575d}{Fl\+::clear\+\_\+widget\+\_\+pointer}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$\mbox{\hyperlink{group__fl__screen_ga4fcd39428db4299026322c91715cf379}{w}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+These functions, declared in $<$\mbox{\hyperlink{_fl_8_h}{F\+L/\+Fl.\+H}}$>$, support deletion of widgets inside callbacks. 
+
+\mbox{\hyperlink{group__fl__del__widget_ga5908e37029f697e8b2f86a2f48d98b18}{Fl\+::delete\+\_\+widget()}} should be called when deleting widgets or complete widget trees (\mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}, \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}, ...) inside callbacks.
+
+The other functions are intended for internal use. The preferred way to use them is by using the helper class \mbox{\hyperlink{class_fl___widget___tracker}{Fl\+\_\+\+Widget\+\_\+\+Tracker}}.
+
+The following is to show how it works ...
+
+There are three groups of related methods\+:
+
+
+\begin{DoxyEnumerate}
+\item scheduled widget deletion
+\end{DoxyEnumerate}
+
+\mbox{\hyperlink{group__fl__del__widget_ga5908e37029f697e8b2f86a2f48d98b18}{Fl\+::delete\+\_\+widget()}} schedules widgets for deletion
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{group__fl__del__widget_gab3643acf692210ed29df86032b902869}{Fl\+::do\+\_\+widget\+\_\+deletion()}} deletes all scheduled widgets
+\begin{DoxyEnumerate}
+\item widget watch list (\char`\"{}smart pointers\char`\"{})
+\end{DoxyEnumerate}
+\item \mbox{\hyperlink{group__fl__del__widget_gaa6dcacf7538e5424c8366f7a569c0e05}{Fl\+::watch\+\_\+widget\+\_\+pointer()}} adds a widget pointer to the watch list
+\item \mbox{\hyperlink{group__fl__del__widget_gabcf12c2424e03d16611f69cf8cf5a033}{Fl\+::release\+\_\+widget\+\_\+pointer()}} removes a widget pointer from the watch list
+\item \mbox{\hyperlink{group__fl__del__widget_ga23a2b4509c67d3d90029ccc493f2575d}{Fl\+::clear\+\_\+widget\+\_\+pointer()}} clears a widget pointer {\itshape in} the watch list
+\begin{DoxyEnumerate}
+\item the class \mbox{\hyperlink{class_fl___widget___tracker}{Fl\+\_\+\+Widget\+\_\+\+Tracker}}\+:
+\end{DoxyEnumerate}
+\item the constructor calls \mbox{\hyperlink{group__fl__del__widget_gaa6dcacf7538e5424c8366f7a569c0e05}{Fl\+::watch\+\_\+widget\+\_\+pointer()}}
+\item the destructor calls \mbox{\hyperlink{group__fl__del__widget_gabcf12c2424e03d16611f69cf8cf5a033}{Fl\+::release\+\_\+widget\+\_\+pointer()}}
+\item the access methods can be used to test, if a widget has been deleted \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget___tracker}{Fl\+\_\+\+Widget\+\_\+\+Tracker}}. 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__fl__del__widget_ga23a2b4509c67d3d90029ccc493f2575d}\label{group__fl__del__widget_ga23a2b4509c67d3d90029ccc493f2575d}} 
+\index{Safe widget deletion support functions@{Safe widget deletion support functions}!clear\_widget\_pointer@{clear\_widget\_pointer}}
+\index{clear\_widget\_pointer@{clear\_widget\_pointer}!Safe widget deletion support functions@{Safe widget deletion support functions}}
+\doxysubsubsection{\texorpdfstring{clear\_widget\_pointer()}{clear\_widget\_pointer()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::clear\+\_\+widget\+\_\+pointer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} $\ast$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__fl__del__widget_ga5908e37029f697e8b2f86a2f48d98b18}\label{group__fl__del__widget_ga5908e37029f697e8b2f86a2f48d98b18}} 
+\index{Safe widget deletion support functions@{Safe widget deletion support functions}!delete\_widget@{delete\_widget}}
+\index{delete\_widget@{delete\_widget}!Safe widget deletion support functions@{Safe widget deletion support functions}}
+\doxysubsubsection{\texorpdfstring{delete\_widget()}{delete\_widget()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::delete\+\_\+widget (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__fl__del__widget_gab3643acf692210ed29df86032b902869}\label{group__fl__del__widget_gab3643acf692210ed29df86032b902869}} 
+\index{Safe widget deletion support functions@{Safe widget deletion support functions}!do\_widget\_deletion@{do\_widget\_deletion}}
+\index{do\_widget\_deletion@{do\_widget\_deletion}!Safe widget deletion support functions@{Safe widget deletion support functions}}
+\doxysubsubsection{\texorpdfstring{do\_widget\_deletion()}{do\_widget\_deletion()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::do\+\_\+widget\+\_\+deletion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__fl__del__widget_gabcf12c2424e03d16611f69cf8cf5a033}\label{group__fl__del__widget_gabcf12c2424e03d16611f69cf8cf5a033}} 
+\index{Safe widget deletion support functions@{Safe widget deletion support functions}!release\_widget\_pointer@{release\_widget\_pointer}}
+\index{release\_widget\_pointer@{release\_widget\_pointer}!Safe widget deletion support functions@{Safe widget deletion support functions}}
+\doxysubsubsection{\texorpdfstring{release\_widget\_pointer()}{release\_widget\_pointer()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::release\+\_\+widget\+\_\+pointer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$\&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{group__fl__del__widget_gaa6dcacf7538e5424c8366f7a569c0e05}\label{group__fl__del__widget_gaa6dcacf7538e5424c8366f7a569c0e05}} 
+\index{Safe widget deletion support functions@{Safe widget deletion support functions}!watch\_widget\_pointer@{watch\_widget\_pointer}}
+\index{watch\_widget\_pointer@{watch\_widget\_pointer}!Safe widget deletion support functions@{Safe widget deletion support functions}}
+\doxysubsubsection{\texorpdfstring{watch\_widget\_pointer()}{watch\_widget\_pointer()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+::watch\+\_\+widget\+\_\+pointer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$\&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+

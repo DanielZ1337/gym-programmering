@@ -1,0 +1,9 @@
+<map id="characters" name="characters">
+<area shape="rect" id="node1" title=" " alt="" coords="304,668,415,760"/>
+<area shape="rect" id="node2" href="$classsf_1_1_sprite.html" title="Drawable representation of a texture, with its own transformations, color, etc." alt="" coords="289,351,430,619"/>
+<area shape="rect" id="node3" href="$classsf_1_1_drawable.html" title="Abstract base class for objects that can be drawn to a render target." alt="" coords="5,101,108,193"/>
+<area shape="rect" id="node4" href="$classsf_1_1_transformable.html" title="Decomposed transform defined by a position, a rotation and a scale." alt="" coords="133,35,263,259"/>
+<area shape="rect" id="node5" href="$classsf_1_1_texture.html" title="Image living on the graphics card that can be used for drawing." alt="" coords="288,5,431,288"/>
+<area shape="rect" id="node6" href="$classsf_1_1_vertex.html" title="Define a point with color and texture coordinates." alt="" coords="455,79,535,215"/>
+<area shape="rect" id="node7" href="$classsf_1_1_rect.html" title=" " alt="" coords="560,27,665,266"/>
+</map>

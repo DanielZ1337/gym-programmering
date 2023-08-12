@@ -1,0 +1,75 @@
+\hypertarget{class_fl___device}{}\doxysection{Fl\+\_\+\+Device Class Reference}
+\label{class_fl___device}\index{Fl\_Device@{Fl\_Device}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Device.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___device__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___device_af9ffc95e2a6b873027ff796c1e76bc82}{class\+\_\+name}} ()
+\item 
+virtual \mbox{\hyperlink{class_fl___device_a435b71f504b5329ce27761b352d88a3f}{$\sim$\+Fl\+\_\+\+Device}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___device_a6890da7e7cd4e8670949213160ec4b53}{class\+\_\+id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+All graphical output devices and all graphics systems. This class supports a rudimentary system of run-\/time type information. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___device_a435b71f504b5329ce27761b352d88a3f}\label{class_fl___device_a435b71f504b5329ce27761b352d88a3f}} 
+\index{Fl\_Device@{Fl\_Device}!````~Fl\_Device@{$\sim$Fl\_Device}}
+\index{````~Fl\_Device@{$\sim$Fl\_Device}!Fl\_Device@{Fl\_Device}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Device()}{~Fl\_Device()}}
+{\footnotesize\ttfamily virtual Fl\+\_\+\+Device\+::$\sim$\+Fl\+\_\+\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Virtual destructor.
+
+The destructor of \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}} must be virtual to make the destructors of derived classes being called correctly on destruction. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___device_af9ffc95e2a6b873027ff796c1e76bc82}\label{class_fl___device_af9ffc95e2a6b873027ff796c1e76bc82}} 
+\index{Fl\_Device@{Fl\_Device}!class\_name@{class\_name}}
+\index{class\_name@{class\_name}!Fl\_Device@{Fl\_Device}}
+\doxysubsubsection{\texorpdfstring{class\_name()}{class\_name()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Device\+::class\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the class of this object. Use of the \mbox{\hyperlink{class_fl___device_af9ffc95e2a6b873027ff796c1e76bc82}{class\+\_\+name()}} function is discouraged because it will be removed from future F\+L\+TK versions.
+
+The class of an instance of an \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}} subclass can be checked with code such as\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( instance-\/>class\_name() == \mbox{\hyperlink{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}{Fl\_Printer::class\_id}} ) \{ ... \}}
+\end{DoxyCode}
+ 
+
+Reimplemented in \mbox{\hyperlink{class_fl___display___device_a1e1955edf0171ced7e9fe4028d82237b}{Fl\+\_\+\+Display\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___surface___device_a1162e0cf051b2c95dd88091ef3b833df}{Fl\+\_\+\+Surface\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___xlib___graphics___driver_adacb00514c4eef14799d84155ca07d63}{Fl\+\_\+\+Xlib\+\_\+\+Graphics\+\_\+\+Driver}}, \mbox{\hyperlink{class_fl___graphics___driver_a9f83f359acea4d6dc5ce3ec3639cc55d}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}, \mbox{\hyperlink{class_fl___post_script___file___device_ad2d843215cf1bc1aa929b5c7226f67f6}{Fl\+\_\+\+Post\+Script\+\_\+\+File\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___printer_a8c51e8af2802d245d5a9d1cfa34413ae}{Fl\+\_\+\+Printer}}, \mbox{\hyperlink{class_fl___paged___device_abf25bf6a1dbe7e4dc6de7ce7c5564425}{Fl\+\_\+\+Paged\+\_\+\+Device}}, \mbox{\hyperlink{class_fl___xlib___surface___a94de6e5db9aab7c341745a09b55404a3}{Fl\+\_\+\+Xlib\+\_\+\+Surface\+\_\+}}, \mbox{\hyperlink{class_fl___post_script___printer_a1f1fbe50c4fd6350aec1cddd42f0bedd}{Fl\+\_\+\+Post\+Script\+\_\+\+Printer}}, \mbox{\hyperlink{class_fl___copy___surface_a845ed6c1e0f9bc1c35f27c2050a4ad2d}{Fl\+\_\+\+Copy\+\_\+\+Surface}}, \mbox{\hyperlink{class_fl___post_script___graphics___driver_ac8983813e721fe6b926e709497330d8d}{Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver}}, and \mbox{\hyperlink{class_fl___image___surface_a24b6b8bf7a0fea1fad2924a048f96ab9}{Fl\+\_\+\+Image\+\_\+\+Surface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___device_a6890da7e7cd4e8670949213160ec4b53}\label{class_fl___device_a6890da7e7cd4e8670949213160ec4b53}} 
+\index{Fl\_Device@{Fl\_Device}!class\_id@{class\_id}}
+\index{class\_id@{class\_id}!Fl\_Device@{Fl\_Device}}
+\doxysubsubsection{\texorpdfstring{class\_id}{class\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Device\+::class\+\_\+id\hspace{0.3cm}{\ttfamily [static]}}
+
+A string that identifies each subclass of \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}}. Function \mbox{\hyperlink{class_fl___device_af9ffc95e2a6b873027ff796c1e76bc82}{class\+\_\+name()}} applied to a device of this class returns this string. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___device_8_h}{Fl\+\_\+\+Device.\+H}}\end{DoxyCompactItemize}

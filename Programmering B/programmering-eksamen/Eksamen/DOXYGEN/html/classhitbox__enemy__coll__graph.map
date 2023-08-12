@@ -1,0 +1,8 @@
+<map id="hitbox_enemy" name="hitbox_enemy">
+<area shape="rect" id="node1" title=" " alt="" coords="166,836,330,928"/>
+<area shape="rect" id="node2" href="$classsf_1_1_circle_shape.html" title="Specialized shape representing a circle." alt="" coords="134,593,258,744"/>
+<area shape="rect" id="node3" href="$classsf_1_1_shape.html" title="Base class for textured shapes with outline." alt="" coords="116,145,276,531"/>
+<area shape="rect" id="node4" title=" " alt="" coords="29,5,75,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="301,299,358,377"/>
+<area shape="rect" id="node6" title=" " alt="" coords="282,630,321,707"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="sf::Shape" name="sf::Shape">
+<area shape="rect" id="node1" title="Base class for textured shapes with outline." alt="" coords="161,380,321,883"/>
+<area shape="rect" id="node4" href="$classsf_1_1_circle_shape.html" title="Specialized shape representing a circle." alt="" coords="28,931,152,1096"/>
+<area shape="rect" id="node6" href="$classsf_1_1_convex_shape.html" title="Specialized shape representing a convex polygon." alt="" coords="179,945,303,1081"/>
+<area shape="rect" id="node8" href="$classsf_1_1_rectangle_shape.html" title="Specialized shape representing a rectangle." alt="" coords="327,945,464,1081"/>
+<area shape="rect" id="node2" href="$classsf_1_1_drawable.html" title="Abstract base class for objects that can be drawn to a render target." alt="" coords="97,123,200,215"/>
+<area shape="rect" id="node3" href="$classsf_1_1_transformable.html" title="Decomposed transform defined by a position, a rotation and a scale." alt="" coords="225,5,441,332"/>
+<area shape="rect" id="node5" href="$classhitbox__enemy.html" title=" " alt="" coords="5,1173,169,1295"/>
+<area shape="rect" id="node7" href="$classbullet.html" title=" " alt="" coords="193,1144,296,1324"/>
+<area shape="rect" id="node9" href="$classhitbox__car.html" title=" " alt="" coords="324,1188,467,1280"/>
+</map>

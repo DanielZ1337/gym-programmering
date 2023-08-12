@@ -1,0 +1,13 @@
+<map id="sf::SoundBuffer" name="sf::SoundBuffer">
+<area shape="rect" id="node1" title="Storage for audio samples defining a sound." alt="" coords="262,344,409,671"/>
+<area shape="rect" id="node7" href="$classsf_1_1_sound.html" title="Regular sound that can be played in the audio environment." alt="" coords="208,733,345,957"/>
+<area shape="rect" id="node2" href="$classsf_1_1_al_resource.html" title="Base class for classes that require an OpenAL context." alt="" coords="5,167,121,259"/>
+<area shape="rect" id="node3" href="$classsf_1_1_time.html" title="Represents a time value." alt="" coords="145,145,283,281"/>
+<area shape="rect" id="node4" title=" " alt="" coords="156,5,272,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="368,175,407,252"/>
+<area shape="rect" id="node6" title=" " alt="" coords="209,1020,345,1097"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="85,807,183,884"/>
+<area shape="rect" id="node9" title=" " alt="" coords="431,175,565,252"/>
+<area shape="rect" id="node10" title=" " alt="" coords="419,5,470,83"/>
+<area shape="rect" id="node11" title="STL class." alt="" coords="495,5,608,83"/>
+</map>

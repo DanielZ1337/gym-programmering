@@ -1,0 +1,13 @@
+<map id="Fl_Text_Editor::Key_Binding" name="Fl_Text_Editor::Key_Binding">
+<area shape="rect" id="node1" title=" " alt="" coords="5,420,143,461"/>
+<area shape="rect" id="node2" href="$class_fl___text___editor.html" title=" " alt="" coords="165,539,271,565"/>
+<area shape="rect" id="node3" href="$class_fl___text___display.html" title="Rich text display widget." alt="" coords="230,427,345,454"/>
+<area shape="rect" id="node4" href="$class_fl___group.html" title=" " alt="" coords="106,132,181,159"/>
+<area shape="rect" id="node5" href="$class_fl___widget.html" title=" " alt="" coords="131,5,212,32"/>
+<area shape="rect" id="node8" href="$class_fl___valuator.html" title=" " alt="" coords="181,81,269,108"/>
+<area shape="rect" id="node6" href="$class_fl___scrollbar.html" title=" " alt="" coords="181,309,271,335"/>
+<area shape="rect" id="node7" href="$class_fl___slider.html" title=" " alt="" coords="188,183,261,209"/>
+<area shape="rect" id="node9" href="$class_fl___text___buffer.html" title="This class manages Unicode text displayed in one or more Fl_Text_Display widgets." alt="" coords="296,309,401,335"/>
+<area shape="rect" id="node10" href="$class_fl___text___selection.html" title="This is an internal class for Fl_Text_Buffer to manage text selections. This class works correctly wi..." alt="" coords="285,183,412,209"/>
+<area shape="rect" id="node11" href="$struct_fl___text___display_1_1_style___table___entry.html" title=" " alt="" coords="425,301,579,343"/>
+</map>

@@ -1,0 +1,345 @@
+\hypertarget{class_fl___tabs}{}\doxysection{Fl\+\_\+\+Tabs Class Reference}
+\label{class_fl___tabs}\index{Fl\_Tabs@{Fl\_Tabs}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Tabs.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Tabs\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___tabs__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Tabs\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___tabs__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___tabs_a73dfe2ab8dbca96e074fcc5af1110e03}{handle}} (int)
+\item 
+\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$ \mbox{\hyperlink{class_fl___tabs_a64c01a81b0968942167baa9d32de7666}{value}} ()
+\item 
+int \mbox{\hyperlink{class_fl___tabs_a188bef71735c167e44af095ddd4922b6}{value}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$)
+\item 
+\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$ \mbox{\hyperlink{class_fl___tabs_aacc5bde73257a389d469dc996c9f8dac}{push}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___tabs_abca5a9544a6d9807221c0cf790230d77}{push}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$)
+\item 
+\mbox{\hyperlink{class_fl___tabs_ad1a81464c51e3cb56fa1d8fd6ce32d72}{Fl\+\_\+\+Tabs}} (int, int, int, int, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$=0)
+\item 
+\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$ \mbox{\hyperlink{class_fl___tabs_a994489b23b56d0aa01c5e4522aa56729}{which}} (int event\+\_\+x, int event\+\_\+y)
+\item 
+\mbox{\hyperlink{class_fl___tabs_a7beea4c0645678edb9239c5856593c1c}{$\sim$\+Fl\+\_\+\+Tabs}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tabs_a340c3c801614767966a60992fff76a14}{client\+\_\+area}} (int \&rx, int \&ry, int \&rw, int \&rh, int tabh=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tabs_a0be2874314b87df497a76ad686e7cee7}{redraw\+\_\+tabs}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tabs_a0ac6422a6ef27dafa7e2eef794bc6233}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_fl___tabs}{Fl\+\_\+\+Tabs}} widget is the \char`\"{}file card tabs\char`\"{} interface that allows you to put lots and lots of buttons and switches in a panel, as popularized by many toolkits.
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=8cm]{tabs.png}
+\doxyfigcaption{Fl\+\_\+\+Tabs}
+\end{DoxyImage}
+
+
+Clicking the tab makes a child \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}} by calling \mbox{\hyperlink{class_fl___widget_a3b7971dc3a0385c31e71b9f3786eac2d}{show()}} on it, and all other children are made invisible by calling \mbox{\hyperlink{class_fl___widget_a408b7ca0d0ed7682275e79b976c5dda4}{hide()}} on them. Usually the children are \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} widgets containing several widgets themselves.
+
+Each child makes a card, and its \mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}} is printed on the card tab, including the label font and style. The selection color of that child is used to color the tab, while the color of the child determines the background color of the pane.
+
+The size of the tabs is controlled by the bounding box of the children (there should be some space between the children and the edge of the \mbox{\hyperlink{class_fl___tabs}{Fl\+\_\+\+Tabs}}), and the tabs may be placed \char`\"{}inverted\char`\"{} on the bottom -\/ this is determined by which gap is larger. It is easiest to lay this out in fluid, using the fluid browser to select each child group and resize them until the tabs look the way you want them to.
+
+The background area behind and to the right of the tabs is \char`\"{}transparent\char`\"{}, exposing the background detail of the parent. The value of \mbox{\hyperlink{class_fl___widget_a9d1f48fbbe4d885e81df38b2a93b614f}{Fl\+\_\+\+Tabs\+::box()}} does not affect this area. So if \mbox{\hyperlink{class_fl___tabs}{Fl\+\_\+\+Tabs}} is resized by itself without the parent, force the appropriate parent (visible behind the tabs) to \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} to prevent artifacts.
+
+See \char`\"{}\+Resizing Caveats\char`\"{} below on how to keep tab heights constant. See \char`\"{}\+Callback\textquotesingle{}s Use Of when()\char`\"{} on how to control the details of how clicks invoke the \mbox{\hyperlink{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}{callback()}}.
+
+A typical use of the \mbox{\hyperlink{class_fl___tabs}{Fl\+\_\+\+Tabs}} widget\+:
+
+\begin{DoxyParagraph}{}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// Typical use of Fl\_Tabs}}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___tabs}{Fl\_Tabs}} *tabs = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___tabs_ad1a81464c51e3cb56fa1d8fd6ce32d72}{Fl\_Tabs}}(10,10,300,200);}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___group}{Fl\_Group}} *grp1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___widget_a94d0d92ae03a8ba20eb42efa2dd2831d}{Fl\_Group}}(20,30,280,170,\textcolor{stringliteral}{"Tab1"});}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    ..widgets that go in tab\#1..}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{grp1-\/>\mbox{\hyperlink{class_fl___group_a029653337efa0cb2ec52852519293ba8}{end}}();}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___group}{Fl\_Group}} *grp2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___widget_a94d0d92ae03a8ba20eb42efa2dd2831d}{Fl\_Group}}(20,30,280,170,\textcolor{stringliteral}{"Tab2"});}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    ..widgets that go in tab\#2..}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{grp2-\/>\mbox{\hyperlink{class_fl___group_a029653337efa0cb2ec52852519293ba8}{end}}();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{tabs-\/>\mbox{\hyperlink{class_fl___group_a029653337efa0cb2ec52852519293ba8}{end}}();}
+\end{DoxyCode}
+
+\end{DoxyParagraph}
+{\bfseries{Default}} {\bfseries{Appearance}} 
+
+The appearance of each \char`\"{}tab\char`\"{} is taken from the \mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}} and \mbox{\hyperlink{class_fl___widget_a0f4654d4d9aab8a1c1078fca5660742a}{color()}} of the child group corresponding to that \char`\"{}tab\char`\"{} and panel. Where the \char`\"{}tabs\char`\"{} appear depends on the position and size of the child groups that make up the panels within the Fl\+\_\+\+Tab, i.\+e. whether there is more space above or below them. The height of the \char`\"{}tabs\char`\"{} depends on how much free space is available.
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=8cm]{tabs_default.png}
+\doxyfigcaption{Fl\+\_\+\+Tabs Default Appearance}
+\end{DoxyImage}
+
+
+{\bfseries{Highlighting}} {\bfseries{The}} {\bfseries{Selected}} {\bfseries{Tab}} 
+
+The selected \char`\"{}tab\char`\"{} can be highlighted further by setting the \mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\+\_\+color()}} of the Fl\+\_\+\+Tab itself, e.\+g.
+
+\begin{DoxyParagraph}{}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{..}
+\DoxyCodeLine{tabs = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___tabs_ad1a81464c51e3cb56fa1d8fd6ce32d72}{Fl\_Tabs}}(..);}
+\DoxyCodeLine{tabs-\/>\mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\_color}}(\mbox{\hyperlink{_enumerations_8_h_ad723ee5e7504ff3c0f07dbe34e894b9f}{FL\_DARK3}});}
+\DoxyCodeLine{..}
+\end{DoxyCode}
+
+\end{DoxyParagraph}
+The result of the above looks like\+:  
+\begin{DoxyImage}
+\includegraphics[width=8cm]{tabs_selection.png}
+\doxyfigcaption{Highlighting the selected tab}
+\end{DoxyImage}
+
+
+{\bfseries{Uniform}} {\bfseries{Tab}} {\bfseries{and}} {\bfseries{Panel}} {\bfseries{Appearance}} 
+
+In order to have uniform tab and panel appearance, not only must the \mbox{\hyperlink{class_fl___widget_a0f4654d4d9aab8a1c1078fca5660742a}{color()}} and \mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\+\_\+color()}} for each child group be set, but also the \mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\+\_\+color()}} of the Fl\+\_\+\+Tab itself any time a new \char`\"{}tab\char`\"{} is selected. This can be achieved within the Fl\+\_\+\+Tab callback, e.\+g.
+
+\begin{DoxyParagraph}{}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} MyTabCallback(\mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{class_fl___widget_a9c582969d134d01916816daf73a35402}{w}}, \textcolor{keywordtype}{void}*) \{}
+\DoxyCodeLine{  \mbox{\hyperlink{class_fl___tabs}{Fl\_Tabs}} *tabs = (\mbox{\hyperlink{class_fl___tabs}{Fl\_Tabs}}*)\mbox{\hyperlink{class_fl___widget_a9c582969d134d01916816daf73a35402}{w}};}
+\DoxyCodeLine{  \textcolor{comment}{// When tab changed, make sure it has same color as its group}}
+\DoxyCodeLine{  tabs-\/>\mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\_color}}( (tab-\/>value())-\/>color() );}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{..}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}(..) \{}
+\DoxyCodeLine{  \textcolor{comment}{// Define tabs widget}}
+\DoxyCodeLine{  tabs = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___tabs_ad1a81464c51e3cb56fa1d8fd6ce32d72}{Fl\_Tabs}}(..);}
+\DoxyCodeLine{  tabs-\/>\mbox{\hyperlink{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}{callback}}(MyTabCallback);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \textcolor{comment}{// Create three tabs each colored differently}}
+\DoxyCodeLine{  grp1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___widget_a94d0d92ae03a8ba20eb42efa2dd2831d}{Fl\_Group}}(.. \textcolor{stringliteral}{"One"});}
+\DoxyCodeLine{   grp1-\/>\mbox{\hyperlink{class_fl___widget_a0f4654d4d9aab8a1c1078fca5660742a}{color}}(9);}
+\DoxyCodeLine{   grp1-\/>\mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\_color}}(9);}
+\DoxyCodeLine{  grp1-\/>\mbox{\hyperlink{class_fl___group_a029653337efa0cb2ec52852519293ba8}{end}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{  grp2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___widget_a94d0d92ae03a8ba20eb42efa2dd2831d}{Fl\_Group}}(.. \textcolor{stringliteral}{"Two"});}
+\DoxyCodeLine{   grp2-\/>\mbox{\hyperlink{class_fl___widget_a0f4654d4d9aab8a1c1078fca5660742a}{color}}(10);}
+\DoxyCodeLine{   grp2-\/>\mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\_color}}(10);}
+\DoxyCodeLine{  grp2-\/>\mbox{\hyperlink{class_fl___group_a029653337efa0cb2ec52852519293ba8}{end}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{  grp3 = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___widget_a94d0d92ae03a8ba20eb42efa2dd2831d}{Fl\_Group}}(.. \textcolor{stringliteral}{"Three"});}
+\DoxyCodeLine{   grp3-\/>color(14);}
+\DoxyCodeLine{   grp3-\/>selection\_color(14);}
+\DoxyCodeLine{  grp3-\/>end();}
+\DoxyCodeLine{  ..}
+\DoxyCodeLine{  \textcolor{comment}{// Make sure default tab has same color as its group}}
+\DoxyCodeLine{  tabs-\/>\mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\_color}}( (tab-\/>value())-\/>color() );}
+\DoxyCodeLine{  ..}
+\DoxyCodeLine{  \textcolor{keywordflow}{return} \mbox{\hyperlink{class_fl_aaa544fdb18c1f31c96225f379335e72f}{Fl::run}}();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+\end{DoxyParagraph}
+The result of the above looks like\+:  
+\begin{DoxyImage}
+\includegraphics[width=8cm]{tabs_uniform.png}
+\doxyfigcaption{Fl\+\_\+\+Tabs with uniform colors}
+\end{DoxyImage}
+
+
+{\bfseries{Resizing}} {\bfseries{Caveats}} 
+
+When \mbox{\hyperlink{class_fl___tabs}{Fl\+\_\+\+Tabs}} is resized vertically, the default behavior scales the tab\textquotesingle{}s height as well as its children. To keep the tab height constant during resizing, set the tab widget\textquotesingle{}s \mbox{\hyperlink{class_fl___group_ab0ed0d1974d7185594687849f386c5f3}{resizable()}} to one of the tab\textquotesingle{}s child groups, i.\+e.
+
+\begin{DoxyParagraph}{}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{tabs = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___tabs_ad1a81464c51e3cb56fa1d8fd6ce32d72}{Fl\_Tabs}}(..);}
+\DoxyCodeLine{grp1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___widget_a94d0d92ae03a8ba20eb42efa2dd2831d}{Fl\_Group}}(..);}
+\DoxyCodeLine{..}
+\DoxyCodeLine{grp2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___widget_a94d0d92ae03a8ba20eb42efa2dd2831d}{Fl\_Group}}(..);}
+\DoxyCodeLine{..}
+\DoxyCodeLine{tabs-\/>\mbox{\hyperlink{class_fl___group_a029653337efa0cb2ec52852519293ba8}{end}}();}
+\DoxyCodeLine{tabs-\/>\mbox{\hyperlink{class_fl___group_ab0ed0d1974d7185594687849f386c5f3}{resizable}}(grp1);    \textcolor{comment}{// keeps tab height constant}}
+\end{DoxyCode}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Callback\textquotesingle{}s Use Of when()}
+
+\end{DoxyParagraph}
+As of F\+L\+TK 1.\+3.\+3, \mbox{\hyperlink{class_fl___tabs_ad1a81464c51e3cb56fa1d8fd6ce32d72}{Fl\+\_\+\+Tabs()}} supports the following flags for \mbox{\hyperlink{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}{when()}}\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665adfa635a2abba2b9d9fbfc10294d87f3c}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+N\+E\+V\+ER}} -- callback never invoked (all flags off)
+\item \mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665ae504aaa4de36a9ff606530956c68887a}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+C\+H\+A\+N\+G\+ED}} -- if flag set, invokes callback when a tab has been changed (on click or keyboard navigation)
+\item \mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665ac5385d8670aedf159e0271731fceab85}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+N\+O\+T\+\_\+\+C\+H\+A\+N\+G\+ED}} -- if flag set, invokes callback when the tabs remain unchanged (on click or keyboard navigation)
+\item \mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665afbd4ae9061c3cd4bc9b4aa94fcb8137a}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+R\+E\+L\+E\+A\+SE}} -- if flag set, invokes callback on R\+E\+L\+E\+A\+SE of mouse button or keyboard navigation
+\end{DoxyItemize}
+
+Notes\+:
+
+
+\begin{DoxyEnumerate}
+\item The above flags can be logically O\+R-\/ed ($\vert$) or added (+) to combine behaviors.
+\item The default value for \mbox{\hyperlink{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}{when()}} is \mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665afbd4ae9061c3cd4bc9b4aa94fcb8137a}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+R\+E\+L\+E\+A\+SE}} (inherited from \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}}).
+\item If \mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665afbd4ae9061c3cd4bc9b4aa94fcb8137a}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+R\+E\+L\+E\+A\+SE}} is the {\itshape only} flag specified, the behavior will be as if (\mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665afbd4ae9061c3cd4bc9b4aa94fcb8137a}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+R\+E\+L\+E\+A\+SE}}$\vert$\mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665ae504aaa4de36a9ff606530956c68887a}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+C\+H\+A\+N\+G\+ED}}) was specified.
+\item The value of \mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed()}} will be valid during the callback.
+\item If both \mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665ae504aaa4de36a9ff606530956c68887a}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+C\+H\+A\+N\+G\+ED}} and \mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665ac5385d8670aedf159e0271731fceab85}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+N\+O\+T\+\_\+\+C\+H\+A\+N\+G\+ED}} are specified, the callback is invoked whether the tab has been changed or not. The \mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed()}} method can be used to determine the cause.
+\item \mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665ac5385d8670aedf159e0271731fceab85}{F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+N\+O\+T\+\_\+\+C\+H\+A\+N\+G\+ED}} can happen if someone clicks on an already selected tab, or if a keyboard navigation attempt results in no change to the tabs, such as using the arrow keys while at the left or right end of the tabs. 
+\end{DoxyEnumerate}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___tabs_ad1a81464c51e3cb56fa1d8fd6ce32d72}\label{class_fl___tabs_ad1a81464c51e3cb56fa1d8fd6ce32d72}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!Fl\_Tabs@{Fl\_Tabs}}
+\index{Fl\_Tabs@{Fl\_Tabs}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{Fl\_Tabs()}{Fl\_Tabs()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Tabs\+::\+Fl\+\_\+\+Tabs (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{ = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tabs_a7beea4c0645678edb9239c5856593c1c}\label{class_fl___tabs_a7beea4c0645678edb9239c5856593c1c}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!````~Fl\_Tabs@{$\sim$Fl\_Tabs}}
+\index{````~Fl\_Tabs@{$\sim$Fl\_Tabs}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Tabs()}{~Fl\_Tabs()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Tabs\+::$\sim$\+Fl\+\_\+\+Tabs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___tabs_a340c3c801614767966a60992fff76a14}\label{class_fl___tabs_a340c3c801614767966a60992fff76a14}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!client\_area@{client\_area}}
+\index{client\_area@{client\_area}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{client\_area()}{client\_area()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tabs\+::client\+\_\+area (\begin{DoxyParamCaption}\item[{int \&}]{rx,  }\item[{int \&}]{ry,  }\item[{int \&}]{rw,  }\item[{int \&}]{rh,  }\item[{int}]{tabh = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tabs_a0ac6422a6ef27dafa7e2eef794bc6233}\label{class_fl___tabs_a0ac6422a6ef27dafa7e2eef794bc6233}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!draw@{draw}}
+\index{draw@{draw}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tabs\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___tabs_a0ac6422a6ef27dafa7e2eef794bc6233}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___tabs_a0ac6422a6ef27dafa7e2eef794bc6233}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_a96b778e518df02471139179d4c90157c}{Fl\+\_\+\+Group}}.
+
+\mbox{\Hypertarget{class_fl___tabs_a73dfe2ab8dbca96e074fcc5af1110e03}\label{class_fl___tabs_a73dfe2ab8dbca96e074fcc5af1110e03}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!handle@{handle}}
+\index{handle@{handle}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Tabs\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___tabs_a73dfe2ab8dbca96e074fcc5af1110e03}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_a7503757c2a734442e74717d1971b12ce}{Fl\+\_\+\+Group}}.
+
+\mbox{\Hypertarget{class_fl___tabs_aacc5bde73257a389d469dc996c9f8dac}\label{class_fl___tabs_aacc5bde73257a389d469dc996c9f8dac}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!push@{push}}
+\index{push@{push}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}}$\ast$ Fl\+\_\+\+Tabs\+::push (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the tab group for the tab the user has currently down-\/clicked on and remains over until F\+L\+\_\+\+R\+E\+L\+E\+A\+SE. Otherwise, returns N\+U\+LL.
+
+While the user is down-\/clicked on a tab, the return value is the tab group for that tab. But as soon as the user releases, or drags off the tab with the button still down, the return value will be N\+U\+LL.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___tabs_abca5a9544a6d9807221c0cf790230d77}{push(\+Fl\+\_\+\+Widget$\ast$)}}. 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___tabs_abca5a9544a6d9807221c0cf790230d77}\label{class_fl___tabs_abca5a9544a6d9807221c0cf790230d77}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!push@{push}}
+\index{push@{push}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Tabs\+::push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tabs_a0be2874314b87df497a76ad686e7cee7}\label{class_fl___tabs_a0be2874314b87df497a76ad686e7cee7}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!redraw\_tabs@{redraw\_tabs}}
+\index{redraw\_tabs@{redraw\_tabs}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{redraw\_tabs()}{redraw\_tabs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tabs\+::redraw\+\_\+tabs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___tabs_a64c01a81b0968942167baa9d32de7666}\label{class_fl___tabs_a64c01a81b0968942167baa9d32de7666}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!value@{value}}
+\index{value@{value}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}}$\ast$ Fl\+\_\+\+Tabs\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tabs_a188bef71735c167e44af095ddd4922b6}\label{class_fl___tabs_a188bef71735c167e44af095ddd4922b6}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!value@{value}}
+\index{value@{value}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Tabs\+::value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tabs_a994489b23b56d0aa01c5e4522aa56729}\label{class_fl___tabs_a994489b23b56d0aa01c5e4522aa56729}} 
+\index{Fl\_Tabs@{Fl\_Tabs}!which@{which}}
+\index{which@{which}!Fl\_Tabs@{Fl\_Tabs}}
+\doxysubsubsection{\texorpdfstring{which()}{which()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}}$\ast$ Fl\+\_\+\+Tabs\+::which (\begin{DoxyParamCaption}\item[{int}]{event\+\_\+x,  }\item[{int}]{event\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___tabs_8_h}{Fl\+\_\+\+Tabs.\+H}}\end{DoxyCompactItemize}

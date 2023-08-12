@@ -1,0 +1,489 @@
+\hypertarget{class_fl___printer}{}\doxysection{Fl\+\_\+\+Printer Class Reference}
+\label{class_fl___printer}\index{Fl\_Printer@{Fl\_Printer}}
+
+
+O\+S-\/independent print support.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Printer.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Printer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_fl___printer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Printer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_fl___printer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a8c51e8af2802d245d5a9d1cfa34413ae}{class\+\_\+name}} ()
+\item 
+\mbox{\hyperlink{class_fl___printer_a82f5d6a0fe67c6b756251c6c2f470010}{Fl\+\_\+\+Printer}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___printer_a8f3603112736f55dd08ef7ad4aaed551}{start\+\_\+job}} (int pagecount, int $\ast$frompage=\mbox{\hyperlink{forms_8_h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}, int $\ast$topage=\mbox{\hyperlink{forms_8_h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+int \mbox{\hyperlink{class_fl___printer_aa7c9294391ecebe05a59b868fe16bac1}{start\+\_\+page}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+int \mbox{\hyperlink{class_fl___printer_ae7d6d14dd0c0711634f38c599811db9c}{printable\+\_\+rect}} (int $\ast$\mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int $\ast$\mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_ab0bb5557d714b1b8c0705c8af56bd26a}{margins}} (int $\ast$left, int $\ast$top, int $\ast$right, int $\ast$bottom)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_ab06af1da74d884b3acc3fd653bfa665e}{origin}} (int $\ast$x, int $\ast$y)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_ac373a57ae77016b7c0565361323ceebc}{origin}} (int x, int y)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_a0b991bd8a66b8f5171cb1ee262834476}{scale}} (float scale\+\_\+x, float scale\+\_\+y=0.)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_a2c5e858532b376ee7627369c9c8b1c36}{rotate}} (float angle)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_a2b49948772a2fbe2d7a849ead465c36a}{translate}} (int x, int y)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_a76093f5f33d65cbdf94212da159069b0}{untranslate}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+int \mbox{\hyperlink{class_fl___printer_ac3afd751b80f12a11f02a6e87eeb332a}{end\+\_\+page}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_a181c505fbfba8818368f844f7276b06a}{end\+\_\+job}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_a0b6a37315107179fec2eab69008f5150}{print\+\_\+widget}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$widget, int delta\+\_\+x=0, int delta\+\_\+y=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_afb75fad498e6e1eacd8d66f54a0964fd}{print\+\_\+window\+\_\+part}} (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$win, int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}, int delta\+\_\+x=0, int delta\+\_\+y=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___printer_af29bb9b0f186dae10d35e7a22a463ea4}{set\+\_\+current}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+\mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}} $\ast$ \mbox{\hyperlink{class_fl___printer_a78199e623a881add8bea473d3feb0b7e}{driver}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\item 
+\mbox{\hyperlink{class_fl___printer_a9204f3ba398e223644aa43549f6c151f}{$\sim$\+Fl\+\_\+\+Printer}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}})
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}{class\+\_\+id}}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ These attributes are effective under the Xlib platform only.}\par
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_afaf40f8c9393c2f1cf939cbbc4c30fde}{dialog\+\_\+title}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_addb8c90d951d73581750bb3249129b4b}{dialog\+\_\+printer}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a47e2d2a1a52e66a9a976bd559cb9fa4a}{dialog\+\_\+range}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_aefd6f8ce36856256d5dabc4d170808be}{dialog\+\_\+copies}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_abf3ac3731ecfd156cbf755004c966a51}{dialog\+\_\+all}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a0e574e5d7194ec91bd0c5b76311c9388}{dialog\+\_\+pages}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a95b7906caa1f6cc987bdf8186cda4c2d}{dialog\+\_\+from}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_ab4d990c3aa0ff8233c717e384866094c}{dialog\+\_\+to}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a83aaf637ed6f58613c5c4d86e3b64762}{dialog\+\_\+properties}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a42e32445bd0a9b689b4d73be0171a6e9}{dialog\+\_\+copy\+No}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_afa0e6278a09493d0e0786c77592f7691}{dialog\+\_\+print\+\_\+button}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_aaf63b5160eedb6fc08fb8dc4402da11b}{dialog\+\_\+cancel\+\_\+button}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a7968efeb95d3109b621f7f2c96cb41e9}{dialog\+\_\+print\+\_\+to\+\_\+file}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a2b3942ca875f8dc7c9d359a0fdad830b}{property\+\_\+title}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_ab84885eff5c54da9a5012a37bea97b95}{property\+\_\+pagesize}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a9bce73ce2b629204ed08117b3ca973fa}{property\+\_\+mode}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_ad3fac35e8ab0387b2792528b89a6123e}{property\+\_\+use}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a4ba4b018aac4a1fb54f6e3aa1f97300a}{property\+\_\+save}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___printer_a99db4d8645d80fccf7ccd2d60b872723}{property\+\_\+cancel}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+O\+S-\/independent print support. 
+
+\mbox{\hyperlink{class_fl___printer}{Fl\+\_\+\+Printer}} allows to use all drawing, color, text, image, and clip F\+L\+TK functions, and to have them operate on printed page(s). There are two main, non exclusive, ways to use it. 
+\begin{DoxyItemize}
+\item Print any widget (standard, custom, \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___gl___window}{Fl\+\_\+\+Gl\+\_\+\+Window}}) as it appears on screen, with optional translation, scaling and rotation. This is done by calling \mbox{\hyperlink{class_fl___printer_a0b6a37315107179fec2eab69008f5150}{print\+\_\+widget()}}, \mbox{\hyperlink{class_fl___paged___device_a2d230f6507682c810d56ed7b60092dec}{print\+\_\+window()}} or \mbox{\hyperlink{class_fl___printer_afb75fad498e6e1eacd8d66f54a0964fd}{print\+\_\+window\+\_\+part()}}. 
+\item Use a series of F\+L\+TK graphics commands (e.\+g., font, text, lines, colors, clip, image) to compose a page appropriately shaped for printing. 
+\end{DoxyItemize}In both cases, begin by \mbox{\hyperlink{class_fl___printer_a8f3603112736f55dd08ef7ad4aaed551}{start\+\_\+job()}}, \mbox{\hyperlink{class_fl___printer_aa7c9294391ecebe05a59b868fe16bac1}{start\+\_\+page()}}, \mbox{\hyperlink{class_fl___printer_ae7d6d14dd0c0711634f38c599811db9c}{printable\+\_\+rect()}} and \mbox{\hyperlink{class_fl___printer_ab06af1da74d884b3acc3fd653bfa665e}{origin()}} calls and finish by \mbox{\hyperlink{class_fl___printer_ac3afd751b80f12a11f02a6e87eeb332a}{end\+\_\+page()}} and \mbox{\hyperlink{class_fl___printer_a181c505fbfba8818368f844f7276b06a}{end\+\_\+job()}} calls. 
+
+Example of use\+: print a widget centered in a page 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <\mbox{\hyperlink{_fl___printer_8_h}{FL/Fl\_Printer.H}}>}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include <\mbox{\hyperlink{fl__draw_8_h}{FL/fl\_draw.H}}>}}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{png_8h_ad46179dbe9c68fdcea52b34c3480ec0f}{width}}, height;}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *widget = ...  \textcolor{comment}{// a widget we want printed}}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___printer}{Fl\_Printer}} *printer = \textcolor{keyword}{new} \mbox{\hyperlink{class_fl___printer_a82f5d6a0fe67c6b756251c6c2f470010}{Fl\_Printer}}();}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (printer-\/>\mbox{\hyperlink{class_fl___printer_a8f3603112736f55dd08ef7ad4aaed551}{start\_job}}(1) == 0) \{}
+\DoxyCodeLine{ printer-\/>\mbox{\hyperlink{class_fl___printer_aa7c9294391ecebe05a59b868fe16bac1}{start\_page}}();}
+\DoxyCodeLine{ printer-\/>\mbox{\hyperlink{class_fl___printer_ae7d6d14dd0c0711634f38c599811db9c}{printable\_rect}}(\&\mbox{\hyperlink{png_8h_ad46179dbe9c68fdcea52b34c3480ec0f}{width}}, \&height);}
+\DoxyCodeLine{ \mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\_color}}(\mbox{\hyperlink{_enumerations_8_h_a705ea07a3ad2b7e3b7745c9c3c651bba}{FL\_BLACK}});}
+\DoxyCodeLine{ \mbox{\hyperlink{group__fl__drawings_ga75ac53c05a97bbb01a22ff56a382f52d}{fl\_line\_style}}(\mbox{\hyperlink{group__fl__drawings_ggabc6126af1d45847bc59afa0aa3216b04ac795ee9acc4107748784fe6bb3c32178}{FL\_SOLID}}, 2);}
+\DoxyCodeLine{ \mbox{\hyperlink{group__fl__drawings_ga690c83e11f49fa837b563f4c0bc4fd1b}{fl\_rect}}(0, 0, \mbox{\hyperlink{png_8h_ad46179dbe9c68fdcea52b34c3480ec0f}{width}}, height);}
+\DoxyCodeLine{ \mbox{\hyperlink{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}{fl\_font}}(\mbox{\hyperlink{_enumerations_8_h_ae722fe030bd9bcba33f045098295579d}{FL\_COURIER}}, 12);}
+\DoxyCodeLine{ time\_t now; time(\&now); \mbox{\hyperlink{group__fl__drawings_gacf054f0c5c5d3ab6caa1e8be3d58ec7e}{fl\_draw}}(ctime(\&now), 0, \mbox{\hyperlink{group__fl__attributes_gac4acb828270adf35bf1d8fc06051f938}{fl\_height}}());}
+\DoxyCodeLine{ printer-\/>\mbox{\hyperlink{class_fl___printer_ab06af1da74d884b3acc3fd653bfa665e}{origin}}(\mbox{\hyperlink{png_8h_ad46179dbe9c68fdcea52b34c3480ec0f}{width}}/2, height/2);}
+\DoxyCodeLine{ printer-\/>\mbox{\hyperlink{class_fl___printer_a0b6a37315107179fec2eab69008f5150}{print\_widget}}(widget, -\/widget-\/>\mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}()/2, -\/widget-\/>\mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}()/2);}
+\DoxyCodeLine{ printer-\/>\mbox{\hyperlink{class_fl___printer_ac3afd751b80f12a11f02a6e87eeb332a}{end\_page}}();}
+\DoxyCodeLine{ printer-\/>\mbox{\hyperlink{class_fl___printer_a181c505fbfba8818368f844f7276b06a}{end\_job}}();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{keyword}{delete} printer;}
+\end{DoxyCode}
+ {\bfseries{Platform specifics}} 
+\begin{DoxyItemize}
+\item Unix/\+Linux platforms\+: Unless it has been previously changed, the default paper size is A4. To change that, press the \char`\"{}\+Properties\char`\"{} button of the \char`\"{}\+Print\char`\"{} dialog window opened by an \mbox{\hyperlink{class_fl___printer_a8f3603112736f55dd08ef7ad4aaed551}{Fl\+\_\+\+Printer\+::start\+\_\+job()}} call. This opens a \char`\"{}\+Printer Properties\char`\"{} window where it\textquotesingle{}s possible to select the adequate paper size. Finally press the \char`\"{}\+Save\char`\"{} button therein to assign the chosen paper size to the chosen printer for this and all further print operations. ~\newline
+Class \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} prints but loses its transparency if it has one. See class \mbox{\hyperlink{class_fl___post_script___graphics___driver}{Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver}} for a description of how U\+T\+F-\/8 strings appear in print. Use the static public attributes of this class to set the print dialog to other languages than English. For example, the \char`\"{}\+Printer\+:\char`\"{} dialog item \mbox{\hyperlink{class_fl___printer_addb8c90d951d73581750bb3249129b4b}{Fl\+\_\+\+Printer\+::dialog\+\_\+printer}} can be set to French with\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl___printer_addb8c90d951d73581750bb3249129b4b}{Fl\_Printer::dialog\_printer}} = \textcolor{stringliteral}{"Imprimante:"};}
+\end{DoxyCode}
+ before creation of the \mbox{\hyperlink{class_fl___printer}{Fl\+\_\+\+Printer}} object. Use \mbox{\hyperlink{class_fl___post_script___file___device_a3de1d5150d6da464b821bc18e798deb2}{Fl\+\_\+\+Post\+Script\+\_\+\+File\+\_\+\+Device\+::file\+\_\+chooser\+\_\+title}} to customize the title of the file chooser dialog that opens when using the \char`\"{}\+Print To File\char`\"{} option of the print dialog. 
+\item M\+S\+Windows platform\+: Transparent \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} \textquotesingle{}s don\textquotesingle{}t print with exact transparency on most printers. \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} \textquotesingle{}s don\textquotesingle{}t \mbox{\hyperlink{class_fl___printer_a2c5e858532b376ee7627369c9c8b1c36}{rotate()}} well. A workaround is to use the \mbox{\hyperlink{class_fl___printer_afb75fad498e6e1eacd8d66f54a0964fd}{print\+\_\+window\+\_\+part()}} call. 
+\item Mac OS X platform\+: all graphics requests print as on display. 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___printer_a82f5d6a0fe67c6b756251c6c2f470010}\label{class_fl___printer_a82f5d6a0fe67c6b756251c6c2f470010}} 
+\index{Fl\_Printer@{Fl\_Printer}!Fl\_Printer@{Fl\_Printer}}
+\index{Fl\_Printer@{Fl\_Printer}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{Fl\_Printer()}{Fl\_Printer()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Printer\+::\+Fl\+\_\+\+Printer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+The constructor. 
+
+\mbox{\Hypertarget{class_fl___printer_a9204f3ba398e223644aa43549f6c151f}\label{class_fl___printer_a9204f3ba398e223644aa43549f6c151f}} 
+\index{Fl\_Printer@{Fl\_Printer}!````~Fl\_Printer@{$\sim$Fl\_Printer}}
+\index{````~Fl\_Printer@{$\sim$Fl\_Printer}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Printer()}{~Fl\_Printer()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Printer\+::$\sim$\+Fl\+\_\+\+Printer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})}
+
+
+
+The destructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___printer_a8c51e8af2802d245d5a9d1cfa34413ae}\label{class_fl___printer_a8c51e8af2802d245d5a9d1cfa34413ae}} 
+\index{Fl\_Printer@{Fl\_Printer}!class\_name@{class\_name}}
+\index{class\_name@{class\_name}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{class\_name()}{class\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::class\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the class of this object. Use of the \mbox{\hyperlink{class_fl___printer_a8c51e8af2802d245d5a9d1cfa34413ae}{class\+\_\+name()}} function is discouraged because it will be removed from future F\+L\+TK versions.
+
+The class of an instance of an \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}} subclass can be checked with code such as\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( instance-\/>class\_name() == \mbox{\hyperlink{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}{Fl\_Printer::class\_id}} ) \{ ... \}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_abf25bf6a1dbe7e4dc6de7ce7c5564425}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_a78199e623a881add8bea473d3feb0b7e}\label{class_fl___printer_a78199e623a881add8bea473d3feb0b7e}} 
+\index{Fl\_Printer@{Fl\_Printer}!driver@{driver}}
+\index{driver@{driver}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{driver()}{driver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___graphics___driver}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}$\ast$ Fl\+\_\+\+Printer\+::driver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___printer_a181c505fbfba8818368f844f7276b06a}\label{class_fl___printer_a181c505fbfba8818368f844f7276b06a}} 
+\index{Fl\_Printer@{Fl\_Printer}!end\_job@{end\_job}}
+\index{end\_job@{end\_job}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{end\_job()}{end\_job()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::end\+\_\+job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_a01e95f5653ffe7dd0449523fe034f3dd}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_ac3afd751b80f12a11f02a6e87eeb332a}\label{class_fl___printer_ac3afd751b80f12a11f02a6e87eeb332a}} 
+\index{Fl\_Printer@{Fl\_Printer}!end\_page@{end\_page}}
+\index{end\_page@{end\_page}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{end\_page()}{end\_page()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Printer\+::end\+\_\+page (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_ab1ec16db7eff39c97158c46dfd3f26ab}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_ab0bb5557d714b1b8c0705c8af56bd26a}\label{class_fl___printer_ab0bb5557d714b1b8c0705c8af56bd26a}} 
+\index{Fl\_Printer@{Fl\_Printer}!margins@{margins}}
+\index{margins@{margins}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{margins()}{margins()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::margins (\begin{DoxyParamCaption}\item[{int $\ast$}]{left,  }\item[{int $\ast$}]{top,  }\item[{int $\ast$}]{right,  }\item[{int $\ast$}]{bottom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_ad8d2fbae44a6b5221867e221302e204f}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_ab06af1da74d884b3acc3fd653bfa665e}\label{class_fl___printer_ab06af1da74d884b3acc3fd653bfa665e}} 
+\index{Fl\_Printer@{Fl\_Printer}!origin@{origin}}
+\index{origin@{origin}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{origin()}{origin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::origin (\begin{DoxyParamCaption}\item[{int $\ast$}]{x,  }\item[{int $\ast$}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_a92d3b9e9eae1999dbf4a8765865121d1}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_ac373a57ae77016b7c0565361323ceebc}\label{class_fl___printer_ac373a57ae77016b7c0565361323ceebc}} 
+\index{Fl\_Printer@{Fl\_Printer}!origin@{origin}}
+\index{origin@{origin}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{origin()}{origin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::origin (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_a46a89091366c52f6ea6b0505e1491f56}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_a0b6a37315107179fec2eab69008f5150}\label{class_fl___printer_a0b6a37315107179fec2eab69008f5150}} 
+\index{Fl\_Printer@{Fl\_Printer}!print\_widget@{print\_widget}}
+\index{print\_widget@{print\_widget}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{print\_widget()}{print\_widget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::print\+\_\+widget (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{widget,  }\item[{int}]{delta\+\_\+x = {\ttfamily 0},  }\item[{int}]{delta\+\_\+y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_af2402a48e58aeddf8b5ea4b0c123680b}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_afb75fad498e6e1eacd8d66f54a0964fd}\label{class_fl___printer_afb75fad498e6e1eacd8d66f54a0964fd}} 
+\index{Fl\_Printer@{Fl\_Printer}!print\_window\_part@{print\_window\_part}}
+\index{print\_window\_part@{print\_window\_part}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{print\_window\_part()}{print\_window\_part()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::print\+\_\+window\+\_\+part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$}]{win,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{delta\+\_\+x = {\ttfamily 0},  }\item[{int}]{delta\+\_\+y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_a76e6705926d9d248d5a2a66fb2e73891}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_ae7d6d14dd0c0711634f38c599811db9c}\label{class_fl___printer_ae7d6d14dd0c0711634f38c599811db9c}} 
+\index{Fl\_Printer@{Fl\_Printer}!printable\_rect@{printable\_rect}}
+\index{printable\_rect@{printable\_rect}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{printable\_rect()}{printable\_rect()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Printer\+::printable\+\_\+rect (\begin{DoxyParamCaption}\item[{int $\ast$}]{w,  }\item[{int $\ast$}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_a3b011dfd719ec2e25983156b31025659}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_a2c5e858532b376ee7627369c9c8b1c36}\label{class_fl___printer_a2c5e858532b376ee7627369c9c8b1c36}} 
+\index{Fl\_Printer@{Fl\_Printer}!rotate@{rotate}}
+\index{rotate@{rotate}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::rotate (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_a5a8b84a78b42bd877441bef8f76ffeea}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_a0b991bd8a66b8f5171cb1ee262834476}\label{class_fl___printer_a0b991bd8a66b8f5171cb1ee262834476}} 
+\index{Fl\_Printer@{Fl\_Printer}!scale@{scale}}
+\index{scale@{scale}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::scale (\begin{DoxyParamCaption}\item[{float}]{scale\+\_\+x,  }\item[{float}]{scale\+\_\+y = {\ttfamily 0.} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_a8c26c265026ed7b856569951f94dfd82}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_af29bb9b0f186dae10d35e7a22a463ea4}\label{class_fl___printer_af29bb9b0f186dae10d35e7a22a463ea4}} 
+\index{Fl\_Printer@{Fl\_Printer}!set\_current@{set\_current}}
+\index{set\_current@{set\_current}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{set\_current()}{set\_current()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::set\+\_\+current (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___surface___device_a6f88aed1b68854433d60cf23731c3d79}{Fl\+\_\+\+Surface\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_a8f3603112736f55dd08ef7ad4aaed551}\label{class_fl___printer_a8f3603112736f55dd08ef7ad4aaed551}} 
+\index{Fl\_Printer@{Fl\_Printer}!start\_job@{start\_job}}
+\index{start\_job@{start\_job}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{start\_job()}{start\_job()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Printer\+::start\+\_\+job (\begin{DoxyParamCaption}\item[{int}]{pagecount,  }\item[{int $\ast$}]{frompage = {\ttfamily \mbox{\hyperlink{forms_8_h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}},  }\item[{int $\ast$}]{topage = {\ttfamily \mbox{\hyperlink{forms_8_h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_a0eefff6e13d182e89a701734415ce3cf}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_aa7c9294391ecebe05a59b868fe16bac1}\label{class_fl___printer_aa7c9294391ecebe05a59b868fe16bac1}} 
+\index{Fl\_Printer@{Fl\_Printer}!start\_page@{start\_page}}
+\index{start\_page@{start\_page}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{start\_page()}{start\_page()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Printer\+::start\+\_\+page (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_a2fb9ba843c0fe945369c8710a7afaaf7}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_a2b49948772a2fbe2d7a849ead465c36a}\label{class_fl___printer_a2b49948772a2fbe2d7a849ead465c36a}} 
+\index{Fl\_Printer@{Fl\_Printer}!translate@{translate}}
+\index{translate@{translate}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{translate()}{translate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::translate (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_a22f1582a5074bb2d07a4d378d4b1f8a7}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+\mbox{\Hypertarget{class_fl___printer_a76093f5f33d65cbdf94212da159069b0}\label{class_fl___printer_a76093f5f33d65cbdf94212da159069b0}} 
+\index{Fl\_Printer@{Fl\_Printer}!untranslate@{untranslate}}
+\index{untranslate@{untranslate}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{untranslate()}{untranslate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Printer\+::untranslate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___paged___device_ac77b974b0db3c03e949d61ae5758b0cb}{Fl\+\_\+\+Paged\+\_\+\+Device}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}\label{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}} 
+\index{Fl\_Printer@{Fl\_Printer}!class\_id@{class\_id}}
+\index{class\_id@{class\_id}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{class\_id}{class\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::class\+\_\+id\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_abf3ac3731ecfd156cbf755004c966a51}\label{class_fl___printer_abf3ac3731ecfd156cbf755004c966a51}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_all@{dialog\_all}}
+\index{dialog\_all@{dialog\_all}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_all}{dialog\_all}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+all\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_aaf63b5160eedb6fc08fb8dc4402da11b}\label{class_fl___printer_aaf63b5160eedb6fc08fb8dc4402da11b}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_cancel\_button@{dialog\_cancel\_button}}
+\index{dialog\_cancel\_button@{dialog\_cancel\_button}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_cancel\_button}{dialog\_cancel\_button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+cancel\+\_\+button\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_aefd6f8ce36856256d5dabc4d170808be}\label{class_fl___printer_aefd6f8ce36856256d5dabc4d170808be}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_copies@{dialog\_copies}}
+\index{dialog\_copies@{dialog\_copies}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_copies}{dialog\_copies}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+copies\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_a42e32445bd0a9b689b4d73be0171a6e9}\label{class_fl___printer_a42e32445bd0a9b689b4d73be0171a6e9}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_copyNo@{dialog\_copyNo}}
+\index{dialog\_copyNo@{dialog\_copyNo}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_copyNo}{dialog\_copyNo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+copy\+No\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_a95b7906caa1f6cc987bdf8186cda4c2d}\label{class_fl___printer_a95b7906caa1f6cc987bdf8186cda4c2d}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_from@{dialog\_from}}
+\index{dialog\_from@{dialog\_from}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_from}{dialog\_from}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+from\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_a0e574e5d7194ec91bd0c5b76311c9388}\label{class_fl___printer_a0e574e5d7194ec91bd0c5b76311c9388}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_pages@{dialog\_pages}}
+\index{dialog\_pages@{dialog\_pages}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_pages}{dialog\_pages}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+pages\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_afa0e6278a09493d0e0786c77592f7691}\label{class_fl___printer_afa0e6278a09493d0e0786c77592f7691}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_print\_button@{dialog\_print\_button}}
+\index{dialog\_print\_button@{dialog\_print\_button}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_print\_button}{dialog\_print\_button}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+print\+\_\+button\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_a7968efeb95d3109b621f7f2c96cb41e9}\label{class_fl___printer_a7968efeb95d3109b621f7f2c96cb41e9}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_print\_to\_file@{dialog\_print\_to\_file}}
+\index{dialog\_print\_to\_file@{dialog\_print\_to\_file}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_print\_to\_file}{dialog\_print\_to\_file}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+print\+\_\+to\+\_\+file\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_addb8c90d951d73581750bb3249129b4b}\label{class_fl___printer_addb8c90d951d73581750bb3249129b4b}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_printer@{dialog\_printer}}
+\index{dialog\_printer@{dialog\_printer}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_printer}{dialog\_printer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+printer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_a83aaf637ed6f58613c5c4d86e3b64762}\label{class_fl___printer_a83aaf637ed6f58613c5c4d86e3b64762}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_properties@{dialog\_properties}}
+\index{dialog\_properties@{dialog\_properties}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_properties}{dialog\_properties}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+properties\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_a47e2d2a1a52e66a9a976bd559cb9fa4a}\label{class_fl___printer_a47e2d2a1a52e66a9a976bd559cb9fa4a}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_range@{dialog\_range}}
+\index{dialog\_range@{dialog\_range}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_range}{dialog\_range}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+range\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_afaf40f8c9393c2f1cf939cbbc4c30fde}\label{class_fl___printer_afaf40f8c9393c2f1cf939cbbc4c30fde}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_title@{dialog\_title}}
+\index{dialog\_title@{dialog\_title}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_title}{dialog\_title}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+title\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_ab4d990c3aa0ff8233c717e384866094c}\label{class_fl___printer_ab4d990c3aa0ff8233c717e384866094c}} 
+\index{Fl\_Printer@{Fl\_Printer}!dialog\_to@{dialog\_to}}
+\index{dialog\_to@{dialog\_to}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{dialog\_to}{dialog\_to}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::dialog\+\_\+to\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_a99db4d8645d80fccf7ccd2d60b872723}\label{class_fl___printer_a99db4d8645d80fccf7ccd2d60b872723}} 
+\index{Fl\_Printer@{Fl\_Printer}!property\_cancel@{property\_cancel}}
+\index{property\_cancel@{property\_cancel}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{property\_cancel}{property\_cancel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::property\+\_\+cancel\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_a9bce73ce2b629204ed08117b3ca973fa}\label{class_fl___printer_a9bce73ce2b629204ed08117b3ca973fa}} 
+\index{Fl\_Printer@{Fl\_Printer}!property\_mode@{property\_mode}}
+\index{property\_mode@{property\_mode}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{property\_mode}{property\_mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::property\+\_\+mode\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_ab84885eff5c54da9a5012a37bea97b95}\label{class_fl___printer_ab84885eff5c54da9a5012a37bea97b95}} 
+\index{Fl\_Printer@{Fl\_Printer}!property\_pagesize@{property\_pagesize}}
+\index{property\_pagesize@{property\_pagesize}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{property\_pagesize}{property\_pagesize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::property\+\_\+pagesize\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_a4ba4b018aac4a1fb54f6e3aa1f97300a}\label{class_fl___printer_a4ba4b018aac4a1fb54f6e3aa1f97300a}} 
+\index{Fl\_Printer@{Fl\_Printer}!property\_save@{property\_save}}
+\index{property\_save@{property\_save}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{property\_save}{property\_save}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::property\+\_\+save\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_a2b3942ca875f8dc7c9d359a0fdad830b}\label{class_fl___printer_a2b3942ca875f8dc7c9d359a0fdad830b}} 
+\index{Fl\_Printer@{Fl\_Printer}!property\_title@{property\_title}}
+\index{property\_title@{property\_title}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{property\_title}{property\_title}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::property\+\_\+title\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___printer_ad3fac35e8ab0387b2792528b89a6123e}\label{class_fl___printer_ad3fac35e8ab0387b2792528b89a6123e}} 
+\index{Fl\_Printer@{Fl\_Printer}!property\_use@{property\_use}}
+\index{property\_use@{property\_use}!Fl\_Printer@{Fl\_Printer}}
+\doxysubsubsection{\texorpdfstring{property\_use}{property\_use}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Printer\+::property\+\_\+use\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___printer_8_h}{Fl\+\_\+\+Printer.\+H}}\end{DoxyCompactItemize}

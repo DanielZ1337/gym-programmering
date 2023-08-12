@@ -1,0 +1,537 @@
+\hypertarget{class_fl___file___chooser}{}\doxysection{Fl\+\_\+\+File\+\_\+\+Chooser Class Reference}
+\label{class_fl___file___chooser}\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+File\+\_\+\+Chooser.\+H$>$}
+
+
+
+Collaboration diagram for Fl\+\_\+\+File\+\_\+\+Chooser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_fl___file___chooser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8a7df2f17a7011faf37a53f104fbafd38e}{S\+I\+N\+G\+LE}} = 0, 
+\mbox{\hyperlink{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8a8573a5da5321830b609242a690a9fd2e}{M\+U\+L\+TI}} = 1, 
+\mbox{\hyperlink{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8ac17cf50ca49a1ececc33404862681f86}{C\+R\+E\+A\+TE}} = 2, 
+\mbox{\hyperlink{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8a54bcbc8751bf709bb01526506c754664}{D\+I\+R\+E\+C\+T\+O\+RY}} = 4
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___file___chooser_aa4f6aaf451e7d3a29756ec39e377b477}{Fl\+\_\+\+File\+\_\+\+Chooser}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$d, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$p, int t, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$title)
+\item 
+\mbox{\hyperlink{class_fl___file___chooser_a6a4d5e2d9ff4c97b8ba97a76acd0e369}{$\sim$\+Fl\+\_\+\+File\+\_\+\+Chooser}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a26ae429e07d1de9af942dcb886c9f186}{callback}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$cb)(\mbox{\hyperlink{class_fl___file___chooser}{Fl\+\_\+\+File\+\_\+\+Chooser}} $\ast$, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$), \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$d=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a51268c3edd14dd72acb0917cbba0bfea}{color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___file___chooser_ad596c8ea36da1ea0975ae351ee61e548}{color}} ()
+\item 
+int \mbox{\hyperlink{class_fl___file___chooser_ac4da9a5cca9f63937b0c47fb7d95625a}{count}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_ab69c3992f9a311c6c592a805997dfa35}{directory}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$d)
+\item 
+char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_aa3dc77c5eacf4b39302391dacde725e7}{directory}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_ad547bf13b074a625b92a81602a66d100}{filter}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$p)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_accd5baa4533adf966e2586d56ac1fcf5}{filter}} ()
+\item 
+int \mbox{\hyperlink{class_fl___file___chooser_a3975f481683dffa2b813e9a9d4ad218e}{filter\+\_\+value}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a4f426f3b44a4727a9ed885eaeff83146}{filter\+\_\+value}} (int f)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_ab45a17da37439c2bd595a4b59f1e286c}{hide}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a9b9ca396348c767b2858d49c1e3cb4a2}{iconsize}} (\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}})
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{class_fl___file___chooser_a657ed90de9d5eea97adbd3081151a35f}{iconsize}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_afde5368b820d947238015d16af9b8fc1}{label}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a76dd95afcd7ba3eea34bfd5ee5800172}{label}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a6110852fc9f3e29486b0ab71e9423732}{ok\+\_\+label}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_abc8874d3157fe256609860754158f4c0}{ok\+\_\+label}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_af81a4ad0dd14ff1c601673586ee6a535}{preview}} (int e)
+\item 
+int \mbox{\hyperlink{class_fl___file___chooser_a3e37eff376d004a8b082e7ff2849986f}{preview}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a9b2f44473b1694a84c83afa78cdc28b3}{rescan}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a5dac45a6f5157ced0f5888c0cfe7146d}{rescan\+\_\+keep\+\_\+filename}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a2f58cce9eb3bfc34778a657f9e4ae36f}{show}} ()
+\item 
+int \mbox{\hyperlink{class_fl___file___chooser_a00f944df065d7dca16de8865d775aa31}{shown}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a541a1c0f670e635363c31e9875e3d458}{textcolor}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___file___chooser_a11691cd1925a1d2e16e38a16d4e0bdba}{textcolor}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a9c76bef3d23a7a80a1a91e260e553d6d}{textfont}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} f)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{class_fl___file___chooser_a6837a5b234e589f14c7d5eed0867a0bf}{textfont}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a13d55aea2af92464a98f396d679115d7}{textsize}} (\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{class_fl___file___chooser_a524ccef4beb1912a2566ced7d6182c66}{textsize}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_aea6ac5b4c44fe77427384424d41b92d7}{type}} (int t)
+\item 
+int \mbox{\hyperlink{class_fl___file___chooser_aa49156e7c025d6d03b4bebef1e717d58}{type}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a9405bb14d41a34b20fbbe50a211e52ae}{user\+\_\+data}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a80679496b39024b3f721e6e8b02465be}{user\+\_\+data}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$d)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_ae87103a908ae90ec0f8659b12cdfceb7}{value}} (int f=1)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___file___chooser_a1a40dc6a645c27e4fb4fff2e01a8c0c1}{value}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$filename)
+\item 
+int \mbox{\hyperlink{class_fl___file___chooser_a2514cf44d31135b327434341125b39bd}{visible}} ()
+\item 
+\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a9d15c7021ab0271c49d4e7e2ffe4c85e}{add\+\_\+extra}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$gr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___button}{Fl\+\_\+\+Button}} $\ast$ \mbox{\hyperlink{class_fl___file___chooser_ad41b3af5d0575054584343ced1f2c2a9}{new\+Button}}
+\item 
+\mbox{\hyperlink{class_fl___check___button}{Fl\+\_\+\+Check\+\_\+\+Button}} $\ast$ \mbox{\hyperlink{class_fl___file___chooser_abbacddae2dba6b4bfdd54096d6b4d9a9}{preview\+Button}}
+\item 
+\mbox{\hyperlink{class_fl___check___button}{Fl\+\_\+\+Check\+\_\+\+Button}} $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a6d5a65cbd28e010104b8df526e145bc5}{show\+Hidden\+Button}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a500fe7edaa8935b6c9c99fee3f983fe6}{add\+\_\+favorites\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a6536764bff381a2520bcd536fd61a2f2}{all\+\_\+files\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a5716440a9de224f5b3f07fa5047941bb}{custom\+\_\+filter\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a415483f9b152dc8dcea3d7e4495bd408}{existing\+\_\+file\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a947c93ddca7538f0a5fa4c731b00f450}{favorites\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a88b9eaf7abfd0b35f3dff8cd0e26993d}{filename\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a10a9e7a71a0965ca9ee8aa8104302f58}{filesystems\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a5694e2148a8ac3f0c9c74e4b9eafcc40}{manage\+\_\+favorites\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_ad0a4168c7ac776a5e6f28c788c0f0766}{new\+\_\+directory\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a515a4eddc7c1991f8d243f1da2cb6c30}{new\+\_\+directory\+\_\+tooltip}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_ae9d25c0b11c63bf70b25f4a73b2b28b2}{preview\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a84bce134d9b12664d9fc0253cdd51981}{save\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a688d7a4d8b0ea566e9b9577140a13348}{show\+\_\+label}}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a61fb970bdbd568ebebfbe4a4813aa45f}{hidden\+\_\+label}}
+\item 
+static \mbox{\hyperlink{group__filenames_gaaf6f4a54bb593dcf326fc5d12bb1435c}{Fl\+\_\+\+File\+\_\+\+Sort\+\_\+F}} $\ast$ \mbox{\hyperlink{class_fl___file___chooser_a4841ed8977d5a907194fff7860fb56c8}{sort}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8}\label{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SINGLE@{SINGLE}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!SINGLE@{SINGLE}}}\mbox{\Hypertarget{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8a7df2f17a7011faf37a53f104fbafd38e}\label{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8a7df2f17a7011faf37a53f104fbafd38e}} 
+S\+I\+N\+G\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MULTI@{MULTI}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!MULTI@{MULTI}}}\mbox{\Hypertarget{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8a8573a5da5321830b609242a690a9fd2e}\label{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8a8573a5da5321830b609242a690a9fd2e}} 
+M\+U\+L\+TI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CREATE@{CREATE}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!CREATE@{CREATE}}}\mbox{\Hypertarget{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8ac17cf50ca49a1ececc33404862681f86}\label{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8ac17cf50ca49a1ececc33404862681f86}} 
+C\+R\+E\+A\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIRECTORY@{DIRECTORY}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!DIRECTORY@{DIRECTORY}}}\mbox{\Hypertarget{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8a54bcbc8751bf709bb01526506c754664}\label{class_fl___file___chooser_ae1d3db5153f7aa5499b2d9fe950ae2b8a54bcbc8751bf709bb01526506c754664}} 
+D\+I\+R\+E\+C\+T\+O\+RY&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___file___chooser_aa4f6aaf451e7d3a29756ec39e377b477}\label{class_fl___file___chooser_aa4f6aaf451e7d3a29756ec39e377b477}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{Fl\_File\_Chooser()}{Fl\_File\_Chooser()}}
+{\footnotesize\ttfamily Fl\+\_\+\+File\+\_\+\+Chooser\+::\+Fl\+\_\+\+File\+\_\+\+Chooser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{d,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{p,  }\item[{int}]{t,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a6a4d5e2d9ff4c97b8ba97a76acd0e369}\label{class_fl___file___chooser_a6a4d5e2d9ff4c97b8ba97a76acd0e369}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!````~Fl\_File\_Chooser@{$\sim$Fl\_File\_Chooser}}
+\index{````~Fl\_File\_Chooser@{$\sim$Fl\_File\_Chooser}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_File\_Chooser()}{~Fl\_File\_Chooser()}}
+{\footnotesize\ttfamily Fl\+\_\+\+File\+\_\+\+Chooser\+::$\sim$\+Fl\+\_\+\+File\+\_\+\+Chooser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___file___chooser_a9d15c7021ab0271c49d4e7e2ffe4c85e}\label{class_fl___file___chooser_a9d15c7021ab0271c49d4e7e2ffe4c85e}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!add\_extra@{add\_extra}}
+\index{add\_extra@{add\_extra}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{add\_extra()}{add\_extra()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}}$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::add\+\_\+extra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{gr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a26ae429e07d1de9af942dcb886c9f186}\label{class_fl___file___chooser_a26ae429e07d1de9af942dcb886c9f186}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!callback@{callback}}
+\index{callback@{callback}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}($\ast$)(\mbox{\hyperlink{class_fl___file___chooser}{Fl\+\_\+\+File\+\_\+\+Chooser}} $\ast$, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$)}]{cb,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{d = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_ad596c8ea36da1ea0975ae351ee61e548}\label{class_fl___file___chooser_ad596c8ea36da1ea0975ae351ee61e548}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!color@{color}}
+\index{color@{color}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+File\+\_\+\+Chooser\+::color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a51268c3edd14dd72acb0917cbba0bfea}\label{class_fl___file___chooser_a51268c3edd14dd72acb0917cbba0bfea}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!color@{color}}
+\index{color@{color}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_ac4da9a5cca9f63937b0c47fb7d95625a}\label{class_fl___file___chooser_ac4da9a5cca9f63937b0c47fb7d95625a}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!count@{count}}
+\index{count@{count}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+File\+\_\+\+Chooser\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_aa3dc77c5eacf4b39302391dacde725e7}\label{class_fl___file___chooser_aa3dc77c5eacf4b39302391dacde725e7}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!directory@{directory}}
+\index{directory@{directory}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{directory()}{directory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_ab69c3992f9a311c6c592a805997dfa35}\label{class_fl___file___chooser_ab69c3992f9a311c6c592a805997dfa35}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!directory@{directory}}
+\index{directory@{directory}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{directory()}{directory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::directory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_accd5baa4533adf966e2586d56ac1fcf5}\label{class_fl___file___chooser_accd5baa4533adf966e2586d56ac1fcf5}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!filter@{filter}}
+\index{filter@{filter}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_ad547bf13b074a625b92a81602a66d100}\label{class_fl___file___chooser_ad547bf13b074a625b92a81602a66d100}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!filter@{filter}}
+\index{filter@{filter}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a3975f481683dffa2b813e9a9d4ad218e}\label{class_fl___file___chooser_a3975f481683dffa2b813e9a9d4ad218e}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!filter\_value@{filter\_value}}
+\index{filter\_value@{filter\_value}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{filter\_value()}{filter\_value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+File\+\_\+\+Chooser\+::filter\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a4f426f3b44a4727a9ed885eaeff83146}\label{class_fl___file___chooser_a4f426f3b44a4727a9ed885eaeff83146}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!filter\_value@{filter\_value}}
+\index{filter\_value@{filter\_value}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{filter\_value()}{filter\_value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::filter\+\_\+value (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_ab45a17da37439c2bd595a4b59f1e286c}\label{class_fl___file___chooser_ab45a17da37439c2bd595a4b59f1e286c}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!hide@{hide}}
+\index{hide@{hide}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{hide()}{hide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::hide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a657ed90de9d5eea97adbd3081151a35f}\label{class_fl___file___chooser_a657ed90de9d5eea97adbd3081151a35f}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!iconsize@{iconsize}}
+\index{iconsize@{iconsize}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{iconsize()}{iconsize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} Fl\+\_\+\+File\+\_\+\+Chooser\+::iconsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a9b9ca396348c767b2858d49c1e3cb4a2}\label{class_fl___file___chooser_a9b9ca396348c767b2858d49c1e3cb4a2}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!iconsize@{iconsize}}
+\index{iconsize@{iconsize}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{iconsize()}{iconsize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::iconsize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a76dd95afcd7ba3eea34bfd5ee5800172}\label{class_fl___file___chooser_a76dd95afcd7ba3eea34bfd5ee5800172}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!label@{label}}
+\index{label@{label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_afde5368b820d947238015d16af9b8fc1}\label{class_fl___file___chooser_afde5368b820d947238015d16af9b8fc1}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!label@{label}}
+\index{label@{label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_abc8874d3157fe256609860754158f4c0}\label{class_fl___file___chooser_abc8874d3157fe256609860754158f4c0}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!ok\_label@{ok\_label}}
+\index{ok\_label@{ok\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{ok\_label()}{ok\_label()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::ok\+\_\+label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a6110852fc9f3e29486b0ab71e9423732}\label{class_fl___file___chooser_a6110852fc9f3e29486b0ab71e9423732}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!ok\_label@{ok\_label}}
+\index{ok\_label@{ok\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{ok\_label()}{ok\_label()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::ok\+\_\+label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a3e37eff376d004a8b082e7ff2849986f}\label{class_fl___file___chooser_a3e37eff376d004a8b082e7ff2849986f}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!preview@{preview}}
+\index{preview@{preview}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{preview()}{preview()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+File\+\_\+\+Chooser\+::preview (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_fl___file___chooser_a3e37eff376d004a8b082e7ff2849986f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___file___chooser_af81a4ad0dd14ff1c601673586ee6a535}\label{class_fl___file___chooser_af81a4ad0dd14ff1c601673586ee6a535}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!preview@{preview}}
+\index{preview@{preview}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{preview()}{preview()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::preview (\begin{DoxyParamCaption}\item[{int}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a9b2f44473b1694a84c83afa78cdc28b3}\label{class_fl___file___chooser_a9b2f44473b1694a84c83afa78cdc28b3}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!rescan@{rescan}}
+\index{rescan@{rescan}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{rescan()}{rescan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::rescan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a5dac45a6f5157ced0f5888c0cfe7146d}\label{class_fl___file___chooser_a5dac45a6f5157ced0f5888c0cfe7146d}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!rescan\_keep\_filename@{rescan\_keep\_filename}}
+\index{rescan\_keep\_filename@{rescan\_keep\_filename}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{rescan\_keep\_filename()}{rescan\_keep\_filename()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::rescan\+\_\+keep\+\_\+filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a2f58cce9eb3bfc34778a657f9e4ae36f}\label{class_fl___file___chooser_a2f58cce9eb3bfc34778a657f9e4ae36f}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!show@{show}}
+\index{show@{show}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a00f944df065d7dca16de8865d775aa31}\label{class_fl___file___chooser_a00f944df065d7dca16de8865d775aa31}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!shown@{shown}}
+\index{shown@{shown}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{shown()}{shown()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+File\+\_\+\+Chooser\+::shown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a11691cd1925a1d2e16e38a16d4e0bdba}\label{class_fl___file___chooser_a11691cd1925a1d2e16e38a16d4e0bdba}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!textcolor@{textcolor}}
+\index{textcolor@{textcolor}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{textcolor()}{textcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+File\+\_\+\+Chooser\+::textcolor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a541a1c0f670e635363c31e9875e3d458}\label{class_fl___file___chooser_a541a1c0f670e635363c31e9875e3d458}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!textcolor@{textcolor}}
+\index{textcolor@{textcolor}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{textcolor()}{textcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::textcolor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a6837a5b234e589f14c7d5eed0867a0bf}\label{class_fl___file___chooser_a6837a5b234e589f14c7d5eed0867a0bf}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!textfont@{textfont}}
+\index{textfont@{textfont}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{textfont()}{textfont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} Fl\+\_\+\+File\+\_\+\+Chooser\+::textfont (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a9c76bef3d23a7a80a1a91e260e553d6d}\label{class_fl___file___chooser_a9c76bef3d23a7a80a1a91e260e553d6d}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!textfont@{textfont}}
+\index{textfont@{textfont}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{textfont()}{textfont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::textfont (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{f }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a524ccef4beb1912a2566ced7d6182c66}\label{class_fl___file___chooser_a524ccef4beb1912a2566ced7d6182c66}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!textsize@{textsize}}
+\index{textsize@{textsize}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{textsize()}{textsize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} Fl\+\_\+\+File\+\_\+\+Chooser\+::textsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a13d55aea2af92464a98f396d679115d7}\label{class_fl___file___chooser_a13d55aea2af92464a98f396d679115d7}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!textsize@{textsize}}
+\index{textsize@{textsize}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{textsize()}{textsize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::textsize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}}}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_aa49156e7c025d6d03b4bebef1e717d58}\label{class_fl___file___chooser_aa49156e7c025d6d03b4bebef1e717d58}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!type@{type}}
+\index{type@{type}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+File\+\_\+\+Chooser\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_aea6ac5b4c44fe77427384424d41b92d7}\label{class_fl___file___chooser_aea6ac5b4c44fe77427384424d41b92d7}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!type@{type}}
+\index{type@{type}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::type (\begin{DoxyParamCaption}\item[{int}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a9405bb14d41a34b20fbbe50a211e52ae}\label{class_fl___file___chooser_a9405bb14d41a34b20fbbe50a211e52ae}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!user\_data@{user\_data}}
+\index{user\_data@{user\_data}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{user\_data()}{user\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::user\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a80679496b39024b3f721e6e8b02465be}\label{class_fl___file___chooser_a80679496b39024b3f721e6e8b02465be}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!user\_data@{user\_data}}
+\index{user\_data@{user\_data}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{user\_data()}{user\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::user\+\_\+data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a1a40dc6a645c27e4fb4fff2e01a8c0c1}\label{class_fl___file___chooser_a1a40dc6a645c27e4fb4fff2e01a8c0c1}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!value@{value}}
+\index{value@{value}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+File\+\_\+\+Chooser\+::value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_ae87103a908ae90ec0f8659b12cdfceb7}\label{class_fl___file___chooser_ae87103a908ae90ec0f8659b12cdfceb7}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!value@{value}}
+\index{value@{value}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::value (\begin{DoxyParamCaption}\item[{int}]{f = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a2514cf44d31135b327434341125b39bd}\label{class_fl___file___chooser_a2514cf44d31135b327434341125b39bd}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!visible@{visible}}
+\index{visible@{visible}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{visible()}{visible()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+File\+\_\+\+Chooser\+::visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___file___chooser_a500fe7edaa8935b6c9c99fee3f983fe6}\label{class_fl___file___chooser_a500fe7edaa8935b6c9c99fee3f983fe6}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!add\_favorites\_label@{add\_favorites\_label}}
+\index{add\_favorites\_label@{add\_favorites\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{add\_favorites\_label}{add\_favorites\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::add\+\_\+favorites\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a6536764bff381a2520bcd536fd61a2f2}\label{class_fl___file___chooser_a6536764bff381a2520bcd536fd61a2f2}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!all\_files\_label@{all\_files\_label}}
+\index{all\_files\_label@{all\_files\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{all\_files\_label}{all\_files\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::all\+\_\+files\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a5716440a9de224f5b3f07fa5047941bb}\label{class_fl___file___chooser_a5716440a9de224f5b3f07fa5047941bb}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!custom\_filter\_label@{custom\_filter\_label}}
+\index{custom\_filter\_label@{custom\_filter\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{custom\_filter\_label}{custom\_filter\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::custom\+\_\+filter\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a415483f9b152dc8dcea3d7e4495bd408}\label{class_fl___file___chooser_a415483f9b152dc8dcea3d7e4495bd408}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!existing\_file\_label@{existing\_file\_label}}
+\index{existing\_file\_label@{existing\_file\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{existing\_file\_label}{existing\_file\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::existing\+\_\+file\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a947c93ddca7538f0a5fa4c731b00f450}\label{class_fl___file___chooser_a947c93ddca7538f0a5fa4c731b00f450}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!favorites\_label@{favorites\_label}}
+\index{favorites\_label@{favorites\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{favorites\_label}{favorites\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::favorites\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a88b9eaf7abfd0b35f3dff8cd0e26993d}\label{class_fl___file___chooser_a88b9eaf7abfd0b35f3dff8cd0e26993d}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!filename\_label@{filename\_label}}
+\index{filename\_label@{filename\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{filename\_label}{filename\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::filename\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a10a9e7a71a0965ca9ee8aa8104302f58}\label{class_fl___file___chooser_a10a9e7a71a0965ca9ee8aa8104302f58}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!filesystems\_label@{filesystems\_label}}
+\index{filesystems\_label@{filesystems\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{filesystems\_label}{filesystems\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::filesystems\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a61fb970bdbd568ebebfbe4a4813aa45f}\label{class_fl___file___chooser_a61fb970bdbd568ebebfbe4a4813aa45f}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!hidden\_label@{hidden\_label}}
+\index{hidden\_label@{hidden\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{hidden\_label}{hidden\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::hidden\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a5694e2148a8ac3f0c9c74e4b9eafcc40}\label{class_fl___file___chooser_a5694e2148a8ac3f0c9c74e4b9eafcc40}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!manage\_favorites\_label@{manage\_favorites\_label}}
+\index{manage\_favorites\_label@{manage\_favorites\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{manage\_favorites\_label}{manage\_favorites\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::manage\+\_\+favorites\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_ad0a4168c7ac776a5e6f28c788c0f0766}\label{class_fl___file___chooser_ad0a4168c7ac776a5e6f28c788c0f0766}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!new\_directory\_label@{new\_directory\_label}}
+\index{new\_directory\_label@{new\_directory\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{new\_directory\_label}{new\_directory\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::new\+\_\+directory\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a515a4eddc7c1991f8d243f1da2cb6c30}\label{class_fl___file___chooser_a515a4eddc7c1991f8d243f1da2cb6c30}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!new\_directory\_tooltip@{new\_directory\_tooltip}}
+\index{new\_directory\_tooltip@{new\_directory\_tooltip}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{new\_directory\_tooltip}{new\_directory\_tooltip}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::new\+\_\+directory\+\_\+tooltip\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_ad41b3af5d0575054584343ced1f2c2a9}\label{class_fl___file___chooser_ad41b3af5d0575054584343ced1f2c2a9}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!newButton@{newButton}}
+\index{newButton@{newButton}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{newButton}{newButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___button}{Fl\+\_\+\+Button}}$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::new\+Button}
+
+\mbox{\Hypertarget{class_fl___file___chooser_ae9d25c0b11c63bf70b25f4a73b2b28b2}\label{class_fl___file___chooser_ae9d25c0b11c63bf70b25f4a73b2b28b2}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!preview\_label@{preview\_label}}
+\index{preview\_label@{preview\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{preview\_label}{preview\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::preview\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_abbacddae2dba6b4bfdd54096d6b4d9a9}\label{class_fl___file___chooser_abbacddae2dba6b4bfdd54096d6b4d9a9}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!previewButton@{previewButton}}
+\index{previewButton@{previewButton}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{previewButton}{previewButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___check___button}{Fl\+\_\+\+Check\+\_\+\+Button}}$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::preview\+Button}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a84bce134d9b12664d9fc0253cdd51981}\label{class_fl___file___chooser_a84bce134d9b12664d9fc0253cdd51981}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!save\_label@{save\_label}}
+\index{save\_label@{save\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{save\_label}{save\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::save\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a688d7a4d8b0ea566e9b9577140a13348}\label{class_fl___file___chooser_a688d7a4d8b0ea566e9b9577140a13348}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!show\_label@{show\_label}}
+\index{show\_label@{show\_label}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{show\_label}{show\_label}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::show\+\_\+label\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{[}standard text may be customized at run-\/time\mbox{]} \mbox{\Hypertarget{class_fl___file___chooser_a6d5a65cbd28e010104b8df526e145bc5}\label{class_fl___file___chooser_a6d5a65cbd28e010104b8df526e145bc5}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!showHiddenButton@{showHiddenButton}}
+\index{showHiddenButton@{showHiddenButton}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{showHiddenButton}{showHiddenButton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___check___button}{Fl\+\_\+\+Check\+\_\+\+Button}}$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::show\+Hidden\+Button}
+
+\mbox{\Hypertarget{class_fl___file___chooser_a4841ed8977d5a907194fff7860fb56c8}\label{class_fl___file___chooser_a4841ed8977d5a907194fff7860fb56c8}} 
+\index{Fl\_File\_Chooser@{Fl\_File\_Chooser}!sort@{sort}}
+\index{sort@{sort}!Fl\_File\_Chooser@{Fl\_File\_Chooser}}
+\doxysubsubsection{\texorpdfstring{sort}{sort}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__filenames_gaaf6f4a54bb593dcf326fc5d12bb1435c}{Fl\+\_\+\+File\+\_\+\+Sort\+\_\+F}}$\ast$ Fl\+\_\+\+File\+\_\+\+Chooser\+::sort\hspace{0.3cm}{\ttfamily [static]}}
+
+the sort function that is used when loading the contents of a directory. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___file___chooser_8_h}{Fl\+\_\+\+File\+\_\+\+Chooser.\+H}}\end{DoxyCompactItemize}

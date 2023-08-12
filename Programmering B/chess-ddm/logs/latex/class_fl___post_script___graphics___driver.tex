@@ -1,0 +1,1521 @@
+\hypertarget{class_fl___post_script___graphics___driver}{}\doxysection{Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver Class Reference}
+\label{class_fl___post_script___graphics___driver}\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+
+
+Post\+Script graphical backend.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Post\+Script.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_fl___post_script___graphics___driver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___post_script___graphics___driver__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fl___post_script___graphics___driver_1_1_clip}{Clip}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38}{S\+H\+A\+PE}} \{ \newline
+\mbox{\hyperlink{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38ab819beea69645494dd4035d9d9b27190}{N\+O\+NE}} =0, 
+\mbox{\hyperlink{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a0ef8f8c13ef374ed7a515aa2a85c2872}{L\+I\+NE}}, 
+\mbox{\hyperlink{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a169d2d7f99edef403ce778435e79d971}{L\+O\+OP}}, 
+\mbox{\hyperlink{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a7c818fdd2d21444239b508f39b8402f4}{P\+O\+L\+Y\+G\+ON}}, 
+\newline
+\mbox{\hyperlink{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a83d38d1dd42c1d5d0a08c9a81988cc46}{P\+O\+I\+N\+TS}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___post_script___graphics___driver_ac8983813e721fe6b926e709497330d8d}{class\+\_\+name}} ()
+\item 
+\mbox{\hyperlink{class_fl___post_script___graphics___driver_a3731f6cdb22dac364d633fe5ef5ebd46}{Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a4e9ea341a4ea1c50b4dc070c8fb94fd0}{concat}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a28ed0816b6524e84a5b7984d76b424af}{reconcat}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_afb3a8b3b441aea72c9244159d74d8bc5}{recover}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a82241077a35e7dea6cbd65e572b74cf0}{reset}} ()
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a7e880e545f19286ce8a802bcc8848563}{start\+\_\+postscript}} (int pagecount, enum \mbox{\hyperlink{class_fl___paged___device_aea57eda0ffa5353c7e678a17675681d4}{Fl\+\_\+\+Paged\+\_\+\+Device\+::\+Page\+\_\+\+Format}} format, enum \mbox{\hyperlink{class_fl___paged___device_acf20a8f5990f76f14393b4a8a9b8f812}{Fl\+\_\+\+Paged\+\_\+\+Device\+::\+Page\+\_\+\+Layout}} layout)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a2f0eec3063858ab0dc587a158ae2e88c}{transformed\+\_\+draw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, int n, double x, double y)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a616b13c3762384f436066f48811e7502}{transformed\+\_\+draw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, double x, double y)
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a59e2be5b925d9518c6bbca04d6c3d564}{alpha\+\_\+mask}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$\mbox{\hyperlink{jpeglib_8h_aa379dc8ae39e55ae0c431a61a7d2f2bc}{data}}, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}, int D, int LD=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a3e28b43d4adbab2e2425a07dbad825e5}{page\+\_\+policy}} (int p)
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a8e1ac32c96a177832103977a56032a25}{page\+\_\+policy}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a901335df8232a02372850550a24eb38d}{close\+\_\+command}} (\mbox{\hyperlink{_fl___post_script_8_h_ab7cbc3517e5261c856e1030514358fe7}{Fl\+\_\+\+Post\+Script\+\_\+\+Close\+\_\+\+Command}} $\ast$cmd)
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{class_fl___post_script___graphics___driver_a8590fd449e1055c62bab0512a0e5afaf}{file}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a87ae5e11ebb78e2ce2bd05b41d3b8595}{interpolate}} (int \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}})
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a35e6ab9881adcb9cc0987a0e9aa727bf}{interpolate}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_af2406f57decae72b4fc54d1fd67e13b6}{page}} (double pw, double ph, int media=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_aaf2dcd6c82359bb1942d95ac67fcd52a}{page}} (int format)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a74fec8466488bfafd3adf71426083e37}{color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a974e9f64959aa83cf6f0a36d3f0105aa}{fl\+\_\+color(\+Fl\+\_\+\+Color c)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a2d443b5a4a997719c138e88843ec7676}{color}} (\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} r, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} g, \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a208595f1c4e4bd0c32ee5a56194b405c}{fl\+\_\+color(uchar r, uchar g, uchar b)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_acb2a2c09c83fd7f5f474a26fe5272749}{push\+\_\+clip}} (int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}})
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_abe60242ba3b975800717b95cb6bc06d2}{fl\+\_\+push\+\_\+clip(int x, int y, int w, int h)}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a194c937e52aeadb7cbc250059b9f1e7d}{clip\+\_\+box}} (int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}, int \&X, int \&Y, int \&W, int \&H)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a6ec7356beb51a8f1d2b987f4d00f42d8}{fl\+\_\+clip\+\_\+box(int x, int y, int w, int h, int \&\+X, int \&\+Y, int \&\+W, int \&\+H)}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_ae1162e2d5862cc284a4c7d15719f21eb}{not\+\_\+clipped}} (int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}})
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a2bd899d466196ffc26cc61542ee10539}{fl\+\_\+not\+\_\+clipped(int x, int y, int w, int h)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_aa26c4b20530563ad0f7aaeebf100ca45}{push\+\_\+no\+\_\+clip}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a0fce6c81d69c3a80c8073a338f1346fd}{fl\+\_\+push\+\_\+no\+\_\+clip()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a46babf6cf69ec648259c6f90fa3240d5}{pop\+\_\+clip}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a7abb216a9a87408c8926126cc9efce22}{fl\+\_\+pop\+\_\+clip()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a31dd65f29102b216435a2d8ee1dbbd74}{line\+\_\+style}} (int style, int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a6d8ab04afa7e310818f045a8524f71cb}{width}}=0, char $\ast$dashes=0)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a63aad695d456c80af451878634fac658}{fl\+\_\+line\+\_\+style(int style, int width, char$\ast$ dashes)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a2cc41cda4af8a87b38dddc19df29eb70}{rect}} (int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}})
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a690c83e11f49fa837b563f4c0bc4fd1b}{fl\+\_\+rect(int x, int y, int w, int h)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a8bca38e284b435f3684696e503a900ee}{rectf}} (int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}})
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a2986a868e9cc8d9141acde94c0fe8ab0}{fl\+\_\+rectf(int x, int y, int w, int h)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a6d7660c3c0356023663524533e1bbea2}{xyline}} (int x, int y, int x1)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_acf46b232b6439424cc7f53656c5c2226}{fl\+\_\+xyline(int x, int y, int x1)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a67949ccc791aa8b9cac4301d7839d2fc}{xyline}} (int x, int y, int x1, int y2)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_aadf217672cf4e471ee184fab70736666}{fl\+\_\+xyline(int x, int y, int x1, int y2)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a45bc3145d11c0b4f9bee548affd4e811}{xyline}} (int x, int y, int x1, int y2, int x3)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a5098d1775b59ece7503a2faded1f1d74}{fl\+\_\+xyline(int x, int y, int x1, int y2, int x3)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_acafadd64e0baee19cced13683202833b}{yxline}} (int x, int y, int y1)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a814eabe0e8adf0a5017299cc2ecc26a1}{fl\+\_\+yxline(int x, int y, int y1)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_ac446e3969fb0d36dce2d3647656670e5}{yxline}} (int x, int y, int y1, int x2)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a9f5600eac117f72dd3fcb758729dab50}{fl\+\_\+yxline(int x, int y, int y1, int x2)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_ab497809ff0f09a7b80a7919a09e3ec80}{yxline}} (int x, int y, int y1, int x2, int y3)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_ae2e8c7095fbda86ce7812d7e74f1b153}{fl\+\_\+yxline(int x, int y, int y1, int x2, int y3)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a870b041ae74401f8ab0a8fcd3c8b33be}{line}} (int x1, int y1, int x2, int y2)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_aecc374f163a97ef67c4e58be11c47047}{fl\+\_\+line(int x, int y, int x1, int y1)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_adc01694398e6dce4f346340056d5eb83}{line}} (int x1, int y1, int x2, int y2, int x3, int y3)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a28cc7813255d063edbd116d51c55fb31}{fl\+\_\+line(int x, int y, int x1, int y1, int x2, int y2)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a7afde03781c4f6f178c26563532d55b6}{loop}} (int x0, int y0, int x1, int y1, int x2, int y2)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a83262471120d05f5f3b7ffbdccd0fd05}{fl\+\_\+loop(int x0, int y0, int x1, int y1, int x2, int y2)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a2dd2b83592cf3947debf64cbf4274381}{loop}} (int x0, int y0, int x1, int y1, int x2, int y2, int x3, int y3)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a66ca3d1e2ccc3361dfa2f788b1f99f12}{fl\+\_\+loop(int x0, int y0, int x1, int y1, int x2, int y2, int x3, int y3)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a715c73b66944f45a02350ed7abce038f}{polygon}} (int x0, int y0, int x1, int y1, int x2, int y2)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_ad2c126ed0cc6845199c75a96b6c8b763}{fl\+\_\+polygon(int x0, int y0, int x1, int y1, int x2, int y2)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a1b441d3d0f05c8b013b32905fc904059}{polygon}} (int x0, int y0, int x1, int y1, int x2, int y2, int x3, int y3)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a2c3d795a0335e5f90a53d0574fb8daa2}{fl\+\_\+polygon(int x0, int y0, int x1, int y1, int x2, int y2, int x3, int y3)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_aba408ca06a8eee0cb078166f256814b0}{point}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a2145abaa848e9ce2da4d566b0dc54f6f}{fl\+\_\+point(int x, int y)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a4e15bc61c77687762817c2f84e832672}{begin\+\_\+points}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a35cac1d422bd2a1c713e0119407086b1}{fl\+\_\+begin\+\_\+points()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a3943220a863198b0af2b85376453490f}{begin\+\_\+line}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_ae6a88cd889c957813dc6dc849876b532}{fl\+\_\+begin\+\_\+line()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a3a1dbd2566cd226e8f67aceb94c8778d}{begin\+\_\+loop}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a3cac8693d88eeec879f909ba03007686}{fl\+\_\+begin\+\_\+loop()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a128944d41e7041158089bee8ea627fe3}{begin\+\_\+polygon}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a63b2b306812f12741f271b469e192a8e}{fl\+\_\+begin\+\_\+polygon()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_aca8eb1d203fe093483c47036df528db9}{vertex}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a1201f6cfa1422ac8f508bfaccbe497b3}{fl\+\_\+vertex(double x, double y)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a87223bfba7fef978e946cc79afffbd1f}{curve}} (double x, double y, double x1, double y1, double x2, double y2, double x3, double y3)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a4c5bf16603ecea25acdf2d86d43580a5}{fl\+\_\+curve(double X0, double Y0, double X1, double Y1, double X2, double Y2, double X3, double Y3)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a7affdfeccfc2929a2789f2f6a93b7cd7}{circle}} (double x, double y, double r)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_ac4540eaf7b5f23944cf332fc8f81f57e}{fl\+\_\+circle(double x, double y, double r)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a30c007649b6e1b7649f2d022f101256a}{arc}} (double x, double y, double r, double start, double a)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a55e75228acb8f4c0febbc72fc9ab50dd}{fl\+\_\+arc(double x, double y, double r, double start, double end)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_ab676bd4b67248559a1f186c870a5dcb2}{arc}} (int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}, double a1, double a2)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a3c1216fb40b6274acff72cca64b86a69}{fl\+\_\+arc(int x, int y, int w, int h, double a1, double a2)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a39b1d5819a3c3be09236c5d963c32b08}{pie}} (int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}, double a1, double a2)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_ab4085aba3817a699ad98e1c80f91b69a}{fl\+\_\+pie(int x, int y, int w, int h, double a1, double a2)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a5616c12a9176518a867b049201f9ed5e}{end\+\_\+points}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_af715c7239d76c49737eb514e440490b5}{fl\+\_\+end\+\_\+points()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_affadcb9d5f8444413b7679768f07c4f5}{end\+\_\+line}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a9f4bbb29153922288a9eebe25352571b}{fl\+\_\+end\+\_\+line()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a937314426f1cda1230c5a52a207f4eab}{end\+\_\+loop}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a5b2013850fe739839e437ef942602532}{fl\+\_\+end\+\_\+loop()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a63904366af2a2e54a6bc846992e4e642}{end\+\_\+polygon}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_ad032c5f7637d440ff545285f2dcc2f44}{fl\+\_\+end\+\_\+polygon()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a26677662e131b909a4edd0ba874b9be8}{begin\+\_\+complex\+\_\+polygon}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a11c03773e045738994ffa78acc35c51d}{fl\+\_\+begin\+\_\+complex\+\_\+polygon()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a546d4a892db73de2f3478908b5b83303}{gap}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a29448f3a419a65645e3f082c65d1df14}{fl\+\_\+gap()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_ab154f8e139f1aa045091adcded62242b}{end\+\_\+complex\+\_\+polygon}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_aca7783f2d66b9a65a3201516bfd74694}{fl\+\_\+end\+\_\+complex\+\_\+polygon()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a59a42113047a2f0e877cccaca93cceff}{transformed\+\_\+vertex}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a4069ce7f3661ee913869bf71dbb5d5e7}{fl\+\_\+transformed\+\_\+vertex(double xf, double yf)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_af63873d3a57365a23bce02daac3dcf0d}{draw\+\_\+image}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$d, int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}, int delta=3, int ldelta=0)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a471f31b7e99755190e209c489c205881}{fl\+\_\+draw\+\_\+image(const uchar$\ast$ buf, int X,int Y,int W,int H, int D, int L)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a6971f70a909451fbae1b1f436cda4777}{draw\+\_\+image\+\_\+mono}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$d, int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}, int delta=1, int ld=0)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_af7a26f954f9f7c008afbf055dd235783}{fl\+\_\+draw\+\_\+image\+\_\+mono(const uchar$\ast$ buf, int X,int Y,int W,int H, int D, int L)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a56e7ce1b656c5ac2aeb6167aa27b919d}{draw\+\_\+image}} (\mbox{\hyperlink{_fl___device_8_h_a702e2cb8dd542dda67e5c206b0d73a07}{Fl\+\_\+\+Draw\+\_\+\+Image\+\_\+\+Cb}} call, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$\mbox{\hyperlink{jpeglib_8h_aa379dc8ae39e55ae0c431a61a7d2f2bc}{data}}, int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}, int delta=3)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a4f13db161098a0165838dcd62e48fecb}{fl\+\_\+draw\+\_\+image(\+Fl\+\_\+\+Draw\+\_\+\+Image\+\_\+\+Cb cb, void$\ast$ data, int X,int Y,int W,int H, int D)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_adccc5ba32276e82df1718759f62f40e7}{draw\+\_\+image\+\_\+mono}} (\mbox{\hyperlink{_fl___device_8_h_a702e2cb8dd542dda67e5c206b0d73a07}{Fl\+\_\+\+Draw\+\_\+\+Image\+\_\+\+Cb}} call, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$\mbox{\hyperlink{jpeglib_8h_aa379dc8ae39e55ae0c431a61a7d2f2bc}{data}}, int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}}, int delta=1)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a194f4d27bd3ab9817a88efc37e938ea1}{fl\+\_\+draw\+\_\+image\+\_\+mono(\+Fl\+\_\+\+Draw\+\_\+\+Image\+\_\+\+Cb cb, void$\ast$ data, int X,int Y,int W,int H, int D)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a9685286f5fa5136367cb821d7aad8da1}{draw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, int n\+Bytes, int x, int y)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_ae4ac5a0bc231f239e45dc1552b5ee738}{fl\+\_\+draw(const char $\ast$str, int n, int x, int y)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_afe1e2d9476460a47df92de170f02237e}{draw}} (int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a7623b6feeaa162e20d029be243d3fcc7}{angle}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$str, int n, int x, int y)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a14f28b302c1adf1f6dc76efbd6275a50}{fl\+\_\+draw(int angle, const char $\ast$str, int n, int x, int y)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a59012d28f7bd29b0729dc6e058b688e8}{rtl\+\_\+draw}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, int n, int x, int y)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a4ea048fa98815420272fe661f7c0d993}{fl\+\_\+rtl\+\_\+draw(const char $\ast$str, int n, int x, int y)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a7c3c91b0fbdb995a9eb93ec057694e95}{font}} (int face, int \mbox{\hyperlink{class_fl___graphics___driver_ad3327352d15be72897c43aabe52b7b00}{size}})
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{class_fl___graphics___driver_a1bdba1e2b321676da6b0b290f485bf27}{fl\+\_\+font(\+Fl\+\_\+\+Font face, Fl\+\_\+\+Fontsize size)}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_fl___post_script___graphics___driver_a6d8ab04afa7e310818f045a8524f71cb}{width}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$, int)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{group__fl__attributes_gae491dc82c611608435ed434e368ef668}{fl\+\_\+width(const char $\ast$str, int n)}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_fl___post_script___graphics___driver_aabbc901c407c35f95a793e270341ce5a}{width}} (unsigned int u)
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{group__fl__attributes_ga4a5b5e4a977299acdc7fcbd3c8a700b5}{fl\+\_\+width(unsigned int n)}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_ade982260311a0bfeb43bb1cad044a102}{text\+\_\+extents}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$c, int n, int \&dx, int \&dy, int \&\mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \&\mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}})
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{group__fl__attributes_gaa52f1ed8201b9d89c2b2edbaed80e907}{fl\+\_\+text\+\_\+extents(const char$\ast$, int n, int\& dx, int\& dy, int\& w, int\& h)}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_ae88f77923e9d9a93a9a6d8f3d18d0ebb}{height}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{group__fl__attributes_gac4acb828270adf35bf1d8fc06051f938}{fl\+\_\+height()}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_af0bb3b8c6438323edb756f25901b7d8d}{descent}} ()
+\begin{DoxyCompactList}\small\item\em see \mbox{\hyperlink{group__fl__attributes_ga080e029f6b6fe5e6bf527bbfd890317d}{fl\+\_\+descent()}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_aaf2558ec42b46cff7008c4ecabe81c6f}{draw}} (\mbox{\hyperlink{class_fl___pixmap}{Fl\+\_\+\+Pixmap}} $\ast$pxm, int XP, int YP, int WP, int HP, int cx, int cy)
+\begin{DoxyCompactList}\small\item\em Draws an \mbox{\hyperlink{class_fl___pixmap}{Fl\+\_\+\+Pixmap}} object to the device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a05c13a08b68b18eb36775e680aa2d569}{draw}} (\mbox{\hyperlink{class_fl___bitmap}{Fl\+\_\+\+Bitmap}} $\ast$bitmap, int XP, int YP, int WP, int HP, int cx, int cy)
+\begin{DoxyCompactList}\small\item\em Draws an \mbox{\hyperlink{class_fl___bitmap}{Fl\+\_\+\+Bitmap}} object to the device. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a0102e5d0674c856a5f888f021f6deb31}{draw}} (\mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$rgb, int XP, int YP, int WP, int HP, int cx, int cy)
+\begin{DoxyCompactList}\small\item\em Draws an \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} object to the device. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_afc017301bf2cbd59f4204e9b9523abdf}{draw\+\_\+scaled}} (\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$img, int XP, int YP, int WP, int HP)
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a19607d62031d8e3c12b8ff43e518edc4}{clocale\+\_\+printf}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$format,...)
+\item 
+\mbox{\hyperlink{class_fl___post_script___graphics___driver_a7c4bee20de9515a76ce4230189015013}{$\sim$\+Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___post_script___graphics___driver_1_1_clip}{Clip}} $\ast$ \mbox{\hyperlink{class_fl___post_script___graphics___driver_a5474fbd2ca780f347f81b08bd2734567}{clip\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_af36ec95185c3b5f535923339bd259fd1}{lang\+\_\+level\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a8cd4abacf89652a2a1a90eff34c91b3c}{gap\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_adbc480d239ebef3a4d283d5689abe56f}{pages\+\_\+}}
+\item 
+double \mbox{\hyperlink{class_fl___post_script___graphics___driver_a9acb8c05f5aeab2c19af396c676bd826}{width\+\_\+}}
+\item 
+double \mbox{\hyperlink{class_fl___post_script___graphics___driver_aacce4d5a51020959676c3e6c369a0ffc}{height\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_aaceaaaa460d7b8e0f57b4d3b0ebb930b}{shape\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_aa1859b4e9120f9eb26e6c9eaf505214d}{linewidth\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a9c4009e2f4386f5ecf85823404aad9f8}{linestyle\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a093582b703ef539094cd809144665980}{interpolate\+\_\+}}
+\item 
+unsigned char \mbox{\hyperlink{class_fl___post_script___graphics___driver_af89f994d6a53e377d41fd21fa959a444}{cr\+\_\+}}
+\item 
+unsigned char \mbox{\hyperlink{class_fl___post_script___graphics___driver_a0cb83cdedd7b1a905b9bbc62744d3b80}{cg\+\_\+}}
+\item 
+unsigned char \mbox{\hyperlink{class_fl___post_script___graphics___driver_a7b8f55b5c3ad94f9873860bddce9213c}{cb\+\_\+}}
+\item 
+char \mbox{\hyperlink{class_fl___post_script___graphics___driver_a6bc6069f08b028de4b16120f1d96b863}{linedash\+\_\+}} \mbox{[}256\mbox{]}
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$ \mbox{\hyperlink{class_fl___post_script___graphics___driver_aff2756bc65fb3d12cec9dca51556040d}{mask}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_ae15e1c62233b212a90efc23de1a05af1}{mx}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a07e99aa123e89599261bab7c66c01e2e}{my}}
+\item 
+\mbox{\hyperlink{_fl___post_script_8_h_ab7cbc3517e5261c856e1030514358fe7}{Fl\+\_\+\+Post\+Script\+\_\+\+Close\+\_\+\+Command}} $\ast$ \mbox{\hyperlink{class_fl___post_script___graphics___driver_a1727c9c1a43c2ee6515f38b5af80d071}{close\+\_\+cmd\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a6291b05275ec79c2af9fc0fc5687d4f8}{page\+\_\+policy\+\_\+}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_ab95d7e54d4576eab0596a4ecd4bb59aa}{n\+Pages}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a9e84be53061970570f1a68b94ae69036}{orientation\+\_\+}}
+\item 
+float \mbox{\hyperlink{class_fl___post_script___graphics___driver_a770690919d1e393fbc8efb735c06fc4e}{scale\+\_\+x}}
+\item 
+float \mbox{\hyperlink{class_fl___post_script___graphics___driver_a7f8dafe055762c4e936bde0078e8d7e1}{scale\+\_\+y}}
+\item 
+float \mbox{\hyperlink{class_fl___post_script___graphics___driver_a7623b6feeaa162e20d029be243d3fcc7}{angle}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a72d8af7f3ab953042c6495c8f4c221c0}{left\+\_\+margin}}
+\item 
+int \mbox{\hyperlink{class_fl___post_script___graphics___driver_a996e4935eaa1738a5d830b631bb0866f}{top\+\_\+margin}}
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{class_fl___post_script___graphics___driver_a26ff9e11faf5943b575186cfa1c17841}{output}}
+\item 
+double \mbox{\hyperlink{class_fl___post_script___graphics___driver_a8f5fc3e674a1484dd58601a093ae0500}{pw\+\_\+}}
+\item 
+double \mbox{\hyperlink{class_fl___post_script___graphics___driver_a622ec9ab6c9638560976836e7ce53858}{ph\+\_\+}}
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a19f9670fcb45603c69ee6ae49b7d5784}{bg\+\_\+r}}
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a6f80285176ac4306543b84a0bb9d97f5}{bg\+\_\+g}}
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_aa55815e288626069c156f77300810ce7}{bg\+\_\+b}}
+\item 
+enum \mbox{\hyperlink{class_fl___paged___device_aea57eda0ffa5353c7e678a17675681d4}{Fl\+\_\+\+Paged\+\_\+\+Device\+::\+Page\+\_\+\+Format}} \mbox{\hyperlink{class_fl___post_script___graphics___driver_a23c732449fe6a31bf2cc71e5b43c529c}{page\+\_\+format\+\_\+}}
+\item 
+char $\ast$ \mbox{\hyperlink{class_fl___post_script___graphics___driver_a75afdee9df3ff39d1a274657781fa34c}{ps\+\_\+filename\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___post_script___graphics___driver_a4505e7aabd4507de339256aa8737a01d}{class\+\_\+id}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Post\+Script graphical backend. 
+
+Post\+Script text uses vectorial fonts when using the F\+L\+TK standard fonts ~\newline
+ and the latin alphabet or a few other characters listed in the following table. The latin alphabet means all unicode characters between U+0020 and U+017F, or, in other words, the A\+S\+C\+II, Latin-\/1 Supplement and Latin Extended-\/A charts. \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{9}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Char}&\cellcolor{\tableheadbgcolor}\textbf{ Codepoint}&\cellcolor{\tableheadbgcolor}\textbf{ Name }&\cellcolor{\tableheadbgcolor}\textbf{ Char}&\cellcolor{\tableheadbgcolor}\textbf{ Codepoint}&\cellcolor{\tableheadbgcolor}\textbf{ Name }&\cellcolor{\tableheadbgcolor}\textbf{ Char}&\cellcolor{\tableheadbgcolor}\textbf{ Codepoint}&\cellcolor{\tableheadbgcolor}\textbf{ Name }\\\cline{1-9}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Char}&\cellcolor{\tableheadbgcolor}\textbf{ Codepoint}&\cellcolor{\tableheadbgcolor}\textbf{ Name }&\cellcolor{\tableheadbgcolor}\textbf{ Char}&\cellcolor{\tableheadbgcolor}\textbf{ Codepoint}&\cellcolor{\tableheadbgcolor}\textbf{ Name }&\cellcolor{\tableheadbgcolor}\textbf{ Char}&\cellcolor{\tableheadbgcolor}\textbf{ Codepoint}&\cellcolor{\tableheadbgcolor}\textbf{ Name }\\\cline{1-9}
+\endhead
+ƒ&U+0192&florin&‚&U+201A&quotesinglbase&™&U+2122&trademark \\\cline{1-9}
+ˆ&U+02\+C6&circumflex&“&U+201C&quotedblleft&∂&U+2202&partialdiff \\\cline{1-9}
+ˇ&U+02\+C7&caron&”&U+201D&quotedblright&Δ&U+2206&Delta \\\cline{1-9}
+˘&U+02\+D8&breve&„&U+201E&quotedblbase&∑&U+2211&summation \\\cline{1-9}
+˙&U+02\+D9&dotaccent&†&U+2020&dagger&√&U+221A&radical \\\cline{1-9}
+˚&U+02\+DA&ring&‡&U+2021&daggerdbl&∞&U+221E&infinity \\\cline{1-9}
+˛&U+02\+DB&ogonek&•&U+2022&bullet&≠&U+2260&notequal \\\cline{1-9}
+˜&U+02\+DC&tilde&…&U+2026&ellipsis&≤&U+2264&lessequal \\\cline{1-9}
+˝&U+02\+DD&hungarumlaut&‰&U+2030&perthousand&≥&U+2265&greaterequal \\\cline{1-9}
+–&U+2013&endash&‹&U+2039&guilsinglleft&◊&U+25\+CA&lozenge \\\cline{1-9}
+—&U+2014&emdash&›&U+203A&guilsinglright&ﬁ&U+\+F\+B01&fi \\\cline{1-9}
+‘&U+2018&quoteleft&/&U+2044&fraction&ﬂ&U+\+F\+B02&fl \\\cline{1-9}
+’&U+2019&quoteright&€&U+20\+AC&Euro&&U+\+F8\+FF&apple (Mac OS only) \\\cline{1-9}
+\end{longtabu}
+~\newline
+ All other unicode characters or all other fonts (F\+L\+\_\+\+F\+R\+E\+E\+\_\+\+F\+O\+NT and above) are output as a bitmap. ~\newline
+ F\+L\+TK standard fonts are output using the corresponding Post\+Script standard fonts. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38}\label{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!SHAPE@{SHAPE}}
+\index{SHAPE@{SHAPE}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{SHAPE}{SHAPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38}{Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::\+S\+H\+A\+PE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NONE@{NONE}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!NONE@{NONE}}}\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38ab819beea69645494dd4035d9d9b27190}\label{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38ab819beea69645494dd4035d9d9b27190}} 
+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LINE@{LINE}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!LINE@{LINE}}}\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a0ef8f8c13ef374ed7a515aa2a85c2872}\label{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a0ef8f8c13ef374ed7a515aa2a85c2872}} 
+L\+I\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOOP@{LOOP}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!LOOP@{LOOP}}}\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a169d2d7f99edef403ce778435e79d971}\label{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a169d2d7f99edef403ce778435e79d971}} 
+L\+O\+OP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POLYGON@{POLYGON}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!POLYGON@{POLYGON}}}\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a7c818fdd2d21444239b508f39b8402f4}\label{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a7c818fdd2d21444239b508f39b8402f4}} 
+P\+O\+L\+Y\+G\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POINTS@{POINTS}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!POINTS@{POINTS}}}\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a83d38d1dd42c1d5d0a08c9a81988cc46}\label{class_fl___post_script___graphics___driver_a596ca2cd105483fc917814d205858f38a83d38d1dd42c1d5d0a08c9a81988cc46}} 
+P\+O\+I\+N\+TS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a3731f6cdb22dac364d633fe5ef5ebd46}\label{class_fl___post_script___graphics___driver_a3731f6cdb22dac364d633fe5ef5ebd46}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{Fl\_PostScript\_Graphics\_Driver()}{Fl\_PostScript\_Graphics\_Driver()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::\+Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a7c4bee20de9515a76ce4230189015013}\label{class_fl___post_script___graphics___driver_a7c4bee20de9515a76ce4230189015013}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!````~Fl\_PostScript\_Graphics\_Driver@{$\sim$Fl\_PostScript\_Graphics\_Driver}}
+\index{````~Fl\_PostScript\_Graphics\_Driver@{$\sim$Fl\_PostScript\_Graphics\_Driver}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_PostScript\_Graphics\_Driver()}{~Fl\_PostScript\_Graphics\_Driver()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::$\sim$\+Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a59e2be5b925d9518c6bbca04d6c3d564}\label{class_fl___post_script___graphics___driver_a59e2be5b925d9518c6bbca04d6c3d564}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!alpha\_mask@{alpha\_mask}}
+\index{alpha\_mask@{alpha\_mask}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{alpha\_mask()}{alpha\_mask()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::alpha\+\_\+mask (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$}]{data,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{D,  }\item[{int}]{LD = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a30c007649b6e1b7649f2d022f101256a}\label{class_fl___post_script___graphics___driver_a30c007649b6e1b7649f2d022f101256a}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!arc@{arc}}
+\index{arc@{arc}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{arc()}{arc()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::arc (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{r,  }\item[{double}]{start,  }\item[{double}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a55e75228acb8f4c0febbc72fc9ab50dd}{fl\+\_\+arc(double x, double y, double r, double start, double end)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a677e035848146ce8257fe35bd2a65664}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_ab676bd4b67248559a1f186c870a5dcb2}\label{class_fl___post_script___graphics___driver_ab676bd4b67248559a1f186c870a5dcb2}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!arc@{arc}}
+\index{arc@{arc}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{arc()}{arc()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::arc (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{double}]{a1,  }\item[{double}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a3c1216fb40b6274acff72cca64b86a69}{fl\+\_\+arc(int x, int y, int w, int h, double a1, double a2)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a5890770996217d79d544703c89e8c1ec}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a26677662e131b909a4edd0ba874b9be8}\label{class_fl___post_script___graphics___driver_a26677662e131b909a4edd0ba874b9be8}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!begin\_complex\_polygon@{begin\_complex\_polygon}}
+\index{begin\_complex\_polygon@{begin\_complex\_polygon}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{begin\_complex\_polygon()}{begin\_complex\_polygon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::begin\+\_\+complex\+\_\+polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a11c03773e045738994ffa78acc35c51d}{fl\+\_\+begin\+\_\+complex\+\_\+polygon()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a5f4163e06bfd510f48ab824009c7042e}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_fl___post_script___graphics___driver_a26677662e131b909a4edd0ba874b9be8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a3943220a863198b0af2b85376453490f}\label{class_fl___post_script___graphics___driver_a3943220a863198b0af2b85376453490f}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!begin\_line@{begin\_line}}
+\index{begin\_line@{begin\_line}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{begin\_line()}{begin\_line()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::begin\+\_\+line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_ae6a88cd889c957813dc6dc849876b532}{fl\+\_\+begin\+\_\+line()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a91829c81da91165e49c51b75c9272765}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a3a1dbd2566cd226e8f67aceb94c8778d}\label{class_fl___post_script___graphics___driver_a3a1dbd2566cd226e8f67aceb94c8778d}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!begin\_loop@{begin\_loop}}
+\index{begin\_loop@{begin\_loop}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{begin\_loop()}{begin\_loop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::begin\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a3cac8693d88eeec879f909ba03007686}{fl\+\_\+begin\+\_\+loop()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a0e37f9059fb9378d1c2546ca2ff5f1d2}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a4e15bc61c77687762817c2f84e832672}\label{class_fl___post_script___graphics___driver_a4e15bc61c77687762817c2f84e832672}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!begin\_points@{begin\_points}}
+\index{begin\_points@{begin\_points}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{begin\_points()}{begin\_points()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::begin\+\_\+points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a35cac1d422bd2a1c713e0119407086b1}{fl\+\_\+begin\+\_\+points()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a8069786b7616050bc0ccb2637742fec9}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a128944d41e7041158089bee8ea627fe3}\label{class_fl___post_script___graphics___driver_a128944d41e7041158089bee8ea627fe3}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!begin\_polygon@{begin\_polygon}}
+\index{begin\_polygon@{begin\_polygon}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{begin\_polygon()}{begin\_polygon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::begin\+\_\+polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a63b2b306812f12741f271b469e192a8e}{fl\+\_\+begin\+\_\+polygon()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a8b7d7129ffdc2ad35acec7dfd9efd95b}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a7affdfeccfc2929a2789f2f6a93b7cd7}\label{class_fl___post_script___graphics___driver_a7affdfeccfc2929a2789f2f6a93b7cd7}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!circle@{circle}}
+\index{circle@{circle}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{circle()}{circle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::circle (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_ac4540eaf7b5f23944cf332fc8f81f57e}{fl\+\_\+circle(double x, double y, double r)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_aea3c51113fcb0eee7125010eee652297}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_ac8983813e721fe6b926e709497330d8d}\label{class_fl___post_script___graphics___driver_ac8983813e721fe6b926e709497330d8d}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!class\_name@{class\_name}}
+\index{class\_name@{class\_name}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{class\_name()}{class\_name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::class\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns the name of the class of this object. Use of the \mbox{\hyperlink{class_fl___post_script___graphics___driver_ac8983813e721fe6b926e709497330d8d}{class\+\_\+name()}} function is discouraged because it will be removed from future F\+L\+TK versions.
+
+The class of an instance of an \mbox{\hyperlink{class_fl___device}{Fl\+\_\+\+Device}} subclass can be checked with code such as\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} ( instance-\/>class\_name() == \mbox{\hyperlink{class_fl___printer_a8e9c7e34f08c1de702aa7c580b208ef9}{Fl\_Printer::class\_id}} ) \{ ... \}}
+\end{DoxyCode}
+ 
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a9f83f359acea4d6dc5ce3ec3639cc55d}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a194c937e52aeadb7cbc250059b9f1e7d}\label{class_fl___post_script___graphics___driver_a194c937e52aeadb7cbc250059b9f1e7d}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!clip\_box@{clip\_box}}
+\index{clip\_box@{clip\_box}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{clip\_box()}{clip\_box()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::clip\+\_\+box (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int \&}]{X,  }\item[{int \&}]{Y,  }\item[{int \&}]{W,  }\item[{int \&}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a6ec7356beb51a8f1d2b987f4d00f42d8}{fl\+\_\+clip\+\_\+box(int x, int y, int w, int h, int \&\+X, int \&\+Y, int \&\+W, int \&\+H)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_aa269f2c56929887c5fb38f3a4b4488c3}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a19607d62031d8e3c12b8ff43e518edc4}\label{class_fl___post_script___graphics___driver_a19607d62031d8e3c12b8ff43e518edc4}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!clocale\_printf@{clocale\_printf}}
+\index{clocale\_printf@{clocale\_printf}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{clocale\_printf()}{clocale\_printf()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::clocale\+\_\+printf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a901335df8232a02372850550a24eb38d}\label{class_fl___post_script___graphics___driver_a901335df8232a02372850550a24eb38d}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!close\_command@{close\_command}}
+\index{close\_command@{close\_command}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{close\_command()}{close\_command()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::close\+\_\+command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___post_script_8_h_ab7cbc3517e5261c856e1030514358fe7}{Fl\+\_\+\+Post\+Script\+\_\+\+Close\+\_\+\+Command}} $\ast$}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a74fec8466488bfafd3adf71426083e37}\label{class_fl___post_script___graphics___driver_a74fec8466488bfafd3adf71426083e37}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!color@{color}}
+\index{color@{color}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a974e9f64959aa83cf6f0a36d3f0105aa}{fl\+\_\+color(\+Fl\+\_\+\+Color c)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_abed59e7ee8211eaad25f913b137ca4db}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a2d443b5a4a997719c138e88843ec7676}\label{class_fl___post_script___graphics___driver_a2d443b5a4a997719c138e88843ec7676}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!color@{color}}
+\index{color@{color}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{r,  }\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{g,  }\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a208595f1c4e4bd0c32ee5a56194b405c}{fl\+\_\+color(uchar r, uchar g, uchar b)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a6c3558f4ec8e26a1eb0b4255eec39a69}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a4e9ea341a4ea1c50b4dc070c8fb94fd0}\label{class_fl___post_script___graphics___driver_a4e9ea341a4ea1c50b4dc070c8fb94fd0}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!concat@{concat}}
+\index{concat@{concat}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::concat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a87223bfba7fef978e946cc79afffbd1f}\label{class_fl___post_script___graphics___driver_a87223bfba7fef978e946cc79afffbd1f}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!curve@{curve}}
+\index{curve@{curve}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{curve()}{curve()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::curve (\begin{DoxyParamCaption}\item[{double}]{X0,  }\item[{double}]{Y0,  }\item[{double}]{X1,  }\item[{double}]{Y1,  }\item[{double}]{X2,  }\item[{double}]{Y2,  }\item[{double}]{X3,  }\item[{double}]{Y3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a4c5bf16603ecea25acdf2d86d43580a5}{fl\+\_\+curve(double X0, double Y0, double X1, double Y1, double X2, double Y2, double X3, double Y3)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_ade1dc71e80df155c2d0b32b599892626}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_af0bb3b8c6438323edb756f25901b7d8d}\label{class_fl___post_script___graphics___driver_af0bb3b8c6438323edb756f25901b7d8d}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!descent@{descent}}
+\index{descent@{descent}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{descent()}{descent()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::descent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{group__fl__attributes_ga080e029f6b6fe5e6bf527bbfd890317d}{fl\+\_\+descent()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_af3e820caf32c5939db81d1cad79b8a38}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a9685286f5fa5136367cb821d7aad8da1}\label{class_fl___post_script___graphics___driver_a9685286f5fa5136367cb821d7aad8da1}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!draw@{draw}}
+\index{draw@{draw}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{str,  }\item[{int}]{n,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_ae4ac5a0bc231f239e45dc1552b5ee738}{fl\+\_\+draw(const char $\ast$str, int n, int x, int y)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_acfa36cc72da41025ff33878c26051d4f}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a05c13a08b68b18eb36775e680aa2d569}\label{class_fl___post_script___graphics___driver_a05c13a08b68b18eb36775e680aa2d569}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!draw@{draw}}
+\index{draw@{draw}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___bitmap}{Fl\+\_\+\+Bitmap}} $\ast$}]{bm,  }\item[{int}]{XP,  }\item[{int}]{YP,  }\item[{int}]{WP,  }\item[{int}]{HP,  }\item[{int}]{cx,  }\item[{int}]{cy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws an \mbox{\hyperlink{class_fl___bitmap}{Fl\+\_\+\+Bitmap}} object to the device. 
+
+Specifies a bounding box for the image, with the origin (upper left-\/hand corner) of the image offset by the cx and cy arguments. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a4fa23908280eb7d0799be56150f93250}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aaf2558ec42b46cff7008c4ecabe81c6f}\label{class_fl___post_script___graphics___driver_aaf2558ec42b46cff7008c4ecabe81c6f}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!draw@{draw}}
+\index{draw@{draw}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___pixmap}{Fl\+\_\+\+Pixmap}} $\ast$}]{pxm,  }\item[{int}]{XP,  }\item[{int}]{YP,  }\item[{int}]{WP,  }\item[{int}]{HP,  }\item[{int}]{cx,  }\item[{int}]{cy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws an \mbox{\hyperlink{class_fl___pixmap}{Fl\+\_\+\+Pixmap}} object to the device. 
+
+Specifies a bounding box for the image, with the origin (upper left-\/hand corner) of the image offset by the cx and cy arguments. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a4fa91845e575e34ceeb2405af3c162a4}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a0102e5d0674c856a5f888f021f6deb31}\label{class_fl___post_script___graphics___driver_a0102e5d0674c856a5f888f021f6deb31}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!draw@{draw}}
+\index{draw@{draw}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$}]{rgb,  }\item[{int}]{XP,  }\item[{int}]{YP,  }\item[{int}]{WP,  }\item[{int}]{HP,  }\item[{int}]{cx,  }\item[{int}]{cy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draws an \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} object to the device. 
+
+Specifies a bounding box for the image, with the origin (upper left-\/hand corner) of the image offset by the cx and cy arguments. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a9658fc9aefcf8fa7b9a0262fd48efb04}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_afe1e2d9476460a47df92de170f02237e}\label{class_fl___post_script___graphics___driver_afe1e2d9476460a47df92de170f02237e}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!draw@{draw}}
+\index{draw@{draw}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::draw (\begin{DoxyParamCaption}\item[{int}]{angle,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{str,  }\item[{int}]{n,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a14f28b302c1adf1f6dc76efbd6275a50}{fl\+\_\+draw(int angle, const char $\ast$str, int n, int x, int y)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a557777dafa679767de22319945f4b7e1}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_af63873d3a57365a23bce02daac3dcf0d}\label{class_fl___post_script___graphics___driver_af63873d3a57365a23bce02daac3dcf0d}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!draw\_image@{draw\_image}}
+\index{draw\_image@{draw\_image}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{draw\_image()}{draw\_image()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::draw\+\_\+image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$}]{buf,  }\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{int}]{D = {\ttfamily 3},  }\item[{int}]{L = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a471f31b7e99755190e209c489c205881}{fl\+\_\+draw\+\_\+image(const uchar$\ast$ buf, int X,int Y,int W,int H, int D, int L)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a2274033d5ecdb6b739d5044e7de91538}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a56e7ce1b656c5ac2aeb6167aa27b919d}\label{class_fl___post_script___graphics___driver_a56e7ce1b656c5ac2aeb6167aa27b919d}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!draw\_image@{draw\_image}}
+\index{draw\_image@{draw\_image}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{draw\_image()}{draw\_image()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::draw\+\_\+image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___device_8_h_a702e2cb8dd542dda67e5c206b0d73a07}{Fl\+\_\+\+Draw\+\_\+\+Image\+\_\+\+Cb}}}]{cb,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{data,  }\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{int}]{D = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a4f13db161098a0165838dcd62e48fecb}{fl\+\_\+draw\+\_\+image(\+Fl\+\_\+\+Draw\+\_\+\+Image\+\_\+\+Cb cb, void$\ast$ data, int X,int Y,int W,int H, int D)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a6eabf7e878d7ca8c0895776f816a8cba}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a6971f70a909451fbae1b1f436cda4777}\label{class_fl___post_script___graphics___driver_a6971f70a909451fbae1b1f436cda4777}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!draw\_image\_mono@{draw\_image\_mono}}
+\index{draw\_image\_mono@{draw\_image\_mono}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{draw\_image\_mono()}{draw\_image\_mono()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::draw\+\_\+image\+\_\+mono (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$}]{buf,  }\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{int}]{D = {\ttfamily 1},  }\item[{int}]{L = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_af7a26f954f9f7c008afbf055dd235783}{fl\+\_\+draw\+\_\+image\+\_\+mono(const uchar$\ast$ buf, int X,int Y,int W,int H, int D, int L)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_aa1c8d5002cbac4d50e94d41ae2361417}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_adccc5ba32276e82df1718759f62f40e7}\label{class_fl___post_script___graphics___driver_adccc5ba32276e82df1718759f62f40e7}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!draw\_image\_mono@{draw\_image\_mono}}
+\index{draw\_image\_mono@{draw\_image\_mono}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{draw\_image\_mono()}{draw\_image\_mono()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::draw\+\_\+image\+\_\+mono (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___device_8_h_a702e2cb8dd542dda67e5c206b0d73a07}{Fl\+\_\+\+Draw\+\_\+\+Image\+\_\+\+Cb}}}]{cb,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{data,  }\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{int}]{D = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a194f4d27bd3ab9817a88efc37e938ea1}{fl\+\_\+draw\+\_\+image\+\_\+mono(\+Fl\+\_\+\+Draw\+\_\+\+Image\+\_\+\+Cb cb, void$\ast$ data, int X,int Y,int W,int H, int D)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_ab6ee63744a8855f7549747b2900a480b}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_afc017301bf2cbd59f4204e9b9523abdf}\label{class_fl___post_script___graphics___driver_afc017301bf2cbd59f4204e9b9523abdf}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!draw\_scaled@{draw\_scaled}}
+\index{draw\_scaled@{draw\_scaled}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{draw\_scaled()}{draw\_scaled()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::draw\+\_\+scaled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$}]{img,  }\item[{int}]{XP,  }\item[{int}]{YP,  }\item[{int}]{WP,  }\item[{int}]{HP }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_ab154f8e139f1aa045091adcded62242b}\label{class_fl___post_script___graphics___driver_ab154f8e139f1aa045091adcded62242b}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!end\_complex\_polygon@{end\_complex\_polygon}}
+\index{end\_complex\_polygon@{end\_complex\_polygon}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{end\_complex\_polygon()}{end\_complex\_polygon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::end\+\_\+complex\+\_\+polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_aca7783f2d66b9a65a3201516bfd74694}{fl\+\_\+end\+\_\+complex\+\_\+polygon()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a90a224bd34c955d23668dc6fb74fda76}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___post_script___graphics___driver_ab154f8e139f1aa045091adcded62242b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_affadcb9d5f8444413b7679768f07c4f5}\label{class_fl___post_script___graphics___driver_affadcb9d5f8444413b7679768f07c4f5}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!end\_line@{end\_line}}
+\index{end\_line@{end\_line}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{end\_line()}{end\_line()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::end\+\_\+line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a9f4bbb29153922288a9eebe25352571b}{fl\+\_\+end\+\_\+line()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_ad8261f3715886355d10ef1a083d1e867}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a937314426f1cda1230c5a52a207f4eab}\label{class_fl___post_script___graphics___driver_a937314426f1cda1230c5a52a207f4eab}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!end\_loop@{end\_loop}}
+\index{end\_loop@{end\_loop}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{end\_loop()}{end\_loop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::end\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a5b2013850fe739839e437ef942602532}{fl\+\_\+end\+\_\+loop()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a7d780a87a045390e84d84df0dff3c23e}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a5616c12a9176518a867b049201f9ed5e}\label{class_fl___post_script___graphics___driver_a5616c12a9176518a867b049201f9ed5e}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!end\_points@{end\_points}}
+\index{end\_points@{end\_points}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{end\_points()}{end\_points()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::end\+\_\+points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_af715c7239d76c49737eb514e440490b5}{fl\+\_\+end\+\_\+points()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_aa3f23d7f33c6ee469aade2b2c785f1ca}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a63904366af2a2e54a6bc846992e4e642}\label{class_fl___post_script___graphics___driver_a63904366af2a2e54a6bc846992e4e642}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!end\_polygon@{end\_polygon}}
+\index{end\_polygon@{end\_polygon}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{end\_polygon()}{end\_polygon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::end\+\_\+polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_ad032c5f7637d440ff545285f2dcc2f44}{fl\+\_\+end\+\_\+polygon()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a741bbdea5cdd96658de95350468fa22a}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a8590fd449e1055c62bab0512a0e5afaf}\label{class_fl___post_script___graphics___driver_a8590fd449e1055c62bab0512a0e5afaf}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!file@{file}}
+\index{file@{file}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a7c3c91b0fbdb995a9eb93ec057694e95}\label{class_fl___post_script___graphics___driver_a7c3c91b0fbdb995a9eb93ec057694e95}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!font@{font}}
+\index{font@{font}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{font()}{font()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::font (\begin{DoxyParamCaption}\item[{int}]{face,  }\item[{int}]{fsize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a1bdba1e2b321676da6b0b290f485bf27}{fl\+\_\+font(\+Fl\+\_\+\+Font face, Fl\+\_\+\+Fontsize size)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a9c1be2dc5314a9d3cc381b075119afcd}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a546d4a892db73de2f3478908b5b83303}\label{class_fl___post_script___graphics___driver_a546d4a892db73de2f3478908b5b83303}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!gap@{gap}}
+\index{gap@{gap}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{gap()}{gap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::gap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a29448f3a419a65645e3f082c65d1df14}{fl\+\_\+gap()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a0a4170b59a2b0c72e2079d20c0c9ee30}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_ae88f77923e9d9a93a9a6d8f3d18d0ebb}\label{class_fl___post_script___graphics___driver_ae88f77923e9d9a93a9a6d8f3d18d0ebb}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!height@{height}}
+\index{height@{height}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{group__fl__attributes_gac4acb828270adf35bf1d8fc06051f938}{fl\+\_\+height()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_acf4a19e5c50d8c4403434cfc17245878}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a35e6ab9881adcb9cc0987a0e9aa727bf}\label{class_fl___post_script___graphics___driver_a35e6ab9881adcb9cc0987a0e9aa727bf}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{interpolate()}{interpolate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::interpolate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a87ae5e11ebb78e2ce2bd05b41d3b8595}\label{class_fl___post_script___graphics___driver_a87ae5e11ebb78e2ce2bd05b41d3b8595}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{interpolate()}{interpolate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::interpolate (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a870b041ae74401f8ab0a8fcd3c8b33be}\label{class_fl___post_script___graphics___driver_a870b041ae74401f8ab0a8fcd3c8b33be}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!line@{line}}
+\index{line@{line}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{line()}{line()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::line (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x1,  }\item[{int}]{y1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_aecc374f163a97ef67c4e58be11c47047}{fl\+\_\+line(int x, int y, int x1, int y1)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_ab6e0d6fb1640c9ec40930d04decafac8}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_adc01694398e6dce4f346340056d5eb83}\label{class_fl___post_script___graphics___driver_adc01694398e6dce4f346340056d5eb83}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!line@{line}}
+\index{line@{line}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{line()}{line()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::line (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a28cc7813255d063edbd116d51c55fb31}{fl\+\_\+line(int x, int y, int x1, int y1, int x2, int y2)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a053ff0e1a1ad8554a2131faa92d03714}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a31dd65f29102b216435a2d8ee1dbbd74}\label{class_fl___post_script___graphics___driver_a31dd65f29102b216435a2d8ee1dbbd74}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!line\_style@{line\_style}}
+\index{line\_style@{line\_style}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{line\_style()}{line\_style()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::line\+\_\+style (\begin{DoxyParamCaption}\item[{int}]{style,  }\item[{int}]{width = {\ttfamily 0},  }\item[{char $\ast$}]{dashes = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a63aad695d456c80af451878634fac658}{fl\+\_\+line\+\_\+style(int style, int width, char$\ast$ dashes)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_af43b56777e92af5bf26dbdceca65aff8}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a7afde03781c4f6f178c26563532d55b6}\label{class_fl___post_script___graphics___driver_a7afde03781c4f6f178c26563532d55b6}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!loop@{loop}}
+\index{loop@{loop}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::loop (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a83262471120d05f5f3b7ffbdccd0fd05}{fl\+\_\+loop(int x0, int y0, int x1, int y1, int x2, int y2)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a5b3cdcfb29904550ffa1a2ee92213824}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a2dd2b83592cf3947debf64cbf4274381}\label{class_fl___post_script___graphics___driver_a2dd2b83592cf3947debf64cbf4274381}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!loop@{loop}}
+\index{loop@{loop}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::loop (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{x3,  }\item[{int}]{y3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a66ca3d1e2ccc3361dfa2f788b1f99f12}{fl\+\_\+loop(int x0, int y0, int x1, int y1, int x2, int y2, int x3, int y3)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_ac3682b06ee086a4c75dc6318d7f0c83a}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_ae1162e2d5862cc284a4c7d15719f21eb}\label{class_fl___post_script___graphics___driver_ae1162e2d5862cc284a4c7d15719f21eb}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!not\_clipped@{not\_clipped}}
+\index{not\_clipped@{not\_clipped}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{not\_clipped()}{not\_clipped()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::not\+\_\+clipped (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a2bd899d466196ffc26cc61542ee10539}{fl\+\_\+not\+\_\+clipped(int x, int y, int w, int h)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a4940b3e34162df8f24e6549bc4f0134a}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_af2406f57decae72b4fc54d1fd67e13b6}\label{class_fl___post_script___graphics___driver_af2406f57decae72b4fc54d1fd67e13b6}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!page@{page}}
+\index{page@{page}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{page()}{page()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::page (\begin{DoxyParamCaption}\item[{double}]{pw,  }\item[{double}]{ph,  }\item[{int}]{media = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aaf2dcd6c82359bb1942d95ac67fcd52a}\label{class_fl___post_script___graphics___driver_aaf2dcd6c82359bb1942d95ac67fcd52a}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!page@{page}}
+\index{page@{page}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{page()}{page()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::page (\begin{DoxyParamCaption}\item[{int}]{format }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a8e1ac32c96a177832103977a56032a25}\label{class_fl___post_script___graphics___driver_a8e1ac32c96a177832103977a56032a25}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!page\_policy@{page\_policy}}
+\index{page\_policy@{page\_policy}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{page\_policy()}{page\_policy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::page\+\_\+policy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a3e28b43d4adbab2e2425a07dbad825e5}\label{class_fl___post_script___graphics___driver_a3e28b43d4adbab2e2425a07dbad825e5}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!page\_policy@{page\_policy}}
+\index{page\_policy@{page\_policy}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{page\_policy()}{page\_policy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::page\+\_\+policy (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a39b1d5819a3c3be09236c5d963c32b08}\label{class_fl___post_script___graphics___driver_a39b1d5819a3c3be09236c5d963c32b08}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!pie@{pie}}
+\index{pie@{pie}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{pie()}{pie()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::pie (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{double}]{a1,  }\item[{double}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_ab4085aba3817a699ad98e1c80f91b69a}{fl\+\_\+pie(int x, int y, int w, int h, double a1, double a2)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a174aeb849594d3ce801cb1987d2dbae8}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aba408ca06a8eee0cb078166f256814b0}\label{class_fl___post_script___graphics___driver_aba408ca06a8eee0cb078166f256814b0}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!point@{point}}
+\index{point@{point}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{point()}{point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a2145abaa848e9ce2da4d566b0dc54f6f}{fl\+\_\+point(int x, int y)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a241b913ab198fb07fb7bae7f805a1476}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a715c73b66944f45a02350ed7abce038f}\label{class_fl___post_script___graphics___driver_a715c73b66944f45a02350ed7abce038f}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!polygon@{polygon}}
+\index{polygon@{polygon}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{polygon()}{polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::polygon (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_ad2c126ed0cc6845199c75a96b6c8b763}{fl\+\_\+polygon(int x0, int y0, int x1, int y1, int x2, int y2)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a32e13b91e08c821453d7be72fe7df75e}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a1b441d3d0f05c8b013b32905fc904059}\label{class_fl___post_script___graphics___driver_a1b441d3d0f05c8b013b32905fc904059}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!polygon@{polygon}}
+\index{polygon@{polygon}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{polygon()}{polygon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::polygon (\begin{DoxyParamCaption}\item[{int}]{x0,  }\item[{int}]{y0,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2,  }\item[{int}]{x3,  }\item[{int}]{y3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a2c3d795a0335e5f90a53d0574fb8daa2}{fl\+\_\+polygon(int x0, int y0, int x1, int y1, int x2, int y2, int x3, int y3)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_aaa23e211e8593389938dfd887da93242}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a46babf6cf69ec648259c6f90fa3240d5}\label{class_fl___post_script___graphics___driver_a46babf6cf69ec648259c6f90fa3240d5}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!pop\_clip@{pop\_clip}}
+\index{pop\_clip@{pop\_clip}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{pop\_clip()}{pop\_clip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::pop\+\_\+clip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a7abb216a9a87408c8926126cc9efce22}{fl\+\_\+pop\+\_\+clip()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_ae7401313749f30b962262ff7859a8701}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_acb2a2c09c83fd7f5f474a26fe5272749}\label{class_fl___post_script___graphics___driver_acb2a2c09c83fd7f5f474a26fe5272749}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!push\_clip@{push\_clip}}
+\index{push\_clip@{push\_clip}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{push\_clip()}{push\_clip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::push\+\_\+clip (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_abe60242ba3b975800717b95cb6bc06d2}{fl\+\_\+push\+\_\+clip(int x, int y, int w, int h)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a154316bac71801027684c948c483a599}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aa26c4b20530563ad0f7aaeebf100ca45}\label{class_fl___post_script___graphics___driver_aa26c4b20530563ad0f7aaeebf100ca45}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!push\_no\_clip@{push\_no\_clip}}
+\index{push\_no\_clip@{push\_no\_clip}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{push\_no\_clip()}{push\_no\_clip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::push\+\_\+no\+\_\+clip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a0fce6c81d69c3a80c8073a338f1346fd}{fl\+\_\+push\+\_\+no\+\_\+clip()}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_aa7b9de3570681ef63fa5c942a33c1833}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a28ed0816b6524e84a5b7984d76b424af}\label{class_fl___post_script___graphics___driver_a28ed0816b6524e84a5b7984d76b424af}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!reconcat@{reconcat}}
+\index{reconcat@{reconcat}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{reconcat()}{reconcat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::reconcat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_afb3a8b3b441aea72c9244159d74d8bc5}\label{class_fl___post_script___graphics___driver_afb3a8b3b441aea72c9244159d74d8bc5}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!recover@{recover}}
+\index{recover@{recover}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{recover()}{recover()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::recover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a2cc41cda4af8a87b38dddc19df29eb70}\label{class_fl___post_script___graphics___driver_a2cc41cda4af8a87b38dddc19df29eb70}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!rect@{rect}}
+\index{rect@{rect}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{rect()}{rect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::rect (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a690c83e11f49fa837b563f4c0bc4fd1b}{fl\+\_\+rect(int x, int y, int w, int h)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_aa6dd86798bdd0eff233e5e79b952b7a0}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a8bca38e284b435f3684696e503a900ee}\label{class_fl___post_script___graphics___driver_a8bca38e284b435f3684696e503a900ee}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!rectf@{rectf}}
+\index{rectf@{rectf}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{rectf()}{rectf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::rectf (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a2986a868e9cc8d9141acde94c0fe8ab0}{fl\+\_\+rectf(int x, int y, int w, int h)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_ab13b47a902aab156dfe25cff9cbd0bba}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a82241077a35e7dea6cbd65e572b74cf0}\label{class_fl___post_script___graphics___driver_a82241077a35e7dea6cbd65e572b74cf0}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!reset@{reset}}
+\index{reset@{reset}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a59012d28f7bd29b0729dc6e058b688e8}\label{class_fl___post_script___graphics___driver_a59012d28f7bd29b0729dc6e058b688e8}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!rtl\_draw@{rtl\_draw}}
+\index{rtl\_draw@{rtl\_draw}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{rtl\_draw()}{rtl\_draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::rtl\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{str,  }\item[{int}]{n,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a4ea048fa98815420272fe661f7c0d993}{fl\+\_\+rtl\+\_\+draw(const char $\ast$str, int n, int x, int y)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_aa1b42ffd06047cb15cf7ba984a0ca11e}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a7e880e545f19286ce8a802bcc8848563}\label{class_fl___post_script___graphics___driver_a7e880e545f19286ce8a802bcc8848563}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!start\_postscript@{start\_postscript}}
+\index{start\_postscript@{start\_postscript}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{start\_postscript()}{start\_postscript()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::start\+\_\+postscript (\begin{DoxyParamCaption}\item[{int}]{pagecount,  }\item[{enum \mbox{\hyperlink{class_fl___paged___device_aea57eda0ffa5353c7e678a17675681d4}{Fl\+\_\+\+Paged\+\_\+\+Device\+::\+Page\+\_\+\+Format}}}]{format,  }\item[{enum \mbox{\hyperlink{class_fl___paged___device_acf20a8f5990f76f14393b4a8a9b8f812}{Fl\+\_\+\+Paged\+\_\+\+Device\+::\+Page\+\_\+\+Layout}}}]{layout }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_ade982260311a0bfeb43bb1cad044a102}\label{class_fl___post_script___graphics___driver_ade982260311a0bfeb43bb1cad044a102}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!text\_extents@{text\_extents}}
+\index{text\_extents@{text\_extents}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{text\_extents()}{text\_extents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::text\+\_\+extents (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{,  }\item[{int}]{n,  }\item[{int \&}]{dx,  }\item[{int \&}]{dy,  }\item[{int \&}]{w,  }\item[{int \&}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{group__fl__attributes_gaa52f1ed8201b9d89c2b2edbaed80e907}{fl\+\_\+text\+\_\+extents(const char$\ast$, int n, int\& dx, int\& dy, int\& w, int\& h)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a5756991a4184eef896ab9eb1fd80be6b}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a616b13c3762384f436066f48811e7502}\label{class_fl___post_script___graphics___driver_a616b13c3762384f436066f48811e7502}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!transformed\_draw@{transformed\_draw}}
+\index{transformed\_draw@{transformed\_draw}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{transformed\_draw()}{transformed\_draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::transformed\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{s,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a2f0eec3063858ab0dc587a158ae2e88c}\label{class_fl___post_script___graphics___driver_a2f0eec3063858ab0dc587a158ae2e88c}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!transformed\_draw@{transformed\_draw}}
+\index{transformed\_draw@{transformed\_draw}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{transformed\_draw()}{transformed\_draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::transformed\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{s,  }\item[{int}]{n,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a59a42113047a2f0e877cccaca93cceff}\label{class_fl___post_script___graphics___driver_a59a42113047a2f0e877cccaca93cceff}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!transformed\_vertex@{transformed\_vertex}}
+\index{transformed\_vertex@{transformed\_vertex}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{transformed\_vertex()}{transformed\_vertex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::transformed\+\_\+vertex (\begin{DoxyParamCaption}\item[{double}]{xf,  }\item[{double}]{yf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a4069ce7f3661ee913869bf71dbb5d5e7}{fl\+\_\+transformed\+\_\+vertex(double xf, double yf)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_ae8993758d167fae67dc37852d498a321}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aca8eb1d203fe093483c47036df528db9}\label{class_fl___post_script___graphics___driver_aca8eb1d203fe093483c47036df528db9}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!vertex@{vertex}}
+\index{vertex@{vertex}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{vertex()}{vertex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::vertex (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a1201f6cfa1422ac8f508bfaccbe497b3}{fl\+\_\+vertex(double x, double y)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a042c72d7279d65fb540bf8e9388c4e3c}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a6d8ab04afa7e310818f045a8524f71cb}\label{class_fl___post_script___graphics___driver_a6d8ab04afa7e310818f045a8524f71cb}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!width@{width}}
+\index{width@{width}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{str,  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{group__fl__attributes_gae491dc82c611608435ed434e368ef668}{fl\+\_\+width(const char $\ast$str, int n)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a3db77403ba2b17e54b03f58e052cc040}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aabbc901c407c35f95a793e270341ce5a}\label{class_fl___post_script___graphics___driver_aabbc901c407c35f95a793e270341ce5a}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!width@{width}}
+\index{width@{width}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::width (\begin{DoxyParamCaption}\item[{unsigned int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{group__fl__attributes_ga4a5b5e4a977299acdc7fcbd3c8a700b5}{fl\+\_\+width(unsigned int n)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_ae9df8ff1a56352d471e892a82a4a3307}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a6d7660c3c0356023663524533e1bbea2}\label{class_fl___post_script___graphics___driver_a6d7660c3c0356023663524533e1bbea2}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!xyline@{xyline}}
+\index{xyline@{xyline}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{xyline()}{xyline()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::xyline (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_acf46b232b6439424cc7f53656c5c2226}{fl\+\_\+xyline(int x, int y, int x1)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a8b7ca07b324f4d13633203b0c60bdaf7}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a67949ccc791aa8b9cac4301d7839d2fc}\label{class_fl___post_script___graphics___driver_a67949ccc791aa8b9cac4301d7839d2fc}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!xyline@{xyline}}
+\index{xyline@{xyline}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{xyline()}{xyline()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::xyline (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x1,  }\item[{int}]{y2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_aadf217672cf4e471ee184fab70736666}{fl\+\_\+xyline(int x, int y, int x1, int y2)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a62a5711afecf0ec354b75511fbf5fe2c}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a45bc3145d11c0b4f9bee548affd4e811}\label{class_fl___post_script___graphics___driver_a45bc3145d11c0b4f9bee548affd4e811}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!xyline@{xyline}}
+\index{xyline@{xyline}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{xyline()}{xyline()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::xyline (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x1,  }\item[{int}]{y2,  }\item[{int}]{x3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a5098d1775b59ece7503a2faded1f1d74}{fl\+\_\+xyline(int x, int y, int x1, int y2, int x3)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a5115cc13e687e2fb129a003b7ec4acdf}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_acafadd64e0baee19cced13683202833b}\label{class_fl___post_script___graphics___driver_acafadd64e0baee19cced13683202833b}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!yxline@{yxline}}
+\index{yxline@{yxline}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{yxline()}{yxline()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::yxline (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{y1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a814eabe0e8adf0a5017299cc2ecc26a1}{fl\+\_\+yxline(int x, int y, int y1)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a4598e6daf567a60f68dda7e7f2a1a031}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_ac446e3969fb0d36dce2d3647656670e5}\label{class_fl___post_script___graphics___driver_ac446e3969fb0d36dce2d3647656670e5}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!yxline@{yxline}}
+\index{yxline@{yxline}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{yxline()}{yxline()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::yxline (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{y1,  }\item[{int}]{x2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_a9f5600eac117f72dd3fcb758729dab50}{fl\+\_\+yxline(int x, int y, int y1, int x2)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_a33263c21c8184f89dd6b6b3767d4784b}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_ab497809ff0f09a7b80a7919a09e3ec80}\label{class_fl___post_script___graphics___driver_ab497809ff0f09a7b80a7919a09e3ec80}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!yxline@{yxline}}
+\index{yxline@{yxline}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{yxline()}{yxline()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::yxline (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+see \mbox{\hyperlink{class_fl___graphics___driver_ae2e8c7095fbda86ce7812d7e74f1b153}{fl\+\_\+yxline(int x, int y, int y1, int x2, int y3)}}. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___graphics___driver_ab65f9a88d1c7a5f6fb7c3d1a5856c650}{Fl\+\_\+\+Graphics\+\_\+\+Driver}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a7623b6feeaa162e20d029be243d3fcc7}\label{class_fl___post_script___graphics___driver_a7623b6feeaa162e20d029be243d3fcc7}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!angle@{angle}}
+\index{angle@{angle}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily float Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::angle}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aa55815e288626069c156f77300810ce7}\label{class_fl___post_script___graphics___driver_aa55815e288626069c156f77300810ce7}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!bg\_b@{bg\_b}}
+\index{bg\_b@{bg\_b}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{bg\_b}{bg\_b}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::bg\+\_\+b}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a6f80285176ac4306543b84a0bb9d97f5}\label{class_fl___post_script___graphics___driver_a6f80285176ac4306543b84a0bb9d97f5}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!bg\_g@{bg\_g}}
+\index{bg\_g@{bg\_g}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{bg\_g}{bg\_g}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::bg\+\_\+g}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a19f9670fcb45603c69ee6ae49b7d5784}\label{class_fl___post_script___graphics___driver_a19f9670fcb45603c69ee6ae49b7d5784}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!bg\_r@{bg\_r}}
+\index{bg\_r@{bg\_r}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{bg\_r}{bg\_r}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::bg\+\_\+r}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a7b8f55b5c3ad94f9873860bddce9213c}\label{class_fl___post_script___graphics___driver_a7b8f55b5c3ad94f9873860bddce9213c}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!cb\_@{cb\_}}
+\index{cb\_@{cb\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{cb\_}{cb\_}}
+{\footnotesize\ttfamily unsigned char Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::cb\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a0cb83cdedd7b1a905b9bbc62744d3b80}\label{class_fl___post_script___graphics___driver_a0cb83cdedd7b1a905b9bbc62744d3b80}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!cg\_@{cg\_}}
+\index{cg\_@{cg\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{cg\_}{cg\_}}
+{\footnotesize\ttfamily unsigned char Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::cg\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a4505e7aabd4507de339256aa8737a01d}\label{class_fl___post_script___graphics___driver_a4505e7aabd4507de339256aa8737a01d}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!class\_id@{class\_id}}
+\index{class\_id@{class\_id}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{class\_id}{class\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::class\+\_\+id\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a5474fbd2ca780f347f81b08bd2734567}\label{class_fl___post_script___graphics___driver_a5474fbd2ca780f347f81b08bd2734567}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!clip\_@{clip\_}}
+\index{clip\_@{clip\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{clip\_}{clip\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___post_script___graphics___driver_1_1_clip}{Clip}}$\ast$ Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::clip\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a1727c9c1a43c2ee6515f38b5af80d071}\label{class_fl___post_script___graphics___driver_a1727c9c1a43c2ee6515f38b5af80d071}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!close\_cmd\_@{close\_cmd\_}}
+\index{close\_cmd\_@{close\_cmd\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{close\_cmd\_}{close\_cmd\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___post_script_8_h_ab7cbc3517e5261c856e1030514358fe7}{Fl\+\_\+\+Post\+Script\+\_\+\+Close\+\_\+\+Command}}$\ast$ Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::close\+\_\+cmd\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_af89f994d6a53e377d41fd21fa959a444}\label{class_fl___post_script___graphics___driver_af89f994d6a53e377d41fd21fa959a444}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!cr\_@{cr\_}}
+\index{cr\_@{cr\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{cr\_}{cr\_}}
+{\footnotesize\ttfamily unsigned char Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::cr\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a8cd4abacf89652a2a1a90eff34c91b3c}\label{class_fl___post_script___graphics___driver_a8cd4abacf89652a2a1a90eff34c91b3c}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!gap\_@{gap\_}}
+\index{gap\_@{gap\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{gap\_}{gap\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::gap\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aacce4d5a51020959676c3e6c369a0ffc}\label{class_fl___post_script___graphics___driver_aacce4d5a51020959676c3e6c369a0ffc}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!height\_@{height\_}}
+\index{height\_@{height\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{height\_}{height\_}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::height\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a093582b703ef539094cd809144665980}\label{class_fl___post_script___graphics___driver_a093582b703ef539094cd809144665980}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!interpolate\_@{interpolate\_}}
+\index{interpolate\_@{interpolate\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{interpolate\_}{interpolate\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::interpolate\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_af36ec95185c3b5f535923339bd259fd1}\label{class_fl___post_script___graphics___driver_af36ec95185c3b5f535923339bd259fd1}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!lang\_level\_@{lang\_level\_}}
+\index{lang\_level\_@{lang\_level\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{lang\_level\_}{lang\_level\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::lang\+\_\+level\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a72d8af7f3ab953042c6495c8f4c221c0}\label{class_fl___post_script___graphics___driver_a72d8af7f3ab953042c6495c8f4c221c0}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!left\_margin@{left\_margin}}
+\index{left\_margin@{left\_margin}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{left\_margin}{left\_margin}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::left\+\_\+margin}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a6bc6069f08b028de4b16120f1d96b863}\label{class_fl___post_script___graphics___driver_a6bc6069f08b028de4b16120f1d96b863}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!linedash\_@{linedash\_}}
+\index{linedash\_@{linedash\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{linedash\_}{linedash\_}}
+{\footnotesize\ttfamily char Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::linedash\+\_\+\mbox{[}256\mbox{]}}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a9c4009e2f4386f5ecf85823404aad9f8}\label{class_fl___post_script___graphics___driver_a9c4009e2f4386f5ecf85823404aad9f8}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!linestyle\_@{linestyle\_}}
+\index{linestyle\_@{linestyle\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{linestyle\_}{linestyle\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::linestyle\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aa1859b4e9120f9eb26e6c9eaf505214d}\label{class_fl___post_script___graphics___driver_aa1859b4e9120f9eb26e6c9eaf505214d}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!linewidth\_@{linewidth\_}}
+\index{linewidth\_@{linewidth\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{linewidth\_}{linewidth\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::linewidth\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aff2756bc65fb3d12cec9dca51556040d}\label{class_fl___post_script___graphics___driver_aff2756bc65fb3d12cec9dca51556040d}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!mask@{mask}}
+\index{mask@{mask}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{mask}{mask}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}$\ast$ Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::mask}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_ae15e1c62233b212a90efc23de1a05af1}\label{class_fl___post_script___graphics___driver_ae15e1c62233b212a90efc23de1a05af1}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!mx@{mx}}
+\index{mx@{mx}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{mx}{mx}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::mx}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a07e99aa123e89599261bab7c66c01e2e}\label{class_fl___post_script___graphics___driver_a07e99aa123e89599261bab7c66c01e2e}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!my@{my}}
+\index{my@{my}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{my}{my}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::my}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_ab95d7e54d4576eab0596a4ecd4bb59aa}\label{class_fl___post_script___graphics___driver_ab95d7e54d4576eab0596a4ecd4bb59aa}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!nPages@{nPages}}
+\index{nPages@{nPages}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{nPages}{nPages}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::n\+Pages}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a9e84be53061970570f1a68b94ae69036}\label{class_fl___post_script___graphics___driver_a9e84be53061970570f1a68b94ae69036}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!orientation\_@{orientation\_}}
+\index{orientation\_@{orientation\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{orientation\_}{orientation\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::orientation\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a26ff9e11faf5943b575186cfa1c17841}\label{class_fl___post_script___graphics___driver_a26ff9e11faf5943b575186cfa1c17841}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!output@{output}}
+\index{output@{output}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{output}{output}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::output}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a23c732449fe6a31bf2cc71e5b43c529c}\label{class_fl___post_script___graphics___driver_a23c732449fe6a31bf2cc71e5b43c529c}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!page\_format\_@{page\_format\_}}
+\index{page\_format\_@{page\_format\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{page\_format\_}{page\_format\_}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fl___paged___device_aea57eda0ffa5353c7e678a17675681d4}{Fl\+\_\+\+Paged\+\_\+\+Device\+::\+Page\+\_\+\+Format}} Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::page\+\_\+format\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a6291b05275ec79c2af9fc0fc5687d4f8}\label{class_fl___post_script___graphics___driver_a6291b05275ec79c2af9fc0fc5687d4f8}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!page\_policy\_@{page\_policy\_}}
+\index{page\_policy\_@{page\_policy\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{page\_policy\_}{page\_policy\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::page\+\_\+policy\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_adbc480d239ebef3a4d283d5689abe56f}\label{class_fl___post_script___graphics___driver_adbc480d239ebef3a4d283d5689abe56f}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!pages\_@{pages\_}}
+\index{pages\_@{pages\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{pages\_}{pages\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::pages\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a622ec9ab6c9638560976836e7ce53858}\label{class_fl___post_script___graphics___driver_a622ec9ab6c9638560976836e7ce53858}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!ph\_@{ph\_}}
+\index{ph\_@{ph\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{ph\_}{ph\_}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::ph\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a75afdee9df3ff39d1a274657781fa34c}\label{class_fl___post_script___graphics___driver_a75afdee9df3ff39d1a274657781fa34c}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!ps\_filename\_@{ps\_filename\_}}
+\index{ps\_filename\_@{ps\_filename\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{ps\_filename\_}{ps\_filename\_}}
+{\footnotesize\ttfamily char$\ast$ Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::ps\+\_\+filename\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a8f5fc3e674a1484dd58601a093ae0500}\label{class_fl___post_script___graphics___driver_a8f5fc3e674a1484dd58601a093ae0500}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!pw\_@{pw\_}}
+\index{pw\_@{pw\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{pw\_}{pw\_}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::pw\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a770690919d1e393fbc8efb735c06fc4e}\label{class_fl___post_script___graphics___driver_a770690919d1e393fbc8efb735c06fc4e}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!scale\_x@{scale\_x}}
+\index{scale\_x@{scale\_x}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{scale\_x}{scale\_x}}
+{\footnotesize\ttfamily float Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::scale\+\_\+x}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a7f8dafe055762c4e936bde0078e8d7e1}\label{class_fl___post_script___graphics___driver_a7f8dafe055762c4e936bde0078e8d7e1}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!scale\_y@{scale\_y}}
+\index{scale\_y@{scale\_y}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{scale\_y}{scale\_y}}
+{\footnotesize\ttfamily float Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::scale\+\_\+y}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_aaceaaaa460d7b8e0f57b4d3b0ebb930b}\label{class_fl___post_script___graphics___driver_aaceaaaa460d7b8e0f57b4d3b0ebb930b}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!shape\_@{shape\_}}
+\index{shape\_@{shape\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{shape\_}{shape\_}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::shape\+\_\+}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a996e4935eaa1738a5d830b631bb0866f}\label{class_fl___post_script___graphics___driver_a996e4935eaa1738a5d830b631bb0866f}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!top\_margin@{top\_margin}}
+\index{top\_margin@{top\_margin}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{top\_margin}{top\_margin}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::top\+\_\+margin}
+
+\mbox{\Hypertarget{class_fl___post_script___graphics___driver_a9acb8c05f5aeab2c19af396c676bd826}\label{class_fl___post_script___graphics___driver_a9acb8c05f5aeab2c19af396c676bd826}} 
+\index{Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}!width\_@{width\_}}
+\index{width\_@{width\_}!Fl\_PostScript\_Graphics\_Driver@{Fl\_PostScript\_Graphics\_Driver}}
+\doxysubsubsection{\texorpdfstring{width\_}{width\_}}
+{\footnotesize\ttfamily double Fl\+\_\+\+Post\+Script\+\_\+\+Graphics\+\_\+\+Driver\+::width\+\_\+}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___post_script_8_h}{Fl\+\_\+\+Post\+Script.\+H}}\end{DoxyCompactItemize}

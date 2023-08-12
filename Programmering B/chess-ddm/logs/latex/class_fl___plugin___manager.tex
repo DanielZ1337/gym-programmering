@@ -1,0 +1,141 @@
+\hypertarget{class_fl___plugin___manager}{}\doxysection{Fl\+\_\+\+Plugin\+\_\+\+Manager Class Reference}
+\label{class_fl___plugin___manager}\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+
+
+\mbox{\hyperlink{class_fl___plugin___manager}{Fl\+\_\+\+Plugin\+\_\+\+Manager}} manages link-\/time and run-\/time plugin binaries.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Plugin.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Plugin\+\_\+\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_fl___plugin___manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Plugin\+\_\+\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_fl___plugin___manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___plugin___manager_a925e0caea1944ad56fded0c4d8f2e1fb}{Fl\+\_\+\+Plugin\+\_\+\+Manager}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$klass)
+\item 
+\mbox{\hyperlink{class_fl___plugin___manager_a1cad84738f8549ff1efa857ade308c77}{$\sim$\+Fl\+\_\+\+Plugin\+\_\+\+Manager}} ()
+\item 
+int \mbox{\hyperlink{class_fl___plugin___manager_a4c454afe90d1f532a12d0a9db7de27fe}{plugins}} ()
+\begin{DoxyCompactList}\small\item\em Return the number of plugins in the klass. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}} $\ast$ \mbox{\hyperlink{class_fl___plugin___manager_ae605aaee0f2e4cbb44486054703d848f}{plugin}} (int index)
+\item 
+\mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}} $\ast$ \mbox{\hyperlink{class_fl___plugin___manager_af7951e8b0b5f4ddef0a82d148b4f123a}{plugin}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___preferences_a6ff11b679bec179ebb211c31f8e46f2e}{name}})
+\item 
+\mbox{\hyperlink{class_fl___preferences_a7050f8b1c0cbb70693e61bcfbf4f5853}{Fl\+\_\+\+Preferences\+::\+ID}} \mbox{\hyperlink{class_fl___plugin___manager_a8164ddc304b93f62a28c33c3da45af05}{add\+Plugin}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___preferences_a6ff11b679bec179ebb211c31f8e46f2e}{name}}, \mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}} $\ast$\mbox{\hyperlink{class_fl___plugin___manager_ae605aaee0f2e4cbb44486054703d848f}{plugin}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___plugin___manager_afde1c6ff11cf1fe89eb1185a7f4410c7}{remove\+Plugin}} (\mbox{\hyperlink{class_fl___preferences_a7050f8b1c0cbb70693e61bcfbf4f5853}{Fl\+\_\+\+Preferences\+::\+ID}} \mbox{\hyperlink{class_fl___preferences_a1170302365aa48fbd04335ca52c20319}{id}})
+\item 
+static int \mbox{\hyperlink{class_fl___plugin___manager_ae7d27e95e1e987e7f279a88bf0df729d}{load}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$filename)
+\item 
+static int \mbox{\hyperlink{class_fl___plugin___manager_a7063f7b09cca1b2345fe014667979969}{load\+All}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$filepath, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$pattern=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_fl___plugin___manager}{Fl\+\_\+\+Plugin\+\_\+\+Manager}} manages link-\/time and run-\/time plugin binaries. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___plugin___manager_a925e0caea1944ad56fded0c4d8f2e1fb}\label{class_fl___plugin___manager_a925e0caea1944ad56fded0c4d8f2e1fb}} 
+\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}!Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}!Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+\doxysubsubsection{\texorpdfstring{Fl\_Plugin\_Manager()}{Fl\_Plugin\_Manager()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Plugin\+\_\+\+Manager\+::\+Fl\+\_\+\+Plugin\+\_\+\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{klass }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___plugin___manager_a1cad84738f8549ff1efa857ade308c77}\label{class_fl___plugin___manager_a1cad84738f8549ff1efa857ade308c77}} 
+\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}!````~Fl\_Plugin\_Manager@{$\sim$Fl\_Plugin\_Manager}}
+\index{````~Fl\_Plugin\_Manager@{$\sim$Fl\_Plugin\_Manager}!Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Plugin\_Manager()}{~Fl\_Plugin\_Manager()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Plugin\+\_\+\+Manager\+::$\sim$\+Fl\+\_\+\+Plugin\+\_\+\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___plugin___manager_a8164ddc304b93f62a28c33c3da45af05}\label{class_fl___plugin___manager_a8164ddc304b93f62a28c33c3da45af05}} 
+\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}!addPlugin@{addPlugin}}
+\index{addPlugin@{addPlugin}!Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+\doxysubsubsection{\texorpdfstring{addPlugin()}{addPlugin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___preferences_a7050f8b1c0cbb70693e61bcfbf4f5853}{Fl\+\_\+\+Preferences\+::\+ID}} Fl\+\_\+\+Plugin\+\_\+\+Manager\+::add\+Plugin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name,  }\item[{\mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}} $\ast$}]{plugin }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___plugin___manager_ae7d27e95e1e987e7f279a88bf0df729d}\label{class_fl___plugin___manager_ae7d27e95e1e987e7f279a88bf0df729d}} 
+\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}!load@{load}}
+\index{load@{load}!Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Plugin\+\_\+\+Manager\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___plugin___manager_a7063f7b09cca1b2345fe014667979969}\label{class_fl___plugin___manager_a7063f7b09cca1b2345fe014667979969}} 
+\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}!loadAll@{loadAll}}
+\index{loadAll@{loadAll}!Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+\doxysubsubsection{\texorpdfstring{loadAll()}{loadAll()}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Plugin\+\_\+\+Manager\+::load\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{filepath,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{pattern = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___plugin___manager_af7951e8b0b5f4ddef0a82d148b4f123a}\label{class_fl___plugin___manager_af7951e8b0b5f4ddef0a82d148b4f123a}} 
+\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}!plugin@{plugin}}
+\index{plugin@{plugin}!Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+\doxysubsubsection{\texorpdfstring{plugin()}{plugin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}}$\ast$ Fl\+\_\+\+Plugin\+\_\+\+Manager\+::plugin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___plugin___manager_ae605aaee0f2e4cbb44486054703d848f}\label{class_fl___plugin___manager_ae605aaee0f2e4cbb44486054703d848f}} 
+\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}!plugin@{plugin}}
+\index{plugin@{plugin}!Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+\doxysubsubsection{\texorpdfstring{plugin()}{plugin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___plugin}{Fl\+\_\+\+Plugin}}$\ast$ Fl\+\_\+\+Plugin\+\_\+\+Manager\+::plugin (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___plugin___manager_a4c454afe90d1f532a12d0a9db7de27fe}\label{class_fl___plugin___manager_a4c454afe90d1f532a12d0a9db7de27fe}} 
+\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}!plugins@{plugins}}
+\index{plugins@{plugins}!Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+\doxysubsubsection{\texorpdfstring{plugins()}{plugins()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Plugin\+\_\+\+Manager\+::plugins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the number of plugins in the klass. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_fl___plugin___manager_a4c454afe90d1f532a12d0a9db7de27fe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___plugin___manager_afde1c6ff11cf1fe89eb1185a7f4410c7}\label{class_fl___plugin___manager_afde1c6ff11cf1fe89eb1185a7f4410c7}} 
+\index{Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}!removePlugin@{removePlugin}}
+\index{removePlugin@{removePlugin}!Fl\_Plugin\_Manager@{Fl\_Plugin\_Manager}}
+\doxysubsubsection{\texorpdfstring{removePlugin()}{removePlugin()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Plugin\+\_\+\+Manager\+::remove\+Plugin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___preferences_a7050f8b1c0cbb70693e61bcfbf4f5853}{Fl\+\_\+\+Preferences\+::\+ID}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___plugin_8_h}{Fl\+\_\+\+Plugin.\+H}}\end{DoxyCompactItemize}

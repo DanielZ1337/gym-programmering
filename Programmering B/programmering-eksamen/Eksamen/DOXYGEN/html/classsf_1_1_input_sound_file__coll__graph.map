@@ -1,0 +1,9 @@
+<map id="sf::InputSoundFile" name="sf::InputSoundFile">
+<area shape="rect" id="node1" title="Provide read access to sound files." alt="" coords="350,219,497,501"/>
+<area shape="rect" id="node2" href="$classsf_1_1_non_copyable.html" title="Utility class that makes any derived class non&#45;copyable." alt="" coords="5,13,132,134"/>
+<area shape="rect" id="node3" title=" " alt="" coords="157,35,287,112"/>
+<area shape="rect" id="node4" title=" " alt="" coords="336,35,375,112"/>
+<area shape="rect" id="node5" title=" " alt="" coords="468,35,515,112"/>
+<area shape="rect" id="node6" href="$classsf_1_1_sound_file_reader.html" title="Abstract base class for sound file decoding." alt="" coords="554,13,703,134"/>
+<area shape="rect" id="node7" href="$classsf_1_1_input_stream.html" title="Abstract class for custom file input streams." alt="" coords="727,5,847,141"/>
+</map>

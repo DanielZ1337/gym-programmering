@@ -1,0 +1,23 @@
+<map id="Fl_Valuator" name="Fl_Valuator">
+<area shape="rect" id="node1" title=" " alt="" coords="135,183,223,209"/>
+<area shape="rect" id="node3" href="$class_fl___adjuster.html" title=" " alt="" coords="286,19,374,45"/>
+<area shape="rect" id="node4" href="$class_fl___counter.html" title=" " alt="" coords="287,69,373,96"/>
+<area shape="rect" id="node6" href="$class_fl___dial.html" title=" " alt="" coords="299,120,361,147"/>
+<area shape="rect" id="node9" href="$class_fl___roller.html" title=" " alt="" coords="293,183,367,209"/>
+<area shape="rect" id="node10" href="$class_fl___slider.html" title=" " alt="" coords="293,259,367,285"/>
+<area shape="rect" id="node19" href="$class_fl___value___input.html" title=" " alt="" coords="276,309,384,336"/>
+<area shape="rect" id="node21" href="$class_fl___value___output.html" title=" " alt="" coords="271,360,389,387"/>
+<area shape="rect" id="node2" href="$class_fl___widget.html" title=" " alt="" coords="5,183,87,209"/>
+<area shape="rect" id="node5" href="$class_fl___simple___counter.html" title=" " alt="" coords="438,5,570,32"/>
+<area shape="rect" id="node7" href="$class_fl___fill___dial.html" title=" " alt="" coords="461,56,547,83"/>
+<area shape="rect" id="node8" href="$class_fl___line___dial.html" title=" " alt="" coords="457,107,551,133"/>
+<area shape="rect" id="node11" href="$class_fl___fill___slider.html" title=" " alt="" coords="455,157,553,184"/>
+<area shape="rect" id="node12" href="$class_fl___hor___fill___slider.html" title=" " alt="" coords="442,208,566,235"/>
+<area shape="rect" id="node13" href="$class_fl___hor___nice___slider.html" title=" " alt="" coords="437,259,571,285"/>
+<area shape="rect" id="node14" href="$class_fl___hor___slider.html" title=" " alt="" coords="454,309,554,336"/>
+<area shape="rect" id="node15" href="$class_fl___nice___slider.html" title=" " alt="" coords="451,360,557,387"/>
+<area shape="rect" id="node16" href="$class_fl___scrollbar.html" title=" " alt="" coords="459,411,549,437"/>
+<area shape="rect" id="node17" href="$class_fl___value___slider.html" title=" " alt="" coords="447,461,561,488"/>
+<area shape="rect" id="node18" href="$class_fl___hor___value___slider.html" title=" " alt="" coords="619,461,759,488"/>
+<area shape="rect" id="node20" href="$class_flcc___value___input.html" title=" " alt="" coords="443,512,565,539"/>
+</map>

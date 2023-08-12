@@ -1,0 +1,4 @@
+<map id="Fl_Tree_Item::children" name="Fl_Tree_Item::children">
+<area shape="rect" id="node1" title="Return the number of children this item has." alt="" coords="5,13,156,39"/>
+<area shape="rect" id="node2" href="$class_fl___tree___item___array.html#a1b76ee8f1c8e3d07449bfc6c1a16e9c6" title="Return the total items in the array, or 0 if empty." alt="" coords="204,5,339,47"/>
+</map>

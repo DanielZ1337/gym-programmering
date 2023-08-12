@@ -1,0 +1,13 @@
+<map id="userInput::handleKeyPress" name="userInput::handleKeyPress">
+<area shape="rect" id="node1" title=" " alt="" coords="5,165,184,192"/>
+<area shape="rect" id="node2" href="$classphysics.html#af975dfedfcd177ab13651c9d5db341de" title=" " alt="" coords="256,56,383,83"/>
+<area shape="rect" id="node6" href="$classsf_1_1_sprite.html#ab2f4c781464da6f8a52b1df6058a48b8" title="Get the local bounding rectangle of the entity." alt="" coords="232,107,407,133"/>
+<area shape="rect" id="node7" href="$classsf_1_1_transformable.html#a73f9739bc6e74db2cea154bc8e94ec46" title="get the position of the object" alt="" coords="255,158,384,199"/>
+<area shape="rect" id="node8" href="$classsf_1_1_window.html#a420028b8e4d9baedcaaba7b2047b8cb3" title="Get the position of the window." alt="" coords="240,224,399,251"/>
+<area shape="rect" id="node9" href="$classplayer.html#a59ba7e8a79f02353c1a000f0cc0ed2c3" title=" " alt="" coords="249,275,390,301"/>
+<area shape="rect" id="node3" href="$classphysics.html#a3c5a174483044d7fd680e789c07260b8" title=" " alt="" coords="455,5,629,32"/>
+<area shape="rect" id="node4" href="$classmath_1_1vector.html#aade3e2a97abedb2d891fb894857bedb0" title=" " alt="" coords="469,56,615,83"/>
+<area shape="rect" id="node5" href="$classphysics.html#a48caaa851f5f967a3b2780ce9dbf5d16" title=" " alt="" coords="477,107,607,133"/>
+<area shape="rect" id="node10" href="$classsf_1_1_transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object" alt="" coords="477,234,607,275"/>
+<area shape="rect" id="node11" href="$classsf_1_1_transformable.html#a32baf2bf1a74699b03bf8c95030a38ed" title="set the orientation of the object" alt="" coords="477,299,607,341"/>
+</map>

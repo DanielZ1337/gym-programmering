@@ -1,0 +1,111 @@
+\hypertarget{class_fl___device___plugin}{}\doxysection{Fl\+\_\+\+Device\+\_\+\+Plugin Class Reference}
+\label{class_fl___device___plugin}\index{Fl\_Device\_Plugin@{Fl\_Device\_Plugin}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Device.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Device\+\_\+\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_fl___device___plugin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Device\+\_\+\+Plugin\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_fl___device___plugin__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___device___plugin_a8f67a783e4285ee034a681014814dca2}{Fl\+\_\+\+Device\+\_\+\+Plugin}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$plugin\+Name)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___device___plugin_afca212eda303cf52229fbe6bccf540c6}{klass}} ()
+\begin{DoxyCompactList}\small\item\em Returns the class name. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___device___plugin_a7e0280fed0207f9a53ede3f296b64835}{name}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns the plugin name. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_fl___device___plugin_ad743abaaaeb84ab916164ffbe4e6da23}{print}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$\mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int x, int y, int height)=0
+\begin{DoxyCompactList}\small\item\em Prints a widget. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___device___plugin_ac09a2050b87a22508d8f0e8446955f14}{rectangle\+\_\+capture}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$widget, int x, int y, int \mbox{\hyperlink{forms_8_h_aac374e320caaadeca4874add33b62af2}{w}}, int \mbox{\hyperlink{forms_8_h_a7e427ba5b307f9068129699250690066}{h}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This plugin socket allows the integration of new device drivers for special window or screen types. This class is not intended for use outside the F\+L\+TK library. It is currently used to provide an automated printing service and screen capture for Open\+GL windows, if linked with fltk\+\_\+gl. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___device___plugin_a8f67a783e4285ee034a681014814dca2}\label{class_fl___device___plugin_a8f67a783e4285ee034a681014814dca2}} 
+\index{Fl\_Device\_Plugin@{Fl\_Device\_Plugin}!Fl\_Device\_Plugin@{Fl\_Device\_Plugin}}
+\index{Fl\_Device\_Plugin@{Fl\_Device\_Plugin}!Fl\_Device\_Plugin@{Fl\_Device\_Plugin}}
+\doxysubsubsection{\texorpdfstring{Fl\_Device\_Plugin()}{Fl\_Device\_Plugin()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Device\+\_\+\+Plugin\+::\+Fl\+\_\+\+Device\+\_\+\+Plugin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{plugin\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___device___plugin_afca212eda303cf52229fbe6bccf540c6}\label{class_fl___device___plugin_afca212eda303cf52229fbe6bccf540c6}} 
+\index{Fl\_Device\_Plugin@{Fl\_Device\_Plugin}!klass@{klass}}
+\index{klass@{klass}!Fl\_Device\_Plugin@{Fl\_Device\_Plugin}}
+\doxysubsubsection{\texorpdfstring{klass()}{klass()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Device\+\_\+\+Plugin\+::klass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the class name. 
+
+\mbox{\Hypertarget{class_fl___device___plugin_a7e0280fed0207f9a53ede3f296b64835}\label{class_fl___device___plugin_a7e0280fed0207f9a53ede3f296b64835}} 
+\index{Fl\_Device\_Plugin@{Fl\_Device\_Plugin}!name@{name}}
+\index{name@{name}!Fl\_Device\_Plugin@{Fl\_Device\_Plugin}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Device\+\_\+\+Plugin\+::name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns the plugin name. 
+
+\mbox{\Hypertarget{class_fl___device___plugin_ad743abaaaeb84ab916164ffbe4e6da23}\label{class_fl___device___plugin_ad743abaaaeb84ab916164ffbe4e6da23}} 
+\index{Fl\_Device\_Plugin@{Fl\_Device\_Plugin}!print@{print}}
+\index{print@{print}!Fl\_Device\_Plugin@{Fl\_Device\_Plugin}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily virtual int Fl\+\_\+\+Device\+\_\+\+Plugin\+::print (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{w,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Prints a widget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the widget \\
+\hline
+{\em x,y} & offsets where to print relatively to coordinates origin \\
+\hline
+{\em height} & height of the current drawing area \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___device___plugin_ac09a2050b87a22508d8f0e8446955f14}\label{class_fl___device___plugin_ac09a2050b87a22508d8f0e8446955f14}} 
+\index{Fl\_Device\_Plugin@{Fl\_Device\_Plugin}!rectangle\_capture@{rectangle\_capture}}
+\index{rectangle\_capture@{rectangle\_capture}!Fl\_Device\_Plugin@{Fl\_Device\_Plugin}}
+\doxysubsubsection{\texorpdfstring{rectangle\_capture()}{rectangle\_capture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___r_g_b___image}{Fl\+\_\+\+R\+G\+B\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Device\+\_\+\+Plugin\+::rectangle\+\_\+capture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{widget,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+captures a rectangle of a widget as an image \begin{DoxyReturn}{Returns}
+The captured pixels as an R\+GB image 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___device_8_h}{Fl\+\_\+\+Device.\+H}}\end{DoxyCompactItemize}

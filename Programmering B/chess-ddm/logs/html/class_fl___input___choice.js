@@ -1,0 +1,25 @@
+var class_fl___input___choice =
+[
+    [ "Fl_Input_Choice", "class_fl___input___choice.html#abe9a1e94ed035c3224ae032b4a7bbd3d", null ],
+    [ "add", "class_fl___input___choice.html#a4b2c4ef1c3d2adb1297d5166ce0c8380", null ],
+    [ "changed", "class_fl___input___choice.html#aba5d22d415138b603a4913bfe46e90f0", null ],
+    [ "clear", "class_fl___input___choice.html#ae59095122eb3c017358f1e304c4f8827", null ],
+    [ "clear_changed", "class_fl___input___choice.html#a5f3f753b734c696a54fd230920fdaa4b", null ],
+    [ "down_box", "class_fl___input___choice.html#ad61a3cc5718311845b6e7f1fcb420020", null ],
+    [ "down_box", "class_fl___input___choice.html#aae8d386ea74f814aaf95edd1b6086979", null ],
+    [ "input", "class_fl___input___choice.html#a7e863b5c9a096f52a9502619d11a7cd0", null ],
+    [ "menu", "class_fl___input___choice.html#acbadffb3c908366614a427c8165d3710", null ],
+    [ "menu", "class_fl___input___choice.html#a1479291479bc0ea95826b9dfa442e9f1", null ],
+    [ "menubutton", "class_fl___input___choice.html#a7781575229c339905dd1e42a2451141f", null ],
+    [ "resize", "class_fl___input___choice.html#a03c0a02d26ef3498a67d4868be32b552", null ],
+    [ "set_changed", "class_fl___input___choice.html#a1d933199d171d494c2f679a52d5f285e", null ],
+    [ "textcolor", "class_fl___input___choice.html#a9397aca23b5df449784a527702d37d98", null ],
+    [ "textcolor", "class_fl___input___choice.html#a3493fd9e57bcf19cc47f311a94167eb4", null ],
+    [ "textfont", "class_fl___input___choice.html#a7a6362f5b509ebe8c684e1c925dbecc3", null ],
+    [ "textfont", "class_fl___input___choice.html#addb190d3be1a1fbc3414b71794ef470b", null ],
+    [ "textsize", "class_fl___input___choice.html#a3ceaae3780f88c58dc053dc9c80446ac", null ],
+    [ "textsize", "class_fl___input___choice.html#a2a3188cec171934af55a48645ccc5bd0", null ],
+    [ "value", "class_fl___input___choice.html#ab6bcef54e631bc109924172cfa50913d", null ],
+    [ "value", "class_fl___input___choice.html#abd94b4a2f8a86a01870f3c00940966eb", null ],
+    [ "value", "class_fl___input___choice.html#a6f244a8fd6ee3827918dd3f4505c9764", null ]
+];

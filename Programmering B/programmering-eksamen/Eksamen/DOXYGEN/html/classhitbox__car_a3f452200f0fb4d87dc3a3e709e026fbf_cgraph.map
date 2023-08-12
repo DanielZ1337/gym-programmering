@@ -1,0 +1,5 @@
+<map id="hitbox_car::hitbox_car" name="hitbox_car::hitbox_car">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,156,73"/>
+<area shape="rect" id="node2" href="$classsf_1_1_transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object" alt="" coords="207,5,336,47"/>
+<area shape="rect" id="node3" href="$classsf_1_1_rectangle_shape.html#a5c65d374d4a259dfdc24efdd24a5dbec" title="Set the size of the rectangle." alt="" coords="204,71,339,112"/>
+</map>

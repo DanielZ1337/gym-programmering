@@ -1,0 +1,9 @@
+<map id="sf::Texture" name="sf::Texture">
+<area shape="rect" id="node1" title="Image living on the graphics card that can be used for drawing." alt="" coords="361,535,503,817"/>
+<area shape="rect" id="node2" href="$classsf_1_1_gl_resource.html" title="Base class for classes that require an OpenGL context." alt="" coords="5,263,229,369"/>
+<area shape="rect" id="node3" title=" " alt="" coords="253,277,384,355"/>
+<area shape="rect" id="node4" href="$classsf_1_1_vector2.html" title=" " alt="" coords="523,233,672,399"/>
+<area shape="rect" id="node5" title=" " alt="" coords="445,42,483,119"/>
+<area shape="rect" id="node6" href="$classsf_1_1_vector2.html" title="Utility template class for manipulating 2&#45;dimensional vectors." alt="" coords="539,5,655,156"/>
+<area shape="rect" id="node7" title=" " alt="" coords="697,277,743,355"/>
+</map>

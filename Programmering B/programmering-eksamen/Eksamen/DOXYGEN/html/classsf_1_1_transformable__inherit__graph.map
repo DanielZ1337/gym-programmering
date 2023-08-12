@@ -1,0 +1,10 @@
+<map id="sf::Transformable" name="sf::Transformable">
+<area shape="rect" id="node1" title="Decomposed transform defined by a position, a rotation and a scale." alt="" coords="378,5,594,332"/>
+<area shape="rect" id="node2" href="$classsf_1_1_shape.html" title="Base class for textured shapes with outline." alt="" coords="199,380,359,883"/>
+<area shape="rect" id="node6" href="$classsf_1_1_sprite.html" title="Drawable representation of a texture, with its own transformations, color, etc." alt="" coords="415,483,557,780"/>
+<area shape="rect" id="node8" href="$classsf_1_1_text.html" title="Graphical text that can be drawn to a render target." alt="" coords="581,409,756,853"/>
+<area shape="rect" id="node3" href="$classsf_1_1_circle_shape.html" title="Specialized shape representing a circle." alt="" coords="5,931,129,1096"/>
+<area shape="rect" id="node4" href="$classsf_1_1_convex_shape.html" title="Specialized shape representing a convex polygon." alt="" coords="153,945,277,1081"/>
+<area shape="rect" id="node5" href="$classsf_1_1_rectangle_shape.html" title="Specialized shape representing a rectangle." alt="" coords="301,945,439,1081"/>
+<area shape="rect" id="node7" href="$classcharacters.html" title=" " alt="" coords="463,967,573,1059"/>
+</map>

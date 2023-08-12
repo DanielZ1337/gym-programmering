@@ -1,0 +1,12 @@
+<map id="sf::Shader" name="sf::Shader">
+<area shape="rect" id="node1" title="Shader class (vertex, geometry and fragment)" alt="" coords="363,719,523,1031"/>
+<area shape="rect" id="node2" href="$classsf_1_1_gl_resource.html" title="Base class for classes that require an OpenGL context." alt="" coords="5,5,229,112"/>
+<area shape="rect" id="node10" href="$classsf_1_1_texture.html" title="Image living on the graphics card that can be used for drawing." alt="" coords="577,175,719,457"/>
+<area shape="rect" id="node3" href="$classsf_1_1_non_copyable.html" title="Utility class that makes any derived class non&#45;copyable." alt="" coords="135,535,262,656"/>
+<area shape="rect" id="node4" title=" " alt="" coords="287,549,433,641"/>
+<area shape="rect" id="node5" title=" " alt="" coords="705,20,743,97"/>
+<area shape="rect" id="node9" title=" " alt="" coords="457,549,596,641"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="309,277,389,355"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="426,277,547,355"/>
+<area shape="rect" id="node8" href="$structsf_1_1_shader_1_1_current_texture_type.html" title="Special type that can be passed to setUniform(), and that represents the texture of the object being ..." alt="" coords="620,557,823,634"/>
+</map>

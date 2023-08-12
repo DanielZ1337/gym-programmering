@@ -1,0 +1,4 @@
+<map id="hitbox_car::updateCar_hitbox" name="hitbox_car::updateCar_hitbox">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" id="node2" href="$classsf_1_1_transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object" alt="" coords="203,5,332,47"/>
+</map>

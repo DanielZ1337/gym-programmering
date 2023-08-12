@@ -1,0 +1,213 @@
+\hypertarget{class_fl___text___selection}{}\doxysection{Fl\+\_\+\+Text\+\_\+\+Selection Class Reference}
+\label{class_fl___text___selection}\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+
+
+This is an internal class for \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} to manage text selections. This class works correctly with U\+T\+F-\/8 strings assuming that the parameters for all calls are on character boundaries.  
+
+
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Text\+\_\+\+Buffer.\+H$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___selection_a93c52e97b24fe3afd0a3668bb93426ac}{set}} (int \mbox{\hyperlink{class_fl___text___selection_ac9c4fb69c164190da6448d1ec52f82bf}{start}}, int \mbox{\hyperlink{class_fl___text___selection_a6e212e08bac071f7847863a67bc3ea6a}{end}})
+\begin{DoxyCompactList}\small\item\em Set the selection range. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___selection_ad8fa85320dcc990fb1baa4adc6cf81d0}{update}} (int pos, int n\+Deleted, int n\+Inserted)
+\begin{DoxyCompactList}\small\item\em Updates a selection after text was modified. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___text___selection_ac9c4fb69c164190da6448d1ec52f82bf}{start}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Return the byte offset to the first selected character. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___text___selection_a6e212e08bac071f7847863a67bc3ea6a}{end}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Return the byte offset to the character after the last selected character. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fl___text___selection_a79f26408243fc616d056e42183c7253f}{selected}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Returns true if any text is selected. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___text___selection_a7bff68583fce36fa09474112c204d1a6}{selected}} (bool \mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\begin{DoxyCompactList}\small\item\em Modify the \textquotesingle{}selected\textquotesingle{} flag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___text___selection_a3dd3ddc20191fb623cd3497748e12c3e}{includes}} (int pos) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___text___selection_a9cdcad64dfb79f687455687fb98eb357}{position}} (int $\ast$\mbox{\hyperlink{class_fl___text___selection_ac9c4fb69c164190da6448d1ec52f82bf}{start}}, int $\ast$\mbox{\hyperlink{class_fl___text___selection_a6e212e08bac071f7847863a67bc3ea6a}{end}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\begin{DoxyCompactList}\small\item\em Return the positions of this selection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___text___selection_ae4abfc4286beaabbca38c42a2681d730}{m\+Start}}
+\begin{DoxyCompactList}\small\item\em byte offset to the first selected character \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fl___text___selection_ac2871c01124862070a9eb68af7c0b171}{m\+End}}
+\begin{DoxyCompactList}\small\item\em byte offset to the character after the last selected character \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fl___text___selection_a7ed85098de59ea67762b54cbccb08c0e}{m\+Selected}}
+\begin{DoxyCompactList}\small\item\em this flag is set if any text is selected \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fl___text___selection_a9b1dbbeb788827f7e2c822a6b14d4a83}{Fl\+\_\+\+Text\+\_\+\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is an internal class for \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}} to manage text selections. This class works correctly with U\+T\+F-\/8 strings assuming that the parameters for all calls are on character boundaries. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___text___selection_a6e212e08bac071f7847863a67bc3ea6a}\label{class_fl___text___selection_a6e212e08bac071f7847863a67bc3ea6a}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!end@{end}}
+\index{end@{end}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Selection\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the byte offset to the character after the last selected character. 
+
+\begin{DoxyReturn}{Returns}
+byte offset 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___selection_a3dd3ddc20191fb623cd3497748e12c3e}\label{class_fl___text___selection_a3dd3ddc20191fb623cd3497748e12c3e}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!includes@{includes}}
+\index{includes@{includes}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{includes()}{includes()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Selection\+::includes (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption}) const}
+
+Return true if position {\ttfamily pos} with indentation {\ttfamily disp\+Index} is in the \mbox{\hyperlink{class_fl___text___selection}{Fl\+\_\+\+Text\+\_\+\+Selection}}. \mbox{\Hypertarget{class_fl___text___selection_a9cdcad64dfb79f687455687fb98eb357}\label{class_fl___text___selection_a9cdcad64dfb79f687455687fb98eb357}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!position@{position}}
+\index{position@{position}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Selection\+::position (\begin{DoxyParamCaption}\item[{int $\ast$}]{start,  }\item[{int $\ast$}]{end }\end{DoxyParamCaption}) const}
+
+
+
+Return the positions of this selection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & return byte offset to first selected character \\
+\hline
+{\em end} & return byte offset pointing after last selected character \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if selected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___selection_a79f26408243fc616d056e42183c7253f}\label{class_fl___text___selection_a79f26408243fc616d056e42183c7253f}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!selected@{selected}}
+\index{selected@{selected}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{selected()}{selected()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Fl\+\_\+\+Text\+\_\+\+Selection\+::selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns true if any text is selected. 
+
+\begin{DoxyReturn}{Returns}
+a non-\/zero number if any text has been selected, or 0 if no text is selected. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___selection_a7bff68583fce36fa09474112c204d1a6}\label{class_fl___text___selection_a7bff68583fce36fa09474112c204d1a6}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!selected@{selected}}
+\index{selected@{selected}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{selected()}{selected()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Selection\+::selected (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modify the \textquotesingle{}selected\textquotesingle{} flag. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & new flag \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___selection_a93c52e97b24fe3afd0a3668bb93426ac}\label{class_fl___text___selection_a93c52e97b24fe3afd0a3668bb93426ac}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!set@{set}}
+\index{set@{set}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Selection\+::set (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{end }\end{DoxyParamCaption})}
+
+
+
+Set the selection range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & byte offset to first selected character \\
+\hline
+{\em end} & byte offset pointing after last selected character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___text___selection_ac9c4fb69c164190da6448d1ec52f82bf}\label{class_fl___text___selection_ac9c4fb69c164190da6448d1ec52f82bf}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!start@{start}}
+\index{start@{start}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Selection\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the byte offset to the first selected character. 
+
+\begin{DoxyReturn}{Returns}
+byte offset 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___text___selection_ad8fa85320dcc990fb1baa4adc6cf81d0}\label{class_fl___text___selection_ad8fa85320dcc990fb1baa4adc6cf81d0}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!update@{update}}
+\index{update@{update}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Text\+\_\+\+Selection\+::update (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{n\+Deleted,  }\item[{int}]{n\+Inserted }\end{DoxyParamCaption})}
+
+
+
+Updates a selection after text was modified. 
+
+Updates an individual selection for changes in the corresponding text 
+\begin{DoxyParams}{Parameters}
+{\em pos} & byte offset into text buffer at which the change occurred \\
+\hline
+{\em n\+Deleted} & number of bytes deleted from the buffer \\
+\hline
+{\em n\+Inserted} & number of bytes inserted into the buffer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_fl___text___selection_a9b1dbbeb788827f7e2c822a6b14d4a83}\label{class_fl___text___selection_a9b1dbbeb788827f7e2c822a6b14d4a83}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!Fl\_Text\_Buffer@{Fl\_Text\_Buffer}}
+\index{Fl\_Text\_Buffer@{Fl\_Text\_Buffer}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{Fl\_Text\_Buffer}{Fl\_Text\_Buffer}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_fl___text___buffer}{Fl\+\_\+\+Text\+\_\+\+Buffer}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___text___selection_ac2871c01124862070a9eb68af7c0b171}\label{class_fl___text___selection_ac2871c01124862070a9eb68af7c0b171}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!mEnd@{mEnd}}
+\index{mEnd@{mEnd}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{mEnd}{mEnd}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Selection\+::m\+End\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+byte offset to the character after the last selected character 
+
+\mbox{\Hypertarget{class_fl___text___selection_a7ed85098de59ea67762b54cbccb08c0e}\label{class_fl___text___selection_a7ed85098de59ea67762b54cbccb08c0e}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!mSelected@{mSelected}}
+\index{mSelected@{mSelected}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{mSelected}{mSelected}}
+{\footnotesize\ttfamily bool Fl\+\_\+\+Text\+\_\+\+Selection\+::m\+Selected\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+this flag is set if any text is selected 
+
+\mbox{\Hypertarget{class_fl___text___selection_ae4abfc4286beaabbca38c42a2681d730}\label{class_fl___text___selection_ae4abfc4286beaabbca38c42a2681d730}} 
+\index{Fl\_Text\_Selection@{Fl\_Text\_Selection}!mStart@{mStart}}
+\index{mStart@{mStart}!Fl\_Text\_Selection@{Fl\_Text\_Selection}}
+\doxysubsubsection{\texorpdfstring{mStart}{mStart}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Text\+\_\+\+Selection\+::m\+Start\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+byte offset to the first selected character 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___text___buffer_8_h}{Fl\+\_\+\+Text\+\_\+\+Buffer.\+H}}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="sf::Transformable::setPosition" name="sf::Transformable::setPosition">
+<area shape="rect" id="node1" title="set the position of the object" alt="" coords="569,166,699,207"/>
+<area shape="rect" id="node2" href="$classhitbox__car.html#a3f452200f0fb4d87dc3a3e709e026fbf" title=" " alt="" coords="351,5,501,32"/>
+<area shape="rect" id="node3" href="$classhitbox__enemy.html#aa76a9587587ebbb51c8b246e7f12e3b9" title=" " alt="" coords="353,57,499,98"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,239,56,265"/>
+<area shape="rect" id="node5" href="$classplayer.html#a34162c4ebd868577055b90bf6523c156" title=" " alt="" coords="376,173,476,200"/>
+<area shape="rect" id="node6" href="$classhitbox__car.html#a47af927cecc79eabdbbe23b297a180fe" title=" " alt="" coords="351,225,501,266"/>
+<area shape="rect" id="node7" href="$classhitbox__enemy.html#a4a3c9a3f0937d4949a1ee55bb2802dca" title=" " alt="" coords="331,290,521,331"/>
+<area shape="rect" id="node8" href="$classplayer.html#a59ba7e8a79f02353c1a000f0cc0ed2c3" title=" " alt="" coords="355,356,497,383"/>
+<area shape="rect" id="node9" href="$classuser_input.html#a8dbf6e6ce36e9f963c5a8ce5004be237" title=" " alt="" coords="104,264,283,291"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="hitbox_car" name="hitbox_car">
+<area shape="rect" id="node1" title=" " alt="" coords="99,639,242,731"/>
+<area shape="rect" id="node2" href="$classsf_1_1_rectangle_shape.html" title="Specialized shape representing a rectangle." alt="" coords="102,453,239,589"/>
+<area shape="rect" id="node3" href="$classsf_1_1_shape.html" title="Base class for textured shapes with outline." alt="" coords="5,5,165,391"/>
+<area shape="rect" id="node4" href="$classsf_1_1_vector2.html" title=" " alt="" coords="189,123,323,273"/>
+</map>

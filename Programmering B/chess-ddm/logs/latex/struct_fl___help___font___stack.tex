@@ -1,0 +1,132 @@
+\hypertarget{struct_fl___help___font___stack}{}\doxysection{Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack Struct Reference}
+\label{struct_fl___help___font___stack}\index{Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Help\+\_\+\+View.\+H$>$}
+
+
+
+Collaboration diagram for Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{struct_fl___help___font___stack__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_fl___help___font___stack_a7d53bd14a9f5459d3b82f19351fbd347}{Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{struct_fl___help___font___stack_af9637a9b83ea23a618560a09827c6ee1}{init}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} f, \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{struct_fl___help___font___stack_a3e595bc9d80ba29e1f10d9dfab8435e3}{top}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \&f, \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \&\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \&c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{struct_fl___help___font___stack_af931d5b3f964f60604fa418445b1fffb}{push}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} f, \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{struct_fl___help___font___stack_a2f654f36e75490b0bcdd71c1eddd20ea}{pop}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \&f, \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \&\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \&c)
+\item 
+size\+\_\+t \mbox{\hyperlink{struct_fl___help___font___stack_adca714aadcd0ba701747e4c26ee8ff90}{count}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{struct_fl___help___font___stack_a316766f09e93398a71fc3bb4731be19c}{nfonts\+\_\+}}
+\begin{DoxyCompactList}\small\item\em current number of fonts in stack \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_fl___help___font___style}{Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Style}} \mbox{\hyperlink{struct_fl___help___font___stack_a6063d065c4c811947dd2a0b8d658d7bf}{elts\+\_\+}} \mbox{[}100\mbox{]}
+\begin{DoxyCompactList}\small\item\em font elements \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_fl___help___font___stack_a7d53bd14a9f5459d3b82f19351fbd347}\label{struct_fl___help___font___stack_a7d53bd14a9f5459d3b82f19351fbd347}} 
+\index{Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}!Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}}
+\index{Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}!Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}}
+\doxysubsubsection{\texorpdfstring{Fl\_Help\_Font\_Stack()}{Fl\_Help\_Font\_Stack()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack\+::\+Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+font stack construction, initialize attributes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_fl___help___font___stack_adca714aadcd0ba701747e4c26ee8ff90}\label{struct_fl___help___font___stack_adca714aadcd0ba701747e4c26ee8ff90}} 
+\index{Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}!count@{count}}
+\index{count@{count}!Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily size\+\_\+t Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the current count of font style elements in the stack. \mbox{\Hypertarget{struct_fl___help___font___stack_af9637a9b83ea23a618560a09827c6ee1}\label{struct_fl___help___font___stack_af9637a9b83ea23a618560a09827c6ee1}} 
+\index{Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}!init@{init}}
+\index{init@{init}!Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{f,  }\item[{\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}}}]{s,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_fl___help___font___stack_af9637a9b83ea23a618560a09827c6ee1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_fl___help___font___stack_a2f654f36e75490b0bcdd71c1eddd20ea}\label{struct_fl___help___font___stack_a2f654f36e75490b0bcdd71c1eddd20ea}} 
+\index{Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}!pop@{pop}}
+\index{pop@{pop}!Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack\+::pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \&}]{f,  }\item[{\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \&}]{s,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Pops from the stack the font style triplet and calls \mbox{\hyperlink{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}{fl\+\_\+font()}} \& \mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\+\_\+color()}} adequately Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_fl___help___font___stack_a2f654f36e75490b0bcdd71c1eddd20ea_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_fl___help___font___stack_af931d5b3f964f60604fa418445b1fffb}\label{struct_fl___help___font___stack_af931d5b3f964f60604fa418445b1fffb}} 
+\index{Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}!push@{push}}
+\index{push@{push}!Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack\+::push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{f,  }\item[{\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}}}]{s,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Pushes the font style triplet on the stack, also calls \mbox{\hyperlink{group__fl__attributes_ga80203d2dd1e06550e7a35d6bb72f9bd6}{fl\+\_\+font()}} \& \mbox{\hyperlink{group__fl__attributes_ga974e9f64959aa83cf6f0a36d3f0105aa}{fl\+\_\+color()}} adequately Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_fl___help___font___stack_af931d5b3f964f60604fa418445b1fffb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_fl___help___font___stack_a3e595bc9d80ba29e1f10d9dfab8435e3}\label{struct_fl___help___font___stack_a3e595bc9d80ba29e1f10d9dfab8435e3}} 
+\index{Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}!top@{top}}
+\index{top@{top}!Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack\+::top (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \&}]{f,  }\item[{\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \&}]{s,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the top (current) element on the stack. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_fl___help___font___stack_a6063d065c4c811947dd2a0b8d658d7bf}\label{struct_fl___help___font___stack_a6063d065c4c811947dd2a0b8d658d7bf}} 
+\index{Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}!elts\_@{elts\_}}
+\index{elts\_@{elts\_}!Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}}
+\doxysubsubsection{\texorpdfstring{elts\_}{elts\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_fl___help___font___style}{Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Style}} Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack\+::elts\+\_\+\mbox{[}100\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+font elements 
+
+\mbox{\Hypertarget{struct_fl___help___font___stack_a316766f09e93398a71fc3bb4731be19c}\label{struct_fl___help___font___stack_a316766f09e93398a71fc3bb4731be19c}} 
+\index{Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}!nfonts\_@{nfonts\_}}
+\index{nfonts\_@{nfonts\_}!Fl\_Help\_Font\_Stack@{Fl\_Help\_Font\_Stack}}
+\doxysubsubsection{\texorpdfstring{nfonts\_}{nfonts\_}}
+{\footnotesize\ttfamily size\+\_\+t Fl\+\_\+\+Help\+\_\+\+Font\+\_\+\+Stack\+::nfonts\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+current number of fonts in stack 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___help___view_8_h}{Fl\+\_\+\+Help\+\_\+\+View.\+H}}\end{DoxyCompactItemize}

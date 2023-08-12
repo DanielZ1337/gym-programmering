@@ -1,0 +1,1972 @@
+\hypertarget{class_fl___widget}{}\doxysection{Fl\+\_\+\+Widget Class Reference}
+\label{class_fl___widget}\index{Fl\_Widget@{Fl\_Widget}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Widget.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Widget\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_fl___widget__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_fl___widget_a0b9e615441b82b20d0e91e5659a202c6}{$\sim$\+Fl\+\_\+\+Widget}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{draw}} ()=0
+\item 
+virtual int \mbox{\hyperlink{class_fl___widget_a3521aba25eda761620953dd49d335ea7}{handle}} (int event)
+\item 
+int \mbox{\hyperlink{class_fl___widget_a44a9ee84c6884c8daddbbcbb2aef9c0e}{is\+\_\+label\+\_\+copied}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} $\ast$ \mbox{\hyperlink{class_fl___widget_a6f55261683ecaf68d70e424213d030b0}{parent}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a6b57ff665a0e988064cb42d742668566}{parent}} (\mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} $\ast$p)
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ad00d1457b3f578c8e6ffca52d9facad8}{type}} (\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} t)
+\item 
+int \mbox{\hyperlink{class_fl___widget_aeed320ce65d02a7f0fcab1363f0136b0}{x}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___widget_a4665aaf0850ed0d334600e2cac58c360}{y}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___widget_a9c582969d134d01916816daf73a35402}{w}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___widget_a56c09392686ee558104fd7550496894f}{h}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a59fd9dbe65ba2602412ebc4c07e9c362}{resize}} (int \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x}}, int \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y}}, int \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}, int \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}})
+\item 
+int \mbox{\hyperlink{class_fl___widget_a5934aae6f86145fd40e65b35c12df0dc}{damage\+\_\+resize}} (int, int, int, int)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}{position}} (int X, int Y)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ae386844a68c27ea0b64313619551e786}{size}} (int W, int H)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} \mbox{\hyperlink{class_fl___widget_a6a3c44d082f89ba3aefd405c388187c5}{align}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a7dcd6fc8c6108fb68a00bf922cc79022}{align}} (\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} alignment)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} \mbox{\hyperlink{class_fl___widget_a9d1f48fbbe4d885e81df38b2a93b614f}{box}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a454a0be4839ea5ed2aa203d788bf840f}{box}} (\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} new\+\_\+box)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___widget_a0f4654d4d9aab8a1c1078fca5660742a}{color}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a7a9368212ada4f46759f44d8815cf9a4}{color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} bg)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\+\_\+color}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ab566daea3e4e8278319acb06188ee4b1}{selection\+\_\+color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} a)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a5ab161ab774b29946049a44d575b363d}{color}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} bg, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} sel)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a8b8d231929f3a5f5726811af50161ec9}{label}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$text)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ab49565fabce4b04f7ee86d862402a060}{copy\+\_\+label}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$new\+\_\+label)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_aa3afb86e13e921c17934cf2b1f6951b4}{label}} (\mbox{\hyperlink{_enumerations_8_h_ad5774781d33328b82990ff9e25dfd61b}{Fl\+\_\+\+Labeltype}} a, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ad5774781d33328b82990ff9e25dfd61b}{Fl\+\_\+\+Labeltype}} \mbox{\hyperlink{class_fl___widget_abdb804f3d186f60570874a664189a010}{labeltype}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a932f1c090154ba6ccdd9ea18250e7c71}{labeltype}} (\mbox{\hyperlink{_enumerations_8_h_ad5774781d33328b82990ff9e25dfd61b}{Fl\+\_\+\+Labeltype}} a)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___widget_a01404bc412b13a9dfe4dda33f204abe0}{labelcolor}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_aadbbe3d4c1597fa2ed5a9dd8c4749788}{labelcolor}} (\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} \mbox{\hyperlink{class_fl___widget_a0bd196066e9bf5ff226cfb7e7c7ba47a}{labelfont}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_adcdff2636eda5b015ca80ca30b9b6f07}{labelfont}} (\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} f)
+\item 
+\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{class_fl___widget_a9e35a6e45eb56c6dd9837ef183909200}{labelsize}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a9a10a8d1f48d2951f7aba9018dd42d9f}{labelsize}} (\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} pix)
+\item 
+\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___widget_a42372b96b98b126a211b88dc935c2ae6}{image}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___widget_acb62e5313ae89e0511bc284048b222f3}{image}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a2be5b8385b8870800ef83f88be463c5b}{image}} (\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$img)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_aff29d81e64b617158472f38d2cac186e}{image}} (\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} \&img)
+\item 
+\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___widget_a03ae936e18ba13a2bfa0a77eff276606}{deimage}} ()
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___widget_a1c92a1ca345a764028811881aeed6f7a}{deimage}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a35ddcfab40a9b550d7d7f4c8a548df13}{deimage}} (\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$img)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a729cdb0cae267e30f49b65d360371f82}{deimage}} (\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} \&img)
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$ \mbox{\hyperlink{class_fl___widget_ab615a4e095df55c88cd2eb014289eedd}{tooltip}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a794140ed451d427e9990ea01c06ac390}{tooltip}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$text)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_af5a91645a4735db51626a2e273c04bb9}{copy\+\_\+tooltip}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$text)
+\item 
+\mbox{\hyperlink{_fl___widget_8_h_ad515601d7e8cbd1c65ece6364e8c23d0}{Fl\+\_\+\+Callback\+\_\+p}} \mbox{\hyperlink{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}{callback}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ad5fe4ff0d0f777af13f3d8818c869689}{callback}} (\mbox{\hyperlink{_fl___widget_8_h_a640bea0193560eec20903c45c93c7472}{Fl\+\_\+\+Callback}} $\ast$cb, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$p)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a345aff3537426aa79b3e4c5c5b1fec7b}{callback}} (\mbox{\hyperlink{_fl___widget_8_h_a640bea0193560eec20903c45c93c7472}{Fl\+\_\+\+Callback}} $\ast$cb)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ab2b89e03832a172d7648dabe0910b038}{callback}} (\mbox{\hyperlink{_fl___widget_8_h_a6ce47be89b1f24ea198fd2c93951969e}{Fl\+\_\+\+Callback0}} $\ast$cb)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a8b1d87835f357496bf7dd92e059221e1}{callback}} (\mbox{\hyperlink{_fl___widget_8_h_a25bc4848432a4fbd426456f2952712eb}{Fl\+\_\+\+Callback1}} $\ast$cb, long p=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$ \mbox{\hyperlink{class_fl___widget_a9463920cdace382888f9766781e7aba9}{user\+\_\+data}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a29465f30c3e1a83468e672402c286ec8}{user\+\_\+data}} (\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$\mbox{\hyperlink{forms_8_h_a3b90d5a73541ab9402511d87bed076ef}{v}})
+\item 
+long \mbox{\hyperlink{class_fl___widget_a217b954bb7a3c053850de3234fce3e62}{argument}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a3eb3b128cbad3f579a66cab813470442}{argument}} (long \mbox{\hyperlink{forms_8_h_a3b90d5a73541ab9402511d87bed076ef}{v}})
+\item 
+\mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665}{Fl\+\_\+\+When}} \mbox{\hyperlink{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}{when}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_acb46c71f55ccdfeead9e9dcb3fb2c23b}{when}} (\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{forms_8_h_acb559820d9ca11295b4500f179ef6392}{i}})
+\item 
+unsigned int \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___widget_ac51a7380e249127ca47aad175f162360}{visible\+\_\+r}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a3b7971dc3a0385c31e71b9f3786eac2d}{show}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a408b7ca0d0ed7682275e79b976c5dda4}{hide}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a85981546c4927bd5e6d43d6e3df3416a}{set\+\_\+visible}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a19e89bf3b3d2e418b772739ffa6e24d7}{clear\+\_\+visible}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_fl___widget_ae10c2f227e76414e8142808eeda23c0c}{active}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___widget_a25ebd158cb9f7ccfa7b4cf3406c2b603}{active\+\_\+r}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ae0ca5f7159aceba7d813c81167e684bb}{activate}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a2eb3d2eebe8ba623c4007d4f8e66a1ee}{deactivate}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_fl___widget_ac17e491c17a34fff2c21351811b735b0}{output}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a952fe0471023401e2efacd69bd2b57e6}{set\+\_\+output}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a4288bfa92dadf31956e2f14f9bfeff5e}{clear\+\_\+output}} ()
+\item 
+unsigned int \mbox{\hyperlink{class_fl___widget_ae98726dbe7e04e9633bb071d2038a01c}{takesevents}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+unsigned int \mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a825fd3487559e1c283550abdb92304ef}{set\+\_\+changed}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_abd83334100f22d5880cf34a233a35831}{clear\+\_\+changed}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a8ddff7cdc6f39414117381e8c7134876}{clear\+\_\+active}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_adf01a4e0c1e89c7921d50ef558c18ccd}{set\+\_\+active}} ()
+\item 
+int \mbox{\hyperlink{class_fl___widget_ab1fe36207b4a59cae3796b0e6d3b7df8}{take\+\_\+focus}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_acf82200fdfe16a2e0bd9d3ee58e44958}{set\+\_\+visible\+\_\+focus}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a5450e5156a76c273e67ef09225c9615b}{clear\+\_\+visible\+\_\+focus}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a6a2a0769c73831e6ef0076d9efa98d72}{visible\+\_\+focus}} (int \mbox{\hyperlink{forms_8_h_a3b90d5a73541ab9402511d87bed076ef}{v}})
+\item 
+unsigned int \mbox{\hyperlink{class_fl___widget_a1acaad8af2c94836dea0d3086dca1ac3}{visible\+\_\+focus}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a37aa870315e37ddc1246caa6421322f4}{do\+\_\+callback}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a89d369c279436a4ec6122b5fe746d821}{do\+\_\+callback}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$o, long arg)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a8bf5537fae51a9891a330d4c6b6e499b}{do\+\_\+callback}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$o, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$arg=0)
+\item 
+int \mbox{\hyperlink{class_fl___widget_abbd4f11b53ba045345cb3815b002076a}{test\+\_\+shortcut}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a4b3849897d55073256ab98e46298afd9}{\+\_\+set\+\_\+fullscreen}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a703b56d2fcb2c31e1bd7d064af444a78}{\+\_\+clear\+\_\+fullscreen}} ()
+\item 
+int \mbox{\hyperlink{class_fl___widget_a318c29413cefc088a494ff5b7057dcd4}{contains}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$\mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___widget_a305b6c70a1aa0e8127547c0c2333b4d3}{inside}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$wgt) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a22b6faff91b6056e55ba4270723734b7}{redraw\+\_\+label}} ()
+\item 
+\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} \mbox{\hyperlink{class_fl___widget_ada8bb104e4501a2b123e813b32b6ed95}{damage}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_af9942c4d795ec12c7c1ec1ce5e665a01}{clear\+\_\+damage}} (\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} c=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ace94ae2916d23e563bf30fb5bdab9aad}{damage}} (\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ac92191cba5d17ae34bfc346d2126c9f2}{damage}} (\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} c, int \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x}}, int \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y}}, int \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}, int \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a7b8ab6ccdfd59c63aad40a5565dd1d36}{draw\+\_\+label}} (int, int, int, int, \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a8b10100a5384ebce7e121fa04730603c}{measure\+\_\+label}} (int \&ww, int \&hh) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$ \mbox{\hyperlink{class_fl___widget_a2779c31be7e3ecd5d0205a5196c2801d}{window}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$ \mbox{\hyperlink{class_fl___widget_ab33601d18391c2898935fa6a699ded07}{top\+\_\+window}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$ \mbox{\hyperlink{class_fl___widget_a7a308d15ff6daf8104f6212980c8fcf1}{top\+\_\+window\+\_\+offset}} (int \&xoff, int \&yoff) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+virtual \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} $\ast$ \mbox{\hyperlink{class_fl___widget_a645c3112dc8c242b099ef8aee45fe7ee}{as\+\_\+group}} ()
+\item 
+virtual \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} $\ast$ \mbox{\hyperlink{class_fl___widget_a464c6760c08e56cf53338398e5bc60f4}{as\+\_\+window}} ()
+\item 
+virtual class \mbox{\hyperlink{class_fl___gl___window}{Fl\+\_\+\+Gl\+\_\+\+Window}} $\ast$ \mbox{\hyperlink{class_fl___widget_a5951fcf543a56357c2375657c7db6314}{as\+\_\+gl\+\_\+window}} ()
+\item 
+int \mbox{\hyperlink{class_fl___widget_aeeef6f7148baff5b85cc50e1a34e6a13}{use\+\_\+accents\+\_\+menu}} ()
+\item 
+\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} \mbox{\hyperlink{class_fl___widget_ad307dbccabe1d2e71c27dae946821f06}{color2}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ae9bfda1ebdcbf0946aef558b9d9f0e3c}{color2}} (unsigned a)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a46a6790233f3f50b36bbfd7f3fc5fece}{default\+\_\+callback}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$cb, \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$d)
+\item 
+static unsigned int \mbox{\hyperlink{class_fl___widget_a29cf95bbdfb8e1f72cd2c484e80dc681}{label\+\_\+shortcut}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$t)
+\item 
+static int \mbox{\hyperlink{class_fl___widget_a1b3036aaba94724e83a935085fbfddd2}{test\+\_\+shortcut}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool require\+\_\+alt=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa1380ea34ff623315abc25cbeefc17375}{I\+N\+A\+C\+T\+I\+VE}} = 1$<$$<$0, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fab99b001e8f3289fc0cd0191ff41f77d9}{I\+N\+V\+I\+S\+I\+B\+LE}} = 1$<$$<$1, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fafa54ec676a879041361189cc8de88b57}{O\+U\+T\+P\+UT}} = 1$<$$<$2, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa1db2da0bab10b7aba1cde4023f2ebdec}{N\+O\+B\+O\+R\+D\+ER}} = 1$<$$<$3, 
+\newline
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa1d2b155a766bc59be7a3f60d306de852}{F\+O\+R\+C\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON}} = 1$<$$<$4, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fadaf04045e940879e007c4665fe19f66f}{N\+O\+N\+\_\+\+M\+O\+D\+AL}} = 1$<$$<$5, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fab75f07926913da5f59be0ebfff6f6791}{S\+H\+O\+R\+T\+C\+U\+T\+\_\+\+L\+A\+B\+EL}} = 1$<$$<$6, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa6acfd100f5bddca8160f5771994fd256}{C\+H\+A\+N\+G\+ED}} = 1$<$$<$7, 
+\newline
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa00340c90b72c9487fedd12da4da50f21}{O\+V\+E\+R\+R\+I\+DE}} = 1$<$$<$8, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368facfdb57ccadb990d16a0d5005a4482ac6}{V\+I\+S\+I\+B\+L\+E\+\_\+\+F\+O\+C\+US}} = 1$<$$<$9, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fae89fb627b81e0c46e693780bb80dc354}{C\+O\+P\+I\+E\+D\+\_\+\+L\+A\+B\+EL}} = 1$<$$<$10, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa91600fba5c1d9d2e3bc198f6d40d92ea}{C\+L\+I\+P\+\_\+\+C\+H\+I\+L\+D\+R\+EN}} = 1$<$$<$11, 
+\newline
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa87ee026ccf38470eb4a2dbb88b565c95}{M\+E\+N\+U\+\_\+\+W\+I\+N\+D\+OW}} = 1$<$$<$12, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa252bd920b8f19affab6727fde16ddcea}{T\+O\+O\+L\+T\+I\+P\+\_\+\+W\+I\+N\+D\+OW}} = 1$<$$<$13, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa7d57c0f68ed7163ab25fdc1ac1f394f9}{M\+O\+D\+AL}} = 1$<$$<$14, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368faf69197e05ccc7e274b8eb1b87bf0c603}{N\+O\+\_\+\+O\+V\+E\+R\+L\+AY}} = 1$<$$<$15, 
+\newline
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa2ff119d7f50c5e7149878ac1bae6d93a}{G\+R\+O\+U\+P\+\_\+\+R\+E\+L\+A\+T\+I\+VE}} = 1$<$$<$16, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa0e4b0ee03d96b193e35db4acbd33dc34}{C\+O\+P\+I\+E\+D\+\_\+\+T\+O\+O\+L\+T\+IP}} = 1$<$$<$17, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368faeadd8cbed1304eb2240d4a54a4046792}{F\+U\+L\+L\+S\+C\+R\+E\+EN}} = 1$<$$<$18, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa186f7e49cd754ecdabfcabe366aab2e9}{M\+A\+C\+\_\+\+U\+S\+E\+\_\+\+A\+C\+C\+E\+N\+T\+S\+\_\+\+M\+E\+NU}} = 1$<$$<$19, 
+\newline
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa3054712c5eb3127dbf1cacbf6ce20b5a}{U\+S\+E\+R\+F\+L\+A\+G3}} = 1$<$$<$29, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa131121d89e9c73bc4c2de9e58ecd9976}{U\+S\+E\+R\+F\+L\+A\+G2}} = 1$<$$<$30, 
+\mbox{\hyperlink{class_fl___widget_a1485121e423dce37e3ee476c8916368fa673de93b5a47a17d1a0679f51f944467}{U\+S\+E\+R\+F\+L\+A\+G1}} = 1$<$$<$31
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___widget_aa192c03688079b54d25d950e553ec16e}{Fl\+\_\+\+Widget}} (int \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x}}, int \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y}}, int \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}, int \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$\mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label}}=0L)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x}} (int \mbox{\hyperlink{forms_8_h_a3b90d5a73541ab9402511d87bed076ef}{v}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y}} (int \mbox{\hyperlink{forms_8_h_a3b90d5a73541ab9402511d87bed076ef}{v}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}} (int \mbox{\hyperlink{forms_8_h_a3b90d5a73541ab9402511d87bed076ef}{v}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}} (int \mbox{\hyperlink{forms_8_h_a3b90d5a73541ab9402511d87bed076ef}{v}})
+\item 
+unsigned int \mbox{\hyperlink{class_fl___widget_a5b8a508113d122b448c38045e65e4266}{flags}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a7244e112711741978f19ceadd8f196b5}{set\+\_\+flag}} (unsigned int c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_aed4cb72875f7a3a5b14dec33d78cb4e3}{clear\+\_\+flag}} (unsigned int c)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a7f05e24d343941328fa38958feab4168}{draw\+\_\+box}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a3754dd180480495a04baa80cba92e27e}{draw\+\_\+box}} (\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} t, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a2c12095ee31af6a3a21aace99fef312f}{draw\+\_\+box}} (\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} t, int \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x}}, int \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y}}, int \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}, int \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}, \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} c) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_aef496c5494735f8b5c4ead32e30b16e5}{draw\+\_\+backdrop}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a60e13c7f4ead4f0c543d1c8b7582be8c}{draw\+\_\+focus}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a82183cb42b4ed04f1085243f3e61c4a6}{draw\+\_\+focus}} (\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} t, int \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x}}, int \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y}}, int \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w}}, int \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h}}) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_aa730a156fdf91a95b38b44b9e1ee5d5c}{draw\+\_\+label}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___widget_a1815f7f35b74656aba72de124392ebca}{draw\+\_\+label}} (int, int, int, int) \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fl___widget_a94d0d92ae03a8ba20eb42efa2dd2831d}{Fl\+\_\+\+Group}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} is the base class for all widgets in F\+L\+TK. ~\newline
+
+
+You can\textquotesingle{}t create one of these because the constructor is not public. However you can subclass it. ~\newline
+
+
+All \char`\"{}property\char`\"{} accessing methods, such as \mbox{\hyperlink{class_fl___widget_a0f4654d4d9aab8a1c1078fca5660742a}{color()}}, \mbox{\hyperlink{class_fl___widget_a6f55261683ecaf68d70e424213d030b0}{parent()}}, or \mbox{\hyperlink{class_fl___widget_a217b954bb7a3c053850de3234fce3e62}{argument()}} are implemented as trivial inline functions and thus are as fast and small as accessing fields in a structure. Unless otherwise noted, the property setting methods such as color(n) or label(s) are also trivial inline functions, even if they change the widget\textquotesingle{}s appearance. It is up to the user code to call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} after these. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368f}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368f}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}
+
+flags possible values enumeration. See \mbox{\hyperlink{class_fl___widget_ae0ca5f7159aceba7d813c81167e684bb}{activate()}}, \mbox{\hyperlink{class_fl___widget_ac17e491c17a34fff2c21351811b735b0}{output()}}, \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}}, \mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed()}}, \mbox{\hyperlink{class_fl___widget_acf82200fdfe16a2e0bd9d3ee58e44958}{set\+\_\+visible\+\_\+focus()}} \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INACTIVE@{INACTIVE}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!INACTIVE@{INACTIVE}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa1380ea34ff623315abc25cbeefc17375}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa1380ea34ff623315abc25cbeefc17375}} 
+I\+N\+A\+C\+T\+I\+VE&the widget can\textquotesingle{}t receive focus, and is disabled but potentially visible \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVISIBLE@{INVISIBLE}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!INVISIBLE@{INVISIBLE}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fab99b001e8f3289fc0cd0191ff41f77d9}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fab99b001e8f3289fc0cd0191ff41f77d9}} 
+I\+N\+V\+I\+S\+I\+B\+LE&the widget is not drawn, but can receive a few special events \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OUTPUT@{OUTPUT}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!OUTPUT@{OUTPUT}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fafa54ec676a879041361189cc8de88b57}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fafa54ec676a879041361189cc8de88b57}} 
+O\+U\+T\+P\+UT&for output only \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOBORDER@{NOBORDER}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!NOBORDER@{NOBORDER}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa1db2da0bab10b7aba1cde4023f2ebdec}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa1db2da0bab10b7aba1cde4023f2ebdec}} 
+N\+O\+B\+O\+R\+D\+ER&don\textquotesingle{}t draw a decoration (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FORCE\_POSITION@{FORCE\_POSITION}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!FORCE\_POSITION@{FORCE\_POSITION}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa1d2b155a766bc59be7a3f60d306de852}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa1d2b155a766bc59be7a3f60d306de852}} 
+F\+O\+R\+C\+E\+\_\+\+P\+O\+S\+I\+T\+I\+ON&don\textquotesingle{}t let the window manager position the window (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NON\_MODAL@{NON\_MODAL}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!NON\_MODAL@{NON\_MODAL}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fadaf04045e940879e007c4665fe19f66f}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fadaf04045e940879e007c4665fe19f66f}} 
+N\+O\+N\+\_\+\+M\+O\+D\+AL&this is a hovering toolbar window (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHORTCUT\_LABEL@{SHORTCUT\_LABEL}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!SHORTCUT\_LABEL@{SHORTCUT\_LABEL}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fab75f07926913da5f59be0ebfff6f6791}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fab75f07926913da5f59be0ebfff6f6791}} 
+S\+H\+O\+R\+T\+C\+U\+T\+\_\+\+L\+A\+B\+EL&the label contains a shortcut we need to draw \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHANGED@{CHANGED}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!CHANGED@{CHANGED}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa6acfd100f5bddca8160f5771994fd256}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa6acfd100f5bddca8160f5771994fd256}} 
+C\+H\+A\+N\+G\+ED&the widget value changed \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OVERRIDE@{OVERRIDE}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!OVERRIDE@{OVERRIDE}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa00340c90b72c9487fedd12da4da50f21}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa00340c90b72c9487fedd12da4da50f21}} 
+O\+V\+E\+R\+R\+I\+DE&position window on top (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VISIBLE\_FOCUS@{VISIBLE\_FOCUS}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!VISIBLE\_FOCUS@{VISIBLE\_FOCUS}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368facfdb57ccadb990d16a0d5005a4482ac6}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368facfdb57ccadb990d16a0d5005a4482ac6}} 
+V\+I\+S\+I\+B\+L\+E\+\_\+\+F\+O\+C\+US&accepts keyboard focus navigation if the widget can have the focus \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COPIED\_LABEL@{COPIED\_LABEL}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!COPIED\_LABEL@{COPIED\_LABEL}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fae89fb627b81e0c46e693780bb80dc354}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fae89fb627b81e0c46e693780bb80dc354}} 
+C\+O\+P\+I\+E\+D\+\_\+\+L\+A\+B\+EL&the widget label is internally copied, its destruction is handled by the widget \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLIP\_CHILDREN@{CLIP\_CHILDREN}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!CLIP\_CHILDREN@{CLIP\_CHILDREN}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa91600fba5c1d9d2e3bc198f6d40d92ea}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa91600fba5c1d9d2e3bc198f6d40d92ea}} 
+C\+L\+I\+P\+\_\+\+C\+H\+I\+L\+D\+R\+EN&all drawing within this widget will be clipped (\mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MENU\_WINDOW@{MENU\_WINDOW}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!MENU\_WINDOW@{MENU\_WINDOW}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa87ee026ccf38470eb4a2dbb88b565c95}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa87ee026ccf38470eb4a2dbb88b565c95}} 
+M\+E\+N\+U\+\_\+\+W\+I\+N\+D\+OW&a temporary popup window, dismissed by clicking outside (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TOOLTIP\_WINDOW@{TOOLTIP\_WINDOW}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!TOOLTIP\_WINDOW@{TOOLTIP\_WINDOW}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa252bd920b8f19affab6727fde16ddcea}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa252bd920b8f19affab6727fde16ddcea}} 
+T\+O\+O\+L\+T\+I\+P\+\_\+\+W\+I\+N\+D\+OW&a temporary popup, transparent to events, and dismissed easily (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODAL@{MODAL}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!MODAL@{MODAL}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa7d57c0f68ed7163ab25fdc1ac1f394f9}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa7d57c0f68ed7163ab25fdc1ac1f394f9}} 
+M\+O\+D\+AL&a window blocking input to all other winows (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_OVERLAY@{NO\_OVERLAY}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!NO\_OVERLAY@{NO\_OVERLAY}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368faf69197e05ccc7e274b8eb1b87bf0c603}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368faf69197e05ccc7e274b8eb1b87bf0c603}} 
+N\+O\+\_\+\+O\+V\+E\+R\+L\+AY&window not using a hardware overlay plane (\mbox{\hyperlink{class_fl___menu___window}{Fl\+\_\+\+Menu\+\_\+\+Window}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GROUP\_RELATIVE@{GROUP\_RELATIVE}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!GROUP\_RELATIVE@{GROUP\_RELATIVE}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa2ff119d7f50c5e7149878ac1bae6d93a}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa2ff119d7f50c5e7149878ac1bae6d93a}} 
+G\+R\+O\+U\+P\+\_\+\+R\+E\+L\+A\+T\+I\+VE&Reserved, not implemented. DO N\+OT U\+SE. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COPIED\_TOOLTIP@{COPIED\_TOOLTIP}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!COPIED\_TOOLTIP@{COPIED\_TOOLTIP}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa0e4b0ee03d96b193e35db4acbd33dc34}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa0e4b0ee03d96b193e35db4acbd33dc34}} 
+C\+O\+P\+I\+E\+D\+\_\+\+T\+O\+O\+L\+T\+IP&the widget tooltip is internally copied, its destruction is handled by the widget \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FULLSCREEN@{FULLSCREEN}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!FULLSCREEN@{FULLSCREEN}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368faeadd8cbed1304eb2240d4a54a4046792}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368faeadd8cbed1304eb2240d4a54a4046792}} 
+F\+U\+L\+L\+S\+C\+R\+E\+EN&a fullscreen window (\mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAC\_USE\_ACCENTS\_MENU@{MAC\_USE\_ACCENTS\_MENU}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!MAC\_USE\_ACCENTS\_MENU@{MAC\_USE\_ACCENTS\_MENU}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa186f7e49cd754ecdabfcabe366aab2e9}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa186f7e49cd754ecdabfcabe366aab2e9}} 
+M\+A\+C\+\_\+\+U\+S\+E\+\_\+\+A\+C\+C\+E\+N\+T\+S\+\_\+\+M\+E\+NU&On the Mac OS platform, pressing and holding a key on the keyboard opens an accented-\/character menu window (\mbox{\hyperlink{class_fl___input__}{Fl\+\_\+\+Input\+\_\+}}, \mbox{\hyperlink{class_fl___text___editor}{Fl\+\_\+\+Text\+\_\+\+Editor}}) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{USERFLAG3@{USERFLAG3}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!USERFLAG3@{USERFLAG3}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa3054712c5eb3127dbf1cacbf6ce20b5a}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa3054712c5eb3127dbf1cacbf6ce20b5a}} 
+U\+S\+E\+R\+F\+L\+A\+G3&reserved for 3rd party extensions \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{USERFLAG2@{USERFLAG2}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!USERFLAG2@{USERFLAG2}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa131121d89e9c73bc4c2de9e58ecd9976}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa131121d89e9c73bc4c2de9e58ecd9976}} 
+U\+S\+E\+R\+F\+L\+A\+G2&reserved for 3rd party extensions \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{USERFLAG1@{USERFLAG1}!Fl\_Widget@{Fl\_Widget}}\index{Fl\_Widget@{Fl\_Widget}!USERFLAG1@{USERFLAG1}}}\mbox{\Hypertarget{class_fl___widget_a1485121e423dce37e3ee476c8916368fa673de93b5a47a17d1a0679f51f944467}\label{class_fl___widget_a1485121e423dce37e3ee476c8916368fa673de93b5a47a17d1a0679f51f944467}} 
+U\+S\+E\+R\+F\+L\+A\+G1&reserved for 3rd party extensions \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___widget_aa192c03688079b54d25d950e553ec16e}\label{class_fl___widget_aa192c03688079b54d25d950e553ec16e}} 
+\index{Fl\_Widget@{Fl\_Widget}!Fl\_Widget@{Fl\_Widget}}
+\index{Fl\_Widget@{Fl\_Widget}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{Fl\_Widget()}{Fl\_Widget()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Widget\+::\+Fl\+\_\+\+Widget (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{label = {\ttfamily 0L} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates a widget at the given position and size.
+
+The \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} is a protected constructor, but all derived widgets have a matching public constructor. It takes a value for \mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x()}}, \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y()}}, \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w()}}, \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h()}}, and an optional value for \mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x,y} & the position of the widget relative to the enclosing window \\
+\hline
+\mbox{\texttt{ in}}  & {\em w,h} & size of the widget in pixels \\
+\hline
+\mbox{\texttt{ in}}  & {\em label} & optional text for the widget label \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_a0b9e615441b82b20d0e91e5659a202c6}\label{class_fl___widget_a0b9e615441b82b20d0e91e5659a202c6}} 
+\index{Fl\_Widget@{Fl\_Widget}!````~Fl\_Widget@{$\sim$Fl\_Widget}}
+\index{````~Fl\_Widget@{$\sim$Fl\_Widget}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Widget()}{~Fl\_Widget()}}
+{\footnotesize\ttfamily virtual Fl\+\_\+\+Widget\+::$\sim$\+Fl\+\_\+\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destroys the widget. Destroying single widgets is not very common. You almost always want to destroy the parent group instead, which will destroy all of the child widgets and groups in that group.
+
+\begin{DoxySince}{Since}
+F\+L\+TK 1.\+3, the widget\textquotesingle{}s destructor removes the widget from its parent group, if it is member of a group. 
+\end{DoxySince}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___widget_a703b56d2fcb2c31e1bd7d064af444a78}\label{class_fl___widget_a703b56d2fcb2c31e1bd7d064af444a78}} 
+\index{Fl\_Widget@{Fl\_Widget}!\_clear\_fullscreen@{\_clear\_fullscreen}}
+\index{\_clear\_fullscreen@{\_clear\_fullscreen}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{\_clear\_fullscreen()}{\_clear\_fullscreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::\+\_\+clear\+\_\+fullscreen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___widget_a4b3849897d55073256ab98e46298afd9}\label{class_fl___widget_a4b3849897d55073256ab98e46298afd9}} 
+\index{Fl\_Widget@{Fl\_Widget}!\_set\_fullscreen@{\_set\_fullscreen}}
+\index{\_set\_fullscreen@{\_set\_fullscreen}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{\_set\_fullscreen()}{\_set\_fullscreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::\+\_\+set\+\_\+fullscreen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___widget_ae0ca5f7159aceba7d813c81167e684bb}\label{class_fl___widget_ae0ca5f7159aceba7d813c81167e684bb}} 
+\index{Fl\_Widget@{Fl\_Widget}!activate@{activate}}
+\index{activate@{activate}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Activates the widget. Changing this value will send F\+L\+\_\+\+A\+C\+T\+I\+V\+A\+TE to the widget if \mbox{\hyperlink{class_fl___widget_a25ebd158cb9f7ccfa7b4cf3406c2b603}{active\+\_\+r()}} is true. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ae10c2f227e76414e8142808eeda23c0c}{active()}}, \mbox{\hyperlink{class_fl___widget_a25ebd158cb9f7ccfa7b4cf3406c2b603}{active\+\_\+r()}}, \mbox{\hyperlink{class_fl___widget_a2eb3d2eebe8ba623c4007d4f8e66a1ee}{deactivate()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_ae10c2f227e76414e8142808eeda23c0c}\label{class_fl___widget_ae10c2f227e76414e8142808eeda23c0c}} 
+\index{Fl\_Widget@{Fl\_Widget}!active@{active}}
+\index{active@{active}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{active()}{active()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Widget\+::active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the widget is active. 
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the widget is inactive \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a25ebd158cb9f7ccfa7b4cf3406c2b603}{active\+\_\+r()}}, \mbox{\hyperlink{class_fl___widget_ae0ca5f7159aceba7d813c81167e684bb}{activate()}}, \mbox{\hyperlink{class_fl___widget_a2eb3d2eebe8ba623c4007d4f8e66a1ee}{deactivate()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a25ebd158cb9f7ccfa7b4cf3406c2b603}\label{class_fl___widget_a25ebd158cb9f7ccfa7b4cf3406c2b603}} 
+\index{Fl\_Widget@{Fl\_Widget}!active\_r@{active\_r}}
+\index{active\_r@{active\_r}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{active\_r()}{active\_r()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::active\+\_\+r (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether the widget and all of its parents are active. 
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if this or any of the parent widgets are inactive \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ae10c2f227e76414e8142808eeda23c0c}{active()}}, \mbox{\hyperlink{class_fl___widget_ae0ca5f7159aceba7d813c81167e684bb}{activate()}}, \mbox{\hyperlink{class_fl___widget_a2eb3d2eebe8ba623c4007d4f8e66a1ee}{deactivate()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a6a3c44d082f89ba3aefd405c388187c5}\label{class_fl___widget_a6a3c44d082f89ba3aefd405c388187c5}} 
+\index{Fl\_Widget@{Fl\_Widget}!align@{align}}
+\index{align@{align}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{align()}{align()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} Fl\+\_\+\+Widget\+::align (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the label alignment.
+
+\begin{DoxyReturn}{Returns}
+label alignment 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}}, \mbox{\hyperlink{class_fl___widget_a7dcd6fc8c6108fb68a00bf922cc79022}{align(\+Fl\+\_\+\+Align)}}, \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a7dcd6fc8c6108fb68a00bf922cc79022}\label{class_fl___widget_a7dcd6fc8c6108fb68a00bf922cc79022}} 
+\index{Fl\_Widget@{Fl\_Widget}!align@{align}}
+\index{align@{align}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{align()}{align()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::align (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}}}]{alignment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the label alignment. This controls how the label is displayed next to or inside the widget. The default value is F\+L\+\_\+\+A\+L\+I\+G\+N\+\_\+\+C\+E\+N\+T\+ER, which centers the label inside the widget. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em alignment} & new label alignment \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a6a3c44d082f89ba3aefd405c388187c5}{align()}}, \mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a217b954bb7a3c053850de3234fce3e62}\label{class_fl___widget_a217b954bb7a3c053850de3234fce3e62}} 
+\index{Fl\_Widget@{Fl\_Widget}!argument@{argument}}
+\index{argument@{argument}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{argument()}{argument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily long Fl\+\_\+\+Widget\+::argument (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the current user data (long) argument that is passed to the callback function. \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000023}{Todo}}]The user data value must be implemented using {\itshape intptr\+\_\+t} or similar to avoid 64-\/bit machine incompatibilities. \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_fl___widget_a3eb3b128cbad3f579a66cab813470442}\label{class_fl___widget_a3eb3b128cbad3f579a66cab813470442}} 
+\index{Fl\_Widget@{Fl\_Widget}!argument@{argument}}
+\index{argument@{argument}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{argument()}{argument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::argument (\begin{DoxyParamCaption}\item[{long}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current user data (long) argument that is passed to the callback function. \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000024}{Todo}}]The user data value must be implemented using {\itshape intptr\+\_\+t} or similar to avoid 64-\/bit machine incompatibilities. \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_fl___widget_a5951fcf543a56357c2375657c7db6314}\label{class_fl___widget_a5951fcf543a56357c2375657c7db6314}} 
+\index{Fl\_Widget@{Fl\_Widget}!as\_gl\_window@{as\_gl\_window}}
+\index{as\_gl\_window@{as\_gl\_window}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{as\_gl\_window()}{as\_gl\_window()}}
+{\footnotesize\ttfamily virtual class \mbox{\hyperlink{class_fl___gl___window}{Fl\+\_\+\+Gl\+\_\+\+Window}}$\ast$ Fl\+\_\+\+Widget\+::as\+\_\+gl\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns an \mbox{\hyperlink{class_fl___gl___window}{Fl\+\_\+\+Gl\+\_\+\+Window}} pointer if this widget is an \mbox{\hyperlink{class_fl___gl___window}{Fl\+\_\+\+Gl\+\_\+\+Window}}.
+
+Use this method if you have a widget (pointer) and need to know whether this widget is derived from \mbox{\hyperlink{class_fl___gl___window}{Fl\+\_\+\+Gl\+\_\+\+Window}}. If it returns non-\/\+N\+U\+LL, then the widget in question is derived from \mbox{\hyperlink{class_fl___gl___window}{Fl\+\_\+\+Gl\+\_\+\+Window}}.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em N\+U\+LL} & if this widget is not derived from \mbox{\hyperlink{class_fl___gl___window}{Fl\+\_\+\+Gl\+\_\+\+Window}}. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This method is provided to avoid dynamic\+\_\+cast. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a645c3112dc8c242b099ef8aee45fe7ee}{Fl\+\_\+\+Widget\+::as\+\_\+group()}}, \mbox{\hyperlink{class_fl___widget_a464c6760c08e56cf53338398e5bc60f4}{Fl\+\_\+\+Widget\+::as\+\_\+window()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___gl___window_afcc185ba5105903e5a1f87def93295c5}{Fl\+\_\+\+Gl\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___widget_a645c3112dc8c242b099ef8aee45fe7ee}\label{class_fl___widget_a645c3112dc8c242b099ef8aee45fe7ee}} 
+\index{Fl\_Widget@{Fl\_Widget}!as\_group@{as\_group}}
+\index{as\_group@{as\_group}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{as\_group()}{as\_group()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}$\ast$ Fl\+\_\+\+Widget\+::as\+\_\+group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns an \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} pointer if this widget is an \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}.
+
+Use this method if you have a widget (pointer) and need to know whether this widget is derived from \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}. If it returns non-\/\+N\+U\+LL, then the widget in question is derived from \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}, and you can use the returned pointer to access its children or other Fl\+\_\+\+Group-\/specific methods.
+
+Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keywordtype}{void} my\_callback (\mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{class_fl___widget_a9c582969d134d01916816daf73a35402}{w}}, \textcolor{keywordtype}{void} *) \{}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___group}{Fl\_Group}} *g = \mbox{\hyperlink{class_fl___widget_a9c582969d134d01916816daf73a35402}{w}}-\/>as\_group();}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (g)}
+\DoxyCodeLine{  printf (\textcolor{stringliteral}{"This group has \%d children\(\backslash\)n"},g-\/>\mbox{\hyperlink{class_fl___group_a85b8dc3c0dfbebdba8574eb933dff5bc}{children}}());}
+\DoxyCodeLine{\textcolor{keywordflow}{else}}
+\DoxyCodeLine{  printf (\textcolor{stringliteral}{"This widget is not a group!\(\backslash\)n"});}
+\DoxyCodeLine{  \}}
+\end{DoxyCode}
+
+
+
+\begin{DoxyRetVals}{Return values}
+{\em N\+U\+LL} & if this widget is not derived from \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This method is provided to avoid dynamic\+\_\+cast. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a464c6760c08e56cf53338398e5bc60f4}{Fl\+\_\+\+Widget\+::as\+\_\+window()}}, \mbox{\hyperlink{class_fl___widget_a5951fcf543a56357c2375657c7db6314}{Fl\+\_\+\+Widget\+::as\+\_\+gl\+\_\+window()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___group_a7b5e290690a90ec6c82286929449553a}{Fl\+\_\+\+Group}}.
+
+\mbox{\Hypertarget{class_fl___widget_a464c6760c08e56cf53338398e5bc60f4}\label{class_fl___widget_a464c6760c08e56cf53338398e5bc60f4}} 
+\index{Fl\_Widget@{Fl\_Widget}!as\_window@{as\_window}}
+\index{as\_window@{as\_window}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{as\_window()}{as\_window()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}$\ast$ Fl\+\_\+\+Widget\+::as\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns an \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} pointer if this widget is an \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}.
+
+Use this method if you have a widget (pointer) and need to know whether this widget is derived from \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}. If it returns non-\/\+N\+U\+LL, then the widget in question is derived from \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}, and you can use the returned pointer to access its children or other Fl\+\_\+\+Window-\/specific methods.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em N\+U\+LL} & if this widget is not derived from \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{Note}
+This method is provided to avoid dynamic\+\_\+cast. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a645c3112dc8c242b099ef8aee45fe7ee}{Fl\+\_\+\+Widget\+::as\+\_\+group()}}, \mbox{\hyperlink{class_fl___widget_a5951fcf543a56357c2375657c7db6314}{Fl\+\_\+\+Widget\+::as\+\_\+gl\+\_\+window()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___window_a626ac137ca3d89ca743f6436af9981b9}{Fl\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___widget_a9d1f48fbbe4d885e81df38b2a93b614f}\label{class_fl___widget_a9d1f48fbbe4d885e81df38b2a93b614f}} 
+\index{Fl\_Widget@{Fl\_Widget}!box@{box}}
+\index{box@{box}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{box()}{box()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} Fl\+\_\+\+Widget\+::box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the box type of the widget. \begin{DoxyReturn}{Returns}
+the current box type 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a454a0be4839ea5ed2aa203d788bf840f}{box(\+Fl\+\_\+\+Boxtype)}}, \mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a454a0be4839ea5ed2aa203d788bf840f}\label{class_fl___widget_a454a0be4839ea5ed2aa203d788bf840f}} 
+\index{Fl\_Widget@{Fl\_Widget}!box@{box}}
+\index{box@{box}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{box()}{box()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}}}]{new\+\_\+box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the box type for the widget. This identifies a routine that draws the background of the widget. See Fl\+\_\+\+Boxtype for the available types. The default depends on the widget, but is usually F\+L\+\_\+\+N\+O\+\_\+\+B\+OX or F\+L\+\_\+\+U\+P\+\_\+\+B\+OX. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+\_\+box} & the new box type \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a9d1f48fbbe4d885e81df38b2a93b614f}{box()}}, \mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}\label{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}} 
+\index{Fl\_Widget@{Fl\_Widget}!callback@{callback}}
+\index{callback@{callback}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_fl___widget_8_h_ad515601d7e8cbd1c65ece6364e8c23d0}{Fl\+\_\+\+Callback\+\_\+p}} Fl\+\_\+\+Widget\+::callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the current callback function for the widget. Each widget has a single callback. \begin{DoxyReturn}{Returns}
+current callback 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_a345aff3537426aa79b3e4c5c5b1fec7b}\label{class_fl___widget_a345aff3537426aa79b3e4c5c5b1fec7b}} 
+\index{Fl\_Widget@{Fl\_Widget}!callback@{callback}}
+\index{callback@{callback}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___widget_8_h_a640bea0193560eec20903c45c93c7472}{Fl\+\_\+\+Callback}} $\ast$}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current callback function for the widget. Each widget has a single callback. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cb} & new callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_ad5fe4ff0d0f777af13f3d8818c869689}\label{class_fl___widget_ad5fe4ff0d0f777af13f3d8818c869689}} 
+\index{Fl\_Widget@{Fl\_Widget}!callback@{callback}}
+\index{callback@{callback}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___widget_8_h_a640bea0193560eec20903c45c93c7472}{Fl\+\_\+\+Callback}} $\ast$}]{cb,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current callback function for the widget. Each widget has a single callback. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cb} & new callback \\
+\hline
+\mbox{\texttt{ in}}  & {\em p} & user data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_ab2b89e03832a172d7648dabe0910b038}\label{class_fl___widget_ab2b89e03832a172d7648dabe0910b038}} 
+\index{Fl\_Widget@{Fl\_Widget}!callback@{callback}}
+\index{callback@{callback}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___widget_8_h_a6ce47be89b1f24ea198fd2c93951969e}{Fl\+\_\+\+Callback0}} $\ast$}]{cb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current callback function for the widget. Each widget has a single callback. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cb} & new callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_a8b1d87835f357496bf7dd92e059221e1}\label{class_fl___widget_a8b1d87835f357496bf7dd92e059221e1}} 
+\index{Fl\_Widget@{Fl\_Widget}!callback@{callback}}
+\index{callback@{callback}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_fl___widget_8_h_a25bc4848432a4fbd426456f2952712eb}{Fl\+\_\+\+Callback1}} $\ast$}]{cb,  }\item[{long}]{p = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the current callback function for the widget. Each widget has a single callback. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cb} & new callback \\
+\hline
+\mbox{\texttt{ in}}  & {\em p} & user data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_af007a3c83ac176a7511df8df0706947c}\label{class_fl___widget_af007a3c83ac176a7511df8df0706947c}} 
+\index{Fl\_Widget@{Fl\_Widget}!changed@{changed}}
+\index{changed@{changed}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{changed()}{changed()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Widget\+::changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if the widget value changed since the last callback.
+
+\char`\"{}\+Changed\char`\"{} is a flag that is turned on when the user changes the value stored in the widget. This is only used by subclasses of \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} that store values, but is in the base class so it is easier to scan all the widgets in a panel and \mbox{\hyperlink{class_fl___widget_a37aa870315e37ddc1246caa6421322f4}{do\+\_\+callback()}} on the changed ones in response to an \char`\"{}\+O\+K\char`\"{} button.
+
+Most widgets turn this flag off when they do the callback, and when the program sets the stored value.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the value did not change \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a825fd3487559e1c283550abdb92304ef}{set\+\_\+changed()}}, \mbox{\hyperlink{class_fl___widget_abd83334100f22d5880cf34a233a35831}{clear\+\_\+changed()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a8ddff7cdc6f39414117381e8c7134876}\label{class_fl___widget_a8ddff7cdc6f39414117381e8c7134876}} 
+\index{Fl\_Widget@{Fl\_Widget}!clear\_active@{clear\_active}}
+\index{clear\_active@{clear\_active}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{clear\_active()}{clear\_active()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::clear\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Marks the widget as inactive without sending events or changing focus. This is mainly for specialized use, for normal cases you want \mbox{\hyperlink{class_fl___widget_a2eb3d2eebe8ba623c4007d4f8e66a1ee}{deactivate()}}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a2eb3d2eebe8ba623c4007d4f8e66a1ee}{deactivate()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_abd83334100f22d5880cf34a233a35831}\label{class_fl___widget_abd83334100f22d5880cf34a233a35831}} 
+\index{Fl\_Widget@{Fl\_Widget}!clear\_changed@{clear\_changed}}
+\index{clear\_changed@{clear\_changed}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{clear\_changed()}{clear\_changed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::clear\+\_\+changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Marks the value of the widget as unchanged. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed()}}, \mbox{\hyperlink{class_fl___widget_a825fd3487559e1c283550abdb92304ef}{set\+\_\+changed()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_af9942c4d795ec12c7c1ec1ce5e665a01}\label{class_fl___widget_af9942c4d795ec12c7c1ec1ce5e665a01}} 
+\index{Fl\_Widget@{Fl\_Widget}!clear\_damage@{clear\_damage}}
+\index{clear\_damage@{clear\_damage}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{clear\_damage()}{clear\_damage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::clear\+\_\+damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{c = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clears or sets the damage flags. Damage flags are cleared when parts of the widget drawing is repaired.
+
+The optional argument {\ttfamily c} specifies the bits that {\bfseries{are set}} after the call (default\+: 0) and {\bfseries{not}} the bits that are cleared!
+
+\begin{DoxyNote}{Note}
+Therefore it is possible to set damage bits with this method, but this should be avoided. Use \mbox{\hyperlink{class_fl___widget_ace94ae2916d23e563bf30fb5bdab9aad}{damage(uchar)}} instead.
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & new bitmask of damage flags (default\+: 0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ace94ae2916d23e563bf30fb5bdab9aad}{damage(uchar)}}, \mbox{\hyperlink{class_fl___widget_ada8bb104e4501a2b123e813b32b6ed95}{damage()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_aed4cb72875f7a3a5b14dec33d78cb4e3}\label{class_fl___widget_aed4cb72875f7a3a5b14dec33d78cb4e3}} 
+\index{Fl\_Widget@{Fl\_Widget}!clear\_flag@{clear\_flag}}
+\index{clear\_flag@{clear\_flag}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{clear\_flag()}{clear\_flag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::clear\+\_\+flag (\begin{DoxyParamCaption}\item[{unsigned int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Clears a flag in the flags mask \mbox{\Hypertarget{class_fl___widget_a4288bfa92dadf31956e2f14f9bfeff5e}\label{class_fl___widget_a4288bfa92dadf31956e2f14f9bfeff5e}} 
+\index{Fl\_Widget@{Fl\_Widget}!clear\_output@{clear\_output}}
+\index{clear\_output@{clear\_output}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{clear\_output()}{clear\_output()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::clear\+\_\+output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets a widget to accept input. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a952fe0471023401e2efacd69bd2b57e6}{set\+\_\+output()}}, \mbox{\hyperlink{class_fl___widget_ac17e491c17a34fff2c21351811b735b0}{output()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a19e89bf3b3d2e418b772739ffa6e24d7}\label{class_fl___widget_a19e89bf3b3d2e418b772739ffa6e24d7}} 
+\index{Fl\_Widget@{Fl\_Widget}!clear\_visible@{clear\_visible}}
+\index{clear\_visible@{clear\_visible}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{clear\_visible()}{clear\_visible()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::clear\+\_\+visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Hides the widget. You must still redraw the parent to see a change in the window. Normally you want to use the \mbox{\hyperlink{class_fl___widget_a408b7ca0d0ed7682275e79b976c5dda4}{hide()}} method instead. \mbox{\Hypertarget{class_fl___widget_a5450e5156a76c273e67ef09225c9615b}\label{class_fl___widget_a5450e5156a76c273e67ef09225c9615b}} 
+\index{Fl\_Widget@{Fl\_Widget}!clear\_visible\_focus@{clear\_visible\_focus}}
+\index{clear\_visible\_focus@{clear\_visible\_focus}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{clear\_visible\_focus()}{clear\_visible\_focus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::clear\+\_\+visible\+\_\+focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Disables keyboard focus navigation with this widget. Normally, all widgets participate in keyboard focus navigation. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_acf82200fdfe16a2e0bd9d3ee58e44958}{set\+\_\+visible\+\_\+focus()}}, \mbox{\hyperlink{class_fl___widget_a1acaad8af2c94836dea0d3086dca1ac3}{visible\+\_\+focus()}}, \mbox{\hyperlink{class_fl___widget_a6a2a0769c73831e6ef0076d9efa98d72}{visible\+\_\+focus(int)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a0f4654d4d9aab8a1c1078fca5660742a}\label{class_fl___widget_a0f4654d4d9aab8a1c1078fca5660742a}} 
+\index{Fl\_Widget@{Fl\_Widget}!color@{color}}
+\index{color@{color}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Widget\+::color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the background color of the widget. \begin{DoxyReturn}{Returns}
+current background color 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a7a9368212ada4f46759f44d8815cf9a4}{color(\+Fl\+\_\+\+Color)}}, \mbox{\hyperlink{class_fl___widget_a5ab161ab774b29946049a44d575b363d}{color(\+Fl\+\_\+\+Color, Fl\+\_\+\+Color)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a7a9368212ada4f46759f44d8815cf9a4}\label{class_fl___widget_a7a9368212ada4f46759f44d8815cf9a4}} 
+\index{Fl\_Widget@{Fl\_Widget}!color@{color}}
+\index{color@{color}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{bg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the background color of the widget. The color is passed to the box routine. The color is either an index into an internal table of R\+GB colors or an R\+GB color value generated using \mbox{\hyperlink{_enumerations_8_h_a7c5acc4633fbab7016bce2fb69046494}{fl\+\_\+rgb\+\_\+color()}}.
+
+The default for most widgets is F\+L\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR. Use \mbox{\hyperlink{group__fl__attributes_gaed9b5e5a196cbbf3918cca83cb280d7a}{Fl\+::set\+\_\+color()}} to redefine colors in the color map. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em bg} & background color \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a0f4654d4d9aab8a1c1078fca5660742a}{color()}}, \mbox{\hyperlink{class_fl___widget_a5ab161ab774b29946049a44d575b363d}{color(\+Fl\+\_\+\+Color, Fl\+\_\+\+Color)}}, \mbox{\hyperlink{class_fl___widget_ab566daea3e4e8278319acb06188ee4b1}{selection\+\_\+color(\+Fl\+\_\+\+Color)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a5ab161ab774b29946049a44d575b363d}\label{class_fl___widget_a5ab161ab774b29946049a44d575b363d}} 
+\index{Fl\_Widget@{Fl\_Widget}!color@{color}}
+\index{color@{color}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{bg,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{sel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the background and selection color of the widget.
+
+The two color form sets both the background and selection colors. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em bg} & background color \\
+\hline
+\mbox{\texttt{ in}}  & {\em sel} & selection color \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+color(unsigned), selection\+\_\+color(unsigned) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_ad307dbccabe1d2e71c27dae946821f06}\label{class_fl___widget_ad307dbccabe1d2e71c27dae946821f06}} 
+\index{Fl\_Widget@{Fl\_Widget}!color2@{color2}}
+\index{color2@{color2}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{color2()}{color2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Widget\+::color2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+For back compatibility only. \begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000011}{Deprecated}}]Use \mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\+\_\+color()}} instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_fl___widget_ae9bfda1ebdcbf0946aef558b9d9f0e3c}\label{class_fl___widget_ae9bfda1ebdcbf0946aef558b9d9f0e3c}} 
+\index{Fl\_Widget@{Fl\_Widget}!color2@{color2}}
+\index{color2@{color2}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{color2()}{color2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::color2 (\begin{DoxyParamCaption}\item[{unsigned}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For back compatibility only. \begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000012}{Deprecated}}]Use selection\+\_\+color(unsigned) instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_fl___widget_a318c29413cefc088a494ff5b7057dcd4}\label{class_fl___widget_a318c29413cefc088a494ff5b7057dcd4}} 
+\index{Fl\_Widget@{Fl\_Widget}!contains@{contains}}
+\index{contains@{contains}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::contains (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{w }\end{DoxyParamCaption}) const}
+
+Checks if w is a child of this widget. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em w} & potential child widget \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if {\ttfamily w} is a child of this widget, or is equal to this widget. Returns 0 if {\ttfamily w} is N\+U\+LL. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_ab49565fabce4b04f7ee86d862402a060}\label{class_fl___widget_ab49565fabce4b04f7ee86d862402a060}} 
+\index{Fl\_Widget@{Fl\_Widget}!copy\_label@{copy\_label}}
+\index{copy\_label@{copy\_label}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{copy\_label()}{copy\_label()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::copy\+\_\+label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{new\+\_\+label }\end{DoxyParamCaption})}
+
+Sets the current label. Unlike \mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}}, this method allocates a copy of the label string instead of using the original string pointer.
+
+The internal copy will automatically be freed whenever you assign a new label or when the widget is destroyed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em new\+\_\+label} & the new label text \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_af5a91645a4735db51626a2e273c04bb9}\label{class_fl___widget_af5a91645a4735db51626a2e273c04bb9}} 
+\index{Fl\_Widget@{Fl\_Widget}!copy\_tooltip@{copy\_tooltip}}
+\index{copy\_tooltip@{copy\_tooltip}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{copy\_tooltip()}{copy\_tooltip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::copy\+\_\+tooltip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___widget_ada8bb104e4501a2b123e813b32b6ed95}\label{class_fl___widget_ada8bb104e4501a2b123e813b32b6ed95}} 
+\index{Fl\_Widget@{Fl\_Widget}!damage@{damage}}
+\index{damage@{damage}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{damage()}{damage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} Fl\+\_\+\+Widget\+::damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns non-\/zero if \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{draw()}} needs to be called. The damage value is actually a bit field that the widget subclass can use to figure out what parts to draw. \begin{DoxyReturn}{Returns}
+a bitmap of flags describing the kind of damage to the widget 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ace94ae2916d23e563bf30fb5bdab9aad}{damage(uchar)}}, \mbox{\hyperlink{class_fl___widget_af9942c4d795ec12c7c1ec1ce5e665a01}{clear\+\_\+damage(uchar)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_ace94ae2916d23e563bf30fb5bdab9aad}\label{class_fl___widget_ace94ae2916d23e563bf30fb5bdab9aad}} 
+\index{Fl\_Widget@{Fl\_Widget}!damage@{damage}}
+\index{damage@{damage}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{damage()}{damage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{c }\end{DoxyParamCaption})}
+
+Sets the damage bits for the widget. Setting damage bits will schedule the widget for the next redraw. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & bitmask of flags to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ada8bb104e4501a2b123e813b32b6ed95}{damage()}}, \mbox{\hyperlink{class_fl___widget_af9942c4d795ec12c7c1ec1ce5e665a01}{clear\+\_\+damage(uchar)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_ac92191cba5d17ae34bfc346d2126c9f2}\label{class_fl___widget_ac92191cba5d17ae34bfc346d2126c9f2}} 
+\index{Fl\_Widget@{Fl\_Widget}!damage@{damage}}
+\index{damage@{damage}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{damage()}{damage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{c,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Sets the damage bits for an area inside the widget. Setting damage bits will schedule the widget for the next redraw. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & bitmask of flags to set \\
+\hline
+\mbox{\texttt{ in}}  & {\em x,y,w,h} & size of damaged area \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ada8bb104e4501a2b123e813b32b6ed95}{damage()}}, \mbox{\hyperlink{class_fl___widget_af9942c4d795ec12c7c1ec1ce5e665a01}{clear\+\_\+damage(uchar)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a5934aae6f86145fd40e65b35c12df0dc}\label{class_fl___widget_a5934aae6f86145fd40e65b35c12df0dc}} 
+\index{Fl\_Widget@{Fl\_Widget}!damage\_resize@{damage\_resize}}
+\index{damage\_resize@{damage\_resize}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{damage\_resize()}{damage\_resize()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::damage\+\_\+resize (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+Internal use only. \mbox{\Hypertarget{class_fl___widget_a2eb3d2eebe8ba623c4007d4f8e66a1ee}\label{class_fl___widget_a2eb3d2eebe8ba623c4007d4f8e66a1ee}} 
+\index{Fl\_Widget@{Fl\_Widget}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{deactivate()}{deactivate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::deactivate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Deactivates the widget. Inactive widgets will be drawn \char`\"{}grayed out\char`\"{}, e.\+g. with less contrast than the active widget. Inactive widgets will not receive any keyboard or mouse button events. Other events (including F\+L\+\_\+\+E\+N\+T\+ER, F\+L\+\_\+\+M\+O\+VE, F\+L\+\_\+\+L\+E\+A\+VE, F\+L\+\_\+\+S\+H\+O\+R\+T\+C\+UT, and others) will still be sent. A widget is only active if \mbox{\hyperlink{class_fl___widget_ae10c2f227e76414e8142808eeda23c0c}{active()}} is true on it {\itshape and all of its parents}. ~\newline
+
+
+Changing this value will send F\+L\+\_\+\+D\+E\+A\+C\+T\+I\+V\+A\+TE to the widget if \mbox{\hyperlink{class_fl___widget_a25ebd158cb9f7ccfa7b4cf3406c2b603}{active\+\_\+r()}} is true.
+
+Currently you cannot deactivate \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}} widgets.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ae0ca5f7159aceba7d813c81167e684bb}{activate()}}, \mbox{\hyperlink{class_fl___widget_ae10c2f227e76414e8142808eeda23c0c}{active()}}, \mbox{\hyperlink{class_fl___widget_a25ebd158cb9f7ccfa7b4cf3406c2b603}{active\+\_\+r()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a46a6790233f3f50b36bbfd7f3fc5fece}\label{class_fl___widget_a46a6790233f3f50b36bbfd7f3fc5fece}} 
+\index{Fl\_Widget@{Fl\_Widget}!default\_callback@{default\_callback}}
+\index{default\_callback@{default\_callback}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{default\_callback()}{default\_callback()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::default\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{cb,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The default callback for all widgets that don\textquotesingle{}t set a callback.
+
+This callback function puts a pointer to the widget on the queue returned by \mbox{\hyperlink{class_fl_a813faf81f334dcb9436106aaf2cc66d8}{Fl\+::readqueue()}}.
+
+Relying on the default callback and reading the callback queue with \mbox{\hyperlink{class_fl_a813faf81f334dcb9436106aaf2cc66d8}{Fl\+::readqueue()}} is not recommended. If you need a callback, you should set one with \mbox{\hyperlink{class_fl___widget_ad5fe4ff0d0f777af13f3d8818c869689}{Fl\+\_\+\+Widget\+::callback(\+Fl\+\_\+\+Callback $\ast$cb, void $\ast$data)}} or one of its variants.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em cb} & the widget given to the callback \\
+\hline
+\mbox{\texttt{ in}}  & {\em d} & user data associated with that callback\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}{callback()}}, \mbox{\hyperlink{class_fl___widget_a37aa870315e37ddc1246caa6421322f4}{do\+\_\+callback()}}, \mbox{\hyperlink{class_fl_a813faf81f334dcb9436106aaf2cc66d8}{Fl\+::readqueue()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a03ae936e18ba13a2bfa0a77eff276606}\label{class_fl___widget_a03ae936e18ba13a2bfa0a77eff276606}} 
+\index{Fl\_Widget@{Fl\_Widget}!deimage@{deimage}}
+\index{deimage@{deimage}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{deimage()}{deimage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Widget\+::deimage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the image that is used as part of the widget label. ~\newline
+ This image is used when drawing the widget in the inactive state. \begin{DoxyReturn}{Returns}
+the current image for the deactivated widget 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_a1c92a1ca345a764028811881aeed6f7a}\label{class_fl___widget_a1c92a1ca345a764028811881aeed6f7a}} 
+\index{Fl\_Widget@{Fl\_Widget}!deimage@{deimage}}
+\index{deimage@{deimage}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{deimage()}{deimage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Widget\+::deimage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___widget_a729cdb0cae267e30f49b65d360371f82}\label{class_fl___widget_a729cdb0cae267e30f49b65d360371f82}} 
+\index{Fl\_Widget@{Fl\_Widget}!deimage@{deimage}}
+\index{deimage@{deimage}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{deimage()}{deimage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::deimage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} \&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the image to use as part of the widget label. ~\newline
+ This image is used when drawing the widget in the inactive state. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em img} & the new image for the deactivated widget \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_a35ddcfab40a9b550d7d7f4c8a548df13}\label{class_fl___widget_a35ddcfab40a9b550d7d7f4c8a548df13}} 
+\index{Fl\_Widget@{Fl\_Widget}!deimage@{deimage}}
+\index{deimage@{deimage}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{deimage()}{deimage()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::deimage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the image to use as part of the widget label. ~\newline
+ This image is used when drawing the widget in the inactive state. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em img} & the new image for the deactivated widget \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_a37aa870315e37ddc1246caa6421322f4}\label{class_fl___widget_a37aa870315e37ddc1246caa6421322f4}} 
+\index{Fl\_Widget@{Fl\_Widget}!do\_callback@{do\_callback}}
+\index{do\_callback@{do\_callback}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{do\_callback()}{do\_callback()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::do\+\_\+callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calls the widget callback. Causes a widget to invoke its callback function with default arguments. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}{callback()}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_fl___widget_a37aa870315e37ddc1246caa6421322f4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___widget_a89d369c279436a4ec6122b5fe746d821}\label{class_fl___widget_a89d369c279436a4ec6122b5fe746d821}} 
+\index{Fl\_Widget@{Fl\_Widget}!do\_callback@{do\_callback}}
+\index{do\_callback@{do\_callback}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{do\_callback()}{do\_callback()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::do\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{o,  }\item[{long}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calls the widget callback. Causes a widget to invoke its callback function with arbitrary arguments. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em o} & call the callback with {\ttfamily o} as the widget argument \\
+\hline
+\mbox{\texttt{ in}}  & {\em arg} & call the callback with {\ttfamily arg} as the user data argument \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ac32acdcfb3b722fccd2d3f946b01e799}{callback()}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_fl___widget_a89d369c279436a4ec6122b5fe746d821_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___widget_a8bf5537fae51a9891a330d4c6b6e499b}\label{class_fl___widget_a8bf5537fae51a9891a330d4c6b6e499b}} 
+\index{Fl\_Widget@{Fl\_Widget}!do\_callback@{do\_callback}}
+\index{do\_callback@{do\_callback}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{do\_callback()}{do\_callback()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::do\+\_\+callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{o,  }\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{arg = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}\label{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}} 
+\index{Fl\_Widget@{Fl\_Widget}!draw@{draw}}
+\index{draw@{draw}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Implemented in \mbox{\hyperlink{class_fl___table_aa3c46d45261be0a64db3784147115d6a}{Fl\+\_\+\+Table}}, \mbox{\hyperlink{classchess___g_u_i_a891a05faf77dad373b08c438f95c9b4b}{chess\+\_\+\+G\+UI}}, \mbox{\hyperlink{class_fl___forms_text_a68f6a615e7ea345eed85904e2f2c2427}{Fl\+\_\+\+Forms\+Text}}, \mbox{\hyperlink{class_fl___tree_a631b865ef3ec7cdab2b38ab36c83937c}{Fl\+\_\+\+Tree}}, \mbox{\hyperlink{class_fl___text___display_ab0521b987134307c13b73a6e7230de77}{Fl\+\_\+\+Text\+\_\+\+Display}}, \mbox{\hyperlink{class_fl___gl___window_ab3c931bb0ae05687baf9928011ceaf94}{Fl\+\_\+\+Gl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___help___view_a10187486039cb371551c7f65e137b68f}{Fl\+\_\+\+Help\+\_\+\+View}}, \mbox{\hyperlink{class_fl___input_a2902a7c792226b50c854ba419de4186e}{Fl\+\_\+\+Input}}, \mbox{\hyperlink{class_fl___tabs_a0ac6422a6ef27dafa7e2eef794bc6233}{Fl\+\_\+\+Tabs}}, \mbox{\hyperlink{class_fl___browser___af563481285289e2fc304ded1a0cbb49f}{Fl\+\_\+\+Browser\+\_\+}}, \mbox{\hyperlink{class_fl___window_a4dea919a9f069f00b623abb8179ef52c}{Fl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___scroll_a3f0651126d937ff5e87a115c96b01e47}{Fl\+\_\+\+Scroll}}, \mbox{\hyperlink{class_fl___button_a98687e86bf07a47a8be8325250e2036b}{Fl\+\_\+\+Button}}, \mbox{\hyperlink{class_fl___choice_a69c4f1a26612986d7c14d4882d2cd19d}{Fl\+\_\+\+Choice}}, \mbox{\hyperlink{class_fl___chart_a72ec7a85128f8fcac3a306cc90afc876}{Fl\+\_\+\+Chart}}, \mbox{\hyperlink{class_fl___slider_a0b2f67991856db662360205216ae2d11}{Fl\+\_\+\+Slider}}, \mbox{\hyperlink{class_fl___menu___bar_aa578b03ce16587b623daaf170523f9cd}{Fl\+\_\+\+Menu\+\_\+\+Bar}}, \mbox{\hyperlink{class_fl___value___input_acc66dbb880d4771a22bd6dff235344f0}{Fl\+\_\+\+Value\+\_\+\+Input}}, \mbox{\hyperlink{class_fl___file___input_a9d129c6dd1e06a76d7c2fcb95226d459}{Fl\+\_\+\+File\+\_\+\+Input}}, \mbox{\hyperlink{class_fl___counter_ad6057e084128c6d9f3119a53407e6a8e}{Fl\+\_\+\+Counter}}, \mbox{\hyperlink{class_fl___free_adb1b66948bacd9730b9e72f38d136bba}{Fl\+\_\+\+Free}}, \mbox{\hyperlink{class_fl___menu___button_a72adbfd3f59785d8cedaa002d946eab4}{Fl\+\_\+\+Menu\+\_\+\+Button}}, \mbox{\hyperlink{class_fl___clock___output_acde2fa1ae9e68834f4bd766e5fb25cee}{Fl\+\_\+\+Clock\+\_\+\+Output}}, \mbox{\hyperlink{class_fl___group_a96b778e518df02471139179d4c90157c}{Fl\+\_\+\+Group}}, \mbox{\hyperlink{class_fl___dial_a75573b37fd79e74fa9ee19effe75996f}{Fl\+\_\+\+Dial}}, \mbox{\hyperlink{class_flcc___value_box_a8821e0f7f9b43be7f46775de47d97389}{Flcc\+\_\+\+Value\+Box}}, \mbox{\hyperlink{class_fl___pack_a8820c6b4dba2209ab4b650b3a04cde05}{Fl\+\_\+\+Pack}}, \mbox{\hyperlink{class_fl___scrollbar_ae754616f4c3abc6fa486ff0791645de7}{Fl\+\_\+\+Scrollbar}}, \mbox{\hyperlink{class_fl___positioner_a13cb5bbb03aca0bd07633f21e1634520}{Fl\+\_\+\+Positioner}}, \mbox{\hyperlink{class_fl___adjuster_a6f34251b607ad461c8a03ab966ef5b21}{Fl\+\_\+\+Adjuster}}, \mbox{\hyperlink{class_fl___timer_afdfd89451c30f5ed3a83bef221fd1920}{Fl\+\_\+\+Timer}}, \mbox{\hyperlink{class_fl___value___output_a94e59d5870248487be110221a30edd01}{Fl\+\_\+\+Value\+\_\+\+Output}}, \mbox{\hyperlink{class_fl___glut___window_a7bde4cf7e1e95c49c417940719e82de3}{Fl\+\_\+\+Glut\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___progress_aefbe40f8cd23828494df4e0767200938}{Fl\+\_\+\+Progress}}, \mbox{\hyperlink{class_flcc___hue_box_a3ba97006b1146d6a81e941cd8c89a8c2}{Flcc\+\_\+\+Hue\+Box}}, \mbox{\hyperlink{class_fl___light___button_a3b27affd4a406d49cff709cbcc8c828e}{Fl\+\_\+\+Light\+\_\+\+Button}}, \mbox{\hyperlink{class_fl___value___slider_afeb7453f1072f004bbfe42c666c1f533}{Fl\+\_\+\+Value\+\_\+\+Slider}}, \mbox{\hyperlink{class_fl___roller_a7235baa2ec695c9b3ba3e773a6cb00d6}{Fl\+\_\+\+Roller}}, \mbox{\hyperlink{class_fl___box_a68ad5028e9911fa875d79f686f80b3e8}{Fl\+\_\+\+Box}}, \mbox{\hyperlink{class_fl___return___button_a38f67742bb98547f4f2d46457f2321c9}{Fl\+\_\+\+Return\+\_\+\+Button}}, \mbox{\hyperlink{class_fl___forms_pixmap_aa1d8570d3d7ad041da4c906b2b91c3d6}{Fl\+\_\+\+Forms\+Pixmap}}, and \mbox{\hyperlink{class_fl___forms_bitmap_a7d90c5cb02585c51f883ba6abe23082d}{Fl\+\_\+\+Forms\+Bitmap}}.
+
+\mbox{\Hypertarget{class_fl___widget_aef496c5494735f8b5c4ead32e30b16e5}\label{class_fl___widget_aef496c5494735f8b5c4ead32e30b16e5}} 
+\index{Fl\_Widget@{Fl\_Widget}!draw\_backdrop@{draw\_backdrop}}
+\index{draw\_backdrop@{draw\_backdrop}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{draw\_backdrop()}{draw\_backdrop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::draw\+\_\+backdrop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___widget_a7f05e24d343941328fa38958feab4168}\label{class_fl___widget_a7f05e24d343941328fa38958feab4168}} 
+\index{Fl\_Widget@{Fl\_Widget}!draw\_box@{draw\_box}}
+\index{draw\_box@{draw\_box}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{draw\_box()}{draw\_box()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::draw\+\_\+box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___widget_a3754dd180480495a04baa80cba92e27e}\label{class_fl___widget_a3754dd180480495a04baa80cba92e27e}} 
+\index{Fl\_Widget@{Fl\_Widget}!draw\_box@{draw\_box}}
+\index{draw\_box@{draw\_box}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{draw\_box()}{draw\_box()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::draw\+\_\+box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}}}]{t,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___widget_a2c12095ee31af6a3a21aace99fef312f}\label{class_fl___widget_a2c12095ee31af6a3a21aace99fef312f}} 
+\index{Fl\_Widget@{Fl\_Widget}!draw\_box@{draw\_box}}
+\index{draw\_box@{draw\_box}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{draw\_box()}{draw\_box()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::draw\+\_\+box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}}}]{t,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___widget_a60e13c7f4ead4f0c543d1c8b7582be8c}\label{class_fl___widget_a60e13c7f4ead4f0c543d1c8b7582be8c}} 
+\index{Fl\_Widget@{Fl\_Widget}!draw\_focus@{draw\_focus}}
+\index{draw\_focus@{draw\_focus}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{draw\_focus()}{draw\_focus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::draw\+\_\+focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+draws a focus rectangle around the widget Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_fl___widget_a60e13c7f4ead4f0c543d1c8b7582be8c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___widget_a82183cb42b4ed04f1085243f3e61c4a6}\label{class_fl___widget_a82183cb42b4ed04f1085243f3e61c4a6}} 
+\index{Fl\_Widget@{Fl\_Widget}!draw\_focus@{draw\_focus}}
+\index{draw\_focus@{draw\_focus}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{draw\_focus()}{draw\_focus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::draw\+\_\+focus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ae48bf9070f8541de17829f54ccacc6bc}{Fl\+\_\+\+Boxtype}}}]{t,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___widget_aa730a156fdf91a95b38b44b9e1ee5d5c}\label{class_fl___widget_aa730a156fdf91a95b38b44b9e1ee5d5c}} 
+\index{Fl\_Widget@{Fl\_Widget}!draw\_label@{draw\_label}}
+\index{draw\_label@{draw\_label}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{draw\_label()}{draw\_label()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::draw\+\_\+label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___widget_a1815f7f35b74656aba72de124392ebca}\label{class_fl___widget_a1815f7f35b74656aba72de124392ebca}} 
+\index{Fl\_Widget@{Fl\_Widget}!draw\_label@{draw\_label}}
+\index{draw\_label@{draw\_label}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{draw\_label()}{draw\_label()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::draw\+\_\+label (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___widget_a7b8ab6ccdfd59c63aad40a5565dd1d36}\label{class_fl___widget_a7b8ab6ccdfd59c63aad40a5565dd1d36}} 
+\index{Fl\_Widget@{Fl\_Widget}!draw\_label@{draw\_label}}
+\index{draw\_label@{draw\_label}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{draw\_label()}{draw\_label()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::draw\+\_\+label (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{int}]{,  }\item[{\mbox{\hyperlink{_enumerations_8_h_a44e8bcd1e030e65e4f88cbae64a7c3e3}{Fl\+\_\+\+Align}}}]{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___widget_a5b8a508113d122b448c38045e65e4266}\label{class_fl___widget_a5b8a508113d122b448c38045e65e4266}} 
+\index{Fl\_Widget@{Fl\_Widget}!flags@{flags}}
+\index{flags@{flags}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{flags()}{flags()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Widget\+::flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Gets the widget flags mask \mbox{\Hypertarget{class_fl___widget_a56c09392686ee558104fd7550496894f}\label{class_fl___widget_a56c09392686ee558104fd7550496894f}} 
+\index{Fl\_Widget@{Fl\_Widget}!h@{h}}
+\index{h@{h}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{h()}{h()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::h (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the widget height. \begin{DoxyReturn}{Returns}
+the height of the widget in pixels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}\label{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}} 
+\index{Fl\_Widget@{Fl\_Widget}!h@{h}}
+\index{h@{h}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{h()}{h()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::h (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Internal use only. Use \mbox{\hyperlink{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}{position(int,int)}}, \mbox{\hyperlink{class_fl___widget_ae386844a68c27ea0b64313619551e786}{size(int,int)}} or \mbox{\hyperlink{class_fl___widget_a59fd9dbe65ba2602412ebc4c07e9c362}{resize(int,int,int,int)}} instead. \mbox{\Hypertarget{class_fl___widget_a3521aba25eda761620953dd49d335ea7}\label{class_fl___widget_a3521aba25eda761620953dd49d335ea7}} 
+\index{Fl\_Widget@{Fl\_Widget}!handle@{handle}}
+\index{handle@{handle}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily virtual int Fl\+\_\+\+Widget\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___widget_a3521aba25eda761620953dd49d335ea7}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___help___view_af56e5586b3b97243a64773d0b893d04d}{Fl\+\_\+\+Help\+\_\+\+View}}, \mbox{\hyperlink{class_fl___input_a43026a3bf596c6f078e3560357425bdc}{Fl\+\_\+\+Input}}, \mbox{\hyperlink{class_fl___window_addf8533ea9678ee2aa33c09627cf6ee6}{Fl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___tabs_a73dfe2ab8dbca96e074fcc5af1110e03}{Fl\+\_\+\+Tabs}}, \mbox{\hyperlink{class_fl___scroll_aa86d74a5b34bf14c704751ef8f4521d4}{Fl\+\_\+\+Scroll}}, \mbox{\hyperlink{class_fl___clock_acf35e2948c926ec8e0db45318e4d2d42}{Fl\+\_\+\+Clock}}, \mbox{\hyperlink{class_fl___check___browser_acdc1442cb069cec53f6b6263201a4af6}{Fl\+\_\+\+Check\+\_\+\+Browser}}, \mbox{\hyperlink{class_fl___button_a85a9bcd4943f577e6eb68f054ae3c80c}{Fl\+\_\+\+Button}}, \mbox{\hyperlink{class_fl___choice_ad7b67a4db58f558401b0593e13c6ca34}{Fl\+\_\+\+Choice}}, \mbox{\hyperlink{class_fl___gl___window_a72ef76517e337476c36bc8c1ee12863f}{Fl\+\_\+\+Gl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___slider_a401350315a8bfe80efe6ea6b9d5f6673}{Fl\+\_\+\+Slider}}, \mbox{\hyperlink{class_fl___menu___button_a7915d96fe4079124c69fd75a0344ebb5}{Fl\+\_\+\+Menu\+\_\+\+Button}}, \mbox{\hyperlink{class_fl___menu___bar_a31062af993329f5c6b71c90af5e02ebf}{Fl\+\_\+\+Menu\+\_\+\+Bar}}, \mbox{\hyperlink{class_fl___group_a7503757c2a734442e74717d1971b12ce}{Fl\+\_\+\+Group}}, \mbox{\hyperlink{class_fl___value___input_afc714e7e9cac455d4267aaabf03a5ff2}{Fl\+\_\+\+Value\+\_\+\+Input}}, \mbox{\hyperlink{class_fl___counter_a805c1f76ba9929fadfef1f4013654c98}{Fl\+\_\+\+Counter}}, \mbox{\hyperlink{class_fl___dial_a6512c4370311932be59b50683c8773ce}{Fl\+\_\+\+Dial}}, \mbox{\hyperlink{class_flcc___value_box_ab83fd790971c3f4937cb6aa4fdf99708}{Flcc\+\_\+\+Value\+Box}}, \mbox{\hyperlink{class_fl___scrollbar_a869ac061674929041849eb7e8506f0cb}{Fl\+\_\+\+Scrollbar}}, \mbox{\hyperlink{class_fl___positioner_a6d52d7e52ecdf81b0075696a706ca3b7}{Fl\+\_\+\+Positioner}}, \mbox{\hyperlink{class_fl___box_a1e6e8c64afb58d433429500f5d1b25c7}{Fl\+\_\+\+Box}}, \mbox{\hyperlink{class_fl___value___output_aaf68452ce51a47a1dd8989e558f7d1dc}{Fl\+\_\+\+Value\+\_\+\+Output}}, \mbox{\hyperlink{class_fl___timer_a47484d99368b407ae958425df8154b85}{Fl\+\_\+\+Timer}}, \mbox{\hyperlink{class_fl___glut___window_a17e71b3f194705a7c9ffff4ae6aedad4}{Fl\+\_\+\+Glut\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___adjuster_a0626b220caa4b81261c61b89ab2f7409}{Fl\+\_\+\+Adjuster}}, \mbox{\hyperlink{class_flcc___hue_box_ab823bd700770990142638d7ee2ed637a}{Flcc\+\_\+\+Hue\+Box}}, \mbox{\hyperlink{class_fl___secret___input_a19b7389eb848bc2b009ba86f50bd9c85}{Fl\+\_\+\+Secret\+\_\+\+Input}}, \mbox{\hyperlink{class_fl___light___button_a931c5d5d8cb764350c8fe8d78af6231d}{Fl\+\_\+\+Light\+\_\+\+Button}}, \mbox{\hyperlink{class_fl___value___slider_a42d1c0d9da6dcf7d6a5399e0393e473a}{Fl\+\_\+\+Value\+\_\+\+Slider}}, \mbox{\hyperlink{class_fl___roller_a77bd136f6b5a5376498fe8342c8f3df4}{Fl\+\_\+\+Roller}}, \mbox{\hyperlink{class_fl___return___button_a92e2270728a58b60099ddfb322018996}{Fl\+\_\+\+Return\+\_\+\+Button}}, \mbox{\hyperlink{class_fl___repeat___button_a2033de45cb1eb13e1cdc4910609febdf}{Fl\+\_\+\+Repeat\+\_\+\+Button}}, \mbox{\hyperlink{classchess___g_u_i_a45ca34550cd2dba25578498beab2fa72}{chess\+\_\+\+G\+UI}}, \mbox{\hyperlink{class_fl___browser___a63015169440ce8d6c979abcc2a27d359}{Fl\+\_\+\+Browser\+\_\+}}, \mbox{\hyperlink{class_fl___spinner_a4e2ea3fbdf8d7653d3dc1440d58434cf}{Fl\+\_\+\+Spinner}}, \mbox{\hyperlink{class_fl___table___row_a311f4d503232cbe8aef567470f420a16}{Fl\+\_\+\+Table\+\_\+\+Row}}, \mbox{\hyperlink{class_fl___file___input_adb2033606aa7a698fc127f90cda59df7}{Fl\+\_\+\+File\+\_\+\+Input}}, \mbox{\hyperlink{class_fl___tile_a6d68ecaf377212971a6371f9c0402829}{Fl\+\_\+\+Tile}}, \mbox{\hyperlink{class_fl___tree_a236a8b5c47076c65107a5264bcbce0ab}{Fl\+\_\+\+Tree}}, \mbox{\hyperlink{class_fl___table_a810b0f1bdfe62ea8faf001c52c124a9d}{Fl\+\_\+\+Table}}, \mbox{\hyperlink{class_fl___text___display_a38b01043100644a6efc04a35aa232b3c}{Fl\+\_\+\+Text\+\_\+\+Display}}, \mbox{\hyperlink{class_fl___free_a5e539871ecd1108f5770e4172014ac0a}{Fl\+\_\+\+Free}}, and \mbox{\hyperlink{class_fl___text___editor_a5f1e480c0d50b17ae97c525b4faea396}{Fl\+\_\+\+Text\+\_\+\+Editor}}.
+
+\mbox{\Hypertarget{class_fl___widget_a408b7ca0d0ed7682275e79b976c5dda4}\label{class_fl___widget_a408b7ca0d0ed7682275e79b976c5dda4}} 
+\index{Fl\_Widget@{Fl\_Widget}!hide@{hide}}
+\index{hide@{hide}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{hide()}{hide()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::hide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Makes a widget invisible. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a3b7971dc3a0385c31e71b9f3786eac2d}{show()}}, \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}}, \mbox{\hyperlink{class_fl___widget_ac51a7380e249127ca47aad175f162360}{visible\+\_\+r()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___window_a42fbeddb68a203ff9123d33156a29fc7}{Fl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___browser_a23c16146f17a31b4e952a717b6f6f12d}{Fl\+\_\+\+Browser}}, \mbox{\hyperlink{class_fl___gl___window_ad1fb7b91338789fe4d09c22b1ba3dd42}{Fl\+\_\+\+Gl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___overlay___window_ac2ebc6a209ed6d5d1fb813d3f54a489f}{Fl\+\_\+\+Overlay\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___double___window_acc0edc55a9d27e4e276e8a5b78deeeef}{Fl\+\_\+\+Double\+\_\+\+Window}}, and \mbox{\hyperlink{class_fl___menu___window_aadca68c365aea60fcb2841b756fa235a}{Fl\+\_\+\+Menu\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___widget_a42372b96b98b126a211b88dc935c2ae6}\label{class_fl___widget_a42372b96b98b126a211b88dc935c2ae6}} 
+\index{Fl\_Widget@{Fl\_Widget}!image@{image}}
+\index{image@{image}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Widget\+::image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the image that is used as part of the widget label. This image is used when drawing the widget in the active state. \begin{DoxyReturn}{Returns}
+the current image 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_acb62e5313ae89e0511bc284048b222f3}\label{class_fl___widget_acb62e5313ae89e0511bc284048b222f3}} 
+\index{Fl\_Widget@{Fl\_Widget}!image@{image}}
+\index{image@{image}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Widget\+::image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___widget_aff29d81e64b617158472f38d2cac186e}\label{class_fl___widget_aff29d81e64b617158472f38d2cac186e}} 
+\index{Fl\_Widget@{Fl\_Widget}!image@{image}}
+\index{image@{image}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} \&}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the image to use as part of the widget label. This image is used when drawing the widget in the active state. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em img} & the new image for the label \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_a2be5b8385b8870800ef83f88be463c5b}\label{class_fl___widget_a2be5b8385b8870800ef83f88be463c5b}} 
+\index{Fl\_Widget@{Fl\_Widget}!image@{image}}
+\index{image@{image}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$}]{img }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the image to use as part of the widget label. This image is used when drawing the widget in the active state. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em img} & the new image for the label \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_a305b6c70a1aa0e8127547c0c2333b4d3}\label{class_fl___widget_a305b6c70a1aa0e8127547c0c2333b4d3}} 
+\index{Fl\_Widget@{Fl\_Widget}!inside@{inside}}
+\index{inside@{inside}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{inside()}{inside()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{wgt }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if this widget is a child of {\ttfamily wgt}. Returns 1 if this widget is a child of {\ttfamily wgt}, or is equal to {\ttfamily wgt}. Returns 0 if {\ttfamily wgt} is N\+U\+LL. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em wgt} & the possible parent widget. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a318c29413cefc088a494ff5b7057dcd4}{contains()}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_fl___widget_a305b6c70a1aa0e8127547c0c2333b4d3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___widget_a44a9ee84c6884c8daddbbcbb2aef9c0e}\label{class_fl___widget_a44a9ee84c6884c8daddbbcbb2aef9c0e}} 
+\index{Fl\_Widget@{Fl\_Widget}!is\_label\_copied@{is\_label\_copied}}
+\index{is\_label\_copied@{is\_label\_copied}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{is\_label\_copied()}{is\_label\_copied()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::is\+\_\+label\+\_\+copied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the current label was assigned with \mbox{\hyperlink{class_fl___widget_ab49565fabce4b04f7ee86d862402a060}{copy\+\_\+label()}}.
+
+This can be useful for temporarily overwriting the widget\textquotesingle{}s label and restoring it later.
+
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & current label was assigned with \mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}}. \\
+\hline
+{\em 1} & current label was assigned with \mbox{\hyperlink{class_fl___widget_ab49565fabce4b04f7ee86d862402a060}{copy\+\_\+label()}}. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_fl___widget_aa327c70689110677d96067da55e227aa}\label{class_fl___widget_aa327c70689110677d96067da55e227aa}} 
+\index{Fl\_Widget@{Fl\_Widget}!label@{label}}
+\index{label@{label}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Widget\+::label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the current label text. \begin{DoxyReturn}{Returns}
+a pointer to the current label text 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a8b8d231929f3a5f5726811af50161ec9}{label(const char $\ast$)}}, \mbox{\hyperlink{class_fl___widget_ab49565fabce4b04f7ee86d862402a060}{copy\+\_\+label(const char $\ast$)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a8b8d231929f3a5f5726811af50161ec9}\label{class_fl___widget_a8b8d231929f3a5f5726811af50161ec9}} 
+\index{Fl\_Widget@{Fl\_Widget}!label@{label}}
+\index{label@{label}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})}
+
+Sets the current label pointer.
+
+The label is shown somewhere on or next to the widget. The passed pointer is stored unchanged in the widget (the string is {\itshape not} copied), so if you need to set the label to a formatted value, make sure the buffer is static, global, or allocated. The \mbox{\hyperlink{class_fl___widget_ab49565fabce4b04f7ee86d862402a060}{copy\+\_\+label()}} method can be used to make a copy of the label string automatically. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em text} & pointer to new label text \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ab49565fabce4b04f7ee86d862402a060}{copy\+\_\+label()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_aa3afb86e13e921c17934cf2b1f6951b4}\label{class_fl___widget_aa3afb86e13e921c17934cf2b1f6951b4}} 
+\index{Fl\_Widget@{Fl\_Widget}!label@{label}}
+\index{label@{label}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ad5774781d33328b82990ff9e25dfd61b}{Fl\+\_\+\+Labeltype}}}]{a,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Shortcut to set the label text and type in one call. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a8b8d231929f3a5f5726811af50161ec9}{label(const char $\ast$)}}, \mbox{\hyperlink{class_fl___widget_a932f1c090154ba6ccdd9ea18250e7c71}{labeltype(\+Fl\+\_\+\+Labeltype)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a29cf95bbdfb8e1f72cd2c484e80dc681}\label{class_fl___widget_a29cf95bbdfb8e1f72cd2c484e80dc681}} 
+\index{Fl\_Widget@{Fl\_Widget}!label\_shortcut@{label\_shortcut}}
+\index{label\_shortcut@{label\_shortcut}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{label\_shortcut()}{label\_shortcut()}}
+{\footnotesize\ttfamily static unsigned int Fl\+\_\+\+Widget\+::label\+\_\+shortcut (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___widget_a01404bc412b13a9dfe4dda33f204abe0}\label{class_fl___widget_a01404bc412b13a9dfe4dda33f204abe0}} 
+\index{Fl\_Widget@{Fl\_Widget}!labelcolor@{labelcolor}}
+\index{labelcolor@{labelcolor}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{labelcolor()}{labelcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Widget\+::labelcolor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the label color. The default color is F\+L\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR. \begin{DoxyReturn}{Returns}
+the current label color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_aadbbe3d4c1597fa2ed5a9dd8c4749788}\label{class_fl___widget_aadbbe3d4c1597fa2ed5a9dd8c4749788}} 
+\index{Fl\_Widget@{Fl\_Widget}!labelcolor@{labelcolor}}
+\index{labelcolor@{labelcolor}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{labelcolor()}{labelcolor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::labelcolor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the label color. The default color is F\+L\+\_\+\+F\+O\+R\+E\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em c} & the new label color \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_a0bd196066e9bf5ff226cfb7e7c7ba47a}\label{class_fl___widget_a0bd196066e9bf5ff226cfb7e7c7ba47a}} 
+\index{Fl\_Widget@{Fl\_Widget}!labelfont@{labelfont}}
+\index{labelfont@{labelfont}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{labelfont()}{labelfont()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} Fl\+\_\+\+Widget\+::labelfont (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the font to use. Fonts are identified by indexes into a table. The default value uses a Helvetica typeface (Arial for Microsoft\textregistered{} Windows\textregistered{}). The function \mbox{\hyperlink{group__fl__attributes_gac8bc23064aae455f7e5649240cf66b6d}{Fl\+::set\+\_\+font()}} can define new typefaces. \begin{DoxyReturn}{Returns}
+current font used by the label 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_adcdff2636eda5b015ca80ca30b9b6f07}\label{class_fl___widget_adcdff2636eda5b015ca80ca30b9b6f07}} 
+\index{Fl\_Widget@{Fl\_Widget}!labelfont@{labelfont}}
+\index{labelfont@{labelfont}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{labelfont()}{labelfont()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::labelfont (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}}}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the font to use. Fonts are identified by indexes into a table. The default value uses a Helvetica typeface (Arial for Microsoft\textregistered{} Windows\textregistered{}). The function \mbox{\hyperlink{group__fl__attributes_gac8bc23064aae455f7e5649240cf66b6d}{Fl\+::set\+\_\+font()}} can define new typefaces. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em f} & the new font for the label \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_a2ac46d9f082834b969fffe490a03a709}{Fl\+\_\+\+Font}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a9e35a6e45eb56c6dd9837ef183909200}\label{class_fl___widget_a9e35a6e45eb56c6dd9837ef183909200}} 
+\index{Fl\_Widget@{Fl\_Widget}!labelsize@{labelsize}}
+\index{labelsize@{labelsize}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{labelsize()}{labelsize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} Fl\+\_\+\+Widget\+::labelsize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the font size in pixels. The default size is 14 pixels. \begin{DoxyReturn}{Returns}
+the current font size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_a9a10a8d1f48d2951f7aba9018dd42d9f}\label{class_fl___widget_a9a10a8d1f48d2951f7aba9018dd42d9f}} 
+\index{Fl\_Widget@{Fl\_Widget}!labelsize@{labelsize}}
+\index{labelsize@{labelsize}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{labelsize()}{labelsize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::labelsize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}}}]{pix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the font size in pixels. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em pix} & the new font size \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad58927f5c691454480f7cd28362502f1}{Fl\+\_\+\+Fontsize}} \mbox{\hyperlink{class_fl___widget_a9e35a6e45eb56c6dd9837ef183909200}{labelsize()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_abdb804f3d186f60570874a664189a010}\label{class_fl___widget_abdb804f3d186f60570874a664189a010}} 
+\index{Fl\_Widget@{Fl\_Widget}!labeltype@{labeltype}}
+\index{labeltype@{labeltype}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{labeltype()}{labeltype()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_ad5774781d33328b82990ff9e25dfd61b}{Fl\+\_\+\+Labeltype}} Fl\+\_\+\+Widget\+::labeltype (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the label type. \begin{DoxyReturn}{Returns}
+the current label type. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad5774781d33328b82990ff9e25dfd61b}{Fl\+\_\+\+Labeltype}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a932f1c090154ba6ccdd9ea18250e7c71}\label{class_fl___widget_a932f1c090154ba6ccdd9ea18250e7c71}} 
+\index{Fl\_Widget@{Fl\_Widget}!labeltype@{labeltype}}
+\index{labeltype@{labeltype}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{labeltype()}{labeltype()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::labeltype (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_ad5774781d33328b82990ff9e25dfd61b}{Fl\+\_\+\+Labeltype}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the label type. The label type identifies the function that draws the label of the widget. This is generally used for special effects such as embossing or for using the \mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}} pointer as another form of data such as an icon. The value F\+L\+\_\+\+N\+O\+R\+M\+A\+L\+\_\+\+L\+A\+B\+EL prints the label as plain text. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & new label type \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad5774781d33328b82990ff9e25dfd61b}{Fl\+\_\+\+Labeltype}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a8b10100a5384ebce7e121fa04730603c}\label{class_fl___widget_a8b10100a5384ebce7e121fa04730603c}} 
+\index{Fl\_Widget@{Fl\_Widget}!measure\_label@{measure\_label}}
+\index{measure\_label@{measure\_label}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{measure\_label()}{measure\_label()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::measure\+\_\+label (\begin{DoxyParamCaption}\item[{int \&}]{ww,  }\item[{int \&}]{hh }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets width ww and height hh accordingly with the label size. Labels with images will return \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w()}} and \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h()}} of the image.
+
+This calls \mbox{\hyperlink{group__fl__drawings_gaccd92d0c0521b0aac30dcb856d438dcd}{fl\+\_\+measure()}} internally. For more information about the arguments {\ttfamily ww} and {\ttfamily hh} and word wrapping \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__fl__drawings_gaccd92d0c0521b0aac30dcb856d438dcd}{fl\+\_\+measure(const char$\ast$, int\&, int\&, int)}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{class_fl___widget_a8b10100a5384ebce7e121fa04730603c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___widget_ac17e491c17a34fff2c21351811b735b0}\label{class_fl___widget_ac17e491c17a34fff2c21351811b735b0}} 
+\index{Fl\_Widget@{Fl\_Widget}!output@{output}}
+\index{output@{output}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Widget\+::output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns if a widget is used for output only. \mbox{\hyperlink{class_fl___widget_ac17e491c17a34fff2c21351811b735b0}{output()}} means the same as !active() except it does not change how the widget is drawn. The widget will not receive any events. This is useful for making scrollbars or buttons that work as displays rather than input devices. 
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the widget is used for input and output \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a952fe0471023401e2efacd69bd2b57e6}{set\+\_\+output()}}, \mbox{\hyperlink{class_fl___widget_a4288bfa92dadf31956e2f14f9bfeff5e}{clear\+\_\+output()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a6f55261683ecaf68d70e424213d030b0}\label{class_fl___widget_a6f55261683ecaf68d70e424213d030b0}} 
+\index{Fl\_Widget@{Fl\_Widget}!parent@{parent}}
+\index{parent@{parent}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}$\ast$ Fl\+\_\+\+Widget\+::parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a pointer to the parent widget. ~\newline
+ Usually this is a \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} or \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}. 
+\begin{DoxyRetVals}{Return values}
+{\em N\+U\+LL} & if the widget has no parent \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___group_a2d40db4b2f073c8b9469d43c1e46af59}{Fl\+\_\+\+Group\+::add(\+Fl\+\_\+\+Widget$\ast$)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a6b57ff665a0e988064cb42d742668566}\label{class_fl___widget_a6b57ff665a0e988064cb42d742668566}} 
+\index{Fl\_Widget@{Fl\_Widget}!parent@{parent}}
+\index{parent@{parent}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Internal use only -\/ \char`\"{}for hacks only\char`\"{}.
+
+It is {\itshape {\bfseries{S\+T\+R\+O\+N\+G\+LY}} recommended} not to use this method, because it short-\/circuits \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}\textquotesingle{}s normal widget adding and removing methods, if the widget is already a child widget of another \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}.
+
+Use \mbox{\hyperlink{class_fl___group_a2d40db4b2f073c8b9469d43c1e46af59}{Fl\+\_\+\+Group\+::add(\+Fl\+\_\+\+Widget$\ast$)}} and/or \mbox{\hyperlink{class_fl___group_a9f61a75f2d64ea40220b629bb39006a8}{Fl\+\_\+\+Group\+::remove(\+Fl\+\_\+\+Widget$\ast$)}} instead. \mbox{\Hypertarget{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}\label{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}} 
+\index{Fl\_Widget@{Fl\_Widget}!position@{position}}
+\index{position@{position}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::position (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Repositions the window or widget.
+
+position(\+X, Y) is a shortcut for resize(X, Y, \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w()}}, \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h()}}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em X,Y} & new position relative to the parent window \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a59fd9dbe65ba2602412ebc4c07e9c362}{resize(int,int,int,int)}}, \mbox{\hyperlink{class_fl___widget_ae386844a68c27ea0b64313619551e786}{size(int,int)}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}\label{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}} 
+\index{Fl\_Widget@{Fl\_Widget}!redraw@{redraw}}
+\index{redraw@{redraw}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{redraw()}{redraw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::redraw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Schedules the drawing of the widget. Marks the widget as needing its \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{draw()}} routine called. \mbox{\Hypertarget{class_fl___widget_a22b6faff91b6056e55ba4270723734b7}\label{class_fl___widget_a22b6faff91b6056e55ba4270723734b7}} 
+\index{Fl\_Widget@{Fl\_Widget}!redraw\_label@{redraw\_label}}
+\index{redraw\_label@{redraw\_label}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{redraw\_label()}{redraw\_label()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::redraw\+\_\+label (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Schedules the drawing of the label. Marks the widget or the parent as needing a redraw for the label area of a widget. \mbox{\Hypertarget{class_fl___widget_a59fd9dbe65ba2602412ebc4c07e9c362}\label{class_fl___widget_a59fd9dbe65ba2602412ebc4c07e9c362}} 
+\index{Fl\_Widget@{Fl\_Widget}!resize@{resize}}
+\index{resize@{resize}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::resize (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Changes the size or position of the widget.
+
+This is a virtual function so that the widget may implement its own handling of resizing. The default version does {\itshape not} call the \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} method, but instead relies on the parent widget to do so because the parent may know a faster way to update the display, such as scrolling from the old position. ~\newline
+
+
+Some window managers under X11 call \mbox{\hyperlink{class_fl___widget_a59fd9dbe65ba2602412ebc4c07e9c362}{resize()}} a lot more often than needed. Please verify that the position or size of a widget did actually change before doing any extensive calculations.
+
+position(\+X, Y) is a shortcut for resize(X, Y, \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w()}}, \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h()}}), and size(\+W, H) is a shortcut for resize(\mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x()}}, \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y()}}, W, H).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x,y} & new position relative to the parent window \\
+\hline
+\mbox{\texttt{ in}}  & {\em w,h} & new size \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}{position(int,int)}}, \mbox{\hyperlink{class_fl___widget_ae386844a68c27ea0b64313619551e786}{size(int,int)}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___tree_a960c97b66c8763c8d26d8ae7cfcbffa3}{Fl\+\_\+\+Tree}}, \mbox{\hyperlink{class_fl___help___view_ab5ef730c30f06bf24a55ff70c6cdd490}{Fl\+\_\+\+Help\+\_\+\+View}}, \mbox{\hyperlink{class_fl___input___a1b4c33d2caa558b8f028c3cad2b433c2}{Fl\+\_\+\+Input\+\_\+}}, \mbox{\hyperlink{class_fl___group_aaec24e2eec53dcea00d1d1f63d5495d3}{Fl\+\_\+\+Group}}, \mbox{\hyperlink{class_fl___gl___window_aff3bb62b9ce1d0c35c3df085bb21da92}{Fl\+\_\+\+Gl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___value___input_a93468482172922685830630c673bd059}{Fl\+\_\+\+Value\+\_\+\+Input}}, \mbox{\hyperlink{class_fl___overlay___window_ae592a1cb84776f1d37357cc1108f870e}{Fl\+\_\+\+Overlay\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___double___window_aebad8d054ad0b4013fb35667a5f3fbb1}{Fl\+\_\+\+Double\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___table_ab513a3c2f785008b5f8b4ea0b3d643f5}{Fl\+\_\+\+Table}}, \mbox{\hyperlink{class_fl___text___display_aa8215d8e63bba5f1550ae57e6969263a}{Fl\+\_\+\+Text\+\_\+\+Display}}, \mbox{\hyperlink{class_fl___window_adb45dff26b1be92975f0cec58ca3d592}{Fl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___browser___a3e9c0647239e6952aa0636ad7db72ada}{Fl\+\_\+\+Browser\+\_\+}}, \mbox{\hyperlink{class_fl___input___choice_a03c0a02d26ef3498a67d4868be32b552}{Fl\+\_\+\+Input\+\_\+\+Choice}}, \mbox{\hyperlink{class_fl___spinner_a93f1c99df8cd04f7d43f382b9e20f786}{Fl\+\_\+\+Spinner}}, \mbox{\hyperlink{class_fl___scroll_a4328309a02ce7af89f569ef3e0314d80}{Fl\+\_\+\+Scroll}}, and \mbox{\hyperlink{class_fl___tile_a9206c650d9d555c98399499e5fd53d21}{Fl\+\_\+\+Tile}}.
+
+\mbox{\Hypertarget{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}\label{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}} 
+\index{Fl\_Widget@{Fl\_Widget}!selection\_color@{selection\_color}}
+\index{selection\_color@{selection\_color}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{selection\_color()}{selection\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}} Fl\+\_\+\+Widget\+::selection\+\_\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the selection color. \begin{DoxyReturn}{Returns}
+the current selection color 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ab566daea3e4e8278319acb06188ee4b1}{selection\+\_\+color(\+Fl\+\_\+\+Color)}}, \mbox{\hyperlink{class_fl___widget_a5ab161ab774b29946049a44d575b363d}{color(\+Fl\+\_\+\+Color, Fl\+\_\+\+Color)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_ab566daea3e4e8278319acb06188ee4b1}\label{class_fl___widget_ab566daea3e4e8278319acb06188ee4b1}} 
+\index{Fl\_Widget@{Fl\_Widget}!selection\_color@{selection\_color}}
+\index{selection\_color@{selection\_color}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{selection\_color()}{selection\_color()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::selection\+\_\+color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enumerations_8_h_a8b762953646f8abee866061f1af78a6a}{Fl\+\_\+\+Color}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the selection color. The selection color is defined for Forms compatibility and is usually used to color the widget when it is selected, although some widgets use this color for other purposes. You can set both colors at once with \mbox{\hyperlink{class_fl___widget_a5ab161ab774b29946049a44d575b363d}{color(\+Fl\+\_\+\+Color bg, Fl\+\_\+\+Color sel)}}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em a} & the new selection color \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_aa19cad245b9a3ecdc3af8ebc4706196b}{selection\+\_\+color()}}, \mbox{\hyperlink{class_fl___widget_a5ab161ab774b29946049a44d575b363d}{color(\+Fl\+\_\+\+Color, Fl\+\_\+\+Color)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_adf01a4e0c1e89c7921d50ef558c18ccd}\label{class_fl___widget_adf01a4e0c1e89c7921d50ef558c18ccd}} 
+\index{Fl\_Widget@{Fl\_Widget}!set\_active@{set\_active}}
+\index{set\_active@{set\_active}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{set\_active()}{set\_active()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::set\+\_\+active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Marks the widget as active without sending events or changing focus. This is mainly for specialized use, for normal cases you want \mbox{\hyperlink{class_fl___widget_ae0ca5f7159aceba7d813c81167e684bb}{activate()}}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ae0ca5f7159aceba7d813c81167e684bb}{activate()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a825fd3487559e1c283550abdb92304ef}\label{class_fl___widget_a825fd3487559e1c283550abdb92304ef}} 
+\index{Fl\_Widget@{Fl\_Widget}!set\_changed@{set\_changed}}
+\index{set\_changed@{set\_changed}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{set\_changed()}{set\_changed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::set\+\_\+changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Marks the value of the widget as changed. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed()}}, \mbox{\hyperlink{class_fl___widget_abd83334100f22d5880cf34a233a35831}{clear\+\_\+changed()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a7244e112711741978f19ceadd8f196b5}\label{class_fl___widget_a7244e112711741978f19ceadd8f196b5}} 
+\index{Fl\_Widget@{Fl\_Widget}!set\_flag@{set\_flag}}
+\index{set\_flag@{set\_flag}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{set\_flag()}{set\_flag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::set\+\_\+flag (\begin{DoxyParamCaption}\item[{unsigned int}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Sets a flag in the flags mask \mbox{\Hypertarget{class_fl___widget_a952fe0471023401e2efacd69bd2b57e6}\label{class_fl___widget_a952fe0471023401e2efacd69bd2b57e6}} 
+\index{Fl\_Widget@{Fl\_Widget}!set\_output@{set\_output}}
+\index{set\_output@{set\_output}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{set\_output()}{set\_output()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::set\+\_\+output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets a widget to output only. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ac17e491c17a34fff2c21351811b735b0}{output()}}, \mbox{\hyperlink{class_fl___widget_a4288bfa92dadf31956e2f14f9bfeff5e}{clear\+\_\+output()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a85981546c4927bd5e6d43d6e3df3416a}\label{class_fl___widget_a85981546c4927bd5e6d43d6e3df3416a}} 
+\index{Fl\_Widget@{Fl\_Widget}!set\_visible@{set\_visible}}
+\index{set\_visible@{set\_visible}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{set\_visible()}{set\_visible()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::set\+\_\+visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Makes the widget visible. You must still redraw the parent widget to see a change in the window. Normally you want to use the \mbox{\hyperlink{class_fl___widget_a3b7971dc3a0385c31e71b9f3786eac2d}{show()}} method instead. \mbox{\Hypertarget{class_fl___widget_acf82200fdfe16a2e0bd9d3ee58e44958}\label{class_fl___widget_acf82200fdfe16a2e0bd9d3ee58e44958}} 
+\index{Fl\_Widget@{Fl\_Widget}!set\_visible\_focus@{set\_visible\_focus}}
+\index{set\_visible\_focus@{set\_visible\_focus}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{set\_visible\_focus()}{set\_visible\_focus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::set\+\_\+visible\+\_\+focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enables keyboard focus navigation with this widget. Note, however, that this will not necessarily mean that the widget will accept focus, but for widgets that can accept focus, this method enables it if it has been disabled. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a1acaad8af2c94836dea0d3086dca1ac3}{visible\+\_\+focus()}}, \mbox{\hyperlink{class_fl___widget_a5450e5156a76c273e67ef09225c9615b}{clear\+\_\+visible\+\_\+focus()}}, \mbox{\hyperlink{class_fl___widget_a6a2a0769c73831e6ef0076d9efa98d72}{visible\+\_\+focus(int)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a3b7971dc3a0385c31e71b9f3786eac2d}\label{class_fl___widget_a3b7971dc3a0385c31e71b9f3786eac2d}} 
+\index{Fl\_Widget@{Fl\_Widget}!show@{show}}
+\index{show@{show}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Makes a widget visible.
+
+An invisible widget never gets redrawn and does not get keyboard or mouse events, but can receive a few other events like F\+L\+\_\+\+S\+H\+OW.
+
+The \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}} method returns true if the widget is set to be visible. The \mbox{\hyperlink{class_fl___widget_ac51a7380e249127ca47aad175f162360}{visible\+\_\+r()}} method returns true if the widget and all of its parents are visible. A widget is only visible if \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}} is true on it {\itshape and all of its parents}.
+
+Changing it will send F\+L\+\_\+\+S\+H\+OW or F\+L\+\_\+\+H\+I\+DE events to the widget. {\itshape Do not change it if the parent is not visible, as this will send false F\+L\+\_\+\+S\+H\+OW or F\+L\+\_\+\+H\+I\+DE events to the widget}. \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} is called if necessary on this or the parent.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a408b7ca0d0ed7682275e79b976c5dda4}{hide()}}, \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}}, \mbox{\hyperlink{class_fl___widget_ac51a7380e249127ca47aad175f162360}{visible\+\_\+r()}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{Fl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___browser_a606986c7d588114a399990c0c1495324}{Fl\+\_\+\+Browser}}, \mbox{\hyperlink{class_fl___gl___window_a05f9c5395325f1f5a905207f0ccb994a}{Fl\+\_\+\+Gl\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___overlay___window_a4eebd23fcbe366b78cc9e4dded5172bb}{Fl\+\_\+\+Overlay\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}{Fl\+\_\+\+Double\+\_\+\+Window}}, \mbox{\hyperlink{class_fl___single___window_afe0655393f47614fad9b94490f8711f8}{Fl\+\_\+\+Single\+\_\+\+Window}}, and \mbox{\hyperlink{class_fl___menu___window_a5658ae8d0587eeb640c44da3b2587441}{Fl\+\_\+\+Menu\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___widget_ae386844a68c27ea0b64313619551e786}\label{class_fl___widget_ae386844a68c27ea0b64313619551e786}} 
+\index{Fl\_Widget@{Fl\_Widget}!size@{size}}
+\index{size@{size}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::size (\begin{DoxyParamCaption}\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Changes the size of the widget.
+
+size(\+W, H) is a shortcut for resize(\mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x()}}, \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y()}}, W, H).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em W,H} & new size \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}{position(int,int)}}, \mbox{\hyperlink{class_fl___widget_a59fd9dbe65ba2602412ebc4c07e9c362}{resize(int,int,int,int)}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_fl___widget_ae386844a68c27ea0b64313619551e786_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___widget_ab1fe36207b4a59cae3796b0e6d3b7df8}\label{class_fl___widget_ab1fe36207b4a59cae3796b0e6d3b7df8}} 
+\index{Fl\_Widget@{Fl\_Widget}!take\_focus@{take\_focus}}
+\index{take\_focus@{take\_focus}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{take\_focus()}{take\_focus()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::take\+\_\+focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gives the widget the keyboard focus. Tries to make this widget be the \mbox{\hyperlink{group__fl__events_ga7f0e9836db43268979e0b3a999583b7f}{Fl\+::focus()}} widget, by first sending it an F\+L\+\_\+\+F\+O\+C\+US event, and if it returns non-\/zero, setting \mbox{\hyperlink{group__fl__events_ga7f0e9836db43268979e0b3a999583b7f}{Fl\+::focus()}} to this widget. You should use this method to assign the focus to a widget. ~\newline
+ \begin{DoxyReturn}{Returns}
+true if the widget accepted the focus. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_ae98726dbe7e04e9633bb071d2038a01c}\label{class_fl___widget_ae98726dbe7e04e9633bb071d2038a01c}} 
+\index{Fl\_Widget@{Fl\_Widget}!takesevents@{takesevents}}
+\index{takesevents@{takesevents}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{takesevents()}{takesevents()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Widget\+::takesevents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns if the widget is able to take events. This is the same as (\mbox{\hyperlink{class_fl___widget_ae10c2f227e76414e8142808eeda23c0c}{active()}} \&\& !output() \&\& \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}}) but is faster. 
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the widget takes no events \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{class_fl___widget_abbd4f11b53ba045345cb3815b002076a}\label{class_fl___widget_abbd4f11b53ba045345cb3815b002076a}} 
+\index{Fl\_Widget@{Fl\_Widget}!test\_shortcut@{test\_shortcut}}
+\index{test\_shortcut@{test\_shortcut}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{test\_shortcut()}{test\_shortcut()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::test\+\_\+shortcut (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___widget_a1b3036aaba94724e83a935085fbfddd2}\label{class_fl___widget_a1b3036aaba94724e83a935085fbfddd2}} 
+\index{Fl\_Widget@{Fl\_Widget}!test\_shortcut@{test\_shortcut}}
+\index{test\_shortcut@{test\_shortcut}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{test\_shortcut()}{test\_shortcut()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int Fl\+\_\+\+Widget\+::test\+\_\+shortcut (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} bool}]{require\+\_\+alt = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_fl___widget_ab615a4e095df55c88cd2eb014289eedd}\label{class_fl___widget_ab615a4e095df55c88cd2eb014289eedd}} 
+\index{Fl\_Widget@{Fl\_Widget}!tooltip@{tooltip}}
+\index{tooltip@{tooltip}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{tooltip()}{tooltip()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char$\ast$ Fl\+\_\+\+Widget\+::tooltip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the current tooltip text. \begin{DoxyReturn}{Returns}
+a pointer to the tooltip text or N\+U\+LL 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a794140ed451d427e9990ea01c06ac390}{tooltip(const char$\ast$)}}, \mbox{\hyperlink{class_fl___widget_af5a91645a4735db51626a2e273c04bb9}{copy\+\_\+tooltip(const char$\ast$)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a794140ed451d427e9990ea01c06ac390}\label{class_fl___widget_a794140ed451d427e9990ea01c06ac390}} 
+\index{Fl\_Widget@{Fl\_Widget}!tooltip@{tooltip}}
+\index{tooltip@{tooltip}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{tooltip()}{tooltip()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::tooltip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___widget_ab33601d18391c2898935fa6a699ded07}\label{class_fl___widget_ab33601d18391c2898935fa6a699ded07}} 
+\index{Fl\_Widget@{Fl\_Widget}!top\_window@{top\_window}}
+\index{top\_window@{top\_window}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{top\_window()}{top\_window()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}$\ast$ Fl\+\_\+\+Widget\+::top\+\_\+window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___widget_a7a308d15ff6daf8104f6212980c8fcf1}\label{class_fl___widget_a7a308d15ff6daf8104f6212980c8fcf1}} 
+\index{Fl\_Widget@{Fl\_Widget}!top\_window\_offset@{top\_window\_offset}}
+\index{top\_window\_offset@{top\_window\_offset}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{top\_window\_offset()}{top\_window\_offset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}$\ast$ Fl\+\_\+\+Widget\+::top\+\_\+window\+\_\+offset (\begin{DoxyParamCaption}\item[{int \&}]{xoff,  }\item[{int \&}]{yoff }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}\label{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}} 
+\index{Fl\_Widget@{Fl\_Widget}!type@{type}}
+\index{type@{type}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} Fl\+\_\+\+Widget\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the widget type. Returns the widget type value, which is used for Forms compatibility and to simulate R\+T\+TI.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000022}{Todo}}]Explain \char`\"{}simulate R\+T\+T\+I\char`\"{} (currently only used to decide if a widget is a window, i.\+e. \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{type()}}$>$=F\+L\+\_\+\+W\+I\+N\+D\+OW ?). Is \mbox{\hyperlink{class_fl___widget_adda2e8f162b3ea0332eb8d762350bbd5}{type()}} really used in a way that ensures \char`\"{}\+Forms compatibility\char`\"{} ? \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_fl___widget_ad00d1457b3f578c8e6ffca52d9facad8}\label{class_fl___widget_ad00d1457b3f578c8e6ffca52d9facad8}} 
+\index{Fl\_Widget@{Fl\_Widget}!type@{type}}
+\index{type@{type}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the widget type. This is used for Forms compatibility. \mbox{\Hypertarget{class_fl___widget_aeeef6f7148baff5b85cc50e1a34e6a13}\label{class_fl___widget_aeeef6f7148baff5b85cc50e1a34e6a13}} 
+\index{Fl\_Widget@{Fl\_Widget}!use\_accents\_menu@{use\_accents\_menu}}
+\index{use\_accents\_menu@{use\_accents\_menu}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{use\_accents\_menu()}{use\_accents\_menu()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::use\+\_\+accents\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns non zero if M\+A\+C\+\_\+\+U\+S\+E\+\_\+\+A\+C\+C\+E\+N\+T\+S\+\_\+\+M\+E\+NU flag is set, 0 otherwise. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___widget_aeeef6f7148baff5b85cc50e1a34e6a13_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___widget_a9463920cdace382888f9766781e7aba9}\label{class_fl___widget_a9463920cdace382888f9766781e7aba9}} 
+\index{Fl\_Widget@{Fl\_Widget}!user\_data@{user\_data}}
+\index{user\_data@{user\_data}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{user\_data()}{user\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}}$\ast$ Fl\+\_\+\+Widget\+::user\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the user data for this widget. Gets the current user data (void $\ast$) argument that is passed to the callback function. \begin{DoxyReturn}{Returns}
+user data as a pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_a29465f30c3e1a83468e672402c286ec8}\label{class_fl___widget_a29465f30c3e1a83468e672402c286ec8}} 
+\index{Fl\_Widget@{Fl\_Widget}!user\_data@{user\_data}}
+\index{user\_data@{user\_data}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{user\_data()}{user\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::user\+\_\+data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the user data for this widget. Sets the new user data (void $\ast$) argument that is passed to the callback function. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em v} & new user data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_ac103c73444da9035a31329cf938d77b3}\label{class_fl___widget_ac103c73444da9035a31329cf938d77b3}} 
+\index{Fl\_Widget@{Fl\_Widget}!visible@{visible}}
+\index{visible@{visible}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{visible()}{visible()}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Widget\+::visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether a widget is visible. 
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the widget is not drawn and hence invisible. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a3b7971dc3a0385c31e71b9f3786eac2d}{show()}}, \mbox{\hyperlink{class_fl___widget_a408b7ca0d0ed7682275e79b976c5dda4}{hide()}}, \mbox{\hyperlink{class_fl___widget_ac51a7380e249127ca47aad175f162360}{visible\+\_\+r()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a1acaad8af2c94836dea0d3086dca1ac3}\label{class_fl___widget_a1acaad8af2c94836dea0d3086dca1ac3}} 
+\index{Fl\_Widget@{Fl\_Widget}!visible\_focus@{visible\_focus}}
+\index{visible\_focus@{visible\_focus}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{visible\_focus()}{visible\_focus()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily unsigned int Fl\+\_\+\+Widget\+::visible\+\_\+focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks whether this widget has a visible focus. 
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if this widget has no visible focus. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a6a2a0769c73831e6ef0076d9efa98d72}{visible\+\_\+focus(int)}}, \mbox{\hyperlink{class_fl___widget_acf82200fdfe16a2e0bd9d3ee58e44958}{set\+\_\+visible\+\_\+focus()}}, \mbox{\hyperlink{class_fl___widget_a5450e5156a76c273e67ef09225c9615b}{clear\+\_\+visible\+\_\+focus()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a6a2a0769c73831e6ef0076d9efa98d72}\label{class_fl___widget_a6a2a0769c73831e6ef0076d9efa98d72}} 
+\index{Fl\_Widget@{Fl\_Widget}!visible\_focus@{visible\_focus}}
+\index{visible\_focus@{visible\_focus}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{visible\_focus()}{visible\_focus()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::visible\+\_\+focus (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Modifies keyboard focus navigation. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em v} & set or clear visible focus \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_acf82200fdfe16a2e0bd9d3ee58e44958}{set\+\_\+visible\+\_\+focus()}}, \mbox{\hyperlink{class_fl___widget_a5450e5156a76c273e67ef09225c9615b}{clear\+\_\+visible\+\_\+focus()}}, \mbox{\hyperlink{class_fl___widget_a1acaad8af2c94836dea0d3086dca1ac3}{visible\+\_\+focus()}} 
+\end{DoxySeeAlso}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_fl___widget_a6a2a0769c73831e6ef0076d9efa98d72_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___widget_ac51a7380e249127ca47aad175f162360}\label{class_fl___widget_ac51a7380e249127ca47aad175f162360}} 
+\index{Fl\_Widget@{Fl\_Widget}!visible\_r@{visible\_r}}
+\index{visible\_r@{visible\_r}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{visible\_r()}{visible\_r()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::visible\+\_\+r (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether a widget and all its parents are visible. 
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the widget or any of its parents are invisible. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_a3b7971dc3a0385c31e71b9f3786eac2d}{show()}}, \mbox{\hyperlink{class_fl___widget_a408b7ca0d0ed7682275e79b976c5dda4}{hide()}}, \mbox{\hyperlink{class_fl___widget_ac103c73444da9035a31329cf938d77b3}{visible()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_a9c582969d134d01916816daf73a35402}\label{class_fl___widget_a9c582969d134d01916816daf73a35402}} 
+\index{Fl\_Widget@{Fl\_Widget}!w@{w}}
+\index{w@{w}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{w()}{w()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::w (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the widget width. \begin{DoxyReturn}{Returns}
+the width of the widget in pixels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}\label{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}} 
+\index{Fl\_Widget@{Fl\_Widget}!w@{w}}
+\index{w@{w}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{w()}{w()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::w (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Internal use only. Use \mbox{\hyperlink{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}{position(int,int)}}, \mbox{\hyperlink{class_fl___widget_ae386844a68c27ea0b64313619551e786}{size(int,int)}} or \mbox{\hyperlink{class_fl___widget_a59fd9dbe65ba2602412ebc4c07e9c362}{resize(int,int,int,int)}} instead. \mbox{\Hypertarget{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}\label{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}} 
+\index{Fl\_Widget@{Fl\_Widget}!when@{when}}
+\index{when@{when}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{when()}{when()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_enumerations_8_h_adaaa8b52b78abf3ccce4787b112e6665}{Fl\+\_\+\+When}} Fl\+\_\+\+Widget\+::when (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the conditions under which the callback is called.
+
+You can set the flags with \mbox{\hyperlink{class_fl___widget_acb46c71f55ccdfeead9e9dcb3fb2c23b}{when(uchar)}}, the default value is F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+R\+E\+L\+E\+A\+SE.
+
+\begin{DoxyReturn}{Returns}
+set of flags 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_acb46c71f55ccdfeead9e9dcb3fb2c23b}{when(uchar)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_fl___widget_acb46c71f55ccdfeead9e9dcb3fb2c23b}\label{class_fl___widget_acb46c71f55ccdfeead9e9dcb3fb2c23b}} 
+\index{Fl\_Widget@{Fl\_Widget}!when@{when}}
+\index{when@{when}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{when()}{when()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::when (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the flags used to decide when a callback is called.
+
+This controls when callbacks are done. The following values are useful, the default value is F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+R\+E\+L\+E\+A\+SE\+:
+
+\begin{DoxyItemize}
+\item 0\+: The callback is not done, but \mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed()}} is turned on. \item F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+C\+H\+A\+N\+G\+ED\+: The callback is done each time the text is changed by the user. \item F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+R\+E\+L\+E\+A\+SE\+: The callback will be done when this widget loses the focus, including when the window is unmapped. This is a useful value for text fields in a panel where doing the callback on every change is wasteful. However the callback will also happen if the mouse is moved out of the window, which means it should not do anything visible (like pop up an error message). You might do better setting this to zero, and scanning all the items for \mbox{\hyperlink{class_fl___widget_af007a3c83ac176a7511df8df0706947c}{changed()}} when the OK button on a panel is pressed. \item F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+E\+N\+T\+E\+R\+\_\+\+K\+EY\+: If the user types the Enter key, the entire text is selected, and the callback is done if the text has changed. Normally the Enter key will navigate to the next field (or insert a newline for a \mbox{\hyperlink{class_fl___multiline___input}{Fl\+\_\+\+Multiline\+\_\+\+Input}}) -\/ this changes the behavior. \item F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+E\+N\+T\+E\+R\+\_\+\+K\+E\+Y$\vert$\+F\+L\+\_\+\+W\+H\+E\+N\+\_\+\+N\+O\+T\+\_\+\+C\+H\+A\+N\+G\+ED\+: The Enter key will do the callback even if the text has not changed. Useful for command fields. \mbox{\hyperlink{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}{Fl\+\_\+\+Widget\+::when()}} is a set of bitflags used by subclasses of \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} to decide when to do the callback.\end{DoxyItemize}
+If the value is zero then the callback is never done. Other values are described in the individual widgets. This field is in the base class so that you can scan a panel and \mbox{\hyperlink{class_fl___widget_a37aa870315e37ddc1246caa6421322f4}{do\+\_\+callback()}} on all the ones that don\textquotesingle{}t do their own callbacks in response to an \char`\"{}\+O\+K\char`\"{} button. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em i} & set of flags \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fl___widget_a2779c31be7e3ecd5d0205a5196c2801d}\label{class_fl___widget_a2779c31be7e3ecd5d0205a5196c2801d}} 
+\index{Fl\_Widget@{Fl\_Widget}!window@{window}}
+\index{window@{window}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{window()}{window()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___window}{Fl\+\_\+\+Window}}$\ast$ Fl\+\_\+\+Widget\+::window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_fl___widget_aeed320ce65d02a7f0fcab1363f0136b0}\label{class_fl___widget_aeed320ce65d02a7f0fcab1363f0136b0}} 
+\index{Fl\_Widget@{Fl\_Widget}!x@{x}}
+\index{x@{x}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{x()}{x()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the widget position in its window. \begin{DoxyReturn}{Returns}
+the x position relative to the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}\label{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}} 
+\index{Fl\_Widget@{Fl\_Widget}!x@{x}}
+\index{x@{x}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{x()}{x()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::x (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Internal use only. Use \mbox{\hyperlink{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}{position(int,int)}}, \mbox{\hyperlink{class_fl___widget_ae386844a68c27ea0b64313619551e786}{size(int,int)}} or \mbox{\hyperlink{class_fl___widget_a59fd9dbe65ba2602412ebc4c07e9c362}{resize(int,int,int,int)}} instead. \mbox{\Hypertarget{class_fl___widget_a4665aaf0850ed0d334600e2cac58c360}\label{class_fl___widget_a4665aaf0850ed0d334600e2cac58c360}} 
+\index{Fl\_Widget@{Fl\_Widget}!y@{y}}
+\index{y@{y}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{y()}{y()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Widget\+::y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the widget position in its window. \begin{DoxyReturn}{Returns}
+the y position relative to the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}\label{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}} 
+\index{Fl\_Widget@{Fl\_Widget}!y@{y}}
+\index{y@{y}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{y()}{y()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Widget\+::y (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Internal use only. Use \mbox{\hyperlink{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}{position(int,int)}}, \mbox{\hyperlink{class_fl___widget_ae386844a68c27ea0b64313619551e786}{size(int,int)}} or \mbox{\hyperlink{class_fl___widget_a59fd9dbe65ba2602412ebc4c07e9c362}{resize(int,int,int,int)}} instead. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_fl___widget_a94d0d92ae03a8ba20eb42efa2dd2831d}\label{class_fl___widget_a94d0d92ae03a8ba20eb42efa2dd2831d}} 
+\index{Fl\_Widget@{Fl\_Widget}!Fl\_Group@{Fl\_Group}}
+\index{Fl\_Group@{Fl\_Group}!Fl\_Widget@{Fl\_Widget}}
+\doxysubsubsection{\texorpdfstring{Fl\_Group}{Fl\_Group}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___widget_8_h}{Fl\+\_\+\+Widget.\+H}}\end{DoxyCompactItemize}

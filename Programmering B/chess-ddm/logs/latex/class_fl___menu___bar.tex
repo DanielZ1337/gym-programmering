@@ -1,0 +1,142 @@
+\hypertarget{class_fl___menu___bar}{}\doxysection{Fl\+\_\+\+Menu\+\_\+\+Bar Class Reference}
+\label{class_fl___menu___bar}\index{Fl\_Menu\_Bar@{Fl\_Menu\_Bar}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Menu\+\_\+\+Bar.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Menu\+\_\+\+Bar\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_fl___menu___bar__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Menu\+\_\+\+Bar\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_fl___menu___bar__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___menu___bar_a31062af993329f5c6b71c90af5e02ebf}{handle}} (int)
+\item 
+\mbox{\hyperlink{class_fl___menu___bar_ad93621fc211d64067cc16f1c15f40887}{Fl\+\_\+\+Menu\+\_\+\+Bar}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___menu___bar_aa578b03ce16587b623daaf170523f9cd}{draw}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This widget provides a standard menubar interface. Usually you will put this widget along the top edge of your window. The height of the widget should be 30 for the menu titles to draw correctly with the default font.
+
+The items on the bar and the menus they bring up are defined by a single \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} array. Because a \mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} array defines a hierarchy, the top level menu defines the items in the menubar, while the submenus define the pull-\/down menus. Sub-\/sub menus and lower pop up to the right of the submenus.
+
+ 
+\begin{DoxyImage}
+\includegraphics[width=12cm]{menubar.png}
+\doxyfigcaption{menubar}
+\end{DoxyImage}
+
+
+If there is an item in the top menu that is not a title of a submenu, then it acts like a \char`\"{}button\char`\"{} in the menubar. Clicking on it will pick it.
+
+When the user clicks a menu item, \mbox{\hyperlink{class_fl___menu___a760812b12dc473781b132e6a0a7c33e3}{value()}} is set to that item and then\+:
+
+
+\begin{DoxyItemize}
+\item The item\textquotesingle{}s callback is done if one has been set; the \mbox{\hyperlink{class_fl___menu___bar}{Fl\+\_\+\+Menu\+\_\+\+Bar}} is passed as the Fl\+\_\+\+Widget$\ast$ argument, along with any userdata configured for the callback.
+\item If the item does not have a callback, the \mbox{\hyperlink{class_fl___menu___bar}{Fl\+\_\+\+Menu\+\_\+\+Bar}}\textquotesingle{}s callback is done instead, along with any userdata configured for the callback. The callback can determine which item was picked using \mbox{\hyperlink{class_fl___menu___a760812b12dc473781b132e6a0a7c33e3}{value()}}, \mbox{\hyperlink{class_fl___menu___a08e0e360e4058971fc3b674dcfdf6180}{mvalue()}}, \mbox{\hyperlink{class_fl___menu___abe4ba98d1af637c1e452df648c19502c}{item\+\_\+pathname()}}, etc.
+\end{DoxyItemize}
+
+Submenus will also pop up in response to shortcuts indicated by putting a \textquotesingle{}\&\textquotesingle{} character in the name field of the menu item. If you put a \textquotesingle{}\&\textquotesingle{} character in a top-\/level \char`\"{}button\char`\"{} then the shortcut picks it. The \textquotesingle{}\&\textquotesingle{} character in submenus is ignored until the menu is popped up.
+
+Typing the \mbox{\hyperlink{class_fl___menu___aa8080134808c3785579bde1c4ff57f62}{shortcut()}} of any of the menu items will cause callbacks exactly the same as when you pick the item with the mouse. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___menu___bar_ad93621fc211d64067cc16f1c15f40887}\label{class_fl___menu___bar_ad93621fc211d64067cc16f1c15f40887}} 
+\index{Fl\_Menu\_Bar@{Fl\_Menu\_Bar}!Fl\_Menu\_Bar@{Fl\_Menu\_Bar}}
+\index{Fl\_Menu\_Bar@{Fl\_Menu\_Bar}!Fl\_Menu\_Bar@{Fl\_Menu\_Bar}}
+\doxysubsubsection{\texorpdfstring{Fl\_Menu\_Bar()}{Fl\_Menu\_Bar()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Menu\+\_\+\+Bar\+::\+Fl\+\_\+\+Menu\+\_\+\+Bar (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{class_fl___menu___bar}{Fl\+\_\+\+Menu\+\_\+\+Bar}} widget using the given position, size, and label string. The default boxtype is F\+L\+\_\+\+U\+P\+\_\+\+B\+OX.
+
+The constructor sets \mbox{\hyperlink{class_fl___menu___a3aff19a70405238f46a1d79bb540e1e7}{menu()}} to N\+U\+LL. See \mbox{\hyperlink{class_fl___menu__}{Fl\+\_\+\+Menu\+\_\+}} for the methods to set or change the menu.
+
+\mbox{\hyperlink{class_fl___widget_a9e35a6e45eb56c6dd9837ef183909200}{labelsize()}}, \mbox{\hyperlink{class_fl___widget_a0bd196066e9bf5ff226cfb7e7c7ba47a}{labelfont()}}, and \mbox{\hyperlink{class_fl___widget_a01404bc412b13a9dfe4dda33f204abe0}{labelcolor()}} are used to control how the menubar items are drawn. They are initialized from the Fl\+\_\+\+Menu static variables, but you can change them if desired.
+
+\mbox{\hyperlink{class_fl___widget_aa327c70689110677d96067da55e227aa}{label()}} is ignored unless you change \mbox{\hyperlink{class_fl___widget_a6a3c44d082f89ba3aefd405c388187c5}{align()}} to put it outside the menubar.
+
+The destructor removes the \mbox{\hyperlink{class_fl___menu___bar}{Fl\+\_\+\+Menu\+\_\+\+Bar}} widget and all of its menu items. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___menu___bar_aa578b03ce16587b623daaf170523f9cd}\label{class_fl___menu___bar_aa578b03ce16587b623daaf170523f9cd}} 
+\index{Fl\_Menu\_Bar@{Fl\_Menu\_Bar}!draw@{draw}}
+\index{draw@{draw}!Fl\_Menu\_Bar@{Fl\_Menu\_Bar}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Menu\+\_\+\+Bar\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Draws the widget. Never call this function directly. F\+L\+TK will schedule redrawing whenever needed. If your widget must be redrawn as soon as possible, call \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} instead.
+
+Override this function to draw your own widgets.
+
+If you ever need to call another widget\textquotesingle{}s draw method {\itshape from within your own \mbox{\hyperlink{class_fl___menu___bar_aa578b03ce16587b623daaf170523f9cd}{draw()}} method}, e.\+g. for an embedded scrollbar, you can do it (because \mbox{\hyperlink{class_fl___menu___bar_aa578b03ce16587b623daaf170523f9cd}{draw()}} is virtual) like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{class_fl___widget}{Fl\_Widget}} *\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}} = \&scroll;     \textcolor{comment}{// scroll is an embedded Fl\_Scrollbar}}
+\DoxyCodeLine{\mbox{\hyperlink{forms_8_h_a672b4f0a8c8a6db61068c721f799d87f}{s}}-\/>draw();          \textcolor{comment}{// calls Fl\_Scrollbar::draw()}}
+\end{DoxyCode}
+ 
+
+Implements \mbox{\hyperlink{class_fl___widget_a1acb38c6b3cb40452ad02ccfeedbac8a}{Fl\+\_\+\+Widget}}.
+
+\mbox{\Hypertarget{class_fl___menu___bar_a31062af993329f5c6b71c90af5e02ebf}\label{class_fl___menu___bar_a31062af993329f5c6b71c90af5e02ebf}} 
+\index{Fl\_Menu\_Bar@{Fl\_Menu\_Bar}!handle@{handle}}
+\index{handle@{handle}!Fl\_Menu\_Bar@{Fl\_Menu\_Bar}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Menu\+\_\+\+Bar\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___menu___bar_a31062af993329f5c6b71c90af5e02ebf}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___widget_a3521aba25eda761620953dd49d335ea7}{Fl\+\_\+\+Widget}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___menu___bar_8_h}{Fl\+\_\+\+Menu\+\_\+\+Bar.\+H}}\end{DoxyCompactItemize}

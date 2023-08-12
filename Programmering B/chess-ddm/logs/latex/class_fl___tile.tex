@@ -1,0 +1,121 @@
+\hypertarget{class_fl___tile}{}\doxysection{Fl\+\_\+\+Tile Class Reference}
+\label{class_fl___tile}\index{Fl\_Tile@{Fl\_Tile}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Tile.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Tile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___tile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Tile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___tile__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___tile_a6d68ecaf377212971a6371f9c0402829}{handle}} (int event)
+\item 
+\mbox{\hyperlink{class_fl___tile_a58694e175f9fd1996fa1ec08ef54a9fe}{Fl\+\_\+\+Tile}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$L=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tile_a9206c650d9d555c98399499e5fd53d21}{resize}} (int X, int Y, int W, int H)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___tile_ab7be60fce15a559b8012e59e38032d54}{position}} (int oldx, int oldy, int newx, int newy)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___tile_a58694e175f9fd1996fa1ec08ef54a9fe}\label{class_fl___tile_a58694e175f9fd1996fa1ec08ef54a9fe}} 
+\index{Fl\_Tile@{Fl\_Tile}!Fl\_Tile@{Fl\_Tile}}
+\index{Fl\_Tile@{Fl\_Tile}!Fl\_Tile@{Fl\_Tile}}
+\doxysubsubsection{\texorpdfstring{Fl\_Tile()}{Fl\_Tile()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Tile\+::\+Fl\+\_\+\+Tile (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{L = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___tile_a6d68ecaf377212971a6371f9c0402829}\label{class_fl___tile_a6d68ecaf377212971a6371f9c0402829}} 
+\index{Fl\_Tile@{Fl\_Tile}!handle@{handle}}
+\index{handle@{handle}!Fl\_Tile@{Fl\_Tile}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Tile\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___tile_a6d68ecaf377212971a6371f9c0402829}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_a7503757c2a734442e74717d1971b12ce}{Fl\+\_\+\+Group}}.
+
+\mbox{\Hypertarget{class_fl___tile_ab7be60fce15a559b8012e59e38032d54}\label{class_fl___tile_ab7be60fce15a559b8012e59e38032d54}} 
+\index{Fl\_Tile@{Fl\_Tile}!position@{position}}
+\index{position@{position}!Fl\_Tile@{Fl\_Tile}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tile\+::position (\begin{DoxyParamCaption}\item[{int}]{oldx,  }\item[{int}]{oldy,  }\item[{int}]{newx,  }\item[{int}]{newy }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___tile_a9206c650d9d555c98399499e5fd53d21}\label{class_fl___tile_a9206c650d9d555c98399499e5fd53d21}} 
+\index{Fl\_Tile@{Fl\_Tile}!resize@{resize}}
+\index{resize@{resize}!Fl\_Tile@{Fl\_Tile}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Tile\+::resize (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Changes the size or position of the widget.
+
+This is a virtual function so that the widget may implement its own handling of resizing. The default version does {\itshape not} call the \mbox{\hyperlink{class_fl___widget_aa63ce68cbf4620cf8750b868368ea02b}{redraw()}} method, but instead relies on the parent widget to do so because the parent may know a faster way to update the display, such as scrolling from the old position. ~\newline
+
+
+Some window managers under X11 call \mbox{\hyperlink{class_fl___tile_a9206c650d9d555c98399499e5fd53d21}{resize()}} a lot more often than needed. Please verify that the position or size of a widget did actually change before doing any extensive calculations.
+
+position(\+X, Y) is a shortcut for resize(X, Y, \mbox{\hyperlink{class_fl___widget_ad59ece778aaf15acc4dd01a8bf5f8012}{w()}}, \mbox{\hyperlink{class_fl___widget_aeeabd61e2d10c76cd6600dbbfe951f71}{h()}}), and size(\+W, H) is a shortcut for resize(\mbox{\hyperlink{class_fl___widget_abea0b9ad493d58bf7fda8d3c81d477b7}{x()}}, \mbox{\hyperlink{class_fl___widget_aec1aded9efdf5f23dfac8cc725cefc4a}{y()}}, W, H).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x,y} & new position relative to the parent window \\
+\hline
+\mbox{\texttt{ in}}  & {\em w,h} & new size \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___widget_ac45bdb80c3e66c571d0420ebefd4aaa5}{position(int,int)}}, \mbox{\hyperlink{class_fl___widget_ae386844a68c27ea0b64313619551e786}{size(int,int)}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___group_aaec24e2eec53dcea00d1d1f63d5495d3}{Fl\+\_\+\+Group}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___tile_8_h}{Fl\+\_\+\+Tile.\+H}}\end{DoxyCompactItemize}

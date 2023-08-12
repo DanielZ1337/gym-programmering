@@ -1,0 +1,239 @@
+\hypertarget{class_fl___bitmap}{}\doxysection{Fl\+\_\+\+Bitmap Class Reference}
+\label{class_fl___bitmap}\index{Fl\_Bitmap@{Fl\_Bitmap}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Bitmap.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Bitmap\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_fl___bitmap__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Bitmap\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{class_fl___bitmap__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___bitmap_abb9d089d289d990de49b9722fbd57241}{Fl\+\_\+\+Bitmap}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$bits, int W, int H)
+\item 
+\mbox{\hyperlink{class_fl___bitmap_a5eb102e0ab090a7c547e9349dbe7e943}{Fl\+\_\+\+Bitmap}} (\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$bits, int W, int H)
+\item 
+virtual \mbox{\hyperlink{class_fl___bitmap_ae94d70a06db6f307388a140ec621606d}{$\sim$\+Fl\+\_\+\+Bitmap}} ()
+\item 
+virtual \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___bitmap_af8d08b1153115fc223215251878c8005}{copy}} (int W, int H)
+\item 
+\mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}} $\ast$ \mbox{\hyperlink{class_fl___bitmap_a50bad9f31e02c3c71c90622ca1f234bf}{copy}} ()
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___bitmap_abd03a34e84704ae410bd366626c0a6ef}{draw}} (int X, int Y, int W, int H, int cx=0, int cy=0)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___bitmap_adbc4fad3bd0f24231c1b056d197a8172}{draw}} (int X, int Y)
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___bitmap_af17e00fe7cc3909a0ad8910dc71aee5f}{label}} (\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$\mbox{\hyperlink{class_fl___image_ac99df85a5ccd161b2b39042231aa2985}{w}})
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___bitmap_a8d35f1528e46fc3447618d5534e7e428}{label}} (\mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} $\ast$\mbox{\hyperlink{forms_8_h_a2ccd5640c2b2869841c5dab22b937079}{m}})
+\item 
+virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___bitmap_afd50086093bdbf6c0de1c20ec1ecd4b5}{uncache}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$ \mbox{\hyperlink{class_fl___bitmap_a2fe6a97b247740b5e0a2723818e69504}{array}}
+\item 
+int \mbox{\hyperlink{class_fl___bitmap_a5ff5bdc4e093728d84f2fcbce76a4aba}{alloc\+\_\+array}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_fl___bitmap_a17e52a458f8b74600a08e84e14dd7788}{Fl\+\_\+\+Quartz\+\_\+\+Graphics\+\_\+\+Driver}}
+\item 
+class \mbox{\hyperlink{class_fl___bitmap_afdd004b46bf519fc92d7de53fa9e8f33}{Fl\+\_\+\+G\+D\+I\+\_\+\+Graphics\+\_\+\+Driver}}
+\item 
+class \mbox{\hyperlink{class_fl___bitmap_a0c87ae869fae93aeba9ddf11e9a1100c}{Fl\+\_\+\+G\+D\+I\+\_\+\+Printer\+\_\+\+Graphics\+\_\+\+Driver}}
+\item 
+class \mbox{\hyperlink{class_fl___bitmap_a0dc2ea59692c09f5b9d1f13cc66ad01d}{Fl\+\_\+\+Xlib\+\_\+\+Graphics\+\_\+\+Driver}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_fl___bitmap}{Fl\+\_\+\+Bitmap}} class supports caching and drawing of mono-\/color (bitmap) images. Images are drawn using the current color. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___bitmap_abb9d089d289d990de49b9722fbd57241}\label{class_fl___bitmap_abb9d089d289d990de49b9722fbd57241}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!Fl\_Bitmap@{Fl\_Bitmap}}
+\index{Fl\_Bitmap@{Fl\_Bitmap}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{Fl\_Bitmap()}{Fl\_Bitmap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Bitmap\+::\+Fl\+\_\+\+Bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}} $\ast$}]{bits,  }\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The constructors create a new bitmap from the specified bitmap data Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_fl___bitmap_abb9d089d289d990de49b9722fbd57241_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___bitmap_a5eb102e0ab090a7c547e9349dbe7e943}\label{class_fl___bitmap_a5eb102e0ab090a7c547e9349dbe7e943}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!Fl\_Bitmap@{Fl\_Bitmap}}
+\index{Fl\_Bitmap@{Fl\_Bitmap}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{Fl\_Bitmap()}{Fl\_Bitmap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Bitmap\+::\+Fl\+\_\+\+Bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{bits,  }\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The constructors create a new bitmap from the specified bitmap data Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_fl___bitmap_a5eb102e0ab090a7c547e9349dbe7e943_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___bitmap_ae94d70a06db6f307388a140ec621606d}\label{class_fl___bitmap_ae94d70a06db6f307388a140ec621606d}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!````~Fl\_Bitmap@{$\sim$Fl\_Bitmap}}
+\index{````~Fl\_Bitmap@{$\sim$Fl\_Bitmap}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Bitmap()}{~Fl\_Bitmap()}}
+{\footnotesize\ttfamily virtual Fl\+\_\+\+Bitmap\+::$\sim$\+Fl\+\_\+\+Bitmap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___bitmap_a50bad9f31e02c3c71c90622ca1f234bf}\label{class_fl___bitmap_a50bad9f31e02c3c71c90622ca1f234bf}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!copy@{copy}}
+\index{copy@{copy}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Bitmap\+::copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_fl___bitmap_a50bad9f31e02c3c71c90622ca1f234bf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___bitmap_af8d08b1153115fc223215251878c8005}\label{class_fl___bitmap_af8d08b1153115fc223215251878c8005}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!copy@{copy}}
+\index{copy@{copy}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_fl___image}{Fl\+\_\+\+Image}}$\ast$ Fl\+\_\+\+Bitmap\+::copy (\begin{DoxyParamCaption}\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___image_a8c830df178375a758ce8a3fa2e15359d}{Fl\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___bitmap_adbc4fad3bd0f24231c1b056d197a8172}\label{class_fl___bitmap_adbc4fad3bd0f24231c1b056d197a8172}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!draw@{draw}}
+\index{draw@{draw}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Bitmap\+::draw (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_fl___bitmap_adbc4fad3bd0f24231c1b056d197a8172_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___bitmap_abd03a34e84704ae410bd366626c0a6ef}\label{class_fl___bitmap_abd03a34e84704ae410bd366626c0a6ef}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!draw@{draw}}
+\index{draw@{draw}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Bitmap\+::draw (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{int}]{cx = {\ttfamily 0},  }\item[{int}]{cy = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws the image with a bounding box. Arguments {\ttfamily X,Y,W,H} specify a bounding box for the image, with the origin ~\newline
+ (upper-\/left corner) of the image offset by the {\ttfamily cx} and {\ttfamily cy} arguments.
+
+In other words\+: {\ttfamily fl\+\_\+push\+\_\+clip(\+X,\+Y,\+W,\+H)} is applied, the image is drawn with its upper-\/left corner at {\ttfamily X-\/cx,Y-\/cy} and its own width and height, {\ttfamily fl\+\_\+pop\+\_\+clip}{\ttfamily ()} is applied. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___image_a95e713f20628bfb4c8155ab94ba65ba1}{Fl\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___bitmap_a8d35f1528e46fc3447618d5534e7e428}\label{class_fl___bitmap_a8d35f1528e46fc3447618d5534e7e428}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!label@{label}}
+\index{label@{label}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Bitmap\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_fl___menu___item}{Fl\+\_\+\+Menu\+\_\+\+Item}} $\ast$}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___image_a9732d7bafcbe201a570ee465833eee67}{Fl\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___bitmap_af17e00fe7cc3909a0ad8910dc71aee5f}\label{class_fl___bitmap_af17e00fe7cc3909a0ad8910dc71aee5f}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!label@{label}}
+\index{label@{label}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{label()}{label()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Bitmap\+::label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} $\ast$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___image_aff8c4d2f915bbf1fcbcfd5ed27320c79}{Fl\+\_\+\+Image}}.
+
+\mbox{\Hypertarget{class_fl___bitmap_afd50086093bdbf6c0de1c20ec1ecd4b5}\label{class_fl___bitmap_afd50086093bdbf6c0de1c20ec1ecd4b5}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!uncache@{uncache}}
+\index{uncache@{uncache}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{uncache()}{uncache()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Bitmap\+::uncache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___image_ab439ce86ab05a416defe4e31d4ea79c9}{Fl\+\_\+\+Image}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_fl___bitmap_afdd004b46bf519fc92d7de53fa9e8f33}\label{class_fl___bitmap_afdd004b46bf519fc92d7de53fa9e8f33}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!Fl\_GDI\_Graphics\_Driver@{Fl\_GDI\_Graphics\_Driver}}
+\index{Fl\_GDI\_Graphics\_Driver@{Fl\_GDI\_Graphics\_Driver}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{Fl\_GDI\_Graphics\_Driver}{Fl\_GDI\_Graphics\_Driver}}
+{\footnotesize\ttfamily friend class Fl\+\_\+\+G\+D\+I\+\_\+\+Graphics\+\_\+\+Driver\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_fl___bitmap_a0c87ae869fae93aeba9ddf11e9a1100c}\label{class_fl___bitmap_a0c87ae869fae93aeba9ddf11e9a1100c}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!Fl\_GDI\_Printer\_Graphics\_Driver@{Fl\_GDI\_Printer\_Graphics\_Driver}}
+\index{Fl\_GDI\_Printer\_Graphics\_Driver@{Fl\_GDI\_Printer\_Graphics\_Driver}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{Fl\_GDI\_Printer\_Graphics\_Driver}{Fl\_GDI\_Printer\_Graphics\_Driver}}
+{\footnotesize\ttfamily friend class Fl\+\_\+\+G\+D\+I\+\_\+\+Printer\+\_\+\+Graphics\+\_\+\+Driver\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_fl___bitmap_a17e52a458f8b74600a08e84e14dd7788}\label{class_fl___bitmap_a17e52a458f8b74600a08e84e14dd7788}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!Fl\_Quartz\_Graphics\_Driver@{Fl\_Quartz\_Graphics\_Driver}}
+\index{Fl\_Quartz\_Graphics\_Driver@{Fl\_Quartz\_Graphics\_Driver}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{Fl\_Quartz\_Graphics\_Driver}{Fl\_Quartz\_Graphics\_Driver}}
+{\footnotesize\ttfamily friend class Fl\+\_\+\+Quartz\+\_\+\+Graphics\+\_\+\+Driver\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_fl___bitmap_a0dc2ea59692c09f5b9d1f13cc66ad01d}\label{class_fl___bitmap_a0dc2ea59692c09f5b9d1f13cc66ad01d}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!Fl\_Xlib\_Graphics\_Driver@{Fl\_Xlib\_Graphics\_Driver}}
+\index{Fl\_Xlib\_Graphics\_Driver@{Fl\_Xlib\_Graphics\_Driver}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{Fl\_Xlib\_Graphics\_Driver}{Fl\_Xlib\_Graphics\_Driver}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_fl___xlib___graphics___driver}{Fl\+\_\+\+Xlib\+\_\+\+Graphics\+\_\+\+Driver}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___bitmap_a5ff5bdc4e093728d84f2fcbce76a4aba}\label{class_fl___bitmap_a5ff5bdc4e093728d84f2fcbce76a4aba}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!alloc\_array@{alloc\_array}}
+\index{alloc\_array@{alloc\_array}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{alloc\_array}{alloc\_array}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Bitmap\+::alloc\+\_\+array}
+
+Non-\/zero if array points to bitmap data allocated internally \mbox{\Hypertarget{class_fl___bitmap_a2fe6a97b247740b5e0a2723818e69504}\label{class_fl___bitmap_a2fe6a97b247740b5e0a2723818e69504}} 
+\index{Fl\_Bitmap@{Fl\_Bitmap}!array@{array}}
+\index{array@{array}!Fl\_Bitmap@{Fl\_Bitmap}}
+\doxysubsubsection{\texorpdfstring{array}{array}}
+{\footnotesize\ttfamily \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} \mbox{\hyperlink{fl__types_8h_a65f85814a8290f9797005d3b28e7e5fc}{uchar}}$\ast$ Fl\+\_\+\+Bitmap\+::array}
+
+pointer to raw bitmap data 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___bitmap_8_h}{Fl\+\_\+\+Bitmap.\+H}}\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+<map id="chess_GUI::draw" name="chess_GUI::draw">
+<area shape="rect" id="node1" title=" " alt="" coords="5,89,127,115"/>
+<area shape="rect" id="node2" href="$group__fl__attributes.html#ga974e9f64959aa83cf6f0a36d3f0105aa" title=" " alt="" coords="175,13,237,39"/>
+<area shape="rect" id="node4" href="$group__fl__drawings.html#gacf054f0c5c5d3ab6caa1e8be3d58ec7e" title=" " alt="" coords="175,63,237,90"/>
+<area shape="rect" id="node5" href="$group__fl__attributes.html#ga80203d2dd1e06550e7a35d6bb72f9bd6" title=" " alt="" coords="178,114,234,141"/>
+<area shape="rect" id="node7" href="$group__fl__drawings.html#ga2986a868e9cc8d9141acde94c0fe8ab0" title=" " alt="" coords="176,169,236,195"/>
+<area shape="rect" id="node3" href="$class_fl___graphics___driver.html#abed59e7ee8211eaad25f913b137ca4db" title="see fl_color(Fl_Color c)." alt="" coords="285,5,416,47"/>
+<area shape="rect" id="node6" href="$class_fl___graphics___driver.html#a9c1be2dc5314a9d3cc381b075119afcd" title="see fl_font(Fl_Font face, Fl_Fontsize size)." alt="" coords="285,103,416,144"/>
+<area shape="rect" id="node8" href="$class_fl___graphics___driver.html#ab13b47a902aab156dfe25cff9cbd0bba" title="see fl_rectf(int x, int y, int w, int h)." alt="" coords="285,168,416,209"/>
+</map>

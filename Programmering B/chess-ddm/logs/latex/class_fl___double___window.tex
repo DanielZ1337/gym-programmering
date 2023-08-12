@@ -1,0 +1,201 @@
+\hypertarget{class_fl___double___window}{}\doxysection{Fl\+\_\+\+Double\+\_\+\+Window Class Reference}
+\label{class_fl___double___window}\index{Fl\_Double\_Window@{Fl\_Double\_Window}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Double\+\_\+\+Window.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Double\+\_\+\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_fl___double___window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Double\+\_\+\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_fl___double___window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}{show}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___double___window_ac39ffebdfb8297954b6da99425a4f4ba}{show}} (int a, char $\ast$$\ast$\mbox{\hyperlink{forms_8_h_a0ba06a290a384fa06b1b90745827dae2}{b}})
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___double___window_a080455493ab7e91b910247ff5832c139}{flush}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___double___window_aebad8d054ad0b4013fb35667a5f3fbb1}{resize}} (int, int, int, int)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___double___window_acc0edc55a9d27e4e276e8a5b78deeeef}{hide}} ()
+\item 
+\mbox{\hyperlink{class_fl___double___window_ab3b46014b05c1dd376bcb2f93e6d5441}{$\sim$\+Fl\+\_\+\+Double\+\_\+\+Window}} ()
+\item 
+\mbox{\hyperlink{class_fl___double___window_af4806a261c5d48462f4827c99131eb14}{Fl\+\_\+\+Double\+\_\+\+Window}} (int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\item 
+\mbox{\hyperlink{class_fl___double___window_aeb4ea6c71b66348fd4307d549d74ea8e}{Fl\+\_\+\+Double\+\_\+\+Window}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___double___window_a0ff7e1b94a07bde1db9597667ee9bceb}{flush}} (int eraseoverlay)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_fl___double___window_aa61d6c7ed8f1ddebc6b776a8a8da9d32}{force\+\_\+doublebuffering\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_fl___double___window}{Fl\+\_\+\+Double\+\_\+\+Window}} provides a double-\/buffered window. If possible this will use the X double buffering extension (Xdbe). If not, it will draw the window data into an off-\/screen pixmap, and then copy it to the on-\/screen window. 
+
+It is highly recommended that you put the following code before the first \mbox{\hyperlink{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}{show()}} of {\itshape any} window in your program\+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_fl_a96065665bab374bab4dc61bacccb40d8}{Fl::visual}}(\mbox{\hyperlink{_enumerations_8_h_aae982ff3b1a082b1a512b216b98061e0a77de126af21a8b581c890c59e0e0a88f}{FL\_DOUBLE}}|\mbox{\hyperlink{_enumerations_8_h_aae982ff3b1a082b1a512b216b98061e0a90f0c69fd007454b2ff005387fc43efd}{FL\_INDEX}})}
+\end{DoxyCode}
+ This makes sure you can use Xdbe on servers where double buffering does not exist for every visual. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___double___window_ab3b46014b05c1dd376bcb2f93e6d5441}\label{class_fl___double___window_ab3b46014b05c1dd376bcb2f93e6d5441}} 
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!````~Fl\_Double\_Window@{$\sim$Fl\_Double\_Window}}
+\index{````~Fl\_Double\_Window@{$\sim$Fl\_Double\_Window}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Double\_Window()}{~Fl\_Double\_Window()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Double\+\_\+\+Window\+::$\sim$\+Fl\+\_\+\+Double\+\_\+\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_fl___double___window_af4806a261c5d48462f4827c99131eb14}\label{class_fl___double___window_af4806a261c5d48462f4827c99131eb14}} 
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\doxysubsubsection{\texorpdfstring{Fl\_Double\_Window()}{Fl\_Double\_Window()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Double\+\_\+\+Window\+::\+Fl\+\_\+\+Double\+\_\+\+Window (\begin{DoxyParamCaption}\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Creates a new \mbox{\hyperlink{class_fl___double___window}{Fl\+\_\+\+Double\+\_\+\+Window}} widget using the given position, size, and label (title) string. \mbox{\Hypertarget{class_fl___double___window_aeb4ea6c71b66348fd4307d549d74ea8e}\label{class_fl___double___window_aeb4ea6c71b66348fd4307d549d74ea8e}} 
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\doxysubsubsection{\texorpdfstring{Fl\_Double\_Window()}{Fl\_Double\_Window()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fl\+\_\+\+Double\+\_\+\+Window\+::\+Fl\+\_\+\+Double\+\_\+\+Window (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+See \mbox{\hyperlink{class_fl___double___window_af4806a261c5d48462f4827c99131eb14}{Fl\+\_\+\+Double\+\_\+\+Window\+::\+Fl\+\_\+\+Double\+\_\+\+Window}}(int w, int h, const char $\ast$label = 0) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___double___window_a080455493ab7e91b910247ff5832c139}\label{class_fl___double___window_a080455493ab7e91b910247ff5832c139}} 
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!flush@{flush}}
+\index{flush@{flush}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Double\+\_\+\+Window\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Forces the window to be drawn, this window is also made current and calls \mbox{\hyperlink{class_fl___window_a4dea919a9f069f00b623abb8179ef52c}{draw()}}. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___window_a73b07ee9fe3a23fb2511cf33ac80c2df}{Fl\+\_\+\+Window}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___overlay___window_a7246d014381be4e55463f790bab43a1c}{Fl\+\_\+\+Overlay\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___double___window_a0ff7e1b94a07bde1db9597667ee9bceb}\label{class_fl___double___window_a0ff7e1b94a07bde1db9597667ee9bceb}} 
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!flush@{flush}}
+\index{flush@{flush}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Double\+\_\+\+Window\+::flush (\begin{DoxyParamCaption}\item[{int}]{eraseoverlay }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_fl___double___window_acc0edc55a9d27e4e276e8a5b78deeeef}\label{class_fl___double___window_acc0edc55a9d27e4e276e8a5b78deeeef}} 
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!hide@{hide}}
+\index{hide@{hide}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\doxysubsubsection{\texorpdfstring{hide()}{hide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Double\+\_\+\+Window\+::hide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Removes the window from the screen. If the window is already hidden or has not been shown then this does nothing and is harmless. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___window_a42fbeddb68a203ff9123d33156a29fc7}{Fl\+\_\+\+Window}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___overlay___window_ac2ebc6a209ed6d5d1fb813d3f54a489f}{Fl\+\_\+\+Overlay\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___double___window_aebad8d054ad0b4013fb35667a5f3fbb1}\label{class_fl___double___window_aebad8d054ad0b4013fb35667a5f3fbb1}} 
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!resize@{resize}}
+\index{resize@{resize}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Double\+\_\+\+Window\+::resize (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Changes the size and position of the window. If \mbox{\hyperlink{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}{shown()}} is true, these changes are communicated to the window server (which may refuse that size and cause a further resize). If \mbox{\hyperlink{class_fl___window_aa09300542b2d8b49fc69a037bdd3b742}{shown()}} is false, the size and position are used when \mbox{\hyperlink{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}{show()}} is called. See \mbox{\hyperlink{class_fl___group}{Fl\+\_\+\+Group}} for the effect of resizing on the child widgets.
+
+You can also call the \mbox{\hyperlink{class_fl___widget}{Fl\+\_\+\+Widget}} methods size(x,y) and position(w,h), which are inline wrappers for this virtual function.
+
+A top-\/level window can not force, but merely suggest a position and size to the operating system. The window manager may not be willing or able to display a window at the desired position or with the given dimensions. It is up to the application developer to verify window parameters after the resize request. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___window_adb45dff26b1be92975f0cec58ca3d592}{Fl\+\_\+\+Window}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___overlay___window_ae592a1cb84776f1d37357cc1108f870e}{Fl\+\_\+\+Overlay\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}\label{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}} 
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!show@{show}}
+\index{show@{show}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Double\+\_\+\+Window\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Puts the window on the screen. Usually (on X) this has the side effect of opening the display.
+
+If the window is already shown then it is restored and raised to the top. This is really convenient because your program can call \mbox{\hyperlink{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}{show()}} at any time, even if the window is already up. It also means that \mbox{\hyperlink{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}{show()}} serves the purpose of raise() in other toolkits.
+
+\mbox{\hyperlink{class_fl___window_a0d75dfcdc8fb797f9247482da1e0152b}{Fl\+\_\+\+Window\+::show(int argc, char $\ast$$\ast$argv)}} is used for top-\/level windows and allows standard arguments to be parsed from the command-\/line.
+
+\begin{DoxyNote}{Note}
+For some obscure reasons \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{Fl\+\_\+\+Window\+::show()}} resets the current group by calling Fl\+\_\+\+Group\+::current(0). The comments in the code say \char`\"{}get rid of very common user bug\+: forgot end()\char`\"{}. Although this is true it may have unwanted side effects if you \mbox{\hyperlink{class_fl___double___window_a4d1c3cbb1184c6785df7465b0c657025}{show()}} an unrelated window (maybe for an error message or warning) while building a window or any other group widget.
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000025}{Todo}}]Check if we can remove resetting the current group in a later F\+L\+TK version (after 1.\+3.\+x). This may break \char`\"{}already broken\char`\"{} programs though if they rely on this \char`\"{}feature\char`\"{}.\end{DoxyRefDesc}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___window_a0d75dfcdc8fb797f9247482da1e0152b}{Fl\+\_\+\+Window\+::show(int argc, char $\ast$$\ast$argv)}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___window_a908afc4420fd505e958f6ed394a86acc}{Fl\+\_\+\+Window}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_fl___overlay___window_a4eebd23fcbe366b78cc9e4dded5172bb}{Fl\+\_\+\+Overlay\+\_\+\+Window}}.
+
+\mbox{\Hypertarget{class_fl___double___window_ac39ffebdfb8297954b6da99425a4f4ba}\label{class_fl___double___window_ac39ffebdfb8297954b6da99425a4f4ba}} 
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!show@{show}}
+\index{show@{show}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Double\+\_\+\+Window\+::show (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{char $\ast$$\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_fl___double___window_ac39ffebdfb8297954b6da99425a4f4ba_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_fl___double___window_aa61d6c7ed8f1ddebc6b776a8a8da9d32}\label{class_fl___double___window_aa61d6c7ed8f1ddebc6b776a8a8da9d32}} 
+\index{Fl\_Double\_Window@{Fl\_Double\_Window}!force\_doublebuffering\_@{force\_doublebuffering\_}}
+\index{force\_doublebuffering\_@{force\_doublebuffering\_}!Fl\_Double\_Window@{Fl\_Double\_Window}}
+\doxysubsubsection{\texorpdfstring{force\_doublebuffering\_}{force\_doublebuffering\_}}
+{\footnotesize\ttfamily char Fl\+\_\+\+Double\+\_\+\+Window\+::force\+\_\+doublebuffering\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Force double buffering, even if the OS already buffers windows (overlays need that on Mac\+OS and Windows2000) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___double___window_8_h}{Fl\+\_\+\+Double\+\_\+\+Window.\+H}}\end{DoxyCompactItemize}

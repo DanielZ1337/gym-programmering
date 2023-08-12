@@ -1,0 +1,247 @@
+\hypertarget{class_fl___table___row}{}\doxysection{Fl\+\_\+\+Table\+\_\+\+Row Class Reference}
+\label{class_fl___table___row}\index{Fl\_Table\_Row@{Fl\_Table\_Row}}
+
+
+{\ttfamily \#include $<$Fl\+\_\+\+Table\+\_\+\+Row.\+H$>$}
+
+
+
+Inheritance diagram for Fl\+\_\+\+Table\+\_\+\+Row\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_fl___table___row__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fl\+\_\+\+Table\+\_\+\+Row\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_fl___table___row__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9ec}{Table\+Row\+Select\+Mode}} \{ \mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca1e90303b7dbef1232b9f89f54cb25643}{S\+E\+L\+E\+C\+T\+\_\+\+N\+O\+NE}}, 
+\mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca575ff8fadb11d5cccf0bb42280c22e2c}{S\+E\+L\+E\+C\+T\+\_\+\+S\+I\+N\+G\+LE}}, 
+\mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca034e7292c5570033c30608dda6c3f75b}{S\+E\+L\+E\+C\+T\+\_\+\+M\+U\+L\+TI}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fl___table___row_a967280ceac7e9f37554a38374c476d10}{Fl\+\_\+\+Table\+\_\+\+Row}} (int X, int Y, int W, int H, \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$l=0)
+\item 
+\mbox{\hyperlink{class_fl___table___row_a2dab9b00108e38489c7b76342a8f26a9}{$\sim$\+Fl\+\_\+\+Table\+\_\+\+Row}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table___row_adef43f133affb3506a35234a77e58447}{rows}} (int \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+int \mbox{\hyperlink{class_fl___table___row_a121bd2b8ac0eb27b6545978b4c076de8}{rows}} ()
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table___row_ad1acf911fc639c242d65ff7d5678146a}{type}} (\mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9ec}{Table\+Row\+Select\+Mode}} \mbox{\hyperlink{jpeglib_8h_aa0ccb5ee6d882ee3605ff47745c6467b}{val}})
+\item 
+\mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9ec}{Table\+Row\+Select\+Mode}} \mbox{\hyperlink{class_fl___table___row_adbb38cd7b3fbc93fa4182b789500b23d}{type}} () \mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}}
+\item 
+int \mbox{\hyperlink{class_fl___table___row_aff19cae2fe81ef59f47d2970f2275df5}{row\+\_\+selected}} (int row)
+\item 
+int \mbox{\hyperlink{class_fl___table___row_a13992113c0b0feffddc6ece266d60ea9}{select\+\_\+row}} (int row, int flag=1)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table___row_a8f3206386c7941d30c548035f7a976de}{select\+\_\+all\+\_\+rows}} (int flag=1)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{class_fl___table___row_a1023be767f8e346cf66936d7b6279095}{clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_fl___table___row_a311f4d503232cbe8aef567470f420a16}{handle}} (int event)
+\item 
+int \mbox{\hyperlink{class_fl___table___row_a9a86a8590f97d782ea7f36116a138be8}{find\+\_\+cell}} (\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}} context, int R, int C, int \&X, int \&Y, int \&W, int \&H)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A table with row selection capabilities.
+
+This class implements a simple table with the ability to select rows. This widget is similar to an \mbox{\hyperlink{class_fl___browser}{Fl\+\_\+\+Browser}} with columns. Most methods of importance will be found in the \mbox{\hyperlink{class_fl___table}{Fl\+\_\+\+Table}} widget, such as \mbox{\hyperlink{class_fl___table_af63dddf97c8804488f8a179780a674c0}{Fl\+\_\+\+Table\+::rows()}} and \mbox{\hyperlink{class_fl___table_a82b1a353a6d0345e6714fb7d3a2ae0ac}{Fl\+\_\+\+Table\+::cols()}}.
+
+To be useful it must be subclassed and at minimum the \mbox{\hyperlink{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}{draw\+\_\+cell()}} method must be overridden to provide the content of the cells. This widget does {\itshape not} manage the cell\textquotesingle{}s data content; it is up to the parent class\textquotesingle{}s \mbox{\hyperlink{class_fl___table_a3f1f1ccc017d9159c1c98f6f7268bf6d}{draw\+\_\+cell()}} method override to provide this.
+
+Events on the cells and/or headings generate callbacks when they are clicked by the user. You control when events are generated based on the values you supply for \mbox{\hyperlink{class_fl___widget_ad4ef380ffb50f4d00fe93f7b6677e9e1}{Fl\+\_\+\+Table\+::when()}}. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9ec}\label{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9ec}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!TableRowSelectMode@{TableRowSelectMode}}
+\index{TableRowSelectMode@{TableRowSelectMode}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{TableRowSelectMode}{TableRowSelectMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9ec}{Fl\+\_\+\+Table\+\_\+\+Row\+::\+Table\+Row\+Select\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECT\_NONE@{SELECT\_NONE}!Fl\_Table\_Row@{Fl\_Table\_Row}}\index{Fl\_Table\_Row@{Fl\_Table\_Row}!SELECT\_NONE@{SELECT\_NONE}}}\mbox{\Hypertarget{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca1e90303b7dbef1232b9f89f54cb25643}\label{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca1e90303b7dbef1232b9f89f54cb25643}} 
+S\+E\+L\+E\+C\+T\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECT\_SINGLE@{SELECT\_SINGLE}!Fl\_Table\_Row@{Fl\_Table\_Row}}\index{Fl\_Table\_Row@{Fl\_Table\_Row}!SELECT\_SINGLE@{SELECT\_SINGLE}}}\mbox{\Hypertarget{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca575ff8fadb11d5cccf0bb42280c22e2c}\label{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca575ff8fadb11d5cccf0bb42280c22e2c}} 
+S\+E\+L\+E\+C\+T\+\_\+\+S\+I\+N\+G\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECT\_MULTI@{SELECT\_MULTI}!Fl\_Table\_Row@{Fl\_Table\_Row}}\index{Fl\_Table\_Row@{Fl\_Table\_Row}!SELECT\_MULTI@{SELECT\_MULTI}}}\mbox{\Hypertarget{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca034e7292c5570033c30608dda6c3f75b}\label{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca034e7292c5570033c30608dda6c3f75b}} 
+S\+E\+L\+E\+C\+T\+\_\+\+M\+U\+L\+TI&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fl___table___row_a967280ceac7e9f37554a38374c476d10}\label{class_fl___table___row_a967280ceac7e9f37554a38374c476d10}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{Fl\_Table\_Row()}{Fl\_Table\_Row()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Table\+\_\+\+Row\+::\+Fl\+\_\+\+Table\+\_\+\+Row (\begin{DoxyParamCaption}\item[{int}]{X,  }\item[{int}]{Y,  }\item[{int}]{W,  }\item[{int}]{H,  }\item[{\mbox{\hyperlink{zconf_8h_a2c212835823e3c54a8ab6d95c652660e}{const}} char $\ast$}]{l = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The constructor for the \mbox{\hyperlink{class_fl___table___row}{Fl\+\_\+\+Table\+\_\+\+Row}}. This creates an empty table with no rows or columns, with headers and row/column resize behavior disabled. \mbox{\Hypertarget{class_fl___table___row_a2dab9b00108e38489c7b76342a8f26a9}\label{class_fl___table___row_a2dab9b00108e38489c7b76342a8f26a9}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!````~Fl\_Table\_Row@{$\sim$Fl\_Table\_Row}}
+\index{````~Fl\_Table\_Row@{$\sim$Fl\_Table\_Row}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{$\sim$Fl\_Table\_Row()}{~Fl\_Table\_Row()}}
+{\footnotesize\ttfamily Fl\+\_\+\+Table\+\_\+\+Row\+::$\sim$\+Fl\+\_\+\+Table\+\_\+\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The destructor for the \mbox{\hyperlink{class_fl___table___row}{Fl\+\_\+\+Table\+\_\+\+Row}}. Destroys the table and its associated widgets. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fl___table___row_a1023be767f8e346cf66936d7b6279095}\label{class_fl___table___row_a1023be767f8e346cf66936d7b6279095}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!clear@{clear}}
+\index{clear@{clear}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+\_\+\+Row\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Clears the table to zero rows (rows(0)), zero columns (cols(0)), and clears any widgets (table-\/$>$\mbox{\hyperlink{class_fl___table___row_a1023be767f8e346cf66936d7b6279095}{clear()}}) that were added with \mbox{\hyperlink{class_fl___table_ae7a75ac6a2e2a28d7c3e288699abd889}{begin()}}/end() or \mbox{\hyperlink{class_fl___table_ae16819dc983201f4572223f129d31ad2}{add()}}/insert()/etc. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_fl___table___row_adef43f133affb3506a35234a77e58447}{rows(int)}}, \mbox{\hyperlink{class_fl___table_aafd81e678aacf95abe7f762cab91c33a}{cols(int)}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___table_a4cf2b08373ddd2c4c7605f3917332093}{Fl\+\_\+\+Table}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_fl___table___row_a1023be767f8e346cf66936d7b6279095_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table___row_a9a86a8590f97d782ea7f36116a138be8}\label{class_fl___table___row_a9a86a8590f97d782ea7f36116a138be8}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!find\_cell@{find\_cell}}
+\index{find\_cell@{find\_cell}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{find\_cell()}{find\_cell()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+\_\+\+Row\+::find\+\_\+cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___table_a8036f1f03127cdb28f25d1e4aee80135}{Table\+Context}}}]{context,  }\item[{int}]{R,  }\item[{int}]{C,  }\item[{int \&}]{X,  }\item[{int \&}]{Y,  }\item[{int \&}]{W,  }\item[{int \&}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_fl___table___row_a9a86a8590f97d782ea7f36116a138be8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table___row_a311f4d503232cbe8aef567470f420a16}\label{class_fl___table___row_a311f4d503232cbe8aef567470f420a16}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!handle@{handle}}
+\index{handle@{handle}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+\_\+\+Row\+::handle (\begin{DoxyParamCaption}\item[{int}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Handles the specified event. You normally don\textquotesingle{}t call this method directly, but instead let F\+L\+TK do it when the user interacts with the widget.
+
+When implemented in a widget, this function must return 0 if the widget does not use the event or 1 otherwise.
+
+Most of the time, you want to call the inherited \mbox{\hyperlink{class_fl___table___row_a311f4d503232cbe8aef567470f420a16}{handle()}} method in your overridden method so that you don\textquotesingle{}t short-\/circuit events that you don\textquotesingle{}t handle. In this last case you should return the callee retval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em event} & the kind of event received \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & if the event was not used or understood \\
+\hline
+{\em 1} & if the event was used and can be deleted \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{_enumerations_8_h_ad16daf120d9a0501cccaee563af0b9a3}{Fl\+\_\+\+Event}} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_fl___table_a810b0f1bdfe62ea8faf001c52c124a9d}{Fl\+\_\+\+Table}}.
+
+\mbox{\Hypertarget{class_fl___table___row_aff19cae2fe81ef59f47d2970f2275df5}\label{class_fl___table___row_aff19cae2fe81ef59f47d2970f2275df5}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!row\_selected@{row\_selected}}
+\index{row\_selected@{row\_selected}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{row\_selected()}{row\_selected()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+\_\+\+Row\+::row\+\_\+selected (\begin{DoxyParamCaption}\item[{int}]{row }\end{DoxyParamCaption})}
+
+Checks to see if \textquotesingle{}row\textquotesingle{} is selected. Returns 1 if selected, 0 if not. You can change the selection of a row by clicking on it, or by using select\+\_\+row(row, flag) \mbox{\Hypertarget{class_fl___table___row_a121bd2b8ac0eb27b6545978b4c076de8}\label{class_fl___table___row_a121bd2b8ac0eb27b6545978b4c076de8}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!rows@{rows}}
+\index{rows@{rows}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{rows()}{rows()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+\_\+\+Row\+::rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_fl___table___row_a121bd2b8ac0eb27b6545978b4c076de8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_fl___table___row_adef43f133affb3506a35234a77e58447}\label{class_fl___table___row_adef43f133affb3506a35234a77e58447}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!rows@{rows}}
+\index{rows@{rows}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{rows()}{rows()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+\_\+\+Row\+::rows (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the number of rows in the table, and the table is redrawn. 
+
+Reimplemented from \mbox{\hyperlink{class_fl___table_ad353dc62b5473ee0c67f7d2fc534763d}{Fl\+\_\+\+Table}}.
+
+\mbox{\Hypertarget{class_fl___table___row_a8f3206386c7941d30c548035f7a976de}\label{class_fl___table___row_a8f3206386c7941d30c548035f7a976de}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!select\_all\_rows@{select\_all\_rows}}
+\index{select\_all\_rows@{select\_all\_rows}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{select\_all\_rows()}{select\_all\_rows()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+\_\+\+Row\+::select\+\_\+all\+\_\+rows (\begin{DoxyParamCaption}\item[{int}]{flag = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+This convenience function changes the selection state for {\itshape all} rows based on \textquotesingle{}flag\textquotesingle{}. 0=deselect, 1=select, 2=toggle existing state. \mbox{\Hypertarget{class_fl___table___row_a13992113c0b0feffddc6ece266d60ea9}\label{class_fl___table___row_a13992113c0b0feffddc6ece266d60ea9}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!select\_row@{select\_row}}
+\index{select\_row@{select\_row}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{select\_row()}{select\_row()}}
+{\footnotesize\ttfamily int Fl\+\_\+\+Table\+\_\+\+Row\+::select\+\_\+row (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{flag = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Changes the selection state for \textquotesingle{}row\textquotesingle{}, depending on the value of \textquotesingle{}flag\textquotesingle{}. 0=deselected, 1=select, 2=toggle existing state. \mbox{\Hypertarget{class_fl___table___row_adbb38cd7b3fbc93fa4182b789500b23d}\label{class_fl___table___row_adbb38cd7b3fbc93fa4182b789500b23d}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!type@{type}}
+\index{type@{type}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9ec}{Table\+Row\+Select\+Mode}} Fl\+\_\+\+Table\+\_\+\+Row\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_fl___table___row_ad1acf911fc639c242d65ff7d5678146a}\label{class_fl___table___row_ad1acf911fc639c242d65ff7d5678146a}} 
+\index{Fl\_Table\_Row@{Fl\_Table\_Row}!type@{type}}
+\index{type@{type}!Fl\_Table\_Row@{Fl\_Table\_Row}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} Fl\+\_\+\+Table\+\_\+\+Row\+::type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9ec}{Table\+Row\+Select\+Mode}}}]{val }\end{DoxyParamCaption})}
+
+Sets the table selection mode.
+
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca1e90303b7dbef1232b9f89f54cb25643}{Fl\+\_\+\+Table\+\_\+\+Row\+::\+S\+E\+L\+E\+C\+T\+\_\+\+N\+O\+NE}}} -\/ No selection allowed
+\item {\ttfamily \mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca575ff8fadb11d5cccf0bb42280c22e2c}{Fl\+\_\+\+Table\+\_\+\+Row\+::\+S\+E\+L\+E\+C\+T\+\_\+\+S\+I\+N\+G\+LE}}} -\/ Only single rows can be selected
+\item {\ttfamily \mbox{\hyperlink{class_fl___table___row_aa4445470df2cd02b0f25d6ed8357a9eca034e7292c5570033c30608dda6c3f75b}{Fl\+\_\+\+Table\+\_\+\+Row\+::\+S\+E\+L\+E\+C\+T\+\_\+\+M\+U\+L\+TI}}} -\/ Multiple rows can be selected 
+\end{DoxyItemize}
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/include/\+F\+L/\mbox{\hyperlink{_fl___table___row_8_h}{Fl\+\_\+\+Table\+\_\+\+Row.\+H}}\end{DoxyCompactItemize}

@@ -1,0 +1,203 @@
+\hypertarget{main_8cpp}{}\doxysection{C\+:/\+Users/david/\+Documents/chess-\/ddm/\+Skak Project/main.cpp File Reference}
+\label{main_8cpp}\index{C:/Users/david/Documents/chess-\/ddm/Skak Project/main.cpp@{C:/Users/david/Documents/chess-\/ddm/Skak Project/main.cpp}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}chess\+\_\+\+G\+U\+I.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_aa59dce23bfc0cc9522186fddf6d84717}{randi}} (int low, int high)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{main_8cpp_a6ce2f9fdac246ff01801679b18681eb8}{print\+\_\+move}} (vector$<$ int $>$ mv)
+\item 
+\mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} \mbox{\hyperlink{main_8cpp_a6995287869a4cbb7f9c5088ff8ea0b35}{print\+\_\+moves}} (vector$<$ vector$<$ int $>$$>$ \mbox{\hyperlink{main_8cpp_a1c418559537f523bc8a13fec6c6b7492}{moves}})
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{main_8cpp_ad3384a46de3278052df0377de84d1d95}{find\+\_\+pieces}} (vector$<$ vector$<$ int $>$$>$ board, int type)
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{main_8cpp_a9febd6366c0f81cdf036819671b5be95}{valid\+\_\+moves\+\_\+rook}} (vector$<$ vector$<$ int $>$$>$ board, int pos\+\_\+r, int pos\+\_\+c, int \mbox{\hyperlink{gl2opengl_8h_a321f1e32cd01131a4f0e10f60a8fcc13}{color}})
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{main_8cpp_ab188ec94be4a893c75b5705fcb2e50d5}{valid\+\_\+moves\+\_\+pawn}} (vector$<$ vector$<$ int $>$$>$ board, int pos\+\_\+r, int pos\+\_\+c, int \mbox{\hyperlink{gl2opengl_8h_a321f1e32cd01131a4f0e10f60a8fcc13}{color}})
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{main_8cpp_acb862961340da4d1e577f29231646604}{valid\+\_\+moves\+\_\+bishop}} (vector$<$ vector$<$ int $>$$>$ board, int pos\+\_\+r, int pos\+\_\+c, int \mbox{\hyperlink{gl2opengl_8h_a321f1e32cd01131a4f0e10f60a8fcc13}{color}})
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{main_8cpp_a0885be2d46a9a0c608f99477e50274b7}{valid\+\_\+moves\+\_\+queen}} (vector$<$ vector$<$ int $>$$>$ board, int pos\+\_\+r, int pos\+\_\+c, int \mbox{\hyperlink{gl2opengl_8h_a321f1e32cd01131a4f0e10f60a8fcc13}{color}})
+\item 
+\mbox{\hyperlink{main_8cpp_a7122c7cc8422406323b99d5be89bff7d}{print\+\_\+moves}} (\mbox{\hyperlink{main_8cpp_a1c418559537f523bc8a13fec6c6b7492}{moves}})
+\item 
+float \mbox{\hyperlink{main_8cpp_a18c668b00e594655131847c0bc79ec40}{eval\+\_\+pos}} (vector$<$ vector$<$ int $>$$>$ board)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{main_8cpp_a47437fe46248cb5eceee3de7f8bbea61}{find\+Best\+Move}} (vector$<$ vector$<$ int $>$$>$ board, vector$<$ vector$<$ int $>$$>$ moves\+\_\+list, int \mbox{\hyperlink{gl2opengl_8h_a321f1e32cd01131a4f0e10f60a8fcc13}{color}})
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{main_8cpp_a79d195823207414be12c3fabefaac710}{calc\+\_\+com\+\_\+move}} (vector$<$ vector$<$ int $>$$>$ board)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+return \mbox{\hyperlink{main_8cpp_a1c418559537f523bc8a13fec6c6b7492}{moves}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a79d195823207414be12c3fabefaac710}\label{main_8cpp_a79d195823207414be12c3fabefaac710}} 
+\index{main.cpp@{main.cpp}!calc\_com\_move@{calc\_com\_move}}
+\index{calc\_com\_move@{calc\_com\_move}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{calc\_com\_move()}{calc\_com\_move()}}
+{\footnotesize\ttfamily vector$<$int$>$ calc\+\_\+com\+\_\+move (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ int $>$$>$}]{board }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a79d195823207414be12c3fabefaac710_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a18c668b00e594655131847c0bc79ec40}\label{main_8cpp_a18c668b00e594655131847c0bc79ec40}} 
+\index{main.cpp@{main.cpp}!eval\_pos@{eval\_pos}}
+\index{eval\_pos@{eval\_pos}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{eval\_pos()}{eval\_pos()}}
+{\footnotesize\ttfamily float eval\+\_\+pos (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ int $>$$>$}]{board }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ad3384a46de3278052df0377de84d1d95}\label{main_8cpp_ad3384a46de3278052df0377de84d1d95}} 
+\index{main.cpp@{main.cpp}!find\_pieces@{find\_pieces}}
+\index{find\_pieces@{find\_pieces}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{find\_pieces()}{find\_pieces()}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ find\+\_\+pieces (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ int $>$$>$}]{board,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a47437fe46248cb5eceee3de7f8bbea61}\label{main_8cpp_a47437fe46248cb5eceee3de7f8bbea61}} 
+\index{main.cpp@{main.cpp}!findBestMove@{findBestMove}}
+\index{findBestMove@{findBestMove}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{findBestMove()}{findBestMove()}}
+{\footnotesize\ttfamily vector$<$int$>$ find\+Best\+Move (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ int $>$$>$}]{board,  }\item[{vector$<$ vector$<$ int $>$$>$}]{moves\+\_\+list,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{main_8cpp_a47437fe46248cb5eceee3de7f8bbea61_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a6ce2f9fdac246ff01801679b18681eb8}\label{main_8cpp_a6ce2f9fdac246ff01801679b18681eb8}} 
+\index{main.cpp@{main.cpp}!print\_move@{print\_move}}
+\index{print\_move@{print\_move}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{print\_move()}{print\_move()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} print\+\_\+move (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{mv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a7122c7cc8422406323b99d5be89bff7d}\label{main_8cpp_a7122c7cc8422406323b99d5be89bff7d}} 
+\index{main.cpp@{main.cpp}!print\_moves@{print\_moves}}
+\index{print\_moves@{print\_moves}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{print\_moves()}{print\_moves()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily print\+\_\+moves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8cpp_a1c418559537f523bc8a13fec6c6b7492}{moves}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a6995287869a4cbb7f9c5088ff8ea0b35}\label{main_8cpp_a6995287869a4cbb7f9c5088ff8ea0b35}} 
+\index{main.cpp@{main.cpp}!print\_moves@{print\_moves}}
+\index{print\_moves@{print\_moves}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{print\_moves()}{print\_moves()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{png_8h_aa8c59027f9ab2769342f248709d68d17}{void}} print\+\_\+moves (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ int $>$$>$}]{moves }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{main_8cpp_a6995287869a4cbb7f9c5088ff8ea0b35_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_aa59dce23bfc0cc9522186fddf6d84717}\label{main_8cpp_aa59dce23bfc0cc9522186fddf6d84717}} 
+\index{main.cpp@{main.cpp}!randi@{randi}}
+\index{randi@{randi}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{randi()}{randi()}}
+{\footnotesize\ttfamily int randi (\begin{DoxyParamCaption}\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_acb862961340da4d1e577f29231646604}\label{main_8cpp_acb862961340da4d1e577f29231646604}} 
+\index{main.cpp@{main.cpp}!valid\_moves\_bishop@{valid\_moves\_bishop}}
+\index{valid\_moves\_bishop@{valid\_moves\_bishop}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{valid\_moves\_bishop()}{valid\_moves\_bishop()}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ valid\+\_\+moves\+\_\+bishop (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ int $>$$>$}]{board,  }\item[{int}]{pos\+\_\+r,  }\item[{int}]{pos\+\_\+c,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_acb862961340da4d1e577f29231646604_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_ab188ec94be4a893c75b5705fcb2e50d5}\label{main_8cpp_ab188ec94be4a893c75b5705fcb2e50d5}} 
+\index{main.cpp@{main.cpp}!valid\_moves\_pawn@{valid\_moves\_pawn}}
+\index{valid\_moves\_pawn@{valid\_moves\_pawn}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{valid\_moves\_pawn()}{valid\_moves\_pawn()}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ valid\+\_\+moves\+\_\+pawn (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ int $>$$>$}]{board,  }\item[{int}]{pos\+\_\+r,  }\item[{int}]{pos\+\_\+c,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_ab188ec94be4a893c75b5705fcb2e50d5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a0885be2d46a9a0c608f99477e50274b7}\label{main_8cpp_a0885be2d46a9a0c608f99477e50274b7}} 
+\index{main.cpp@{main.cpp}!valid\_moves\_queen@{valid\_moves\_queen}}
+\index{valid\_moves\_queen@{valid\_moves\_queen}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{valid\_moves\_queen()}{valid\_moves\_queen()}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ valid\+\_\+moves\+\_\+queen (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ int $>$$>$}]{board,  }\item[{int}]{pos\+\_\+r,  }\item[{int}]{pos\+\_\+c,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{main_8cpp_a0885be2d46a9a0c608f99477e50274b7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a9febd6366c0f81cdf036819671b5be95}\label{main_8cpp_a9febd6366c0f81cdf036819671b5be95}} 
+\index{main.cpp@{main.cpp}!valid\_moves\_rook@{valid\_moves\_rook}}
+\index{valid\_moves\_rook@{valid\_moves\_rook}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{valid\_moves\_rook()}{valid\_moves\_rook()}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ valid\+\_\+moves\+\_\+rook (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ int $>$$>$}]{board,  }\item[{int}]{pos\+\_\+r,  }\item[{int}]{pos\+\_\+c,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a9febd6366c0f81cdf036819671b5be95_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_a1c418559537f523bc8a13fec6c6b7492}\label{main_8cpp_a1c418559537f523bc8a13fec6c6b7492}} 
+\index{main.cpp@{main.cpp}!moves@{moves}}
+\index{moves@{moves}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{moves}{moves}}
+{\footnotesize\ttfamily return moves}
+
